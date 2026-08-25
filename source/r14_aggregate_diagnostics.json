@@ -1,0 +1,115 @@
+{
+  "artifact_type": "R14_AGGREGATE_REVIEW_DIAGNOSTICS",
+  "boundaries": {
+    "DV_incidence_identified": false,
+    "causal_effect": false,
+    "mechanism_identified": false,
+    "physical_response_identified": false
+  },
+  "change_date": {
+    "first_nonzero_non_officer_J01_day": "2021-07-28",
+    "full_reference_windows_entirely_prechange": 66,
+    "full_reference_windows_starting_before_stage_cutoff": 64,
+    "interpretation": "empirical public-file regime break; institutional cause not identified",
+    "prechange_non_officer_J01_count": 0
+  },
+  "excluded_episodes_unstandardized": {
+    "February freeze": {
+      "event_n": 2851,
+      "raw_max_cell": 0.11309181521947487,
+      "reference_n": 3329,
+      "window_start": "2021-02-14"
+    },
+    "Hurricane Francine": {
+      "event_n": 2886,
+      "raw_max_cell": 0.11016424709092931,
+      "reference_n": 2882,
+      "window_start": "2024-09-08"
+    },
+    "Hurricane Ida": {
+      "event_n": 3878,
+      "raw_max_cell": 0.5319863703988098,
+      "reference_n": 3332,
+      "window_start": "2021-08-29"
+    },
+    "Hurricane Laura": {
+      "event_n": 3316,
+      "raw_max_cell": 0.08351235230934484,
+      "reference_n": 3515,
+      "window_start": "2020-08-23"
+    },
+    "Hurricane Zeta": {
+      "event_n": 3963,
+      "raw_max_cell": 0.1294054531683918,
+      "reference_n": 3638,
+      "window_start": "2020-10-25"
+    },
+    "Post-Ida week": {
+      "event_n": 3827,
+      "raw_max_cell": 0.47752201027146,
+      "reference_n": 3878,
+      "window_start": "2021-09-05"
+    }
+  },
+  "headline_statistics": {
+    "stage_era_denominator_including_Ida": 154,
+    "stage_era_rank": 1,
+    "standardized_M_max_cell": 0.5071816170350076,
+    "unstandardized_M_raw": 0.5319863703988098,
+    "unstandardized_post_change_denominator_including_Ida": 152,
+    "unstandardized_post_change_rank": 1,
+    "unstandardized_stage_era_denominator_including_Ida": 151,
+    "unstandardized_stage_era_rank": 1
+  },
+  "ida_common_support": {
+    "event_coverage_max": 0.927536231884058,
+    "event_coverage_min": 0.7475728155339806,
+    "event_record_count": 3878,
+    "event_record_weighted_coverage": 0.8607529654461062,
+    "reference_coverage_max": 0.8509615384615384,
+    "reference_coverage_min": 0.5051546391752577,
+    "reference_record_count": 3332,
+    "reference_record_weighted_coverage": 0.7704081632653061,
+    "would_pass_090_symmetric_gate": false
+  },
+  "officer_initiation": {
+    "Ida_five_day_officer_share": 0.33652694610778444,
+    "Ida_officer_J01_given_arrival": 0.9888040712468193,
+    "baseline_five_day_officer_share": 0.4217285664699757,
+    "baseline_officer_J01_given_arrival": 0.9958813838550247,
+    "candidate_pathway": "some citizen-originated records may have been logged in a public form resembling officer-initiated records; internal initiation provenance and dispatch audit histories are required to test this"
+  },
+  "optimization_intervals": {
+    "count_width_gt_0_01": 50,
+    "maximum_width": 0.07000058356676009,
+    "reference_count": 217
+  },
+  "parity": {
+    "maximum_absolute_G_difference": 0.0,
+    "status": "PASS"
+  },
+  "privacy_class": "aggregate-only; no narratives, addresses, identifiers, or row-level records",
+  "sampling_diagnostic": {
+    "interpretation": "within-stratum multinomial record bootstrap conditional on the aggregate tally",
+    "p025": 0.4597132517251071,
+    "p975": 0.5656303695685723,
+    "point": 0.5071816170350076,
+    "replicates": 4000,
+    "seed": 1400
+  },
+  "source": "packaged w2_period_tally.csv.gz and locked M7B artifacts",
+  "threshold_sensitivity": {
+    "FULL_QUALIFIED_REFERENCE": {
+      "exceeding_cells": 9,
+      "threshold": 0.20939747635914793
+    },
+    "SAME_SEASON_STAGE_REFERENCE": {
+      "exceeding_cells": 9,
+      "threshold": 0.20571914736674463
+    },
+    "STAGE_ERA_MATCHED_REFERENCE": {
+      "exceeding_cells": 8,
+      "threshold": 0.22469069558913304
+    }
+  }
+}

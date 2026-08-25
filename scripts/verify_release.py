@@ -65,12 +65,36 @@ def verify_manifest() -> None:
 
 def verify_pdfs() -> None:
     expected = {
-        "Beland_Current_Status_Main_2026-08-24_R13_0.pdf",
-        "Beland_Current_Status_Appendix_2026-08-24_R13_0.pdf",
-        "Beland_Current_Status_2026-08-24_R13_0.pdf",
+        "Beland_Current_Status_Main_2026-08-24_R14_0.pdf",
+        "Beland_Current_Status_Appendix_2026-08-24_R14_0.pdf",
+        "Beland_Current_Status_2026-08-24_R14_0.pdf",
     }
     actual = {path.name for path in (PACKAGE / "paper").glob("*.pdf")}
     require(actual == expected, f"unexpected PDF set: {sorted(actual)}")
+
+
+def verify_r14() -> None:
+    obj = load_json(PACKAGE / "source" / "r14_aggregate_diagnostics.json")
+    require(obj["artifact_type"] == "R14_AGGREGATE_REVIEW_DIAGNOSTICS", "R14 diagnostic type changed")
+    require(obj["change_date"]["first_nonzero_non_officer_J01_day"] == "2021-07-28", "R14 break date changed")
+    require(obj["change_date"]["prechange_non_officer_J01_count"] == 0, "R14 pre-break J01 count changed")
+    require(obj["change_date"]["full_reference_windows_entirely_prechange"] == 66, "R14 pre-break reference count changed")
+    require(obj["change_date"]["full_reference_windows_starting_before_stage_cutoff"] == 64, "R14 pre-stage reference count changed")
+    require(obj["ida_common_support"]["would_pass_090_symmetric_gate"] is False, "Ida support-gate finding changed")
+    require(abs(obj["headline_statistics"]["standardized_M_max_cell"] - 0.5071816170350076) <= 1e-12, "R14 M_max changed")
+    require(obj["headline_statistics"]["stage_era_rank"] == 1, "R14 stage-era rank changed")
+    require(obj["headline_statistics"]["unstandardized_stage_era_rank"] == 1, "R14 raw stage-era rank changed")
+    require(obj["headline_statistics"]["unstandardized_post_change_rank"] == 1, "R14 raw post-change rank changed")
+    require(obj["threshold_sensitivity"]["STAGE_ERA_MATCHED_REFERENCE"]["exceeding_cells"] == 8, "R14 threshold sensitivity changed")
+    require(obj["optimization_intervals"]["count_width_gt_0_01"] == 50, "R14 interval-width count changed")
+    require(obj["parity"]["status"] == "PASS" and obj["parity"]["maximum_absolute_G_difference"] <= 1e-12, "R14 G parity failed")
+    require(obj["sampling_diagnostic"]["replicates"] == 4000, "R14 resampling count changed")
+    require(obj["boundaries"] == {
+        "DV_incidence_identified": False,
+        "causal_effect": False,
+        "mechanism_identified": False,
+        "physical_response_identified": False,
+    }, "R14 interpretation boundary changed")
 
 
 def verify_m7b() -> None:
@@ -132,6 +156,7 @@ def verify_formal_supplements() -> None:
 def main() -> None:
     verify_manifest()
     verify_pdfs()
+    verify_r14()
     verify_m7b()
     verify_m7d_e()
     verify_m8p()

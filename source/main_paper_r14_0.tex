@@ -1,0 +1,293 @@
+\documentclass[11pt]{article}
+\input{beland_style.tex}
+\usepgfplotslibrary{dateplot}
+\fancyhead[L]{\footnotesize\itshape Public CAD is not operational ground truth}
+
+\title{\vspace{-1.7em}\textbf{Public CAD Is Not Operational Ground Truth}\\[0.35em]
+\large Regime Change, Hurricane Ida, and the Measurement of Police Responsiveness}
+\author{}
+\date{24 August 2026\\[0.2em]\small Paper R14.0 \quad Results R14}
+
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+\vspace{-1.3em}
+
+\begin{plainbox}[title=Abstract]
+Public computer-aided dispatch (CAD) records are widely used to measure emergency-service responsiveness, but their fields are products of both operations and record production. New Orleans public CAD shows a sharp break before Hurricane Ida: among non-officer-initiated records, the state ``arrival field present, dispatch field absent'' is absent from 419,840 records through 27 July 2021, first appears on 28 July, and becomes increasingly common thereafter. Five weeks later, Ida produces an additional two-day reconfiguration. A simple maximum-cell contrast is rank 1 among 153 prespecified stage-era reference windows; a full-count version that avoids common-support selection is rank 1 among 150 comparable stage-era windows. The original standardized Ida calculation covers 86.1 percent of event records and 77.0 percent of baseline records and would not pass the reference windows' 0.90 eligibility rule, so it is reported with that comparability qualification. The movement occurs within recorded dispositions and resembles the normal public field configuration of officer-initiated records, but public data do not identify the generating pathway. By 2025, dispatch-field completeness is only 41.8 percent. Public CAD therefore supports reproducible administrative-field measures, not an automatic operational response clock. Reported domestic-violence calls illustrate the measurement consequences; no DV effect or incidence estimate is reported.
+\end{plainbox}
+
+\keywords{calls for service; police responsiveness; administrative data; Hurricane Ida; measurement validity; domestic violence}
+\jel{C18, C55, H12, K42}
+
+\section{Introduction}
+
+Public CAD files appear to offer direct measures of demand and response: a call is created, a unit is dispatched, and an arrival time is recorded. That interpretation is valid only if the released fields retain stable meanings. A missing dispatch timestamp can reflect an operational event, a workflow exception, later data entry, retention, redaction, or export logic. These pathways are observationally equivalent in the public file.
+
+The distinction matters economically. Let $D_t^{\mathrm{CAD}}$ denote reported demand entering CAD, $C_t$ effective capacity, and $P_t$ the priority process. Operations produce a service path
+\begin{equation}
+S_t=g(D_t^{\mathrm{CAD}},C_t,P_t),
+\end{equation}
+while a recording, retention, and export process $R_t^{\mathrm{rec}}$ produces the released record
+\begin{equation}
+Y_t=h(S_t,R_t^{\mathrm{rec}}).
+\end{equation}
+A public timestamp is a feature of $Y_t$, not proof of its latent operational counterpart in $S_t$.
+
+Hurricane Ida makes this problem visible, but the paper's first result predates the hurricane. In the packaged 2020--2024 aggregate tally, no non-officer-initiated record has an arrival field without a dispatch field before 28 July 2021. The state then appears abruptly, and dispatch-field completeness continues to decline through 2024 and 2025. Ida occurs five weeks into this changed public-data regime and produces a further, temporary reconfiguration.
+
+The paper makes four contributions. First, it documents the late-July break and the longer decline in field completeness. Second, it shows that Ida remains the largest simple field-state contrast in a prespecified stage-era comparison and in a full-count comparison that does not select common support. Third, it reports the limits of that comparison: Ida fails the reference eligibility rule, excluded emergency windows are not part of the ordinary-week rank, several prespecified secondary statistics are not extreme, and a timing placebo is unfavorable. Fourth, it converts the empirical finding into a concise measurement rule for response-time and reported-DV research: declare the call denominator, clock, endpoint coverage, and lineage before treating public fields as performance measures.
+
+This narrower contribution connects two literatures. Police response time and first-responder delay matter for clearance, injuries, and damages \citep{BlanesKirchmaier2018,DeAngeloTogerWeisburd2023,BrentBeland2020}. Administrative records can nevertheless misclassify events or measure a selected stage of the underlying process \citep{KlingerBridges1997,BoivinCordeau2011,SimpsonOrosco2021,KnoxLoweMummolo2020}. Disaster-IPV studies establish that hurricane exposure, displacement, partner conflict, and service needs can move together \citep{AnastarioShehabLawry2009,SchumacherEtAl2010,HarvilleTaylorTesfai2011,FirstEtAl2022}; they do not validate public CAD clocks or identify an Ida-specific DV effect. Partial identification provides the appropriate response when labels or endpoints are incomplete \citep{Manski1990,Manski2003,Molinari2020}.
+
+\begin{resultbox}
+\textbf{Main finding.} The public CAD measurement product changes regime before Ida and changes again during Ida. The released fields support a descriptive record-production result; they do not, without additional evidence, identify physical dispatch, arrival, capacity, response quality, DV incidence, or a mechanism.
+\end{resultbox}
+
+\section{Data, denominator, and comparison design}
+
+\subsection{The public-record states}
+
+The source is the official New Orleans Calls for Service file for 2021, embedded through its archived aggregate tally and extended with the packaged 2020--2024 tally \citep{DataNOLA2021}. The primary denominator is \emph{non-officer-initiated public records}. Officer-initiated records are excluded from the main estimator and analyzed separately below. R13.0's phrases ``all calls'' and ``all reported calls'' were therefore inaccurate.
+
+For record $i$, define $D_i=1$ when a valid public dispatch field is present and $A_i=1$ when a valid public arrival field is present. The four mutually exclusive states are
+\begin{equation}
+J_{da,i}=\ind\{D_i=d,A_i=a\},\qquad (d,a)\in\{0,1\}^2.
+\end{equation}
+Thus $J_{01}$ means only that the eventual released record has an arrival field but no dispatch field. Bins index when calls were created; fields are read from the eventual released record. A late $J_{01}$ cell can therefore reflect an arrival value back-filled without a corresponding dispatch value. It does not prove physical arrival without dispatch.
+
+\subsection{The break on 28 July 2021}
+
+Figure~\ref{fig:monthly} reports monthly field completeness among non-officer-initiated records. The first $J_{01}$ record appears on 28 July 2021. Before that date, $J_{01}=0$ for all 419,840 records in the tally. This is a break in the observable public file. Its institutional cause is not identified. The authors have not contacted the City or the Orleans Parish Communication District for this discussion release; a CAD upgrade, export change, retention rule, or another workflow change remains to be verified.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.94\textwidth,height=6.1cm,
+  date coordinates in=x,
+  xmin=2020-01-01,xmax=2025-01-01,
+  ymin=0,ymax=1,
+  xtick={2020-01-01,2021-01-01,2022-01-01,2023-01-01,2024-01-01,2025-01-01},
+  xticklabel=\year,
+  ylabel={Share},
+  grid=major,grid style={BelandLightGray},
+  legend style={draw=none,font=\small,at={(0.5,-0.19)},anchor=north,legend columns=3},
+  tick label style={font=\small},label style={font=\small}
+]
+\addplot[BelandBlue,thick] table[x=month,y=dispatch_share,col sep=comma] {r14_monthly_field_completeness.csv};
+\addplot[BelandGreen,thick] table[x=month,y=arrival_share,col sep=comma] {r14_monthly_field_completeness.csv};
+\addplot[BelandOrange,thick] table[x=month,y=j01_given_arrival,col sep=comma] {r14_monthly_field_completeness.csv};
+\draw[BelandRed,dashed,thick] (axis cs:2021-07-28,0) -- (axis cs:2021-07-28,1);
+\legend{Dispatch field present,Arrival field present,$J_{01}$ among arrival-observed}
+\end{axis}
+\end{tikzpicture}
+\caption{Monthly public-field completeness among non-officer-initiated records, 2020--2024. The dashed line marks 28 July 2021, the first day with a nonzero $J_{01}$ count. The figure describes the released file, not physical dispatch or arrival.}
+\label{fig:monthly}
+\end{figure}
+
+\begin{table}[t]
+\centering
+\caption{Public-field regimes among non-officer-initiated records}
+\label{tab:regimes}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Period & Records & $\Pr(D=1)$ & $\Pr(A=1)$ & $\Pr(J_{01}=1\mid A=1)$ \\
+\midrule
+1 Jan. 2020--27 Jul. 2021 & 419,840 & 0.901 & 0.797 & 0.000 \\
+25--31 Jul. 2021 & 4,901 & 0.836 & 0.785 & 0.055 \\
+1--28 Aug. 2021 & 19,158 & 0.784 & 0.789 & 0.097 \\
+29 Aug.--4 Sep. 2021 & 5,554 & 0.649 & 0.663 & 0.246 \\
+5--12 Sep. 2021 & 5,797 & 0.762 & 0.793 & 0.139 \\
+Calendar 2024 & 212,314 & 0.654 & 0.742 & 0.223 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.94\textwidth}\footnotesize
+Counts and shares are recomputed from the packaged aggregate tally. Periods overlap only where the transition week deliberately spans the break date. The 2025 public audit is reported separately in Section~\ref{sec:current}.
+\end{minipage}
+\end{table}
+
+\subsection{Ida window and reference classes}
+
+The Ida event window is 29 August 00:00 through 3 September 00:00, divided into ten twelve-hour call-creation bins. Each bin is compared with the corresponding half-day seven days earlier. The original estimator standardizes $J_{01}$, $J_{10}$, and $J_{11}$ shares over common \texttt{initialtype} $\times$ hour-bucket $\times$ schema-era strata using baseline weights.
+
+The reference calibration was designed after Ida was observed, not preregistered before the hurricane. Ida and its matrix were already known when the restricted support library and the $0.25$ model-fit boundary were developed. The three reference universes, eligibility rules, and pseudo-event analysis were specified before the reference-window outcomes were examined. The $0.25$ boundary is therefore a historical sensitivity rule, not a confirmatory threshold for Ida.
+
+R14.0 uses the prespecified \emph{stage-era} set as the principal standardized comparison: 153 ordinary five-day windows starting on or after 1 July 2021. That cutoff was a pre-existing schema-era rule; it was not selected to estimate the 28 July break and should not be read as the break date. The full 217-window and same-season 86-window sets are sensitivities. Exactly 66 of the 217 eligible windows occur entirely before the first nonzero $J_{01}$ day; 64 start before the 1 July stage cutoff. A post-review full-count comparison additionally requires both sides of a window to begin after 28 July; it is transparent but not prespecified.
+
+The prespecified context exclusions remove hurricanes, the post-Ida week, major holidays, and other emergencies from the ordinary-week ranks. Thus ``rank 1'' means more extreme than the retained ordinary weeks. Excluded episodes are reported as labelled comparisons rather than silently folded into the rank.
+
+\section{Results}
+
+\subsection{Ida produces the largest simple cell contrast}
+
+Let $G$ be the ten-by-three matrix of standardized event-minus-baseline contrasts for $(J_{01},J_{10},J_{11})$. The headline statistic is the simplest prespecified summary,
+\begin{equation}
+M_{\max}(G)=\max_{t,j}|G_{tj}|.
+\end{equation}
+For Ida, $M_{\max}=0.5072$. It exceeds all 153 stage-era reference values (rank $1/154$ including Ida); the largest reference value is $0.3282$. Figure~\ref{fig:rank} shows the full stage-era distribution.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.90\textwidth,height=5.9cm,
+  xmin=0,xmax=158,ymin=0,ymax=0.56,
+  xlabel={Stage-era reference windows, ordered by $M_{\max}$},
+  ylabel={$M_{\max}$},
+  grid=major,grid style={BelandLightGray},
+  tick label style={font=\small},label style={font=\small},
+  legend style={draw=none,font=\small,at={(0.02,0.98)},anchor=north west}
+]
+\addplot[only marks,mark=*,mark size=1.4pt,draw=BelandBlue,fill=BelandBlue]
+  table[x=rank,y=M_max_cell,col sep=comma] {r14_stage_era_reference_scores.csv};
+\addplot[only marks,mark=diamond*,mark size=3.4pt,draw=BelandOrange,fill=BelandOrange]
+  coordinates {(154,0.5071816170)};
+\legend{153 stage-era ordinary weeks,Ida}
+\end{axis}
+\end{tikzpicture}
+\caption{The simple maximum absolute standardized cell contrast. Ida is rank 1 among the prespecified stage-era ordinary-week references. No exchangeability assumption is adopted, so $1/154$ is a descriptive rank, not a causal or randomized $p$-value.}
+\label{fig:rank}
+\end{figure}
+
+The result does not depend on common-support standardization. Using all non-officer-initiated records in every half-day, the maximum raw cell contrast is $0.5320$, rank 1 among the 150 stage-era reference windows with complete half-day counts. In the post-review set requiring both event and baseline sides to occur after 28 July, it is rank 1 among 151 nonexcluded references ($1/152$ including Ida). These full-count comparisons avoid the eligibility asymmetry below but remain descriptive.
+
+\subsection{The standardized comparison has a real support limitation}
+
+Ida would not pass the rule applied to candidate reference windows: at least 0.90 common-support coverage on both sides. Table~\ref{tab:coverage} reports the prespecified audit. Coverage ranges from 0.748 to 0.928 on the event side and 0.505 to 0.851 on the baseline side. Weighted by bin records, it is 0.861 and 0.770. Standardized contrasts therefore describe a selected common-support population rather than all 3,878 event and 3,332 baseline records.
+
+\begin{table}[t]
+\centering
+\caption{Ida common-support coverage and record counts}
+\label{tab:coverage}
+\begin{tabular}{@{}crrrr@{}}
+\toprule
+Bin & Event $N$ & Baseline $N$ & Event coverage & Baseline coverage \\
+\midrule
+B1 & 276 & 244 & 0.928 & 0.754 \\
+B2 & 674 & 335 & 0.901 & 0.612 \\
+B3 & 206 & 291 & 0.748 & 0.505 \\
+B4 & 495 & 433 & 0.919 & 0.815 \\
+B5 & 295 & 290 & 0.766 & 0.838 \\
+B6 & 464 & 421 & 0.873 & 0.812 \\
+B7 & 311 & 268 & 0.846 & 0.802 \\
+B8 & 464 & 379 & 0.851 & 0.836 \\
+B9 & 240 & 255 & 0.829 & 0.812 \\
+B10 & 453 & 416 & 0.834 & 0.851 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The aggregate tally is sufficient for a within-stratum nonparametric categorical bootstrap: resampling records within each observed stratum is equivalent to multinomial resampling of its four state counts. With 4,000 fixed-seed replicates, the conditional 95-percent interval for $M_{\max}$ is $[0.460,0.566]$. This interval captures record sampling conditional on the observed strata and weights; it does not capture temporal dependence, uncertainty in the regime boundary, or selection of the comparison design.
+
+The binary cell count is threshold-sensitive. The full-set 95th-percentile maximum-cell threshold is 0.2094 and flags nine cells; the stage-era threshold is 0.2247 and flags eight; the same-season threshold is 0.2057 and flags nine. R14.0 therefore reports continuous contrasts and intervals rather than calling marginal cells ``abnormal.''
+
+\subsection{Prespecified statistics do not tell a single story}
+
+Table~\ref{tab:secondary} reports every prespecified statistic in the stage-era set. Ida is first on $M_{\max}$, the leading singular values, the direct restricted score, and the constrained LP score. It is only 11th on the third singular value, 100th on $Q$, and fourth on $D$. The empirical conclusion is specifically a large field-state reconfiguration; it is not uniform extremeness under every summary.
+
+\begin{table}[t]
+\centering
+\caption{Prespecified stage-era statistics}
+\label{tab:secondary}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Statistic & Ida & Largest reference & Rank including Ida \\
+\midrule
+$M_{\max}$ / amplitude $A$ & 0.5072 & 0.3282 & 1/154 \\
+$\sigma_1$ & 1.0837 & 0.6011 & 1/154 \\
+$\sigma_2$ & 0.2623 & 0.2451 & 1/154 \\
+$\sigma_3$ & 0.0858 & 0.1112 & 11/154 \\
+$U_{\mathrm{direct}}$ & 0.4223 & 0.3282 & 1/154 \\
+$U_{\mathrm{full}}$ upper endpoint & 0.2507 & 0.2125 & 1/154 \\
+$Q$ upper endpoint & 0.4944 & 0.9408 & 100/154 \\
+$D$ upper endpoint & 0.1716 & 0.2835 & 4/154 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The constrained LP is retained as robustness, not as the headline statistic. Its Ida lower bound clears the historical $0.25$ threshold by only 0.000734, or 0.29 percent of the threshold. Fifty of 217 reference LP intervals have width above 0.01 and the maximum width is 0.070; Figure~\ref{fig:rank} therefore avoids the inaccurate claim that all LP intervals are narrow. Formal verification checks arithmetic identities and finite certificates, not the empirical meaning of public fields; details remain in the online supplement.
+
+The timing exercise is also unfavorable. Zero-padded translations of the institutional support library fit Ida better than the documented alignment, with an alignment-advantage interval of $[-0.114,-0.098]$. The score therefore does not identify the timing of a curfew, outage, or redeployment mechanism.
+
+\subsection{Excluded emergencies and the post-Ida week}
+
+Table~\ref{tab:episodes} applies the unstandardized maximum-cell statistic to labelled windows excluded from the ordinary-week ranks. The post-Ida week remains large because its baseline is Ida itself and the public fields move back toward their prior configuration. Francine is much smaller despite occurring in the later record regime. Pre-July-2021 events cannot reproduce a $J_{01}$ increase because $J_{01}$ is structurally absent from that public-file regime; their inclusion illustrates why a common estimator need not imply a common measurement object.
+
+\begin{table}[t]
+\centering
+\caption{Labelled excluded episodes: full-count maximum-cell contrast}
+\label{tab:episodes}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Episode window & Event records & Baseline records & Raw $M_{\max}$ \\
+\midrule
+Hurricane Laura, 23 Aug. 2020 & 3,316 & 3,515 & 0.084 \\
+Hurricane Zeta, 25 Oct. 2020 & 3,963 & 3,638 & 0.129 \\
+February freeze, 14 Feb. 2021 & 2,851 & 3,329 & 0.113 \\
+Hurricane Ida, 29 Aug. 2021 & 3,878 & 3,332 & 0.532 \\
+Post-Ida week, 5 Sep. 2021 & 3,827 & 3,878 & 0.478 \\
+Hurricane Francine, 8 Sep. 2024 & 2,886 & 2,882 & 0.110 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.94\textwidth}\footnotesize
+Each value uses all non-officer-initiated records in ten twelve-hour bins and compares the five-day event window with the same half-days seven days earlier. These labelled points are descriptive comparisons, not members of the prespecified ordinary-week rank.
+\end{minipage}
+\end{table}
+
+\subsection{Within-disposition movement and an officer-initiation clue}
+
+Among arrival-observed records, the late aggregate dispatch-field contrast is $-0.4950$ on 31 August afternoon/evening and $-0.4824$ on 1 September morning. Exact Kitagawa decompositions attribute $-0.5069$ and $-0.4946$ to within-recorded-disposition changes, offset by small composition components of $+0.0119$ and $+0.0123$. The accounting result rules out a change in the observed final-disposition mix as the sole explanation. It does not rule out selection into arrival observation, unobserved composition, semantic drift, or a recording pathway.
+
+The officer-initiated comparison suggests a concrete candidate pathway. In the five-day Ida window, 98.9 percent of arrival-observed officer-initiated records are $J_{01}$; the baseline share is 99.6 percent. Officer-initiated records constitute 33.7 percent of all public records during Ida, down from 42.2 percent in the baseline. One possible explanation is that some citizen-originated calls were entered in a public form resembling officer-initiated activity while dispatch operations were disrupted. This is a testable candidate, not an identified mechanism. Internal call-origin provenance, call-taker source, unit-assignment history, and dispatch audit logs would distinguish it from back-filling or export changes.
+
+\section{The longer public-data regime}
+\label{sec:current}
+
+The late-July break is not a temporary Ida artifact. Dispatch-field completeness among non-officer-initiated records is 65.4 percent in 2024, while $J_{01}$ accounts for 22.3 percent of arrival-observed records. The packaged public-data replay for 2025 finds dispatch-field completeness of approximately 41.8 percent and arrival-field completeness of 83.7 percent; 152,701 records have an arrival field but no dispatch field. The 2026 snapshot produces similar dispatch completeness. These are the paper's broadest descriptive findings: the public release increasingly omits one endpoint needed for a dispatch-to-arrival clock.
+
+The public architecture has also become richer. Current datasets, metadata, response policies, and CAD--EPR link fields improve description \citep{DataNOLA2025,DataNOLA2026,NOPDPolicy2025,NOPDAPR2024}. They do not by themselves establish how derived clocks are constructed, whether fields are overwritten, which internal event each timestamp represents, or how historical regimes should be joined. Performance measurement still requires a validated clock and retained lineage.
+
+\section{Measurement implications, with reported DV as an illustration}
+
+The public-record stress test has a simple implication: the admissibility of a performance measure is target-specific. A released statistic is directly supportable when it is a deterministic function of declared public fields and a declared denominator. It is selected when observation requires endpoint presence. It is bounded when unresolved labels or missing endpoints can be propagated to sharp limits. It is unavailable when the required clock, population, or link is absent.
+
+\begin{table}[t]
+\centering
+\caption{What the public record supports and what additional evidence is needed}
+\label{tab:frontier}
+\begin{tabularx}{\textwidth}{@{}p{0.20\textwidth}p{0.31\textwidth}X@{}}
+\toprule
+Target & Current public measure & Evidence needed for the broader target \\
+\midrule
+Reported-DV risk set & Count under a declared period-specific label; unresolved records retained as $1/0/U$ & Validation data if the target is underlying DV status rather than the declared administrative label \\
+Response time & Distribution among records with both declared endpoints; endpoint-coverage share & Receipt and verified operational endpoint for the same calls; full-denominator endpoint coverage \\
+Priority change & Initial and eventual recorded priorities & Complete ordered priority history with overwrite and provenance rules \\
+Queue delay or capacity & Not available from endpoint presence & Calls-holding stocks and flows; realized unit availability and assignment histories \\
+Administrative follow-through & Rate on the downstream source's own denominator & Eligibility, completion, and retained CAD-to-downstream lineage on one call denominator \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Reported DV-related calls are a policy-relevant illustration because disaster-IPV research makes the period substantively important while selection into police records remains consequential. R14.0 does not run a DV classifier: the package lacks a fully specified and validated period-specific signal list and treatment rule for unresolved codes. Symbols cannot substitute for a reviewed classification rule. Once a declared rule assigns records to DV-related, other, or unresolved groups, reported-DV counts lie between the number positively labelled and that number plus unresolved records. Response-time summaries remain selected unless both endpoint coverage and durations are observed on the full labelled denominator.
+
+This section is deliberately short. A DV-subset estimate would be a new empirical analysis requiring a prespecified code list, treatment of unresolved labels, cell-size floors, its own reference eligibility, and endpoint-selection handling. The disaster-IPV literature motivates that work; it does not license importing a DV effect into the system-level CAD result.
+
+\section{Limitations}
+
+The study is descriptive. It does not assume exchangeability of Ida and the reference weeks and reports no causal $p$-value. The stage-era reference excludes emergencies and holidays, so its rank is relative to ordinary weeks. The post-change full-count comparison was added after referee review and is sensitivity evidence. Ida's standardized calculation fails the reference windows' support gate. The within-stratum bootstrap conditions on the aggregate tally, strata, weights, and comparison design.
+
+The 28 July break is a change in the public file, not a verified CAD-system or agency-policy change. Agency documentation or internal audit logs are required to name its cause. The officer-initiated resemblance is a candidate record-production pathway, not a mechanism result. The 2025--2026 audit measures its observed period and does not retroactively harmonize 2021.
+
+Reported calls are not latent need or complete help-seeking. Evacuation, access, mobility, day-of-week patterns, holidays, weather, COVID-era behavior, redaction, suppression, and changing call composition can affect the observed denominator. Authorship metadata is intentionally omitted from this professor-discussion copy and must be completed before journal submission.
+
+\section{Conclusion}
+
+New Orleans public CAD undergoes a visible field-production break on 28 July 2021, a further extreme reconfiguration during Ida, and a longer decline in dispatch-field completeness. The simplest maximum-cell statistic captures the Ida fact; the LP machinery is unnecessary for the headline conclusion. The result survives a stage-era comparison and an unstandardized full-count comparison, but the standardized design's support failure and the excluded-event reference policy materially qualify its meaning.
+
+The paper's durable contribution is therefore a measurement warning with a reproducible empirical basis. Public CAD fields are administrative observations whose stability must be demonstrated before they become operational performance clocks. A valid response-time, priority, queue, capacity, or DV follow-through measure must declare its denominator, endpoints, coverage, and lineage. Without that evidence, the public file supports field presence and bounded administrative statements---not physical response, true incidence, or a unique mechanism.
+
+\bibliographystyle{apalike}
+\bibliography{references_r14_0}
+
+\end{document}

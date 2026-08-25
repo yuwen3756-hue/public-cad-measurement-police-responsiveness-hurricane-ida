@@ -2,32 +2,34 @@
 
 ## 1. Purpose
 
-This package supports three different checks that should not be conflated:
+This release supports four distinct checks:
 
-1. **Document reproduction:** rebuild the main paper, appendix, and combined PDF from LaTeX.
-2. **Numerical and artifact verification:** verify the frozen results and independent-replication outputs included in the package.
-3. **Formal verification:** rebuild the Lean theorem package and run the exact-certificate fixture and witness-regime enumeration.
+1. **R14 aggregate reconstruction:** rebuild the regime-break, support, ranking, uncertainty, and robustness diagnostics from the packaged aggregate tally and locked reference artifacts.
+2. **Document reproduction:** rebuild the main paper, online supplement, and combined PDF from LaTeX.
+3. **Numerical and artifact verification:** verify the package manifest and the declared M7B, M7D-E, M8P, and R14 invariants.
+4. **Formal verification:** rebuild the Lean theorem package and run the exact-certificate fixture and witness-regime enumeration.
 
-The package also includes the full empirical replay programs. Public call-level source files are not duplicated into this release. A full raw-data replay therefore requires the exact public source caches listed in Section 6.
+The release contains no raw narratives, addresses, personal identifiers, or private records. Public call-level files are not duplicated. Full call-level replays require the official source caches listed below.
 
 ## 2. What we did
 
-The work proceeded in five layers:
+The analysis proceeds in six layers:
 
-1. Defined four public CAD field-presence states from dispatch and arrival fields and standardized event-reference contrasts within ten frozen 12-hour bins.
-2. Applied the same restricted-support discrepancy estimator to Ida and 217 qualified reference windows. Two narrower comparison sets were retained as prespecified sensitivity designs.
-3. Decomposed the dispatch-field change among arrival-field records into disposition-composition and within-disposition components.
-4. Mapped candidate reported-DV performance measures to measure-specific identified sets and inclusion-minimal privacy-conscious witness bundles needed to contract them.
-5. Replayed the 2025-2026 public-data architecture to determine whether newer public fields close the structural measurement gaps. They improve description but do not establish a strict mechanism-relevant identified-set contraction.
+1. Define five mutually exclusive field-presence states from public dispatch and arrival fields, separately for non-officer-initiated and officer-initiated records.
+2. Diagnose the public-file time series. For non-officer-initiated records, $J_{01}$ is exactly zero before 28 July 2021 and positive thereafter. This is treated as an empirical data-regime break; the institutional cause is not identified.
+3. Standardize Ida's event-minus-seven-day field-state contrasts within ten fixed 12-hour bins and compare the maximum absolute cell change with ordinary reference windows. The prespecified stage-era set is primary; the full and same-season sets are sensitivities.
+4. Add post-review diagnostics: per-bin support, a 4,000-replicate within-stratum categorical bootstrap, all secondary-statistic ranks, threshold sensitivity, an unstandardized full-count comparison, post-change sensitivity, and excluded-event comparisons.
+5. Retain the within-disposition Kitagawa decomposition as an accounting localization exercise and the linear-program score as robustness material. Neither supplies an institutional mechanism.
+6. Audit the 2025--2026 public architecture and state what additional operational evidence would be needed for a police-performance or DV-specific study.
 
-R13.0 is a major paper revision because it changes the contribution architecture while retaining the R12 mathematics and numerical results. The all-call Ida CAD stress test is now the empirical center, and the reported-DV material is a bounded application for a future performance study. The revision also adds the complete 217-window score distribution, the unfavorable timing-shift placebo, explicit call-creation-cohort semantics, and narrower language for the within-disposition accounting result.
+R14.0 is a major version because it changes both the scientific framing and the reported evidence. It corrects the denominator, brings the public-file regime break and support failure into the main text, adds sampling uncertainty and robustness outputs, demotes mathematical machinery that does not drive the empirical conclusion, and compresses the unestimated DV application.
 
 ## 3. Package layout
 
 ```text
-paper/                         final main, appendix, and combined PDFs
-source/                        self-contained LaTeX, bibliography, and plotting data
-scripts/                       verification, replay, and PDF-build entry points
+paper/                         final main, supplement, and combined PDFs
+source/                        R14 LaTeX, bibliography, and aggregate diagnostics
+scripts/                       R14 builder, verification, replay, and PDF tools
 reproduction/repository_snapshot/
   pilot_911_dv/experiments/    empirical code and locked aggregate artifacts
   pilot_911_dv/formal_verification_r11_1/
@@ -35,20 +37,28 @@ reproduction/repository_snapshot/
   pilot_911_dv/source_data/     metadata only; public call-level CSVs excluded
 ```
 
-`PACKAGE_MANIFEST.sha256` binds the distributed files. The manifest excludes itself.
+`PACKAGE_MANIFEST.sha256` binds every distributed file except itself. Generated temporary files and the release ZIP are excluded.
 
-`source/reference_score_distribution_r13.csv` is a mechanical ordering of the 217 non-Ida rows in the locked `M7B_REFERENCE_STATISTICS.csv`, sorted by `U_full_upper`. It creates no new estimate; it makes the full reference distribution visible in the paper.
+The R14 evidence files are:
+
+- `source/r14_aggregate_diagnostics.json`: machine-readable headline findings and boundaries.
+- `source/r14_weekly_field_completeness.csv` and `source/r14_monthly_field_completeness.csv`: public-field completeness series.
+- `source/r14_daily_ida_field_completeness.csv` and `source/r14_period_summary.csv`: break/Ida summaries.
+- `source/r14_stage_era_reference_scores.csv` and `source/r14_raw_window_scores.csv`: standardized and unstandardized comparisons.
+- `source/r14_secondary_statistic_ranks.csv`: every prespecified secondary-statistic rank in all three reference universes.
+- `source/r14_bootstrap_cells.csv`: cell estimates and conditional bootstrap intervals.
 
 ## 4. Environment
 
-The recorded computational environment was:
+The recorded environment is:
 
 - Python 3.12.4
 - NumPy 1.26.4
-- SciPy 1.13.1 with HiGHS dual simplex for the M7B LP replay
+- SciPy 1.13.1 with HiGHS dual simplex for the M7B replay
+- pandas 2.2.2 for the aggregate R14 builder
 - Lean 4 and Mathlib 4.33.0, pinned by `lean-toolchain` and `lake-manifest.json`
-- pdfLaTeX and BibTeX through MiKTeX, with Latin Modern fonts
-- pypdf 6.10.0 for joining the two PDFs in this release
+- pdfLaTeX and BibTeX through MiKTeX, with embedded Latin Modern fonts
+- pypdf 6.10.0 for joining the PDFs
 
 Install the Python requirements from the package root:
 
@@ -56,7 +66,7 @@ Install the Python requirements from the package root:
 python -m pip install -r requirements.txt
 ```
 
-## 5. Fast verification from included artifacts
+## 5. Fast release verification
 
 From the package root:
 
@@ -64,31 +74,58 @@ From the package root:
 powershell -ExecutionPolicy Bypass -File .\scripts\verify_release.ps1
 ```
 
-This is read-only. It verifies the package manifest and checks the declared M7B, M7D-E, and M8P invariants. It also runs the exact-certificate fixture and the 54-regime enumeration. Expected terminal status: `RELEASE_VERIFICATION_PASS`.
+This read-only check verifies the package manifest; the exact R14 PDF set; the regime-break, support, rank, uncertainty, and boundary invariants; the included M7B, M7D-E, and M8P results; the exact-certificate fixture; and the 54-regime enumeration. Expected terminal status:
 
-Expected empirical invariants include:
+```text
+RELEASE_VERIFICATION_PASS
+```
 
-- M7B: 217 full qualified reference windows; no reference interval reaches the Ida interval in the full, stage-era, or same-season-stage set; maximum Ida matrix parity error no larger than $10^{-10}$.
-- M7D-E: independent parent parity and Kitagawa identity residuals below $10^{-12}$; independent replication `PASS`.
-- M8P: 20 focused validation checks pass; decision `M8P_PUBLIC_OBSERVABILITY_PARTIALLY_IMPROVED`; strict-contraction list empty; all four M8D structural witness statuses `CLOSED`.
+Important R14 invariants include:
 
-## 6. Empirical replay
+- first positive non-officer $J_{01}$ day: 28 July 2021;
+- 66 of 217 full-set reference windows occur entirely before that date and 64 start before the 1 July stage cutoff;
+- Ida fails the 0.90 symmetric common-support screen;
+- standardized maximum-cell discrepancy 0.5071816170, rank 1/154 including Ida in the stage-era comparison;
+- unstandardized maximum-cell discrepancy 0.5319863704, ranked first in both complete stage-era and post-change comparisons;
+- 4,000 fixed-seed bootstrap replicates and exact parity with the locked Ida matrix;
+- no causal-effect, mechanism, physical-response, or DV-incidence claim.
 
-### 6.1 Self-contained aggregate-only M7B replay
+## 6. Rebuild the R14 aggregate evidence
 
-The M7B independent replay is self-contained in the package. It reconstructs the paired event-minus-seven-day, within-bin common-support estimator from the included aggregate tally and independently resolves the frozen score geometry.
+Run:
 
-Run it in a disposable copy created automatically by:
+```powershell
+python .\scripts\build_r14_evidence.py
+```
+
+Expected first line:
+
+```text
+R14_EVIDENCE_BUILD_PASS
+```
+
+The program reads only:
+
+- the packaged aggregate `w2_period_tally.csv.gz`; and
+- locked M7B registries, matrices, thresholds, intervals, and statistics.
+
+It does not read raw narratives or row-level private data. The bootstrap resamples the five observed categorical states within each fixed event/reference stratum using a multinomial draw. This is equivalent to resampling categorical records within those observed strata. Its interval is conditional on the public categories, fixed bins, and chosen event/reference pairing; it does not account for reference-set selection, time-series dependence beyond the strata, or the July 2021 regime break.
+
+## 7. Empirical replay
+
+### 7.1 Self-contained aggregate M7B replay
+
+Run:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\replay_m7b.ps1
 ```
 
-Expected final JSON status: `PASS`.
+The script creates a disposable copy, reconstructs the paired event-minus-seven-day common-support estimator from the included aggregate tally, and independently resolves the frozen score geometry. Expected final JSON status: `PASS`.
 
-### 6.2 M7D-E full replay
+### 7.2 M7D-E call-level replay
 
-The code, disposition sidecar, source registry, aggregate outputs, and independent-replication result are included. The public 2021 call-level cache is not duplicated. To run the full replay, place the exact public files at:
+The code, disposition sidecar, source registry, aggregate outputs, and independent-replication result are included. The official 2021 call-level cache is not duplicated. Place the exact public files at:
 
 ```text
 reproduction/repository_snapshot/pilot_911_dv/source_data/
@@ -103,22 +140,20 @@ reproduction/repository_snapshot/pilot_911_dv/experiments/
   m7d_d_public_disposition_schema_completion/M7D_D_PUBLIC_SOURCE_REGISTRY.json
 ```
 
-Then, from `reproduction/repository_snapshot`:
+From `reproduction/repository_snapshot`, run the replay only in a disposable copy:
 
 ```powershell
 python pilot_911_dv/experiments/nola_2020-01-01_2024-12-31_beland_plus_wave4r/candidate/m7d_e_within_disposition_dispatch_observability/replicate_m7d_e.py
 ```
 
-This program writes beside its inputs. Run it only in a disposable copy.
-
-### 6.3 M8P current-public-data replay
+### 7.3 M8P current-public-data replay
 
 The official dataset bindings are:
 
 | Year | Socrata dataset | Rows | SHA-256 |
 |---|---:|---:|---|
 | 2025 | `4xwx-sfte` | 329,770 | `be8416343d253e2518a16ae007568a1561ee8b511dbdef3d5465956a198ae875` |
-| 2026 | `es9j-6y5d` | 209,829 | `c151ca38199aa53921ad1fe048ee7108f6165e8700ae459070f4c014ce614e17` |
+| 2026 through 11 August | `es9j-6y5d` | 209,829 | `c151ca38199aa53921ad1fe048ee7108f6165e8700ae459070f4c014ce614e17` |
 
 Place the matching public CSVs at:
 
@@ -128,7 +163,7 @@ reproduction/repository_snapshot/pilot_911_dv/source_data/socrata/
   nola_es9j-6y5d/2026/m8p_public_snapshot_2026-08-11/calls_for_service_2026.csv
 ```
 
-Metadata, column definitions, official current-architecture extracts, and the frozen source manifest are included. From `reproduction/repository_snapshot`, run:
+From `reproduction/repository_snapshot`, run:
 
 ```powershell
 python pilot_911_dv/experiments/nola_2025-01-01_2026-08-11_m8p_public_observability_replay/notebooks/audit_current_public_data.py
@@ -138,7 +173,7 @@ python pilot_911_dv/experiments/nola_2025-01-01_2026-08-11_m8p_public_observabil
 
 Expected validation status: `PASS` with 20 checks and no failed checks.
 
-## 7. Formal verification
+## 8. Formal verification
 
 From the package root:
 
@@ -149,9 +184,9 @@ python certificates\verify_certificates.py
 python enumeration\verify_witness_regimes.py
 ```
 
-The Lean build verifies 65 named theorem declarations with no `sorry`, `admit`, or project-defined axioms. The numerical paper LP remains `TESTED_ONLY`; the included exact-rational certificate is a checker fixture, not an exact certificate for the paper LP. Field meanings, institutional stages, denominators, and source authority remain semantic review questions.
+The Lean build verifies 65 named declarations with no `sorry`, `admit`, or project-defined axioms. The numerical paper LP remains `TESTED_ONLY`; the exact-rational certificate is a checker fixture, not an exact certificate for the empirical LP. Institutional stages, field meanings, denominators, and source authority remain semantic review questions.
 
-## 8. Rebuild the PDFs
+## 9. Rebuild the PDFs
 
 With MiKTeX, Python, and pypdf available:
 
@@ -159,28 +194,24 @@ With MiKTeX, Python, and pypdf available:
 powershell -ExecutionPolicy Bypass -File .\scripts\build_pdfs.ps1
 ```
 
-The script compiles the main paper and appendix, runs BibTeX, performs the required LaTeX passes, and writes the three PDFs to `paper/`.
+The script first rebuilds the R14 aggregate evidence, compiles the main paper and supplement, runs BibTeX and the required LaTeX passes, and writes exactly three PDFs to `paper/`.
 
-## 9. Interpretation boundary
+## 10. Interpretation boundary
 
-The package measures a descriptive, reference-extreme change in the released public record under system stress. It does not identify police performance, effective capacity, physical response, a causal mechanism, true DV incidence, or a DV-specific treatment effect. Reported DV-related calls remain administrative reporting measures conditional on the declared CAD denominator and labeling rule.
+The package establishes a descriptive, reference-extreme reconfiguration in the released public record during Ida and documents a preceding public-file regime break. It does not identify police performance, a causal effect, an institutional mechanism, effective capacity, physical response, true DV incidence, or a DV-specific effect. Released call counts are reporting measures conditional on the declared CAD denominator and labeling rule.
 
-## 10. Literature refinement
+The unfavorable timing-shift placebo, incomplete symmetric support, public-file regime change, restricted denominator, and omitted internal provenance all limit interpretation. The 2025--2026 audit documents current public observability but does not turn administrative timestamps into verified operational clocks.
 
-Five user-supplied papers were reviewed page by page for overlap with the current argument. The PDFs are not redistributed in this public package. Their roles are:
+## 11. Literature placement
 
-- Brent and Beland (2020), *Journal of Environmental Economics and Management*, DOI `10.1016/j.jeem.2020.102339`: the closest economics antecedent, showing why valid first-responder response clocks have economic consequences using linked operational incident and traffic data.
-- Anastario, Shehab, and Lawry (2009), *Disaster Medicine and Public Health Preparedness*, DOI `10.1097/DMP.0b013e3181979c32`: post-Katrina gender-based violence among internally displaced women.
-- Schumacher et al. (2010), *Violence and Victims*, DOI `10.1891/0886-6708.25.5.588`: pre/post Katrina reports of IPV and associated mental-health outcomes in southern Mississippi.
-- Harville et al. (2011), *Journal of Interpersonal Violence*, DOI `10.1177/0886260510365861`: hurricane experience and reported partner conflict in a postpartum cohort.
-- First et al. (2022), *Social Work Research*, DOI `10.1093/swr/svac021`: Hurricane Harvey exposure, IPV, resilience, and mental-health outcomes.
+The main paper cites Brent and Beland (2020) as the closest economics antecedent: it demonstrates the value of valid first-responder response clocks using linked operational incident and traffic data. Four disaster--IPV studies establish substantive motivation but use different outcomes and designs; they do not validate public CAD fields or identify an Ida effect on reported DV calls. R14 therefore keeps the DV discussion short and prospective.
 
-The first paper is a direct response-time antecedent. The other four motivate the substantive importance of disaster-period DV measurement, but their survey-based designs do not validate public CAD fields or identify an Ida effect on reported DV calls. R13.0 makes this non-overlap explicit.
+Unpublished or inaccessible items flagged in review were removed from the manuscript bibliography: the project talk, the project self-citation, and the unverified working-paper citation. Reproduction artifacts retain their historical filenames and labels only where changing them would alter predecessor evidence.
 
-## 11. Version and predecessor
+## 12. Version and predecessor
 
-- Paper: R13.0
-- Scientific results: R12, unchanged
-- Package: 2
-- Untouched predecessor: `beland_plus_current_status_professor_2026-08-24_r12_2_v1`
+- Paper: R14.0
+- Scientific results: R14
+- Package: 1
+- Untouched predecessor: `beland_plus_current_status_professor_2026-08-24_r13_0_v1`
 - Public repository: `https://github.com/yuwen3756-hue/beland-plus-current-status-2026-08-24-r12-2`

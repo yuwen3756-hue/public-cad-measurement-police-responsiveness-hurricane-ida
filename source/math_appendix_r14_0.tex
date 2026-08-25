@@ -2,10 +2,10 @@
 \input{beland_style.tex}
 \fancyhead[L]{\footnotesize\itshape Mathematical appendix: workload, observation, and identification}
 
-\title{\vspace{-1.6em}\textbf{Mathematical Definitions, Identification Results, and Reproduction Guide}\\[0.35em]
+\title{\vspace{-1.6em}\textbf{Online Mathematical and Reproduction Supplement}\\[0.35em]
 \large Appendix to \emph{Public CAD Is Not Operational Ground Truth}}
 \author{}
-\date{24 August 2026\\[0.2em]\small Appendix R13.0 \quad Results R12}
+\date{24 August 2026\\[0.2em]\small Appendix R14.0 \quad Results R14}
 
 \begin{document}
 \maketitle
@@ -13,7 +13,7 @@
 \vspace{-1.2em}
 
 \begin{plainbox}[title=Purpose and reading guide]
-This appendix connects a police-workload layer to two mathematical modules. Section~\ref{sec:measurement_map} defines the reported-demand denominator, the public observation map, measure-specific identified sets, and target-specific witness minimality. Sections~\ref{sec:observables}--\ref{sec:reference} define the public-record stress-test statistic, and Section~\ref{sec:disposition} localizes the Ida pattern. Section~\ref{sec:structural} applies the identified-set logic to the internal/public bridge, queue, priority, DV classification, endpoint-selected response time, and follow-through. Section~\ref{sec:frontier} retains the prospective multi-model frontier. Section~\ref{sec:m8p} formalizes the 2025--2026 measurement-regime replay. Sections~\ref{sec:repro}--\ref{sec:claims} record numerical invariants, reproduction commands, and interpretation rules. Every reported empirical value comes from the locked aggregate artifacts.
+This online supplement preserves the mathematical and reproducibility material behind R14.0. The main paper now uses the simple maximum absolute cell contrast as its headline statistic and treats the constrained LP as robustness. Section~\ref{sec:measurement_map} defines the reported-demand denominator, observation map, and measure-specific identified sets. Sections~\ref{sec:observables}--\ref{sec:reference} document the standardized matrix, reference calibration, and legacy restricted-support score. Section~\ref{sec:disposition} gives the within-disposition accounting. Later sections retain the public/internal bridge, queue, priority, classification, endpoint-selection, 2025--2026 replay, finite verification, and exact reproduction boundaries. R14 aggregate diagnostics and resampling outputs are built by \path{scripts/build_r14_evidence.py}. Every empirical value is derived from packaged aggregate artifacts.
 \end{plainbox}
 
 \setcounter{tocdepth}{1}
@@ -86,7 +86,7 @@ with the clock, endpoint, and eligible population declared for target $k$.
 
 Two kinds of friction enter this system. Operational friction changes $S$ through holding, availability, assignment, handoffs, or follow-up. Record-production friction changes $R$ through classification, overwrite, retention, linkage, or export. Distinct pairs $(S,R)$ can generate the same $Y$, so public missingness alone cannot allocate the discrepancy between these sources. Holding and availability histories, joint public--internal counts, and retained stage lineage contract the relevant alternatives through \cref{eq:witness_contraction}.
 
-The released call count is likewise a measure of $D_t^{\mathrm{CAD}}$, rather than a direct measure of $D_t^*$ or either intermediate stage in \cref{eq:demand_chain}. R13.0 retains the R12 system-level estimates and reports no DV call-volume trend. Its DV application begins with a declared CAD risk set and derives the additional witnesses needed to measure service conditional on that set.
+The released call count is likewise a measure of $D_t^{\mathrm{CAD}}$, rather than a direct measure of $D_t^*$ or either intermediate stage in \cref{eq:demand_chain}. R14.0 retains the locked R12 system-level matrix and adds aggregate regime-change, full-count, and resampling diagnostics. It reports no DV call-volume trend. Its DV illustration begins with a declared CAD risk set and derives the additional information needed to measure service conditional on that set.
 
 \subsection{Target-specific sufficiency and inclusion-minimality}
 \label{sec:witness_minimality}
@@ -143,14 +143,14 @@ For an administrative follow-through rate, $\{w_C,w_L,w_A,w_Z\}$ is inclusion-mi
 
 These are target-specific results. Calls-holding transitions enter the minimum bundle when the target is queue delay. Realized unit availability enters when the target includes capacity or capacity-adjusted responsiveness. A fully observed receipt-to-qualified-endpoint distribution uses neither. Wherever $w_L$ appears, the privacy-conscious product must retain the indicated joint cells; marginal aggregates alone leave the pairing unresolved, although no event identifier need be released. This label does not assert a formal privacy guarantee.
 
-\subsection{The stress-test statistic is an observable diagnostic}
+\subsection{The simple stress statistic and the LP robustness statistic}
 
-The Ida statistic belongs to the released-record side of \cref{eq:observation_map}. Let $G(Y)$ be the standardized ten-bin public-topology matrix defined below. Then
+The Ida statistic belongs to the released-record side of \cref{eq:observation_map}. Let $G(Y)$ be the standardized ten-bin public-field contrast matrix defined below. R14.0 uses
 \begin{equation}
-T(Y):=U_{\mathrm{full}}(G(Y))
+T(Y):=M_{\max}(G(Y))=\max_{t,j}|G_{tj}|
 \label{eq:stress_diagnostic}
 \end{equation}
-is a constrained discrepancy statistic applied identically to Ida and every qualified reference window. It measures whether the released field relationships remain close to the frozen support class. It does not replace $m_k(S)$.
+as the headline descriptive statistic. It is applied identically to Ida and every qualified reference window and has no restricted-support interpretation. The historical constrained score $U_{\mathrm{full}}(G)$ is retained as a robustness statistic because it was frozen before pseudo-event outcomes were opened. Neither statistic replaces $m_k(S)$ or identifies the operational process.
 
 This separation fixes the inferential order. Ida establishes that the observed product $Y$ can become reference-extreme. Equation~\eqref{eq:measure_identified_set} determines what that product reveals about each candidate performance functional. Disaster-based studies often use a shock to expose system dependencies, but stronger operational conclusions come from linked outcomes, infrastructure measures, or structural restrictions \citep{CarvalhoNireiSaitoTahbazSalehi2021,AlvarezArgenteVanPatten2026}. Invariance across environments can carry causal content under additional assumptions; the present statistic uses environment comparison only to diagnose stability of released-record relationships \citep{PetersBuhlmannMeinshausen2016}.
 
@@ -528,9 +528,9 @@ Applied to $H_{11}$, the first term is the disposition-mass component and the se
 \end{align}
 The same conditional-share change enters $H_{11}$ and $H_{01}$ with opposite signs.
 
-\subsection{Composition-only exclusion theorem}
+\subsection{Within-disposition accounting implication}
 
-\begin{plainbox}[title=Theorem 1: composition-only sign restriction]
+\begin{plainbox}[title=Remark: sign implication under a restricted accounting model]
 Fix $r$ and $t$. Under the restricted composition-only model
 \begin{equation}
 q^\E_{r,t}=q^\R_{r,t}=q_{r,t},
@@ -550,9 +550,9 @@ and therefore
 Thus opposite-signed $\Delta H_{11,r,t}$ and $\Delta H_{01,r,t}$ exclude the restricted composition-only model for the public-state masses within that named observed final disposition.
 \end{plainbox}
 
-This result requires no stochastic test and no choice among decomposition orders. It is a finite-file accounting implication.
+This is an algebraic restatement of constancy of $q$ within the named recorded disposition, not a new identification theorem. It requires no stochastic test and no choice among decomposition orders.
 
-\subsection{Six independent sign witnesses}
+\subsection{Six repeated sign checks}
 
 The focal GOA, RTF, and NAT cells have the joint contrasts in \cref{tab:jointsigns}.
 
@@ -574,7 +574,7 @@ Calendar bin & Disposition & $\Delta H_{01,r}$ & $\Delta H_{11,r}$ \\
 \end{tabular}
 \end{table}
 
-All six products $\Delta H_{01,r}\Delta H_{11,r}$ are negative, so a composition-only explanation based on the observed final-disposition mix among arrival-observed records is excluded in every focal cell. Selection into the arrival-observed set, unobserved composition, within-category heterogeneity, semantic drift, and alternative service or record-production pathways remain possible. The contemporaneous disposition registry defines GOA as Gone on Arrival, RTF as Report to Follow, NAT as Necessary Action Taken, and UNF as Unfounded. The 2021 accounting is qualified; an unchanged cross-year disposition semantic chain is not assumed.
+All six products $\Delta H_{01,r}\Delta H_{11,r}$ are negative, so a composition-only explanation based on the observed final-disposition mix among arrival-observed records is inconsistent with every focal cell. These are repeated checks that share time bins and the arrival-observed denominator; they are not statistically independent witnesses. Selection into the arrival-observed set, unobserved composition, within-category heterogeneity, semantic drift, and alternative service or record-production pathways remain possible. The contemporaneous disposition registry defines GOA as Gone on Arrival, RTF as Report to Follow, NAT as Necessary Action Taken, and UNF as Unfounded. The 2021 accounting is qualified; an unchanged cross-year disposition semantic chain is not assumed.
 
 \subsection{Aggregate decomposition across dispositions}
 
@@ -1365,6 +1365,6 @@ The argument has two connected modules:
 The workload map links reported demand, capacity, priorities, and service. The first module shows that instability in the released observation of that system is empirically consequential. The second determines which reported-DV performance functionals remain supportable, bounded, selected, or unavailable and identifies the witnesses that contract each set. Those witnesses define privacy-conscious aggregate products for resource management and civilian oversight. The frozen Ida results remain system-level.
 
 \bibliographystyle{apalike}
-\bibliography{references_r13_0}
+\bibliography{references_r14_0}
 
 \end{document}

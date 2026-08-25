@@ -1,30 +1,34 @@
-# Current Status for Review
+# Public CAD Is Not Operational Ground Truth
 
-**Release date:** 24 August 2026  
-**Paper version:** R13.0  
-**Scientific-results version:** R12  
-**Package version:** 2
+- **Release:** 24 August 2026
+- **Paper:** R14.0
+- **Scientific results:** R14
 
-This package is the professor-review release of *Public CAD Is Not Operational Ground Truth: Hurricane Ida and the Measurement of Police Responsiveness*.
+This repository contains the professor-review package for *Public CAD Is Not Operational Ground Truth: Regime Change, Hurricane Ida, and the Measurement of Police Responsiveness*.
 
-## Recommended reading order
+## Read
 
-1. `paper/Beland_Current_Status_2026-08-24_R13_0.pdf` - main paper followed by the mathematical and reproducibility appendix.
-2. `REPRODUCTION_MANUAL.md` - what was done, what can be reproduced from this package, and the exact commands.
-3. `source/` and `reproduction/repository_snapshot/` - LaTeX, empirical replay code, locked aggregate artifacts, and formal-verification source.
+- [Combined paper and online supplement](paper/Beland_Current_Status_2026-08-24_R14_0.pdf)
+- [10-page main paper](paper/Beland_Current_Status_Main_2026-08-24_R14_0.pdf)
+- [30-page online supplement](paper/Beland_Current_Status_Appendix_2026-08-24_R14_0.pdf)
+- [Release overview](START_HERE.md)
+- [Reproduction manual](REPRODUCTION_MANUAL.md)
 
-## Current scientific status
+## R14.0 in brief
 
-- The empirical estimates remain system-level. The paper does not estimate a DV performance effect or a DV call-volume trend.
-- Ida's score interval exceeds the score intervals of all 217 qualified reference windows and remains separated in the two narrower prespecified comparison sets.
-- The complete 217-window reference-score distribution is shown in the main paper. The separate frozen timing-shift placebo is unfavorable, so precise institutional timing and mechanism are not identified.
-- Within arrival-observed records, a composition-only explanation based on the observed final-disposition mix is excluded in the six focal cells. Selection and other service or record-production pathways remain possible.
-- The released record cannot by itself distinguish operational service paths from recording, retention, and export paths. Candidate DV measures are therefore classified as directly supportable, bounded, selected, or unavailable according to their required evidence.
-- Current public data add descriptive and semantic detail, but they do not supply queue stock, effective capacity, complete priority histories, realized continuity states, or a stable internal-to-public lineage bridge.
-- Numerical LP results remain `TESTED_ONLY`. Lean verifies stated mathematical theorems under their assumptions; institutional and source-field bindings still require human review.
+R14.0 is a major referee-response revision. It makes the 28 July 2021 public-file regime break the first result, corrects the estimator denominator to non-officer-initiated records, uses the transparent maximum-cell contrast as the headline statistic, makes the stage-era comparison primary, discloses Ida's failure of the 0.90 symmetric support rule, and adds conditional bootstrap intervals, full-count robustness, every secondary-statistic rank, threshold sensitivity, and excluded-emergency comparisons.
 
-## Why this is a major version
+The result is descriptive: Ida is an extreme reconfiguration of the released public record relative to retained ordinary weeks. The analysis does not identify police performance, a causal effect, an institutional mechanism, physical response, effective capacity, true domestic-violence incidence, or a DV-specific effect.
 
-R13.0 changes the paper's contribution architecture while retaining the R12 mathematics and numerical results. The all-call CAD measurement fact is now the empirical center; the reported-DV material is a bounded application for a future study. The revision adds the direct Brent--Beland first-responder antecedent, four disaster--IPV studies, an explicit post-anchor prospective chronology, the unfavorable timing placebo, cohort-time semantics, narrower within-disposition language, and a complete reference-distribution figure. The R12.2 package remains an untouched predecessor.
+## Reproduce
 
-No empirical result was recomputed or promoted merely to make this review package. The public repository is `https://github.com/yuwen3756-hue/beland-plus-current-status-2026-08-24-r12-2`.
+From the repository root:
+
+```powershell
+python .\scripts\build_r14_evidence.py
+powershell -ExecutionPolicy Bypass -File .\scripts\verify_release.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\replay_m7b.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\build_pdfs.ps1
+```
+
+See the reproduction manual for environment details, source-cache bindings, and the formal-verification commands.

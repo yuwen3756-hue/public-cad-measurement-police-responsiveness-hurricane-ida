@@ -1,0 +1,12 @@
+# This repository is a byte-for-byte release package. Preserve packaged files
+# exactly so PACKAGE_MANIFEST.sha256 remains valid on Windows and Unix clones.
+* -text
+
+# Keep repository-facing control files readable with stable line endings.
+.gitattributes text eol=lf
+README.md text eol=lf
+
+# Large archived artifacts are verified by hash rather than reviewed as text.
+paper/** -diff
+reproduction/** -diff
+source/*.csv -diff
