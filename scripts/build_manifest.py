@@ -1,4 +1,4 @@
-"""Build the deterministic SHA-256 manifest for the R14 release package."""
+"""Build the deterministic SHA-256 manifest for the R15 release package."""
 
 from __future__ import annotations
 

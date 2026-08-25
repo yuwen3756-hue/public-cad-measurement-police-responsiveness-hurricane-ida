@@ -1,4 +1,4 @@
-"""Build the R14 aggregate diagnostics from the packaged frozen artifacts.
+"""Build the R15 aggregate diagnostics from the packaged frozen artifacts.
 
 The script reads only privacy-conscious aggregate files already contained in
 the release. It does not read call narratives, addresses, or row-level data.
@@ -26,6 +26,11 @@ M7B = (
     / "nola_2020-01-01_2024-12-31_beland_plus_wave4r"
     / "candidate"
     / "m7b_same_estimator_reference_geometry"
+)
+M8P = (
+    SNAPSHOT
+    / "experiments"
+    / "nola_2025-01-01_2026-08-11_m8p_public_observability_replay"
 )
 TALLY = W2 / "data" / "interim" / "w2_period_tally.csv.gz"
 
@@ -144,6 +149,14 @@ def monthly_rows(daily, si: str) -> list[dict]:
     return [{"month": month, **metrics(grouped[month])} for month in sorted(grouped)]
 
 
+def annual_rows(daily, si: str) -> list[dict]:
+    grouped: dict[int, np.ndarray] = defaultdict(lambda: np.zeros(5, dtype=np.int64))
+    for (day, row_si), values in daily.items():
+        if row_si == si:
+            grouped[day.year] += values
+    return [{"year": year, "initiation_stream": si, **metrics(grouped[year])} for year in sorted(grouped)]
+
+
 def half_side(detail, start: date, si: str, half: int) -> dict[str, np.ndarray]:
     allowed = set(HALF_HOURS[half])
     out: dict[str, np.ndarray] = defaultdict(lambda: np.zeros(5, dtype=np.int64))
@@ -154,11 +167,11 @@ def half_side(detail, start: date, si: str, half: int) -> dict[str, np.ndarray]:
     return dict(out)
 
 
-def standardized_ida_inputs(detail):
+def standardized_window_inputs(detail, start: date):
     bins = []
     point = np.zeros((10, 3), dtype=float)
     for index in range(10):
-        event_day = IDA_START + timedelta(days=index // 2)
+        event_day = start + timedelta(days=index // 2)
         reference_day = event_day - timedelta(days=7)
         event = half_side(detail, event_day, "non_officer_self_initiated", index % 2)
         reference = half_side(detail, reference_day, "non_officer_self_initiated", index % 2)
@@ -262,6 +275,30 @@ def raw_window(half_totals, start: date) -> tuple[float | None, int, int]:
     return maximum, event_total, reference_total
 
 
+def raw_bootstrap_draws(half_totals, start: date, seed: int) -> np.ndarray:
+    """Bootstrap the full-count maximum statistic for one five-day window."""
+    rng = np.random.default_rng(seed)
+    draws = np.zeros((BOOTSTRAP_REPLICATES, 10, 3), dtype=float)
+    for index in range(10):
+        event_day = start + timedelta(days=index // 2)
+        reference_day = event_day - timedelta(days=7)
+        event = raw_half(half_totals, event_day, "non_officer_self_initiated", index % 2)
+        reference = raw_half(half_totals, reference_day, "non_officer_self_initiated", index % 2)
+        if not event[0] or not reference[0]:
+            raise RuntimeError(f"Empty raw half-day for {start.isoformat()} B{index + 1}")
+        event_draw = rng.multinomial(
+            int(event[0]), event[1:] / event[0], size=BOOTSTRAP_REPLICATES
+        )
+        reference_draw = rng.multinomial(
+            int(reference[0]), reference[1:] / reference[0], size=BOOTSTRAP_REPLICATES
+        )
+        draws[:, index, :] = (
+            event_draw[:, (2, 1, 3)] / event[0]
+            - reference_draw[:, (2, 1, 3)] / reference[0]
+        )
+    return np.max(np.abs(draws), axis=(1, 2))
+
+
 def read_csv_rows(path: Path) -> list[dict]:
     with open_text(path, newline="") as handle:
         return list(csv.DictReader(handle))
@@ -276,14 +313,19 @@ def main() -> None:
     non_officer = "non_officer_self_initiated"
     officer = "officer_initiated"
 
-    write_csv(SOURCE / "r14_weekly_field_completeness.csv", weekly_rows(daily, non_officer))
-    write_csv(SOURCE / "r14_monthly_field_completeness.csv", monthly_rows(daily, non_officer))
+    write_csv(SOURCE / "r15_weekly_field_completeness.csv", weekly_rows(daily, non_officer))
+    write_csv(SOURCE / "r15_monthly_field_completeness.csv", monthly_rows(daily, non_officer))
+    write_csv(SOURCE / "r15_monthly_officer_field_completeness.csv", monthly_rows(daily, officer))
+    write_csv(
+        SOURCE / "r15_annual_initiation_field_completeness.csv",
+        annual_rows(daily, non_officer) + annual_rows(daily, officer),
+    )
 
     daily_rows = []
     for day in sorted({key[0] for key in daily}):
         if date(2021, 7, 1) <= day <= date(2021, 9, 15):
             daily_rows.append({"date": day.isoformat(), **metrics(daily[(day, non_officer)])})
-    write_csv(SOURCE / "r14_daily_ida_field_completeness.csv", daily_rows)
+    write_csv(SOURCE / "r15_daily_ida_field_completeness.csv", daily_rows)
 
     first_nonzero = min(
         day for (day, si), values in daily.items() if si == non_officer and values[3] > 0
@@ -307,7 +349,49 @@ def main() -> None:
         period_rows.append(
             {"period": label, "start": start.isoformat(), "end": end.isoformat(), **metrics(aggregate_daily(daily, non_officer, start, end))}
         )
-    write_csv(SOURCE / "r14_period_summary.csv", period_rows)
+    write_csv(SOURCE / "r15_period_summary.csv", period_rows)
+
+    current_audit = read_json(
+        M8P / "data" / "processed" / "current_data_validity_audit.json"
+    )
+    current_rows = []
+    for year in ("2025", "2026"):
+        annual = current_audit["years"][year]
+        for initiation in ("N", "Y"):
+            values = annual["stage_by_selfinitiated"][initiation]
+            current_rows.append(
+                {
+                    "year": year,
+                    "denominator": "non_officer" if initiation == "N" else "officer",
+                    "rows": values["rows"],
+                    "dispatch_present": values["dispatch_present"],
+                    "dispatch_share": values["dispatch_present_rate"],
+                    "arrival_present": values["arrival_present"],
+                    "arrival_share": values["arrival_present_rate"],
+                }
+            )
+        all_dispatch = sum(
+            annual["stage_by_selfinitiated"][value]["dispatch_present"]
+            for value in ("N", "Y")
+        )
+        current_rows.append(
+            {
+                "year": year,
+                "denominator": "all_public_rows",
+                "rows": annual["rows"],
+                "dispatch_present": all_dispatch,
+                "dispatch_share": all_dispatch / annual["rows"],
+                "arrival_present": sum(
+                    annual["stage_by_selfinitiated"][value]["arrival_present"]
+                    for value in ("N", "Y")
+                ),
+                "arrival_share": sum(
+                    annual["stage_by_selfinitiated"][value]["arrival_present"]
+                    for value in ("N", "Y")
+                ) / annual["rows"],
+            }
+        )
+    write_csv(SOURCE / "r15_current_denominator_audit.csv", current_rows)
 
     registry = read_json(M7B / "M7B_REFERENCE_WINDOW_REGISTRY.json")
     excluded = set(registry["frozen_context_exclusions"])
@@ -352,13 +436,13 @@ def main() -> None:
             }
         )
         current += timedelta(days=7)
-    write_csv(SOURCE / "r14_raw_window_scores.csv", raw_rows)
+    write_csv(SOURCE / "r15_raw_window_scores.csv", raw_rows)
 
     ida_stat = next(row for row in statistics if row["window_start"] == IDA_START.isoformat())
     stage_rows = [row for row in statistics if "STAGE_ERA_MATCHED_REFERENCE" in row["universes"]]
     stage_rows.sort(key=lambda row: float(row["M_max_cell"]))
     write_csv(
-        SOURCE / "r14_stage_era_reference_scores.csv",
+        SOURCE / "r15_stage_era_reference_scores.csv",
         [
             {
                 "rank": index + 1,
@@ -402,9 +486,9 @@ def main() -> None:
                     "denominator_including_Ida": len(values) + 1,
                 }
             )
-    write_csv(SOURCE / "r14_secondary_statistic_ranks.csv", secondary_rows)
+    write_csv(SOURCE / "r15_secondary_statistic_ranks.csv", secondary_rows)
 
-    point, bins = standardized_ida_inputs(detail)
+    point, bins = standardized_window_inputs(detail, IDA_START)
     matrix_rows = read_csv_rows(M7B / "M7B_REFERENCE_G_MATRICES.csv")
     published = np.zeros((10, 3), dtype=float)
     for row in matrix_rows:
@@ -413,9 +497,32 @@ def main() -> None:
             published[index] = [float(row[f"Delta_{name}"]) for name in PRIMARY]
     parity = float(np.max(np.abs(point - published)))
     if parity > 1e-12:
-        raise RuntimeError(f"R14 Ida G parity failure: {parity}")
+        raise RuntimeError(f"R15 Ida G parity failure: {parity}")
     bootstrap_rows, bootstrap_summary = bootstrap_cells(point, bins)
-    write_csv(SOURCE / "r14_bootstrap_cells.csv", bootstrap_rows)
+    write_csv(SOURCE / "r15_bootstrap_cells.csv", bootstrap_rows)
+    standardized_bootstrap_rows = [
+        {
+            "estimator": "standardized_common_support",
+            "window_start": IDA_START.isoformat(),
+            "window_label": "Hurricane Ida",
+            **{key: bootstrap_summary[key] for key in ("point", "p025", "p975")},
+        }
+    ]
+    top_stage_rows = sorted(
+        stage_rows, key=lambda row: float(row["M_max_cell"]), reverse=True
+    )[:5]
+    for offset, row in enumerate(top_stage_rows, start=1):
+        window_start = date.fromisoformat(row["window_start"])
+        window_point, window_bins = standardized_window_inputs(detail, window_start)
+        _, window_summary = bootstrap_cells(window_point, window_bins)
+        standardized_bootstrap_rows.append(
+            {
+                "estimator": "standardized_common_support",
+                "window_start": row["window_start"],
+                "window_label": f"top_stage_reference_{offset}",
+                **{key: window_summary[key] for key in ("point", "p025", "p975")},
+            }
+        )
 
     thresholds = read_json(M7B / "M7B_MAX_CELL_REFERENCE_THRESHOLD.json")["results"]
     threshold_counts = {
@@ -439,14 +546,58 @@ def main() -> None:
         for row in raw_rows
         if "STAGE_ERA_MATCHED_REFERENCE" in row["prespecified_universes"] and row["raw_max_cell"] != ""
     ]
-    raw_post_change = [
-        float(row["raw_max_cell"])
+    raw_post_change_rows = [
+        row
         for row in raw_rows
         if row["both_sides_after_change"] is True
         and row["frozen_context_excluded"] is False
         and row["window_start"] != IDA_START.isoformat()
         and row["raw_max_cell"] != ""
     ]
+    raw_post_change = [float(row["raw_max_cell"]) for row in raw_post_change_rows]
+    ida_raw_draws = raw_bootstrap_draws(half_totals, IDA_START, BOOTSTRAP_SEED + 100)
+    reference_raw_draws = []
+    for index, row in enumerate(raw_post_change_rows):
+        reference_raw_draws.append(
+            raw_bootstrap_draws(
+                half_totals,
+                date.fromisoformat(row["window_start"]),
+                BOOTSTRAP_SEED + 101 + index,
+            )
+        )
+    raw_rank_draws = 1 + np.sum(
+        np.asarray(reference_raw_draws) > ida_raw_draws[None, :], axis=0
+    )
+    raw_bootstrap_rows = [
+        {
+            "estimator": "raw_full_count",
+            "window_start": IDA_START.isoformat(),
+            "window_label": "Hurricane Ida",
+            "point": ida_raw,
+            "p025": float(np.quantile(ida_raw_draws, 0.025)),
+            "p975": float(np.quantile(ida_raw_draws, 0.975)),
+        }
+    ]
+    for offset, row in enumerate(
+        sorted(raw_post_change_rows, key=lambda item: float(item["raw_max_cell"]), reverse=True)[:5],
+        start=1,
+    ):
+        source_index = raw_post_change_rows.index(row)
+        values = reference_raw_draws[source_index]
+        raw_bootstrap_rows.append(
+            {
+                "estimator": "raw_full_count",
+                "window_start": row["window_start"],
+                "window_label": f"top_post_change_reference_{offset}",
+                "point": float(row["raw_max_cell"]),
+                "p025": float(np.quantile(values, 0.025)),
+                "p975": float(np.quantile(values, 0.975)),
+            }
+        )
+    write_csv(
+        SOURCE / "r15_bootstrap_window_maxima.csv",
+        standardized_bootstrap_rows + raw_bootstrap_rows,
+    )
     episodes = {
         row["episode"]: {
             "window_start": row["window_start"],
@@ -459,7 +610,7 @@ def main() -> None:
     }
 
     summary = {
-        "artifact_type": "R14_AGGREGATE_REVIEW_DIAGNOSTICS",
+        "artifact_type": "R15_AGGREGATE_REVIEW_DIAGNOSTICS",
         "source": "packaged w2_period_tally.csv.gz and locked M7B artifacts",
         "privacy_class": "aggregate-only; no narratives, addresses, identifiers, or row-level records",
         "change_date": {
@@ -491,7 +642,19 @@ def main() -> None:
             "unstandardized_post_change_denominator_including_Ida": len(raw_post_change) + 1,
         },
         "threshold_sensitivity": threshold_counts,
+        "current_denominator_audit": current_rows,
         "sampling_diagnostic": bootstrap_summary,
+        "sampling_window_comparisons": {
+            "standardized_windows": len(standardized_bootstrap_rows),
+            "raw_windows": len(raw_bootstrap_rows),
+            "raw_post_change_reference_count": len(raw_post_change_rows),
+            "raw_Ida_rank_bootstrap": {
+                "p025": float(np.quantile(raw_rank_draws, 0.025)),
+                "median": float(np.median(raw_rank_draws)),
+                "p975": float(np.quantile(raw_rank_draws, 0.975)),
+                "probability_rank_1": float(np.mean(raw_rank_draws == 1)),
+            },
+        },
         "officer_initiation": {
             "Ida_five_day_officer_share": int(event_off[0]) / (int(event_off[0]) + int(event_non[0])),
             "baseline_five_day_officer_share": int(base_off[0]) / (int(base_off[0]) + int(base_non[0])),
@@ -513,8 +676,8 @@ def main() -> None:
             "DV_incidence_identified": False,
         },
     }
-    write_json(SOURCE / "r14_aggregate_diagnostics.json", summary)
-    print("R14_EVIDENCE_BUILD_PASS")
+    write_json(SOURCE / "r15_aggregate_diagnostics.json", summary)
+    print("R15_EVIDENCE_BUILD_PASS")
     print(json.dumps(summary["headline_statistics"], indent=2, sort_keys=True))
 
 

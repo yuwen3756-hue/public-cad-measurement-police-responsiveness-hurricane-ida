@@ -1,5 +1,5 @@
 {
-  "artifact_type": "R14_AGGREGATE_REVIEW_DIAGNOSTICS",
+  "artifact_type": "R15_AGGREGATE_REVIEW_DIAGNOSTICS",
   "boundaries": {
     "DV_incidence_identified": false,
     "causal_effect": false,
@@ -13,6 +13,62 @@
     "interpretation": "empirical public-file regime break; institutional cause not identified",
     "prechange_non_officer_J01_count": 0
   },
+  "current_denominator_audit": [
+    {
+      "arrival_present": 153572,
+      "arrival_share": 0.7417145617000724,
+      "denominator": "non_officer",
+      "dispatch_present": 136712,
+      "dispatch_share": 0.6602849553248008,
+      "rows": 207050,
+      "year": "2025"
+    },
+    {
+      "arrival_present": 122511,
+      "arrival_share": 0.9982969361147327,
+      "denominator": "officer",
+      "dispatch_present": 1117,
+      "dispatch_share": 0.009102020860495436,
+      "rows": 122720,
+      "year": "2025"
+    },
+    {
+      "arrival_present": 276083,
+      "arrival_share": 0.8371986536070595,
+      "denominator": "all_public_rows",
+      "dispatch_present": 137829,
+      "dispatch_share": 0.41795493829032354,
+      "rows": 329770,
+      "year": "2025"
+    },
+    {
+      "arrival_present": 97225,
+      "arrival_share": 0.7458993755082626,
+      "denominator": "non_officer",
+      "dispatch_present": 87129,
+      "dispatch_share": 0.6684439875408528,
+      "rows": 130346,
+      "year": "2026"
+    },
+    {
+      "arrival_present": 79335,
+      "arrival_share": 0.9981379666092121,
+      "denominator": "officer",
+      "dispatch_present": 738,
+      "dispatch_share": 0.00928500434055081,
+      "rows": 79483,
+      "year": "2026"
+    },
+    {
+      "arrival_present": 176560,
+      "arrival_share": 0.8414470831010012,
+      "denominator": "all_public_rows",
+      "dispatch_present": 87867,
+      "dispatch_share": 0.41875527215017944,
+      "rows": 209829,
+      "year": "2026"
+    }
+  ],
   "excluded_episodes_unstandardized": {
     "February freeze": {
       "event_n": 2851,
@@ -96,6 +152,17 @@
     "point": 0.5071816170350076,
     "replicates": 4000,
     "seed": 1400
+  },
+  "sampling_window_comparisons": {
+    "raw_Ida_rank_bootstrap": {
+      "median": 1.0,
+      "p025": 1.0,
+      "p975": 1.0,
+      "probability_rank_1": 1.0
+    },
+    "raw_post_change_reference_count": 151,
+    "raw_windows": 6,
+    "standardized_windows": 6
   },
   "source": "packaged w2_period_tally.csv.gz and locked M7B artifacts",
   "threshold_sensitivity": {

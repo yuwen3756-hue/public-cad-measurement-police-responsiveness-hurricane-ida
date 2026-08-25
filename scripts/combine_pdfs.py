@@ -8,7 +8,7 @@ from pypdf import PdfReader, PdfWriter
 
 def main() -> None:
     if len(sys.argv) != 4:
-        raise SystemExit("usage: combine_pdfs.py MAIN.pdf APPENDIX.pdf OUTPUT.pdf")
+        raise SystemExit("usage: combine_pdfs.py MAIN.pdf SUPPLEMENT.pdf OUTPUT.pdf")
 
     inputs = [Path(sys.argv[1]), Path(sys.argv[2])]
     output = Path(sys.argv[3])

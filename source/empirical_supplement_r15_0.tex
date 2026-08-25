@@ -1,0 +1,435 @@
+\documentclass[11pt]{article}
+\input{beland_style.tex}
+\usepgfplotslibrary{dateplot}
+\fancyhead[L]{\footnotesize\itshape Online empirical and methods supplement}
+
+\title{\vspace{-1.6em}\textbf{Online Empirical and Methods Supplement}\\[0.35em]
+\large Public CAD Is Not Operational Ground Truth}
+\author{}
+\date{25 August 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+\vspace{-1.2em}
+
+\begin{plainbox}[title=Scope]
+This supplement documents the public-source lineage, raw July audit, comparison design, support diagnostics, resampling, initiation-stream evidence, current-data denominator audit, institutional-source check, and reproduction contract. It is organized around the empirical claims in the main paper. Extended identified-set proofs, constrained-program certificates, and formal-verification material are kept in the separate \emph{Legacy Mathematical and Formal-Verification Archive} and are not appended to the professor-facing paper.
+\end{plainbox}
+
+\setcounter{tocdepth}{1}
+\begingroup
+\small
+\tableofcontents
+\endgroup
+\newpage
+
+\section{Claim and evidence hierarchy}
+
+The analysis distinguishes four evidence classes.
+\begin{enumerate}
+\item \textbf{First-hand public bytes:} official DataNOLA CSVs and their hashes.
+\item \textbf{Deterministic aggregate transforms:} daily, half-day, monthly, and annual state counts derived from those files.
+\item \textbf{Institutional documents:} official metadata, data dictionary, policy, oversight, and audit reports that define labels or exclude candidate explanations.
+\item \textbf{Latent operational objects:} internal dispatch events, queue states, availability, entry histories, overwrite logs, and export transformations, which are not observed.
+\end{enumerate}
+
+The first three classes identify a public-record regime change and delimit candidate interpretations. They do not turn the fourth class into observed data. Accordingly, $J_{01}$ is always a public configuration---arrival field present, dispatch field absent---rather than a claim of physical arrival without dispatch.
+
+\section{Annual public-source lineage}
+
+\subsection{Dataset binding}
+
+Table~\ref{tab:lineage} binds each analysis year to the official DataNOLA identifier and the first-hand cache audit. Each annual bundle hash is computed by sorting the twelve monthly filenames and hashing the filename plus each file's SHA-256 digest. This avoids concatenating or redistributing the raw source files. The monthly cache did not retain a reliable acquisition-date field, so the table reports that limitation rather than converting filesystem timestamps into retrieval dates. All sources were reverified on 25 August 2026.
+
+\begin{table}[!htbp]
+\centering
+\caption{Annual DataNOLA source lineage, 2020--2024}
+\label{tab:lineage}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{@{}cllrrl@{}}
+\toprule
+Year & Dataset & Observed creation range & Rows & Files & Annual bundle SHA-256 \\
+\midrule
+2020 & hp7u-i9hf & 1 Jan.--31 Dec. 2020 & 432,892 & 12 & \texttt{a1d3d7fffb6a34e7\ldots da7cc0db1} \\
+2021 & 3pha-hum9 & 1 Jan.--31 Dec. 2021 & 428,315 & 12 & \texttt{53b0ae39abbbc363\ldots a7edc559} \\
+2022 & nci8-thrr & 1 Jan.--31 Dec. 2022 & 354,207 & 12 & \texttt{1ca797cd30109a80\ldots e3d1e4d8} \\
+2023 & pc5d-tvaw & 1 Jan.--31 Dec. 2023 & 325,091 & 12 & \texttt{68d583fe0c4dbb43\ldots 4f011a13a} \\
+2024 & 2zcj-b6ts & 1 Jan.--31 Dec. 2024 & 327,696 & 12 & \texttt{041f7ac52458c797\ldots b4f6f464} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\begin{minipage}{0.98\textwidth}\footnotesize
+Exact observed minimum and maximum timestamps, full hashes, monthly-file hashes, byte counts, local cache mtimes, official URLs, parser version, and verification date are in \texttt{r15\_annual\_source\_lineage.csv} and \texttt{r15\_public\_source\_audit.json}. Retrieval dates were not recorded in the monthly cache.
+\end{minipage}
+\end{table}
+
+The annual row counts are raw public-file rows before the paper's initiation restriction. Analysis denominators are constructed after parsing \texttt{SelfInitiated}. No narratives or addresses are used. Item identifiers are used only by the upstream canonical pipeline for deduplication and are not written to review artifacts.
+
+\subsection{Official metadata and changelog}
+
+The official 2021 page identifies OPCD as data provider, reports 21 public columns, supplies a data-dictionary attachment, and warns about preliminary classifications, later changes, mechanical or human error, sequencing, and over-time comparisons \citep{DataNOLA2021}. When inspected, its public ``Dataset Changelog'' stated that no changes had been archived. This is itself an observability limitation: the public page does not provide a dated change record that could explain 28 July 2021.
+
+\section{Raw July audit}
+
+\subsection{Parsing and state construction}
+
+The audit applies the same public-field definitions as the aggregate analysis:
+\begin{align}
+D_i &= \ind\{\texttt{TimeDispatch}_i \text{ is nonblank}\},\\
+A_i &= \ind\{\texttt{TimeArrive}_i \text{ parses and is no earlier than }\texttt{TimeCreate}_i\}.
+\end{align}
+Timestamps are parsed as local ISO strings with a \texttt{T} or single-space separator. Empty strings and the textual values \texttt{null}, \texttt{none}, \texttt{nan}, and \texttt{nat} are missing sentinels. All nonblank dispatch and arrival values in the audit interval parse. Format-class counts show no switch that could produce the break mechanically.
+
+\begin{table}[!htbp]
+\centering
+\caption{Complete aggregate audit, 25--31 July 2021}
+\label{tab:julyfull}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{@{}llrrrrrrrrr@{}}
+\toprule
+Date & Stream & $N$ & $D$ nonblank & $D$ parsed & $A$ nonblank & $A$ valid & $J_{00}$ & $J_{10}$ & $J_{01}$ & $J_{11}$ \\
+\midrule
+25 Jul. & Non-officer & 721 & 631 & 631 & 532 & 532 & 90 & 99 & 0 & 532 \\
+26 Jul. & Non-officer & 733 & 663 & 663 & 565 & 565 & 70 & 98 & 0 & 565 \\
+27 Jul. & Non-officer & 731 & 658 & 658 & 585 & 585 & 73 & 73 & 0 & 585 \\
+28 Jul. & Non-officer & 620 & 509 & 509 & 502 & 502 & 77 & 41 & 34 & 468 \\
+29 Jul. & Non-officer & 666 & 510 & 510 & 532 & 532 & 87 & 47 & 69 & 463 \\
+30 Jul. & Non-officer & 705 & 542 & 542 & 559 & 559 & 98 & 48 & 65 & 494 \\
+31 Jul. & Non-officer & 725 & 584 & 584 & 572 & 572 & 96 & 57 & 45 & 527 \\
+\midrule
+25 Jul. & Officer & 377 & 377 & 377 & 377 & 377 & 0 & 0 & 0 & 377 \\
+26 Jul. & Officer & 404 & 404 & 404 & 404 & 404 & 0 & 0 & 0 & 404 \\
+27 Jul. & Officer & 479 & 479 & 479 & 479 & 479 & 0 & 0 & 0 & 479 \\
+28 Jul. & Officer & 575 & 230 & 230 & 575 & 575 & 0 & 0 & 345 & 230 \\
+29 Jul. & Officer & 504 & 5 & 5 & 504 & 504 & 0 & 0 & 499 & 5 \\
+30 Jul. & Officer & 548 & 3 & 3 & 548 & 548 & 0 & 0 & 545 & 3 \\
+31 Jul. & Officer & 389 & 1 & 1 & 389 & 389 & 0 & 0 & 388 & 1 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\subsection{What the audit resolves}
+
+The audit resolves three concerns. The first $J_{01}$ date is present in official source bytes. The change survives a parseability audit. And the abrupt officer-stream shift shows that the non-officer pattern is part of a broader public-record transition rather than an isolated fluctuation in one classified group.
+
+The audit does not resolve the institutional cause. It has no event-entry history, user action, intermediate CAD object, export log, or versioned retention rule. The strongest supported wording is therefore ``public-recording transition associated with initiation status,'' not a named software or operational mechanism.
+
+\section{State matrix and estimator}
+
+For half-day bin $t$, state $j\in\{J_{01},J_{10},J_{11}\}$, and common stratum $x$, let $p^E_{tjx}$ and $p^B_{tjx}$ be event and baseline shares and let $w^B_{tx}$ be the baseline weight over common support. The standardized contrast is
+\begin{equation}
+G_{tj}=\sum_{x\in\mathcal X_t^E\cap\mathcal X_t^B}w^B_{tx}(p^E_{tjx}-p^B_{tjx}).
+\end{equation}
+The simple amplitude is $M_{\max}=\max_{t,j}|G_{tj}|$. The event window begins 29 August 2021 and contains ten twelve-hour bins; the baseline is seven days earlier.
+
+The standardized stage-era universe consists of 153 retained ordinary-week references beginning on or after 1 July 2021. Sixty-six eligible full-universe references occur entirely before 28 July, when $J_{01}$ is structurally absent, and 64 start before the 1 July stage cutoff. These facts explain why a common formula does not imply a common measurement regime.
+
+The full-count statistic drops the stratum intersection and weights. For each half-day it compares unconditional state shares and again takes the maximum absolute cell contrast. Two reference sets are reported:
+\begin{itemize}
+\item the inherited stage-era membership set, which removes support selection but retains the existing membership rule; and
+\item a post-change set requiring both event and baseline sides to begin after 28 July, while retaining the frozen context exclusions.
+\end{itemize}
+The second is the support-independent comparison for the post-change measurement product.
+
+\section{Common-support audit}
+
+\begin{table}[t]
+\centering
+\caption{Ida common-support coverage and record counts}
+\label{tab:coverage}
+\begin{tabular}{@{}crrrr@{}}
+\toprule
+Bin & Event $N$ & Baseline $N$ & Event coverage & Baseline coverage \\
+\midrule
+B1 & 276 & 244 & 0.928 & 0.754 \\
+B2 & 674 & 335 & 0.901 & 0.612 \\
+B3 & 206 & 291 & 0.748 & 0.505 \\
+B4 & 495 & 433 & 0.919 & 0.815 \\
+B5 & 295 & 290 & 0.766 & 0.838 \\
+B6 & 464 & 421 & 0.873 & 0.812 \\
+B7 & 311 & 268 & 0.846 & 0.802 \\
+B8 & 464 & 379 & 0.851 & 0.836 \\
+B9 & 240 & 255 & 0.829 & 0.812 \\
+B10 & 453 & 416 & 0.834 & 0.851 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The minimum coverages are 0.748 and 0.505; record-weighted coverages are 0.861 and 0.770. The symmetric 0.90 rule fails. Consequently, the standardized result cannot be described as the full event-window population. The full-count statistic uses all 3,878 event and 3,332 baseline records.
+
+\section{Bootstrap expansion}
+
+\subsection{Standardized windows}
+
+Within each observed stratum, records are resampled as multinomial draws over $(J_{00},J_{10},J_{01},J_{11})$ while holding the observed stratum totals and baseline weights fixed. This is exactly the record-level nonparametric bootstrap available from the aggregate state counts. It captures record sampling conditional on the observed strata; it does not capture serial dependence, regime-boundary uncertainty, or design selection.
+
+\begin{table}[t]
+\centering
+\caption{Bootstrap intervals for Ida and the five strongest standardized references}
+\label{tab:bootstd}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Window & Point & 2.5th percentile & 97.5th percentile \\
+\midrule
+Ida, 29 Aug. 2021 & 0.5072 & 0.4597 & 0.5656 \\
+15 May 2022 & 0.3282 & 0.2655 & 0.3954 \\
+22 May 2022 & 0.3083 & 0.2528 & 0.3725 \\
+12 May 2024 & 0.3064 & 0.2502 & 0.3880 \\
+5 May 2024 & 0.2904 & 0.2355 & 0.3660 \\
+10 Dec. 2023 & 0.2656 & 0.1630 & 0.3764 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Full-count windows and rank distribution}
+
+The same multinomial logic is applied to unconditional half-day state counts. Ida's full-count interval is $[0.4754,0.6015]$. The strongest post-change reference point is 0.3098 with interval $[0.2599,0.3799]$; the remaining top-five intervals have upper endpoints between 0.3636 and 0.3843. For each of 4,000 draws, Ida is ranked against all 151 independently resampled post-change references. Rank 1 occurs in 100 percent of draws, and the reported rank interval is $[1,1]$.
+
+\begin{table}[t]
+\centering
+\caption{Full-count bootstrap: Ida and five strongest post-change references}
+\label{tab:bootraw}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Window & Point & 2.5th percentile & 97.5th percentile \\
+\midrule
+Ida, 29 Aug. 2021 & 0.5320 & 0.4754 & 0.6015 \\
+15 May 2022 & 0.3098 & 0.2599 & 0.3799 \\
+10 Dec. 2023 & 0.2978 & 0.2140 & 0.3843 \\
+19 Jun. 2022 & 0.2959 & 0.2384 & 0.3636 \\
+5 May 2024 & 0.2941 & 0.2501 & 0.3735 \\
+12 May 2024 & 0.2926 & 0.2238 & 0.3773 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Thresholds, secondary statistics, and excluded episodes}
+
+The 95th-percentile maximum-cell thresholds are 0.2094 in the full set, 0.2247 in the stage-era set, and 0.2057 in the same-season set. They yield 9, 8, and 9 exceeding cells. Reporting one threshold without the other two would overstate the stability of a binary label.
+
+\begin{table}[t]
+\centering
+\caption{Secondary stage-era statistics}
+\label{tab:secondarysupp}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Statistic & Ida & Largest reference & Rank including Ida \\
+\midrule
+$M_{\max}$ / $A$ & 0.5072 & 0.3282 & 1/154 \\
+$\sigma_1$ & 1.0837 & 0.6011 & 1/154 \\
+$\sigma_2$ & 0.2623 & 0.2451 & 1/154 \\
+$\sigma_3$ & 0.0858 & 0.1112 & 11/154 \\
+$U_{\mathrm{direct}}$ & 0.4223 & 0.3282 & 1/154 \\
+$U_{\mathrm{full}}$ upper & 0.2507 & 0.2125 & 1/154 \\
+$Q$ upper & 0.4944 & 0.9408 & 100/154 \\
+$D$ upper & 0.1716 & 0.2835 & 4/154 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The constrained LP is a robustness calculation. Its Ida lower endpoint exceeds 0.25 by 0.000734, while 50 of 217 reference intervals have width above 0.01 and the maximum width is 0.070. The numerical LP status is therefore a tested numerical result, not an exact rational certificate. Formal code verifies arithmetic and finite certificate logic; it does not verify the empirical meaning of public fields.
+
+\begin{table}[t]
+\centering
+\caption{Labelled excluded episodes: full-count maximum-cell contrast}
+\label{tab:episodes}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Episode window & Event records & Baseline records & Raw $M_{\max}$ \\
+\midrule
+Hurricane Laura, 23 Aug. 2020 & 3,316 & 3,515 & 0.084 \\
+Hurricane Zeta, 25 Oct. 2020 & 3,963 & 3,638 & 0.129 \\
+February freeze, 14 Feb. 2021 & 2,851 & 3,329 & 0.113 \\
+Hurricane Ida, 29 Aug. 2021 & 3,878 & 3,332 & 0.532 \\
+Post-Ida week, 5 Sep. 2021 & 3,827 & 3,878 & 0.478 \\
+Hurricane Francine, 8 Sep. 2024 & 2,886 & 2,882 & 0.110 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Excluded episodes are not members of the ordinary-week rank. Pre-break events cannot reproduce a positive $J_{01}$ contrast because that state is absent from their public regime. The large post-Ida statistic compares a recovery week with Ida itself. Francine is much smaller in the later regime. These comparisons reinforce the need to distinguish event stress from the measurement object used to observe it.
+
+\section{Officer-initiation evidence}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.94\textwidth,height=6.0cm,
+  date coordinates in=x,
+  xmin=2020-01-01,xmax=2025-01-01,
+  ymin=0,ymax=1,
+  xtick={2020-01-01,2021-01-01,2022-01-01,2023-01-01,2024-01-01,2025-01-01},
+  xticklabel=\year,
+  ylabel={Share among officer-initiated records},
+  grid=major,grid style={BelandLightGray},
+  legend style={draw=none,font=\small,at={(0.5,-0.19)},anchor=north,legend columns=3},
+  tick label style={font=\small},label style={font=\small}
+]
+\addplot[BelandBlue,thick] table[x=month,y=dispatch_share,col sep=comma] {r15_monthly_officer_field_completeness.csv};
+\addplot[BelandGreen,thick] table[x=month,y=arrival_share,col sep=comma] {r15_monthly_officer_field_completeness.csv};
+\addplot[BelandOrange,thick] table[x=month,y=j01_given_arrival,col sep=comma] {r15_monthly_officer_field_completeness.csv};
+\draw[BelandRed,dashed,thick] (axis cs:2021-07-28,0) -- (axis cs:2021-07-28,1);
+\legend{Dispatch present,Arrival valid,$J_{01}$ among arrival-observed}
+\end{axis}
+\end{tikzpicture}
+\caption{Officer-initiated public-field pattern, 2020--2024. Dispatch presence moves from essentially complete to approximately 1 percent while arrival remains essentially complete.}
+\label{fig:officer}
+\end{figure}
+
+\begin{table}[t]
+\centering
+\caption{Annual field completeness by initiation stream}
+\label{tab:annualinit}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Year & Stream & Records & Dispatch share & Arrival share \\
+\midrule
+2020 & Non-officer & 271,868 & 0.903 & 0.801 \\
+2021 & Non-officer & 258,160 & 0.845 & 0.783 \\
+2022 & Non-officer & 243,179 & 0.745 & 0.724 \\
+2023 & Non-officer & 225,389 & 0.693 & 0.722 \\
+2024 & Non-officer & 212,314 & 0.654 & 0.742 \\
+\midrule
+2020 & Officer & 161,024 & 1.000 & 1.000 \\
+2021 & Officer & 170,155 & 0.617 & 1.000 \\
+2022 & Officer & 111,028 & 0.010 & 0.999 \\
+2023 & Officer & 99,702 & 0.012 & 0.999 \\
+2024 & Officer & 115,382 & 0.011 & 0.998 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The main analysis excludes officer-initiated records because their public dispatch convention differs radically. Their pattern is nevertheless analytically valuable. It shows that $J_{01}$ is a normal public configuration in one stream after the break and that pooling initiation streams creates a denominator artifact. It does not prove that non-officer calls were operationally converted into officer activity.
+
+\section{Disposition accounting}
+
+Among arrival-observed records, let $p_{dt}$ be the recorded-disposition share and $q_{dt}$ the dispatch-field rate within disposition $d$ at time $t$. The aggregate change decomposes exactly as
+\begin{equation}
+\Delta \bar q
+=\sum_d \bar p_d\Delta q_d+\sum_d \bar q_d\Delta p_d,
+\end{equation}
+where bars denote midpoints. For the two largest late Ida contrasts, the totals $-0.4950$ and $-0.4824$ decompose into within-disposition terms $-0.5069$ and $-0.4946$ plus composition terms $+0.0119$ and $+0.0123$. The observed final-disposition mix is not sufficient to explain the shift. Because the sample conditions on arrival observation and uses final recorded dispositions, the decomposition does not identify operational routing or causal mechanisms.
+
+\section{Current-data denominator audit}
+
+\begin{table}[t]
+\centering
+\caption{2025 and 2026 snapshot field completeness}
+\label{tab:currentsupp}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Year & Denominator & Records & Dispatch present & Dispatch share \\
+\midrule
+2025 & Non-officer & 207,050 & 136,712 & 0.6603 \\
+2025 & Officer & 122,720 & 1,117 & 0.0091 \\
+2025 & All rows & 329,770 & 137,829 & 0.4180 \\
+2026 snapshot & Non-officer & 130,346 & 87,129 & 0.6684 \\
+2026 snapshot & Officer & 79,483 & 738 & 0.0093 \\
+2026 snapshot & All rows & 209,829 & 87,867 & 0.4188 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The 2025 all-row rate is arithmetically correct but scientifically noncomparable to the non-officer series. The comparable series is 0.6538 (2024), 0.6603 (2025), and 0.6684 (2026 snapshot). The overall rate is low because officer-initiated records have nearly universal arrival fields and almost no dispatch fields under the later public convention.
+
+\section{Institutional-source audit}
+
+\begin{table}[!htbp]
+\centering
+\caption{Public institutional documents and what they identify}
+\label{tab:institutions}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{@{}p{0.19\textwidth}p{0.20\textwidth}p{0.25\textwidth}p{0.28\textwidth}@{}}
+\toprule
+Source & Public status & What it adds & What it does not add \\
+\midrule
+DataNOLA 2021 page and dictionary & Official page and attachment public & Field labels, provider, schema, preliminary-data warning, no archived changelog & Entry history, overwrite rule, internal/public lineage, July change cause \\
+OIPM Hurricane Ida report & Official PDF public & Oversight context, emergency conditions, monitored activities & Machine-event semantics, export history, causal explanation of $J$ states \\
+NOPD manual chapters & Public editions located & Intended communications, call-response, and records practices & Complete exact-edition set for July--September 2021; proof of implementation \\
+OPCD Carbyne APEX notice & Official page indexed; current URL returns not found & Cutover date of 24 June 2022 & Explanation of July 2021 break \\
+OIG Hexagon report & Official PDF public & OnCall Records project history; system was not launched & Evidence of a CAD-export transition \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+These documents supply genuine missing pieces: source semantics, public warnings, chronology, and negative evidence against two named technology stories. They still leave the decisive bridge missing. A mechanism claim would require a versioned changelog or internal/public reconciliation showing how a particular event and entry history became the released row.
+
+\section{Reported-DV measurement implications}
+
+The paper conditions on reported calls created in CAD. It does not observe latent need, attempts to seek help, contacts not converted into CAD items, or underlying domestic-violence incidence. Broad text or code rules can also create false positives, and public suppression can create false negatives. The recommended classification remains $1/0/U$ until an authoritative crosswalk resolves the uncertain group.
+
+If $n_1$, $n_0$, and $n_U$ are the definitely included, definitely excluded, and unresolved counts, then the sharp no-assumption prevalence bounds are
+\begin{equation}
+\frac{n_1}{n_1+n_0+n_U}
+\le p\le
+\frac{n_1+n_U}{n_1+n_0+n_U}.
+\end{equation}
+For response-time outcomes, endpoint coverage must be stated on the full declared denominator. A duration among rows with both timestamps is a selected-stage statistic unless missing endpoints are bounded or independently qualified. The system-level Ida stress test shows why these requirements are substantive rather than cosmetic.
+
+\section{Reproduction and machine-consistency contract}
+
+The package build performs the following sequence:
+\begin{enumerate}
+\item rebuild aggregate diagnostics and all tables from the packaged frozen tally and reference artifacts;
+\item optionally rerun the raw-source lineage audit against the canonical official cache;
+\item compile the main paper, this supplement, research status note, and separate legacy archive;
+\item combine only the main paper and empirical supplement into the professor-facing PDF;
+\item check exact headline values, rank denominators, support status, threshold counts, 2025/2026 denominator arithmetic, source-audit invariants, and forbidden revision-history language in the main source;
+\item verify PDF names, page relationships, text presence, manifest hashes, and the frozen reproduction snapshot.
+\end{enumerate}
+
+The ordinary builder uses Python's standard library and NumPy. SciPy is required only by the inherited constrained-optimization reproduction path, and pypdf is used to combine PDFs. Pandas is not required. The package manifest covers all curated files except the manifest itself and any generated zip. Text normalization performed by packaging is checked through the rebuilt numerical and PDF parity tests rather than treated as byte identity with an external working tree.
+
+\section{Interpretive checklist}
+
+Before using a public CAD duration as a performance measure, report:
+\begin{enumerate}
+\item the source identifier, observed date range, row count, and source hash;
+\item the declared denominator and initiation-stream rule;
+\item the exact start and endpoint semantics;
+\item field nonblank, parseability, and ordering rates;
+\item missing-endpoint handling and support coverage;
+\item versioned institutional lineage, if available;
+\item whether the target is a released-field statistic, selected-stage measure, bounded performance functional, or unavailable latent object;
+\item shock exclusions, day-of-week, holidays, heat, weather, seasonality, COVID-era behavior, reporting behavior, help-seeking, suppression, and classification uncertainty.
+\end{enumerate}
+
+\bibliographystyle{apalike}
+\bibliography{references_r15_0}
+\clearpage
+
+\section{Numerical claim index}
+
+Table~\ref{tab:claimindex} identifies the package object that supplies each headline number. The release verifier recomputes the claims from these machine-readable objects; the table is an orientation aid, not an independent evidentiary source.
+
+\begin{table}[!htbp]
+\centering
+\caption{Headline claims and their machine-readable sources}
+\label{tab:claimindex}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{@{}p{0.32\textwidth}p{0.25\textwidth}p{0.35\textwidth}@{}}
+\toprule
+Claim & Reported value & Primary package object \\
+\midrule
+Standardized Ida maximum & 0.5072; rank 1/154 & \path{r15_aggregate_diagnostics.json} \\
+Full-count Ida maximum & 0.5320; rank 1/151 & \path{r15_raw_window_scores.csv} \\
+Support-independent post-change rank & 1/152 including Ida & \path{r15_aggregate_diagnostics.json} \\
+Threshold exceedances & 9, 8, and 9 & \path{r15_aggregate_diagnostics.json} \\
+Standardized bootstrap interval & [0.4597, 0.5656] & \path{r15_bootstrap_window_maxima.csv} \\
+Full-count bootstrap interval & [0.4754, 0.6015] & \path{r15_bootstrap_window_maxima.csv} \\
+2025 non-officer dispatch share & 136,712/207,050 = 0.6603 & \path{r15_current_denominator_audit.csv} \\
+2025 officer dispatch share & 1,117/122,720 = 0.0091 & \path{r15_current_denominator_audit.csv} \\
+First non-officer $J_{01}$ day & 28 July 2021 & \path{r15_raw_july_25_31_audit.csv} \\
+Annual public-source bindings & five official dataset IDs & \path{r15_annual_source_lineage.csv} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+The aggregate objects are fully contained in the reproduction snapshot. The raw July and annual-lineage objects add first-hand source checks against the canonical public cache. Institutional documents remain a separate evidence class: they inform field semantics, warnings, and chronology, but do not generate or alter the numerical statistics above.
+
+\end{document}

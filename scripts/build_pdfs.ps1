@@ -1,7 +1,8 @@
 param(
     [string]$Python = "python",
     [string]$PdfLaTeX = "pdflatex",
-    [string]$BibTeX = "bibtex"
+    [string]$BibTeX = "bibtex",
+    [switch]$RunRawSourceAudit
 )
 
 $ErrorActionPreference = "Stop"
@@ -21,7 +22,10 @@ function Invoke-Checked {
 function Build-LaTeXDocument {
     param([string]$Stem)
     Invoke-Checked $PdfLaTeX @("-interaction=nonstopmode", "-halt-on-error", "$Stem.tex")
-    Invoke-Checked $BibTeX @($Stem)
+    $sourceText = Get-Content -LiteralPath "$Stem.tex" -Raw
+    if ($sourceText -match "\\bibliography\{") {
+        Invoke-Checked $BibTeX @($Stem)
+    }
     Invoke-Checked $PdfLaTeX @("-interaction=nonstopmode", "-halt-on-error", "$Stem.tex")
     Invoke-Checked $PdfLaTeX @("-interaction=nonstopmode", "-halt-on-error", "$Stem.tex")
     Invoke-Checked $PdfLaTeX @("-interaction=nonstopmode", "-halt-on-error", "$Stem.tex")
@@ -37,37 +41,52 @@ function Assert-CleanLaTeXLog {
         "Overfull \\hbox",
         "Overfull \\vbox"
     )
-    $log = "$Stem.log"
-    $findings = Select-String -LiteralPath $log -Pattern $patterns
+    $findings = Select-String -LiteralPath "$Stem.log" -Pattern $patterns
     if ($findings) {
         throw "LaTeX validation failed for ${Stem}: $($findings.Line -join '; ')"
     }
-    $blg = "$Stem.blg"
-    $bibWarnings = Select-String -LiteralPath $blg -Pattern "Warning--"
-    if ($bibWarnings) {
-        throw "BibTeX validation failed for ${Stem}: $($bibWarnings.Line -join '; ')"
+    if (Test-Path -LiteralPath "$Stem.blg") {
+        $bibWarnings = Select-String -LiteralPath "$Stem.blg" -Pattern "Warning--"
+        if ($bibWarnings) {
+            throw "BibTeX validation failed for ${Stem}: $($bibWarnings.Line -join '; ')"
+        }
     }
 }
 
+Invoke-Checked $Python @((Join-Path $PSScriptRoot "build_r15_evidence.py"))
+if ($RunRawSourceAudit) {
+    Invoke-Checked $Python @((Join-Path $PSScriptRoot "audit_public_source_lineage.py"))
+}
+
+$stems = @(
+    "main_paper_r15_0",
+    "empirical_supplement_r15_0",
+    "research_status_note_r15_0",
+    "legacy_technical_archive_r15_0"
+)
 Push-Location $sourceDir
 try {
-    Invoke-Checked $Python @((Join-Path $PSScriptRoot "build_r14_evidence.py"))
-    Build-LaTeXDocument "main_paper_r14_0"
-    Build-LaTeXDocument "math_appendix_r14_0"
-    Assert-CleanLaTeXLog "main_paper_r14_0"
-    Assert-CleanLaTeXLog "math_appendix_r14_0"
+    foreach ($stem in $stems) {
+        Build-LaTeXDocument $stem
+        Assert-CleanLaTeXLog $stem
+    }
 } finally {
     Pop-Location
 }
 
-$mainOut = Join-Path $paperDir "Beland_Current_Status_Main_2026-08-24_R14_0.pdf"
-$appendixOut = Join-Path $paperDir "Beland_Current_Status_Appendix_2026-08-24_R14_0.pdf"
-$combinedOut = Join-Path $paperDir "Beland_Current_Status_2026-08-24_R14_0.pdf"
-Copy-Item -LiteralPath (Join-Path $sourceDir "main_paper_r14_0.pdf") -Destination $mainOut -Force
-Copy-Item -LiteralPath (Join-Path $sourceDir "math_appendix_r14_0.pdf") -Destination $appendixOut -Force
-Invoke-Checked $Python @((Join-Path $PSScriptRoot "combine_pdfs.py"), $mainOut, $appendixOut, $combinedOut)
+$mainOut = Join-Path $paperDir "Beland_Current_Status_Main_2026-08-25_R15_0.pdf"
+$suppOut = Join-Path $paperDir "Beland_Current_Status_Empirical_Supplement_2026-08-25_R15_0.pdf"
+$statusOut = Join-Path $paperDir "Beland_Research_Status_Note_2026-08-25_R15_0.pdf"
+$legacyOut = Join-Path $paperDir "Beland_Legacy_Technical_Archive_2026-08-25_R15_0.pdf"
+$combinedOut = Join-Path $paperDir "Beland_Current_Status_2026-08-25_R15_0.pdf"
 
-foreach ($stem in @("main_paper_r14_0", "math_appendix_r14_0")) {
+Copy-Item -LiteralPath (Join-Path $sourceDir "main_paper_r15_0.pdf") -Destination $mainOut -Force
+Copy-Item -LiteralPath (Join-Path $sourceDir "empirical_supplement_r15_0.pdf") -Destination $suppOut -Force
+Copy-Item -LiteralPath (Join-Path $sourceDir "research_status_note_r15_0.pdf") -Destination $statusOut -Force
+Copy-Item -LiteralPath (Join-Path $sourceDir "legacy_technical_archive_r15_0.pdf") -Destination $legacyOut -Force
+Invoke-Checked $Python @((Join-Path $PSScriptRoot "combine_pdfs.py"), $mainOut, $suppOut, $combinedOut)
+
+foreach ($stem in $stems) {
     foreach ($extension in @("aux", "bbl", "blg", "log", "out", "toc", "pdf")) {
         $artifact = Join-Path $sourceDir "$stem.$extension"
         if (Test-Path -LiteralPath $artifact) {

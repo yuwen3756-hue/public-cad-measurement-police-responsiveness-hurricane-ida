@@ -1,4 +1,4 @@
-"""Create the distributable ZIP beside the R14 release-package directory."""
+"""Create the distributable ZIP beside the R15 release-package directory."""
 
 from __future__ import annotations
 
