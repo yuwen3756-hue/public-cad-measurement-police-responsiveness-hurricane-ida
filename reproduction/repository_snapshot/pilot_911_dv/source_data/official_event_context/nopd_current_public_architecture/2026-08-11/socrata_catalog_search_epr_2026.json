@@ -1,0 +1,4107 @@
+{
+  "results" :
+    [
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2018",
+            "id" : "3m97-9vtw",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level.\r\n\r\nDisclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:10.000Z",
+            "createdAt" : "2018-01-03T17:13:41.000Z",
+            "metadata_updated_at" : "2024-07-30T19:54:40.000Z",
+            "data_updated_at" : "2026-06-30T06:00:10.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 13,
+                "page_views_last_month" : 54,
+                "page_views_total" : 29791,
+                "page_views_last_week_log" : 3.8073549220576037,
+                "page_views_last_month_log" : 5.78135971352466,
+                "page_views_total_log" : 14.862637357558794
+              },
+            "columns_name" :
+              [
+                "Victim_Fatal_Status",
+                "Disposition",
+                "Victim_Gender",
+                "Hate_Crime",
+                "District",
+                "Offender_Race",
+                "Report_Type",
+                "Offender_Gender",
+                "Person_Type",
+                "Victim_Race",
+                "Victim_Age",
+                "Location",
+                "Signal_Type",
+                "Item_Number",
+                "Signal_Description",
+                "Occurred_Date_Time",
+                "Charge_Code",
+                "Charge_Description",
+                "Offender_Age",
+                "Offender_Number",
+                "Victim_Number"
+              ],
+            "columns_field_name" :
+              [
+                "victim_fatal_status",
+                "disposition",
+                "victim_gender",
+                "hate_crime",
+                "district",
+                "offender_race",
+                "report_type",
+                "offender_gender",
+                "person_type",
+                "victim_race",
+                "victim_age",
+                "location",
+                "signal_type",
+                "item_number",
+                "signal_description",
+                "occurred_date_time",
+                "charge_code",
+                "charge_description",
+                "offender_age",
+                "offender_number",
+                "victim_number"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "left" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" },
+                { "align" : "right" }
+              ],
+            "download_count" : 5749,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:54:40.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "epr", "police", "electronic police report" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/3m97-9vtw",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2018/3m97-9vtw",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2017",
+            "id" : "qtcu-97s9",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level.\r\n\r\nDisclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:11.000Z",
+            "createdAt" : "2017-01-03T17:42:40.000Z",
+            "metadata_updated_at" : "2024-07-30T19:54:41.000Z",
+            "data_updated_at" : "2026-06-30T06:00:11.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 17,
+                "page_views_last_month" : 95,
+                "page_views_total" : 16834,
+                "page_views_last_week_log" : 4.169925001442312,
+                "page_views_last_month_log" : 6.584962500721156,
+                "page_views_total_log" : 14.039176100715009
+              },
+            "columns_name" :
+              [
+                "Victim_Race",
+                "Offender_Gender",
+                "Signal_Description",
+                "Location",
+                "District",
+                "Person_Type",
+                "Victim_Gender",
+                "Offender_Race",
+                "Disposition",
+                "Victim_Fatal_Status",
+                "Victim_Age",
+                "Offender_Number",
+                "Offender_Age",
+                "Charge_Description",
+                "Charge_Code",
+                "Hate_Crime",
+                "Report_Type",
+                "Signal_Type",
+                "Occurred_Date_Time",
+                "Victim_Number",
+                "Item_Number"
+              ],
+            "columns_field_name" :
+              [
+                "victim_race",
+                "offender_gender",
+                "signal_description",
+                "location",
+                "district",
+                "person_type",
+                "victim_gender",
+                "offender_race",
+                "disposition",
+                "victim_fatal_status",
+                "victim_age",
+                "offender_number",
+                "offender_age",
+                "charge_description",
+                "charge_code",
+                "hate_crime",
+                "report_type",
+                "signal_type",
+                "occurred_date_time",
+                "victim_number",
+                "item_number"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "displayStyle" : "plain", "align" : "left" },
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 6589,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:54:40.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "epr", "police", "electronic police report" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/qtcu-97s9",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2017/qtcu-97s9",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2019",
+            "id" : "mm32-zkg7",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level.\n\nDisclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:09.000Z",
+            "createdAt" : "2019-01-07T20:54:33.000Z",
+            "metadata_updated_at" : "2024-07-30T19:55:22.000Z",
+            "data_updated_at" : "2026-06-30T06:00:09.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 7,
+                "page_views_last_month" : 45,
+                "page_views_total" : 16588,
+                "page_views_last_week_log" : 3.0,
+                "page_views_last_month_log" : 5.523561956057013,
+                "page_views_total_log" : 14.017939301495817
+              },
+            "columns_name" :
+              [
+                "Victim_Number",
+                "Offender_Number",
+                "Victim_Age",
+                "Person_Type",
+                "Location",
+                "Occurred_Date_Time",
+                "Charge_Code",
+                "Charge_Description",
+                "Offender_Gender",
+                "Item_Number",
+                "Disposition",
+                "Offender_Race",
+                "Hate_Crime",
+                "Report_Type",
+                "District",
+                "Victim_Gender",
+                "Signal_Type",
+                "Victim_Race",
+                "Victim_Fatal_Status",
+                "Signal_Description",
+                "Offender_Age"
+              ],
+            "columns_field_name" :
+              [
+                "victim_number",
+                "offender_number",
+                "victim_age",
+                "person_type",
+                "location",
+                "occurred_date_time",
+                "charge_code",
+                "charge_description",
+                "offender_gender",
+                "item_number",
+                "disposition",
+                "offender_race",
+                "hate_crime",
+                "report_type",
+                "district",
+                "victim_gender",
+                "signal_type",
+                "victim_race",
+                "victim_fatal_status",
+                "signal_description",
+                "offender_age"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 3864,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:55:22.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "police", "electronic police report", "epr" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/mm32-zkg7",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2019/mm32-zkg7",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2022",
+            "id" : "9wdb-bznc",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level. Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:06.000Z",
+            "createdAt" : "2022-01-03T22:35:59.000Z",
+            "metadata_updated_at" : "2024-07-30T19:56:36.000Z",
+            "data_updated_at" : "2026-06-30T06:00:06.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 366,
+                "page_views_last_month" : 1083,
+                "page_views_total" : 13423,
+                "page_views_last_week_log" : 8.519636252843213,
+                "page_views_last_month_log" : 10.082149041353873,
+                "page_views_total_log" : 13.712527000439822
+              },
+            "columns_name" :
+              [
+                "Signal_Description",
+                "Location",
+                "Victim_Age",
+                "Victim_Number",
+                "Disposition",
+                "Offender_Gender",
+                "Victim_Fatal_Status",
+                "District",
+                "Offender_Age",
+                "Charge_Description",
+                "Charge_Code",
+                "Item_Number",
+                "Hate Crime",
+                "Victim_Race",
+                "PersonType",
+                "OffenderID",
+                "Signal_Type",
+                "OffenderStatus",
+                "Offender_Number",
+                "Offender_Race",
+                "Victim_Gender",
+                "Report Type",
+                "Occurred_Date_Time"
+              ],
+            "columns_field_name" :
+              [
+                "signal_description",
+                "location",
+                "victim_age",
+                "victim_number",
+                "disposition",
+                "offender_gender",
+                "victim_fatal_status",
+                "district",
+                "offender_age",
+                "charge_description",
+                "charge_code",
+                "item_number",
+                "hate_crime",
+                "victim_race",
+                "persontype",
+                "offenderid",
+                "signal_type",
+                "offenderstatus",
+                "offender_number",
+                "offender_race",
+                "victim_gender",
+                "report_type",
+                "occurred_date_time"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 4266,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:56:36.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "electronic police report", "police", "epr" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" : { "domain" : "data.nola.gov" },
+        "permalink" : "https://data.nola.gov/d/9wdb-bznc",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2022/9wdb-bznc",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2025",
+            "id" : "agqi-9adb",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level. Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-07-06T05:45:37.000Z",
+            "createdAt" : "2025-01-06T18:13:22.000Z",
+            "metadata_updated_at" : "2025-01-08T17:15:18.000Z",
+            "data_updated_at" : "2026-07-06T05:45:37.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 81,
+                "page_views_last_month" : 435,
+                "page_views_total" : 10067,
+                "page_views_last_week_log" : 6.357552004618085,
+                "page_views_last_month_log" : 8.768184324776927,
+                "page_views_total_log" : 13.29748950116098
+              },
+            "columns_name" :
+              [
+                "Report Type",
+                "Victim_Age",
+                "Victim_Gender",
+                "Victim_Number",
+                "Signal_Description",
+                "Location",
+                "Charge_Code",
+                "Charge_Description",
+                "PersonType",
+                "Item_Number",
+                "Signal_Type",
+                "Occurred_Date_Time",
+                "OffenderID",
+                "Offender_Age",
+                "Victim_Fatal_Status",
+                "OffenderStatus",
+                "Hate Crime",
+                "District",
+                "Victim_Race",
+                "Disposition",
+                "Offender_Number",
+                "Offender_Race",
+                "Offender_Gender"
+              ],
+            "columns_field_name" :
+              [
+                "report_type",
+                "victim_age",
+                "victim_gender",
+                "victim_number",
+                "signal_description",
+                "location",
+                "charge_code",
+                "charge_description",
+                "persontype",
+                "item_number",
+                "signal_type",
+                "occurred_date_time",
+                "offenderid",
+                "offender_age",
+                "victim_fatal_status",
+                "offenderstatus",
+                "hate_crime",
+                "district",
+                "victim_race",
+                "disposition",
+                "offender_number",
+                "offender_race",
+                "offender_gender"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 6655,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2025-01-08T17:15:18.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "police", "electronic police report", "epr" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" : { "domain" : "data.nola.gov" },
+        "permalink" : "https://data.nola.gov/d/agqi-9adb",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2025/agqi-9adb",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2016",
+            "id" : "4gc2-25he",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level.Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:12.000Z",
+            "createdAt" : "2016-09-12T16:59:03.000Z",
+            "metadata_updated_at" : "2024-07-30T19:53:21.000Z",
+            "data_updated_at" : "2026-06-30T06:00:12.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 13,
+                "page_views_last_month" : 47,
+                "page_views_total" : 12214,
+                "page_views_last_week_log" : 3.8073549220576037,
+                "page_views_last_month_log" : 5.584962500721157,
+                "page_views_total_log" : 13.576366243154618
+              },
+            "columns_name" :
+              [
+                "Offender_Race",
+                "Hate_Crime",
+                "Offender_Gender",
+                "Victim_Number",
+                "Victim_Fatal_Status",
+                "District",
+                "Disposition",
+                "Victim_Race",
+                "Report_Type",
+                "Occurred_Date_Time",
+                "Charge_Code",
+                "Offender_Number",
+                "Person_Type",
+                "Item_Number",
+                "Location",
+                "Signal_Type",
+                "Signal_Description",
+                "Charge_Description",
+                "Offender_Age",
+                "Victim_Gender",
+                "Victim_Age"
+              ],
+            "columns_field_name" :
+              [
+                "offender_race",
+                "hate_crime",
+                "offender_gender",
+                "victim_number",
+                "victim_fatal_status",
+                "district",
+                "disposition",
+                "victim_race",
+                "report_type",
+                "occurred_date_time",
+                "charge_code",
+                "offender_number",
+                "person_type",
+                "item_number",
+                "location",
+                "signal_type",
+                "signal_description",
+                "charge_description",
+                "offender_age",
+                "victim_gender",
+                "victim_age"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "precisionStyle" : "standard",
+                  "noCommas" : "false",
+                  "align" : "left"
+                },
+                {},
+                {},
+                { "displayStyle" : "plain", "align" : "left" },
+                { "align" : "left" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "precisionStyle" : "standard",
+                  "noCommas" : "false",
+                  "align" : "left"
+                },
+                {},
+                {
+                  "precisionStyle" : "standard",
+                  "noCommas" : "false",
+                  "align" : "left"
+                }
+              ],
+            "download_count" : 6232,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:53:21.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "police", "electronic police report", "epr" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/4gc2-25he",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2016/4gc2-25he",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2024",
+            "id" : "c5iy-ew8n",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level. Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:03.000Z",
+            "createdAt" : "2024-01-24T17:08:32.000Z",
+            "metadata_updated_at" : "2024-07-30T19:57:43.000Z",
+            "data_updated_at" : "2026-06-30T06:00:03.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 31,
+                "page_views_last_month" : 145,
+                "page_views_total" : 9671,
+                "page_views_last_week_log" : 5.0,
+                "page_views_last_month_log" : 7.189824558880018,
+                "page_views_total_log" : 13.239598529249124
+              },
+            "columns_name" :
+              [
+                "Offender_Race",
+                "Hate Crime",
+                "Victim_Age",
+                "Victim_Number",
+                "Offender_Age",
+                "OffenderID",
+                "Offender_Number",
+                "Charge_Description",
+                "Occurred_Date_Time",
+                "Signal_Description",
+                "Location",
+                "Item_Number",
+                "Signal_Type",
+                "PersonType",
+                "Offender_Gender",
+                "Charge_Code",
+                "Report Type",
+                "Victim_Fatal_Status",
+                "District",
+                "Disposition",
+                "Victim_Gender",
+                "Victim_Race",
+                "OffenderStatus"
+              ],
+            "columns_field_name" :
+              [
+                "offender_race",
+                "hate_crime",
+                "victim_age",
+                "victim_number",
+                "offender_age",
+                "offenderid",
+                "offender_number",
+                "charge_description",
+                "occurred_date_time",
+                "signal_description",
+                "location",
+                "item_number",
+                "signal_type",
+                "persontype",
+                "offender_gender",
+                "charge_code",
+                "report_type",
+                "victim_fatal_status",
+                "district",
+                "disposition",
+                "victim_gender",
+                "victim_race",
+                "offenderstatus"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 6207,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:57:43.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "epr", "electronic police report", "police" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" : { "domain" : "data.nola.gov" },
+        "permalink" : "https://data.nola.gov/d/c5iy-ew8n",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2024/c5iy-ew8n",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2023",
+            "id" : "j3gz-62a2",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level. Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:05.000Z",
+            "createdAt" : "2023-01-03T22:00:33.000Z",
+            "metadata_updated_at" : "2024-07-30T19:57:15.000Z",
+            "data_updated_at" : "2026-06-30T06:00:05.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 12,
+                "page_views_last_month" : 73,
+                "page_views_total" : 7226,
+                "page_views_last_week_log" : 3.700439718141092,
+                "page_views_last_month_log" : 6.209453365628951,
+                "page_views_total_log" : 12.819181178959628
+              },
+            "columns_name" :
+              [
+                "OffenderStatus",
+                "Location",
+                "Victim_Number",
+                "Offender_Number",
+                "Report Type",
+                "Charge_Description",
+                "Hate Crime",
+                "District",
+                "Offender_Gender",
+                "Victim_Race",
+                "Victim_Fatal_Status",
+                "Victim_Gender",
+                "Offender_Age",
+                "Offender_Race",
+                "Charge_Code",
+                "Signal_Description",
+                "Signal_Type",
+                "Disposition",
+                "Item_Number",
+                "Victim_Age",
+                "PersonType",
+                "OffenderID",
+                "Occurred_Date_Time"
+              ],
+            "columns_field_name" :
+              [
+                "offenderstatus",
+                "location",
+                "victim_number",
+                "offender_number",
+                "report_type",
+                "charge_description",
+                "hate_crime",
+                "district",
+                "offender_gender",
+                "victim_race",
+                "victim_fatal_status",
+                "victim_gender",
+                "offender_age",
+                "offender_race",
+                "charge_code",
+                "signal_description",
+                "signal_type",
+                "disposition",
+                "item_number",
+                "victim_age",
+                "persontype",
+                "offenderid",
+                "occurred_date_time"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                {},
+                {},
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                {},
+                {},
+                {},
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {},
+                { "decimalSeparator" : ".", "groupSeparator" : "," },
+                {}
+              ],
+            "download_count" : 6234,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:57:15.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "police", "epr", "electronic police report" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" : { "domain" : "data.nola.gov" },
+        "permalink" : "https://data.nola.gov/d/j3gz-62a2",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2023/j3gz-62a2",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2021",
+            "id" : "6pqh-bfxa",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level. Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:07.000Z",
+            "createdAt" : "2021-03-19T20:09:12.000Z",
+            "metadata_updated_at" : "2024-07-30T19:56:09.000Z",
+            "data_updated_at" : "2026-06-30T06:00:07.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 19,
+                "page_views_last_month" : 66,
+                "page_views_total" : 4540,
+                "page_views_last_week_log" : 4.321928094887363,
+                "page_views_last_month_log" : 6.066089190457772,
+                "page_views_total_log" : 12.148794321424335
+              },
+            "columns_name" :
+              [
+                "OffenderID",
+                "Offender_Age",
+                "Victim_Age",
+                "Hate Crime",
+                "Location",
+                "Victim_Race",
+                "Offender_Gender",
+                "Victim_Number",
+                "Offender_Race",
+                "Victim_Fatal_Status",
+                "Victim_Gender",
+                "Signal_Description",
+                "Report Type",
+                "OffenderStatus",
+                "Signal_Type",
+                "Occurred_Date_Time",
+                "Charge_Code",
+                "Charge_Description",
+                "Offender_Number",
+                "PersonType",
+                "Item_Number",
+                "District",
+                "Disposition"
+              ],
+            "columns_field_name" :
+              [
+                "offenderid",
+                "offender_age",
+                "victim_age",
+                "hate_crime",
+                "location",
+                "victim_race",
+                "offender_gender",
+                "victim_number",
+                "offender_race",
+                "victim_fatal_status",
+                "victim_gender",
+                "signal_description",
+                "report_type",
+                "offenderstatus",
+                "signal_type",
+                "occurred_date_time",
+                "charge_code",
+                "charge_description",
+                "offender_number",
+                "persontype",
+                "item_number",
+                "district",
+                "disposition"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 4667,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:56:08.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "epr", "electronic police report", "police" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" : { "domain" : "data.nola.gov" },
+        "permalink" : "https://data.nola.gov/d/6pqh-bfxa",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2021/6pqh-bfxa",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2015",
+            "id" : "9ctg-u58a",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level.Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:13.000Z",
+            "createdAt" : "2016-09-28T20:25:43.000Z",
+            "metadata_updated_at" : "2024-07-30T19:52:45.000Z",
+            "data_updated_at" : "2026-06-30T06:00:13.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 5,
+                "page_views_last_month" : 54,
+                "page_views_total" : 2433,
+                "page_views_last_week_log" : 2.584962500721156,
+                "page_views_last_month_log" : 5.78135971352466,
+                "page_views_total_log" : 11.249113452713729
+              },
+            "columns_name" :
+              [
+                "Report_Type",
+                "Offender_Age",
+                "Victim_Fatal_Status",
+                "Offender_Race",
+                "Disposition",
+                "Offender_Gender",
+                "Victim_Race",
+                "Item_Number",
+                "Signal_Type",
+                "Charge_Code",
+                "Offender_Number",
+                "Person_Type",
+                "Victim_Number",
+                "Charge_Description",
+                "Occurred_Date_Time",
+                "Signal_Description",
+                "Location",
+                "District",
+                "Hate_Crime",
+                "Victim_Age",
+                "Victim_Gender"
+              ],
+            "columns_field_name" :
+              [
+                "report_type",
+                "offender_age",
+                "victim_fatal_status",
+                "offender_race",
+                "disposition",
+                "offender_gender",
+                "victim_race",
+                "item_number",
+                "signal_type",
+                "charge_code",
+                "offender_number",
+                "person_type",
+                "victim_number",
+                "charge_description",
+                "occurred_date_time",
+                "signal_description",
+                "location",
+                "district",
+                "hate_crime",
+                "victim_age",
+                "victim_gender"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 4500,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:52:45.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "police", "electronic police report", "epr" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/9ctg-u58a",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2015/9ctg-u58a",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2020",
+            "id" : "hjbe-qzaz",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level.\n\nDisclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:08.000Z",
+            "createdAt" : "2021-02-04T22:31:53.000Z",
+            "metadata_updated_at" : "2024-07-30T19:55:48.000Z",
+            "data_updated_at" : "2026-06-30T06:00:08.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 10,
+                "page_views_last_month" : 59,
+                "page_views_total" : 2205,
+                "page_views_last_week_log" : 3.4594316186372978,
+                "page_views_last_month_log" : 5.906890595608519,
+                "page_views_total_log" : 11.107217075591382
+              },
+            "columns_name" :
+              [
+                "District",
+                "Hate Crime",
+                "Offender_Number",
+                "Victim_Gender",
+                "Victim_Age",
+                "Victim_Fatal_Status",
+                "Report Type",
+                "OffenderStatus",
+                "Offender_Gender",
+                "Offender_Age",
+                "Occurred_Date_Time",
+                "PersonType",
+                "OffenderID",
+                "Charge_Description",
+                "Charge_Code",
+                "Victim_Race",
+                "Victim_Number",
+                "Signal_Description",
+                "Signal_Type",
+                "Location",
+                "Item_Number",
+                "Offender_Race",
+                "Disposition"
+              ],
+            "columns_field_name" :
+              [
+                "district",
+                "hate_crime",
+                "offender_number",
+                "victim_gender",
+                "victim_age",
+                "victim_fatal_status",
+                "report_type",
+                "offenderstatus",
+                "offender_gender",
+                "offender_age",
+                "occurred_date_time",
+                "persontype",
+                "offenderid",
+                "charge_description",
+                "charge_code",
+                "victim_race",
+                "victim_number",
+                "signal_description",
+                "signal_type",
+                "location",
+                "item_number",
+                "offender_race",
+                "disposition"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 3334,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:55:48.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [ "demographics", "infrastructure" ],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "police", "epr", "electronic police report" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" : { "domain" : "data.nola.gov" },
+        "permalink" : "https://data.nola.gov/d/hjbe-qzaz",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2020/hjbe-qzaz",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2014",
+            "id" : "6mst-xjhm",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level.Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:14.000Z",
+            "createdAt" : "2016-09-28T20:24:05.000Z",
+            "metadata_updated_at" : "2024-07-30T19:52:05.000Z",
+            "data_updated_at" : "2026-06-30T06:00:14.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 8,
+                "page_views_last_month" : 49,
+                "page_views_total" : 1789,
+                "page_views_last_week_log" : 3.1699250014423126,
+                "page_views_last_month_log" : 5.643856189774724,
+                "page_views_total_log" : 10.80574387215162
+              },
+            "columns_name" :
+              [
+                "Signal_Description",
+                "Victim_Race",
+                "Charge_Description",
+                "Occurred_Date_Time",
+                "Item_Number",
+                "Victim_Number",
+                "Offender_Age",
+                "Offender_Gender",
+                "Disposition",
+                "Signal_Type",
+                "Location",
+                "Charge_Code",
+                "Report_Type",
+                "Victim_Fatal_Status",
+                "Victim_Age",
+                "Victim_Gender",
+                "Offender_Number",
+                "District",
+                "Hate_Crime",
+                "Person_Type",
+                "Offender_Race"
+              ],
+            "columns_field_name" :
+              [
+                "signal_description",
+                "victim_race",
+                "charge_description",
+                "occurred_date_time",
+                "item_number",
+                "victim_number",
+                "offender_age",
+                "offender_gender",
+                "disposition",
+                "signal_type",
+                "location",
+                "charge_code",
+                "report_type",
+                "victim_fatal_status",
+                "victim_age",
+                "victim_gender",
+                "offender_number",
+                "district",
+                "hate_crime",
+                "person_type",
+                "offender_race"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 3981,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:52:05.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "electronic police report", "police", "epr" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/6mst-xjhm",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2014/6mst-xjhm",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2013",
+            "id" : "je4t-6qub",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level.Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:15.000Z",
+            "createdAt" : "2016-09-28T20:16:22.000Z",
+            "metadata_updated_at" : "2024-07-30T19:51:25.000Z",
+            "data_updated_at" : "2026-06-30T06:00:15.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 7,
+                "page_views_last_month" : 48,
+                "page_views_total" : 1621,
+                "page_views_last_week_log" : 3.0,
+                "page_views_last_month_log" : 5.614709844115208,
+                "page_views_total_log" : 10.663558104217273
+              },
+            "columns_name" :
+              [
+                "Signal_Type",
+                "Signal_Description",
+                "Item_Number",
+                "Person_Type",
+                "Offender_Number",
+                "Victim_Number",
+                "Occurred_Date_Time",
+                "Charge_Description",
+                "Charge_Code",
+                "Hate_Crime",
+                "Victim_Fatal_Status",
+                "Victim_Race",
+                "Offender_Gender",
+                "Offender_Race",
+                "Victim_Age",
+                "Disposition",
+                "Offender_Age",
+                "District",
+                "Victim_Gender",
+                "Report_Type",
+                "Location"
+              ],
+            "columns_field_name" :
+              [
+                "signal_type",
+                "signal_description",
+                "item_number",
+                "person_type",
+                "offender_number",
+                "victim_number",
+                "occurred_date_time",
+                "charge_description",
+                "charge_code",
+                "hate_crime",
+                "victim_fatal_status",
+                "victim_race",
+                "offender_gender",
+                "offender_race",
+                "victim_age",
+                "disposition",
+                "offender_age",
+                "district",
+                "victim_gender",
+                "report_type",
+                "location"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 3842,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:51:25.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "police", "epr", "electronic police report" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/je4t-6qub",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2013/je4t-6qub",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Calls for Service 2026",
+            "id" : "es9j-6y5d",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "This dataset reflects incidents that have been reported to the New Orleans Police Department in 2026. Data is provided by Orleans Parish Communication District (OPCD), the administrative office of 9-1-1 for the City of New Orleans. Please request 911 audio via our public records request system here: https://nola.nextrequest.com.\n\nIn the OPCD system, NOPD may reclassify or change the signal type for up to 36 hours after the incident is marked up. For information about an incident after this time period, citizens may request police reports from the NOPD Public Records Division. In order to protect the privacy of victims, addresses are shown at the block level and the call types cruelty to juveniles, juvenile attachment and missing juvenile have been removed in accordance with the Louisiana Public Records Act, L.R.S. 44:1. Map coordinates (X,Y) have been removed for the following call types: Aggravated Rape, Aggravated Rape - MA, Crime Against Nature, Mental Patient, Oral Sexual Battery, Prostitution, Sexual Battery, Simple Rape, Simple Rape - Male V, and Soliciting for Prost.\n\nDisclaimer: These incidents may be based upon preliminary information supplied to the Police Department by the reporting parties that have not been verified. The preliminary crime classifications may be changed at a later date based upon additional investigation and there is always the possibility of mechanical or human error. Therefore, the New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information and the information should not be used for comparison purposes over time. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : null,
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-08-11T08:00:29.000Z",
+            "createdAt" : "2026-01-01T09:01:08.000Z",
+            "metadata_updated_at" : "2026-01-02T17:53:51.000Z",
+            "data_updated_at" : "2026-08-11T08:00:29.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 387,
+                "page_views_last_month" : 1928,
+                "page_views_total" : 9081,
+                "page_views_last_week_log" : 8.599912842187129,
+                "page_views_last_month_log" : 10.913637428049103,
+                "page_views_total_log" : 13.148794321424335
+              },
+            "columns_name" :
+              [
+                "InitialPriority",
+                "InitialType",
+                "TimeDispatch",
+                "TimeArrive",
+                "Location",
+                "Beat",
+                "TimeCreate",
+                "BLOCK_ADDRESS",
+                "InitialTypeText",
+                "Disposition",
+                "Priority",
+                "Type",
+                "Zip",
+                "TypeText",
+                "SelfInitiated",
+                "MapY",
+                "DispositionText",
+                "MapX",
+                "NOPD_Item",
+                "TimeClosed",
+                "PoliceDistrict",
+                "Census - 2010",
+                "Police Districts",
+                "Neighborhood Organizations",
+                "Zip Codes",
+                "(ALTERNATE) - Neighborhood Statistical Areas",
+                "Self-Reported Neighborhood Organizations (SRNOs) Boundaries",
+                "Council Districts",
+                "Blocks"
+              ],
+            "columns_field_name" :
+              [
+                "initialpriority",
+                "initialtype",
+                "timedispatch",
+                "timearrive",
+                "location",
+                "beat",
+                "timecreate",
+                "block_address",
+                "initialtypetext",
+                "disposition",
+                "priority",
+                "type_",
+                "zip",
+                "typetext",
+                "selfinitiated",
+                "mapy",
+                "dispositiontext",
+                "mapx",
+                "nopd_item",
+                "timeclosed",
+                "policedistrict",
+                ":@computed_region_u4yh_3wk9",
+                ":@computed_region_evki_aju8",
+                ":@computed_region_sikx_bdeb",
+                ":@computed_region_spev_d8jm",
+                ":@computed_region_7fw3_kdpf",
+                ":@computed_region_m56f_hbma",
+                ":@computed_region_k37d_then",
+                ":@computed_region_ewbu_t8bu"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Point",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Number"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "This column was automatically created in order to record in what polygon from the dataset 'Census - 2010' (u4yh-3wk9) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset 'Police Districts' (evki-aju8) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset 'Neighborhood Organizations' (sikx-bdeb) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset 'Zip Codes' (spev-d8jm) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset '(ALTERNATE) - Neighborhood Statistical Areas' (7fw3-kdpf) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset 'Self-Reported Neighborhood Organizations (SRNOs) Boundaries' (m56f-hbma) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset 'Council Districts' (k37d-then) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset 'Blocks' (ewbu-t8bu) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens."
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 2396,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2026-01-02T17:50:10.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "calls for service", "2026", "police", "crime" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" : { "domain" : "data.nola.gov" },
+        "permalink" : "https://data.nola.gov/d/es9j-6y5d",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Calls-for-Service-2026/es9j-6y5d",
+        "owner" :
+          {
+            "id" : "ubzy-vsh3",
+            "user_type" : "interactive",
+            "display_name" : "Socrata Service Account"
+          },
+        "creator" :
+          {
+            "id" : "ubzy-vsh3",
+            "user_type" : "interactive",
+            "display_name" : "Socrata Service Account"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2012",
+            "id" : "x7yt-gfg9",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level.Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:16.000Z",
+            "createdAt" : "2016-09-28T20:12:57.000Z",
+            "metadata_updated_at" : "2024-07-30T19:49:19.000Z",
+            "data_updated_at" : "2026-06-30T06:00:16.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 8,
+                "page_views_last_month" : 32,
+                "page_views_total" : 1371,
+                "page_views_last_week_log" : 3.1699250014423126,
+                "page_views_last_month_log" : 5.044394119358453,
+                "page_views_total_log" : 10.422064766172813
+              },
+            "columns_name" :
+              [
+                "Victim_Fatal_Status",
+                "Victim_Gender",
+                "Person_Type",
+                "Signal_Type",
+                "Disposition",
+                "Report_Type",
+                "Item_Number",
+                "Victim_Number",
+                "Hate_Crime",
+                "Location",
+                "Offender_Number",
+                "Charge_Description",
+                "Occurred_Date_Time",
+                "Signal_Description",
+                "District",
+                "Offender_Gender",
+                "Charge_Code",
+                "Victim_Race",
+                "Offender_Age",
+                "Offender_Race",
+                "Victim_Age"
+              ],
+            "columns_field_name" :
+              [
+                "victim_fatal_status",
+                "victim_gender",
+                "person_type",
+                "signal_type",
+                "disposition",
+                "report_type",
+                "item_number",
+                "victim_number",
+                "hate_crime",
+                "location",
+                "offender_number",
+                "charge_description",
+                "occurred_date_time",
+                "signal_description",
+                "district",
+                "offender_gender",
+                "charge_code",
+                "victim_race",
+                "offender_age",
+                "offender_race",
+                "victim_age"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 3774,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:49:19.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "electronic police report", "police", "epr" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/x7yt-gfg9",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2012/x7yt-gfg9",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2010",
+            "id" : "s25y-s63t",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level.Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:17.000Z",
+            "createdAt" : "2016-09-28T19:39:21.000Z",
+            "metadata_updated_at" : "2024-07-30T19:42:37.000Z",
+            "data_updated_at" : "2026-06-30T06:00:17.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 8,
+                "page_views_last_month" : 38,
+                "page_views_total" : 1458,
+                "page_views_last_week_log" : 3.1699250014423126,
+                "page_views_last_month_log" : 5.285402218862249,
+                "page_views_total_log" : 10.510764167917891
+              },
+            "columns_name" :
+              [
+                "Offender_Number",
+                "Charge_Description",
+                "Charge_Code",
+                "Location",
+                "Item_Number",
+                "District",
+                "Victim_Gender",
+                "Victim_Race",
+                "Offender_Race",
+                "Disposition",
+                "Victim_Fatal_Status",
+                "Person_Type",
+                "Hate_Crime",
+                "Offender_Gender",
+                "Report_Type",
+                "Signal_Type",
+                "Victim_Age",
+                "Signal_Description",
+                "Occurred_Date_Time",
+                "Offender_Age",
+                "Victim_Number"
+              ],
+            "columns_field_name" :
+              [
+                "offender_number",
+                "charge_description",
+                "charge_code",
+                "location",
+                "item_number",
+                "district",
+                "victim_gender",
+                "victim_race",
+                "offender_race",
+                "disposition",
+                "victim_fatal_status",
+                "person_type",
+                "hate_crime",
+                "offender_gender",
+                "report_type",
+                "signal_type",
+                "victim_age",
+                "signal_description",
+                "occurred_date_time",
+                "offender_age",
+                "victim_number"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "displayStyle" : "plain", "align" : "left" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 2758,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:42:37.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "epr", "electronic police report", "police" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/s25y-s63t",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2010/s25y-s63t",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Electronic Police Report 2011",
+            "id" : "t596-ginn",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "All Police Reports filed by NOPD officers including incident and supplemental reports containing the item number, location, disposition, signal, charges, offender race, offender gender, offender age, victim age, victim gender, and victim race. Police Reports can be updated when subsequent information is determined as a result of an investigation. In order to protect the privacy of victims, addresses are shown at the block level.Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. For instance, the data contains ages that may be negative due to data entry errors. NOPD has chosen to publish the data as it exists in the source systems for transparency and has instituted data validation where appropriate to ensure quality data in the future. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-06-30T06:00:16.000Z",
+            "createdAt" : "2016-09-28T19:53:57.000Z",
+            "metadata_updated_at" : "2024-07-30T19:48:27.000Z",
+            "data_updated_at" : "2026-06-30T06:00:16.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 11,
+                "page_views_last_month" : 45,
+                "page_views_total" : 1208,
+                "page_views_last_week_log" : 3.5849625007211565,
+                "page_views_last_month_log" : 5.523561956057013,
+                "page_views_total_log" : 10.239598529249124
+              },
+            "columns_name" :
+              [
+                "Victim_Fatal_Status",
+                "Signal_Description",
+                "Signal_Type",
+                "Victim_Number",
+                "Victim_Age",
+                "Victim_Gender",
+                "Person_Type",
+                "Hate_Crime",
+                "Report_Type",
+                "District",
+                "Offender_Gender",
+                "Offender_Race",
+                "Offender_Age",
+                "Item_Number",
+                "Location",
+                "Disposition",
+                "Occurred_Date_Time",
+                "Charge_Code",
+                "Charge_Description",
+                "Offender_Number",
+                "Victim_Race"
+              ],
+            "columns_field_name" :
+              [
+                "victim_fatal_status",
+                "signal_description",
+                "signal_type",
+                "victim_number",
+                "victim_age",
+                "victim_gender",
+                "person_type",
+                "hate_crime",
+                "report_type",
+                "district",
+                "offender_gender",
+                "offender_race",
+                "offender_age",
+                "item_number",
+                "location",
+                "disposition",
+                "occurred_date_time",
+                "charge_code",
+                "charge_description",
+                "offender_number",
+                "victim_race"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 3484,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2024-07-30T19:48:27.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "epr", "electronic police report", "police" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/t596-ginn",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2011/t596-ginn",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "NOPD Use of Force Incidents",
+            "id" : "9mnw-mbde",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "This dataset represents use of force incidents by the New Orleans Police Department reported per NOPD Use of Force policy.  This dataset includes initial reports that may be subject to change through the review process.  This dataset reflects the most current status and information of these reports.  This dataset includes one row of data for each use of force incident, with information about the officers and subjects involved flattented into the incident row.  That is, the officer and subject-specific columns will contain information about all the officers and subjects, joined by the \"|\" character.  For example, if during a use of force incident two officers used force and three people were the subject of force, the, \"Officer Age\" column might contain \"43 | 27\", while the \"Subject Age\" column might contain \"27 | 26 | 31\".  For all officer and subject columns, the data are in the same order, so the first age shown in \"Officer Age\" matches the first entry in \"Officer Gender\", and the same applies to the subject-specific fields.The officer-specific fields that may contain multiple values are: Officer Race/Ethnicity, Officer Gender, Officer Age, Officer years of service, Use of Force Level, Use of Force Type, Use of Force Effective, and Officer Injured.The subject-specific fields that may contain multiple values are: Subject Gender, Subject Ethnicity, Subject Age, Subject Distance from Officer, Subject Build, Subject Height, Subject Injured, Subject Hospitalized, Subject Arrested, Subject Arrest Charges, and Subject Influencing Factors.The number of rows in this dataset does not represent the number of times force was used by NOPD officers.  This dataset is updated nightly.  Disclaimer: The New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information.  The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information.  All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited.  The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page.  The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user.  Any use of the information for commercial purposes is strictly prohibited.  The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful.  This web page does not, in any way, authorize such use.",
+            "attribution" : "Police Department (NOPD)",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2026-08-11T07:30:17.000Z",
+            "createdAt" : "2016-08-03T03:07:21.000Z",
+            "metadata_updated_at" : "2021-10-28T15:33:49.000Z",
+            "data_updated_at" : "2026-08-11T07:30:17.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 1091,
+                "page_views_last_month" : 4681,
+                "page_views_total" : 267934,
+                "page_views_last_week_log" : 10.092757140919852,
+                "page_views_last_month_log" : 12.192909219112012,
+                "page_views_total_log" : 18.03152352530088
+              },
+            "columns_name" :
+              [
+                "Division level",
+                "Date Occurred",
+                "Officer Age",
+                "Service Type",
+                "Subject Gender",
+                "Officer Gender",
+                "Subject Influencing Factors",
+                "Subject Height",
+                "Originating Bureau",
+                "Working Status",
+                "Subject Ethnicity",
+                "Subject Injured",
+                "Subject Age",
+                "Use of Force Effective",
+                "Division",
+                "Officer Years of Service",
+                "Subject Arrested",
+                "Investigation status",
+                "Light Condition",
+                "Disposition",
+                "PIB File Number",
+                "Subject Arrest Charges",
+                "Shift",
+                "Weather Condition",
+                "Officer Injured",
+                "Use of Force Reason",
+                "Subject Build",
+                "Distance Between",
+                "Officer Race/Ethnicity",
+                "Use of Force Level",
+                "Use of Force Type",
+                "Subject Hospitalized",
+                "Unit"
+              ],
+            "columns_field_name" :
+              [
+                "division_level",
+                "date_occurred",
+                "officer_age",
+                "service_type",
+                "subject_gender",
+                "officer_gender",
+                "subject_influencing_factors",
+                "subject_height",
+                "originating_bureau",
+                "working_status",
+                "subject_ethnicity",
+                "subject_injured",
+                "subject_age",
+                "use_of_force_effective",
+                "division",
+                "officer_years_of_service",
+                "subject_arrested",
+                "investigation_status",
+                "light_condition",
+                "disposition",
+                "pib_file_number",
+                "subject_arrest_charges",
+                "shift",
+                "weather_condition",
+                "officer_injured",
+                "use_of_force_reason",
+                "subject_build",
+                "distance_between",
+                "officer_race_ethnicity",
+                "use_of_force_level",
+                "use_of_force_type",
+                "subject_hospitalized",
+                "unit"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Calendar date",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                { "view" : "date", "align" : "left" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "displayStyle" : "plain", "align" : "left" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 8126,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2021-10-28T15:33:49.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "use of force", "police" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/9mnw-mbde",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/NOPD-Use-of-Force-Incidents/9mnw-mbde",
+        "owner" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          },
+        "creator" :
+          {
+            "id" : "uqfu-rapx",
+            "user_type" : "interactive",
+            "display_name" : "Enterprise Information Data Team"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Calls for Service 2014",
+            "id" : "jsyu-nz5r",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "This dataset reflects incidents that have been reported to the New Orleans Police Department in 2014. Data is provided by Orleans Parish Communication District (OPCD), the administrative office of 9-1-1 for the City of New Orleans. In the OPCD system, NOPD may reclassify or change the signal type for up to 36 hours after the incident is marked up. For information about an incident after this time period, citizens may request police reports from the NOPD Public Records Division.  In order to protect the privacy of victims, addresses are shown at the block level and the call types cruelty to juveniles, juvenile attachment and missing juvenile have been removed in accordance with the Louisiana Public Records Act, L.R.S. 44:1.  Map coordinates (X,Y) have been removed for the following call types: Aggravated Rape, Aggravated Rape - MA, Crime Against Nature, Mental Patient, Oral Sexual Battery, Prostitution, Sexual Battery, Simple Rape, Simple Rape - Male V, and Soliciting for Prost.Disclaimer: These incidents may be based upon preliminary information supplied to the Police Department by the reporting parties that have not been verified. The preliminary crime classifications may be changed at a later date based upon additional investigation and there is always the possibility of mechanical or human error. Therefore, the New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information and the information should not be used for comparison purposes over time. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Orleans Parish Communications District",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2018-02-15T17:34:27.000Z",
+            "createdAt" : "2014-01-03T06:07:18.000Z",
+            "metadata_updated_at" : "2018-02-15T17:34:27.000Z",
+            "data_updated_at" : "2016-07-28T21:06:20.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 11,
+                "page_views_last_month" : 42,
+                "page_views_total" : 40238,
+                "page_views_last_week_log" : 3.5849625007211565,
+                "page_views_last_month_log" : 5.426264754702098,
+                "page_views_total_log" : 15.296306831984955
+              },
+            "columns_name" :
+              [
+                "InitialTypeText",
+                "MapX",
+                "MapY",
+                "TimeCreate",
+                "TimeDispatch",
+                "TimeClosed",
+                "DispositionText",
+                "SelfInitiated",
+                "Zip",
+                "PoliceDistrict",
+                "Location",
+                "Location (address)",
+                "Disposition",
+                "Zip Codes",
+                "Census - 2010",
+                "Self-Reported Neighborhood Organizations (SRNOs) Boundaries",
+                "Council Districts",
+                "Blocks",
+                "NOPD_Item",
+                "TimeArrive",
+                "Location (zip)",
+                "Police Districts",
+                "(ALTERNATE) - Neighborhood Statistical Areas",
+                "Neighborhood Organizations",
+                "Location (city)",
+                "Priority",
+                "InitialPriority",
+                "Beat",
+                "BLOCK_ADDRESS",
+                "Type_",
+                "TypeText",
+                "InitialType",
+                "Location (state)"
+              ],
+            "columns_field_name" :
+              [
+                "initialtypetext",
+                "mapx",
+                "mapy",
+                "timecreate",
+                "timedispatch",
+                "timeclosed",
+                "dispositiontext",
+                "selfinitiated",
+                "zip",
+                "policedistrict",
+                "location",
+                "location_address",
+                "disposition",
+                ":@computed_region_spev_d8jm",
+                ":@computed_region_u4yh_3wk9",
+                ":@computed_region_m56f_hbma",
+                ":@computed_region_k37d_then",
+                ":@computed_region_ewbu_t8bu",
+                "nopd_item",
+                "timearrive",
+                "location_zip",
+                ":@computed_region_evki_aju8",
+                ":@computed_region_7fw3_kdpf",
+                ":@computed_region_sikx_bdeb",
+                "location_city",
+                "priority",
+                "initialpriority",
+                "beat",
+                "block_address",
+                "type_",
+                "typetext",
+                "initialtype",
+                "location_state"
+              ],
+            "columns_datatype" :
+              [
+                "Text",
+                "Text",
+                "Text",
+                "Calendar date",
+                "Calendar date",
+                "Calendar date",
+                "Text",
+                "Text",
+                "Text",
+                "Number",
+                "Point",
+                "Text",
+                "Text",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Text",
+                "Calendar date",
+                "Text",
+                "Number",
+                "Number",
+                "Number",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Text"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                {},
+                {},
+                {},
+                { "align" : "left" },
+                { "align" : "left" },
+                { "align" : "left" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+            "download_count" : 7482,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2016-07-28T21:23:24.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [ "public safety" ],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "nopd", "police", "calls for service", "crime" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/jsyu-nz5r",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Calls-for-Service-2014/jsyu-nz5r",
+        "owner" :
+          {
+            "id" : "guap-8ddq",
+            "user_type" : "interactive",
+            "display_name" : "City of New Orleans GIS Department"
+          },
+        "creator" :
+          {
+            "id" : "guap-8ddq",
+            "user_type" : "interactive",
+            "display_name" : "City of New Orleans GIS Department"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Calls for Service 2013",
+            "id" : "5fn8-vtui",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "This dataset reflects incidents that have been reported to the New Orleans Police Department in 2013. Data is provided by Orleans Parish Communication District (OPCD), the administrative office of 9-1-1 for the City of New Orleans. In the OPCD system, NOPD may reclassify or change the signal type for up to 36 hours after the incident is marked up. For information about an incident after this time period, citizens may request police reports from the NOPD Public Records Division.  In order to protect the privacy of victims, addresses are shown at the block level and the call types cruelty to juveniles, juvenile attachment and missing juvenile have been removed in accordance with the Louisiana Public Records Act, L.R.S. 44:1.  Map coordinates (X,Y) have been removed for the following call types: Aggravated Rape, Aggravated Rape - MA, Crime Against Nature, Mental Patient, Oral Sexual Battery, Prostitution, Sexual Battery, Simple Rape, Simple Rape - Male V, and Soliciting for Prost.Disclaimer: These incidents may be based upon preliminary information supplied to the Police Department by the reporting parties that have not been verified. The preliminary crime classifications may be changed at a later date based upon additional investigation and there is always the possibility of mechanical or human error. Therefore, the New Orleans Police Department does not guarantee (either expressed or implied) the accuracy, completeness, timeliness, or correct sequencing of the information and the information should not be used for comparison purposes over time. The New Orleans Police Department will not be responsible for any error or omission, or for the use of, or the results obtained from the use of this information. All data visualizations on maps should be considered approximate and attempts to derive specific addresses are strictly prohibited. The New Orleans Police Department is not responsible for the content of any off-site pages that are referenced by or that reference this web page other than an official City of New Orleans or New Orleans Police Department web page. The user specifically acknowledges that the New Orleans Police Department is not responsible for any defamatory, offensive, misleading, or illegal conduct of other users, links, or third parties and that the risk of injury from the foregoing rests entirely with the user. Any use of the information for commercial purposes is strictly prohibited. The unauthorized use of the words \"New Orleans Police Department,\" \"NOPD,\" or any colorable imitation of these words or the unauthorized use of the New Orleans Police Department logo is unlawful. This web page does not, in any way, authorize such use.",
+            "attribution" : "Orleans Parish Communications District",
+            "attribution_link" : null,
+            "contact_email" : "data@nola.gov",
+            "type" : "dataset",
+            "updatedAt" : "2018-02-15T17:33:52.000Z",
+            "createdAt" : "2013-02-04T22:04:42.000Z",
+            "metadata_updated_at" : "2018-02-15T17:33:52.000Z",
+            "data_updated_at" : "2015-11-02T18:13:14.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 15,
+                "page_views_last_month" : 57,
+                "page_views_total" : 50202,
+                "page_views_last_week_log" : 4.0,
+                "page_views_last_month_log" : 5.857980995127572,
+                "page_views_total_log" : 15.615485957984511
+              },
+            "columns_name" :
+              [
+                "TimeDispatch",
+                "MapY",
+                "Disposition",
+                "Location (state)",
+                "DispositionText",
+                "TimeClosed",
+                "MapX",
+                "Priority",
+                "Type_",
+                "NOPD_Item",
+                "Census - 2010",
+                "Zip Codes",
+                "TimeArrive",
+                "Council Districts",
+                "Neighborhood Organizations",
+                "Police Districts",
+                "(ALTERNATE) - Neighborhood Statistical Areas",
+                "TypeText",
+                "Blocks",
+                "Self-Reported Neighborhood Organizations (SRNOs) Boundaries",
+                "Location (zip)",
+                "Location (city)",
+                "Location (address)",
+                "Location",
+                "Zip",
+                "BLOCK_ADDRESS",
+                "PoliceDistrict",
+                "TimeCreate"
+              ],
+            "columns_field_name" :
+              [
+                "timedispatch",
+                "mapy",
+                "disposition",
+                "location_state",
+                "dispositiontext",
+                "timeclosed",
+                "mapx",
+                "priority",
+                "type_",
+                "nopd_item",
+                ":@computed_region_u4yh_3wk9",
+                ":@computed_region_spev_d8jm",
+                "timearrive",
+                ":@computed_region_k37d_then",
+                ":@computed_region_sikx_bdeb",
+                ":@computed_region_evki_aju8",
+                ":@computed_region_7fw3_kdpf",
+                "typetext",
+                ":@computed_region_ewbu_t8bu",
+                ":@computed_region_m56f_hbma",
+                "location_zip",
+                "location_city",
+                "location_address",
+                "location",
+                "zip",
+                "block_address",
+                "policedistrict",
+                "timecreate"
+              ],
+            "columns_datatype" :
+              [
+                "Calendar date",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Calendar date",
+                "Text",
+                "Text",
+                "Text",
+                "Text",
+                "Number",
+                "Number",
+                "Calendar date",
+                "Number",
+                "Number",
+                "Number",
+                "Number",
+                "Text",
+                "Number",
+                "Number",
+                "Text",
+                "Text",
+                "Text",
+                "Point",
+                "Text",
+                "Text",
+                "Number",
+                "Calendar date"
+              ],
+            "columns_description" :
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "This column was automatically created in order to record in what polygon from the dataset 'Census - 2010' (u4yh-3wk9) the point in column 'location' is located. This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset 'Zip Codes' (spev-d8jm) the point in column 'location' is located. This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "",
+                "This column was automatically created in order to record in what polygon from the dataset 'Council Districts' (k37d-then) the point in column 'location' is located. This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset 'Neighborhood Organizations' (sikx-bdeb) the point in column 'location' is located. This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset 'Police Districts' (evki-aju8) the point in column 'location' is located. This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset '(ALTERNATE) - Neighborhood Statistical Areas' (7fw3-kdpf) the point in column 'location' is located. This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "",
+                "This column was automatically created in order to record in what polygon from the dataset 'Blocks' (ewbu-t8bu) the point in column 'location' is located. This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "This column was automatically created in order to record in what polygon from the dataset 'Self-Reported Neighborhood Organizations (SRNOs) Boundaries' (m56f-hbma) the point in column 'location' is located. This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+            "columns_format" :
+              [
+                { "align" : "left" },
+                {},
+                {},
+                {},
+                {},
+                { "align" : "left" },
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                { "align" : "left" }
+              ],
+            "download_count" : 26056,
+            "provenance" : "official",
+            "lens_view_type" : "tabular",
+            "lens_display_type" : "table",
+            "locked" : false,
+            "backend" : "nbe",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2016-02-11T22:53:26.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "Public Safety and Preparedness",
+            "domain_tags" : [ "crime", "police", "calls for service", "nopd" ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "data@nola.gov"
+                },
+                {
+                  "key" : "Source-Information_Source-Department",
+                  "value" : "Police Department (NOPD)"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "data.nola.gov",
+            "license" : "Creative Commons 1.0 Universal (Public Domain Dedication)"
+          },
+        "permalink" : "https://data.nola.gov/d/5fn8-vtui",
+        "link" : "https://data.nola.gov/Public-Safety-and-Preparedness/Calls-for-Service-2013/5fn8-vtui",
+        "owner" :
+          {
+            "id" : "guap-8ddq",
+            "user_type" : "interactive",
+            "display_name" : "City of New Orleans GIS Department"
+          },
+        "creator" :
+          {
+            "id" : "guap-8ddq",
+            "user_type" : "interactive",
+            "display_name" : "City of New Orleans GIS Department"
+          }
+      }
+    ],
+  "resultSetSize" : 69,
+  "timings" : { "serviceMillis" : 34, "searchMillis" : [ 14, 9 ] },
+  "warnings" : []
+}

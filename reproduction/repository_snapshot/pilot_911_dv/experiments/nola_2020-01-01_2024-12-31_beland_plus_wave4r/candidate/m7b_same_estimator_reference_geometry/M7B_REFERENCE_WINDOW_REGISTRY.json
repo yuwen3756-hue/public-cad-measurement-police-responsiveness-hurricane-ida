@@ -1,0 +1,3842 @@
+{
+  "Ida_excluded": true,
+  "artifact_type": "M7B_REFERENCE_WINDOW_REGISTRY",
+  "attrition": [
+    {
+      "reason": "reference_year_unavailable",
+      "start": "2020-01-05"
+    },
+    {
+      "eligible": false,
+      "end": "2022-09-29",
+      "event_coverage": 0.12168207575305696,
+      "event_n": 3353,
+      "reason": "frozen_rows_or_common_support_gate",
+      "reference_coverage": 0.5174244938599403,
+      "reference_end": "2022-09-22",
+      "reference_n": 3013,
+      "reference_start": "2022-09-18",
+      "schema_era": "numeric",
+      "shared_strata": 68,
+      "start": "2022-09-25"
+    },
+    {
+      "eligible": false,
+      "end": "2024-01-04",
+      "event_coverage": 0.19451033547949848,
+      "event_n": 2951,
+      "reason": "frozen_rows_or_common_support_gate",
+      "reference_coverage": 0.8385871629320167,
+      "reference_end": "2023-12-28",
+      "reference_n": 2633,
+      "reference_start": "2023-12-24",
+      "schema_era": "text",
+      "shared_strata": 162,
+      "start": "2023-12-31"
+    },
+    {
+      "eligible": false,
+      "end": "2024-01-11",
+      "event_coverage": 0.96671388101983,
+      "event_n": 2824,
+      "reason": "frozen_rows_or_common_support_gate",
+      "reference_coverage": 0.7702473737716028,
+      "reference_end": "2024-01-04",
+      "reference_n": 2951,
+      "reference_start": "2023-12-31",
+      "schema_era": "numeric",
+      "shared_strata": 234,
+      "start": "2024-01-07"
+    },
+    {
+      "eligible": false,
+      "end": "2024-01-25",
+      "event_coverage": 0.7222644376899696,
+      "event_n": 2632,
+      "reason": "frozen_rows_or_common_support_gate",
+      "reference_coverage": 0.9439149560117303,
+      "reference_end": "2024-01-18",
+      "reference_n": 2728,
+      "reference_start": "2024-01-14",
+      "schema_era": "numeric",
+      "shared_strata": 217,
+      "start": "2024-01-21"
+    },
+    {
+      "eligible": false,
+      "end": "2024-02-01",
+      "event_coverage": 0.9088039284461592,
+      "event_n": 2851,
+      "reason": "frozen_rows_or_common_support_gate",
+      "reference_coverage": 0.46922492401215804,
+      "reference_end": "2024-01-25",
+      "reference_n": 2632,
+      "reference_start": "2024-01-21",
+      "schema_era": "numeric",
+      "shared_strata": 173,
+      "start": "2024-01-28"
+    }
+  ],
+  "derived_counts": {
+    "FULL_QUALIFIED_REFERENCE": 217,
+    "SAME_SEASON_STAGE_REFERENCE": 86,
+    "STAGE_ERA_MATCHED_REFERENCE": 153
+  },
+  "frozen_context_exclusions": [
+    "2020-01-19",
+    "2020-02-23",
+    "2020-04-12",
+    "2020-05-24",
+    "2020-08-23",
+    "2020-09-06",
+    "2020-10-25",
+    "2020-11-22",
+    "2020-12-20",
+    "2020-12-27",
+    "2021-01-17",
+    "2021-02-14",
+    "2021-04-04",
+    "2021-07-04",
+    "2021-08-29",
+    "2021-09-05",
+    "2021-11-21",
+    "2022-01-16",
+    "2022-04-17",
+    "2022-07-03",
+    "2022-09-04",
+    "2022-11-20",
+    "2022-12-25",
+    "2023-01-01",
+    "2023-01-15",
+    "2023-02-19",
+    "2023-04-09",
+    "2023-07-02",
+    "2023-09-03",
+    "2023-11-19",
+    "2023-12-24",
+    "2024-01-14",
+    "2024-02-11",
+    "2024-05-26",
+    "2024-09-01",
+    "2024-09-08",
+    "2024-11-24",
+    "2024-12-22"
+  ],
+  "predecessor_expectations": {
+    "FULL_QUALIFIED_REFERENCE": 217
+  },
+  "status": "FROZEN_AUTHORITY_DERIVATION_PASS",
+  "windows": [
+    {
+      "eligible": true,
+      "end": "2020-01-16",
+      "event_coverage": 0.9834654586636467,
+      "event_n": 4415,
+      "reference_coverage": 0.9806496199032481,
+      "reference_end": "2020-01-09",
+      "reference_n": 4341,
+      "reference_start": "2020-01-05",
+      "schema_era": "numeric",
+      "shared_strata": 219,
+      "start": "2020-01-12",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-01-30",
+      "event_coverage": 0.9877780493766806,
+      "event_n": 4091,
+      "reference_coverage": 0.9791044776119403,
+      "reference_end": "2020-01-23",
+      "reference_n": 4020,
+      "reference_start": "2020-01-19",
+      "schema_era": "numeric",
+      "shared_strata": 205,
+      "start": "2020-01-26",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-02-06",
+      "event_coverage": 0.9792946530147896,
+      "event_n": 4395,
+      "reference_coverage": 0.9904668785138108,
+      "reference_end": "2020-01-30",
+      "reference_n": 4091,
+      "reference_start": "2020-01-26",
+      "schema_era": "numeric",
+      "shared_strata": 209,
+      "start": "2020-02-02",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-02-13",
+      "event_coverage": 0.9853747714808044,
+      "event_n": 4376,
+      "reference_coverage": 0.9820250284414107,
+      "reference_end": "2020-02-06",
+      "reference_n": 4395,
+      "reference_start": "2020-02-02",
+      "schema_era": "numeric",
+      "shared_strata": 219,
+      "start": "2020-02-09",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-02-20",
+      "event_coverage": 0.9867245957035964,
+      "event_n": 4143,
+      "reference_coverage": 0.9878884826325411,
+      "reference_end": "2020-02-13",
+      "reference_n": 4376,
+      "reference_start": "2020-02-09",
+      "schema_era": "numeric",
+      "shared_strata": 218,
+      "start": "2020-02-16",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-03-05",
+      "event_coverage": 0.9834267609066537,
+      "event_n": 4103,
+      "reference_coverage": 0.9770378874856487,
+      "reference_end": "2020-02-27",
+      "reference_n": 5226,
+      "reference_start": "2020-02-23",
+      "schema_era": "numeric",
+      "shared_strata": 228,
+      "start": "2020-03-01",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-03-12",
+      "event_coverage": 0.986903879416852,
+      "event_n": 4047,
+      "reference_coverage": 0.979527175237631,
+      "reference_end": "2020-03-05",
+      "reference_n": 4103,
+      "reference_start": "2020-03-01",
+      "schema_era": "numeric",
+      "shared_strata": 222,
+      "start": "2020-03-08",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-03-19",
+      "event_coverage": 0.9830773236136423,
+      "event_n": 3841,
+      "reference_coverage": 0.9851742031134173,
+      "reference_end": "2020-03-12",
+      "reference_n": 4047,
+      "reference_start": "2020-03-08",
+      "schema_era": "numeric",
+      "shared_strata": 216,
+      "start": "2020-03-15",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-03-26",
+      "event_coverage": 0.9135876042908224,
+      "event_n": 3356,
+      "reference_coverage": 0.9687581359021088,
+      "reference_end": "2020-03-19",
+      "reference_n": 3841,
+      "reference_start": "2020-03-15",
+      "schema_era": "numeric",
+      "shared_strata": 196,
+      "start": "2020-03-22",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-04-02",
+      "event_coverage": 0.9712552742616034,
+      "event_n": 3792,
+      "reference_coverage": 0.9839094159713945,
+      "reference_end": "2020-03-26",
+      "reference_n": 3356,
+      "reference_start": "2020-03-22",
+      "schema_era": "numeric",
+      "shared_strata": 198,
+      "start": "2020-03-29",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-04-09",
+      "event_coverage": 0.983177570093458,
+      "event_n": 3745,
+      "reference_coverage": 0.9828586497890295,
+      "reference_end": "2020-04-02",
+      "reference_n": 3792,
+      "reference_start": "2020-03-29",
+      "schema_era": "numeric",
+      "shared_strata": 202,
+      "start": "2020-04-05",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-04-23",
+      "event_coverage": 0.9778250303766707,
+      "event_n": 3292,
+      "reference_coverage": 0.9798581560283688,
+      "reference_end": "2020-04-16",
+      "reference_n": 3525,
+      "reference_start": "2020-04-12",
+      "schema_era": "numeric",
+      "shared_strata": 199,
+      "start": "2020-04-19",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-04-30",
+      "event_coverage": 0.9827904118008605,
+      "event_n": 3254,
+      "reference_coverage": 0.9747873633049817,
+      "reference_end": "2020-04-23",
+      "reference_n": 3292,
+      "reference_start": "2020-04-19",
+      "schema_era": "numeric",
+      "shared_strata": 198,
+      "start": "2020-04-26",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-05-07",
+      "event_coverage": 0.9842424242424243,
+      "event_n": 3300,
+      "reference_coverage": 0.9809465273509527,
+      "reference_end": "2020-04-30",
+      "reference_n": 3254,
+      "reference_start": "2020-04-26",
+      "schema_era": "numeric",
+      "shared_strata": 198,
+      "start": "2020-05-03",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-05-14",
+      "event_coverage": 0.9775798525798526,
+      "event_n": 3256,
+      "reference_coverage": 0.9848484848484849,
+      "reference_end": "2020-05-07",
+      "reference_n": 3300,
+      "reference_start": "2020-05-03",
+      "schema_era": "numeric",
+      "shared_strata": 201,
+      "start": "2020-05-10",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-05-21",
+      "event_coverage": 0.9856569133677567,
+      "event_n": 3486,
+      "reference_coverage": 0.980036855036855,
+      "reference_end": "2020-05-14",
+      "reference_n": 3256,
+      "reference_start": "2020-05-10",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2020-05-17",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-06-04",
+      "event_coverage": 0.9816430935901294,
+      "event_n": 3323,
+      "reference_coverage": 0.9780385078219013,
+      "reference_end": "2020-05-28",
+      "reference_n": 3324,
+      "reference_start": "2020-05-24",
+      "schema_era": "numeric",
+      "shared_strata": 205,
+      "start": "2020-05-31",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-06-11",
+      "event_coverage": 0.9204313611192072,
+      "event_n": 3431,
+      "reference_coverage": 0.9762263015347578,
+      "reference_end": "2020-06-04",
+      "reference_n": 3323,
+      "reference_start": "2020-05-31",
+      "schema_era": "numeric",
+      "shared_strata": 196,
+      "start": "2020-06-07",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-06-18",
+      "event_coverage": 0.9745222929936306,
+      "event_n": 3454,
+      "reference_coverage": 0.9248032643544156,
+      "reference_end": "2020-06-11",
+      "reference_n": 3431,
+      "reference_start": "2020-06-07",
+      "schema_era": "numeric",
+      "shared_strata": 202,
+      "start": "2020-06-14",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-06-25",
+      "event_coverage": 0.9728215186326702,
+      "event_n": 3569,
+      "reference_coverage": 0.9829183555298205,
+      "reference_end": "2020-06-18",
+      "reference_n": 3454,
+      "reference_start": "2020-06-14",
+      "schema_era": "numeric",
+      "shared_strata": 216,
+      "start": "2020-06-21",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-07-02",
+      "event_coverage": 0.9747943751658265,
+      "event_n": 3769,
+      "reference_coverage": 0.9773045671056318,
+      "reference_end": "2020-06-25",
+      "reference_n": 3569,
+      "reference_start": "2020-06-21",
+      "schema_era": "numeric",
+      "shared_strata": 224,
+      "start": "2020-06-28",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-07-09",
+      "event_coverage": 0.9849365750528541,
+      "event_n": 3784,
+      "reference_coverage": 0.9763863093658796,
+      "reference_end": "2020-07-02",
+      "reference_n": 3769,
+      "reference_start": "2020-06-28",
+      "schema_era": "numeric",
+      "shared_strata": 229,
+      "start": "2020-07-05",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-07-16",
+      "event_coverage": 0.977110157367668,
+      "event_n": 3495,
+      "reference_coverage": 0.9727801268498943,
+      "reference_end": "2020-07-09",
+      "reference_n": 3784,
+      "reference_start": "2020-07-05",
+      "schema_era": "numeric",
+      "shared_strata": 218,
+      "start": "2020-07-12",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-07-23",
+      "event_coverage": 0.9800979791794244,
+      "event_n": 3266,
+      "reference_coverage": 0.9759656652360515,
+      "reference_end": "2020-07-16",
+      "reference_n": 3495,
+      "reference_start": "2020-07-12",
+      "schema_era": "numeric",
+      "shared_strata": 218,
+      "start": "2020-07-19",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-07-30",
+      "event_coverage": 0.982804624962941,
+      "event_n": 3373,
+      "reference_coverage": 0.9800979791794244,
+      "reference_end": "2020-07-23",
+      "reference_n": 3266,
+      "reference_start": "2020-07-19",
+      "schema_era": "numeric",
+      "shared_strata": 218,
+      "start": "2020-07-26",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-08-06",
+      "event_coverage": 0.9827586206896551,
+      "event_n": 3596,
+      "reference_coverage": 0.986955232730507,
+      "reference_end": "2020-07-30",
+      "reference_n": 3373,
+      "reference_start": "2020-07-26",
+      "schema_era": "numeric",
+      "shared_strata": 211,
+      "start": "2020-08-02",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-08-13",
+      "event_coverage": 0.9853348090758163,
+      "event_n": 3614,
+      "reference_coverage": 0.985817575083426,
+      "reference_end": "2020-08-06",
+      "reference_n": 3596,
+      "reference_start": "2020-08-02",
+      "schema_era": "numeric",
+      "shared_strata": 217,
+      "start": "2020-08-09",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-08-20",
+      "event_coverage": 0.982076813655761,
+      "event_n": 3515,
+      "reference_coverage": 0.9795240730492529,
+      "reference_end": "2020-08-13",
+      "reference_n": 3614,
+      "reference_start": "2020-08-09",
+      "schema_era": "numeric",
+      "shared_strata": 212,
+      "start": "2020-08-16",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-09-03",
+      "event_coverage": 0.978491455509723,
+      "event_n": 3394,
+      "reference_coverage": 0.9779855247285887,
+      "reference_end": "2020-08-27",
+      "reference_n": 3316,
+      "reference_start": "2020-08-23",
+      "schema_era": "numeric",
+      "shared_strata": 209,
+      "start": "2020-08-30",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-09-17",
+      "event_coverage": 0.9798399051289653,
+      "event_n": 3373,
+      "reference_coverage": 0.9793289394847214,
+      "reference_end": "2020-09-10",
+      "reference_n": 3338,
+      "reference_start": "2020-09-06",
+      "schema_era": "numeric",
+      "shared_strata": 208,
+      "start": "2020-09-13",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-09-24",
+      "event_coverage": 0.9729190421892816,
+      "event_n": 3508,
+      "reference_coverage": 0.9733175214942188,
+      "reference_end": "2020-09-17",
+      "reference_n": 3373,
+      "reference_start": "2020-09-13",
+      "schema_era": "numeric",
+      "shared_strata": 203,
+      "start": "2020-09-20",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-10-01",
+      "event_coverage": 0.9746974697469747,
+      "event_n": 3636,
+      "reference_coverage": 0.9786202964652223,
+      "reference_end": "2020-09-24",
+      "reference_n": 3508,
+      "reference_start": "2020-09-20",
+      "schema_era": "numeric",
+      "shared_strata": 202,
+      "start": "2020-09-27",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-10-08",
+      "event_coverage": 0.9821129122414757,
+      "event_n": 3578,
+      "reference_coverage": 0.9840484048404841,
+      "reference_end": "2020-10-01",
+      "reference_n": 3636,
+      "reference_start": "2020-09-27",
+      "schema_era": "numeric",
+      "shared_strata": 220,
+      "start": "2020-10-04",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-10-15",
+      "event_coverage": 0.9816563258699758,
+      "event_n": 3707,
+      "reference_coverage": 0.980435997764114,
+      "reference_end": "2020-10-08",
+      "reference_n": 3578,
+      "reference_start": "2020-10-04",
+      "schema_era": "numeric",
+      "shared_strata": 216,
+      "start": "2020-10-11",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-10-22",
+      "event_coverage": 0.9813084112149533,
+      "event_n": 3638,
+      "reference_coverage": 0.984353925006744,
+      "reference_end": "2020-10-15",
+      "reference_n": 3707,
+      "reference_start": "2020-10-11",
+      "schema_era": "numeric",
+      "shared_strata": 225,
+      "start": "2020-10-18",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-11-05",
+      "event_coverage": 0.982409381663113,
+      "event_n": 3752,
+      "reference_coverage": 0.9813272773151652,
+      "reference_end": "2020-10-29",
+      "reference_n": 3963,
+      "reference_start": "2020-10-25",
+      "schema_era": "numeric",
+      "shared_strata": 214,
+      "start": "2020-11-01",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-11-12",
+      "event_coverage": 0.9831037171822199,
+      "event_n": 3847,
+      "reference_coverage": 0.9842750533049041,
+      "reference_end": "2020-11-05",
+      "reference_n": 3752,
+      "reference_start": "2020-11-01",
+      "schema_era": "numeric",
+      "shared_strata": 219,
+      "start": "2020-11-08",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-11-19",
+      "event_coverage": 0.9799890350877193,
+      "event_n": 3648,
+      "reference_coverage": 0.9867429165583571,
+      "reference_end": "2020-11-12",
+      "reference_n": 3847,
+      "reference_start": "2020-11-08",
+      "schema_era": "numeric",
+      "shared_strata": 219,
+      "start": "2020-11-15",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-12-03",
+      "event_coverage": 0.9779326364692218,
+      "event_n": 3444,
+      "reference_coverage": 0.9581792318634423,
+      "reference_end": "2020-11-26",
+      "reference_n": 3515,
+      "reference_start": "2020-11-22",
+      "schema_era": "numeric",
+      "shared_strata": 215,
+      "start": "2020-11-29",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-12-10",
+      "event_coverage": 0.9766491535318156,
+      "event_n": 3426,
+      "reference_coverage": 0.9706736353077816,
+      "reference_end": "2020-12-03",
+      "reference_n": 3444,
+      "reference_start": "2020-11-29",
+      "schema_era": "numeric",
+      "shared_strata": 206,
+      "start": "2020-12-06",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2020-12-17",
+      "event_coverage": 0.9751707014276847,
+      "event_n": 3222,
+      "reference_coverage": 0.9748978400467017,
+      "reference_end": "2020-12-10",
+      "reference_n": 3426,
+      "reference_start": "2020-12-06",
+      "schema_era": "numeric",
+      "shared_strata": 201,
+      "start": "2020-12-13",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-01-07",
+      "event_coverage": 0.9773907729911396,
+      "event_n": 3273,
+      "reference_coverage": 0.9827338129496402,
+      "reference_end": "2020-12-31",
+      "reference_n": 3475,
+      "reference_start": "2020-12-27",
+      "schema_era": "numeric",
+      "shared_strata": 209,
+      "start": "2021-01-03",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-01-14",
+      "event_coverage": 0.9788557213930348,
+      "event_n": 3216,
+      "reference_coverage": 0.9764741827069966,
+      "reference_end": "2021-01-07",
+      "reference_n": 3273,
+      "reference_start": "2021-01-03",
+      "schema_era": "numeric",
+      "shared_strata": 205,
+      "start": "2021-01-10",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-01-28",
+      "event_coverage": 0.9746987951807229,
+      "event_n": 3320,
+      "reference_coverage": 0.9850114043662431,
+      "reference_end": "2021-01-21",
+      "reference_n": 3069,
+      "reference_start": "2021-01-17",
+      "schema_era": "numeric",
+      "shared_strata": 216,
+      "start": "2021-01-24",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-02-04",
+      "event_coverage": 0.9853286384976526,
+      "event_n": 3408,
+      "reference_coverage": 0.9713855421686747,
+      "reference_end": "2021-01-28",
+      "reference_n": 3320,
+      "reference_start": "2021-01-24",
+      "schema_era": "numeric",
+      "shared_strata": 216,
+      "start": "2021-01-31",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-02-11",
+      "event_coverage": 0.9735656353259237,
+      "event_n": 3329,
+      "reference_coverage": 0.9809272300469484,
+      "reference_end": "2021-02-04",
+      "reference_n": 3408,
+      "reference_start": "2021-01-31",
+      "schema_era": "numeric",
+      "shared_strata": 205,
+      "start": "2021-02-07",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-02-25",
+      "event_coverage": 0.9691085613415711,
+      "event_n": 3399,
+      "reference_coverage": 0.9831638021746756,
+      "reference_end": "2021-02-18",
+      "reference_n": 2851,
+      "reference_start": "2021-02-14",
+      "schema_era": "numeric",
+      "shared_strata": 193,
+      "start": "2021-02-21",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-03-04",
+      "event_coverage": 0.9747216370749323,
+      "event_n": 3323,
+      "reference_coverage": 0.9796999117387467,
+      "reference_end": "2021-02-25",
+      "reference_n": 3399,
+      "reference_start": "2021-02-21",
+      "schema_era": "numeric",
+      "shared_strata": 210,
+      "start": "2021-02-28",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-03-11",
+      "event_coverage": 0.9744105807935595,
+      "event_n": 3478,
+      "reference_coverage": 0.9831477580499549,
+      "reference_end": "2021-03-04",
+      "reference_n": 3323,
+      "reference_start": "2021-02-28",
+      "schema_era": "numeric",
+      "shared_strata": 217,
+      "start": "2021-03-07",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-03-18",
+      "event_coverage": 0.9816228442182641,
+      "event_n": 3537,
+      "reference_coverage": 0.9775733179988499,
+      "reference_end": "2021-03-11",
+      "reference_n": 3478,
+      "reference_start": "2021-03-07",
+      "schema_era": "numeric",
+      "shared_strata": 214,
+      "start": "2021-03-14",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-03-25",
+      "event_coverage": 0.97131931166348,
+      "event_n": 3138,
+      "reference_coverage": 0.9838846480067854,
+      "reference_end": "2021-03-18",
+      "reference_n": 3537,
+      "reference_start": "2021-03-14",
+      "schema_era": "numeric",
+      "shared_strata": 215,
+      "start": "2021-03-21",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-04-01",
+      "event_coverage": 0.982708167065709,
+      "event_n": 3759,
+      "reference_coverage": 0.9735500318674315,
+      "reference_end": "2021-03-25",
+      "reference_n": 3138,
+      "reference_start": "2021-03-21",
+      "schema_era": "numeric",
+      "shared_strata": 223,
+      "start": "2021-03-28",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-04-15",
+      "event_coverage": 0.9752178649237473,
+      "event_n": 3672,
+      "reference_coverage": 0.973732597846073,
+      "reference_end": "2021-04-08",
+      "reference_n": 3807,
+      "reference_start": "2021-04-04",
+      "schema_era": "numeric",
+      "shared_strata": 224,
+      "start": "2021-04-11",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-04-22",
+      "event_coverage": 0.9832739237729641,
+      "event_n": 3647,
+      "reference_coverage": 0.9730392156862745,
+      "reference_end": "2021-04-15",
+      "reference_n": 3672,
+      "reference_start": "2021-04-11",
+      "schema_era": "numeric",
+      "shared_strata": 220,
+      "start": "2021-04-18",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-04-29",
+      "event_coverage": 0.9845333333333334,
+      "event_n": 3750,
+      "reference_coverage": 0.982451329860159,
+      "reference_end": "2021-04-22",
+      "reference_n": 3647,
+      "reference_start": "2021-04-18",
+      "schema_era": "numeric",
+      "shared_strata": 219,
+      "start": "2021-04-25",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-05-06",
+      "event_coverage": 0.9808357732233165,
+      "event_n": 3757,
+      "reference_coverage": 0.98,
+      "reference_end": "2021-04-29",
+      "reference_n": 3750,
+      "reference_start": "2021-04-25",
+      "schema_era": "numeric",
+      "shared_strata": 214,
+      "start": "2021-05-02",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-05-13",
+      "event_coverage": 0.9789579158316634,
+      "event_n": 3992,
+      "reference_coverage": 0.980037263774288,
+      "reference_end": "2021-05-06",
+      "reference_n": 3757,
+      "reference_start": "2021-05-02",
+      "schema_era": "numeric",
+      "shared_strata": 215,
+      "start": "2021-05-09",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-05-20",
+      "event_coverage": 0.9800367743630155,
+      "event_n": 3807,
+      "reference_coverage": 0.9784569138276553,
+      "reference_end": "2021-05-13",
+      "reference_n": 3992,
+      "reference_start": "2021-05-09",
+      "schema_era": "numeric",
+      "shared_strata": 214,
+      "start": "2021-05-16",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-05-27",
+      "event_coverage": 0.9838628340897629,
+      "event_n": 3966,
+      "reference_coverage": 0.9810874704491725,
+      "reference_end": "2021-05-20",
+      "reference_n": 3807,
+      "reference_start": "2021-05-16",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2021-05-23",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-06-03",
+      "event_coverage": 0.9879064767535609,
+      "event_n": 3721,
+      "reference_coverage": 0.9793242561775088,
+      "reference_end": "2021-05-27",
+      "reference_n": 3966,
+      "reference_start": "2021-05-23",
+      "schema_era": "numeric",
+      "shared_strata": 209,
+      "start": "2021-05-30",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-06-10",
+      "event_coverage": 0.9774296335634626,
+      "event_n": 3766,
+      "reference_coverage": 0.9841440472991131,
+      "reference_end": "2021-06-03",
+      "reference_n": 3721,
+      "reference_start": "2021-05-30",
+      "schema_era": "numeric",
+      "shared_strata": 209,
+      "start": "2021-06-06",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-06-17",
+      "event_coverage": 0.9819744869661675,
+      "event_n": 3606,
+      "reference_coverage": 0.9877854487519915,
+      "reference_end": "2021-06-10",
+      "reference_n": 3766,
+      "reference_start": "2021-06-06",
+      "schema_era": "numeric",
+      "shared_strata": 223,
+      "start": "2021-06-13",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-06-24",
+      "event_coverage": 0.9684180304335344,
+      "event_n": 3483,
+      "reference_coverage": 0.9811425402107599,
+      "reference_end": "2021-06-17",
+      "reference_n": 3606,
+      "reference_start": "2021-06-13",
+      "schema_era": "numeric",
+      "shared_strata": 222,
+      "start": "2021-06-20",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-07-01",
+      "event_coverage": 0.9823578829459535,
+      "event_n": 3571,
+      "reference_coverage": 0.9652598334768877,
+      "reference_end": "2021-06-24",
+      "reference_n": 3483,
+      "reference_start": "2021-06-20",
+      "schema_era": "numeric",
+      "shared_strata": 209,
+      "start": "2021-06-27",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-07-15",
+      "event_coverage": 0.981829573934837,
+      "event_n": 3192,
+      "reference_coverage": 0.9818230419673883,
+      "reference_end": "2021-07-08",
+      "reference_n": 3741,
+      "reference_start": "2021-07-04",
+      "schema_era": "numeric",
+      "shared_strata": 211,
+      "start": "2021-07-11",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-07-22",
+      "event_coverage": 0.9723725434349189,
+      "event_n": 3511,
+      "reference_coverage": 0.9824561403508771,
+      "reference_end": "2021-07-15",
+      "reference_n": 3192,
+      "reference_start": "2021-07-11",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2021-07-18",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-07-29",
+      "event_coverage": 0.9792566983578219,
+      "event_n": 3471,
+      "reference_coverage": 0.9800626602107662,
+      "reference_end": "2021-07-22",
+      "reference_n": 3511,
+      "reference_start": "2021-07-18",
+      "schema_era": "numeric",
+      "shared_strata": 221,
+      "start": "2021-07-25",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-08-05",
+      "event_coverage": 0.9802709069493521,
+      "event_n": 3396,
+      "reference_coverage": 0.9700374531835206,
+      "reference_end": "2021-07-29",
+      "reference_n": 3471,
+      "reference_start": "2021-07-25",
+      "schema_era": "numeric",
+      "shared_strata": 216,
+      "start": "2021-08-01",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-08-12",
+      "event_coverage": 0.9750889679715302,
+      "event_n": 3372,
+      "reference_coverage": 0.9829210836277974,
+      "reference_end": "2021-08-05",
+      "reference_n": 3396,
+      "reference_start": "2021-08-01",
+      "schema_era": "numeric",
+      "shared_strata": 222,
+      "start": "2021-08-08",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-08-19",
+      "event_coverage": 0.9833045480713875,
+      "event_n": 3474,
+      "reference_coverage": 0.9789442467378411,
+      "reference_end": "2021-08-12",
+      "reference_n": 3372,
+      "reference_start": "2021-08-08",
+      "schema_era": "numeric",
+      "shared_strata": 224,
+      "start": "2021-08-15",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-08-26",
+      "event_coverage": 0.9771908763505402,
+      "event_n": 3332,
+      "reference_coverage": 0.9761082325849165,
+      "reference_end": "2021-08-19",
+      "reference_n": 3474,
+      "reference_start": "2021-08-15",
+      "schema_era": "numeric",
+      "shared_strata": 210,
+      "start": "2021-08-22",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-09-16",
+      "event_coverage": 0.9622812311406156,
+      "event_n": 3314,
+      "reference_coverage": 0.9890253462241965,
+      "reference_end": "2021-09-09",
+      "reference_n": 3827,
+      "reference_start": "2021-09-05",
+      "schema_era": "numeric",
+      "shared_strata": 203,
+      "start": "2021-09-12",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-09-23",
+      "event_coverage": 0.9843250159948816,
+      "event_n": 3126,
+      "reference_coverage": 0.9746529873264936,
+      "reference_end": "2021-09-16",
+      "reference_n": 3314,
+      "reference_start": "2021-09-12",
+      "schema_era": "numeric",
+      "shared_strata": 212,
+      "start": "2021-09-19",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-09-30",
+      "event_coverage": 0.9741824440619621,
+      "event_n": 3486,
+      "reference_coverage": 0.9811260396673065,
+      "reference_end": "2021-09-23",
+      "reference_n": 3126,
+      "reference_start": "2021-09-19",
+      "schema_era": "numeric",
+      "shared_strata": 210,
+      "start": "2021-09-26",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-10-07",
+      "event_coverage": 0.9818913480885312,
+      "event_n": 3479,
+      "reference_coverage": 0.9779116465863453,
+      "reference_end": "2021-09-30",
+      "reference_n": 3486,
+      "reference_start": "2021-09-26",
+      "schema_era": "numeric",
+      "shared_strata": 214,
+      "start": "2021-10-03",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-10-14",
+      "event_coverage": 0.9771638003946997,
+      "event_n": 3547,
+      "reference_coverage": 0.9804541534923829,
+      "reference_end": "2021-10-07",
+      "reference_n": 3479,
+      "reference_start": "2021-10-03",
+      "schema_era": "numeric",
+      "shared_strata": 215,
+      "start": "2021-10-10",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-10-21",
+      "event_coverage": 0.9859478061370806,
+      "event_n": 3487,
+      "reference_coverage": 0.9774457287848887,
+      "reference_end": "2021-10-14",
+      "reference_n": 3547,
+      "reference_start": "2021-10-10",
+      "schema_era": "numeric",
+      "shared_strata": 224,
+      "start": "2021-10-17",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-10-28",
+      "event_coverage": 0.977622784074397,
+      "event_n": 3441,
+      "reference_coverage": 0.9830800114711786,
+      "reference_end": "2021-10-21",
+      "reference_n": 3487,
+      "reference_start": "2021-10-17",
+      "schema_era": "numeric",
+      "shared_strata": 218,
+      "start": "2021-10-24",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-11-04",
+      "event_coverage": 0.9820016362148896,
+      "event_n": 3667,
+      "reference_coverage": 0.980528916012787,
+      "reference_end": "2021-10-28",
+      "reference_n": 3441,
+      "reference_start": "2021-10-24",
+      "schema_era": "numeric",
+      "shared_strata": 217,
+      "start": "2021-10-31",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-11-11",
+      "event_coverage": 0.9815668202764977,
+      "event_n": 3472,
+      "reference_coverage": 0.981728933733297,
+      "reference_end": "2021-11-04",
+      "reference_n": 3667,
+      "reference_start": "2021-10-31",
+      "schema_era": "numeric",
+      "shared_strata": 215,
+      "start": "2021-11-07",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-11-18",
+      "event_coverage": 0.980506255455339,
+      "event_n": 3437,
+      "reference_coverage": 0.9758064516129032,
+      "reference_end": "2021-11-11",
+      "reference_n": 3472,
+      "reference_start": "2021-11-07",
+      "schema_era": "numeric",
+      "shared_strata": 209,
+      "start": "2021-11-14",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-12-02",
+      "event_coverage": 0.9765933446136492,
+      "event_n": 3546,
+      "reference_coverage": 0.981404958677686,
+      "reference_end": "2021-11-25",
+      "reference_n": 3388,
+      "reference_start": "2021-11-21",
+      "schema_era": "numeric",
+      "shared_strata": 207,
+      "start": "2021-11-28",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-12-09",
+      "event_coverage": 0.980342600393148,
+      "event_n": 3561,
+      "reference_coverage": 0.9785673998871969,
+      "reference_end": "2021-12-02",
+      "reference_n": 3546,
+      "reference_start": "2021-11-28",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2021-12-05",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-12-16",
+      "event_coverage": 0.982308584686775,
+      "event_n": 3448,
+      "reference_coverage": 0.9806234203875316,
+      "reference_end": "2021-12-09",
+      "reference_n": 3561,
+      "reference_start": "2021-12-05",
+      "schema_era": "numeric",
+      "shared_strata": 216,
+      "start": "2021-12-12",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-12-23",
+      "event_coverage": 0.9813539873780838,
+      "event_n": 3486,
+      "reference_coverage": 0.9773781902552204,
+      "reference_end": "2021-12-16",
+      "reference_n": 3448,
+      "reference_start": "2021-12-12",
+      "schema_era": "numeric",
+      "shared_strata": 215,
+      "start": "2021-12-19",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2021-12-30",
+      "event_coverage": 0.9773539928486293,
+      "event_n": 3356,
+      "reference_coverage": 0.9868043602983362,
+      "reference_end": "2021-12-23",
+      "reference_n": 3486,
+      "reference_start": "2021-12-19",
+      "schema_era": "numeric",
+      "shared_strata": 214,
+      "start": "2021-12-26",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-01-06",
+      "event_coverage": 0.9874962786543614,
+      "event_n": 3359,
+      "reference_coverage": 0.9770560190703218,
+      "reference_end": "2021-12-30",
+      "reference_n": 3356,
+      "reference_start": "2021-12-26",
+      "schema_era": "numeric",
+      "shared_strata": 215,
+      "start": "2022-01-02",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-01-13",
+      "event_coverage": 0.9805547612239062,
+      "event_n": 3497,
+      "reference_coverage": 0.9815421256326288,
+      "reference_end": "2022-01-06",
+      "reference_n": 3359,
+      "reference_start": "2022-01-02",
+      "schema_era": "numeric",
+      "shared_strata": 212,
+      "start": "2022-01-09",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-01-27",
+      "event_coverage": 0.9847066167290887,
+      "event_n": 3204,
+      "reference_coverage": 0.9812147777082029,
+      "reference_end": "2022-01-20",
+      "reference_n": 3194,
+      "reference_start": "2022-01-16",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2022-01-23",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-02-03",
+      "event_coverage": 0.9804029809550097,
+      "event_n": 3623,
+      "reference_coverage": 0.981585518102372,
+      "reference_end": "2022-01-27",
+      "reference_n": 3204,
+      "reference_start": "2022-01-23",
+      "schema_era": "numeric",
+      "shared_strata": 214,
+      "start": "2022-01-30",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-02-10",
+      "event_coverage": 0.9821766135565757,
+      "event_n": 3703,
+      "reference_coverage": 0.9889594258901463,
+      "reference_end": "2022-02-03",
+      "reference_n": 3623,
+      "reference_start": "2022-01-30",
+      "schema_era": "numeric",
+      "shared_strata": 228,
+      "start": "2022-02-06",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-02-17",
+      "event_coverage": 0.9863609982588508,
+      "event_n": 3446,
+      "reference_coverage": 0.9813664596273292,
+      "reference_end": "2022-02-10",
+      "reference_n": 3703,
+      "reference_start": "2022-02-06",
+      "schema_era": "numeric",
+      "shared_strata": 222,
+      "start": "2022-02-13",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-02-24",
+      "event_coverage": 0.9785284855425136,
+      "event_n": 3493,
+      "reference_coverage": 0.9814277423099246,
+      "reference_end": "2022-02-17",
+      "reference_n": 3446,
+      "reference_start": "2022-02-13",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2022-02-20",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-03-03",
+      "event_coverage": 0.9807379902529589,
+      "event_n": 4309,
+      "reference_coverage": 0.9882622387632408,
+      "reference_end": "2022-02-24",
+      "reference_n": 3493,
+      "reference_start": "2022-02-20",
+      "schema_era": "numeric",
+      "shared_strata": 227,
+      "start": "2022-02-27",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-03-10",
+      "event_coverage": 0.986575085857009,
+      "event_n": 3203,
+      "reference_coverage": 0.9714550939893246,
+      "reference_end": "2022-03-03",
+      "reference_n": 4309,
+      "reference_start": "2022-02-27",
+      "schema_era": "numeric",
+      "shared_strata": 212,
+      "start": "2022-03-06",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-03-17",
+      "event_coverage": 0.97117903930131,
+      "event_n": 3435,
+      "reference_coverage": 0.9765844520761786,
+      "reference_end": "2022-03-10",
+      "reference_n": 3203,
+      "reference_start": "2022-03-06",
+      "schema_era": "numeric",
+      "shared_strata": 196,
+      "start": "2022-03-13",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-03-24",
+      "event_coverage": 0.9788933257273246,
+      "event_n": 3506,
+      "reference_coverage": 0.9775836972343522,
+      "reference_end": "2022-03-17",
+      "reference_n": 3435,
+      "reference_start": "2022-03-13",
+      "schema_era": "numeric",
+      "shared_strata": 212,
+      "start": "2022-03-20",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-03-31",
+      "event_coverage": 0.9816618911174785,
+      "event_n": 3490,
+      "reference_coverage": 0.9823160296634341,
+      "reference_end": "2022-03-24",
+      "reference_n": 3506,
+      "reference_start": "2022-03-20",
+      "schema_era": "numeric",
+      "shared_strata": 214,
+      "start": "2022-03-27",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-04-07",
+      "event_coverage": 0.986358574610245,
+      "event_n": 3592,
+      "reference_coverage": 0.9862464183381089,
+      "reference_end": "2022-03-31",
+      "reference_n": 3490,
+      "reference_start": "2022-03-27",
+      "schema_era": "numeric",
+      "shared_strata": 220,
+      "start": "2022-04-03",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-04-14",
+      "event_coverage": 0.9769886363636363,
+      "event_n": 3520,
+      "reference_coverage": 0.9821826280623608,
+      "reference_end": "2022-04-07",
+      "reference_n": 3592,
+      "reference_start": "2022-04-03",
+      "schema_era": "numeric",
+      "shared_strata": 219,
+      "start": "2022-04-10",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-04-28",
+      "event_coverage": 0.9776273182219606,
+      "event_n": 3397,
+      "reference_coverage": 0.9840343874731348,
+      "reference_end": "2022-04-21",
+      "reference_n": 3257,
+      "reference_start": "2022-04-17",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2022-04-24",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-05-05",
+      "event_coverage": 0.9798145117294054,
+      "event_n": 3666,
+      "reference_coverage": 0.9826317338828378,
+      "reference_end": "2022-04-28",
+      "reference_n": 3397,
+      "reference_start": "2022-04-24",
+      "schema_era": "numeric",
+      "shared_strata": 229,
+      "start": "2022-05-01",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-05-12",
+      "event_coverage": 0.9883268482490273,
+      "event_n": 3598,
+      "reference_coverage": 0.9759956355701036,
+      "reference_end": "2022-05-05",
+      "reference_n": 3666,
+      "reference_start": "2022-05-01",
+      "schema_era": "numeric",
+      "shared_strata": 225,
+      "start": "2022-05-08",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-05-19",
+      "event_coverage": 0.9770927601809954,
+      "event_n": 3536,
+      "reference_coverage": 0.9822123401889938,
+      "reference_end": "2022-05-12",
+      "reference_n": 3598,
+      "reference_start": "2022-05-08",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2022-05-15",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-05-26",
+      "event_coverage": 0.9756028368794326,
+      "event_n": 3525,
+      "reference_coverage": 0.9751131221719457,
+      "reference_end": "2022-05-19",
+      "reference_n": 3536,
+      "reference_start": "2022-05-15",
+      "schema_era": "numeric",
+      "shared_strata": 214,
+      "start": "2022-05-22",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-06-02",
+      "event_coverage": 0.9841355203011563,
+      "event_n": 3719,
+      "reference_coverage": 0.9775886524822694,
+      "reference_end": "2022-05-26",
+      "reference_n": 3525,
+      "reference_start": "2022-05-22",
+      "schema_era": "numeric",
+      "shared_strata": 211,
+      "start": "2022-05-29",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-06-09",
+      "event_coverage": 0.9793751895662723,
+      "event_n": 3297,
+      "reference_coverage": 0.9814466254369454,
+      "reference_end": "2022-06-02",
+      "reference_n": 3719,
+      "reference_start": "2022-05-29",
+      "schema_era": "numeric",
+      "shared_strata": 206,
+      "start": "2022-06-05",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-06-16",
+      "event_coverage": 0.9670259987317692,
+      "event_n": 3154,
+      "reference_coverage": 0.9775553533515317,
+      "reference_end": "2022-06-09",
+      "reference_n": 3297,
+      "reference_start": "2022-06-05",
+      "schema_era": "numeric",
+      "shared_strata": 205,
+      "start": "2022-06-12",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-06-23",
+      "event_coverage": 0.9778384942319368,
+      "event_n": 3294,
+      "reference_coverage": 0.9790741915028536,
+      "reference_end": "2022-06-16",
+      "reference_n": 3154,
+      "reference_start": "2022-06-12",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2022-06-19",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-06-30",
+      "event_coverage": 0.980544747081712,
+      "event_n": 3341,
+      "reference_coverage": 0.9772313296903461,
+      "reference_end": "2022-06-23",
+      "reference_n": 3294,
+      "reference_start": "2022-06-19",
+      "schema_era": "numeric",
+      "shared_strata": 210,
+      "start": "2022-06-26",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-07-14",
+      "event_coverage": 0.9808452417148069,
+      "event_n": 3289,
+      "reference_coverage": 0.9528765539173172,
+      "reference_end": "2022-07-07",
+      "reference_n": 3459,
+      "reference_start": "2022-07-03",
+      "schema_era": "numeric",
+      "shared_strata": 199,
+      "start": "2022-07-10",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-07-21",
+      "event_coverage": 0.9711145996860283,
+      "event_n": 3185,
+      "reference_coverage": 0.9854058984493768,
+      "reference_end": "2022-07-14",
+      "reference_n": 3289,
+      "reference_start": "2022-07-10",
+      "schema_era": "numeric",
+      "shared_strata": 209,
+      "start": "2022-07-17",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-07-28",
+      "event_coverage": 0.9810958026273631,
+      "event_n": 3121,
+      "reference_coverage": 0.9802197802197802,
+      "reference_end": "2022-07-21",
+      "reference_n": 3185,
+      "reference_start": "2022-07-17",
+      "schema_era": "numeric",
+      "shared_strata": 211,
+      "start": "2022-07-24",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-08-04",
+      "event_coverage": 0.9808130081300813,
+      "event_n": 3075,
+      "reference_coverage": 0.9785325216276834,
+      "reference_end": "2022-07-28",
+      "reference_n": 3121,
+      "reference_start": "2022-07-24",
+      "schema_era": "numeric",
+      "shared_strata": 203,
+      "start": "2022-07-31",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-08-11",
+      "event_coverage": 0.9788569540799471,
+      "event_n": 3027,
+      "reference_coverage": 0.9778861788617886,
+      "reference_end": "2022-08-04",
+      "reference_n": 3075,
+      "reference_start": "2022-07-31",
+      "schema_era": "numeric",
+      "shared_strata": 200,
+      "start": "2022-08-07",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-08-18",
+      "event_coverage": 0.9820867379006913,
+      "event_n": 3182,
+      "reference_coverage": 0.9834819953749587,
+      "reference_end": "2022-08-11",
+      "reference_n": 3027,
+      "reference_start": "2022-08-07",
+      "schema_era": "numeric",
+      "shared_strata": 212,
+      "start": "2022-08-14",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-08-25",
+      "event_coverage": 0.9828843106180666,
+      "event_n": 3155,
+      "reference_coverage": 0.9704588309239472,
+      "reference_end": "2022-08-18",
+      "reference_n": 3182,
+      "reference_start": "2022-08-14",
+      "schema_era": "numeric",
+      "shared_strata": 198,
+      "start": "2022-08-21",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-09-01",
+      "event_coverage": 0.9653073645769933,
+      "event_n": 3286,
+      "reference_coverage": 0.9879556259904912,
+      "reference_end": "2022-08-25",
+      "reference_n": 3155,
+      "reference_start": "2022-08-21",
+      "schema_era": "numeric",
+      "shared_strata": 205,
+      "start": "2022-08-28",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-09-15",
+      "event_coverage": 0.9826254826254827,
+      "event_n": 3108,
+      "reference_coverage": 0.9744882824087808,
+      "reference_end": "2022-09-08",
+      "reference_n": 3371,
+      "reference_start": "2022-09-04",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2022-09-11",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-09-22",
+      "event_coverage": 0.9800862927314968,
+      "event_n": 3013,
+      "reference_coverage": 0.9790862290862291,
+      "reference_end": "2022-09-15",
+      "reference_n": 3108,
+      "reference_start": "2022-09-11",
+      "schema_era": "numeric",
+      "shared_strata": 203,
+      "start": "2022-09-18",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-10-06",
+      "event_coverage": 0.9709020368574199,
+      "event_n": 3093,
+      "reference_coverage": 0.9660005964807635,
+      "reference_end": "2022-09-29",
+      "reference_n": 3353,
+      "reference_start": "2022-09-25",
+      "schema_era": "numeric",
+      "shared_strata": 263,
+      "start": "2022-10-02",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-10-13",
+      "event_coverage": 0.9652536483669215,
+      "event_n": 2878,
+      "reference_coverage": 0.9699321047526673,
+      "reference_end": "2022-10-06",
+      "reference_n": 3093,
+      "reference_start": "2022-10-02",
+      "schema_era": "numeric",
+      "shared_strata": 257,
+      "start": "2022-10-09",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-10-20",
+      "event_coverage": 0.9695855614973262,
+      "event_n": 2992,
+      "reference_coverage": 0.965948575399583,
+      "reference_end": "2022-10-13",
+      "reference_n": 2878,
+      "reference_start": "2022-10-09",
+      "schema_era": "numeric",
+      "shared_strata": 251,
+      "start": "2022-10-16",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-10-27",
+      "event_coverage": 0.9683213585891575,
+      "event_n": 3062,
+      "reference_coverage": 0.9632352941176471,
+      "reference_end": "2022-10-20",
+      "reference_n": 2992,
+      "reference_start": "2022-10-16",
+      "schema_era": "numeric",
+      "shared_strata": 247,
+      "start": "2022-10-23",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-11-03",
+      "event_coverage": 0.9657640834111423,
+      "event_n": 3213,
+      "reference_coverage": 0.9709340300457218,
+      "reference_end": "2022-10-27",
+      "reference_n": 3062,
+      "reference_start": "2022-10-23",
+      "schema_era": "numeric",
+      "shared_strata": 253,
+      "start": "2022-10-30",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-11-10",
+      "event_coverage": 0.9650682756430613,
+      "event_n": 3149,
+      "reference_coverage": 0.9623404917522564,
+      "reference_end": "2022-11-03",
+      "reference_n": 3213,
+      "reference_start": "2022-10-30",
+      "schema_era": "numeric",
+      "shared_strata": 257,
+      "start": "2022-11-06",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-11-17",
+      "event_coverage": 0.9812362030905077,
+      "event_n": 2718,
+      "reference_coverage": 0.9682438869482375,
+      "reference_end": "2022-11-10",
+      "reference_n": 3149,
+      "reference_start": "2022-11-06",
+      "schema_era": "numeric",
+      "shared_strata": 256,
+      "start": "2022-11-13",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-12-01",
+      "event_coverage": 0.9741219963031423,
+      "event_n": 3246,
+      "reference_coverage": 0.9671261930010604,
+      "reference_end": "2022-11-24",
+      "reference_n": 2829,
+      "reference_start": "2022-11-20",
+      "schema_era": "numeric",
+      "shared_strata": 245,
+      "start": "2022-11-27",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-12-08",
+      "event_coverage": 0.9759036144578314,
+      "event_n": 3154,
+      "reference_coverage": 0.9750462107208873,
+      "reference_end": "2022-12-01",
+      "reference_n": 3246,
+      "reference_start": "2022-11-27",
+      "schema_era": "numeric",
+      "shared_strata": 254,
+      "start": "2022-12-04",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-12-15",
+      "event_coverage": 0.9661805771020788,
+      "event_n": 3223,
+      "reference_coverage": 0.974001268230818,
+      "reference_end": "2022-12-08",
+      "reference_n": 3154,
+      "reference_start": "2022-12-04",
+      "schema_era": "numeric",
+      "shared_strata": 254,
+      "start": "2022-12-11",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2022-12-22",
+      "event_coverage": 0.9627590673575129,
+      "event_n": 3088,
+      "reference_coverage": 0.9649394973627056,
+      "reference_end": "2022-12-15",
+      "reference_n": 3223,
+      "reference_start": "2022-12-11",
+      "schema_era": "numeric",
+      "shared_strata": 250,
+      "start": "2022-12-18",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-01-12",
+      "event_coverage": 0.9802551640340219,
+      "event_n": 3292,
+      "reference_coverage": 0.9693760732684602,
+      "reference_end": "2023-01-05",
+      "reference_n": 3494,
+      "reference_start": "2023-01-01",
+      "schema_era": "text",
+      "shared_strata": 263,
+      "start": "2023-01-08",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-01-26",
+      "event_coverage": 0.9725557461406518,
+      "event_n": 2915,
+      "reference_coverage": 0.9788359788359788,
+      "reference_end": "2023-01-19",
+      "reference_n": 3024,
+      "reference_start": "2023-01-15",
+      "schema_era": "text",
+      "shared_strata": 258,
+      "start": "2023-01-22",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-02-02",
+      "event_coverage": 0.9702300405953992,
+      "event_n": 2956,
+      "reference_coverage": 0.9718696397941681,
+      "reference_end": "2023-01-26",
+      "reference_n": 2915,
+      "reference_start": "2023-01-22",
+      "schema_era": "text",
+      "shared_strata": 255,
+      "start": "2023-01-29",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-02-09",
+      "event_coverage": 0.9686199167467179,
+      "event_n": 3123,
+      "reference_coverage": 0.9739512855209743,
+      "reference_end": "2023-02-02",
+      "reference_n": 2956,
+      "reference_start": "2023-01-29",
+      "schema_era": "text",
+      "shared_strata": 257,
+      "start": "2023-02-05",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-02-16",
+      "event_coverage": 0.9787427877315518,
+      "event_n": 3293,
+      "reference_coverage": 0.9759846301633045,
+      "reference_end": "2023-02-09",
+      "reference_n": 3123,
+      "reference_start": "2023-02-05",
+      "schema_era": "text",
+      "shared_strata": 269,
+      "start": "2023-02-12",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-03-02",
+      "event_coverage": 0.9785238959467635,
+      "event_n": 3306,
+      "reference_coverage": 0.9799955046077771,
+      "reference_end": "2023-02-23",
+      "reference_n": 4449,
+      "reference_start": "2023-02-19",
+      "schema_era": "text",
+      "shared_strata": 274,
+      "start": "2023-02-26",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-03-09",
+      "event_coverage": 0.9758793969849247,
+      "event_n": 2985,
+      "reference_coverage": 0.9670296430732003,
+      "reference_end": "2023-03-02",
+      "reference_n": 3306,
+      "reference_start": "2023-02-26",
+      "schema_era": "text",
+      "shared_strata": 257,
+      "start": "2023-03-05",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-03-16",
+      "event_coverage": 0.9723865877712031,
+      "event_n": 3042,
+      "reference_coverage": 0.9618090452261306,
+      "reference_end": "2023-03-09",
+      "reference_n": 2985,
+      "reference_start": "2023-03-05",
+      "schema_era": "text",
+      "shared_strata": 240,
+      "start": "2023-03-12",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-03-23",
+      "event_coverage": 0.9649690903738593,
+      "event_n": 3397,
+      "reference_coverage": 0.9733727810650887,
+      "reference_end": "2023-03-16",
+      "reference_n": 3042,
+      "reference_start": "2023-03-12",
+      "schema_era": "text",
+      "shared_strata": 242,
+      "start": "2023-03-19",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-03-30",
+      "event_coverage": 0.9700474495848161,
+      "event_n": 3372,
+      "reference_coverage": 0.9793935825728584,
+      "reference_end": "2023-03-23",
+      "reference_n": 3397,
+      "reference_start": "2023-03-19",
+      "schema_era": "text",
+      "shared_strata": 245,
+      "start": "2023-03-26",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-04-06",
+      "event_coverage": 0.9866249288560045,
+      "event_n": 3514,
+      "reference_coverage": 0.9727164887307236,
+      "reference_end": "2023-03-30",
+      "reference_n": 3372,
+      "reference_start": "2023-03-26",
+      "schema_era": "text",
+      "shared_strata": 251,
+      "start": "2023-04-02",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-04-20",
+      "event_coverage": 0.9713941583860283,
+      "event_n": 3321,
+      "reference_coverage": 0.9830880050109615,
+      "reference_end": "2023-04-13",
+      "reference_n": 3193,
+      "reference_start": "2023-04-09",
+      "schema_era": "text",
+      "shared_strata": 251,
+      "start": "2023-04-16",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-04-27",
+      "event_coverage": 0.9799310128566949,
+      "event_n": 3189,
+      "reference_coverage": 0.9668774465522433,
+      "reference_end": "2023-04-20",
+      "reference_n": 3321,
+      "reference_start": "2023-04-16",
+      "schema_era": "text",
+      "shared_strata": 241,
+      "start": "2023-04-23",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-05-04",
+      "event_coverage": 0.9768115942028985,
+      "event_n": 3450,
+      "reference_coverage": 0.9774223894637818,
+      "reference_end": "2023-04-27",
+      "reference_n": 3189,
+      "reference_start": "2023-04-23",
+      "schema_era": "text",
+      "shared_strata": 238,
+      "start": "2023-04-30",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-05-11",
+      "event_coverage": 0.9711160964666293,
+      "event_n": 3566,
+      "reference_coverage": 0.9846376811594203,
+      "reference_end": "2023-05-04",
+      "reference_n": 3450,
+      "reference_start": "2023-04-30",
+      "schema_era": "text",
+      "shared_strata": 250,
+      "start": "2023-05-07",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-05-18",
+      "event_coverage": 0.9805213405900888,
+      "event_n": 3491,
+      "reference_coverage": 0.9761637689287718,
+      "reference_end": "2023-05-11",
+      "reference_n": 3566,
+      "reference_start": "2023-05-07",
+      "schema_era": "text",
+      "shared_strata": 255,
+      "start": "2023-05-14",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-05-25",
+      "event_coverage": 0.9671347475351061,
+      "event_n": 3347,
+      "reference_coverage": 0.9796619879690633,
+      "reference_end": "2023-05-18",
+      "reference_n": 3491,
+      "reference_start": "2023-05-14",
+      "schema_era": "text",
+      "shared_strata": 255,
+      "start": "2023-05-21",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-06-01",
+      "event_coverage": 0.9829197550757331,
+      "event_n": 3103,
+      "reference_coverage": 0.9719151478936361,
+      "reference_end": "2023-05-25",
+      "reference_n": 3347,
+      "reference_start": "2023-05-21",
+      "schema_era": "text",
+      "shared_strata": 260,
+      "start": "2023-05-28",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-06-08",
+      "event_coverage": 0.9781487101669196,
+      "event_n": 3295,
+      "reference_coverage": 0.9697067354173381,
+      "reference_end": "2023-06-01",
+      "reference_n": 3103,
+      "reference_start": "2023-05-28",
+      "schema_era": "text",
+      "shared_strata": 253,
+      "start": "2023-06-04",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-06-15",
+      "event_coverage": 0.9677022454629345,
+      "event_n": 3251,
+      "reference_coverage": 0.9842185128983308,
+      "reference_end": "2023-06-08",
+      "reference_n": 3295,
+      "reference_start": "2023-06-04",
+      "schema_era": "text",
+      "shared_strata": 261,
+      "start": "2023-06-11",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-06-22",
+      "event_coverage": 0.9788597053171044,
+      "event_n": 3122,
+      "reference_coverage": 0.9661642571516457,
+      "reference_end": "2023-06-15",
+      "reference_n": 3251,
+      "reference_start": "2023-06-11",
+      "schema_era": "text",
+      "shared_strata": 258,
+      "start": "2023-06-18",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-06-29",
+      "event_coverage": 0.9659574468085106,
+      "event_n": 3055,
+      "reference_coverage": 0.9730941704035875,
+      "reference_end": "2023-06-22",
+      "reference_n": 3122,
+      "reference_start": "2023-06-18",
+      "schema_era": "text",
+      "shared_strata": 246,
+      "start": "2023-06-25",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-07-13",
+      "event_coverage": 0.9701596113809854,
+      "event_n": 2882,
+      "reference_coverage": 0.9712136081125287,
+      "reference_end": "2023-07-06",
+      "reference_n": 3057,
+      "reference_start": "2023-07-02",
+      "schema_era": "text",
+      "shared_strata": 241,
+      "start": "2023-07-09",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-07-20",
+      "event_coverage": 0.9782135076252724,
+      "event_n": 2754,
+      "reference_coverage": 0.9680777238029147,
+      "reference_end": "2023-07-13",
+      "reference_n": 2882,
+      "reference_start": "2023-07-09",
+      "schema_era": "text",
+      "shared_strata": 242,
+      "start": "2023-07-16",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-07-27",
+      "event_coverage": 0.966821499668215,
+      "event_n": 3014,
+      "reference_coverage": 0.9702251270878722,
+      "reference_end": "2023-07-20",
+      "reference_n": 2754,
+      "reference_start": "2023-07-16",
+      "schema_era": "text",
+      "shared_strata": 236,
+      "start": "2023-07-23",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-08-03",
+      "event_coverage": 0.9731145251396648,
+      "event_n": 2864,
+      "reference_coverage": 0.9698075646980756,
+      "reference_end": "2023-07-27",
+      "reference_n": 3014,
+      "reference_start": "2023-07-23",
+      "schema_era": "text",
+      "shared_strata": 239,
+      "start": "2023-07-30",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-08-10",
+      "event_coverage": 0.9668758716875872,
+      "event_n": 2868,
+      "reference_coverage": 0.9738128491620112,
+      "reference_end": "2023-08-03",
+      "reference_n": 2864,
+      "reference_start": "2023-07-30",
+      "schema_era": "text",
+      "shared_strata": 249,
+      "start": "2023-08-06",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-08-17",
+      "event_coverage": 0.9756277695716395,
+      "event_n": 2708,
+      "reference_coverage": 0.9707112970711297,
+      "reference_end": "2023-08-10",
+      "reference_n": 2868,
+      "reference_start": "2023-08-06",
+      "schema_era": "text",
+      "shared_strata": 250,
+      "start": "2023-08-13",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-08-24",
+      "event_coverage": 0.9713040319651289,
+      "event_n": 2753,
+      "reference_coverage": 0.9723042836041359,
+      "reference_end": "2023-08-17",
+      "reference_n": 2708,
+      "reference_start": "2023-08-13",
+      "schema_era": "text",
+      "shared_strata": 242,
+      "start": "2023-08-20",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-08-31",
+      "event_coverage": 0.9658385093167702,
+      "event_n": 2898,
+      "reference_coverage": 0.9680348710497639,
+      "reference_end": "2023-08-24",
+      "reference_n": 2753,
+      "reference_start": "2023-08-20",
+      "schema_era": "text",
+      "shared_strata": 239,
+      "start": "2023-08-27",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-09-14",
+      "event_coverage": 0.9726027397260274,
+      "event_n": 2920,
+      "reference_coverage": 0.9532742155525239,
+      "reference_end": "2023-09-07",
+      "reference_n": 2932,
+      "reference_start": "2023-09-03",
+      "schema_era": "text",
+      "shared_strata": 238,
+      "start": "2023-09-10",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-09-21",
+      "event_coverage": 0.9670668953687822,
+      "event_n": 2915,
+      "reference_coverage": 0.976027397260274,
+      "reference_end": "2023-09-14",
+      "reference_n": 2920,
+      "reference_start": "2023-09-10",
+      "schema_era": "text",
+      "shared_strata": 242,
+      "start": "2023-09-17",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-09-28",
+      "event_coverage": 0.9698901877435352,
+      "event_n": 2823,
+      "reference_coverage": 0.9701543739279588,
+      "reference_end": "2023-09-21",
+      "reference_n": 2915,
+      "reference_start": "2023-09-17",
+      "schema_era": "text",
+      "shared_strata": 244,
+      "start": "2023-09-24",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-10-05",
+      "event_coverage": 0.9736654804270463,
+      "event_n": 2810,
+      "reference_coverage": 0.9695359546581651,
+      "reference_end": "2023-09-28",
+      "reference_n": 2823,
+      "reference_start": "2023-09-24",
+      "schema_era": "text",
+      "shared_strata": 243,
+      "start": "2023-10-01",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-10-12",
+      "event_coverage": 0.9728586535072259,
+      "event_n": 2837,
+      "reference_coverage": 0.9725978647686833,
+      "reference_end": "2023-10-05",
+      "reference_n": 2810,
+      "reference_start": "2023-10-01",
+      "schema_era": "text",
+      "shared_strata": 240,
+      "start": "2023-10-08",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-10-19",
+      "event_coverage": 0.9672069355446664,
+      "event_n": 2653,
+      "reference_coverage": 0.9746210786041594,
+      "reference_end": "2023-10-12",
+      "reference_n": 2837,
+      "reference_start": "2023-10-08",
+      "schema_era": "text",
+      "shared_strata": 245,
+      "start": "2023-10-15",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-10-26",
+      "event_coverage": 0.9672185430463576,
+      "event_n": 3020,
+      "reference_coverage": 0.9672069355446664,
+      "reference_end": "2023-10-19",
+      "reference_n": 2653,
+      "reference_start": "2023-10-15",
+      "schema_era": "text",
+      "shared_strata": 251,
+      "start": "2023-10-22",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-11-02",
+      "event_coverage": 0.96751968503937,
+      "event_n": 3048,
+      "reference_coverage": 0.9705298013245033,
+      "reference_end": "2023-10-26",
+      "reference_n": 3020,
+      "reference_start": "2023-10-22",
+      "schema_era": "text",
+      "shared_strata": 259,
+      "start": "2023-10-29",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-11-09",
+      "event_coverage": 0.966006600660066,
+      "event_n": 3030,
+      "reference_coverage": 0.9668635170603674,
+      "reference_end": "2023-11-02",
+      "reference_n": 3048,
+      "reference_start": "2023-10-29",
+      "schema_era": "text",
+      "shared_strata": 254,
+      "start": "2023-11-05",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-11-16",
+      "event_coverage": 0.974403320650294,
+      "event_n": 2891,
+      "reference_coverage": 0.966996699669967,
+      "reference_end": "2023-11-09",
+      "reference_n": 3030,
+      "reference_start": "2023-11-05",
+      "schema_era": "text",
+      "shared_strata": 248,
+      "start": "2023-11-12",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-11-30",
+      "event_coverage": 0.9586410635155096,
+      "event_n": 2031,
+      "reference_coverage": 0.9598408104196816,
+      "reference_end": "2023-11-23",
+      "reference_n": 2764,
+      "reference_start": "2023-11-19",
+      "schema_era": "text",
+      "shared_strata": 218,
+      "start": "2023-11-26",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-12-07",
+      "event_coverage": 0.9488773747841105,
+      "event_n": 2895,
+      "reference_coverage": 0.9719350073855244,
+      "reference_end": "2023-11-30",
+      "reference_n": 2031,
+      "reference_start": "2023-11-26",
+      "schema_era": "text",
+      "shared_strata": 235,
+      "start": "2023-12-03",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-12-14",
+      "event_coverage": 0.9677079677079677,
+      "event_n": 2849,
+      "reference_coverage": 0.9633851468048359,
+      "reference_end": "2023-12-07",
+      "reference_n": 2895,
+      "reference_start": "2023-12-03",
+      "schema_era": "text",
+      "shared_strata": 244,
+      "start": "2023-12-10",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2023-12-21",
+      "event_coverage": 0.9702359346642468,
+      "event_n": 2755,
+      "reference_coverage": 0.9656019656019657,
+      "reference_end": "2023-12-14",
+      "reference_n": 2849,
+      "reference_start": "2023-12-10",
+      "schema_era": "text",
+      "shared_strata": 244,
+      "start": "2023-12-17",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-02-08",
+      "event_coverage": 0.9693776753375041,
+      "event_n": 3037,
+      "reference_coverage": 0.9628200631357419,
+      "reference_end": "2024-02-01",
+      "reference_n": 2851,
+      "reference_start": "2024-01-28",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2024-02-04",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-02-22",
+      "event_coverage": 0.974822695035461,
+      "event_n": 2820,
+      "reference_coverage": 0.9723630831643002,
+      "reference_end": "2024-02-15",
+      "reference_n": 3944,
+      "reference_start": "2024-02-11",
+      "schema_era": "numeric",
+      "shared_strata": 210,
+      "start": "2024-02-18",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-02-29",
+      "event_coverage": 0.9765003615328995,
+      "event_n": 2766,
+      "reference_coverage": 0.9723404255319149,
+      "reference_end": "2024-02-22",
+      "reference_n": 2820,
+      "reference_start": "2024-02-18",
+      "schema_era": "numeric",
+      "shared_strata": 209,
+      "start": "2024-02-25",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-03-07",
+      "event_coverage": 0.9705102717031147,
+      "event_n": 3018,
+      "reference_coverage": 0.9707158351409978,
+      "reference_end": "2024-02-29",
+      "reference_n": 2766,
+      "reference_start": "2024-02-25",
+      "schema_era": "numeric",
+      "shared_strata": 205,
+      "start": "2024-03-03",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-03-14",
+      "event_coverage": 0.9738181818181818,
+      "event_n": 2750,
+      "reference_coverage": 0.9718356527501657,
+      "reference_end": "2024-03-07",
+      "reference_n": 3018,
+      "reference_start": "2024-03-03",
+      "schema_era": "numeric",
+      "shared_strata": 207,
+      "start": "2024-03-10",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-03-21",
+      "event_coverage": 0.9658298465829847,
+      "event_n": 2868,
+      "reference_coverage": 0.9745454545454545,
+      "reference_end": "2024-03-14",
+      "reference_n": 2750,
+      "reference_start": "2024-03-10",
+      "schema_era": "numeric",
+      "shared_strata": 212,
+      "start": "2024-03-17",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-03-28",
+      "event_coverage": 0.9736758642562638,
+      "event_n": 3153,
+      "reference_coverage": 0.9672245467224547,
+      "reference_end": "2024-03-21",
+      "reference_n": 2868,
+      "reference_start": "2024-03-17",
+      "schema_era": "numeric",
+      "shared_strata": 217,
+      "start": "2024-03-24",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-04-04",
+      "event_coverage": 0.9703880190605855,
+      "event_n": 2938,
+      "reference_coverage": 0.978116079923882,
+      "reference_end": "2024-03-28",
+      "reference_n": 3153,
+      "reference_start": "2024-03-24",
+      "schema_era": "numeric",
+      "shared_strata": 214,
+      "start": "2024-03-31",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-04-11",
+      "event_coverage": 0.9347751458976999,
+      "event_n": 2913,
+      "reference_coverage": 0.9703880190605855,
+      "reference_end": "2024-04-04",
+      "reference_n": 2938,
+      "reference_start": "2024-03-31",
+      "schema_era": "numeric",
+      "shared_strata": 223,
+      "start": "2024-04-07",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-04-18",
+      "event_coverage": 0.978901540522438,
+      "event_n": 2986,
+      "reference_coverage": 0.950223137658771,
+      "reference_end": "2024-04-11",
+      "reference_n": 2913,
+      "reference_start": "2024-04-07",
+      "schema_era": "numeric",
+      "shared_strata": 223,
+      "start": "2024-04-14",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-04-25",
+      "event_coverage": 0.9794326241134752,
+      "event_n": 2820,
+      "reference_coverage": 0.9762223710649699,
+      "reference_end": "2024-04-18",
+      "reference_n": 2986,
+      "reference_start": "2024-04-14",
+      "schema_era": "numeric",
+      "shared_strata": 219,
+      "start": "2024-04-21",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-05-02",
+      "event_coverage": 0.976078167115903,
+      "event_n": 2968,
+      "reference_coverage": 0.9773049645390071,
+      "reference_end": "2024-04-25",
+      "reference_n": 2820,
+      "reference_start": "2024-04-21",
+      "schema_era": "numeric",
+      "shared_strata": 215,
+      "start": "2024-04-28",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-05-09",
+      "event_coverage": 0.9727077583563324,
+      "event_n": 3261,
+      "reference_coverage": 0.9767520215633423,
+      "reference_end": "2024-05-02",
+      "reference_n": 2968,
+      "reference_start": "2024-04-28",
+      "schema_era": "numeric",
+      "shared_strata": 215,
+      "start": "2024-05-05",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-05-16",
+      "event_coverage": 0.9706774519716885,
+      "event_n": 2967,
+      "reference_coverage": 0.9760809567617296,
+      "reference_end": "2024-05-09",
+      "reference_n": 3261,
+      "reference_start": "2024-05-05",
+      "schema_era": "numeric",
+      "shared_strata": 219,
+      "start": "2024-05-12",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-05-23",
+      "event_coverage": 0.9782534828406388,
+      "event_n": 2943,
+      "reference_coverage": 0.9797775530839231,
+      "reference_end": "2024-05-16",
+      "reference_n": 2967,
+      "reference_start": "2024-05-12",
+      "schema_era": "numeric",
+      "shared_strata": 228,
+      "start": "2024-05-19",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-06-06",
+      "event_coverage": 0.9730820995962315,
+      "event_n": 2972,
+      "reference_coverage": 0.9732546022924626,
+      "reference_end": "2024-05-30",
+      "reference_n": 2879,
+      "reference_start": "2024-05-26",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2024-06-02",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-06-13",
+      "event_coverage": 0.9819054652880355,
+      "event_n": 2708,
+      "reference_coverage": 0.9761103633916555,
+      "reference_end": "2024-06-06",
+      "reference_n": 2972,
+      "reference_start": "2024-06-02",
+      "schema_era": "numeric",
+      "shared_strata": 211,
+      "start": "2024-06-09",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-06-20",
+      "event_coverage": 0.9688841201716738,
+      "event_n": 2796,
+      "reference_coverage": 0.982274741506647,
+      "reference_end": "2024-06-13",
+      "reference_n": 2708,
+      "reference_start": "2024-06-09",
+      "schema_era": "numeric",
+      "shared_strata": 208,
+      "start": "2024-06-16",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-06-27",
+      "event_coverage": 0.9690358902181563,
+      "event_n": 2842,
+      "reference_coverage": 0.9785407725321889,
+      "reference_end": "2024-06-20",
+      "reference_n": 2796,
+      "reference_start": "2024-06-16",
+      "schema_era": "numeric",
+      "shared_strata": 223,
+      "start": "2024-06-23",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-07-04",
+      "event_coverage": 0.9678200692041522,
+      "event_n": 2890,
+      "reference_coverage": 0.9676284306826178,
+      "reference_end": "2024-06-27",
+      "reference_n": 2842,
+      "reference_start": "2024-06-23",
+      "schema_era": "numeric",
+      "shared_strata": 222,
+      "start": "2024-06-30",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-07-11",
+      "event_coverage": 0.9764624437521634,
+      "event_n": 2889,
+      "reference_coverage": 0.9730103806228374,
+      "reference_end": "2024-07-04",
+      "reference_n": 2890,
+      "reference_start": "2024-06-30",
+      "schema_era": "numeric",
+      "shared_strata": 224,
+      "start": "2024-07-07",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-07-18",
+      "event_coverage": 0.9744255003706449,
+      "event_n": 2698,
+      "reference_coverage": 0.9761163032191069,
+      "reference_end": "2024-07-11",
+      "reference_n": 2889,
+      "reference_start": "2024-07-07",
+      "schema_era": "numeric",
+      "shared_strata": 218,
+      "start": "2024-07-14",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-07-25",
+      "event_coverage": 0.965042372881356,
+      "event_n": 2832,
+      "reference_coverage": 0.9662713120830244,
+      "reference_end": "2024-07-18",
+      "reference_n": 2698,
+      "reference_start": "2024-07-14",
+      "schema_era": "numeric",
+      "shared_strata": 208,
+      "start": "2024-07-21",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-08-01",
+      "event_coverage": 0.9802050194414987,
+      "event_n": 2829,
+      "reference_coverage": 0.9713983050847458,
+      "reference_end": "2024-07-25",
+      "reference_n": 2832,
+      "reference_start": "2024-07-21",
+      "schema_era": "numeric",
+      "shared_strata": 216,
+      "start": "2024-07-28",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-08-08",
+      "event_coverage": 0.9723655121591747,
+      "event_n": 2714,
+      "reference_coverage": 0.968893601979498,
+      "reference_end": "2024-08-01",
+      "reference_n": 2829,
+      "reference_start": "2024-07-28",
+      "schema_era": "numeric",
+      "shared_strata": 206,
+      "start": "2024-08-04",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-08-15",
+      "event_coverage": 0.9638088545326774,
+      "event_n": 2846,
+      "reference_coverage": 0.9771554900515844,
+      "reference_end": "2024-08-08",
+      "reference_n": 2714,
+      "reference_start": "2024-08-04",
+      "schema_era": "numeric",
+      "shared_strata": 211,
+      "start": "2024-08-11",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-08-22",
+      "event_coverage": 0.9742404227212682,
+      "event_n": 3028,
+      "reference_coverage": 0.9803232607167955,
+      "reference_end": "2024-08-15",
+      "reference_n": 2846,
+      "reference_start": "2024-08-11",
+      "schema_era": "numeric",
+      "shared_strata": 226,
+      "start": "2024-08-18",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-08-29",
+      "event_coverage": 0.9790518191841234,
+      "event_n": 2721,
+      "reference_coverage": 0.9715984147952443,
+      "reference_end": "2024-08-22",
+      "reference_n": 3028,
+      "reference_start": "2024-08-18",
+      "schema_era": "numeric",
+      "shared_strata": 220,
+      "start": "2024-08-25",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-09-19",
+      "event_coverage": 0.971626045834849,
+      "event_n": 2749,
+      "reference_coverage": 0.9514899514899515,
+      "reference_end": "2024-09-12",
+      "reference_n": 2886,
+      "reference_start": "2024-09-08",
+      "schema_era": "numeric",
+      "shared_strata": 211,
+      "start": "2024-09-15",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-09-26",
+      "event_coverage": 0.9702738810955244,
+      "event_n": 2994,
+      "reference_coverage": 0.9712622771917061,
+      "reference_end": "2024-09-19",
+      "reference_n": 2749,
+      "reference_start": "2024-09-15",
+      "schema_era": "numeric",
+      "shared_strata": 217,
+      "start": "2024-09-22",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-10-03",
+      "event_coverage": 0.9717912552891397,
+      "event_n": 2836,
+      "reference_coverage": 0.968937875751503,
+      "reference_end": "2024-09-26",
+      "reference_n": 2994,
+      "reference_start": "2024-09-22",
+      "schema_era": "numeric",
+      "shared_strata": 217,
+      "start": "2024-09-29",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-10-10",
+      "event_coverage": 0.9730726669125784,
+      "event_n": 2711,
+      "reference_coverage": 0.9665021156558533,
+      "reference_end": "2024-10-03",
+      "reference_n": 2836,
+      "reference_start": "2024-09-29",
+      "schema_era": "numeric",
+      "shared_strata": 211,
+      "start": "2024-10-06",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-10-17",
+      "event_coverage": 0.9737559645535105,
+      "event_n": 2934,
+      "reference_coverage": 0.9774990778310586,
+      "reference_end": "2024-10-10",
+      "reference_n": 2711,
+      "reference_start": "2024-10-06",
+      "schema_era": "numeric",
+      "shared_strata": 214,
+      "start": "2024-10-13",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-10-24",
+      "event_coverage": 0.969790593889461,
+      "event_n": 2913,
+      "reference_coverage": 0.9737559645535105,
+      "reference_end": "2024-10-17",
+      "reference_n": 2934,
+      "reference_start": "2024-10-13",
+      "schema_era": "numeric",
+      "shared_strata": 213,
+      "start": "2024-10-20",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-10-31",
+      "event_coverage": 0.9753211629479378,
+      "event_n": 2958,
+      "reference_coverage": 0.96738757294885,
+      "reference_end": "2024-10-24",
+      "reference_n": 2913,
+      "reference_start": "2024-10-20",
+      "schema_era": "numeric",
+      "shared_strata": 210,
+      "start": "2024-10-27",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-11-07",
+      "event_coverage": 0.9704282800815771,
+      "event_n": 2942,
+      "reference_coverage": 0.9759972954699121,
+      "reference_end": "2024-10-31",
+      "reference_n": 2958,
+      "reference_start": "2024-10-27",
+      "schema_era": "numeric",
+      "shared_strata": 204,
+      "start": "2024-11-03",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-11-14",
+      "event_coverage": 0.9729629629629629,
+      "event_n": 2700,
+      "reference_coverage": 0.9840244731475187,
+      "reference_end": "2024-11-07",
+      "reference_n": 2942,
+      "reference_start": "2024-11-03",
+      "schema_era": "numeric",
+      "shared_strata": 216,
+      "start": "2024-11-10",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-11-21",
+      "event_coverage": 0.9788756388415673,
+      "event_n": 2935,
+      "reference_coverage": 0.98,
+      "reference_end": "2024-11-14",
+      "reference_n": 2700,
+      "reference_start": "2024-11-10",
+      "schema_era": "numeric",
+      "shared_strata": 225,
+      "start": "2024-11-17",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE",
+        "SAME_SEASON_STAGE_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-12-05",
+      "event_coverage": 0.9794007490636704,
+      "event_n": 2670,
+      "reference_coverage": 0.9763893933890302,
+      "reference_end": "2024-11-28",
+      "reference_n": 2753,
+      "reference_start": "2024-11-24",
+      "schema_era": "numeric",
+      "shared_strata": 216,
+      "start": "2024-12-01",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-12-12",
+      "event_coverage": 0.9717514124293786,
+      "event_n": 2832,
+      "reference_coverage": 0.9737827715355806,
+      "reference_end": "2024-12-05",
+      "reference_n": 2670,
+      "reference_start": "2024-12-01",
+      "schema_era": "numeric",
+      "shared_strata": 210,
+      "start": "2024-12-08",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2024-12-19",
+      "event_coverage": 0.9763412195934689,
+      "event_n": 3001,
+      "reference_coverage": 0.97704802259887,
+      "reference_end": "2024-12-12",
+      "reference_n": 2832,
+      "reference_start": "2024-12-08",
+      "schema_era": "numeric",
+      "shared_strata": 209,
+      "start": "2024-12-15",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    },
+    {
+      "eligible": true,
+      "end": "2025-01-02",
+      "event_coverage": 0.9638922888616891,
+      "event_n": 1634,
+      "reference_coverage": 0.9456475583864119,
+      "reference_end": "2024-12-26",
+      "reference_n": 2355,
+      "reference_start": "2024-12-22",
+      "schema_era": "numeric",
+      "shared_strata": 185,
+      "start": "2024-12-29",
+      "universes": [
+        "FULL_QUALIFIED_REFERENCE",
+        "STAGE_ERA_MATCHED_REFERENCE"
+      ]
+    }
+  ]
+}

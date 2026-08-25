@@ -1,0 +1,9 @@
+# Estimator-consistent coverage
+
+Coverage opened only after estimator parity and the new max-cell threshold. It is secondary.
+
+|family|abnormal_cell_count|C_exists|C_forall|label|
+|---|---|---|---|---|
+|R1_S4_TWELVE_HOUR_SHIFTS|9|True|False|EXISTENTIAL_FULL_COVERAGE|
+|R1_S4_REDEPLOYMENT_ANTI_LOOTING|9|False|False|NO_ADMISSIBLE_FULL_COVERAGE|
+|R1_S4_CURFEW|9|False|False|NO_ADMISSIBLE_FULL_COVERAGE|

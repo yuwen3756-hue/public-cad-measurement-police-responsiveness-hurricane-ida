@@ -1,0 +1,17 @@
+machine_field,2021_locked_present,2021_locked_label,2021_locked_datatype,2025_present,2025_label,2025_datatype,2026_present,2026_label,2026_datatype
+nopd_item,True,NOPD_Item,text,True,NOPD_Item,text,True,NOPD_Item,text
+type_,True,Type,text,True,Type,text,True,Type,text
+typetext,True,TypeText,text,True,TypeText,text,True,TypeText,text
+priority,True,Priority,text,True,Priority,text,True,Priority,text
+initialtype,True,InitialType,text,True,InitialType,text,True,InitialType,text
+initialtypetext,True,InitialTypeText,text,True,InitialTypeText,text,True,InitialTypeText,text
+initialpriority,True,InitialPriority,text,True,InitialPriority,text,True,InitialPriority,text
+timecreate,True,TimeCreate,calendar_date,True,TimeCreate,text,True,TimeCreate,text
+timedispatch,True,TimeDispatch,calendar_date,True,TimeDispatch,text,True,TimeDispatch,text
+timearrive,True,TimeArrive,calendar_date,True,TimeArrive,text,True,TimeArrive,text
+timeclosed,True,TimeClosed,calendar_date,True,TimeClosed,text,True,TimeClosed,text
+disposition,True,Disposition,text,True,Disposition,text,True,Disposition,text
+dispositiontext,True,DispositionText,text,True,DispositionText,text,True,DispositionText,text
+selfinitiated,True,SelfInitiated,text,True,SelfInitiated,text,True,SelfInitiated,text
+beat,True,Beat,text,True,Beat,text,True,Beat,text
+policedistrict,True,PoliceDistrict,number,True,PoliceDistrict,text,True,PoliceDistrict,text

@@ -1,0 +1,86 @@
+{
+  "claim_firewall": [
+    "No claim that current reforms prevent another Ida.",
+    "No claim that current police performance is better.",
+    "No claim that a 2026 system would respond better.",
+    "No claim that Ida would have had a different outcome.",
+    "No mechanism probabilities assigned."
+  ],
+  "comparison_universes": {
+    "2025": "Official Data.NOLA CFS 2025 endpoint 4xwx-sfte and EPR 2025 endpoint agqi-9adb.",
+    "2026": "Official Data.NOLA CFS 2026 endpoint es9j-6y5d; no catalog-listed EPR 2026 located as of 2026-08-11.",
+    "dashboard_ecosystem": "Official NOPD dashboard directory and Response Times Power BI report/model; Calls for Service and Crime Trends link resolves to a third-party Community Crime Map and was not treated as official primary data.",
+    "locked_2021": "Official Data.NOLA CFS 2021 endpoint 3pha-hum9 plus locked public CAD-EPR and M7D topology/decomposition artifacts."
+  },
+  "decision": "M8P_PUBLIC_OBSERVABILITY_PARTIALLY_IMPROVED",
+  "decision_basis": "The current public dashboard adds useful queryable derived/model fields, including candidate en-route and disposition-multiplicity signals, but the annual raw schema is essentially the locked 2021 schema and the new fields lack common semantic/history bindings. Queue, availability, priority history, and continuity remain outside the public measurement regime.",
+  "ida_observability_replay": {
+    "L1_public_topology_detection": {
+      "change_from_2021": "No material primitive change; create/dispatch/arrival/close topology remains public.",
+      "status": "PUBLICLY_IDENTIFIABLE"
+    },
+    "L2_within_disposition_stage_localization": {
+      "change_from_2021": "Candidate improvement from queryable en-route duration and All Dispositions, but definitions, ordering, and history are unqualified.",
+      "status": "PARTIALLY_IDENTIFIABLE"
+    },
+    "L3_internal_public_bridge_separation": {
+      "change_from_2021": "Public surfaces can be compared, but internal state and publication transformations are not exposed; 2026 EPR is missing from the catalog.",
+      "status": "PARTIALLY_IDENTIFIABLE"
+    },
+    "L4_queue_availability_reconstruction": {
+      "change_from_2021": "No contraction: no queue, calls-holding, unit-status, or availability time series.",
+      "status": "NOT_PUBLICLY_IDENTIFIABLE"
+    },
+    "L5_priority_history_reconstruction": {
+      "change_from_2021": "Current documentation and dashboard flags clarify endpoint contrasts, but the 2021 schema already exposed both endpoints and no history was added.",
+      "status": "PARTIALLY_IDENTIFIABLE"
+    },
+    "L6_continuity_fallback_reconstruction": {
+      "change_from_2021": "Policy describes fallback routes, but realized routing, callback, uptime, and failover states remain unobserved.",
+      "status": "NOT_PUBLICLY_IDENTIFIABLE"
+    },
+    "L7_cross_module_propagation": {
+      "change_from_2021": "Public priority, stage, disposition, and 2025 EPR endpoints can be cross-tabulated, but Q and C states are absent and no full B-Q-P-C path is identified.",
+      "status": "PARTIALLY_IDENTIFIABLE"
+    }
+  },
+  "identified_set_comparison": {
+    "common_observable_endpoint_parameters": "Conditional on a maintained frozen common-semantic mapping, I_2026(theta | Y_Ida) = I_2021(theta | Y_Ida) after schema normalization when the dashboard field is a deterministic function of InitialPriority, Priority, stage timestamps, signal endpoints, disposition endpoint, or SelfInitiated.",
+    "dashboard_only_candidate_fields": "En-route seconds and All Dispositions are publicly queryable, but no authoritative common semantic map to the locked 2021 estimand was located. Treating their labels as a proof of common meaning would violate the semantic-binding rule.",
+    "queue_availability_priority_history_continuity_parameters": "No strict containment proved; the same decisive latent state variables remain absent.",
+    "strict_contractions_proved": []
+  },
+  "m8d_realized_witness_regime": {
+    "interpretation": "Current public semantic enrichment does not open any realized M8D B-Q-P-C structural witness module.",
+    "regime": "W_0",
+    "tuple": [
+      "CLOSED",
+      "CLOSED",
+      "CLOSED",
+      "CLOSED"
+    ]
+  },
+  "module_crosswalk_semantic_firewall": {
+    "B": {
+      "m8d_structural_witness_status": "CLOSED",
+      "public_semantic_enrichment": "PARTIAL_CONTEXT",
+      "reason": "The 2025 public CFS-EPR item link supplies downstream public-record context. It is not the M8 internal/public dispatch bridge U_dispatch -> D_pub, and no public internal-event/public-export reconciliation is available."
+    },
+    "C": {
+      "m8d_structural_witness_status": "CLOSED",
+      "public_semantic_enrichment": "SEMANTICS_QUALIFIED",
+      "reason": "APR, callbacks, and fallback routes are documented as policy semantics, but no public realized route, callback, uptime, or failover state was located."
+    },
+    "P": {
+      "m8d_structural_witness_status": "CLOSED",
+      "public_semantic_enrichment": "ENDPOINT_ENRICHED",
+      "reason": "Initial/final priority endpoints, suffix semantics, and a change flag are public; transition times, actors, reasons, multiplicity, and event history are not. No formal PARTIAL_OUTER priority-history set is proved."
+    },
+    "Q": {
+      "m8d_structural_witness_status": "CLOSED",
+      "public_semantic_enrichment": "ENDPOINT_PROXY_ONLY",
+      "reason": "Create/dispatch/arrival/close endpoints and response-time derivatives describe public record stages, but they do not construct a queue reachable set or expose calls holding, unit availability, or effective capacity."
+    }
+  },
+  "result_version": "beland_plus_m8p_v1"
+}

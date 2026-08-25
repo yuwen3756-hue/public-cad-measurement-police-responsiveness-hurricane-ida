@@ -1,0 +1,12 @@
+{
+  "artifact_type": "M7D_E_INDEPENDENT_REPLICATION",
+  "independent_identity_max_abs_residual": 1.6653345369377348e-16,
+  "independent_parent_parity_max_abs_residual": 1.1102230246251565e-16,
+  "max_abs_numeric_residual": 2.220446049250313e-16,
+  "numeric_comparisons": 856,
+  "overall": "PASS",
+  "primary_tables_opened_only_after_independent_freeze": true,
+  "primary_tables_used_as_numeric_inputs": false,
+  "status_comparisons_pass": true,
+  "tolerance": 1e-12
+}

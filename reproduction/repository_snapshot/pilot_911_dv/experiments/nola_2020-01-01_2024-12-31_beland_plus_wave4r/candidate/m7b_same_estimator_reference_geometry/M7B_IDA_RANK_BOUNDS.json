@@ -1,0 +1,63 @@
+{
+  "Ida_interval": [
+    0.25073448467090204,
+    0.25073449467090003
+  ],
+  "artifact_type": "M7B_IDA_RANK_BOUNDS",
+  "results": {
+    "FULL_QUALIFIED_REFERENCE__ALL_QUALIFIED": {
+      "R": 217,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.0045871559633027525,
+      "p_upper": 0.0045871559633027525,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "FULL_QUALIFIED_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 217,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.0045871559633027525,
+      "p_upper": 0.0045871559633027525,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "SAME_SEASON_STAGE_REFERENCE__ALL_QUALIFIED": {
+      "R": 86,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.011494252873563218,
+      "p_upper": 0.011494252873563218,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "SAME_SEASON_STAGE_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 86,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.011494252873563218,
+      "p_upper": 0.011494252873563218,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "STAGE_ERA_MATCHED_REFERENCE__ALL_QUALIFIED": {
+      "R": 153,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.006493506493506494,
+      "p_upper": 0.006493506493506494,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "STAGE_ERA_MATCHED_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 153,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.006493506493506494,
+      "p_upper": 0.006493506493506494,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    }
+  }
+}

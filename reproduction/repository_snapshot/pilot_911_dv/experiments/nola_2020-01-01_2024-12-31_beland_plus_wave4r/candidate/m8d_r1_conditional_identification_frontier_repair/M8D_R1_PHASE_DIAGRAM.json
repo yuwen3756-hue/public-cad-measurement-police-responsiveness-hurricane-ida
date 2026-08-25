@@ -1,0 +1,2868 @@
+{
+  "artifact_type": "M8D_R1_PHASE_DIAGRAM",
+  "coupling_statuses": [
+    "NOT_APPLICABLE",
+    "UNCOUPLED",
+    "PARTIAL_MAP",
+    "QUALIFIED_MAP"
+  ],
+  "global_rule": "JOINT_MODULE_AVAILABILITY_DOES_NOT_IDENTIFY_PROPAGATION",
+  "legal_regime_count": 54,
+  "regimes": [
+    {
+      "CROSS_MODULE_RELATION_STATUS": "NOT_APPLICABLE",
+      "active_module_count": 0,
+      "coupling_variants": [
+        {
+          "propagation_identified": false,
+          "status": "NOT_APPLICABLE"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [],
+      "regime": {
+        "B": "CLOSED",
+        "C": "CLOSED",
+        "P": "CLOSED",
+        "Q": "CLOSED"
+      },
+      "regime_id": "B0_Q0_P0_C0",
+      "remains_unidentified": [
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": []
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "NOT_APPLICABLE",
+      "active_module_count": 1,
+      "coupling_variants": [
+        {
+          "propagation_identified": false,
+          "status": "NOT_APPLICABLE"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "C"
+      ],
+      "qualified_modules": [],
+      "regime": {
+        "B": "CLOSED",
+        "C": "PARTIAL",
+        "P": "CLOSED",
+        "Q": "CLOSED"
+      },
+      "regime_id": "B0_Q0_P0_C1",
+      "remains_unidentified": [
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "C_PARTIAL_CONTEXT"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "NOT_APPLICABLE",
+      "active_module_count": 1,
+      "coupling_variants": [
+        {
+          "propagation_identified": false,
+          "status": "NOT_APPLICABLE"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [
+        "C"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "QUALIFIED",
+        "P": "CLOSED",
+        "Q": "CLOSED"
+      },
+      "regime_id": "B0_Q0_P0_C2",
+      "remains_unidentified": [
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": [
+        "C_REACHABLE"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "NOT_APPLICABLE",
+      "active_module_count": 1,
+      "coupling_variants": [
+        {
+          "propagation_identified": false,
+          "status": "NOT_APPLICABLE"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow outer reachable set"
+      ],
+      "partial_modules": [
+        "Q"
+      ],
+      "qualified_modules": [],
+      "regime": {
+        "B": "CLOSED",
+        "C": "CLOSED",
+        "P": "CLOSED",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B0_Q1_P0_C0",
+      "remains_unidentified": [
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "Q_PARTIAL_OUTER"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow outer reachable set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "Q",
+        "C"
+      ],
+      "qualified_modules": [],
+      "regime": {
+        "B": "CLOSED",
+        "C": "PARTIAL",
+        "P": "CLOSED",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B0_Q1_P0_C1",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp queue trajectory",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "Q_PARTIAL_OUTER",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow outer reachable set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "Q"
+      ],
+      "qualified_modules": [
+        "C"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "QUALIFIED",
+        "P": "CLOSED",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B0_Q1_P0_C2",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "Q_PARTIAL_OUTER",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow outer reachable set",
+        "priority/exit outer transport set"
+      ],
+      "partial_modules": [
+        "Q",
+        "P"
+      ],
+      "qualified_modules": [],
+      "regime": {
+        "B": "CLOSED",
+        "C": "CLOSED",
+        "P": "PARTIAL",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B0_Q1_P1_C0",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "Q_PARTIAL_OUTER",
+        "P_PARTIAL_OUTER",
+        "UNCOUPLED_PRODUCT(Q+P)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow outer reachable set",
+        "priority/exit outer transport set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "Q",
+        "P",
+        "C"
+      ],
+      "qualified_modules": [],
+      "regime": {
+        "B": "CLOSED",
+        "C": "PARTIAL",
+        "P": "PARTIAL",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B0_Q1_P1_C1",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport",
+        "sharp queue trajectory",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "Q_PARTIAL_OUTER",
+        "P_PARTIAL_OUTER",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow outer reachable set",
+        "priority/exit outer transport set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "Q",
+        "P"
+      ],
+      "qualified_modules": [
+        "C"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "QUALIFIED",
+        "P": "PARTIAL",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B0_Q1_P1_C2",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "Q_PARTIAL_OUTER",
+        "P_PARTIAL_OUTER",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "NOT_APPLICABLE",
+      "active_module_count": 1,
+      "coupling_variants": [
+        {
+          "propagation_identified": false,
+          "status": "NOT_APPLICABLE"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow reachable set and separately qualified realized availability"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [
+        "Q"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "CLOSED",
+        "P": "CLOSED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B0_Q2_P0_C0",
+      "remains_unidentified": [
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": [
+        "Q_REACHABLE"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow reachable set and separately qualified realized availability",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "C"
+      ],
+      "qualified_modules": [
+        "Q"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "PARTIAL",
+        "P": "CLOSED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B0_Q2_P0_C1",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "Q_REACHABLE",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow reachable set and separately qualified realized availability",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [
+        "Q",
+        "C"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "QUALIFIED",
+        "P": "CLOSED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B0_Q2_P0_C2",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": [
+        "Q_REACHABLE",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority/exit outer transport set"
+      ],
+      "partial_modules": [
+        "P"
+      ],
+      "qualified_modules": [
+        "Q"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "CLOSED",
+        "P": "PARTIAL",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B0_Q2_P1_C0",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport"
+      ],
+      "structural_class_instances": [
+        "Q_REACHABLE",
+        "P_PARTIAL_OUTER",
+        "UNCOUPLED_PRODUCT(Q+P)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority/exit outer transport set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "P",
+        "C"
+      ],
+      "qualified_modules": [
+        "Q"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "PARTIAL",
+        "P": "PARTIAL",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B0_Q2_P1_C1",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "Q_REACHABLE",
+        "P_PARTIAL_OUTER",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority/exit outer transport set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "P"
+      ],
+      "qualified_modules": [
+        "Q",
+        "C"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "QUALIFIED",
+        "P": "PARTIAL",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B0_Q2_P1_C2",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport"
+      ],
+      "structural_class_instances": [
+        "Q_REACHABLE",
+        "P_PARTIAL_OUTER",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority-risk-set and exit reachable set"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [
+        "Q",
+        "P"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "CLOSED",
+        "P": "QUALIFIED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B0_Q2_P2_C0",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": [
+        "Q_REACHABLE",
+        "P_REACHABLE",
+        "UNCOUPLED_PRODUCT(Q+P)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority-risk-set and exit reachable set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "C"
+      ],
+      "qualified_modules": [
+        "Q",
+        "P"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "PARTIAL",
+        "P": "QUALIFIED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B0_Q2_P2_C1",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "Q_REACHABLE",
+        "P_REACHABLE",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority-risk-set and exit reachable set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [
+        "Q",
+        "P",
+        "C"
+      ],
+      "regime": {
+        "B": "CLOSED",
+        "C": "QUALIFIED",
+        "P": "QUALIFIED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B0_Q2_P2_C2",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": [
+        "Q_REACHABLE",
+        "P_REACHABLE",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "NOT_APPLICABLE",
+      "active_module_count": 1,
+      "coupling_variants": [
+        {
+          "propagation_identified": false,
+          "status": "NOT_APPLICABLE"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds"
+      ],
+      "partial_modules": [
+        "B"
+      ],
+      "qualified_modules": [],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "CLOSED",
+        "P": "CLOSED",
+        "Q": "CLOSED"
+      },
+      "regime_id": "B1_Q0_P0_C0",
+      "remains_unidentified": [
+        "capture interpretation",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "B",
+        "C"
+      ],
+      "qualified_modules": [],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "PARTIAL",
+        "P": "CLOSED",
+        "Q": "CLOSED"
+      },
+      "regime_id": "B1_Q0_P0_C1",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "B"
+      ],
+      "qualified_modules": [
+        "C"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "QUALIFIED",
+        "P": "CLOSED",
+        "Q": "CLOSED"
+      },
+      "regime_id": "B1_Q0_P0_C2",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow outer reachable set"
+      ],
+      "partial_modules": [
+        "B",
+        "Q"
+      ],
+      "qualified_modules": [],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "CLOSED",
+        "P": "CLOSED",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B1_Q1_P0_C0",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_PARTIAL_OUTER",
+        "UNCOUPLED_PRODUCT(B+Q)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow outer reachable set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "B",
+        "Q",
+        "C"
+      ],
+      "qualified_modules": [],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "PARTIAL",
+        "P": "CLOSED",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B1_Q1_P0_C1",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "sharp queue trajectory",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_PARTIAL_OUTER",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow outer reachable set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "B",
+        "Q"
+      ],
+      "qualified_modules": [
+        "C"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "QUALIFIED",
+        "P": "CLOSED",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B1_Q1_P0_C2",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_PARTIAL_OUTER",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow outer reachable set",
+        "priority/exit outer transport set"
+      ],
+      "partial_modules": [
+        "B",
+        "Q",
+        "P"
+      ],
+      "qualified_modules": [],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "CLOSED",
+        "P": "PARTIAL",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B1_Q1_P1_C0",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "sharp priority transport",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_PARTIAL_OUTER",
+        "P_PARTIAL_OUTER",
+        "UNCOUPLED_PRODUCT(B+Q+P)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow outer reachable set",
+        "priority/exit outer transport set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "B",
+        "Q",
+        "P",
+        "C"
+      ],
+      "qualified_modules": [],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "PARTIAL",
+        "P": "PARTIAL",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B1_Q1_P1_C1",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "sharp priority transport",
+        "sharp queue trajectory",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_PARTIAL_OUTER",
+        "P_PARTIAL_OUTER",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow outer reachable set",
+        "priority/exit outer transport set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "B",
+        "Q",
+        "P"
+      ],
+      "qualified_modules": [
+        "C"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "QUALIFIED",
+        "P": "PARTIAL",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B1_Q1_P1_C2",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "sharp priority transport",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_PARTIAL_OUTER",
+        "P_PARTIAL_OUTER",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow reachable set and separately qualified realized availability"
+      ],
+      "partial_modules": [
+        "B"
+      ],
+      "qualified_modules": [
+        "Q"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "CLOSED",
+        "P": "CLOSED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B1_Q2_P0_C0",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow reachable set and separately qualified realized availability",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "B",
+        "C"
+      ],
+      "qualified_modules": [
+        "Q"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "PARTIAL",
+        "P": "CLOSED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B1_Q2_P0_C1",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_REACHABLE",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow reachable set and separately qualified realized availability",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "B"
+      ],
+      "qualified_modules": [
+        "Q",
+        "C"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "QUALIFIED",
+        "P": "CLOSED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B1_Q2_P0_C2",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_REACHABLE",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority/exit outer transport set"
+      ],
+      "partial_modules": [
+        "B",
+        "P"
+      ],
+      "qualified_modules": [
+        "Q"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "CLOSED",
+        "P": "PARTIAL",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B1_Q2_P1_C0",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "sharp priority transport"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_REACHABLE",
+        "P_PARTIAL_OUTER",
+        "UNCOUPLED_PRODUCT(B+Q+P)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority/exit outer transport set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "B",
+        "P",
+        "C"
+      ],
+      "qualified_modules": [
+        "Q"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "PARTIAL",
+        "P": "PARTIAL",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B1_Q2_P1_C1",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "sharp priority transport",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_REACHABLE",
+        "P_PARTIAL_OUTER",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority/exit outer transport set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "B",
+        "P"
+      ],
+      "qualified_modules": [
+        "Q",
+        "C"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "QUALIFIED",
+        "P": "PARTIAL",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B1_Q2_P1_C2",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "sharp priority transport"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_REACHABLE",
+        "P_PARTIAL_OUTER",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority-risk-set and exit reachable set"
+      ],
+      "partial_modules": [
+        "B"
+      ],
+      "qualified_modules": [
+        "Q",
+        "P"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "CLOSED",
+        "P": "QUALIFIED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B1_Q2_P2_C0",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_REACHABLE",
+        "P_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+P)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority-risk-set and exit reachable set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "B",
+        "C"
+      ],
+      "qualified_modules": [
+        "Q",
+        "P"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "PARTIAL",
+        "P": "QUALIFIED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B1_Q2_P2_C1",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_REACHABLE",
+        "P_REACHABLE",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "internal/public overlap outer bounds",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority-risk-set and exit reachable set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "B"
+      ],
+      "qualified_modules": [
+        "Q",
+        "P",
+        "C"
+      ],
+      "regime": {
+        "B": "PARTIAL",
+        "C": "QUALIFIED",
+        "P": "QUALIFIED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B1_Q2_P2_C2",
+      "remains_unidentified": [
+        "capture interpretation",
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "separate internal-dispatch and public-capture factors"
+      ],
+      "structural_class_instances": [
+        "B_PARTIAL_OUTER",
+        "Q_REACHABLE",
+        "P_REACHABLE",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "NOT_APPLICABLE",
+      "active_module_count": 1,
+      "coupling_variants": [
+        {
+          "propagation_identified": false,
+          "status": "NOT_APPLICABLE"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [
+        "B"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "CLOSED",
+        "P": "CLOSED",
+        "Q": "CLOSED"
+      },
+      "regime_id": "B2_Q0_P0_C0",
+      "remains_unidentified": [
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "C"
+      ],
+      "qualified_modules": [
+        "B"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "PARTIAL",
+        "P": "CLOSED",
+        "Q": "CLOSED"
+      },
+      "regime_id": "B2_Q0_P0_C1",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [
+        "B",
+        "C"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "QUALIFIED",
+        "P": "CLOSED",
+        "Q": "CLOSED"
+      },
+      "regime_id": "B2_Q0_P0_C2",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow outer reachable set"
+      ],
+      "partial_modules": [
+        "Q"
+      ],
+      "qualified_modules": [
+        "B"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "CLOSED",
+        "P": "CLOSED",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B2_Q1_P0_C0",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_PARTIAL_OUTER",
+        "UNCOUPLED_PRODUCT(B+Q)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow outer reachable set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "Q",
+        "C"
+      ],
+      "qualified_modules": [
+        "B"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "PARTIAL",
+        "P": "CLOSED",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B2_Q1_P0_C1",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp queue trajectory",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_PARTIAL_OUTER",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow outer reachable set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "Q"
+      ],
+      "qualified_modules": [
+        "B",
+        "C"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "QUALIFIED",
+        "P": "CLOSED",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B2_Q1_P0_C2",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_PARTIAL_OUTER",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow outer reachable set",
+        "priority/exit outer transport set"
+      ],
+      "partial_modules": [
+        "Q",
+        "P"
+      ],
+      "qualified_modules": [
+        "B"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "CLOSED",
+        "P": "PARTIAL",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B2_Q1_P1_C0",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_PARTIAL_OUTER",
+        "P_PARTIAL_OUTER",
+        "UNCOUPLED_PRODUCT(B+Q+P)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow outer reachable set",
+        "priority/exit outer transport set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "Q",
+        "P",
+        "C"
+      ],
+      "qualified_modules": [
+        "B"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "PARTIAL",
+        "P": "PARTIAL",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B2_Q1_P1_C1",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport",
+        "sharp queue trajectory",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_PARTIAL_OUTER",
+        "P_PARTIAL_OUTER",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow outer reachable set",
+        "priority/exit outer transport set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "Q",
+        "P"
+      ],
+      "qualified_modules": [
+        "B",
+        "C"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "QUALIFIED",
+        "P": "PARTIAL",
+        "Q": "PARTIAL"
+      },
+      "regime_id": "B2_Q1_P1_C2",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport",
+        "sharp queue trajectory"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_PARTIAL_OUTER",
+        "P_PARTIAL_OUTER",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 2,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow reachable set and separately qualified realized availability"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [
+        "B",
+        "Q"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "CLOSED",
+        "P": "CLOSED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B2_Q2_P0_C0",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow reachable set and separately qualified realized availability",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "C"
+      ],
+      "qualified_modules": [
+        "B",
+        "Q"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "PARTIAL",
+        "P": "CLOSED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B2_Q2_P0_C1",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_REACHABLE",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow reachable set and separately qualified realized availability",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [
+        "B",
+        "Q",
+        "C"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "QUALIFIED",
+        "P": "CLOSED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B2_Q2_P0_C2",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_REACHABLE",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority/exit outer transport set"
+      ],
+      "partial_modules": [
+        "P"
+      ],
+      "qualified_modules": [
+        "B",
+        "Q"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "CLOSED",
+        "P": "PARTIAL",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B2_Q2_P1_C0",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_REACHABLE",
+        "P_PARTIAL_OUTER",
+        "UNCOUPLED_PRODUCT(B+Q+P)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority/exit outer transport set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "P",
+        "C"
+      ],
+      "qualified_modules": [
+        "B",
+        "Q"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "PARTIAL",
+        "P": "PARTIAL",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B2_Q2_P1_C1",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_REACHABLE",
+        "P_PARTIAL_OUTER",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority/exit outer transport set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [
+        "P"
+      ],
+      "qualified_modules": [
+        "B",
+        "Q",
+        "C"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "QUALIFIED",
+        "P": "PARTIAL",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B2_Q2_P1_C2",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "sharp priority transport"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_REACHABLE",
+        "P_PARTIAL_OUTER",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 3,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority-risk-set and exit reachable set"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [
+        "B",
+        "Q",
+        "P"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "CLOSED",
+        "P": "QUALIFIED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B2_Q2_P2_C0",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_REACHABLE",
+        "P_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+P)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority-risk-set and exit reachable set",
+        "component/fallback contextual compatibility"
+      ],
+      "partial_modules": [
+        "C"
+      ],
+      "qualified_modules": [
+        "B",
+        "Q",
+        "P"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "PARTIAL",
+        "P": "QUALIFIED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B2_Q2_P2_C1",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities",
+        "structural propagation to administrative flow without admitted map"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_REACHABLE",
+        "P_REACHABLE",
+        "C_PARTIAL_CONTEXT",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    },
+    {
+      "CROSS_MODULE_RELATION_STATUS": "UNCOUPLED",
+      "active_module_count": 4,
+      "coupling_variants": [
+        {
+          "identified_object": "CARTESIAN_PRODUCT_ONLY",
+          "propagation_identified": false,
+          "status": "UNCOUPLED"
+        },
+        {
+          "identified_object": "PROPAGATION_OUTER_SET",
+          "propagation_identified": false,
+          "status": "PARTIAL_MAP"
+        },
+        {
+          "identified_object": "ADMITTED_MAPPED_RELATION",
+          "propagation_identified": true,
+          "status": "QUALIFIED_MAP"
+        }
+      ],
+      "identifiable": [
+        "qualified public accounting",
+        "composition-only diagnostic/exclusion",
+        "qualified-cell internal-dispatch and public-capture factors from valid joint counts",
+        "queue/flow reachable set and separately qualified realized availability",
+        "priority-risk-set and exit reachable set",
+        "component-specific continuity/fallback reachable states"
+      ],
+      "partial_modules": [],
+      "qualified_modules": [
+        "B",
+        "Q",
+        "P",
+        "C"
+      ],
+      "regime": {
+        "B": "QUALIFIED",
+        "C": "QUALIFIED",
+        "P": "QUALIFIED",
+        "Q": "QUALIFIED"
+      },
+      "regime_id": "B2_Q2_P2_C2",
+      "remains_unidentified": [
+        "cross-module propagation relation unless a separate map is PARTIAL_MAP or QUALIFIED_MAP",
+        "cross-module propagation unless an admitted propagation map exists",
+        "historical minimum-action path",
+        "model probabilities",
+        "pathway probabilities"
+      ],
+      "structural_class_instances": [
+        "B_DIRECT_JOINT",
+        "Q_REACHABLE",
+        "P_REACHABLE",
+        "C_REACHABLE",
+        "UNCOUPLED_PRODUCT(B+Q+P+C)"
+      ]
+    }
+  ],
+  "status": "FROZEN_BEFORE_STAGE_V"
+}

@@ -1,0 +1,32 @@
+{
+  "artifact_type": "M6_LOCK_RECEIPT",
+  "authority": "external mathematical authority supplied in governing M7B request",
+  "frozen_inputs": {
+    "M6A": {
+      "bytes": 3023,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m6a_numeric_trials\\M6A_AUTHORITY_GATE.json",
+      "sha256": "8faa22f64715dd2292aacd9e9f290ab8dbf5b49697724bbcd54f5b44f1d27ceb"
+    },
+    "M6B": {
+      "bytes": 161532,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m6b_math_closure\\BELAND_PLUS_M6B_MATH_CLOSURE.json",
+      "sha256": "f35a0485a752f717702bfc3b74ec916c4f8b023c3ec875efbc130ebc1351560b"
+    },
+    "M6C": {
+      "bytes": 74182,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m6c_exact_combined_t37\\BELAND_PLUS_M6C_EXACT_COMBINED_T37_CLOSURE.json",
+      "sha256": "aeb1dc223502f33f288575ca048bd71625680d64e790a45e1d0a623c42328ac0"
+    }
+  },
+  "locked_results": [
+    "exact common-state T33 and T35",
+    "direct 911/LWIN floor 0.422287628372",
+    "exact individual-family T37 and unified-model results",
+    "combined existential T37 certified interval",
+    "conditional robust combined T37 interval",
+    "deterministic stability results",
+    "all non-identification boundaries"
+  ],
+  "qualifier": "administrative receipt created without rerunning or modifying M6",
+  "status": "LOCKED_WITH_QUALIFIERS"
+}

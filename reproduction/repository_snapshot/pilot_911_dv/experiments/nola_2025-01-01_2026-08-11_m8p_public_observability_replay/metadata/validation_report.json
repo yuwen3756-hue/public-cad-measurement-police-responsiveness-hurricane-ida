@@ -1,0 +1,222 @@
+{
+  "checks": [
+    {
+      "evidence": {
+        "rows": 329770,
+        "sha256": "be8416343d253e2518a16ae007568a1561ee8b511dbdef3d5465956a198ae875"
+      },
+      "name": "2025_csv_frozen",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "rows": 209829,
+        "sha256": "c151ca38199aa53921ad1fe048ee7108f6165e8700ae459070f4c014ce614e17"
+      },
+      "name": "2026_csv_frozen",
+      "passed": true
+    },
+    {
+      "evidence": [
+        "4xwx-sfte",
+        "es9j-6y5d"
+      ],
+      "name": "required_cfs_dataset_ids",
+      "passed": true
+    },
+    {
+      "evidence": 26,
+      "name": "manifest_hash_shapes",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "2025": 329770,
+        "2026": 209829
+      },
+      "name": "audit_row_counts",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "2025": {},
+        "2026": {}
+      },
+      "name": "no_malformed_timestamps",
+      "passed": true
+    },
+    {
+      "evidence": "https://app.powerbigov.us/view?r=eyJrIjoiYjUzMzBjYmItNDhhYi00MmZlLTgyMjgtMDFlM2Q2MDczNWVjIiwidCI6IjA4Y2JmNDg1LTFjYjctNGEwMi05YTIxLTBkZDliNDViOWZmNyJ9",
+      "name": "dashboard_public_query_verified",
+      "passed": true
+    },
+    {
+      "evidence": "Aggregate-only query returned value groups. The property is machine-queryable, but it is absent from current report visuals and no official public definition was located; it cannot support a strict identified-set contraction without a semantic binding.",
+      "name": "dashboard_enroute_query_verified",
+      "passed": true
+    },
+    {
+      "evidence": "queryable but undocumented and absent from visuals",
+      "name": "dashboard_enroute_not_overclaimed",
+      "passed": true
+    },
+    {
+      "evidence": [],
+      "name": "dashboard_no_queue_capacity_fields",
+      "passed": true
+    },
+    {
+      "evidence": "M8P_PUBLIC_OBSERVABILITY_PARTIALLY_IMPROVED",
+      "name": "decision_enum",
+      "passed": true
+    },
+    {
+      "evidence": [],
+      "name": "strict_contraction_firewall",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "B": {
+          "m8d_structural_witness_status": "CLOSED",
+          "public_semantic_enrichment": "PARTIAL_CONTEXT",
+          "reason": "The 2025 public CFS-EPR item link supplies downstream public-record context. It is not the M8 internal/public dispatch bridge U_dispatch -> D_pub, and no public internal-event/public-export reconciliation is available."
+        },
+        "C": {
+          "m8d_structural_witness_status": "CLOSED",
+          "public_semantic_enrichment": "SEMANTICS_QUALIFIED",
+          "reason": "APR, callbacks, and fallback routes are documented as policy semantics, but no public realized route, callback, uptime, or failover state was located."
+        },
+        "P": {
+          "m8d_structural_witness_status": "CLOSED",
+          "public_semantic_enrichment": "ENDPOINT_ENRICHED",
+          "reason": "Initial/final priority endpoints, suffix semantics, and a change flag are public; transition times, actors, reasons, multiplicity, and event history are not. No formal PARTIAL_OUTER priority-history set is proved."
+        },
+        "Q": {
+          "m8d_structural_witness_status": "CLOSED",
+          "public_semantic_enrichment": "ENDPOINT_PROXY_ONLY",
+          "reason": "Create/dispatch/arrival/close endpoints and response-time derivatives describe public record stages, but they do not construct a queue reachable set or expose calls holding, unit availability, or effective capacity."
+        }
+      },
+      "name": "module_semantic_statuses",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "B": {
+          "m8d_structural_witness_status": "CLOSED",
+          "public_semantic_enrichment": "PARTIAL_CONTEXT",
+          "reason": "The 2025 public CFS-EPR item link supplies downstream public-record context. It is not the M8 internal/public dispatch bridge U_dispatch -> D_pub, and no public internal-event/public-export reconciliation is available."
+        },
+        "C": {
+          "m8d_structural_witness_status": "CLOSED",
+          "public_semantic_enrichment": "SEMANTICS_QUALIFIED",
+          "reason": "APR, callbacks, and fallback routes are documented as policy semantics, but no public realized route, callback, uptime, or failover state was located."
+        },
+        "P": {
+          "m8d_structural_witness_status": "CLOSED",
+          "public_semantic_enrichment": "ENDPOINT_ENRICHED",
+          "reason": "Initial/final priority endpoints, suffix semantics, and a change flag are public; transition times, actors, reasons, multiplicity, and event history are not. No formal PARTIAL_OUTER priority-history set is proved."
+        },
+        "Q": {
+          "m8d_structural_witness_status": "CLOSED",
+          "public_semantic_enrichment": "ENDPOINT_PROXY_ONLY",
+          "reason": "Create/dispatch/arrival/close endpoints and response-time derivatives describe public record stages, but they do not construct a queue reachable set or expose calls holding, unit availability, or effective capacity."
+        }
+      },
+      "name": "module_structural_statuses",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "interpretation": "Current public semantic enrichment does not open any realized M8D B-Q-P-C structural witness module.",
+        "regime": "W_0",
+        "tuple": [
+          "CLOSED",
+          "CLOSED",
+          "CLOSED",
+          "CLOSED"
+        ]
+      },
+      "name": "m8d_realized_witness_regime",
+      "passed": true
+    },
+    {
+      "evidence": "Conditional on a maintained frozen common-semantic mapping, I_2026(theta | Y_Ida) = I_2021(theta | Y_Ida) after schema normalization when the dashboard field is a deterministic function of InitialPriority, Priority, stage timestamps, signal endpoints, disposition endpoint, or SelfInitiated.",
+      "name": "identified_set_common_semantic_condition",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "L1_public_topology_detection": {
+          "change_from_2021": "No material primitive change; create/dispatch/arrival/close topology remains public.",
+          "status": "PUBLICLY_IDENTIFIABLE"
+        },
+        "L2_within_disposition_stage_localization": {
+          "change_from_2021": "Candidate improvement from queryable en-route duration and All Dispositions, but definitions, ordering, and history are unqualified.",
+          "status": "PARTIALLY_IDENTIFIABLE"
+        },
+        "L3_internal_public_bridge_separation": {
+          "change_from_2021": "Public surfaces can be compared, but internal state and publication transformations are not exposed; 2026 EPR is missing from the catalog.",
+          "status": "PARTIALLY_IDENTIFIABLE"
+        },
+        "L4_queue_availability_reconstruction": {
+          "change_from_2021": "No contraction: no queue, calls-holding, unit-status, or availability time series.",
+          "status": "NOT_PUBLICLY_IDENTIFIABLE"
+        },
+        "L5_priority_history_reconstruction": {
+          "change_from_2021": "Current documentation and dashboard flags clarify endpoint contrasts, but the 2021 schema already exposed both endpoints and no history was added.",
+          "status": "PARTIALLY_IDENTIFIABLE"
+        },
+        "L6_continuity_fallback_reconstruction": {
+          "change_from_2021": "Policy describes fallback routes, but realized routing, callback, uptime, and failover states remain unobserved.",
+          "status": "NOT_PUBLICLY_IDENTIFIABLE"
+        },
+        "L7_cross_module_propagation": {
+          "change_from_2021": "Public priority, stage, disposition, and 2025 EPR endpoints can be cross-tabulated, but Q and C states are absent and no full B-Q-P-C path is identified.",
+          "status": "PARTIALLY_IDENTIFIABLE"
+        }
+      },
+      "name": "replay_statuses",
+      "passed": true
+    },
+    {
+      "evidence": [
+        "authority_source",
+        "datatype_2021",
+        "datatype_2025",
+        "datatype_2026",
+        "endpoint_vs_event_history",
+        "label",
+        "machine_field",
+        "missingness_2021",
+        "missingness_2025",
+        "missingness_2026",
+        "multiplicity",
+        "overwrite_history_behavior",
+        "present_2021",
+        "present_2025",
+        "present_2026",
+        "public_surface",
+        "row_level_vs_aggregate",
+        "semantic_continuity",
+        "semantics",
+        "variable_concept"
+      ],
+      "name": "schema_genealogy_columns",
+      "passed": true
+    },
+    {
+      "evidence": 34,
+      "name": "schema_genealogy_scope",
+      "passed": true
+    },
+    {
+      "evidence": {},
+      "name": "obsidian_math_delimiters",
+      "passed": true
+    }
+  ],
+  "status": "PASS",
+  "validation_version": "m8p_focused_validation_v1"
+}

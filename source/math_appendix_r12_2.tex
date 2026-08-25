@@ -1,0 +1,1370 @@
+\documentclass[11pt]{article}
+\input{beland_style.tex}
+\fancyhead[L]{\footnotesize\itshape Mathematical appendix: workload, observation, and identification}
+
+\title{\vspace{-1.6em}\textbf{Mathematical Definitions, Identification Results, and Reproduction Guide}\\[0.35em]
+\large Appendix to \emph{From Police Workload to Auditable Performance Measures}}
+\author{}
+\date{24 August 2026\\[0.2em]\small Appendix R12.2 \quad Results R12}
+
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+\vspace{-1.2em}
+
+\begin{plainbox}[title=Purpose and reading guide]
+This appendix connects a police-workload layer to two mathematical modules. Section~\ref{sec:measurement_map} defines the reported-demand denominator, the public observation map, measure-specific identified sets, and target-specific witness minimality. Sections~\ref{sec:observables}--\ref{sec:reference} define the public-record stress-test statistic, and Section~\ref{sec:disposition} localizes the Ida pattern. Section~\ref{sec:structural} applies the identified-set logic to the internal/public bridge, queue, priority, DV classification, endpoint-selected response time, and follow-through. Section~\ref{sec:frontier} retains the prospective multi-model frontier. Section~\ref{sec:m8p} formalizes the 2025--2026 measurement-regime replay. Sections~\ref{sec:repro}--\ref{sec:claims} record numerical invariants, reproduction commands, and interpretation rules. Every reported empirical value comes from the locked aggregate artifacts.
+\end{plainbox}
+
+\setcounter{tocdepth}{1}
+\begingroup
+\small
+\tableofcontents
+\endgroup
+\newpage
+
+\section{Measurement targets, released records, and identified sets}
+\label{sec:measurement_map}
+
+\subsection{Observation map and candidate performance functionals}
+
+Let $S$ denote a latent operational and administrative-follow-through path for the reported-call population of interest. Let $R$ denote the recording, retention, and export process. The released public record is
+\begin{equation}
+Y=h(S,R).
+\label{eq:observation_map}
+\end{equation}
+For candidate measure $k$, let
+\begin{equation}
+\theta_k=m_k(S)
+\label{eq:performance_functional}
+\end{equation}
+be the corresponding performance functional. Examples include a response-time distribution on a declared call denominator, the prevalence of priority changes, and completion of a specified follow-through duty.
+
+Let $W$ collect the admitted semantic and operational witnesses. These witnesses restrict the feasible pairs $(S,R)$ to a compatibility set $\mathcal C(Y,W)$. The measure-specific identified set is
+\begin{equation}
+\mathcal I_k(Y,W)
+:=
+\{m_k(S):(S,R)\in\mathcal C(Y,W)\}.
+\label{eq:measure_identified_set}
+\end{equation}
+
+\begin{plainbox}[title=Measure-specific identification rule]
+The public record directly supports $\theta_k$ when $\mathcal I_k(Y,W)$ is a singleton. It partially identifies $\theta_k$ when the set is informative but contains multiple values. An observed statistic is selected when its risk set is restricted by endpoint or stage presence. If the target stage or denominator cannot be formed under $W$, the measure is unavailable from the current record.
+\end{plainbox}
+
+If $W'$ contains stronger witnesses than $W$, then $\mathcal C(Y,W')\subseteq\mathcal C(Y,W)$ and therefore
+\begin{equation}
+\mathcal I_k(Y,W')\subseteq\mathcal I_k(Y,W).
+\label{eq:witness_contraction}
+\end{equation}
+Thus retained lineage, joint counts, complete clocks, and ordered histories have a precise role: they remove observationally equivalent paths. The construction begins with the classical definition of identification through observational equivalence \citep{KoopmansReiersol1950,Rothenberg1971,Lewbel2019} and follows partial-identification analysis by retaining every target value compatible with the data and maintained restrictions \citep{Manski1989,Manski1990,Manski2003,Molinari2020}. Its administrative-data interpretation follows work that distinguishes verified from unverified records and propagates that distinction into performance bounds \citep{DominitzSherman2006,KapteynYpma2007,Manski2015}.
+
+\subsection{Workload layer and two-sided observability}
+\label{sec:workload_observability}
+
+The operational path begins with the demand recorded by CAD. Let $D_t^*$ denote latent need, $H_t^{\mathrm{seek}}$ help-seeking attempts, $A_t^{\mathrm{recv}}$ contacts received by the emergency system, and $D_t^{\mathrm{CAD}}$ calls created in CAD. The demand observation chain is
+\begin{equation}
+D_t^*
+\longrightarrow H_t^{\mathrm{seek}}
+\longrightarrow A_t^{\mathrm{recv}}
+\longrightarrow D_t^{\mathrm{CAD}}.
+\label{eq:demand_chain}
+\end{equation}
+Each arrow can select or transform the preceding population. Unless a target states otherwise, the paper conditions on $D_t^{\mathrm{CAD}}$ and leaves the earlier populations outside its denominator.
+
+Let $C_t$ denote effective operational capacity and $P_t$ the priority process. A workload representation is
+\begin{equation}
+S_t=g(D_t^{\mathrm{CAD}},C_t,P_t),
+\label{eq:workload_map}
+\end{equation}
+followed by the public observation map $Y_t=h(S_t,R_t)$. Equation~\eqref{eq:workload_map} organizes service; Equation~\eqref{eq:observation_map} determines whether the released record measures it. A performance estimand can therefore be written explicitly as
+\begin{equation}
+\theta_k=m_k\!\left(S\mid D^{\mathrm{CAD}}\right),
+\label{eq:conditional_performance}
+\end{equation}
+with the clock, endpoint, and eligible population declared for target $k$.
+
+Two kinds of friction enter this system. Operational friction changes $S$ through holding, availability, assignment, handoffs, or follow-up. Record-production friction changes $R$ through classification, overwrite, retention, linkage, or export. Distinct pairs $(S,R)$ can generate the same $Y$, so public missingness alone cannot allocate the discrepancy between these sources. Holding and availability histories, joint public--internal counts, and retained stage lineage contract the relevant alternatives through \cref{eq:witness_contraction}.
+
+The released call count is likewise a measure of $D_t^{\mathrm{CAD}}$, rather than a direct measure of $D_t^*$ or either intermediate stage in \cref{eq:demand_chain}. R12.2 estimates no DV call-volume trend. Its DV application begins with a declared CAD risk set and derives the additional witnesses needed to measure service conditional on that set.
+
+\subsection{Target-specific sufficiency and inclusion-minimality}
+\label{sec:witness_minimality}
+
+Fix a target $k$, a metric $\rho_k$ on its parameter space, and a prespecified tolerance $\delta_k\ge 0$. For any witness bundle $W$, define
+\begin{equation}
+\operatorname{diam}_{\rho_k}\mathcal I_k(Y,W)
+:=
+\sup_{a,b\in\mathcal I_k(Y,W)}\rho_k(a,b).
+\label{eq:identified_diameter}
+\end{equation}
+A bundle is sufficient for target $k$ when the target population and stage are defined under $W$ and
+\begin{equation}
+\operatorname{diam}_{\rho_k}\mathcal I_k(Y,W)\le\delta_k.
+\label{eq:witness_sufficiency}
+\end{equation}
+The choice $\delta_k=0$ requires point identification. A positive tolerance permits a declared partial-identification standard.
+
+A sufficient bundle $W_k^*$ is inclusion-minimal when
+\begin{equation}
+W_k^*\setminus\{w\}
+\text{ is insufficient for every }w\in W_k^*.
+\label{eq:inclusion_minimality}
+\end{equation}
+Equivalently, witness $w\in W$ is necessary relative to bundle $W$ and tolerance $\delta_k$ when removing it leaves the target undefined or
+\begin{equation}
+\operatorname{diam}_{\rho_k}\mathcal I_k(Y,W\setminus\{w\})>\delta_k.
+\label{eq:witness_necessity}
+\end{equation}
+The argument is constructive: necessity is established by exhibiting two paths that agree on $Y$ and the retained witnesses but produce target values farther apart than $\delta_k$.
+
+This formulation connects information comparison to sensitivity analysis. Additional signals refine an experiment in the sense developed by \citet{Blackwell1953}; relaxing assumptions until a conclusion fails motivates the breakdown-frontier approach of \citet{MastenPoirier2020}. The present analysis applies these ideas to a finite bundle of administrative observations and a declared performance target. We use \emph{witness sufficiency and necessity analysis} to distinguish this identification argument from statistical hypothesis testing.
+
+Several inclusion-minimal bundles may coexist. If $c(w)$ records production, privacy, or disclosure burden and $\mathfrak P$ is the admissible privacy class, a minimum-cost design instead solves
+\begin{equation}
+\begin{aligned}
+&\min_{W\subseteq\mathbb W} && \sum_{w\in W}c(w) \\
+&\text{subject to} && W\in\mathfrak P,\quad k\text{ is defined under }W, \\
+&&& \operatorname{diam}_{\rho_k}\mathcal I_k(Y,W)\le\delta_k.
+\end{aligned}
+\label{eq:witness_cost}
+\end{equation}
+The paper establishes target-specific inclusion-minimality; an agency can apply \cref{eq:witness_cost} using its own production and privacy costs.
+
+Let $w_C$ denote a qualified period-specific DV labeling rule with prespecified treatment of $U$; $w_L$ internal event lineage capable of producing reconciled aggregate cells; $w_0$ the declared response-clock origin; $w_1$ its qualified endpoint; $w_E$ endpoint coverage on the full denominator; $w_P$ the complete ordered priority history; $w_A$ follow-through eligibility; and $w_Z$ completion status or time. Under no auxiliary restrictions, the following necessity results hold.
+
+\begin{plainbox}[title=Target-specific witness-necessity results]
+For response time, $\{w_C,w_L,w_0,w_1\}$ identifies the endpoint-observed distribution on its selected risk set; adding $w_E$ identifies the coverage share and therefore the sharp full-denominator bounds. Point identification of the full-denominator distribution additionally requires complete endpoints or a separately justified restriction on missing durations. Deleting $w_0$ or $w_1$ leaves duration undefined, while deleting $w_L$ permits the same marginal clock distributions to be paired into different duration distributions.
+
+For the prevalence of any priority revision, $\{w_C,w_L,w_P\}$ is inclusion-minimal. With only initial and recorded endpoints, an equal-endpoint call may either remain unchanged or follow an offsetting sequence and return to its initial value.
+
+For an administrative follow-through rate, $\{w_C,w_L,w_A,w_Z\}$ is inclusion-minimal. Deleting $w_A$ changes the eligible denominator; deleting $w_L$ allows the same completion total to be reassigned across CAD calls; deleting $w_Z$ leaves completion undefined.
+\end{plainbox}
+
+These are target-specific results. Calls-holding transitions enter the minimum bundle when the target is queue delay. Realized unit availability enters when the target includes capacity or capacity-adjusted responsiveness. A fully observed receipt-to-qualified-endpoint distribution uses neither. Wherever $w_L$ appears, the privacy-safe product must retain the indicated joint cells; marginal aggregates alone leave the pairing unresolved, although no event identifier need be released.
+
+\subsection{The stress-test statistic is an observable diagnostic}
+
+The Ida statistic belongs to the released-record side of \cref{eq:observation_map}. Let $G(Y)$ be the standardized ten-bin public-topology matrix defined below. Then
+\begin{equation}
+T(Y):=U_{\mathrm{full}}(G(Y))
+\label{eq:stress_diagnostic}
+\end{equation}
+is a constrained discrepancy statistic applied identically to Ida and every qualified reference window. It measures whether the released field relationships remain close to the frozen support class. It does not replace $m_k(S)$.
+
+This separation fixes the inferential order. Ida establishes that the observed product $Y$ can become reference-extreme. Equation~\eqref{eq:measure_identified_set} determines what that product reveals about each candidate performance functional. Disaster-based studies often use a shock to expose system dependencies, but stronger operational conclusions come from linked outcomes, infrastructure measures, or structural restrictions \citep{CarvalhoNireiSaitoTahbazSalehi2021,AlvarezArgenteVanPatten2026}. Invariance across environments can carry causal content under additional assumptions; the present statistic uses environment comparison only to diagnose stability of released-record relationships \citep{PetersBuhlmannMeinshausen2016}.
+
+\section{Observable universe, clocks, and public record states}
+\label{sec:observables}
+
+\subsection{Units and indices}
+
+Let $i$ index a public calls-for-service record. Let $z\in\{\E,\R\}$ index the Ida event window and a qualified reference window. Let $s$ index the frozen common-support standardization strata, $t\in\{1,\ldots,10\}$ index the ten twelve-hour bins, and $r$ index a recorded disposition category.
+
+The event window is
+\begin{equation}
+[\text{2021-08-29 00:00},\,\text{2021-09-03 00:00})
+\end{equation}
+in local Central Daylight Time. The fixed bins are listed in \cref{tab:fullbins}.
+
+\begin{table}[H]
+\centering
+\caption{Complete calendar map for the ten frozen twelve-hour bins}
+\label{tab:fullbins}
+\begin{tabular}{@{}cll@{}}
+\toprule
+Bin & Start & End \\
+\midrule
+B1  & 29 Aug. 2021, 00:00 & 29 Aug. 2021, 12:00 \\
+B2  & 29 Aug. 2021, 12:00 & 30 Aug. 2021, 00:00 \\
+B3  & 30 Aug. 2021, 00:00 & 30 Aug. 2021, 12:00 \\
+B4  & 30 Aug. 2021, 12:00 & 31 Aug. 2021, 00:00 \\
+B5  & 31 Aug. 2021, 00:00 & 31 Aug. 2021, 12:00 \\
+B6  & 31 Aug. 2021, 12:00 & 1 Sep. 2021, 00:00 \\
+B7  & 1 Sep. 2021, 00:00 & 1 Sep. 2021, 12:00 \\
+B8  & 1 Sep. 2021, 12:00 & 2 Sep. 2021, 00:00 \\
+B9  & 2 Sep. 2021, 00:00 & 2 Sep. 2021, 12:00 \\
+B10 & 2 Sep. 2021, 12:00 & 3 Sep. 2021, 00:00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Identical relative-position bins are used for each pseudo-event reference window. The bin definitions were frozen before the focal cell analysis.
+
+\subsection{Public field-presence indicators}
+
+For each public record $i$, define
+\begin{align}
+D_i&=\ind\{\text{the public dispatch field passes the frozen validity rule}\},\\
+A_i&=\ind\{\text{the public arrival field passes the frozen validity rule}\}.
+\end{align}
+These are Type-F public measurement functionals: they are deterministic functions of the qualified public fields. They are not latent operational events.
+
+For $d,a\in\{0,1\}$, define the record state
+\begin{equation}
+J_{da,i}=\ind\{D_i=d,\ A_i=a\}.
+\label{eq:Jrecord}
+\end{equation}
+The four indicators satisfy the recordwise simplex identity
+\begin{equation}
+J_{00,i}+J_{01,i}+J_{10,i}+J_{11,i}=1.
+\label{eq:recordsimplex}
+\end{equation}
+The public arrival and dispatch indicators can be recovered by
+\begin{equation}
+A_i=J_{01,i}+J_{11,i},
+\qquad
+D_i=J_{10,i}+J_{11,i}.
+\label{eq:marginalidentities}
+\end{equation}
+
+\begin{definitionbox}[title=Interpretive firewall]
+$J_{01,i}=1$ means that the public arrival field is present and the public dispatch field is absent under the frozen parsing rules. It does not assert that a unit physically arrived without being dispatched. Likewise, $J_{11,i}=1$ does not prove that a complete physical sequence occurred.
+\end{definitionbox}
+
+\subsection{Risk sets, shares, and common-support standardization}
+
+Let $\mathcal R^z_{st}$ be the qualified record set in population $z$, stratum $s$, and bin $t$. The unstandardized state share is
+\begin{equation}
+p^z_{jst}
+=\frac{\sum_{i\in\mathcal R^z_{st}}J_{j,i}}{|\mathcal R^z_{st}|},
+\qquad j\in\{00,01,10,11\}.
+\label{eq:rawshare}
+\end{equation}
+Let $\mathcal S_t$ be the frozen bin-specific common-support stratum set and $\omega^\R_{st}$ the reference-derived weights, normalized within bin:
+\begin{equation}
+\omega^\R_{st}\ge0,
+\qquad
+\sum_{s\in\mathcal S_t}\omega^\R_{st}=1.
+\end{equation}
+The standardized share is
+\begin{equation}
+\bar p^z_{j,t}=\sum_{s\in\mathcal S_t}\omega^\R_{st}p^z_{jst},
+\end{equation}
+and the event--reference contrast is
+\begin{equation}
+\Delta_{j,t}=\bar p^\E_{j,t}-\bar p^\R_{j,t}
+=\sum_{s\in\mathcal S_t}\omega^\R_{st}(p^\E_{jst}-p^\R_{jst}).
+\label{eq:standardcontrast}
+\end{equation}
+Because the shares form a simplex in each stratum and population,
+\begin{equation}
+\sum_{j\in\{00,01,10,11\}}\Delta_{j,t}=0
+\quad\text{for every }t.
+\label{eq:contrastsimplex}
+\end{equation}
+The standardized public marginals obey
+\begin{align}
+\Delta_{A,t}&=\Delta_{01,t}+\Delta_{11,t},\\
+\Delta_{D,t}&=\Delta_{10,t}+\Delta_{11,t}.
+\label{eq:contrastmarginals}
+\end{align}
+These identities are numerical invariants in every valid reconstruction.
+
+\section{Topology matrix and constrained discrepancy score}
+\label{sec:score}
+
+\subsection{The ten-bin matrix}
+
+Because $\Delta_{00,t}$ is determined by \cref{eq:contrastsimplex}, the primary matrix retains three independent coordinates:
+\begin{equation}
+G=
+\begin{bmatrix}
+\Delta_{01,1}&\Delta_{10,1}&\Delta_{11,1}\\
+\vdots&\vdots&\vdots\\
+\Delta_{01,10}&\Delta_{10,10}&\Delta_{11,10}
+\end{bmatrix}
+\in\Rset^{10\times3}.
+\label{eq:G}
+\end{equation}
+Let $g_j$ denote column $j$. Independent reconstruction of the locked Ida matrix achieved maximum absolute parity error $4.13\times10^{-13}$ and simplex error $1.11\times10^{-16}$.
+
+\subsection{Authorized support triples}
+
+Let $\mathcal X$ be the finite set of authorized support triples. Each
+\begin{equation}
+X=[x_1,x_2,x_3]\in\Rset^{10\times3}
+\end{equation}
+encodes a prespecified temporal support representation.
+
+\subsubsection{Entry construction and frozen finite library}
+
+For the full-combined class, the three columns are ordered as twelve-hour shifts, redeployment/anti-looting, and curfew. Let $e_k$ denote an authorized chronology state for family $k$, and let
+\begin{equation}
+I_{e_k,\lambda}=[a_{e_k},\,b_{e_k}+\lambda)
+\end{equation}
+be its half-open support interval after end-only propagation by
+\begin{equation}
+\lambda\in\{0,6,12,18,24,36,48,60,72\}\text{ hours}.
+\end{equation}
+Write $N^\E_{st}=|\mathcal R^\E_{st}|$ and let $N^{\E,\mathrm{in}}_{st}(e_k,\lambda)$ count records in $\mathcal R^\E_{st}$ whose public creation time lies in $I_{e_k,\lambda}$. The matrix entry is
+\begin{equation}
+X_{tk}=\omega_t(e_k,\lambda)
+=\sum_{s\in\mathcal S_t}\omega^\R_{st}
+\frac{N^{\E,\mathrm{in}}_{st}(e_k,\lambda)}{N^\E_{st}}.
+\label{eq:support_entry}
+\end{equation}
+Thus each entry is the reference-standardized share of the bin's event records temporally covered by a frozen institutional-event or operational-regime interval. It is a temporal-support coverage share, not a causal exposure, service level, or capacity measure.
+
+The chronology adjudication is recorded in \path{WAVE4R_CHRONOLOGY_SETS.json}. Relative to the Wave4R experiment root, the materialized values and deduplicated state counts are recorded in \path{candidate/r4_replication/child_e4_run/R4_CHILD_E4_SUPPORT.csv} and \path{candidate/r4_replication/child_e4_run/R4_CHILD_E4_SUPPORT_STATE_REGISTRY.json}. Because first-hand documentation identifies the shifts, redeployment, and curfew starts only at the date level, each is represented by the exact finite family induced by eligible event-record times and the boundaries of that date; states with the same full ten-bin signature are then deduplicated. This retains the documented temporal ambiguity rather than inventing an unsupported exact start time.
+
+At each frozen horizon, the three operational-regime families contain 864, 610, and 632 unique ten-bin signatures. Their Cartesian product therefore contains
+\begin{equation}
+864\times610\times632=333{,}089{,}280
+\end{equation}
+authorized triples. The nine horizon-specific support-vector sets are invariant, so M7A uses $\lambda=0$ as the representative horizon. The file \path{candidate/m7a_full_combined_unified_threshold/M7A_TRIPLE_COVERAGE_CERTIFICATE.json} certifies complete branch-and-bound coverage of this product for the $0.25$ exclusion decision. Complete coverage means that every authorized triple is represented by the certified partition and pruning argument; it does not mean that a separate leaf linear program was solved for every triple.
+
+\subsubsection{Rowwise envelope}
+
+For row $t$, define the support envelope
+\begin{equation}
+\omega_t(X)=\max_{k\in\{1,2,3\}}X_{tk}.
+\label{eq:envelope}
+\end{equation}
+The envelope is the rowwise maximum of the three reference-standardized temporal-support coverage shares. It is a mathematical support-capacity object, not police capacity.
+
+\subsection{Columnwise constrained minimax problem}
+
+For column $g_j$, the exact-leaf linear program is
+\begin{equation}
+\begin{aligned}
+u_j(X;G)=\min_{\beta_j,\eta_j}\quad &\eta_j\\
+\text{subject to}\quad
+&-\eta_j\mathbf 1\le g_j-X\beta_j\le \eta_j\mathbf 1,\\
+&-\omega(X)\le X\beta_j\le \omega(X),\\
+&\eta_j\ge0.
+\end{aligned}
+\label{eq:lp}
+\end{equation}
+The leaf score and full score are
+\begin{equation}
+U_X(G)=\max_{j\in\{01,10,11\}}u_j(X;G),
+\qquad
+U_{\mathrm{full}}(G)=\min_{X\in\mathcal X}U_X(G).
+\label{eq:fullscore}
+\end{equation}
+Thus $U_{\mathrm{full}}(G)$ is the smallest possible maximum cell discrepancy across the three topology coordinates under the authorized support class and its envelope restrictions.
+
+\begin{resultbox}
+The score is a constrained topology-discrepancy statistic. It is not a likelihood, posterior, causal effect, performance index, or probability that a mechanism occurred.
+\end{resultbox}
+
+\subsection{Interval-valued numerical certification}
+
+The numerical procedure returns certified lower and upper bounds under the declared optimization tolerances. For Ida,
+\begin{equation}
+U_{\mathrm{full}}(G_{\Ida})
+\in[0.250734484671,\,0.250734494671].
+\label{eq:idascore}
+\end{equation}
+The interval width is approximately $10^{-8}$. The interval, rather than its midpoint, is used for conservative comparison with reference windows.
+The primary locked interval is $[0.25073448467090204,0.25073449467090003]$ and the independent HiGHS replication returns $[0.25073448467103193,0.2507344946710318]$. The intervals overlap and both support the rounded interval in \cref{eq:idascore}. This is numerical replication under stated tolerances, not an exact rational primal--dual certificate.
+
+The value $0.25$ is the frozen M7A decision threshold for excluding the full-combined restricted-support class. It is neither a police-performance standard nor an empirical rarity cutoff. M7B ranks Ida using the continuous score intervals for Ida and the qualified reference windows; the rank and interval separation do not depend on classifying observations above or below $0.25$.
+
+\subsection{Geometric interpretation}
+
+For fixed $X$, \cref{eq:lp} finds the best approximation to each column of $G$ within the span of $X$ and within its rowwise envelope. The outer minimization searches the authorized finite support library. The statistic therefore combines two ideas:
+\begin{enumerate}
+\item \emph{shape compatibility}: can the support span reproduce the multivariate time path?;
+\item \emph{envelope feasibility}: can it do so without exceeding its allowed rowwise support?
+\end{enumerate}
+A large residual can arise from an unsupported time bin, incompatible cross-coordinate shape, or binding envelope restrictions. It cannot by itself label the omitted factor.
+
+\section{Reference-window construction and empirical rarity}
+\label{sec:reference}
+
+\subsection{Same-estimator reference principle}
+
+Each qualified reference window is processed using the identical ten-bin construction, common-support standardization, topology matrix, support library, and optimization program. Let
+\begin{equation}
+I_{\Ida}=[L_{\Ida},U_{\Ida}],
+\qquad
+I_r=[L_r,U_r]
+\end{equation}
+be the Ida and reference score intervals.
+
+A reference is definitely at least as extreme as Ida if $L_r\ge U_{\Ida}$ and possibly at least as extreme if $U_r\ge L_{\Ida}$. Conservative rank bounds are therefore
+\begin{align}
+r_L&=1+\sum_{r=1}^{R}\ind\{L_r\ge U_{\Ida}\},\\
+r_U&=1+\sum_{r=1}^{R}\ind\{U_r\ge L_{\Ida}\}.
+\label{eq:rankbounds}
+\end{align}
+The add-one reference-fraction interval is
+\begin{equation}
+\left[\frac{r_L}{R+1},\frac{r_U}{R+1}\right].
+\label{eq:addone}
+\end{equation}
+No reference interval overlaps Ida, so $r_L=r_U=1$ in all three designs.
+
+\begin{table}[H]
+\centering
+\caption{Locked reference results}
+\label{tab:reference}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Reference design & Windows $R$ & Ida rank & Add-one fraction \\
+\midrule
+Full qualified & 217 & 1 & $1/218=0.00459$ \\
+Stage-era matched & 153 & 1 & $1/154=0.00649$ \\
+Same-season stage & 86 & 1 & $1/87=0.01149$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Why these fractions are not causal p-values}
+
+The design does not impose random assignment of Hurricane Ida across candidate windows and does not adopt an exchangeability assumption. The reference fractions answer a descriptive question:
+\begin{quote}
+Where does Ida's topology-discrepancy score lie relative to the qualified empirical reference windows processed by the same estimator?
+\end{quote}
+They do not answer a randomization-inference question and do not estimate a no-Ida causal counterfactual.
+
+\subsection{Simultaneous cell threshold}
+
+For reference window $r$, define its maximum absolute cell contrast
+\begin{equation}
+M_r=\max_{t\in\{1,\ldots,10\},\,j\in\{01,10,11\}}
+\abs{\Delta^{(r)}_{j,t}}.
+\end{equation}
+The common threshold is the frozen inverse-CDF 95th percentile of $\{M_r\}_{r=1}^{217}$:
+\begin{equation}
+c_{0.95}=0.209397476359.
+\label{eq:threshold}
+\end{equation}
+A focal cell is called abnormal when $\abs{\Delta_{j,t}}>c_{0.95}$. This is a familywise empirical threshold across the thirty primary cells, not thirty independent tests.
+
+The nine threshold-exceeding cells are listed in \cref{tab:abnormal}.
+
+\begin{table}[H]
+\centering
+\caption{Nine threshold-exceeding Ida cells with calendar labels}
+\label{tab:abnormal}
+\begin{tabular}{@{}cllr@{}}
+\toprule
+Bin & Calendar interval & State & Contrast \\
+\midrule
+B2 & 29 Aug. PM & $\Joneone$ & $-0.422$ \\
+B3 & 30 Aug. AM & $\Joneone$ & $-0.354$ \\
+B4 & 30 Aug. PM & $\Joneone$ & $-0.216$ \\
+B5 & 31 Aug. AM & $\Joneone$ & $-0.266$ \\
+B6 & 31 Aug. PM & $\Jzeroone$ & $+0.307$ \\
+B6 & 31 Aug. PM & $\Joneone$ & $-0.507$ \\
+B7 & 1 Sep. AM & $\Jzeroone$ & $+0.323$ \\
+B7 & 1 Sep. AM & $\Joneone$ & $-0.455$ \\
+B8 & 1 Sep. PM & $\Joneone$ & $-0.228$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The phrase \enquote{two-phase topology} is only a compact description of this set-valued pattern:
+\begin{align}
+\mathcal A_{\mathrm{early}}&=\{(t,11):t\in\{\mathrm{B2,B3,B4,B5}\}\},\\
+\mathcal A_{\mathrm{late}}&=\{(t,11),(t,01):t\in\{\mathrm{B6,B7}\}\}.
+\end{align}
+It is not a fitted two-state process, a statistically estimated change point, or evidence of two causal mechanisms.
+
+\section{Within-disposition localization and exact accounting}
+\label{sec:disposition}
+
+\subsection{Joint masses and conditional public shares}
+\label{sec:joint_masses}
+
+For recorded disposition $r$, population $z$, and bin $t$, let
+\begin{align}
+H^z_{01,r,t}&=\Prob(J=01,R=r\mid z,t),\\
+H^z_{11,r,t}&=\Prob(J=11,R=r\mid z,t),
+\end{align}
+where the probabilities are the standardized public masses under the inherited parent estimator. Define the arrival-observed mass
+\begin{equation}
+m^z_{r,t}=H^z_{01,r,t}+H^z_{11,r,t}.
+\label{eq:mr}
+\end{equation}
+When $m^z_{r,t}>0$, define
+\begin{equation}
+q^z_{r,t}=
+\frac{H^z_{11,r,t}}{m^z_{r,t}}
+=\Prob(D=1\given A=1,R=r,z,t).
+\label{eq:qr}
+\end{equation}
+This is the public dispatch-field share among arrival-observed records within disposition $r$. It is not a physical dispatch probability.
+
+The identities
+\begin{equation}
+H^z_{11,r,t}=m^z_{r,t}q^z_{r,t},
+\qquad
+H^z_{01,r,t}=m^z_{r,t}(1-q^z_{r,t})
+\label{eq:Hfactor}
+\end{equation}
+separate disposition mass from the conditional public field relationship.
+
+\subsection{Exact symmetric Kitagawa identity within a disposition}
+
+For any two products $m^\E q^\E$ and $m^\R q^\R$,
+\begin{align}
+m^\E q^\E-m^\R q^\R
+={}&\frac{q^\E+q^\R}{2}(m^\E-m^\R)
++\frac{m^\E+m^\R}{2}(q^\E-q^\R).
+\label{eq:kitagawa_cell}
+\end{align}
+
+\paragraph{Proof.}
+Expand the right-hand side:
+\begin{align*}
+&\frac{1}{2}(q^\E m^\E-q^\E m^\R+q^\R m^\E-q^\R m^\R)\\
+&\quad+\frac{1}{2}(m^\E q^\E-m^\E q^\R+m^\R q^\E-m^\R q^\R)\\
+&=m^\E q^\E-m^\R q^\R.
+\end{align*}
+$\square$
+
+Applied to $H_{11}$, the first term is the disposition-mass component and the second is the within-disposition public-field component. For $H_{01}=m(1-q)$,
+\begin{align}
+\Delta H_{01,r,t}
+={}&\frac{2-q^\E_{r,t}-q^\R_{r,t}}{2}
+(m^\E_{r,t}-m^\R_{r,t})\notag\\
+&-\frac{m^\E_{r,t}+m^\R_{r,t}}{2}
+(q^\E_{r,t}-q^\R_{r,t}).
+\label{eq:kitagawa01}
+\end{align}
+The same conditional-share change enters $H_{11}$ and $H_{01}$ with opposite signs.
+
+\subsection{Composition-only exclusion theorem}
+
+\begin{plainbox}[title=Theorem 1: composition-only sign restriction]
+Fix $r$ and $t$. Under the restricted composition-only model
+\begin{equation}
+q^\E_{r,t}=q^\R_{r,t}=q_{r,t},
+\end{equation}
+we have
+\begin{equation}
+\Delta H_{11,r,t}=q_{r,t}\Delta m_{r,t},
+\qquad
+\Delta H_{01,r,t}=(1-q_{r,t})\Delta m_{r,t},
+\end{equation}
+and therefore
+\begin{equation}
+\Delta H_{11,r,t}\Delta H_{01,r,t}
+=q_{r,t}(1-q_{r,t})(\Delta m_{r,t})^2\ge0.
+\label{eq:signrestriction}
+\end{equation}
+Thus opposite-signed $\Delta H_{11,r,t}$ and $\Delta H_{01,r,t}$ exclude composition-only in that cell.
+\end{plainbox}
+
+This result requires no stochastic test and no choice among decomposition orders. It is a finite-file accounting implication.
+
+\subsection{Six independent sign witnesses}
+
+The focal GOA, RTF, and NAT cells have the joint contrasts in \cref{tab:jointsigns}.
+
+\begin{table}[H]
+\centering
+\caption{Joint public masses in the six focal disposition--time cells}
+\label{tab:jointsigns}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Calendar bin & Disposition & $\Delta H_{01,r}$ & $\Delta H_{11,r}$ \\
+\midrule
+31 Aug. PM & GOA & $+0.119667$ & $-0.074103$ \\
+31 Aug. PM & RTF & $+0.052795$ & $-0.201984$ \\
+31 Aug. PM & NAT & $+0.135677$ & $-0.220860$ \\
+1 Sep. AM & GOA & $+0.060965$ & $-0.023359$ \\
+1 Sep. AM & RTF & $+0.063914$ & $-0.192636$ \\
+1 Sep. AM & NAT & $+0.192744$ & $-0.220643$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All six products $\Delta H_{01,r}\Delta H_{11,r}$ are negative, so composition-only is excluded in every focal cell. The contemporaneous disposition registry defines GOA as Gone on Arrival, RTF as Report to Follow, NAT as Necessary Action Taken, and UNF as Unfounded. The 2021 accounting is qualified; an unchanged cross-year disposition semantic chain is not assumed.
+
+\subsection{Aggregate decomposition across dispositions}
+
+Among arrival-observed records, define the disposition share
+\begin{equation}
+\pi^z_{r,t}=\Prob(R=r\given A=1,z,t),
+\end{equation}
+and aggregate public dispatch-field share
+\begin{equation}
+q^z_{\mathrm{all},t}=\sum_r\pi^z_{r,t}q^z_{r,t}.
+\end{equation}
+Adding and subtracting symmetric cross-products yields
+\begin{align}
+q^\E_{\mathrm{all},t}-q^\R_{\mathrm{all},t}
+={}&\sum_r\frac{q^\E_{r,t}+q^\R_{r,t}}{2}
+(\pi^\E_{r,t}-\pi^\R_{r,t})\notag\\
+&+\sum_r\frac{\pi^\E_{r,t}+\pi^\R_{r,t}}{2}
+(q^\E_{r,t}-q^\R_{r,t}).
+\label{eq:aggregatekitagawa}
+\end{align}
+The first sum is the composition component; the second is the within-disposition component.
+
+\begin{table}[H]
+\centering
+\caption{Locked aggregate decomposition}
+\label{tab:aggkit}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Calendar bin & Total & Composition & Within disposition \\
+\midrule
+31 Aug. PM & $-0.4950345505$ & $+0.0118915647$ & $-0.5069261153$ \\
+1 Sep. AM & $-0.4823594957$ & $+0.0122764739$ & $-0.4946359695$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+The maximum identity residual is below $1.7\times10^{-16}$. The within term has the same sign as the total and a much larger absolute magnitude than the composition term.
+
+\subsection{Order sensitivity}
+
+Twofold decompositions can also be written sequentially by using event weights or reference weights. For 31 August PM, the two extreme orderings are approximately
+\begin{equation}
+-0.49503=(+0.00426)+(-0.49929)
+\end{equation}
+or
+\begin{equation}
+-0.49503=(+0.01952)+(-0.51456).
+\end{equation}
+For 1 September AM they are
+\begin{equation}
+-0.48236=(+0.00245)+(-0.48481)
+\end{equation}
+or
+\begin{equation}
+-0.48236=(+0.02210)+(-0.50446).
+\end{equation}
+The symmetric values lie between these extremes. Therefore the conclusion that the within-disposition component dominates is not an artifact of one arbitrary ordering.
+
+\section{Measure-specific structural partial identification}
+\label{sec:structural}
+
+The results in this section instantiate \cref{eq:measure_identified_set} for the operational and DV measures used in the paper. Each subsection fixes the relevant denominator before deriving the identified set.
+
+\subsection{Conditional internal-stage/public-capture bridge}
+
+Let $D_{\mathrm{pub}}$ be the public dispatch-field indicator and let $U_{\mathrm{dispatch}}$ be a candidate qualified internal administrative dispatch-event indicator. Conditional on $A_{\mathrm{pub}}=1$, recorded disposition $r$, and bin $t$, define
+\begin{align}
+q&=\Prob(D_{\mathrm{pub}}=1),\\
+u&=\Prob(U_{\mathrm{dispatch}}=1),\\
+\chi&=\Prob(D_{\mathrm{pub}}=1\given U_{\mathrm{dispatch}}=1).
+\end{align}
+If semantic evidence and the quantitative defect gate establish exact nesting
+\begin{equation}
+D_{\mathrm{pub}}\le U_{\mathrm{dispatch}},
+\label{eq:nesting}
+\end{equation}
+then
+\begin{equation}
+q=u\chi.
+\label{eq:bridgeproduct}
+\end{equation}
+
+\begin{plainbox}[title=Theorem 2: product non-identification]
+For $0<q<1$,
+\begin{equation}
+\Iset(u,\chi\given q)=
+\{(u,q/u):u\in[q,1]\}.
+\label{eq:productset}
+\end{equation}
+The set contains a continuum of observationally equivalent factor pairs. At $q=1$, $u=\chi=1$. At $q=0$, if $u>0$ then $\chi=0$; if $u=0$, $\chi$ is not defined in the cell because its conditioning event has zero mass.
+\end{plainbox}
+
+\paragraph{Proof.}
+Equation~\eqref{eq:bridgeproduct} implies $u\ge q$ and $\chi=q/u$. Every $u\in[q,1]$ produces a feasible $\chi\in[q,1]$. Conversely, every feasible pair must lie on this curve. The boundary cases follow directly. $\square$
+
+The bridge is itself not qualified in the locked public 2021 data. Therefore the unconditional structural uncertainty is no smaller than the conditional product set.
+
+\subsection{Identification from joint counts}
+
+If a direct bridge is admitted and valid joint counts are available, define
+\begin{equation}
+N_{du}=\#\{D_{\mathrm{pub}}=d,U_{\mathrm{dispatch}}=u\},
+\qquad d,u\in\{0,1\}.
+\end{equation}
+Under exact nesting, $N_{10}=0$. Let
+\begin{equation}
+N=N_{00}+N_{01}+N_{10}+N_{11}.
+\end{equation}
+Then
+\begin{equation}
+u=\frac{N_{01}+N_{11}}{N},
+\qquad
+\chi=\frac{N_{11}}{N_{01}+N_{11}},
+\label{eq:jointidentify}
+\end{equation}
+when denominators are positive.
+
+The bridge-defect estimand is
+\begin{equation}
+\delta=\Prob(D_{\mathrm{pub}}=1,U_{\mathrm{dispatch}}=0).
+\end{equation}
+If semantics imply \cref{eq:nesting} but the suppression-aware upper bound on $N_{10}$ is positive, the capture factorization is not admitted.
+
+If only marginals $d=\Prob(D_{\mathrm{pub}}=1)$ and $u=\Prob(U_{\mathrm{dispatch}}=1)$ are available, the overlap quantity
+\begin{equation}
+\kappa_{DU}=\Prob(D_{\mathrm{pub}}=1\given U_{\mathrm{dispatch}}=1)
+\end{equation}
+has the sharp Fr\'echet bounds, for $u>0$,
+\begin{equation}
+\frac{\max(0,d+u-1)}{u}
+\le\kappa_{DU}\le
+\frac{\min(d,u)}{u}.
+\label{eq:frechet}
+\end{equation}
+Sharpness here is within the class of normalized nonnegative $2\times2$ tables with fixed marginals $d$ and $u$: both overlap endpoints are attained by feasible tables. It does not establish that the variables form a qualified institutional bridge.
+It is called capture only after direct-bridge semantics and nesting are admitted.
+
+\subsection{Queue non-identification}
+
+Queue quantities live on the created-call universe, not the arrival-observed bridge universe. Let
+\begin{equation}
+Q_{t+1}=Q_t+I_t-E^{\mathrm{asg}}_t-E^{\mathrm{can}}_t-E^{\mathrm{alt}}_t.
+\label{eq:queuefull}
+\end{equation}
+
+\begin{plainbox}[title=Theorem 3: bridge information does not identify queue state]
+For any admissible internal-stage prevalence $u_{\mathrm{dispatch}}$, the two stock-flow paths
+\begin{equation}
+(Q_t,I_t,E^{\mathrm{asg}}_t,E^{\mathrm{can}}_t,E^{\mathrm{alt}}_t,Q_{t+1})
+=(0,a,a,0,0,0)
+\end{equation}
+and
+\begin{equation}
+(Q_t,I_t,E^{\mathrm{asg}}_t,E^{\mathrm{can}}_t,E^{\mathrm{alt}}_t,Q_{t+1})
+=(b,a,a,0,0,b)
+\end{equation}
+are both feasible for $a,b>0$ and share the same bridge observation. Hence bridge prevalence alone identifies neither queue stock, realized availability, cancellation, alternate exits, nor physical performance.
+\end{plainbox}
+
+\subsection{Interval queue bounds and infeasibility}
+
+Suppose $Q_t\in[Q_L,Q_U]$, $I_t\in[I_L,I_U]$, and $Q_{t+1}\in[Q^+_L,Q^+_U]$. Let total nonnegative exit be $E_t=Q_t+I_t-Q_{t+1}$. If
+\begin{equation}
+Q_U+I_U<Q^+_L,
+\end{equation}
+then the stock-flow set is empty:
+\begin{equation}
+\texttt{EMPTY\_STOCK\_FLOW\_SET}.
+\end{equation}
+Otherwise a certified outer interval is
+\begin{equation}
+E_t\in
+\left[
+\max(0,Q_L+I_L-Q^+_U),
+\;Q_U+I_U-Q^+_L
+\right].
+\label{eq:queuebounds}
+\end{equation}
+It is sharp only when the endpoints are jointly attainable under every other constraint.
+
+\subsection{Priority endpoints do not identify priority transport}
+
+Let $P^0$ and $P^r$ be initial and recorded priority endpoints. Their joint distribution identifies endpoint disagreement. It does not identify an ordered history
+\begin{equation}
+P^0\rightarrow P^{(1)}\rightarrow\cdots\rightarrow P^r,
+\end{equation}
+its event times, actor classes, reasons, or overwritten intermediate states. Even equality $P^0=P^r$ does not prove stability; a call could move away from and later return to its initial value.
+
+Let $H=1$ indicate that at least one priority change occurred. Endpoint disagreement is sufficient for $H=1$, so without further history the sharp prevalence bound is
+\begin{equation}
+\Prob(P^0\ne P^r)
+\le \Prob(H=1)\le 1.
+\label{eq:priority_history_bound}
+\end{equation}
+The lower endpoint assigns no hidden changes to equal-endpoint records; the upper endpoint assigns at least one offsetting sequence to every such record. Both completions preserve the observed endpoints.
+
+A qualified transport matrix requires a common risk set and joint transitions
+\begin{equation}
+\Pi_{ab,t}=\Prob(P^{\mathrm{post}}=b\given P^{\mathrm{pre}}=a,t),
+\end{equation}
+not separate endpoint marginals.
+
+\subsection{Continuity semantics versus realized states}
+
+Policy can define possible fallback routes without identifying which route was realized. A component state should be represented as a product
+\begin{equation}
+S_{c,t}=(C_{c,t},F_{c\to c',t}),
+\end{equation}
+where
+\begin{equation}
+C_{c,t}\in\{\text{NORMAL, DEGRADED, UNAVAILABLE, UNKNOWN}\}
+\end{equation}
+and
+\begin{equation}
+F_{c\to c',t}\in\{\text{ACTIVE, INACTIVE, UNKNOWN}\}.
+\end{equation}
+This allows the scientifically important state \enquote{primary unavailable, fallback active}. A single binary outage flag would collapse these cases.
+
+\subsection{Regularization is not identification}
+
+Let the data-consistent structural set be
+\begin{equation}
+\Theta_I(Y)=\{\theta:H(\theta)=Y,\ \theta\in\Theta\}.
+\end{equation}
+A regularized selector
+\begin{equation}
+\theta^*=\argmin_{\theta\in\Theta_I(Y)}R(\theta)
+\end{equation}
+may be unique even when $\Theta_I(Y)$ contains many points. Uniqueness of $\theta^*$ identifies the minimizer of the chosen regularizer, not the historical latent state. This distinction is essential before any minimum-action or sparsity-based pathway search.
+
+\subsection{Declared-rule DV labeling bounds}
+\label{sec:dv_bounds_appendix}
+
+Let $\mathcal L$ be a declared administrative labeling rule and let
+\begin{equation}
+C_i^{\mathcal L}\in\{1,0,U\}
+\end{equation}
+denote that record $i$ is labeled DV-related, labeled other, or unresolved under $\mathcal L$. These are outputs of the declared administrative rule, and $U$ records unresolved classification authority. Define
+\begin{equation}
+N_1=\sum_i\ind\{C_i^{\mathcal L}=1\},
+\qquad
+N_U=\sum_i\ind\{C_i^{\mathcal L}=U\}.
+\end{equation}
+For each unresolved record let $u_i\in\{0,1\}$ denote an admissible completion under the rule. Then
+\begin{equation}
+N_{\mathrm{DV}}^{\mathcal L}
+=N_1+\sum_{i:C_i^{\mathcal L}=U}u_i
+\in[N_1,\,N_1+N_U].
+\label{eq:dv_rule_bound_appendix}
+\end{equation}
+The bound is sharp over rule-consistent completions: assigning all unresolved records to $0$ attains the lower endpoint, assigning all to $1$ attains the upper endpoint, and choosing any intermediate number attains every integer between them. For a fixed CAD denominator $N$, division by $N$ yields the corresponding share bound. The completion logic matches sharp binary missing-outcome bounds \citep{Manski2003}. Auxiliary restrictions on actual misclassification probabilities could tighten a different identified set \citep{Molinari2008}. Imperfect verification can similarly yield informative performance bounds when the verified and unverified groups are explicitly modeled \citep{DominitzSherman2006}. Priority, endpoint, EPR, DVU, and AIR stages retain their own denominators and links.
+
+\subsection{Endpoint-selected response-time distributions}
+\label{sec:response_bounds_appendix}
+
+Fix a declared labeling rule and condition on $C^{\mathcal L}=1$. Let $E=1$ indicate that both endpoints required by the declared response-time clock are observed. Define
+\begin{equation}
+\pi_E=\Prob(E=1\given C^{\mathcal L}=1),
+\qquad
+F_E(a)=\Prob(\tau\le a\given C^{\mathcal L}=1,E=1).
+\end{equation}
+The selected distribution $F_E$ is a function of the endpoint-observed records. The full-denominator distribution satisfies
+\begin{equation}
+F_\tau(a)
+=\pi_EF_E(a)+(1-\pi_E)F_0(a),
+\label{eq:response_mixture_appendix}
+\end{equation}
+where $F_0(a)=\Prob(\tau\le a\given C^{\mathcal L}=1,E=0)$ is unobserved. Hence
+\begin{equation}
+\pi_EF_E(a)
+\le F_\tau(a)\le
+\pi_EF_E(a)+(1-\pi_E).
+\label{eq:response_bound_appendix}
+\end{equation}
+
+\paragraph{Sharpness.}
+At a fixed threshold $a$, assigning all endpoint-missing values above $a$ attains the lower endpoint, while assigning all below or at $a$ attains the upper endpoint. Every intermediate value is attained by assigning the corresponding fraction to each side. The bounds therefore require no assumption about the endpoint-missing distribution. A qualified classifier must be incorporated before these bounds are interpreted for a strict DV population.
+
+\subsection{Lineage-selected administrative follow-through}
+\label{sec:follow_bounds_appendix}
+
+Again condition on $C^{\mathcal L}=1$. Let $L=1$ indicate retained lineage from the CAD denominator to a declared follow-through stage, and let $Z=1$ indicate completion of the specified duty. Write
+\begin{equation}
+\pi_L=\Prob(L=1\given C^{\mathcal L}=1),
+\qquad
+p_L=\Prob(Z=1\given C^{\mathcal L}=1,L=1).
+\end{equation}
+Then
+\begin{equation}
+p_Z
+=\pi_Lp_L+(1-\pi_L)p_0,
+\qquad p_0\in[0,1],
+\end{equation}
+and the sharp bounds are
+\begin{equation}
+\pi_Lp_L
+\le p_Z\le
+\pi_Lp_L+(1-\pi_L).
+\label{eq:follow_bound_appendix}
+\end{equation}
+The endpoint assignments $p_0=0$ and $p_0=1$ attain the two limits. If $\pi_L$ is unavailable, the current-data set for $p_Z$ is $[0,1]$. Aggregate retained lineage identifies $\pi_L$; linked completion counts identify $p_L$.
+
+\section{Prospective technical frontier: model uncertainty and reachability}
+\label{sec:frontier}
+
+This section preserves the prospective machinery for future internal-witness extensions. The current empirical and DV measurement results require only Sections~\ref{sec:measurement_map}--\ref{sec:structural}; the 54-regime construction below records how stronger evidence would open additional structural objects.
+
+\subsection{Tagged union over model classes}
+
+Let $m\in\Mset$ index a registered structural model class. Its class-specific identified set is
+\begin{equation}
+\Theta_I^m(Y,W)=
+\{(m,\theta_m,X_{1:T}):
+Y_t\in H_m(X_t;\theta_m),\
+X_{t+1}\in F_m(X_t,a_t;\theta_m),\
+\mathcal H_m(W)\},
+\end{equation}
+where $W$ denotes the admitted witness regime and $\mathcal H_m(W)$ collects the hard semantic, retention, denominator, suppression, and accounting restrictions.
+
+The model-uncertainty object is the tagged union
+\begin{equation}
+\Theta_I^{\cup}(Y,W)
+=\bigcup_{m\in\Mset(W)}\{m\}\times\Theta_I^m(Y,W).
+\label{eq:taggedunion}
+\end{equation}
+The class tag is retained so that similarly named coordinates are not silently equated across models.
+
+The registered templates include:
+\begin{itemize}
+\item a public accounting baseline;
+\item a restricted composition-only diagnostic;
+\item an internal/public bridge product;
+\item queue and realized-availability correspondence;
+\item priority-risk-set and exit transport;
+\item component continuity and fallback;
+\item integrated B--Q, B--Q--P, and B--Q--P--C classes under explicit coupling maps.
+\end{itemize}
+Legal uncoupled module combinations are represented by Cartesian products. An integrated class denotes an additional cross-module restriction, not merely joint availability of the component data.
+
+\subsection{Reachability and viability}
+
+For class $m$, let $\mathcal R^m_1$ be the reference-qualified initial state set. Recursively define the reachable set
+\begin{equation}
+\mathcal R^m_{t+1}=
+\{x':\exists x\in\mathcal R^m_t,\exists a_t\in\mathcal A_{m,t}
+\text{ such that }x'\in F_m(x,a_t)\}.
+\end{equation}
+The observation-compatible viability set is
+\begin{equation}
+\mathcal V^m_t=\mathcal R^m_t\cap H_m^{-1}(\mathcal Y_{\Ida,t}).
+\end{equation}
+The linked path set is
+\begin{equation}
+\mathcal X_I^m=
+\{X_{1:T}:X_t\in\mathcal V^m_t,\ X_{t+1}\in F_m(X_t,a_t)\}.
+\label{eq:pathset}
+\end{equation}
+Algebraic fit without a full linked path is not admissible.
+
+For latent coordinate $x_{g,t}$, the sharp bounds are
+\begin{equation}
+\underline x_{g,t}^m=\inf_{X\in\mathcal X_I^m}x_{g,t},
+\qquad
+\overline x_{g,t}^m=\sup_{X\in\mathcal X_I^m}x_{g,t}.
+\end{equation}
+A bound is called sharp only when endpoints are attainable or arbitrarily approximable by feasible paths. Otherwise it is labeled \texttt{OUTER\_NOT\_SHARP}.
+
+\subsection{Current \texorpdfstring{$W_0$}{W0} boundary}
+
+At the current pre-Stage-S/pre-Stage-V witness state $W_0$, only two public classes are open:
+\begin{enumerate}
+\item the observation baseline, which is sharp for qualified public coordinates;
+\item the restricted composition-only diagnostic, which is empty in the six focal late-phase cells.
+\end{enumerate}
+No latent structural class is admitted. Consequently, bounds and possible/required sets for internal dispatch, public capture, queue pressure, realized availability, priority transport, alternate exits, and continuity are \texttt{NOT\_DEFINED}. This is a certification of the identification boundary, not a failure to optimize.
+
+\subsection{Witness-availability phase diagram}
+
+Four modules are considered:
+\begin{align}
+B&=\text{internal/public bridge}, & Q&=\text{queue and availability},\\
+P&=\text{priority transport}, & C&=\text{continuity/fallback}.
+\end{align}
+Each can be \texttt{CLOSED}, \texttt{PARTIAL}, or \texttt{QUALIFIED}. Encode those levels as $0$, $1$, and $2$. The queue module has $Q\in\{0,1,2\}$ and the priority module must satisfy $P\in\{0,\ldots,Q\}$, producing the six ordered pairs
+\begin{equation}
+(Q,P)\in\{(0,0),(1,0),(1,1),(2,0),(2,1),(2,2)\}.
+\end{equation}
+With three independent levels for each of $B$ and $C$, the number of legal witness-availability regimes is
+\begin{equation}
+3_B\times3_C\times6_{(Q,P)}=54.
+\end{equation}
+
+The 54 regimes do not exhaust every possible coupling model. Every multi-module regime separately records whether cross-module propagation is
+\begin{equation}
+\texttt{UNCOUPLED},\qquad
+\texttt{PARTIAL\_MAP},\qquad
+\texttt{QUALIFIED\_MAP}.
+\end{equation}
+Joint observation of two modules does not identify transmission between them.
+
+\subsection{Eight minimum-witness objects}
+
+\begin{table}[H]
+\centering
+\caption{Minimum evidence for the eight frozen future identification objects}
+\label{tab:witnesses}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\toprule
+Object & Minimum witness configuration \\
+\midrule
+A. Bridge-factor separation & qualified B, exact nesting, valid joint $D_{\mathrm{pub}}\times U_{\mathrm{dispatch}}$ counts \\
+B1. Queue path & event-period queue stock on a qualified risk set \\
+B2. Queue abnormality & B1 plus same-semantic reference queue path and frozen reference design \\
+C. Queue versus realized availability & qualified queue stock plus separately defined realized availability \\
+D1. Priority trajectory & qualified Q and P plus priority-specific exits \\
+D2. Priority-to-public propagation & D1 plus qualified destination B and an admitted $\Gamma_{P\to B}$ map \\
+E1. Continuity-to-queue propagation & qualified C and Q plus an admitted $\Gamma_{C\to Q}$ map \\
+E2. Continuity-to-bridge propagation & qualified C and B plus an admitted $\Gamma_{C\to B}$ map \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Even the richest witness regime leaves model probabilities, pathway probabilities, and the historical minimum-action path unidentified unless an empirically calibrated stochastic model is added and passes a separate observability and prior-sensitivity gate.
+
+\section{Current-public-data measurement-regime replay}
+\label{sec:m8p}
+
+\subsection{Question and source universe}
+
+The replay asks: if the locked Ida administrative signature were observed under the 2025--2026 public measurement architecture, would the mechanism-relevant identified set become smaller? It does not ask how police would behave if Ida occurred today.
+
+The official frozen sources include the 2025 and 2026 annual CFS datasets and dictionaries, the public NOPD dashboard directory, the response-time Power BI semantic model and aggregate queries, current response and alternative-response policies, the 2024 Sustainment Plan, and 2025 EPR metadata.
+
+\subsection{Raw schema genealogy}
+
+The same core sixteen public fields are present in 2021, 2025, and 2026. The 2025 and 2026 attached CFS dictionaries are byte-identical. The architecture remains endpoint-based: initial and recorded signal/priority, create/dispatch/arrival/closure timestamps, final disposition, and self-initiation.
+
+The dashboard adds candidate enrichments, including:
+\begin{itemize}
+\item \texttt{Incident\_To\_EnRoute\_Seconds};
+\item \texttt{All Dispositions};
+\item initial-versus-recorded priority and signal change flags;
+\item modifier and source-detail categories.
+\end{itemize}
+These are public and machine-queryable, but the current public documentation does not establish their construction, ordering, clocks, multiplicity, overwrite behavior, or a binding to the 2021 Ida estimand.
+
+\subsection{Conditional semantic-invariance result}
+
+Let $Y_{26}^{\mathrm{raw}}$ denote the normalized common endpoints in the current annual schema, and let $D_{26}^{\mathrm{derived}}=g(Y_{26}^{\mathrm{raw}})$ be a deterministic dashboard transformation.
+
+\begin{plainbox}[title=Theorem 4: deterministic public transforms do not contract their raw-input identified set]
+If $D_{26}^{\mathrm{derived}}=g(Y_{26}^{\mathrm{raw}})$ is deterministic, then for any parameter $\theta$ defined under semantic map $h$,
+\begin{equation}
+\Iset_{2026}(\theta\given Y_{\Ida},Y_{26}^{\mathrm{raw}},D_{26}^{\mathrm{derived}},h)
+=
+\Iset_{2026}(\theta\given Y_{\Ida},Y_{26}^{\mathrm{raw}},h).
+\label{eq:deterministic_no_gain}
+\end{equation}
+\end{plainbox}
+
+\paragraph{Proof.}
+Because $D_{26}^{\mathrm{derived}}$ is a deterministic function of $Y_{26}^{\mathrm{raw}}$, every feasible world consistent with the raw endpoints already fixes the derived value. Adding that value leaves the compatibility set, and therefore its image in $\theta$, unchanged. $\square$
+
+The theorem is within the 2026 information regime. It does not equate the 2026 and 2021 identified sets; that stronger claim would require equality of the restrictions defining feasible worlds across the two regimes. Dashboard-only fields also require a qualified semantic binding. For queue, realized availability, priority-event history, applicable callback/fallback states, and component continuity, the decisive state variables remain absent. No strict common-estimand contraction is proved.
+
+\subsection{Public semantic enrichment versus structural witness qualification}
+
+The replay distinguishes public descriptive enrichment from realized M8 structural witnesses:
+
+\begin{table}[H]
+\centering
+\caption{Semantic enrichment does not open the latent structural modules}
+\label{tab:semanticfirewall}
+\begin{tabularx}{\textwidth}{@{}l X l@{}}
+\toprule
+Module & Current public enrichment & Realized M8 witness status \\
+\midrule
+B: internal/public dispatch bridge & partial context; separate public surfaces and a 2025 CAD--EPR item link & closed \\
+Q: queue and realized availability & endpoint and duration proxies only & closed \\
+P: priority transport & endpoint enriched; policy and change flags & closed \\
+C: continuity and fallback & semantics documented in policy & closed \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+A CAD--EPR item link is not the internal-dispatch/public-dispatch bridge. Response durations do not identify queue stock. Priority endpoint disagreement is not an event history. Policy descriptions of fallback do not reveal realized continuity states. The realized M8 witness regime therefore remains $W_0$.
+
+\subsection{Current public-data validity audit}
+
+\begin{table}[H]
+\centering
+\caption{Selected 2025--2026 public-data validity results}
+\label{tab:currentaudit}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Check & 2025 & 2026 snapshot \\
+\midrule
+Rows & 329,770 & 209,829 \\
+Unique item IDs & 329,770 & 209,829 \\
+Dispatch field present & 41.80\% & 41.88\% \\
+Arrival field present & 83.72\% & 84.14\% \\
+Arrival present, dispatch absent & 152,701 & 97,573 \\
+Malformed nonblank stage timestamps & 0 & 0 \\
+Exact priority-endpoint disagreement & 38.74\% & 37.10\% \\
+Numeric-root priority disagreement & 23.32\% & 24.16\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These are properties of public administrative files. They do not measure physical response, effective capacity, or police performance. The high prevalence of arrival-present/dispatch-absent records in contemporary data reinforces why this configuration cannot be interpreted mechanically as nonresponse.
+
+\subsection{Replay decision}
+
+The supported decision is
+\begin{equation}
+\boxed{\texttt{M8P\_PUBLIC\_OBSERVABILITY\_PARTIALLY\_IMPROVED}.}
+\end{equation}
+The raw architecture remains substantially the same, while the dashboard and current policies add useful descriptive and semantic layers. No mechanism-relevant strict identified-set contraction is proved.
+
+\section{Statistical and econometric interpretation}
+\label{sec:inference}
+
+\subsection{Finite-population exactness}
+
+The reported topology contrasts and decomposition identities are exact functionals of the frozen public data and estimator. Numerical tolerances arise from floating-point computation and certified optimization, not from sampling the finite file. This finite-population exactness should be distinguished from superpopulation consistency or causal inference.
+
+\subsection{Reference uncertainty}
+
+The reference rank summarizes empirical rarity across qualified windows. It is robust to interval-valued optimization because every reference interval is separated from Ida. The ten bins form one multivariate window, and the finite-file decomposition is exact.
+
+If future work seeks uncertainty for a partially identified structural parameter, the appropriate object is a confidence region for the observable moments propagated through the identified-set map. If $C_{1-\alpha}$ is a simultaneous confidence set for observable moments $m_0$, then
+\begin{equation}
+\mathcal C^{\theta}_{1-\alpha}
+=\bigcup_{m\in C_{1-\alpha}}\Iset(\theta\given m)
+\end{equation}
+has at least $1-\alpha$ coverage whenever $m_0\in C_{1-\alpha}$. Plugging point estimates into a linear program and attaching an ordinary regression standard error afterward is not valid set inference.
+
+\subsection{When minimum-action analysis becomes meaningful}
+
+Once qualified latent witnesses enter, a reference-calibrated action could be defined as
+\begin{equation}
+\mathcal A(z)=\sum_{t=1}^{T}z_t'\widehat\Sigma_e^{-1}z_t,
+\end{equation}
+where $z_t$ is an Ida deviation from a normal transition law estimated only from reference windows. The least-reference-deviation path would be
+\begin{equation}
+z^*=\argmin_{z\in\mathcal P_I}\mathcal A(z).
+\end{equation}
+Before a stochastic model is admitted, this remains a selector from a feasible path set. It is not a historical probability statement.
+
+\subsection{Stochastic state-space and Bayesian layer}
+
+A probabilistic pathway analysis requires transition and observation laws such as
+\begin{align}
+X_{t+1}&\sim p_\theta(X_{t+1}\mid X_t),\\
+Y_t&\sim p_\theta(Y_t\mid X_t).
+\end{align}
+Only after semantic qualification, structural identification/observability checks, reference out-of-sample validation, and prior-sensitivity analysis would it be legitimate to report posterior pathway mass or a maximum a posteriori path. No such probabilities are produced in the current study.
+
+\section{Reproduction guide}
+\label{sec:repro}
+
+\subsection{Reproduction principle}
+
+All focal numbers are bound to locked aggregate artifacts. Replication scripts should be run in a disposable copy of the repository because some verification programs write result files beside their inputs. The main estimators need not be rerun to verify the paper; the locked machine outputs and independent replication reports are sufficient.
+
+\subsection{Primary result map}
+
+All paths below are repository-relative. The M7B/M7D-E files live under the locked New Orleans Wave4R candidate tree; the M8P files live under the current-public-data replay tree.
+
+{\footnotesize
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.36\textwidth}>{\raggedright\arraybackslash}p{0.33\textwidth}@{}}
+\caption{Result-to-artifact map}\label{tab:artifacts}\\
+\toprule
+Result & Primary locked artifact & Independent check \\
+\midrule
+\endfirsthead
+\toprule
+Result & Primary locked artifact & Independent check \\
+\midrule
+\endhead
+Ida topology score and ranks & \path{M7B_IDA_RANK_BOUNDS.json} & \makecell[l]{\texttt{M7B\_INDEPENDENT\_}\\\texttt{REPLICATION.json}} \\
+Nine abnormal cells & \path{M7B_IDA_ABNORMAL_CELLS.csv} & maximum-cell threshold replay \\
+Within-disposition joint masses & \path{M7D_E_RESULTS.json} & \makecell[l]{\texttt{M7D\_E\_INDEPENDENT\_}\\\texttt{REPLICATION.json}} \\
+Kitagawa decomposition & \path{M7D_E_RESULTS.json} & aggregate-only implementation \\
+M8 structural boundary & \makecell[l]{\texttt{BELAND\_PLUS\_M8A\_}\\\texttt{LATENT\_OPERATIONAL\_}\\\texttt{DYNAMICS.md}} & M8B-R1, M8C, and M8D lock receipts \\
+Current-data audit & \path{current_data_validity_audit.json} & \path{validation_report.json} \\
+M8P replay decision & \path{m8p_results.json} & M8P-R1 lock receipt \\
+\bottomrule
+\end{longtable}
+}
+
+\subsection{Expected verification commands}
+
+From the repository root, use the governed Python environment and run:
+
+\begin{lstlisting}[language=bash]
+python pilot_911_dv/experiments/
+  nola_2020-01-01_2024-12-31_beland_plus_wave4r/candidate/
+  m7b_same_estimator_reference_geometry/independent_replicate_m7b.py
+
+python pilot_911_dv/experiments/
+  nola_2020-01-01_2024-12-31_beland_plus_wave4r/candidate/
+  m7d_e_within_disposition_dispatch_observability/replicate_m7d_e.py
+
+python pilot_911_dv/experiments/
+  nola_2025-01-01_2026-08-11_m8p_public_observability_replay/
+  notebooks/audit_current_public_data.py
+
+python pilot_911_dv/experiments/
+  nola_2025-01-01_2026-08-11_m8p_public_observability_replay/
+  notebooks/build_m8p_outputs.py
+
+python pilot_911_dv/experiments/
+  nola_2025-01-01_2026-08-11_m8p_public_observability_replay/
+  notebooks/validate_m8p.py
+\end{lstlisting}
+
+The line wrapping above is typographic. In an actual shell, each script path is supplied as one argument.
+
+\subsection{Expected invariants}
+
+A valid M7B replay must satisfy:
+\begin{itemize}
+\item 217 full qualified reference windows;
+\item Ida matrix parity no larger than $10^{-10}$;
+\item rank 1 in all three reference designs;
+\item no interval overlap between Ida and any reference.
+\end{itemize}
+
+A valid M7D-E replay must satisfy:
+\begin{itemize}
+\item parent topology aggregation error below $10^{-10}$;
+\item Kitagawa identity residual below $10^{-12}$;
+\item the six opposite-sign composition-only witnesses;
+\item the B6/B7 aggregate values in \cref{tab:aggkit}.
+\end{itemize}
+
+A valid M8P replay must satisfy:
+\begin{itemize}
+\item decision \texttt{M8P\_PUBLIC\_OBSERVABILITY\_PARTIALLY\_IMPROVED};
+\item empty strict-contraction list;
+\item all four realized structural modules closed;
+\item no event-window or shock fishing in the current-data audit;
+\item no row-level sensitive examples persisted.
+\end{itemize}
+
+\subsection{Frozen current-data snapshot hashes}
+
+The frozen bindings are:
+\begin{lstlisting}
+Official 2025 CFS
+  dataset_id: 4xwx-sfte
+  rows: 329770
+  sha256: be8416343d253e2518a16ae007568a1561ee8b511dbdef3d5465956a198ae875
+
+Official 2026 CFS
+  dataset_id: es9j-6y5d
+  rows: 209829
+  sha256: c151ca38199aa53921ad1fe048ee7108f6165e8700ae459070f4c014ce614e17
+\end{lstlisting}
+
+\subsection{Algorithmic skeleton}
+
+The public topology and decomposition can be reproduced conceptually by the following pseudocode. It omits project-specific file access and privacy-governance code but preserves the mathematical order of operations.
+
+\begin{lstlisting}[language=Python]
+for window in [ida_window] + qualified_reference_windows:
+    records = load_frozen_eligible_records(window)
+
+    for bin_id in frozen_12_hour_bins:
+        event_or_reference = records.in_bin(bin_id)
+        strata = frozen_common_support[bin_id]
+        weights = frozen_reference_weights[bin_id]
+
+        for stratum in strata:
+            block = event_or_reference.in_stratum(stratum)
+            D = valid_public_dispatch_field(block)
+            A = valid_public_arrival_field(block)
+            J00, J01, J10, J11 = topology_indicators(D, A)
+            store_state_shares(block, J00, J01, J10, J11)
+
+        standardized = weighted_average_over_strata(weights)
+        assert simplex_identity(standardized)
+
+    G = build_matrix(columns=[Delta_J01, Delta_J10, Delta_J11])
+    score_interval = solve_authorized_support_program(G)
+
+# Focal within-disposition decomposition
+for bin_id in [B6, B7]:
+    for disposition in [GOA, RTF, NAT]:
+        H01, H11 = standardized_joint_masses(bin_id, disposition)
+        m = H01 + H11
+        q = H11 / m
+        verify_cell_kitagawa_identity(m, q)
+
+    verify_aggregate_kitagawa_identity(bin_id)
+\end{lstlisting}
+
+\subsection{PDF and figure reproduction}
+
+The revised paper and appendix are authored in LaTeX using Latin Modern, the scalable canonical Computer Modern family. All charts are generated in TikZ/PGFPlots, so figure labels and mathematics use the same embedded fonts as the body text. A valid release must pass:
+\begin{itemize}
+\item LaTeX compilation with no unresolved references or citations;
+\item no overfull boxes in the final log;
+\item embedded-font inspection;
+\item page-by-page rendering at 200 dpi;
+\item visual inspection for clipped equations, tables, labels, or broken glyphs.
+\end{itemize}
+
+\subsection{Lean formal-verification supplement}
+
+An additive Lean 4 package at \path{pilot_911_dv/formal_verification_r11_1} checks the R11.1 mathematical inventory and the deterministic-transform correction adopted in R11.2 without modifying the locked empirical inputs. Lean 4 and Mathlib are pinned at version 4.33.0. The kernel-checked tranche contains 65 named theorem declarations, with no \texttt{sorry}, \texttt{admit}, or project-defined axioms.
+
+Three verification classes apply. \emph{Kernel-verified mathematics} consists of the definitions and theorems accepted by Lean under their stated assumptions. \emph{Tested numerical results} consists of the frozen LP and finite-artifact calculations checked by independent computation but not represented by an exact paper-level rational certificate. \emph{Semantic and institutional bindings} connect formal variables to public fields, operational stages, denominators, and source authority; those bindings require human and source review.
+
+{\footnotesize
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.29\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.42\textwidth}@{}}
+\caption{Formal-verification and computational-check status}\label{tab:formalverification}\\
+\toprule
+Claim family & Status & Boundary \\
+\midrule
+\endfirsthead
+\toprule
+Claim family & Status & Boundary \\
+\midrule
+\endhead
+Public states, standardization, decomposition, bridge, Fr\'echet, and queue results & \makecell[l]{\texttt{FORMALLY\_}\\\texttt{VERIFIED}} & Exact statements under their declared mathematical assumptions. \\
+Identified-set contraction, witness sufficiency, DV $1/0/U$ bounds, selection bounds, and necessity counterexamples & \makecell[l]{\texttt{FORMALLY\_}\\\texttt{VERIFIED}} & Target and denominator meanings remain part of the semantic binding. \\
+Deterministic-transform redundancy in \cref{eq:deterministic_no_gain} & \makecell[l]{\texttt{FORMALLY\_}\\\texttt{VERIFIED}} & Within-2026 equality only; no cross-regime equality is claimed. \\
+Fifty-four witness-availability regimes & \makecell[l]{\texttt{FORMALLY\_}\\\texttt{VERIFIED}\\\texttt{EXHAUSTIVELY\_}\\\texttt{ENUMERATED}} & Availability regimes, not estimated models or pathway probabilities. \\
+M7B Ida numerical interval and ranks & \texttt{TESTED\_ONLY} & Primary and independent HiGHS intervals overlap under declared tolerances. \\
+Exact-rational checker fixture & \makecell[l]{\texttt{CERTIFICATE\_}\\\texttt{VERIFIED}} & Checker test only; it is not the paper LP result. \\
+Exact-rational paper LP certificate & \makecell[l]{\texttt{NOT\_YET\_}\\\texttt{VERIFIED}} & No canonical rational LP instance or exact primal--dual vectors are supplied. \\
+Source semantics and institutional interpretation & \makecell[l]{\texttt{SEMANTIC\_REVIEW\_}\\\texttt{REQUIRED}} & Human and source review must bind fields, clocks, denominators, stages, and authority. \\
+\bottomrule
+\end{longtable}
+}
+
+From the repository root, the focused verification commands are:
+
+\begin{lstlisting}
+cd pilot_911_dv/formal_verification_r11_1
+lake -Kjobs=1 build
+python certificates/verify_certificates.py
+python enumeration/verify_witness_regimes.py
+\end{lstlisting}
+
+The exact declaration-to-source mapping, assumptions, axiom audit, and interpretation boundaries are recorded in \path{CLAIM_MAP.md}, \path{AXIOM_AUDIT.md}, and \path{VERIFICATION_REPORT.md}. A successful build establishes that Lean accepted the stated formal theorems. It does not verify source-data semantics, empirical estimates, causal claims, mechanism probabilities, or the institutional interpretation of public and operational variables.
+
+\section{Claim language and interpretation rules}
+\label{sec:claims}
+
+\subsection{Claims supported by the mathematics}
+
+The locked analysis permits the following statements:
+\begin{itemize}
+\item Ida is reference-extreme in the frozen public-topology discrepancy statistic.
+\item Nine public bin--state contrasts exceed a common reference threshold.
+\item The public-state configuration changes after midday on 31 August: $\Jzeroone$ becomes positive while $\Joneone$ remains negative.
+\item Recorded-disposition composition alone is excluded in the six focal GOA/RTF/NAT cells.
+\item The late aggregate shift is dominated by changes within recorded dispositions.
+\item A performance functional is directly supportable only when its measure-specific identified set is a singleton under the admitted witnesses.
+\item Endpoint coverage yields sharp pointwise bounds for a full-denominator response-time distribution.
+\item Retained lineage and completion coverage yield sharp bounds for a full-denominator administrative follow-through rate.
+\item Initial and recorded priorities provide a sharp lower bound on the prevalence of any priority change.
+\item Current public data are descriptively and semantically richer, but no strict mechanism-relevant identified-set contraction is proved.
+\item Additional joint bridge, queue, availability, priority-history, and continuity witnesses would contract specified parts of the identified set.
+\end{itemize}
+
+\subsection{Interpretive boundary}
+
+The Ida estimand is the topology of released administrative fields. The downstream performance estimands condition on reported calls created in CAD and require the target-specific witnesses defined above. Earlier help-seeking stages, population DV incidence, victim safety, reform effects, and mechanism probabilities require their corresponding access, outcome, or design evidence. The present evidence supplies no probability ordering among latent pathways.
+
+\subsection{Recommended terminology}
+
+Preferred terms:
+\begin{quote}
+reported calls; reported DV-related calls; public administrative observability; event-window comparison; reference-extreme; within-disposition public field shift; measurement friction; identified set; realized availability; queue stock; recorded disposition; consistent with.
+\end{quote}
+
+\section{Summary of the mathematical logic}
+
+The argument has two connected modules:
+\begin{enumerate}
+\item \emph{Released-record stress test.} Define mutually exclusive public field states, standardize event--reference shares, construct $G(Y)$, and compare $T(Y)$ with same-estimator reference windows. The disposition decomposition then localizes the reference-extreme Ida path within recorded categories.
+\item \emph{Measure-specific identification.} Define each candidate target $\theta_k=m_k(S)$ and evaluate $\mathcal I_k(Y,W)$. The bridge product, queue identities, priority bounds, $1/0/U$ classification bounds, endpoint-selection bounds, and lineage bounds are applications of this common rule.
+\end{enumerate}
+
+The workload map links reported demand, capacity, priorities, and service. The first module shows that instability in the released observation of that system is empirically consequential. The second determines which reported-DV performance functionals remain supportable, bounded, selected, or unavailable and identifies the witnesses that contract each set. Those witnesses define privacy-safe aggregate products for resource management and civilian oversight. The frozen Ida results remain system-level.
+
+\bibliographystyle{apalike}
+\bibliography{references_r12_2}
+
+\end{document}

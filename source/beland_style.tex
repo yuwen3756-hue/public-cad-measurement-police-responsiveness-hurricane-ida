@@ -1,0 +1,138 @@
+% Shared style for BELAND-PLUS academic revision R3
+% Typography: Latin Modern (the canonical scalable Computer Modern family).
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{booktabs,threeparttable,longtable,tabularx,array,multirow,makecell}
+\usepackage{graphicx,adjustbox}
+\usepackage{caption,subcaption}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc,backgrounds,matrix,decorations.pathreplacing,shapes.geometric}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{xcolor}
+\usepackage{geometry}
+\geometry{margin=1in,headheight=15pt,footskip=30pt}
+\usepackage{setspace}
+\setstretch{1.10}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.55em,itemsep=0.18em,topsep=0.35em,parsep=0pt}
+\setlist[enumerate]{leftmargin=1.8em,itemsep=0.18em,topsep=0.35em,parsep=0pt}
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{0.75em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.65em}{}
+\titleformat{\subsubsection}{\normalsize\itshape}{\thesubsubsection}{0.55em}{}
+\titlespacing*{\section}{0pt}{2.0ex plus .4ex minus .2ex}{0.9ex}
+\titlespacing*{\subsection}{0pt}{1.55ex plus .3ex minus .2ex}{0.65ex}
+\titlespacing*{\subsubsection}{0pt}{1.1ex plus .2ex minus .2ex}{0.45ex}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\itshape Hurricane Ida and public emergency-service observability}
+\fancyhead[R]{\footnotesize BELAND-PLUS}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage[round,authoryear]{natbib}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{xurl}
+\urlstyle{same}
+\usepackage{csquotes}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable,skins}
+\usepackage{float}
+\usepackage[section]{placeins}
+\usepackage{siunitx}
+\sisetup{detect-all,group-separator={,},group-minimum-digits=4,table-number-alignment=center}
+\usepackage{pdflscape}
+\usepackage{etoolbox}
+
+\definecolor{BelandBlue}{HTML}{183A5A}
+\definecolor{BelandBlueLight}{HTML}{EAF0F5}
+\definecolor{BelandOrange}{HTML}{B5652A}
+\definecolor{BelandRed}{HTML}{9E3D36}
+\definecolor{BelandGray}{HTML}{4B5563}
+\definecolor{BelandLightGray}{HTML}{F4F5F7}
+\definecolor{BelandGreen}{HTML}{2E6F64}
+\definecolor{BelandGold}{HTML}{A47A24}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=BelandBlue,
+  citecolor=BelandBlue,
+  urlcolor=BelandBlue,
+  pdfborder={0 0 0}
+}
+
+\newcommand{\Jzerozero}{J_{00}}
+\newcommand{\Jzeroone}{J_{01}}
+\newcommand{\Jonezero}{J_{10}}
+\newcommand{\Joneone}{J_{11}}
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\R}{\mathrm{R}}
+\newcommand{\Prob}{\Pr}
+\newcommand{\Ida}{\mathrm{Ida}}
+\newcommand{\Iset}{\mathcal{I}}
+\newcommand{\Mset}{\mathfrak{M}}
+\newcommand{\Xset}{\mathcal{X}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\diam}{\operatorname{diam}}
+\newcommand{\argmin}{\operatorname*{arg\,min}}
+\newcommand{\argmax}{\operatorname*{arg\,max}}
+\newcommand{\ind}{\mathbf{1}}
+\newcommand{\Rset}{\mathbb{R}}
+\newcommand{\Nset}{\mathbb{N}}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\given}{\,|\,}
+
+\newtcolorbox{plainbox}[1][]{
+  enhanced,breakable,colback=BelandBlueLight,colframe=BelandBlue,
+  boxrule=0.55pt,arc=1.5mm,left=2.7mm,right=2.7mm,top=1.8mm,bottom=1.8mm,#1}
+\newtcolorbox{resultbox}[1][]{
+  enhanced,breakable,colback=BelandLightGray,colframe=BelandGray,
+  boxrule=0.5pt,arc=1.5mm,left=2.7mm,right=2.7mm,top=1.8mm,bottom=1.8mm,#1}
+\newtcolorbox{warningbox}[1][]{
+  enhanced,breakable,colback=white,colframe=BelandOrange,
+  boxrule=0.65pt,arc=1.5mm,left=2.7mm,right=2.7mm,top=1.8mm,bottom=1.8mm,#1}
+\newtcolorbox{definitionbox}[1][]{
+  enhanced,breakable,colback=white,colframe=BelandBlue!70,
+  boxrule=0.45pt,arc=1.2mm,left=2.5mm,right=2.5mm,top=1.5mm,bottom=1.5mm,#1}
+
+\captionsetup{font=small,labelfont=bf,labelsep=period,skip=5pt,justification=raggedright,singlelinecheck=false}
+\renewcommand{\arraystretch}{1.18}
+\setlength{\tabcolsep}{5pt}
+\setlength{\parindent}{1.35em}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+
+\lstdefinestyle{belandcode}{
+  basicstyle=\ttfamily\footnotesize,
+  backgroundcolor=\color{BelandLightGray},
+  frame=single,
+  rulecolor=\color{BelandGray!45},
+  breaklines=true,
+  breakatwhitespace=false,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  xleftmargin=0.5em,
+  xrightmargin=0.5em,
+  aboveskip=0.7em,
+  belowskip=0.7em
+}
+\lstset{style=belandcode}
+
+\newcommand{\notclaim}[1]{\textit{This does not identify #1.}}
+\newcommand{\pp}{percentage points}
+\newcommand{\keywords}[1]{\par\noindent\textbf{Keywords:} #1}
+\newcommand{\jel}[1]{\par\noindent\textbf{JEL codes:} #1}
+
+\AtBeginEnvironment{tabular}{\small}
+\AtBeginEnvironment{tabularx}{\small}
+\AtBeginEnvironment{longtable}{\small}

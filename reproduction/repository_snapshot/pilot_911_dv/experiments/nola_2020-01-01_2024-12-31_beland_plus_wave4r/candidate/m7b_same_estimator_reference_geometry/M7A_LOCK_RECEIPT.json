@@ -1,0 +1,60 @@
+{
+  "artifact_facts": {
+    "artifact_manifest_verification": {
+      "all_entries_verified": true,
+      "entry_count": 13,
+      "manifest": {
+        "bytes": 4266,
+        "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7a_full_combined_unified_threshold\\M7A_FINAL_ARTIFACT_MANIFEST.json",
+        "sha256": "1e84cfe77e39b91528e3694711559e31c351fd3c0871c83f7448489333a4909c"
+      }
+    },
+    "candidate_state_count": 333089280,
+    "candidate_tree_hashes": {
+      "R1_S4_CURFEW": {
+        "root_hash": "db17e1eb90b792de7489876fd4c96cbd85f19be2974063b3fbc932774a0914e3",
+        "tree_hash": "31617100d32d580123b3aa943420c57c61ea19ef416662cb0cf96a13ed4f783b"
+      },
+      "R1_S4_REDEPLOYMENT_ANTI_LOOTING": {
+        "root_hash": "78b94259767c46f1f266b6be0911e0b785c38b8df61eec577c52ce0aff3a4f5d",
+        "tree_hash": "dd7b7743715b31e65f3be8291f3e9cae86936519eef628576e1a4976b48f11b6"
+      },
+      "R1_S4_TWELVE_HOUR_SHIFTS": {
+        "root_hash": "c64857bf156a79829b4fbc34d28a5a26b3b8dcf8f82d60dc3b2ac7b49a47f4f8",
+        "tree_hash": "37401a4c76e6188532246ecd829d10bce9ce258e12278c8bfca54c56fabad2ad"
+      }
+    },
+    "candidate_tree_registry": {
+      "bytes": 9806836,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7a_full_combined_unified_threshold\\M7A_CANDIDATE_TREE_REGISTRY.json",
+      "sha256": "243c68a2c9149c9cff2febecc930040f9bfd4bc559d7741f4a89ad2d8410adeb"
+    },
+    "certified_lower_bound": 0.25073448467090204,
+    "certified_upper_bound": 0.25073449467090003,
+    "frozen_G": {
+      "bytes": 4212,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\r8b_long_closeout\\R8B_MATH_G_MATRIX.json",
+      "sha256": "f4f185e33249f20661c07af958a50918104c3e22d5f52c52f7c124e23dde2527"
+    },
+    "reconciled": true,
+    "threshold": 0.25
+  },
+  "artifact_type": "M7A_LOCK_RECEIPT",
+  "interval": [
+    0.25073448467090204,
+    0.25073449467090003
+  ],
+  "predecessor_modified": false,
+  "qualifiers": [
+    "finite-file and finite-state restricted-model result",
+    "epsilon=0.25 is a prespecified sensitivity boundary",
+    "exclusion margin is 0.00073448467090204",
+    "no statistical reference-window calibration yet",
+    "no mechanism, capacity, physical-response, or incidence identification",
+    "no coverage result"
+  ],
+  "rerun_performed": false,
+  "scientific_interpretation": "EVERY_AUTHORIZED_FULL_COMBINED_RESTRICTED_REPRESENTATION_EXCLUDED_AT_EPSILON_LE_0_25",
+  "status": "MATH_LOCKED_WITH_QUALIFIERS",
+  "threshold_decision": "U_full_exists > 0.25"
+}

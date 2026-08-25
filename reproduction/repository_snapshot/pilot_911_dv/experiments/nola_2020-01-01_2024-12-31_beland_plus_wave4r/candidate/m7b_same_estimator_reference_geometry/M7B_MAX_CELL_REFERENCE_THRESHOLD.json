@@ -1,0 +1,18 @@
+{
+  "artifact_type": "M7B_MAX_CELL_REFERENCE_THRESHOLD",
+  "exchangeability_adopted": false,
+  "results": {
+    "FULL_QUALIFIED_REFERENCE": {
+      "R": 217,
+      "c_0.95": 0.20939747635914793
+    },
+    "SAME_SEASON_STAGE_REFERENCE": {
+      "R": 86,
+      "c_0.95": 0.20571914736674463
+    },
+    "STAGE_ERA_MATCHED_REFERENCE": {
+      "R": 153,
+      "c_0.95": 0.22469069558913304
+    }
+  }
+}

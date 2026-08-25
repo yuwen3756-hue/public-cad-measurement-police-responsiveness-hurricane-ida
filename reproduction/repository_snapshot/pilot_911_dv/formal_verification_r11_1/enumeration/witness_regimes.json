@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "artifact_type": "DECLARATIVE_WITNESS_REGIME_SPEC",
+  "modules": ["B", "Q", "P", "C"],
+  "levels": ["CLOSED", "PARTIAL", "QUALIFIED"],
+  "level_order": {
+    "CLOSED": 0,
+    "PARTIAL": 1,
+    "QUALIFIED": 2
+  },
+  "dependency": {
+    "kind": "level_not_above",
+    "left": "P",
+    "right": "Q",
+    "meaning": "P implies Q at the same or stronger qualification level"
+  },
+  "expected_legal_regime_count": 54,
+  "expected_multi_module_regime_count": 47,
+  "expected_coupling_statuses": [
+    "NOT_APPLICABLE",
+    "UNCOUPLED",
+    "PARTIAL_MAP",
+    "QUALIFIED_MAP"
+  ],
+  "frozen_source": {
+    "path_from_pilot_root": "experiments/nola_2020-01-01_2024-12-31_beland_plus_wave4r/candidate/m8d_r1_conditional_identification_frontier_repair/M8D_R1_PHASE_DIAGRAM.json",
+    "sha256": "04fa9d60d3a69939115b4a8eb354f26115934bb84d4875ca7961b69c25bf3b48"
+  }
+}

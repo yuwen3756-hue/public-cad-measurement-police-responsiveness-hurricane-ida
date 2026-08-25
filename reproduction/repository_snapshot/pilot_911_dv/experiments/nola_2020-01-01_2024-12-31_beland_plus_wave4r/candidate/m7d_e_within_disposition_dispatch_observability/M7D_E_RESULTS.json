@@ -1,0 +1,35 @@
+{
+  "artifact_type": "M7D_E_RESULTS",
+  "claims_excluded": [
+    "physical dispatch",
+    "response probability",
+    "queue",
+    "performance",
+    "deprioritization",
+    "capacity",
+    "causality"
+  ],
+  "closure_firewall": "M7D-C closure result hash-bound only; not rerun or counted as independent evidence",
+  "composition_only_falsified_primary_cells": 6,
+  "joined_eligible_rows": 258160,
+  "kitagawa_identity_max_abs_residual": 1.6653345369377348e-16,
+  "parent_estimator_parity_max_abs_residual": 1.1102230246251565e-16,
+  "primary_results": [
+    {
+      "Delta_q_all": -0.4950345505088084,
+      "bin": "B6",
+      "composition_component": 0.01189156474264749,
+      "interpretation_case": "WITHIN_DISPOSITION_DOMINATES",
+      "within_disposition_component": -0.5069261152514559
+    },
+    {
+      "Delta_q_all": -0.48235949566214403,
+      "bin": "B7",
+      "composition_component": 0.012276473884164247,
+      "interpretation_case": "WITHIN_DISPOSITION_DOMINATES",
+      "within_disposition_component": -0.49463596954630834
+    }
+  ],
+  "replication": "PASS",
+  "status": "M7D_E_READY_FOR_EXTERNAL_MEASUREMENT_REVIEW"
+}

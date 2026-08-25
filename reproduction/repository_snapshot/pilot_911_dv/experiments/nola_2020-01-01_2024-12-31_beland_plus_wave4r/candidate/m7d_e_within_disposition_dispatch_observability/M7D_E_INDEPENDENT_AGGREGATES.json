@@ -1,0 +1,2146 @@
+{
+  "aggregate": [
+    {
+      "Delta_q_all": -0.013646255710189403,
+      "bin": "B1",
+      "composition_component": -0.0006895639034904776,
+      "q_all_event": 0.939996128395771,
+      "q_all_reference": 0.9536423841059604,
+      "residual": -1.1622647289044608e-16,
+      "within_disposition_component": -0.01295669180669881
+    },
+    {
+      "Delta_q_all": -0.2580563248032083,
+      "bin": "B2",
+      "composition_component": -0.02991367845910331,
+      "q_all_event": 0.695277008530125,
+      "q_all_reference": 0.9533333333333333,
+      "residual": 1.6653345369377348e-16,
+      "within_disposition_component": -0.22814264634410514
+    },
+    {
+      "Delta_q_all": -0.19591586930988447,
+      "bin": "B3",
+      "composition_component": -0.016652885827518723,
+      "q_all_event": 0.6400216306901154,
+      "q_all_reference": 0.8359374999999999,
+      "residual": 5.551115123125783e-17,
+      "within_disposition_component": -0.1792629834823658
+    },
+    {
+      "Delta_q_all": -0.11798382380696615,
+      "bin": "B4",
+      "composition_component": 0.021618015307325163,
+      "q_all_event": 0.8061541072275166,
+      "q_all_reference": 0.9241379310344827,
+      "residual": 1.3877787807814457e-16,
+      "within_disposition_component": -0.13960183911429144
+    },
+    {
+      "Delta_q_all": -0.08299322770866646,
+      "bin": "B5",
+      "composition_component": -0.024141317901624666,
+      "q_all_event": 0.857098938189951,
+      "q_all_reference": 0.9400921658986174,
+      "residual": -1.3877787807814457e-17,
+      "within_disposition_component": -0.05885190980704178
+    },
+    {
+      "Delta_q_all": -0.49503455050880846,
+      "bin": "B6",
+      "composition_component": 0.011891564742647362,
+      "q_all_event": 0.39988070372847967,
+      "q_all_reference": 0.8949152542372881,
+      "residual": 1.1102230246251565e-16,
+      "within_disposition_component": -0.5069261152514559
+    },
+    {
+      "Delta_q_all": -0.48235949566214403,
+      "bin": "B7",
+      "composition_component": 0.012276473884164247,
+      "q_all_event": 0.40590866076243687,
+      "q_all_reference": 0.8882681564245809,
+      "residual": 5.551115123125783e-17,
+      "within_disposition_component": -0.49463596954630834
+    },
+    {
+      "Delta_q_all": -0.2672626608634193,
+      "bin": "B8",
+      "composition_component": 0.0278548483607863,
+      "q_all_event": 0.6365030295131497,
+      "q_all_reference": 0.9037656903765691,
+      "residual": 5.551115123125783e-17,
+      "within_disposition_component": -0.29511750922420565
+    },
+    {
+      "Delta_q_all": -0.016951075114430503,
+      "bin": "B9",
+      "composition_component": 0.01926312413807581,
+      "q_all_event": 0.8514699775171485,
+      "q_all_reference": 0.868421052631579,
+      "residual": 2.7755575615628914e-17,
+      "within_disposition_component": -0.03621419925250634
+    },
+    {
+      "Delta_q_all": -0.021713954129901403,
+      "bin": "B10",
+      "composition_component": -0.019986368863466917,
+      "q_all_event": 0.8675849388590285,
+      "q_all_reference": 0.88929889298893,
+      "residual": 3.426078865054194e-17,
+      "within_disposition_component": -0.00172758526643452
+    }
+  ],
+  "artifact_type": "M7D_E_INDEPENDENT_AGGREGATES",
+  "created_utc": "2026-08-11T07:36:34.216087+00:00",
+  "kitagawa": [
+    {
+      "MASS_COMPONENT_01": -0.00040933120646745454,
+      "MASS_COMPONENT_11": -0.014965692320729985,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.008561505119510945,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.008561505119510945,
+      "bin": "B1",
+      "disposition": "GOA",
+      "residual_01": -1.214306433183765e-17,
+      "residual_11": 3.469446951953614e-18,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.002374138271699967,
+      "MASS_COMPONENT_11": -0.046295696298149364,
+      "WITHIN_DISPOSITION_COMPONENT_01": -0.01936499216308264,
+      "WITHIN_DISPOSITION_COMPONENT_11": 0.01936499216308264,
+      "bin": "B1",
+      "disposition": "RTF",
+      "residual_01": -3.469446951953614e-18,
+      "residual_11": -1.0408340855860843e-17,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.002488304871999945,
+      "MASS_COMPONENT_11": -0.035942317616901164,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.02059153395921069,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.02059153395921069,
+      "bin": "B1",
+      "disposition": "NAT",
+      "residual_01": 3.8163916471489756e-17,
+      "residual_11": 3.469446951953614e-18,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B1",
+      "disposition": "UNF",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": -0.0,
+      "MASS_COMPONENT_11": -0.008893280632411068,
+      "WITHIN_DISPOSITION_COMPONENT_01": -0.0,
+      "WITHIN_DISPOSITION_COMPONENT_11": 0.0,
+      "bin": "B1",
+      "disposition": "OTHER",
+      "residual_01": 0.0,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B1",
+      "disposition": "MISSING",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": -0.004141884985797235,
+      "MASS_COMPONENT_11": -0.015773939926187502,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.08513284524505017,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.08513284524505017,
+      "bin": "B2",
+      "disposition": "GOA",
+      "residual_01": 0.0,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.026006432740516866,
+      "MASS_COMPONENT_11": -0.13274014280813445,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.017992495458286923,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.017992495458286923,
+      "bin": "B2",
+      "disposition": "RTF",
+      "residual_01": -2.0816681711721685e-17,
+      "residual_11": 1.734723475976807e-17,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.02362090851163114,
+      "MASS_COMPONENT_11": -0.15423675957706964,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.035923640479542135,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.035923640479542135,
+      "bin": "B2",
+      "disposition": "NAT",
+      "residual_01": 6.938893903907228e-18,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B2",
+      "disposition": "UNF",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "bin": "B2",
+      "disposition": "OTHER",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "bin": "B2",
+      "disposition": "MISSING",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": -0.009991625573504342,
+      "MASS_COMPONENT_11": -0.05992312193469433,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.011125412421576917,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.011125412421576917,
+      "bin": "B3",
+      "disposition": "GOA",
+      "residual_01": -1.3877787807814457e-17,
+      "residual_11": 3.469446951953614e-18,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.02999947662081121,
+      "MASS_COMPONENT_11": -0.12202512632381489,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.020692305476491413,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.020692305476491413,
+      "bin": "B3",
+      "disposition": "RTF",
+      "residual_01": 0.0,
+      "residual_11": -2.42861286636753e-17,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.017229127506858097,
+      "MASS_COMPONENT_11": -0.033971620991775,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.08248046529514175,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.08248046529514175,
+      "bin": "B3",
+      "disposition": "NAT",
+      "residual_01": -5.551115123125783e-17,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B3",
+      "disposition": "UNF",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": -0.004625100391986924,
+      "MASS_COMPONENT_11": -0.008033411288547359,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.015259239104943369,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.015259239104943369,
+      "bin": "B3",
+      "disposition": "OTHER",
+      "residual_01": 0.0,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B3",
+      "disposition": "MISSING",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": 0.003544262814326121,
+      "MASS_COMPONENT_11": 0.0386022306675301,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.017086472781784417,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.017086472781784417,
+      "bin": "B4",
+      "disposition": "GOA",
+      "residual_01": 2.0816681711721685e-17,
+      "residual_11": 1.0408340855860843e-17,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.046858116972499385,
+      "MASS_COMPONENT_11": -0.1729502409158093,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.07551968203633075,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.07551968203633075,
+      "bin": "B4",
+      "disposition": "RTF",
+      "residual_01": 0.0,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": 0.003030708894255087,
+      "MASS_COMPONENT_11": 0.016493230296886617,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.00892647933772066,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.00892647933772066,
+      "bin": "B4",
+      "disposition": "NAT",
+      "residual_01": 2.6020852139652106e-17,
+      "residual_11": -5.204170427930421e-18,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B4",
+      "disposition": "UNF",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": 0.0014349623802713315,
+      "MASS_COMPONENT_11": 0.008273928299660031,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.005621897190752544,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.005621897190752544,
+      "bin": "B4",
+      "disposition": "OTHER",
+      "residual_01": 8.673617379884035e-19,
+      "residual_11": -8.673617379884035e-19,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B4",
+      "disposition": "MISSING",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": 0.005003256342601835,
+      "MASS_COMPONENT_11": 0.021844131956468046,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.05101786017234183,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.05101786017234183,
+      "bin": "B5",
+      "disposition": "GOA",
+      "residual_01": 6.938893903907228e-18,
+      "residual_11": -1.3877787807814457e-17,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.0067702911620412054,
+      "MASS_COMPONENT_11": -0.1742671197817129,
+      "WITHIN_DISPOSITION_COMPONENT_01": -0.0009229521633860231,
+      "WITHIN_DISPOSITION_COMPONENT_11": 0.0009229521633860231,
+      "bin": "B5",
+      "disposition": "RTF",
+      "residual_01": -4.119968255444917e-18,
+      "residual_11": 8.456776945386935e-18,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.005566593470469789,
+      "MASS_COMPONENT_11": -0.05959347232816558,
+      "WITHIN_DISPOSITION_COMPONENT_01": -0.005900425233671082,
+      "WITHIN_DISPOSITION_COMPONENT_11": 0.005900425233671082,
+      "bin": "B5",
+      "disposition": "NAT",
+      "residual_01": -1.214306433183765e-17,
+      "residual_11": -1.9949319973733282e-17,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B5",
+      "disposition": "UNF",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": -0.0,
+      "MASS_COMPONENT_11": -0.009602194787379972,
+      "WITHIN_DISPOSITION_COMPONENT_01": -0.0,
+      "WITHIN_DISPOSITION_COMPONENT_11": 0.0,
+      "bin": "B5",
+      "disposition": "OTHER",
+      "residual_01": 0.0,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B5",
+      "disposition": "MISSING",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": 0.0118261291691355,
+      "MASS_COMPONENT_11": 0.03373737361175422,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.10784045600963414,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.10784045600963414,
+      "bin": "B6",
+      "disposition": "GOA",
+      "residual_01": -4.163336342344337e-17,
+      "residual_11": 1.3877787807814457e-17,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.05074913242650185,
+      "MASS_COMPONENT_11": -0.09844026404190605,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.10354386294222093,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.10354386294222093,
+      "bin": "B6",
+      "disposition": "RTF",
+      "residual_01": 1.3877787807814457e-17,
+      "residual_11": -1.3877787807814457e-17,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.03751218981625809,
+      "MASS_COMPONENT_11": -0.04767113506058769,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.1731893544637581,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.1731893544637581,
+      "bin": "B6",
+      "disposition": "NAT",
+      "residual_01": 2.7755575615628914e-17,
+      "residual_11": -5.551115123125783e-17,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B6",
+      "disposition": "UNF",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": -0.004093567251461988,
+      "MASS_COMPONENT_11": -0.00760233918128655,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.0026315789473684214,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.0026315789473684214,
+      "bin": "B6",
+      "disposition": "OTHER",
+      "residual_01": -8.673617379884035e-19,
+      "residual_11": 8.673617379884035e-19,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B6",
+      "disposition": "MISSING",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": 0.007878765942069432,
+      "MASS_COMPONENT_11": 0.029727529571202834,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.05308603153435595,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.05308603153435595,
+      "bin": "B7",
+      "disposition": "GOA",
+      "residual_01": 6.938893903907228e-18,
+      "residual_11": -6.938893903907228e-18,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.04541119704765482,
+      "MASS_COMPONENT_11": -0.08331069057984156,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.10932496833488711,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.10932496833488711,
+      "bin": "B7",
+      "disposition": "RTF",
+      "residual_01": 0.0,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.012592905536366513,
+      "MASS_COMPONENT_11": -0.01530642579445738,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.20533646832312896,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.20533646832312896,
+      "bin": "B7",
+      "disposition": "NAT",
+      "residual_01": -2.7755575615628914e-17,
+      "residual_11": -2.7755575615628914e-17,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B7",
+      "disposition": "UNF",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": -0.006578073089700997,
+      "MASS_COMPONENT_11": -0.006578073089700997,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.0120265780730897,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.0120265780730897,
+      "bin": "B7",
+      "disposition": "OTHER",
+      "residual_01": 0.0,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B7",
+      "disposition": "MISSING",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": 0.015217093296307013,
+      "MASS_COMPONENT_11": 0.11351126374136496,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.051761783983843075,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.051761783983843075,
+      "bin": "B8",
+      "disposition": "GOA",
+      "residual_01": 2.7755575615628914e-17,
+      "residual_11": -6.938893903907228e-18,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.03207474674327812,
+      "MASS_COMPONENT_11": -0.08710268972023388,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.05676392840963553,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.05676392840963553,
+      "bin": "B8",
+      "disposition": "RTF",
+      "residual_01": -1.3877787807814457e-17,
+      "residual_11": 2.0816681711721685e-17,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.010886627662309785,
+      "MASS_COMPONENT_11": -0.025811708937695705,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.10314227602085983,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.10314227602085983,
+      "bin": "B8",
+      "disposition": "NAT",
+      "residual_01": -4.163336342344337e-17,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": 0.00011936226447267453,
+      "MASS_COMPONENT_11": 0.0006167050331088184,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.0011424673885241708,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.0011424673885241708,
+      "bin": "B8",
+      "disposition": "UNF",
+      "residual_01": 2.168404344971009e-19,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.0024002301410052254,
+      "MASS_COMPONENT_11": -0.01247337547048138,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.0037086078470039484,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.0037086078470039484,
+      "bin": "B8",
+      "disposition": "OTHER",
+      "residual_01": 4.336808689942018e-19,
+      "residual_11": -2.168404344971009e-18,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B8",
+      "disposition": "MISSING",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": 0.011781470296079337,
+      "MASS_COMPONENT_11": 0.10999216669494899,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.006299965176660503,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.006299965176660503,
+      "bin": "B9",
+      "disposition": "GOA",
+      "residual_01": -1.734723475976807e-17,
+      "residual_11": 2.0816681711721685e-17,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.010785640352926486,
+      "MASS_COMPONENT_11": -0.05948504441051188,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.0011238046041342174,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.0011238046041342174,
+      "bin": "B9",
+      "disposition": "RTF",
+      "residual_01": 0.0,
+      "residual_11": -1.0408340855860843e-17,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": 0.007149980672575452,
+      "MASS_COMPONENT_11": 0.035216402273517675,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.004697270305110362,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.004697270305110362,
+      "bin": "B9",
+      "disposition": "NAT",
+      "residual_01": -5.204170427930421e-17,
+      "residual_11": 1.9081958235744878e-17,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B9",
+      "disposition": "UNF",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": -0.01570048309178744,
+      "MASS_COMPONENT_11": -0.01570048309178744,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.018115942028985504,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.018115942028985504,
+      "bin": "B9",
+      "disposition": "OTHER",
+      "residual_01": 3.469446951953614e-18,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B9",
+      "disposition": "MISSING",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": -0.0014646811370140303,
+      "MASS_COMPONENT_11": -0.052672803206281434,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.01106920091102534,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.01106920091102534,
+      "bin": "B10",
+      "disposition": "GOA",
+      "residual_01": -8.673617379884035e-18,
+      "residual_11": 6.938893903907228e-18,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": -0.003000426413703134,
+      "MASS_COMPONENT_11": -0.03250793236947408,
+      "WITHIN_DISPOSITION_COMPONENT_01": 0.00888554882424927,
+      "WITHIN_DISPOSITION_COMPONENT_11": -0.00888554882424927,
+      "bin": "B10",
+      "disposition": "RTF",
+      "residual_01": 3.469446951953614e-18,
+      "residual_11": 2.42861286636753e-17,
+      "status": "DEFINED"
+    },
+    {
+      "MASS_COMPONENT_01": 0.015215817439722591,
+      "MASS_COMPONENT_11": 0.05226547997916355,
+      "WITHIN_DISPOSITION_COMPONENT_01": -0.01785917115909698,
+      "WITHIN_DISPOSITION_COMPONENT_11": 0.01785917115909698,
+      "bin": "B10",
+      "disposition": "NAT",
+      "residual_01": -3.469446951953614e-17,
+      "residual_11": 2.0816681711721685e-17,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B10",
+      "disposition": "UNF",
+      "status": "NOT_DEFINED_IN_CELL"
+    },
+    {
+      "MASS_COMPONENT_01": -0.0,
+      "MASS_COMPONENT_11": -0.0077683615819209035,
+      "WITHIN_DISPOSITION_COMPONENT_01": -0.0,
+      "WITHIN_DISPOSITION_COMPONENT_11": 0.0,
+      "bin": "B10",
+      "disposition": "OTHER",
+      "residual_01": 0.0,
+      "residual_11": 0.0,
+      "status": "DEFINED"
+    },
+    {
+      "bin": "B10",
+      "disposition": "MISSING",
+      "status": "NOT_DEFINED_IN_CELL"
+    }
+  ],
+  "masses": [
+    {
+      "Delta_H01": 0.008152173913043478,
+      "Delta_H11": -0.023527197440240927,
+      "bin": "B1",
+      "disposition": "GOA",
+      "event_H01": 0.008152173913043478,
+      "event_H11": 0.1449510634293243,
+      "event_m": 0.15310323734236778,
+      "reference_H01": 0.0,
+      "reference_H11": 0.16847826086956522,
+      "reference_m": 0.16847826086956522
+    },
+    {
+      "Delta_H01": -0.021739130434782608,
+      "Delta_H11": -0.026930704135066735,
+      "bin": "B1",
+      "disposition": "RTF",
+      "event_H01": 0.0,
+      "event_H11": 0.1741562523866724,
+      "event_m": 0.1741562523866724,
+      "reference_H01": 0.021739130434782608,
+      "reference_H11": 0.20108695652173914,
+      "reference_m": 0.22282608695652173
+    },
+    {
+      "Delta_H01": 0.018103229087210782,
+      "Delta_H11": -0.05653385157611185,
+      "bin": "B1",
+      "disposition": "NAT",
+      "event_H01": 0.03440757691329774,
+      "event_H11": 0.3456400614673664,
+      "event_m": 0.38004763838066413,
+      "reference_H01": 0.016304347826086956,
+      "reference_H11": 0.40217391304347827,
+      "reference_m": 0.41847826086956524
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B1",
+      "disposition": "UNF",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": -0.008893280632411068,
+      "bin": "B1",
+      "disposition": "OTHER",
+      "event_H01": 0.0,
+      "event_H11": 0.001976284584980237,
+      "event_m": 0.001976284584980237,
+      "reference_H01": 0.0,
+      "reference_H11": 0.010869565217391304,
+      "reference_m": 0.010869565217391304
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B1",
+      "disposition": "MISSING",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.08099096025925294,
+      "Delta_H11": -0.10090678517123768,
+      "bin": "B2",
+      "disposition": "GOA",
+      "event_H01": 0.08099096025925294,
+      "event_H11": 0.11372736117022574,
+      "event_m": 0.19471832142947867,
+      "reference_H01": 0.0,
+      "reference_H11": 0.2146341463414634,
+      "reference_m": 0.2146341463414634
+    },
+    {
+      "Delta_H01": -0.008013937282229964,
+      "Delta_H11": -0.15073263826642136,
+      "bin": "B2",
+      "disposition": "RTF",
+      "event_H01": 0.00662020905923345,
+      "event_H11": 0.019999069050651824,
+      "event_m": 0.026619278109885274,
+      "reference_H01": 0.014634146341463414,
+      "reference_H11": 0.17073170731707318,
+      "reference_m": 0.18536585365853658
+    },
+    {
+      "Delta_H01": 0.012302731967911002,
+      "Delta_H11": -0.19016040005661178,
+      "bin": "B2",
+      "disposition": "NAT",
+      "event_H01": 0.03181492708986222,
+      "event_H11": 0.12203472189460773,
+      "event_m": 0.15384964898446996,
+      "reference_H01": 0.01951219512195122,
+      "reference_H11": 0.3121951219512195,
+      "reference_m": 0.33170731707317075
+    },
+    {
+      "Delta_H01": 0.0012195121951219512,
+      "Delta_H11": 0.0,
+      "bin": "B2",
+      "disposition": "UNF",
+      "event_H01": 0.0012195121951219512,
+      "event_H11": 0.0,
+      "event_m": 0.0012195121951219512,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.01951219512195122,
+      "bin": "B2",
+      "disposition": "OTHER",
+      "event_H01": 0.0,
+      "event_H11": 0.01951219512195122,
+      "event_m": 0.01951219512195122,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B2",
+      "disposition": "MISSING",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.0011337868480725613,
+      "Delta_H11": -0.07104853435627125,
+      "bin": "B3",
+      "disposition": "GOA",
+      "event_H01": 0.021541950113378682,
+      "event_H11": 0.0990194928546131,
+      "event_m": 0.12056144296799179,
+      "reference_H01": 0.02040816326530612,
+      "reference_H11": 0.17006802721088435,
+      "reference_m": 0.19047619047619047
+    },
+    {
+      "Delta_H01": -0.009307171144319795,
+      "Delta_H11": -0.14271743180030633,
+      "bin": "B3",
+      "disposition": "RTF",
+      "event_H01": 0.031509155386292446,
+      "event_H11": 0.09537780629493177,
+      "event_m": 0.1268869616812242,
+      "reference_H01": 0.04081632653061224,
+      "reference_H11": 0.23809523809523808,
+      "reference_m": 0.2789115646258503
+    },
+    {
+      "Delta_H01": 0.0652513377882836,
+      "Delta_H11": -0.11645208628691675,
+      "bin": "B3",
+      "disposition": "NAT",
+      "event_H01": 0.1468839908495081,
+      "event_H11": 0.17606492051580433,
+      "event_m": 0.32294891136531245,
+      "reference_H01": 0.0816326530612245,
+      "reference_H11": 0.2925170068027211,
+      "reference_m": 0.37414965986394555
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B3",
+      "disposition": "UNF",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.010634138712956445,
+      "Delta_H11": -0.023292650393490728,
+      "bin": "B3",
+      "disposition": "OTHER",
+      "event_H01": 0.010634138712956445,
+      "event_H11": 0.003918233960250767,
+      "event_m": 0.014552372673207213,
+      "reference_H01": 0.0,
+      "reference_H11": 0.027210884353741496,
+      "reference_m": 0.027210884353741496
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B3",
+      "disposition": "MISSING",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.020630735596110557,
+      "Delta_H11": 0.021515757885745695,
+      "bin": "B4",
+      "disposition": "GOA",
+      "event_H01": 0.029129319165515657,
+      "event_H11": 0.20565173522285618,
+      "event_m": 0.23478105438837182,
+      "reference_H01": 0.0084985835694051,
+      "reference_H11": 0.18413597733711048,
+      "reference_m": 0.1926345609065156
+    },
+    {
+      "Delta_H01": 0.028661565063831357,
+      "Delta_H11": -0.24846992295214004,
+      "bin": "B4",
+      "disposition": "RTF",
+      "event_H01": 0.042825871012839856,
+      "event_H11": 0.0688105303056503,
+      "event_m": 0.11163640131849016,
+      "reference_H01": 0.014164305949008499,
+      "reference_H11": 0.31728045325779036,
+      "reference_m": 0.33144475920679883
+    },
+    {
+      "Delta_H01": 0.011957188231975772,
+      "Delta_H11": 0.007566750959165952,
+      "bin": "B4",
+      "disposition": "NAT",
+      "event_H01": 0.05161724488919957,
+      "event_H11": 0.2511928132821121,
+      "event_m": 0.3028100581713117,
+      "reference_H01": 0.039660056657223795,
+      "reference_H11": 0.24362606232294617,
+      "reference_m": 0.28328611898017
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0007814789489108138,
+      "bin": "B4",
+      "disposition": "UNF",
+      "event_H01": 0.0,
+      "event_H11": 0.0007814789489108138,
+      "event_m": 0.0007814789489108138,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.007056859571023876,
+      "Delta_H11": 0.0026520311089074863,
+      "bin": "B4",
+      "disposition": "OTHER",
+      "event_H01": 0.007056859571023876,
+      "event_H11": 0.016816337057915985,
+      "event_m": 0.02387319662893986,
+      "reference_H01": 0.0,
+      "reference_H11": 0.014164305949008499,
+      "reference_m": 0.014164305949008499
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B4",
+      "disposition": "MISSING",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.056021116514943674,
+      "Delta_H11": -0.0291737282158738,
+      "bin": "B5",
+      "disposition": "GOA",
+      "event_H01": 0.056021116514943674,
+      "event_H11": 0.09428306190758298,
+      "event_m": 0.15030417842252666,
+      "reference_H01": 0.0,
+      "reference_H11": 0.12345679012345678,
+      "reference_m": 0.12345679012345678
+    },
+    {
+      "Delta_H01": -0.007693243325427233,
+      "Delta_H11": -0.17334416761832686,
+      "bin": "B5",
+      "disposition": "RTF",
+      "event_H01": 0.004652435686918446,
+      "event_H11": 0.12706735501541802,
+      "event_m": 0.13171979070233647,
+      "reference_H01": 0.012345679012345678,
+      "reference_H11": 0.3004115226337449,
+      "reference_m": 0.31275720164609055
+    },
+    {
+      "Delta_H01": -0.011467018704140883,
+      "Delta_H11": -0.05369304709449452,
+      "bin": "B5",
+      "disposition": "NAT",
+      "event_H01": 0.029685244670344713,
+      "event_H11": 0.3495991339754643,
+      "event_m": 0.37928437864580905,
+      "reference_H01": 0.0411522633744856,
+      "reference_H11": 0.40329218106995884,
+      "reference_m": 0.4444444444444444
+    },
+    {
+      "Delta_H01": 0.005291005291005292,
+      "Delta_H11": 0.0,
+      "bin": "B5",
+      "disposition": "UNF",
+      "event_H01": 0.005291005291005292,
+      "event_H11": 0.0,
+      "event_m": 0.005291005291005292,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": -0.009602194787379972,
+      "bin": "B5",
+      "disposition": "OTHER",
+      "event_H01": 0.0,
+      "event_H11": 0.0027434842249657067,
+      "event_m": 0.0027434842249657067,
+      "reference_H01": 0.0,
+      "reference_H11": 0.012345679012345678,
+      "reference_m": 0.012345679012345678
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B5",
+      "disposition": "MISSING",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.1196665851787696,
+      "Delta_H11": -0.07410308239787991,
+      "bin": "B6",
+      "disposition": "GOA",
+      "event_H01": 0.128438515003331,
+      "event_H11": 0.1393472099997809,
+      "event_m": 0.26778572500311193,
+      "reference_H01": 0.008771929824561403,
+      "reference_H11": 0.2134502923976608,
+      "reference_m": 0.2222222222222222
+    },
+    {
+      "Delta_H01": 0.05279473051571909,
+      "Delta_H11": -0.201984126984127,
+      "bin": "B6",
+      "disposition": "RTF",
+      "event_H01": 0.06741461355665476,
+      "event_H11": 0.040705931495405176,
+      "event_m": 0.10812054505205994,
+      "reference_H01": 0.014619883040935672,
+      "reference_H11": 0.24269005847953215,
+      "reference_m": 0.2573099415204678
+    },
+    {
+      "Delta_H01": 0.13567716464750004,
+      "Delta_H11": -0.22086048952434584,
+      "bin": "B6",
+      "disposition": "NAT",
+      "event_H01": 0.200004650027617,
+      "event_H11": 0.08323307772711615,
+      "event_m": 0.28323772775473316,
+      "reference_H01": 0.06432748538011696,
+      "reference_H11": 0.30409356725146197,
+      "reference_m": 0.3684210526315789
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B6",
+      "disposition": "UNF",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": -0.0014619883040935672,
+      "Delta_H11": -0.01023391812865497,
+      "bin": "B6",
+      "disposition": "OTHER",
+      "event_H01": 0.0014619883040935672,
+      "event_H11": 0.0014619883040935672,
+      "event_m": 0.0029239766081871343,
+      "reference_H01": 0.0029239766081871343,
+      "reference_H11": 0.011695906432748537,
+      "reference_m": 0.014619883040935672
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B6",
+      "disposition": "MISSING",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.060964797476425386,
+      "Delta_H11": -0.023358501963153117,
+      "bin": "B7",
+      "disposition": "GOA",
+      "event_H01": 0.07491828584851841,
+      "event_H11": 0.14408335850196316,
+      "event_m": 0.21900164435048158,
+      "reference_H01": 0.013953488372093023,
+      "reference_H11": 0.16744186046511628,
+      "reference_m": 0.1813953488372093
+    },
+    {
+      "Delta_H01": 0.0639137712872323,
+      "Delta_H11": -0.19263565891472867,
+      "bin": "B7",
+      "disposition": "RTF",
+      "event_H01": 0.1011230736128137,
+      "event_H11": 0.07248062015503876,
+      "event_m": 0.17360369376785245,
+      "reference_H01": 0.037209302325581395,
+      "reference_H11": 0.2651162790697674,
+      "reference_m": 0.3023255813953488
+    },
+    {
+      "Delta_H01": 0.1927435627867624,
+      "Delta_H11": -0.22064289411758636,
+      "bin": "B7",
+      "disposition": "NAT",
+      "event_H01": 0.2346040279030415,
+      "event_H11": 0.06772919890566949,
+      "event_m": 0.302333226808711,
+      "reference_H01": 0.04186046511627907,
+      "reference_H11": 0.28837209302325584,
+      "reference_m": 0.3302325581395349
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B7",
+      "disposition": "UNF",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.0054485049833887045,
+      "Delta_H11": -0.018604651162790697,
+      "bin": "B7",
+      "disposition": "OTHER",
+      "event_H01": 0.0054485049833887045,
+      "event_H11": 0.0,
+      "event_m": 0.0054485049833887045,
+      "reference_H01": 0.0,
+      "reference_H11": 0.018604651162790697,
+      "reference_m": 0.018604651162790697
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B7",
+      "disposition": "MISSING",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.06697887728015012,
+      "Delta_H11": 0.061749479757521875,
+      "bin": "B8",
+      "disposition": "GOA",
+      "event_H01": 0.06697887728015012,
+      "event_H11": 0.21632361224963545,
+      "event_m": 0.28330248952978554,
+      "reference_H01": 0.0,
+      "reference_H11": 0.15457413249211358,
+      "reference_m": 0.15457413249211358
+    },
+    {
+      "Delta_H01": 0.024689181666357397,
+      "Delta_H11": -0.1438666181298694,
+      "bin": "B8",
+      "disposition": "RTF",
+      "event_H01": 0.059389497123770646,
+      "event_H11": 0.08641729354205491,
+      "event_m": 0.14580679066582555,
+      "reference_H01": 0.03470031545741325,
+      "reference_H11": 0.2302839116719243,
+      "reference_m": 0.26498422712933756
+    },
+    {
+      "Delta_H01": 0.09225564835855,
+      "Delta_H11": -0.12895398495855553,
+      "bin": "B8",
+      "disposition": "NAT",
+      "event_H01": 0.13011053794845537,
+      "event_H11": 0.14549396456825836,
+      "event_m": 0.27560450251671376,
+      "reference_H01": 0.03785488958990536,
+      "reference_H11": 0.2744479495268139,
+      "reference_m": 0.31230283911671924
+    },
+    {
+      "Delta_H01": 0.0012618296529968455,
+      "Delta_H11": -0.0005257623554153525,
+      "bin": "B8",
+      "disposition": "UNF",
+      "event_H01": 0.0012618296529968455,
+      "event_H11": 0.002628811777076761,
+      "event_m": 0.0038906414300736063,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0031545741324921135,
+      "reference_m": 0.0031545741324921135
+    },
+    {
+      "Delta_H01": 0.0013083777059987231,
+      "Delta_H11": -0.01618198331748533,
+      "bin": "B8",
+      "disposition": "OTHER",
+      "event_H01": 0.0013083777059987231,
+      "event_H11": 0.002745461477467353,
+      "event_m": 0.004053839183466076,
+      "reference_H01": 0.0,
+      "reference_H11": 0.01892744479495268,
+      "reference_m": 0.01892744479495268
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B8",
+      "disposition": "MISSING",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.018081435472739823,
+      "Delta_H11": 0.10369220151828851,
+      "bin": "B9",
+      "disposition": "GOA",
+      "event_H01": 0.03257418909592823,
+      "event_H11": 0.26311249137336096,
+      "event_m": 0.2956866804692892,
+      "reference_H01": 0.014492753623188404,
+      "reference_H11": 0.15942028985507245,
+      "reference_m": 0.17391304347826086
+    },
+    {
+      "Delta_H01": -0.009661835748792268,
+      "Delta_H11": -0.06060884901464611,
+      "bin": "B9",
+      "disposition": "RTF",
+      "event_H01": 0.028985507246376812,
+      "event_H11": 0.15678245533317997,
+      "event_m": 0.18576796257955677,
+      "reference_H01": 0.03864734299516908,
+      "reference_H11": 0.21739130434782608,
+      "reference_m": 0.25603864734299514
+    },
+    {
+      "Delta_H01": 0.011847250977685762,
+      "Delta_H11": 0.03051913196840733,
+      "bin": "B9",
+      "disposition": "NAT",
+      "event_H01": 0.05532551184725098,
+      "event_H11": 0.2575722720650257,
+      "event_m": 0.3128977839122767,
+      "reference_H01": 0.043478260869565216,
+      "reference_H11": 0.22705314009661837,
+      "reference_m": 0.27053140096618356
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.00644122383252818,
+      "bin": "B9",
+      "disposition": "UNF",
+      "event_H01": 0.0,
+      "event_H11": 0.00644122383252818,
+      "event_m": 0.00644122383252818,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.0024154589371980675,
+      "Delta_H11": -0.033816425120772944,
+      "bin": "B9",
+      "disposition": "OTHER",
+      "event_H01": 0.0024154589371980675,
+      "event_H11": 0.0,
+      "event_m": 0.0024154589371980675,
+      "reference_H01": 0.0,
+      "reference_H11": 0.033816425120772944,
+      "reference_m": 0.033816425120772944
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B9",
+      "disposition": "MISSING",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.0096045197740113,
+      "Delta_H11": -0.06374200411730677,
+      "bin": "B10",
+      "disposition": "GOA",
+      "event_H01": 0.0096045197740113,
+      "event_H11": 0.16789641396178928,
+      "event_m": 0.1775009337358006,
+      "reference_H01": 0.0,
+      "reference_H11": 0.23163841807909605,
+      "reference_m": 0.23163841807909605
+    },
+    {
+      "Delta_H01": 0.005885122410546138,
+      "Delta_H11": -0.041393481193723325,
+      "bin": "B10",
+      "disposition": "RTF",
+      "event_H01": 0.02283427495291902,
+      "event_H11": 0.19871951315655917,
+      "event_m": 0.22155378810947818,
+      "reference_H01": 0.01694915254237288,
+      "reference_H11": 0.2401129943502825,
+      "reference_m": 0.2570621468926554
+    },
+    {
+      "Delta_H01": -0.002643353719374422,
+      "Delta_H11": 0.07012465113826055,
+      "bin": "B10",
+      "disposition": "NAT",
+      "event_H01": 0.0651532564501171,
+      "event_H11": 0.26786476413261084,
+      "event_m": 0.33301802058272795,
+      "reference_H01": 0.06779661016949153,
+      "reference_H11": 0.1977401129943503,
+      "reference_m": 0.2655367231638418
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0014124293785310734,
+      "bin": "B10",
+      "disposition": "UNF",
+      "event_H01": 0.0,
+      "event_H11": 0.0014124293785310734,
+      "event_m": 0.0014124293785310734,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": -0.0077683615819209035,
+      "bin": "B10",
+      "disposition": "OTHER",
+      "event_H01": 0.0,
+      "event_H11": 0.003531073446327684,
+      "event_m": 0.003531073446327684,
+      "reference_H01": 0.0,
+      "reference_H11": 0.011299435028248588,
+      "reference_m": 0.011299435028248588
+    },
+    {
+      "Delta_H01": 0.0,
+      "Delta_H11": 0.0,
+      "bin": "B10",
+      "disposition": "MISSING",
+      "event_H01": 0.0,
+      "event_H11": 0.0,
+      "event_m": 0.0,
+      "reference_H01": 0.0,
+      "reference_H11": 0.0,
+      "reference_m": 0.0
+    }
+  ],
+  "parent_parity_max": 1.1102230246251565e-16,
+  "primary_tables_used": false,
+  "q": [
+    {
+      "Delta_q": -0.053246254321936304,
+      "bin": "B1",
+      "disposition": "GOA",
+      "q_event": 0.9467537456780637,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": 0.09756097560975607,
+      "bin": "B1",
+      "disposition": "RTF",
+      "q_event": 1.0,
+      "q_reference": 0.9024390243902439
+    },
+    {
+      "Delta_q": -0.05157386624164595,
+      "bin": "B1",
+      "disposition": "NAT",
+      "q_event": 0.9094650947973151,
+      "q_reference": 0.961038961038961
+    },
+    {
+      "Delta_q": null,
+      "bin": "B1",
+      "disposition": "UNF",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": 0.0,
+      "bin": "B1",
+      "disposition": "OTHER",
+      "q_event": 1.0,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": null,
+      "bin": "B1",
+      "disposition": "MISSING",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.4159390840300845,
+      "bin": "B2",
+      "disposition": "GOA",
+      "q_event": 0.5840609159699155,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": -0.16975242846693983,
+      "bin": "B2",
+      "disposition": "RTF",
+      "q_event": 0.7513002031120076,
+      "q_reference": 0.9210526315789475
+    },
+    {
+      "Delta_q": -0.14796879868170865,
+      "bin": "B2",
+      "disposition": "NAT",
+      "q_event": 0.7932076719065266,
+      "q_reference": 0.9411764705882353
+    },
+    {
+      "Delta_q": null,
+      "bin": "B2",
+      "disposition": "UNF",
+      "q_event": 0.0,
+      "q_reference": null
+    },
+    {
+      "Delta_q": null,
+      "bin": "B2",
+      "disposition": "OTHER",
+      "q_event": 1.0,
+      "q_reference": null
+    },
+    {
+      "Delta_q": null,
+      "bin": "B2",
+      "disposition": "MISSING",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.07153740400081487,
+      "bin": "B3",
+      "disposition": "GOA",
+      "q_event": 0.821319738856328,
+      "q_reference": 0.8928571428571429
+    },
+    {
+      "Delta_q": -0.10198314747369586,
+      "bin": "B3",
+      "disposition": "RTF",
+      "q_event": 0.75167538911167,
+      "q_reference": 0.8536585365853658
+    },
+    {
+      "Delta_q": -0.23663931816614214,
+      "bin": "B3",
+      "disposition": "NAT",
+      "q_event": 0.5451788636520397,
+      "q_reference": 0.7818181818181819
+    },
+    {
+      "Delta_q": null,
+      "bin": "B3",
+      "disposition": "UNF",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.7307494765121884,
+      "bin": "B3",
+      "disposition": "OTHER",
+      "q_event": 0.26925052348781164,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": null,
+      "bin": "B3",
+      "disposition": "MISSING",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.07995249668169435,
+      "bin": "B4",
+      "disposition": "GOA",
+      "q_event": 0.875929856259482,
+      "q_reference": 0.9558823529411764
+    },
+    {
+      "Delta_q": -0.34088419352697996,
+      "bin": "B4",
+      "disposition": "RTF",
+      "q_event": 0.6163807637379773,
+      "q_reference": 0.9572649572649573
+    },
+    {
+      "Delta_q": -0.0304608004136957,
+      "bin": "B4",
+      "disposition": "NAT",
+      "q_event": 0.8295391995863043,
+      "q_reference": 0.86
+    },
+    {
+      "Delta_q": null,
+      "bin": "B4",
+      "disposition": "UNF",
+      "q_event": 1.0,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.2955975976199736,
+      "bin": "B4",
+      "disposition": "OTHER",
+      "q_event": 0.7044024023800264,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": null,
+      "bin": "B4",
+      "disposition": "MISSING",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.37271829102089404,
+      "bin": "B5",
+      "disposition": "GOA",
+      "q_event": 0.627281708979106,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": 0.0041529806009059644,
+      "bin": "B5",
+      "disposition": "RTF",
+      "q_event": 0.9646792963903796,
+      "q_reference": 0.9605263157894737
+    },
+    {
+      "Delta_q": 0.014326135175251942,
+      "bin": "B5",
+      "disposition": "NAT",
+      "q_event": 0.9217335425826594,
+      "q_reference": 0.9074074074074074
+    },
+    {
+      "Delta_q": null,
+      "bin": "B5",
+      "disposition": "UNF",
+      "q_event": 0.0,
+      "q_reference": null
+    },
+    {
+      "Delta_q": 0.0,
+      "bin": "B5",
+      "disposition": "OTHER",
+      "q_event": 1.0,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": null,
+      "bin": "B5",
+      "disposition": "MISSING",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.44015798772358616,
+      "bin": "B6",
+      "disposition": "GOA",
+      "q_event": 0.5203683280658875,
+      "q_reference": 0.9605263157894737
+    },
+    {
+      "Delta_q": -0.5666952635144762,
+      "bin": "B6",
+      "disposition": "RTF",
+      "q_event": 0.376486554667342,
+      "q_reference": 0.9431818181818182
+    },
+    {
+      "Delta_q": -0.5315338630474346,
+      "bin": "B6",
+      "disposition": "NAT",
+      "q_event": 0.2938629623493908,
+      "q_reference": 0.8253968253968254
+    },
+    {
+      "Delta_q": null,
+      "bin": "B6",
+      "disposition": "UNF",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.30000000000000004,
+      "bin": "B6",
+      "disposition": "OTHER",
+      "q_event": 0.5,
+      "q_reference": 0.8
+    },
+    {
+      "Delta_q": null,
+      "bin": "B6",
+      "disposition": "MISSING",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.26516698395620186,
+      "bin": "B7",
+      "disposition": "GOA",
+      "q_event": 0.6579099391207212,
+      "q_reference": 0.923076923076923
+    },
+    {
+      "Delta_q": -0.45941686733768755,
+      "bin": "B7",
+      "disposition": "RTF",
+      "q_event": 0.41750620958538937,
+      "q_reference": 0.8769230769230769
+    },
+    {
+      "Delta_q": -0.6492177516048511,
+      "bin": "B7",
+      "disposition": "NAT",
+      "q_event": 0.2240216850148673,
+      "q_reference": 0.8732394366197184
+    },
+    {
+      "Delta_q": null,
+      "bin": "B7",
+      "disposition": "UNF",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -1.0,
+      "bin": "B7",
+      "disposition": "OTHER",
+      "q_event": 0.0,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": null,
+      "bin": "B7",
+      "disposition": "MISSING",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.23642177444793733,
+      "bin": "B8",
+      "disposition": "GOA",
+      "q_event": 0.7635782255520627,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": -0.2763640194194329,
+      "bin": "B8",
+      "disposition": "RTF",
+      "q_event": 0.5926835996281862,
+      "q_reference": 0.8690476190476191
+    },
+    {
+      "Delta_q": -0.35087936045939094,
+      "bin": "B8",
+      "disposition": "NAT",
+      "q_event": 0.5279085183284878,
+      "q_reference": 0.8787878787878788
+    },
+    {
+      "Delta_q": -0.32432432432432434,
+      "bin": "B8",
+      "disposition": "UNF",
+      "q_event": 0.6756756756756757,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": -0.322750273699818,
+      "bin": "B8",
+      "disposition": "OTHER",
+      "q_event": 0.677249726300182,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": null,
+      "bin": "B8",
+      "disposition": "MISSING",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.026831213288209477,
+      "bin": "B9",
+      "disposition": "GOA",
+      "q_event": 0.8898354533784572,
+      "q_reference": 0.9166666666666666
+    },
+    {
+      "Delta_q": -0.005087314580156321,
+      "bin": "B9",
+      "disposition": "RTF",
+      "q_event": 0.8439692891934286,
+      "q_reference": 0.8490566037735849
+    },
+    {
+      "Delta_q": -0.016102280882945186,
+      "bin": "B9",
+      "disposition": "NAT",
+      "q_event": 0.8231834334027692,
+      "q_reference": 0.8392857142857144
+    },
+    {
+      "Delta_q": null,
+      "bin": "B9",
+      "disposition": "UNF",
+      "q_event": 1.0,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -1.0,
+      "bin": "B9",
+      "disposition": "OTHER",
+      "q_event": 0.0,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": null,
+      "bin": "B9",
+      "disposition": "MISSING",
+      "q_event": null,
+      "q_reference": null
+    },
+    {
+      "Delta_q": -0.05410968591470655,
+      "bin": "B10",
+      "disposition": "GOA",
+      "q_event": 0.9458903140852934,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": -0.0371301838256165,
+      "bin": "B10",
+      "disposition": "RTF",
+      "q_event": 0.8969357502403176,
+      "q_reference": 0.9340659340659341
+    },
+    {
+      "Delta_q": 0.05967431165045989,
+      "bin": "B10",
+      "disposition": "NAT",
+      "q_event": 0.8043551627142898,
+      "q_reference": 0.7446808510638299
+    },
+    {
+      "Delta_q": null,
+      "bin": "B10",
+      "disposition": "UNF",
+      "q_event": 1.0,
+      "q_reference": null
+    },
+    {
+      "Delta_q": 0.0,
+      "bin": "B10",
+      "disposition": "OTHER",
+      "q_event": 1.0,
+      "q_reference": 1.0
+    },
+    {
+      "Delta_q": null,
+      "bin": "B10",
+      "disposition": "MISSING",
+      "q_event": null,
+      "q_reference": null
+    }
+  ],
+  "witnesses": [
+    {
+      "bin": "B1",
+      "disposition": "GOA",
+      "falsified": true,
+      "product": -0.00019179780521935537
+    },
+    {
+      "bin": "B1",
+      "disposition": "RTF",
+      "falsified": false,
+      "product": 0.0005854500898927551
+    },
+    {
+      "bin": "B1",
+      "disposition": "NAT",
+      "falsified": true,
+      "product": -0.0010234452662647251
+    },
+    {
+      "bin": "B1",
+      "disposition": "UNF",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B1",
+      "disposition": "OTHER",
+      "falsified": false,
+      "product": -0.0
+    },
+    {
+      "bin": "B1",
+      "disposition": "MISSING",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B2",
+      "disposition": "GOA",
+      "falsified": true,
+      "product": -0.008172537427692684
+    },
+    {
+      "bin": "B2",
+      "disposition": "RTF",
+      "falsified": false,
+      "product": 0.001207961909452157
+    },
+    {
+      "bin": "B2",
+      "disposition": "NAT",
+      "falsified": true,
+      "product": -0.0023394924328072227
+    },
+    {
+      "bin": "B2",
+      "disposition": "UNF",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B2",
+      "disposition": "OTHER",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B2",
+      "disposition": "MISSING",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B3",
+      "disposition": "GOA",
+      "falsified": true,
+      "product": -8.055389382797186e-05
+    },
+    {
+      "bin": "B3",
+      "disposition": "RTF",
+      "falsified": false,
+      "product": 0.0013282955630432394
+    },
+    {
+      "bin": "B3",
+      "disposition": "NAT",
+      "falsified": true,
+      "product": -0.007598654418457953
+    },
+    {
+      "bin": "B3",
+      "disposition": "UNF",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B3",
+      "disposition": "OTHER",
+      "falsified": true,
+      "product": -0.0002476972752767799
+    },
+    {
+      "bin": "B3",
+      "disposition": "MISSING",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B4",
+      "disposition": "GOA",
+      "falsified": false,
+      "product": 0.00044388591209075013
+    },
+    {
+      "bin": "B4",
+      "disposition": "RTF",
+      "falsified": true,
+      "product": -0.007121536863097926
+    },
+    {
+      "bin": "B4",
+      "disposition": "NAT",
+      "falsified": false,
+      "product": 9.047706552323051e-05
+    },
+    {
+      "bin": "B4",
+      "disposition": "UNF",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B4",
+      "disposition": "OTHER",
+      "falsified": false,
+      "product": 1.871501111354686e-05
+    },
+    {
+      "bin": "B4",
+      "disposition": "MISSING",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B5",
+      "disposition": "GOA",
+      "falsified": true,
+      "product": -0.001634344827556766
+    },
+    {
+      "bin": "B5",
+      "disposition": "RTF",
+      "falsified": false,
+      "product": 0.0013335788605314325
+    },
+    {
+      "bin": "B5",
+      "disposition": "NAT",
+      "falsified": false,
+      "product": 0.0006156991753148859
+    },
+    {
+      "bin": "B5",
+      "disposition": "UNF",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B5",
+      "disposition": "OTHER",
+      "falsified": false,
+      "product": -0.0
+    },
+    {
+      "bin": "B5",
+      "disposition": "MISSING",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B6",
+      "disposition": "GOA",
+      "falsified": true,
+      "product": -0.008867662821775278
+    },
+    {
+      "bin": "B6",
+      "disposition": "RTF",
+      "falsified": true,
+      "product": -0.010663697552579768
+    },
+    {
+      "bin": "B6",
+      "disposition": "NAT",
+      "falsified": true,
+      "product": -0.02996572500132213
+    },
+    {
+      "bin": "B6",
+      "disposition": "UNF",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B6",
+      "disposition": "OTHER",
+      "falsified": false,
+      "product": 1.4961868609144692e-05
+    },
+    {
+      "bin": "B6",
+      "disposition": "MISSING",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B7",
+      "disposition": "GOA",
+      "falsified": true,
+      "product": -0.0014240463415363146
+    },
+    {
+      "bin": "B7",
+      "disposition": "RTF",
+      "falsified": true,
+      "product": -0.01231207144564126
+    },
+    {
+      "bin": "B7",
+      "disposition": "NAT",
+      "falsified": true,
+      "product": -0.04252749751580598
+    },
+    {
+      "bin": "B7",
+      "disposition": "UNF",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B7",
+      "disposition": "OTHER",
+      "falsified": true,
+      "product": -0.00010136753457467357
+    },
+    {
+      "bin": "B7",
+      "disposition": "MISSING",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B8",
+      "disposition": "GOA",
+      "falsified": false,
+      "product": 0.004135910826792172
+    },
+    {
+      "bin": "B8",
+      "disposition": "RTF",
+      "falsified": true,
+      "product": -0.0035519490707328124
+    },
+    {
+      "bin": "B8",
+      "disposition": "NAT",
+      "falsified": true,
+      "product": -0.011896733490770245
+    },
+    {
+      "bin": "B8",
+      "disposition": "UNF",
+      "falsified": true,
+      "product": -6.634225304925584e-07
+    },
+    {
+      "bin": "B8",
+      "disposition": "OTHER",
+      "falsified": true,
+      "product": -2.1172146211441063e-05
+    },
+    {
+      "bin": "B8",
+      "disposition": "MISSING",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B9",
+      "disposition": "GOA",
+      "falsified": false,
+      "product": 0.001874903850779268
+    },
+    {
+      "bin": "B9",
+      "disposition": "RTF",
+      "falsified": false,
+      "product": 0.0005855927441028608
+    },
+    {
+      "bin": "B9",
+      "disposition": "NAT",
+      "falsified": false,
+      "product": 0.0003615678160508346
+    },
+    {
+      "bin": "B9",
+      "disposition": "UNF",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B9",
+      "disposition": "OTHER",
+      "falsified": true,
+      "product": -8.168218628206025e-05
+    },
+    {
+      "bin": "B9",
+      "disposition": "MISSING",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B10",
+      "disposition": "GOA",
+      "falsified": true,
+      "product": -0.0006122113389797826
+    },
+    {
+      "bin": "B10",
+      "disposition": "RTF",
+      "falsified": true,
+      "product": -0.00024360570382370126
+    },
+    {
+      "bin": "B10",
+      "disposition": "NAT",
+      "falsified": true,
+      "product": -0.00018536425740615483
+    },
+    {
+      "bin": "B10",
+      "disposition": "UNF",
+      "falsified": false,
+      "product": 0.0
+    },
+    {
+      "bin": "B10",
+      "disposition": "OTHER",
+      "falsified": false,
+      "product": -0.0
+    },
+    {
+      "bin": "B10",
+      "disposition": "MISSING",
+      "falsified": false,
+      "product": 0.0
+    }
+  ]
+}

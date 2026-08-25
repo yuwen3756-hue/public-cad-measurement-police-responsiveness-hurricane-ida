@@ -1,0 +1,2504 @@
+{
+  "documented_dispatch_break": "2021-07",
+  "generated_at_utc": "2026-07-17T00:00:00+00:00",
+  "monthly": [
+    {
+      "change_flags": {
+        "arrival_parseability_changed": false,
+        "dispatch_coverage_changed": false,
+        "dispatch_parseability_changed": false,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8340993132593767,
+        "timearrive_present_rate": 0.8340993132593767,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9109614368726888,
+        "timedispatch_present_rate": 0.9109614368726888
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 1,
+      "partition": "2020-01",
+      "rows": 37860,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0,
+        "arrival_missing_rate": 0.16590068674062336,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8340993132593767,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8065511965905365,
+        "timearrive_present_rate": 0.8065511965905365,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.8998470112556005,
+        "timedispatch_present_rate": 0.8998470112556005
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 2,
+      "partition": "2020-02",
+      "rows": 36604,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0,
+        "arrival_missing_rate": 0.19344880340946344,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8065511965905365,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8767701030639891,
+        "timearrive_present_rate": 0.8767701030639891,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9359830181828338,
+        "timedispatch_present_rate": 0.9359830181828338
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 3,
+      "partition": "2020-03",
+      "rows": 35803,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00022344496271262186,
+        "arrival_missing_rate": 0.12322989693601095,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8765466581012764,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.00022344496271262186,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.9078081443802627,
+        "timearrive_present_rate": 0.9078081443802627,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9581285743023824,
+        "timedispatch_present_rate": 0.9581285743023824
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 4,
+      "partition": "2020-04",
+      "rows": 34797,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00025864298646435037,
+        "arrival_missing_rate": 0.09219185561973733,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.9075495013937983,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.00025864298646435037,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.9120326308633583,
+        "timearrive_present_rate": 0.9120326308633583,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9607885791978246,
+        "timedispatch_present_rate": 0.9607885791978246
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 5,
+      "partition": "2020-05",
+      "rows": 36775,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00013596193065941537,
+        "arrival_missing_rate": 0.08796736913664174,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.9118966689326988,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.00013596193065941537,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8940607734806629,
+        "timearrive_present_rate": 0.8940607734806629,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9502209944751381,
+        "timedispatch_present_rate": 0.9502209944751381
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 6,
+      "partition": "2020-06",
+      "rows": 36200,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00011049723756906077,
+        "arrival_missing_rate": 0.10593922651933702,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.893950276243094,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.00011049723756906077,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8849893354754715,
+        "timearrive_present_rate": 0.8849893354754715,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9479792803523448,
+        "timedispatch_present_rate": 0.9479792803523448
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 7,
+      "partition": "2020-07",
+      "rows": 36101,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 8.31001911304396e-05,
+        "arrival_missing_rate": 0.1150106645245284,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8849062352843412,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 8.31001911304396e-05,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8917711685717457,
+        "timearrive_present_rate": 0.8917711685717457,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9493951836644101,
+        "timedispatch_present_rate": 0.9493951836644101
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 8,
+      "partition": "2020-08",
+      "rows": 36044,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00011097547442015315,
+        "arrival_missing_rate": 0.10822883142825436,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8916601930973255,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.00011097547442015315,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8923017536119996,
+        "timearrive_present_rate": 0.8923017536119996,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9493492886290945,
+        "timedispatch_present_rate": 0.9493492886290945
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 9,
+      "partition": "2020-09",
+      "rows": 36268,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00016543509429800375,
+        "arrival_missing_rate": 0.10769824638800043,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8921363185177016,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.00016543509429800375,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8677307463010135,
+        "timearrive_present_rate": 0.8677307463010135,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9397051650317056,
+        "timedispatch_present_rate": 0.9397051650317056
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 10,
+      "partition": "2020-10",
+      "rows": 36902,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00018969161563058912,
+        "arrival_missing_rate": 0.1322692536989865,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8675410546853829,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.00016259281339764782,
+        "dispatch_after_arrival_rate": 2.7098802232941305e-05,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8605222558710931,
+        "timearrive_present_rate": 0.8605222558710931,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9347465859093766,
+        "timedispatch_present_rate": 0.9347465859093766
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 11,
+      "partition": "2020-11",
+      "rows": 35002,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.000599965716244786,
+        "arrival_missing_rate": 0.13947774412890693,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8599222901548483,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.0004571167361865036,
+        "dispatch_after_arrival_rate": 8.570938803496943e-05,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8718728283530229,
+        "timearrive_present_rate": 0.8718728283530229,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9356613388927496,
+        "timedispatch_present_rate": 0.9356613388927496
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "hp7u-i9hf",
+      "month": 12,
+      "partition": "2020-12",
+      "rows": 34536,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 5.791058605513088e-05,
+        "arrival_missing_rate": 0.12812717164697707,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8718149177669678,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 5.791058605513088e-05,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2020
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": true,
+        "year_changed": true
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.891558334704624,
+        "timearrive_present_rate": 0.891558334704624,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9496187811968625,
+        "timedispatch_present_rate": 0.9496187811968625
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 1,
+      "partition": "2021-01",
+      "rows": 36462,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 8.227743952608195e-05,
+        "arrival_missing_rate": 0.10844166529537601,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8914760572650979,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 8.227743952608195e-05,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8881766814508779,
+        "timearrive_present_rate": 0.8881766814508779,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9411568139012091,
+        "timedispatch_present_rate": 0.9411568139012091
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 2,
+      "partition": "2021-02",
+      "rows": 32918,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 6.075703262652652e-05,
+        "arrival_missing_rate": 0.11182331854912206,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8881159244182514,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 6.075703262652652e-05,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8828156352837306,
+        "timearrive_present_rate": 0.8828156352837306,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9408192203761672,
+        "timedispatch_present_rate": 0.9408192203761672
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 3,
+      "partition": "2021-03",
+      "rows": 37377,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00010701768467239211,
+        "arrival_missing_rate": 0.11718436471626936,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8827086175990583,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.00010701768467239211,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8807177487352446,
+        "timearrive_present_rate": 0.8807177487352446,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9387911045531198,
+        "timedispatch_present_rate": 0.9387911045531198
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 4,
+      "partition": "2021-04",
+      "rows": 37952,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 5.269814502529511e-05,
+        "arrival_missing_rate": 0.11928225126475549,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8806650505902193,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 5.269814502529511e-05,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8585678660491628,
+        "timearrive_present_rate": 0.8585678660491628,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9323120769504809,
+        "timedispatch_present_rate": 0.9323120769504809
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 5,
+      "partition": "2021-05",
+      "rows": 39298,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0001017863504504046,
+        "arrival_missing_rate": 0.1414321339508372,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8584660796987124,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 0.0001017863504504046,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8686963482293191,
+        "timearrive_present_rate": 0.8686963482293191,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.9334235005106406,
+        "timedispatch_present_rate": 0.9334235005106406
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 6,
+      "partition": "2021-06",
+      "rows": 36229,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 2.7602197134891938e-05,
+        "arrival_missing_rate": 0.13130365177068096,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8686687460321841,
+        "arrival_without_valid_dispatch_rate": 0.0,
+        "closure_before_arrival_rate": 2.7602197134891938e-05,
+        "dispatch_after_arrival_rate": 0.0,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.872464399488115,
+        "timearrive_present_rate": 0.872464399488115,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.880741688675906,
+        "timedispatch_present_rate": 0.880741688675906
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 7,
+      "partition": "2021-07",
+      "rows": 36727,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00046287472431725976,
+        "arrival_missing_rate": 0.12753560051188498,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8720015247637978,
+        "arrival_without_valid_dispatch_rate": 0.054183570670079235,
+        "closure_before_arrival_rate": 8.168377487951644e-05,
+        "dispatch_after_arrival_rate": 0.0003811909494377433,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.857906072557411,
+        "timearrive_present_rate": 0.857906072557411,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.4650778999188834,
+        "timedispatch_present_rate": 0.4650778999188834
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 8,
+      "partition": "2021-08",
+      "rows": 35751,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.002657268328158653,
+        "arrival_missing_rate": 0.14209392744258903,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8552488042292523,
+        "arrival_without_valid_dispatch_rate": 0.44533020055383066,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.002657268328158653,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8666947647289038,
+        "timearrive_present_rate": 0.8666947647289038,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.489959960261312,
+        "timedispatch_present_rate": 0.489959960261312
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 9,
+      "partition": "2021-09",
+      "rows": 33217,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.002498720534665984,
+        "arrival_missing_rate": 0.1333052352710961,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8641960441942379,
+        "arrival_without_valid_dispatch_rate": 0.4246319655598037,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.002498720534665984,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8558138227606172,
+        "timearrive_present_rate": 0.8558138227606172,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.494167908035639,
+        "timedispatch_present_rate": 0.494167908035639
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 10,
+      "partition": "2021-10",
+      "rows": 35579,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00281064672981253,
+        "arrival_missing_rate": 0.1441861772393828,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8530031760308047,
+        "arrival_without_valid_dispatch_rate": 0.4145141797127519,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.00281064672981253,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8595119921538324,
+        "timearrive_present_rate": 0.8595119921538324,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.49496240378042616,
+        "timedispatch_present_rate": 0.49496240378042616
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 11,
+      "partition": "2021-11",
+      "rows": 33647,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.003001753499569055,
+        "arrival_missing_rate": 0.14048800784616755,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8565102386542633,
+        "arrival_without_valid_dispatch_rate": 0.41596576217790593,
+        "closure_before_arrival_rate": 0.0005349659702202277,
+        "dispatch_after_arrival_rate": 0.00231818587095432,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8438687496230171,
+        "timearrive_present_rate": 0.8438687496230171,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5078110863140117,
+        "timedispatch_present_rate": 0.5078110863140117
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "3pha-hum9",
+      "month": 12,
+      "partition": "2021-12",
+      "rows": 33158,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.002623801194281923,
+        "arrival_missing_rate": 0.15613125037698294,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8412449484287351,
+        "arrival_without_valid_dispatch_rate": 0.39130828156101094,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.002623801194281923,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2021
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": true,
+        "year_changed": true
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8510022477445577,
+        "timearrive_present_rate": 0.8510022477445577,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5072204945038027,
+        "timedispatch_present_rate": 0.5072204945038027
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 1,
+      "partition": "2022-01",
+      "rows": 32477,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0031406841764941343,
+        "arrival_missing_rate": 0.14899775225544232,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8478615635680635,
+        "arrival_without_valid_dispatch_rate": 0.3975428764972134,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0031406841764941343,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8150866528711846,
+        "timearrive_present_rate": 0.8150866528711846,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5146145887221935,
+        "timedispatch_present_rate": 0.5146145887221935
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 2,
+      "partition": "2022-02",
+      "rows": 30928,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0023926539058458356,
+        "arrival_missing_rate": 0.18491334712881533,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8126939989653389,
+        "arrival_without_valid_dispatch_rate": 0.36918003103983443,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0023926539058458356,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8208020050125313,
+        "timearrive_present_rate": 0.8208020050125313,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5160462130937099,
+        "timedispatch_present_rate": 0.5160462130937099
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 3,
+      "partition": "2022-03",
+      "rows": 32718,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0022311877254110888,
+        "arrival_missing_rate": 0.17919799498746866,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8185708172871202,
+        "arrival_without_valid_dispatch_rate": 0.38070786722904826,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0022311877254110888,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8283667258432665,
+        "timearrive_present_rate": 0.8283667258432665,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5125855947248288,
+        "timedispatch_present_rate": 0.5125855947248288
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 4,
+      "partition": "2022-04",
+      "rows": 31544,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0023142277453715443,
+        "arrival_missing_rate": 0.17163327415673346,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.826052498097895,
+        "arrival_without_valid_dispatch_rate": 0.3887902612224195,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0023142277453715443,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.7929041323369739,
+        "timearrive_present_rate": 0.7929041323369739,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5359902918822252,
+        "timedispatch_present_rate": 0.5359902918822252
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 5,
+      "partition": "2022-05",
+      "rows": 31314,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.002937983010793894,
+        "arrival_missing_rate": 0.20709586766302612,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.78996614932618,
+        "arrival_without_valid_dispatch_rate": 0.3477358370058121,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.002937983010793894,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.7887544335489255,
+        "timearrive_present_rate": 0.7887544335489255,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5178037415675638,
+        "timedispatch_present_rate": 0.5178037415675638
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 6,
+      "partition": "2022-06",
+      "rows": 28758,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0031295639474233257,
+        "arrival_missing_rate": 0.21124556645107448,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.7856248696015022,
+        "arrival_without_valid_dispatch_rate": 0.352284581681619,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0031295639474233257,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.7808556149732621,
+        "timearrive_present_rate": 0.7808556149732621,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.53301247771836,
+        "timedispatch_present_rate": 0.53301247771836
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 7,
+      "partition": "2022-07",
+      "rows": 28050,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0032085561497326204,
+        "arrival_missing_rate": 0.21914438502673797,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.7776470588235294,
+        "arrival_without_valid_dispatch_rate": 0.3349019607843137,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0032085561497326204,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8034527618578813,
+        "timearrive_present_rate": 0.8034527618578813,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.4919306634787806,
+        "timedispatch_present_rate": 0.4919306634787806
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 8,
+      "partition": "2022-08",
+      "rows": 28441,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0035863717872086074,
+        "arrival_missing_rate": 0.19654723814211877,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.7998663900706726,
+        "arrival_without_valid_dispatch_rate": 0.38099926162933795,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0035863717872086074,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.7972826086956522,
+        "timearrive_present_rate": 0.7972826086956522,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5041304347826087,
+        "timedispatch_present_rate": 0.5041304347826087
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 9,
+      "partition": "2022-09",
+      "rows": 27600,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.002971014492753623,
+        "arrival_missing_rate": 0.20271739130434782,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.7943115942028985,
+        "arrival_without_valid_dispatch_rate": 0.3671376811594203,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.002971014492753623,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8246218308358781,
+        "timearrive_present_rate": 0.8246218308358781,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5050067466799233,
+        "timedispatch_present_rate": 0.5050067466799233
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 10,
+      "partition": "2022-10",
+      "rows": 28162,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0034088488033520345,
+        "arrival_missing_rate": 0.17537816916412186,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8212129820325261,
+        "arrival_without_valid_dispatch_rate": 0.3765357574035935,
+        "closure_before_arrival_rate": 3.5508841701583695e-05,
+        "dispatch_after_arrival_rate": 0.003373339961650451,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8205002452182443,
+        "timearrive_present_rate": 0.8205002452182443,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5056022937337307,
+        "timedispatch_present_rate": 0.5056022937337307
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 11,
+      "partition": "2022-11",
+      "rows": 26507,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0031689742332214133,
+        "arrival_missing_rate": 0.17949975478175575,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8173312709850228,
+        "arrival_without_valid_dispatch_rate": 0.379975100916739,
+        "closure_before_arrival_rate": 0.00015090353491530538,
+        "dispatch_after_arrival_rate": 0.0029426189308484553,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.792623069149704,
+        "timearrive_present_rate": 0.792623069149704,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.528728165150859,
+        "timedispatch_present_rate": 0.528728165150859
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "nci8-thrr",
+      "month": 12,
+      "partition": "2022-12",
+      "rows": 27708,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0033564313555651797,
+        "arrival_missing_rate": 0.20737693085029593,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.7892666377941389,
+        "arrival_without_valid_dispatch_rate": 0.3416341850729031,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0033564313555651797,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2022
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": true,
+        "year_changed": true
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8117345685510755,
+        "timearrive_present_rate": 0.8117345685510755,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5138084710671299,
+        "timedispatch_present_rate": 0.5138084710671299
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 1,
+      "partition": "2023-01",
+      "rows": 28497,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0036144155525142997,
+        "arrival_missing_rate": 0.18826543144892444,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8081201529985612,
+        "arrival_without_valid_dispatch_rate": 0.3693722146190827,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0036144155525142997,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.785004747644438,
+        "timearrive_present_rate": 0.785004747644438,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5319552991015996,
+        "timedispatch_present_rate": 0.5319552991015996
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 2,
+      "partition": "2023-02",
+      "rows": 27382,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0031407493974143596,
+        "arrival_missing_rate": 0.21499525235556205,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.7818639982470236,
+        "arrival_without_valid_dispatch_rate": 0.3337228836461909,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0031407493974143596,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.7999362290087154,
+        "timearrive_present_rate": 0.7999362290087154,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.521788422022249,
+        "timedispatch_present_rate": 0.521788422022249
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 3,
+      "partition": "2023-03",
+      "rows": 28226,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.002975979593282789,
+        "arrival_missing_rate": 0.20006377099128464,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.7969602494154325,
+        "arrival_without_valid_dispatch_rate": 0.35222844186211294,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.002975979593282789,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.7954087507196316,
+        "timearrive_present_rate": 0.7954087507196316,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.5272740356937248,
+        "timedispatch_present_rate": 0.5272740356937248
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 4,
+      "partition": "2023-04",
+      "rows": 27792,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.003274323546344272,
+        "arrival_missing_rate": 0.20459124928036845,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.7921344271732873,
+        "arrival_without_valid_dispatch_rate": 0.34607081174438686,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.003274323546344272,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.7851907153522465,
+        "timearrive_present_rate": 0.7851907153522465,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.49182163702999865,
+        "timedispatch_present_rate": 0.49182163702999865
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 5,
+      "partition": "2023-05",
+      "rows": 29468,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0034613818379258857,
+        "arrival_missing_rate": 0.2148092846477535,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.7817293335143206,
+        "arrival_without_valid_dispatch_rate": 0.3677887878376544,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0034613818379258857,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8014752214685497,
+        "timearrive_present_rate": 0.8014752214685497,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.474924941621261,
+        "timedispatch_present_rate": 0.474924941621261
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 6,
+      "partition": "2023-06",
+      "rows": 26979,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0033729938100003705,
+        "arrival_missing_rate": 0.1985247785314504,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.7981022276585492,
+        "arrival_without_valid_dispatch_rate": 0.39223099447718596,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0033729938100003705,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8155113346453823,
+        "timearrive_present_rate": 0.8155113346453823,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.4577228660981121,
+        "timedispatch_present_rate": 0.4577228660981121
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 7,
+      "partition": "2023-07",
+      "rows": 27438,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0040819301698374515,
+        "arrival_missing_rate": 0.1844886653546177,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8114294044755449,
+        "arrival_without_valid_dispatch_rate": 0.4148625993148189,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0040819301698374515,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.828922247594804,
+        "timearrive_present_rate": 0.828922247594804,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.44966870063265074,
+        "timedispatch_present_rate": 0.44966870063265074
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 8,
+      "partition": "2023-08",
+      "rows": 26713,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.003556320892449369,
+        "arrival_missing_rate": 0.17107775240519596,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8253659267023546,
+        "arrival_without_valid_dispatch_rate": 0.4299030434619848,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.003556320892449369,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8182166385782136,
+        "timearrive_present_rate": 0.8182166385782136,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.4463382871150605,
+        "timedispatch_present_rate": 0.4463382871150605
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 9,
+      "partition": "2023-09",
+      "rows": 26108,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0037536387314233187,
+        "arrival_missing_rate": 0.18178336142178642,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8144629998467903,
+        "arrival_without_valid_dispatch_rate": 0.4300980542362494,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0037536387314233187,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8182261208576999,
+        "timearrive_present_rate": 0.8182261208576999,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.4512670565302144,
+        "timedispatch_present_rate": 0.4512670565302144
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 10,
+      "partition": "2023-10",
+      "rows": 26676,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00341130604288499,
+        "arrival_missing_rate": 0.1817738791423002,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8148148148148148,
+        "arrival_without_valid_dispatch_rate": 0.42663817663817666,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.00341130604288499,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.81877444589309,
+        "timearrive_present_rate": 0.81877444589309,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.4557121903520209,
+        "timedispatch_present_rate": 0.4557121903520209
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 11,
+      "partition": "2023-11",
+      "rows": 24544,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.003666883963494133,
+        "arrival_missing_rate": 0.18122555410691005,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8151075619295959,
+        "arrival_without_valid_dispatch_rate": 0.419369295958279,
+        "closure_before_arrival_rate": 0.00020371577574967406,
+        "dispatch_after_arrival_rate": 0.0033409387222946545,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8120943485831882,
+        "timearrive_present_rate": 0.8120943485831882,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.4723761279088175,
+        "timedispatch_present_rate": 0.4723761279088175
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "pc5d-tvaw",
+      "month": 12,
+      "partition": "2023-12",
+      "rows": 25268,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0037201203102738643,
+        "arrival_missing_rate": 0.1879056514168118,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8083742282729144,
+        "arrival_without_valid_dispatch_rate": 0.39801329745132186,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0037201203102738643,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2023
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": true,
+        "year_changed": true
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8248209099709584,
+        "timearrive_present_rate": 0.8248209099709584,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.4594772507260407,
+        "timedispatch_present_rate": 0.4594772507260407
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 1,
+      "partition": "2024-01",
+      "rows": 25825,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0036398838334946756,
+        "arrival_missing_rate": 0.17517909002904164,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8211810261374637,
+        "arrival_without_valid_dispatch_rate": 0.41800580832526624,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0036398838334946756,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8031811377245509,
+        "timearrive_present_rate": 0.8031811377245509,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.455875748502994,
+        "timedispatch_present_rate": 0.455875748502994
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 2,
+      "partition": "2024-02",
+      "rows": 26720,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.003967065868263473,
+        "arrival_missing_rate": 0.1968188622754491,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.7992140718562875,
+        "arrival_without_valid_dispatch_rate": 0.40886976047904194,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.003967065868263473,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8215322760777306,
+        "timearrive_present_rate": 0.8215322760777306,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.45555059191422825,
+        "timedispatch_present_rate": 0.45555059191422825
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 3,
+      "partition": "2024-03",
+      "rows": 26862,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0037227309954582684,
+        "arrival_missing_rate": 0.17846772392226937,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8178095450822723,
+        "arrival_without_valid_dispatch_rate": 0.4215992852356489,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0037227309954582684,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8051303745865702,
+        "timearrive_present_rate": 0.8051303745865702,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.44004307360972233,
+        "timedispatch_present_rate": 0.44004307360972233
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 4,
+      "partition": "2024-04",
+      "rows": 26002,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0027305591877547883,
+        "arrival_missing_rate": 0.19486962541342973,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8023998153988154,
+        "arrival_without_valid_dispatch_rate": 0.42569802322898237,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0027305591877547883,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8112929382279227,
+        "timearrive_present_rate": 0.8112929382279227,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.4304879846675512,
+        "timedispatch_present_rate": 0.4304879846675512
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 5,
+      "partition": "2024-05",
+      "rows": 27132,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0033171163202122956,
+        "arrival_missing_rate": 0.18870706177207724,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8079758219077104,
+        "arrival_without_valid_dispatch_rate": 0.4356110865398791,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0033171163202122956,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8351919737603705,
+        "timearrive_present_rate": 0.8351919737603705,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.42593092803395716,
+        "timedispatch_present_rate": 0.42593092803395716
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 6,
+      "partition": "2024-06",
+      "rows": 25915,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0038587690526721975,
+        "arrival_missing_rate": 0.16480802623962956,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8313332047076982,
+        "arrival_without_valid_dispatch_rate": 0.45981092031641907,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0038587690526721975,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.849234907134809,
+        "timearrive_present_rate": 0.849234907134809,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.42303638280085776,
+        "timedispatch_present_rate": 0.42303638280085776
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 7,
+      "partition": "2024-07",
+      "rows": 27513,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.004288881619598008,
+        "arrival_missing_rate": 0.150765092865191,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.844946025515211,
+        "arrival_without_valid_dispatch_rate": 0.4725039072438484,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.004288881619598008,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8528292665898698,
+        "timearrive_present_rate": 0.8528292665898698,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.4076866687611268,
+        "timedispatch_present_rate": 0.4076866687611268
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 8,
+      "partition": "2024-08",
+      "rows": 28647,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0038747512828568435,
+        "arrival_missing_rate": 0.1471707334101302,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8489545153070129,
+        "arrival_without_valid_dispatch_rate": 0.48933570705484,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.0038747512828568435,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8505147319843805,
+        "timearrive_present_rate": 0.8505147319843805,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.41480298189563364,
+        "timedispatch_present_rate": 0.41480298189563364
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 9,
+      "partition": "2024-09",
+      "rows": 28170,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.00308839190628328,
+        "arrival_missing_rate": 0.14948526801561945,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8474263400780973,
+        "arrival_without_valid_dispatch_rate": 0.47802626908058216,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.00308839190628328,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8591200165255113,
+        "timearrive_present_rate": 0.8591200165255113,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.41306892515320526,
+        "timedispatch_present_rate": 0.41306892515320526
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 10,
+      "partition": "2024-10",
+      "rows": 29046,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.003270674103146733,
+        "arrival_missing_rate": 0.14087998347448874,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8558493424223645,
+        "arrival_without_valid_dispatch_rate": 0.48853542656475935,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.003270674103146733,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8402023561042912,
+        "timearrive_present_rate": 0.8402023561042912,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.39760144337920544,
+        "timedispatch_present_rate": 0.39760144337920544
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 11,
+      "partition": "2024-11",
+      "rows": 28267,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.0032546786004882017,
+        "arrival_missing_rate": 0.15979764389570877,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8369476775038031,
+        "arrival_without_valid_dispatch_rate": 0.48356741076166554,
+        "closure_before_arrival_rate": 0.00014150776523861748,
+        "dispatch_after_arrival_rate": 0.0030424169526302755,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    },
+    {
+      "change_flags": {
+        "arrival_parseability_changed": true,
+        "dispatch_coverage_changed": true,
+        "dispatch_parseability_changed": true,
+        "endpoint_changed": false,
+        "year_changed": false
+      },
+      "coverage": {
+        "initialtype_present_rate": 1.0,
+        "priority_present_rate": 1.0,
+        "selfinitiated_present_rate": 1.0,
+        "timearrive_parseable_rate": 0.8316483675761858,
+        "timearrive_present_rate": 0.8316483675761858,
+        "timeclosed_parseable_rate": 1.0,
+        "timeclosed_present_rate": 1.0,
+        "timecreate_parseable_rate": 1.0,
+        "timedispatch_parseable_rate": 0.4114577671486031,
+        "timedispatch_present_rate": 0.4114577671486031
+      },
+      "dispositions": {
+        "arrival_semantic_disposition": "QUALIFIED",
+        "dispatch_eligibility_disposition": "QUALIFIED_WITH_MISSING_DISPATCH_CAVEAT"
+      },
+      "endpoint": "2zcj-b6ts",
+      "month": 12,
+      "partition": "2024-12",
+      "rows": 27597,
+      "validity_rates": {
+        "arrival_invalid_ordering_rate": 0.003152516577888901,
+        "arrival_missing_rate": 0.16835163242381418,
+        "arrival_unparseable_rate": 0.0,
+        "arrival_valid_observed_rate": 0.8284958509982969,
+        "arrival_without_valid_dispatch_rate": 0.4672246983367757,
+        "closure_before_arrival_rate": 0.0,
+        "dispatch_after_arrival_rate": 0.003152516577888901,
+        "unparseable_stage_timestamp_rate": 0.0
+      },
+      "year": 2024
+    }
+  ],
+  "schema_eras": [
+    {
+      "end_partition": "2020-12",
+      "endpoint": "hp7u-i9hf",
+      "partitions": [
+        "2020-01",
+        "2020-02",
+        "2020-03",
+        "2020-04",
+        "2020-05",
+        "2020-06",
+        "2020-07",
+        "2020-08",
+        "2020-09",
+        "2020-10",
+        "2020-11",
+        "2020-12"
+      ],
+      "start_partition": "2020-01"
+    },
+    {
+      "end_partition": "2021-12",
+      "endpoint": "3pha-hum9",
+      "partitions": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "start_partition": "2021-01"
+    },
+    {
+      "end_partition": "2022-12",
+      "endpoint": "nci8-thrr",
+      "partitions": [
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06",
+        "2022-07",
+        "2022-08",
+        "2022-09",
+        "2022-10",
+        "2022-11",
+        "2022-12"
+      ],
+      "start_partition": "2022-01"
+    },
+    {
+      "end_partition": "2023-12",
+      "endpoint": "pc5d-tvaw",
+      "partitions": [
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11",
+        "2023-12"
+      ],
+      "start_partition": "2023-01"
+    },
+    {
+      "end_partition": "2024-12",
+      "endpoint": "2zcj-b6ts",
+      "partitions": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "start_partition": "2024-01"
+    }
+  ],
+  "schema_version": "schema_audit_v1"
+}

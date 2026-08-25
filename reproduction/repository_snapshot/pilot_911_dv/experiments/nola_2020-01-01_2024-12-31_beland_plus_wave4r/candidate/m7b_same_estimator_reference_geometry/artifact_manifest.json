@@ -1,0 +1,271 @@
+{
+  "artifact_type": "M7B_ARTIFACT_MANIFEST",
+  "files": [
+    {
+      "bytes": 261,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\00_START_HERE.md",
+      "sha256": "e151fcfaaf8d3800d10c7ce6717d64ef60a081b2741a2f268caef1a4183ed6fe"
+    },
+    {
+      "bytes": 594,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\01_M7B_EXECUTIVE_BRIEF.md",
+      "sha256": "354b81ef13d3dc7c20ed58018e4c9c681c4f98e0d8a7ea0c49513d4ad42d09db"
+    },
+    {
+      "bytes": 879,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\02_FROZEN_REFERENCE_SPEC.md",
+      "sha256": "ec863105269d93e0b8c8984a2dcaee5deeca7fa91d0542c9e8885b0a8f27eaf7"
+    },
+    {
+      "bytes": 278,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\03_AUTHORITY_AND_LOCK_RECEIPTS.md",
+      "sha256": "6574c35cff50f5fac191128ac8f5ceba5e3320791af4e24574bb1775b961216e"
+    },
+    {
+      "bytes": 333,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\04_REFERENCE_WINDOW_REGISTRY.md",
+      "sha256": "7b6bb9a48d5e030008cb79c2623f63a19a9ebb6b9cdf60fbc0e90d3fb8152451"
+    },
+    {
+      "bytes": 188,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\05_SAME_ESTIMATOR_PARITY.md",
+      "sha256": "91c53a010d91bcc1bfe799b6e64c90b70382cff8128ee0e0a24e1f8a88f870da"
+    },
+    {
+      "bytes": 236,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\06_REFERENCE_G_GEOMETRY.md",
+      "sha256": "c802de41def6b8cfbb3340de40d45b06fdc839e9d35e0b07f5b2dfbfaa7a3517"
+    },
+    {
+      "bytes": 533,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\07_RESTRICTED_MODEL_SCORE_CALIBRATION.md",
+      "sha256": "ab00c84d459bccfc44d73625805e12b94e54df5cac5f3dd8556bdc553bfe8733"
+    },
+    {
+      "bytes": 775,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\08_INTERVAL_RANK_INFERENCE.md",
+      "sha256": "62021ed49cb87c2eb690049f98e3c5d028dc7f1e25e9b0dd6770a72acd1cf816"
+    },
+    {
+      "bytes": 495,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\09_EPSILON_0_25_REFERENCE_CALIBRATION.md",
+      "sha256": "abc3649039b44530858b56b11e63cc5fc038c523b686fe605e40e2676d62fa6e"
+    },
+    {
+      "bytes": 470,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\10_SIMULTANEOUS_ABNORMAL_CELLS.md",
+      "sha256": "fe181c67bbaf8233bf73cbc8f00fbd6a3403561ce3e65461cd7225eb8a9fc50e"
+    },
+    {
+      "bytes": 240,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\11_STRUCTURAL_TIMING_PLACEBOS.md",
+      "sha256": "92f3e8a3946455f183418ee62e8a1b869f8c4dd4df5b35f9aa8aa4c167f8278a"
+    },
+    {
+      "bytes": 599,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\12_DURATION_MATCHED_PLACEBOS.md",
+      "sha256": "c7123e815d4aeb03ef500d50c7bbfa3f17b04ee31d89bfbe8702141e6daf29b0"
+    },
+    {
+      "bytes": 401,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\13_ESTIMATOR_CONSISTENT_COVERAGE.md",
+      "sha256": "8669738540de755b12f7f5eff5ff6cc656cf5861ad1d2c85f49398e7c964ba76"
+    },
+    {
+      "bytes": 349,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\14_REFERENCE_SENSITIVITY.md",
+      "sha256": "15b7d8116b5c6d523f54137632c6c0a46cd915585ae908992fe7eb46e8e902e6"
+    },
+    {
+      "bytes": 264,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\15_STATISTICAL_INTERPRETATION.md",
+      "sha256": "443e9cab64b339dc5c7526f0f8a879d7926684913722c3fc3ea36c43321dc77b"
+    },
+    {
+      "bytes": 409,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\16_IDENTIFICATION_BOUNDARIES.md",
+      "sha256": "16d48609002386e3e9d702bd275e353b0e955f61ed2e7e85c15f9ed0b9a698a9"
+    },
+    {
+      "bytes": 356,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\17_NEXT_OPERATIONAL_WITNESS_VOI.md",
+      "sha256": "a17fb68acb52fcd3514638ae2b7244146e7217a68c04394d0681adf4d1bc923c"
+    },
+    {
+      "bytes": 401,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\18_EXTERNAL_STATISTICAL_REVIEW_PROMPT.md",
+      "sha256": "cff68c37a15f4e2fe5d9faa08bf1967e3a5b35fc83f59c382a5b7c4b4be94da3"
+    },
+    {
+      "bytes": 134,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\AUTHORITY_AUDIT.md",
+      "sha256": "e08935da5c3eff7d3e2fa5d78e1d16313aa6fd9d939419e04a7b61161622aac7"
+    },
+    {
+      "bytes": 8223,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\BELAND_PLUS_M7B_REFERENCE_CALIBRATION_MEGA.md",
+      "sha256": "aef3c37c35f1c8317cf8bb504ed42716e74d2ca06bb5eeac5e281dc6c274a5e4"
+    },
+    {
+      "bytes": 164,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\graph_status.jsonl",
+      "sha256": "991adc3d711d5ebbe63745287fb9e42c6a3c00b2fa83e2d02324e29affa76ba1"
+    },
+    {
+      "bytes": 10846,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\independent_replicate_m7b.py",
+      "sha256": "e9584ba96091ec74b06b27ac274ce48715b028d42862cc7749ff8c5da976a148"
+    },
+    {
+      "bytes": 242,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\INDEPENDENT_REPLICATION_REPORT.md",
+      "sha256": "742e88aed9901a5a5b610c5fa8affb25a1517d5080dfa51f0f14d0f6d556c485"
+    },
+    {
+      "bytes": 1546,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M6_LOCK_RECEIPT.json",
+      "sha256": "4453bc2d8bf2f29c57cf5b6d666c6b186be96bf6d6e89a9bb2965ef3a31d870f"
+    },
+    {
+      "bytes": 2729,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7A_LOCK_RECEIPT.json",
+      "sha256": "e7f961e0566a8702f4067c7883b30bca5908301c1b7c17208851db5bb732b393"
+    },
+    {
+      "bytes": 24181,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_ALIGNMENT_ADVANTAGE.csv",
+      "sha256": "739a75290fbc06ad98457419deace36b95099b4576f66b6dea3a2bc29419b5de"
+    },
+    {
+      "bytes": 248,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_COVERAGE_RESULTS.csv",
+      "sha256": "0e0f00dabb3fc275b765e5c4249635e7227b281a93868a61a6f60db3066072d0"
+    },
+    {
+      "bytes": 663,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_IDA_ABNORMAL_CELLS.csv",
+      "sha256": "71b130f2dcbdd94a3bed59dae03adc4cef09f156016350172bbed7fa5c1f8bc1"
+    },
+    {
+      "bytes": 156,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_IDA_PARITY.json",
+      "sha256": "ea0e26bcf982643f99cd61975549050d1cea60f2c63109a8ae8b74ab12438de7"
+    },
+    {
+      "bytes": 1769,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_IDA_RANK_BOUNDS.json",
+      "sha256": "950c99e34f38e0baa406bd0d4bccd64b5a4e543dabd07e05040e642c9db1b4e0"
+    },
+    {
+      "bytes": 10920,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_INDEPENDENT_REPLICATION.json",
+      "sha256": "6f20e9c197a7714e49592ec2ede35890e07697e42ced617c19df217b3ecd9f06"
+    },
+    {
+      "bytes": 397,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_MAX_CELL_REFERENCE_THRESHOLD.json",
+      "sha256": "c83dbdc07a1715760ba1f69479070ba0c8a251ae035fed29b50b1d9af47e0b1f"
+    },
+    {
+      "bytes": 1692,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_PRIMARY_RESULTS_FREEZE.json",
+      "sha256": "d96b1f3b253beb6161c5ff094efb87fc86b49edfc51a495719efff6a30df96a9"
+    },
+    {
+      "bytes": 1400,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_PROSPECTIVE_FREEZE_RECEIPT.json",
+      "sha256": "a060915ec12fc948d7c6af8ff985a110f69e11d122c8ed5c8fbefb093f7481f9"
+    },
+    {
+      "bytes": 4563,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_PROSPECTIVE_REFERENCE_SPEC.json",
+      "sha256": "023cd4818c2c7edd0c774089c60d9464b49d24d468ec3f62934ab09dae15f277"
+    },
+    {
+      "bytes": 879,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_PROSPECTIVE_REFERENCE_SPEC.md",
+      "sha256": "ec863105269d93e0b8c8984a2dcaee5deeca7fa91d0542c9e8885b0a8f27eaf7"
+    },
+    {
+      "bytes": 20548,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_DEPENDENCE_REGISTRY.json",
+      "sha256": "9d8ede1d06310672b4ea2a6a422e482de4f6b66dc93831edae71a8e70a1f82c1"
+    },
+    {
+      "bytes": 367004,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_DOMAIN_AUDIT.csv",
+      "sha256": "c331284771671c7b40282b139d18090cebf4789d9aa7064d9285b5f3f4206ab9"
+    },
+    {
+      "bytes": 2940,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_FIT_TOLERANCES.json",
+      "sha256": "edf7e1fd472c1ac2146330b1a59102ace79ff63a9e95c24721a442fe40c38337"
+    },
+    {
+      "bytes": 360699,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_G_MATRICES.csv",
+      "sha256": "f722ffa8c92b6694bd7b8d04334a0d25908faac95ba30e216e31dc282ef564e6"
+    },
+    {
+      "bytes": 953637,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_G_MATRICES.json",
+      "sha256": "07ccb35f569577c90321c81d108ed999b06005865de1870bb62cc0bc2dda3cc4"
+    },
+    {
+      "bytes": 74406,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_STATISTICS.csv",
+      "sha256": "b9bb6610ea2c90cc7abed19ed2423c5d5d025d158a171334d74c8b2d9137b57a"
+    },
+    {
+      "bytes": 106589,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_WINDOW_REGISTRY.json",
+      "sha256": "1fa1a504d82817a7f0648ddad259d572b955fcb5f8d3ab63a4b70e76aebf9f67"
+    },
+    {
+      "bytes": 492,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REPLICATION_SUBAGENT_ADMISSION.json",
+      "sha256": "8cc463a623baf2646fb8fb9941f3b3d5751e37367b43be8de48d223ec4c710cf"
+    },
+    {
+      "bytes": 3667,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_RESULTS.json",
+      "sha256": "e2dab274fc0758f6c349841fe4e6d5ae1f7598fd9434da19d48726ec0de3d123"
+    },
+    {
+      "bytes": 5119,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_SENSITIVITY_RESULTS.json",
+      "sha256": "5b92b674535fb36b5c73e37e3ce3c90157a08f24f7d3a889f1a7dc9a6d0f0ff1"
+    },
+    {
+      "bytes": 199445,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_STRUCTURAL_PLACEBO_SCORES.csv",
+      "sha256": "ad467a3d642ce3bc9682dc1dabd27349f5d5cf2d213b0dacb3eb5827cc166e63"
+    },
+    {
+      "bytes": 60029,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_UNIFIED_SCORE_INTERVALS.csv",
+      "sha256": "1a8c2b35845f8e96a69f50a66e1c31a8aeadde797a6ee5725c61361ae4652ac6"
+    },
+    {
+      "bytes": 198,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\PRIVACY_AUDIT.md",
+      "sha256": "bc60f40a85e7437d453bf0efa830820249859abde6efe174701c21f1b2bb8763"
+    },
+    {
+      "bytes": 341,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\REPRODUCIBILITY_AUDIT.md",
+      "sha256": "c4a00b6ca34994e8d353ff487a07622cab2165fd5af3fdf282a13a3d97b8369e"
+    },
+    {
+      "bytes": 45545,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\run_m7b.py",
+      "sha256": "d652d2a59ed5f8e015e9586fc53ce0bb4f731fd391c9eaf71c76e2d3c00f9473"
+    },
+    {
+      "bytes": 335,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\TEST_REPORT.md",
+      "sha256": "aee48ab041df22e335ad4b6559771a89d29fa8907df11f83ea743103f2afb4a7"
+    }
+  ],
+  "status": "COMPLETE"
+}

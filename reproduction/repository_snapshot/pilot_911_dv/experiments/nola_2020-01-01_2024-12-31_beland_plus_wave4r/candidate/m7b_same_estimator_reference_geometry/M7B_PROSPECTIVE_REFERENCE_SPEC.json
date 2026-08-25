@@ -1,0 +1,144 @@
+{
+  "artifact_type": "M7B_PROSPECTIVE_REFERENCE_SPEC",
+  "dependence": {
+    "all": "all admitted",
+    "nonoverlap": "chronological earliest-start greedy removal of overlapping 120-hour event spans"
+  },
+  "duration_placebos": {
+    "duration_bins": 3,
+    "labels": "institution-free",
+    "mass": "each column equals the frozen aligned-witness column mass",
+    "patterns": [
+      "B2-B4",
+      "B4-B6",
+      "B7-B9"
+    ],
+    "transitions": 2
+  },
+  "estimator": {
+    "bin_coverage": "reported diagnostically; not substituted for the frozen five-day gate",
+    "bins": "ten consecutive 12-hour bins",
+    "eligibility": "symmetric five-day >=100 records and >=0.90 common-support coverage on both sides",
+    "leave_one_out": "each observation is omitted from its own empirical calibration pool; its G remains the locked paired event-versus-minus-seven-day estimator; Ida is never a reference observation",
+    "primary_columns": [
+      "J01",
+      "J10",
+      "J11"
+    ],
+    "strata": "initialtype|hour_bucket|schema_era",
+    "timestamp": "timecreate-derived frozen period tally",
+    "topology": [
+      "J00",
+      "J10",
+      "J01",
+      "J11"
+    ],
+    "weights": "within-bin reference common-support mass"
+  },
+  "exchangeability": "not adopted; no causal p-values or conformal claim",
+  "input": {
+    "bytes": 1995077,
+    "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave2\\data\\interim\\w2_period_tally.csv.gz",
+    "sha256": "cc60cb8f7042e5c44a7936b9aaf26984792b8837811076ef3ff60a4b06a9f45d"
+  },
+  "interpretation_vocabulary": [
+    "EMPIRICAL_REFERENCE_RARITY",
+    "DESCRIPTIVE_REFERENCE_PATTERN",
+    "REFERENCE_FIT_TOLERANCES"
+  ],
+  "max_cell": {
+    "quantile": 0.95,
+    "rule": "abs(G_Ida)>c_0.95",
+    "set": "NONOVERLAPPING_PRIMARY"
+  },
+  "optimization": {
+    "lower": "frozen M7A root-node LP/support/spectral lower bound minus 1e-8 certificate tolerance",
+    "refine_if": [
+      "overlaps Ida interval",
+      "overlaps 0.25",
+      "could alter q50/q75/q90/q95",
+      "could alter placebo conclusion"
+    ],
+    "refinement": "resource-bounded exact-tree branch refinement; no Cartesian enumeration; unresolved intervals stay intervals",
+    "upper": "minimum feasible leaf over every frozen M7A multistart initial triple"
+  },
+  "privacy_class": "aggregate topology tally; no notes, narratives, addresses, or identities",
+  "rank": "interval-valued upper-tail rank and add-one fraction exactly as governing request section 10",
+  "scientific_question": "Is Ida restricted-model incompatibility unusual relative to qualified non-Ida windows under the exact same M5-primary estimator?",
+  "statistics": {
+    "primary": "U_full interval",
+    "secondary": [
+      "A",
+      "sigma1",
+      "sigma2",
+      "sigma3",
+      "U_direct",
+      "Q",
+      "D"
+    ]
+  },
+  "status": "FROZEN_BEFORE_PSEUDO_EVENT_OUTCOMES",
+  "stop_rules": [
+    "authority mismatch",
+    "Ida parity >1e-10",
+    "outcome-selected references",
+    "topology change",
+    "raw-text exposure",
+    "predecessor mutation",
+    "replication failure"
+  ],
+  "strict_support_sensitivity": "all ten bins have event and reference coverage >=0.75",
+  "support_library": "SHIFTED_IDA_RELATIVE_SUPPORT_LIBRARY: exact lambda=0 M7A candidates, trees, union capacity, and unified LP",
+  "timing_placebos": {
+    "ALIGN_0": {
+      "padding": "zero",
+      "shift_bins": 0,
+      "wrap": false
+    },
+    "SHIFT_MINUS_1": {
+      "padding": "zero",
+      "shift_bins": -1,
+      "wrap": false
+    },
+    "SHIFT_MINUS_2": {
+      "padding": "zero",
+      "shift_bins": -2,
+      "wrap": false
+    },
+    "SHIFT_MINUS_3": {
+      "padding": "zero",
+      "shift_bins": -3,
+      "wrap": false
+    },
+    "SHIFT_MINUS_4": {
+      "padding": "zero",
+      "shift_bins": -4,
+      "wrap": false
+    },
+    "SHIFT_PLUS_1": {
+      "padding": "zero",
+      "shift_bins": 1,
+      "wrap": false
+    },
+    "SHIFT_PLUS_2": {
+      "padding": "zero",
+      "shift_bins": 2,
+      "wrap": false
+    },
+    "SHIFT_PLUS_3": {
+      "padding": "zero",
+      "shift_bins": 3,
+      "wrap": false
+    },
+    "SHIFT_PLUS_4": {
+      "padding": "zero",
+      "shift_bins": 4,
+      "wrap": false
+    }
+  },
+  "universes": {
+    "FULL_QUALIFIED_REFERENCE": "locked Wave2/Wave3 eligible non-Ida Sunday-start five-day windows after frozen context-calendar exclusions",
+    "SAME_SEASON_STAGE_REFERENCE": "STAGE_ERA with start month in 6..11",
+    "STAGE_ERA_MATCHED_REFERENCE": "FULL with start >= 2021-07-01"
+  }
+}

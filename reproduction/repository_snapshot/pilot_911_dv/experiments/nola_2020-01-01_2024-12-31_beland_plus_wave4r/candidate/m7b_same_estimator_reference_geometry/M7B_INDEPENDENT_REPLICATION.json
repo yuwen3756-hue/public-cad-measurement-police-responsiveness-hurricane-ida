@@ -1,0 +1,377 @@
+{
+  "aggregate_only": true,
+  "artifact_type": "M7B_INDEPENDENT_REPLICATION",
+  "forbidden_primary_numeric_outputs_read": false,
+  "ida": {
+    "g": [
+      [
+        0.004516272565471647,
+        0.05394627794144292,
+        -0.1158850337838306
+      ],
+      [
+        0.08649926714005592,
+        0.05805029642559482,
+        -0.42228762837231976
+      ],
+      [
+        0.06771209220499283,
+        0.08376971478246471,
+        -0.3535107028369851
+      ],
+      [
+        0.06830634846294156,
+        0.05373224663007888,
+        -0.21595390404941014
+      ],
+      [
+        0.04215185977638085,
+        0.13088920996541262,
+        -0.26581313771607507
+      ],
+      [
+        0.30667649203789515,
+        0.04415498886535223,
+        -0.5071816170350076
+      ],
+      [
+        0.32307063653380874,
+        -0.011393412788761628,
+        -0.45524170615825876
+      ],
+      [
+        0.18649391466405307,
+        0.0009570323538513593,
+        -0.22777886900380373
+      ],
+      [
+        0.02268230963883138,
+        -0.07701863354037265,
+        0.046227283183804944
+      ],
+      [
+        0.012846288465183018,
+        0.05078926373908423,
+        -0.041366766376159395
+      ]
+    ],
+    "g_hash": "ab37a98cef22e54e923f5dd3adc13322628cbc4f4b292b58f7d57b4b088b4c07",
+    "interval": [
+      0.25073448467103193,
+      0.2507344946710318
+    ],
+    "parity_max_abs": 4.1261438710193943e-13,
+    "simplex_max_abs": 1.1102230246251565e-16
+  },
+  "inputs": {
+    "aggregate_tally_sha256": "cc60cb8f7042e5c44a7936b9aaf26984792b8837811076ef3ff60a4b06a9f45d",
+    "freeze_sha256": "a060915ec12fc948d7c6af8ff985a110f69e11d122c8ed5c8fbefb093f7481f9",
+    "m7a_search_sha256": "4094dab911768a19ecf00fc561c859676d22513b5f1447f455f881dc4abd8a43",
+    "m7a_tree_sha256": "243c68a2c9149c9cff2febecc930040f9bfd4bc559d7741f4a89ad2d8410adeb",
+    "registry_sha256": "1fa1a504d82817a7f0648ddad259d572b955fcb5f8d3ab63a4b70e76aebf9f67",
+    "spec_sha256": "023cd4818c2c7edd0c774089c60d9464b49d24d468ec3f62934ab09dae15f277"
+  },
+  "max_cell": {
+    "exceeds": true,
+    "ida_max_abs": 0.5071816170350076,
+    "n_nonoverlap": 217,
+    "quantile": 0.95,
+    "threshold": 0.20939747635914793
+  },
+  "methods": {
+    "estimator": "paired event-minus-seven-day, within-bin reference-common-support weights",
+    "score": "M7A root LP lower minus 1e-8; min every frozen multistart initial feasible leaf plus best-known leaf",
+    "solver": "SciPy HiGHS dual simplex"
+  },
+  "placebos": {
+    "ida": {
+      "-1": {
+        "lower": 0.27670444010940626,
+        "upper": 0.27670445010940625
+      },
+      "-2": {
+        "lower": 0.14045937837871197,
+        "upper": 0.14045938837871394
+      },
+      "-3": {
+        "lower": 0.22777885900380374,
+        "upper": 0.22777886900380373
+      },
+      "-4": {
+        "lower": 0.45524169615825877,
+        "upper": 0.45524170615825876
+      },
+      "0": {
+        "lower": 0.25073448467103193,
+        "upper": 0.2507344946710318
+      },
+      "1": {
+        "lower": 0.13700306609380442,
+        "upper": 0.13700307609380433
+      },
+      "2": {
+        "lower": 0.42228761837231976,
+        "upper": 0.42228762837231976
+      },
+      "3": {
+        "lower": 0.42228761837231976,
+        "upper": 0.42228762837231976
+      },
+      "4": {
+        "lower": 0.42228761837231976,
+        "upper": 0.42228762837231976
+      }
+    },
+    "reference_stratified_sample": {
+      "2020-01-12": {
+        "-4": 0.10867344851523064,
+        "0": 0.062063941738321485,
+        "4": 0.07788013824231603
+      },
+      "2020-06-21": {
+        "-4": 0.06778949159651913,
+        "0": 0.044760460899054236,
+        "4": 0.040283803958806104
+      },
+      "2020-12-06": {
+        "-4": 0.07676485076263045,
+        "0": 0.061727294816171764,
+        "4": 0.11419544115820186
+      },
+      "2021-05-23": {
+        "-4": 0.07237045878440321,
+        "0": 0.04980338166543082,
+        "4": 0.0553310348485887
+      },
+      "2021-10-31": {
+        "-4": 0.06174096783767596,
+        "0": 0.04522401366894369,
+        "4": 0.08686860909664215
+      },
+      "2022-04-03": {
+        "-4": 0.057454377028926765,
+        "0": 0.04073115126022193,
+        "4": 0.1330660109825554
+      },
+      "2022-08-28": {
+        "-4": 0.15714550705335117,
+        "0": 0.10034530442516357,
+        "4": 0.057067035318925
+      },
+      "2023-03-05": {
+        "-4": 0.08307180439711559,
+        "0": 0.03859085902214862,
+        "4": 0.07127827372641651
+      },
+      "2023-08-06": {
+        "-4": 0.13543908489633177,
+        "0": 0.06019059635180904,
+        "4": 0.12072415830481348
+      },
+      "2024-02-18": {
+        "-4": 0.14897811451035398,
+        "0": 0.0766705432448075,
+        "4": 0.0949430550650163
+      },
+      "2024-07-14": {
+        "-4": 0.08161603709223757,
+        "0": 0.04808660670706484,
+        "4": 0.12185451162516384
+      },
+      "2024-12-29": {
+        "-4": 0.07571289536168439,
+        "0": -1e-08,
+        "4": 0.15014850601390065
+      }
+    }
+  },
+  "ranks": {
+    "FULL_QUALIFIED_REFERENCE:all": {
+      "definitely_ge": 0,
+      "n": 217,
+      "possibly_ge": 0
+    },
+    "FULL_QUALIFIED_REFERENCE:nonoverlap": {
+      "definitely_ge": 0,
+      "n": 217,
+      "possibly_ge": 0
+    },
+    "SAME_SEASON_STAGE_REFERENCE:all": {
+      "definitely_ge": 0,
+      "n": 86,
+      "possibly_ge": 0
+    },
+    "SAME_SEASON_STAGE_REFERENCE:nonoverlap": {
+      "definitely_ge": 0,
+      "n": 86,
+      "possibly_ge": 0
+    },
+    "STAGE_ERA_MATCHED_REFERENCE:all": {
+      "definitely_ge": 0,
+      "n": 153,
+      "possibly_ge": 0
+    },
+    "STAGE_ERA_MATCHED_REFERENCE:nonoverlap": {
+      "definitely_ge": 0,
+      "n": 153,
+      "possibly_ge": 0
+    }
+  },
+  "reference": {
+    "interval_summary": {
+      "lower_min": -1e-08,
+      "median_upper": 0.061777760199687115,
+      "upper_max": 0.21251620085921316
+    },
+    "n": 217,
+    "sample": [
+      {
+        "g_hash": "f621b9bfd75e7fb4957a2fb0b1981098c79547c04f41586bbb1ee45d302050c9",
+        "lower": 0.062063941738321485,
+        "max_abs_g": 0.10867345851523064,
+        "start": "2020-01-12",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE"
+        ],
+        "upper": 0.0620639517383215
+      },
+      {
+        "g_hash": "44d335583fb40557a83c9be73ffa6d53aa2c82895c0e18515817b975c31a3a5e",
+        "lower": 0.044760460899054236,
+        "max_abs_g": 0.06778950159651913,
+        "start": "2020-06-21",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE"
+        ],
+        "upper": 0.04733746564595105
+      },
+      {
+        "g_hash": "247a05085f56fb9c01406f92c753fc382201c0c639bafbd752e05ddcef91afac",
+        "lower": 0.061727294816171764,
+        "max_abs_g": 0.11419545115820186,
+        "start": "2020-12-06",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE"
+        ],
+        "upper": 0.06172730481617176
+      },
+      {
+        "g_hash": "87ae1aa4b952faac96b083936b5dcd65396d82d11f58c23a1c050241da2d74bc",
+        "lower": 0.04980338166543082,
+        "max_abs_g": 0.0723704687844032,
+        "start": "2021-05-23",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE"
+        ],
+        "upper": 0.04980339166543082
+      },
+      {
+        "g_hash": "2ac0076a5dbef24d950cb4f0157b676e0de7609d4488ed6de37202c46c522de2",
+        "lower": 0.04522401366894369,
+        "max_abs_g": 0.08686861909664215,
+        "start": "2021-10-31",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE",
+          "STAGE_ERA_MATCHED_REFERENCE",
+          "SAME_SEASON_STAGE_REFERENCE"
+        ],
+        "upper": 0.04522402366894368
+      },
+      {
+        "g_hash": "80cb7bcfd8be55882a669da56122d41ba64ce2b40f30a8da87a397172a8b086a",
+        "lower": 0.04073115126022193,
+        "max_abs_g": 0.1330660209825554,
+        "start": "2022-04-03",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE",
+          "STAGE_ERA_MATCHED_REFERENCE"
+        ],
+        "upper": 0.05422887414082249
+      },
+      {
+        "g_hash": "1e50165f7726ddeeacb2abe6e38b2aee88c13c6b0e222228bc114d0a945968c0",
+        "lower": 0.10034530442516357,
+        "max_abs_g": 0.15714551705335117,
+        "start": "2022-08-28",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE",
+          "STAGE_ERA_MATCHED_REFERENCE",
+          "SAME_SEASON_STAGE_REFERENCE"
+        ],
+        "upper": 0.10034531442516356
+      },
+      {
+        "g_hash": "61e078f75d74fc458f80373350f1143edc2e031acd5f74433127342050df6305",
+        "lower": 0.03859085902214862,
+        "max_abs_g": 0.10070179453439368,
+        "start": "2023-03-05",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE",
+          "STAGE_ERA_MATCHED_REFERENCE"
+        ],
+        "upper": 0.06408223186245611
+      },
+      {
+        "g_hash": "a6ecda6872e3ba57f5e4b69787cbeff2f4335a004d0f4891d631550a5890162b",
+        "lower": 0.06019059635180904,
+        "max_abs_g": 0.13543909489633177,
+        "start": "2023-08-06",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE",
+          "STAGE_ERA_MATCHED_REFERENCE",
+          "SAME_SEASON_STAGE_REFERENCE"
+        ],
+        "upper": 0.06019060635180906
+      },
+      {
+        "g_hash": "d5f3af5f0b3c9ff2b64ab058070aa061ab1ed160089f17466827a1a61657e23b",
+        "lower": 0.0766705432448075,
+        "max_abs_g": 0.15137626433922727,
+        "start": "2024-02-18",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE",
+          "STAGE_ERA_MATCHED_REFERENCE"
+        ],
+        "upper": 0.07667055324480748
+      },
+      {
+        "g_hash": "6f05259b0d69d393cc1ec72c4513539b896e69c7cc9d00b3c75ce2c48f44d462",
+        "lower": 0.04808660670706484,
+        "max_abs_g": 0.12185452162516383,
+        "start": "2024-07-14",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE",
+          "STAGE_ERA_MATCHED_REFERENCE",
+          "SAME_SEASON_STAGE_REFERENCE"
+        ],
+        "upper": 0.05938774524472617
+      },
+      {
+        "g_hash": "e2e5d1d484e2d2a2f5140604ccedb13a59a88e67f264857e1d1dfd4fa21ff45b",
+        "lower": -1e-08,
+        "max_abs_g": 0.15014851601390064,
+        "start": "2024-12-29",
+        "universes": [
+          "FULL_QUALIFIED_REFERENCE",
+          "STAGE_ERA_MATCHED_REFERENCE"
+        ],
+        "upper": 0.07000058356676005
+      }
+    ]
+  },
+  "self_check": {
+    "checks": [
+      "217 qualified windows",
+      "Ida G parity <=1e-10",
+      "all G finite",
+      "all interval lower<=upper"
+    ],
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "tolerances": {
+    "LP": 1e-09,
+    "certificate": 1e-08,
+    "parity": 1e-10
+  }
+}

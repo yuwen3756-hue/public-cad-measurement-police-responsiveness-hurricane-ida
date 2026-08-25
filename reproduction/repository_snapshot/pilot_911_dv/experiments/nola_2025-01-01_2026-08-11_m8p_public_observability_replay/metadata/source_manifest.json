@@ -1,0 +1,263 @@
+{
+  "generated_at_utc": "2026-08-11T22:58:15.548128Z",
+  "manifest_version": "m8p_source_manifest_v1",
+  "primary_source_rule": "Official City of New Orleans, Data.NOLA, NOPD, and the public NOPD Power BI report only.",
+  "sources": [
+    {
+      "bytes": 83247137,
+      "created_at_utc": "2025-01-01T09:00:34Z",
+      "data_updated_at_utc": "2026-01-01T09:01:07Z",
+      "dataset_id": "4xwx-sfte",
+      "kind": "official_csv_export",
+      "retrieved_at_utc": "2026-08-11T22:29:26.866000Z",
+      "rows": 329770,
+      "sha256": "be8416343d253e2518a16ae007568a1561ee8b511dbdef3d5465956a198ae875",
+      "title": "Calls for Service 2025",
+      "url": "https://data.nola.gov/api/views/4xwx-sfte/rows.csv?accessType=DOWNLOAD",
+      "view_last_modified_at_utc": "2025-01-22T16:16:20Z",
+      "year": 2025
+    },
+    {
+      "bytes": 49017,
+      "created_at_utc": "2025-01-01T09:00:34Z",
+      "data_updated_at_utc": "2026-01-01T09:01:07Z",
+      "dataset_id": "4xwx-sfte",
+      "kind": "official_socrata_metadata",
+      "retrieved_at_utc": "2026-08-11T22:28:31.213034Z",
+      "rows": null,
+      "sha256": "ed9f78a6cff25bbe05aa80c7687b6ad7ac20edaa7a5bba1c6c628cc8df2aa52a",
+      "title": "Calls for Service 2025",
+      "url": "https://data.nola.gov/api/views/4xwx-sfte",
+      "view_last_modified_at_utc": "2025-01-22T16:16:20Z",
+      "year": 2025
+    },
+    {
+      "bytes": 39900,
+      "created_at_utc": "2025-01-01T09:00:34Z",
+      "data_updated_at_utc": "2026-01-01T09:01:07Z",
+      "dataset_id": "4xwx-sfte",
+      "kind": "official_socrata_columns",
+      "retrieved_at_utc": "2026-08-11T22:28:31.307072Z",
+      "rows": null,
+      "sha256": "a0947b814ade902d1bf15195ea8dc1ea4991af41c52ad8a7b10e80305f6a49b1",
+      "title": "Calls for Service 2025",
+      "url": "https://data.nola.gov/api/views/4xwx-sfte/columns.json",
+      "view_last_modified_at_utc": "2025-01-22T16:16:20Z",
+      "year": 2025
+    },
+    {
+      "bytes": 11880,
+      "created_at_utc": "2025-01-01T09:00:34Z",
+      "data_updated_at_utc": "2026-01-01T09:01:07Z",
+      "dataset_id": "4xwx-sfte",
+      "kind": "official_attached_xlsx_dictionary",
+      "retrieved_at_utc": "2026-08-11T22:29:27.170711Z",
+      "rows": null,
+      "sha256": "29fce9d3dce085ef39b35381dab56064ec4ae8e486013163a46d1bc91721ede6",
+      "title": "Calls for Service 2025",
+      "url": "https://data.nola.gov/api/views/4xwx-sfte/files/5606e2f9-612c-4736-a98c-d08dff821d57",
+      "view_last_modified_at_utc": "2025-01-22T16:16:20Z",
+      "year": 2025
+    },
+    {
+      "bytes": 53071196,
+      "created_at_utc": "2026-01-01T09:01:08Z",
+      "data_updated_at_utc": "2026-08-11T08:00:29Z",
+      "dataset_id": "es9j-6y5d",
+      "kind": "official_csv_export",
+      "retrieved_at_utc": "2026-08-11T22:30:00.254655Z",
+      "rows": 209829,
+      "sha256": "c151ca38199aa53921ad1fe048ee7108f6165e8700ae459070f4c014ce614e17",
+      "title": "Calls for Service 2026",
+      "url": "https://data.nola.gov/api/views/es9j-6y5d/rows.csv?accessType=DOWNLOAD",
+      "view_last_modified_at_utc": "2026-01-02T17:53:51Z",
+      "year": 2026
+    },
+    {
+      "bytes": 49215,
+      "created_at_utc": "2026-01-01T09:01:08Z",
+      "data_updated_at_utc": "2026-08-11T08:00:29Z",
+      "dataset_id": "es9j-6y5d",
+      "kind": "official_socrata_metadata",
+      "retrieved_at_utc": "2026-08-11T22:29:27.321311Z",
+      "rows": null,
+      "sha256": "cfdc1a6d8bd2b4747c0ecaf482a67f8c666a37135afff9133285b52e62806938",
+      "title": "Calls for Service 2026",
+      "url": "https://data.nola.gov/api/views/es9j-6y5d",
+      "view_last_modified_at_utc": "2026-01-02T17:53:51Z",
+      "year": 2026
+    },
+    {
+      "bytes": 39828,
+      "created_at_utc": "2026-01-01T09:01:08Z",
+      "data_updated_at_utc": "2026-08-11T08:00:29Z",
+      "dataset_id": "es9j-6y5d",
+      "kind": "official_socrata_columns",
+      "retrieved_at_utc": "2026-08-11T22:29:27.431267Z",
+      "rows": null,
+      "sha256": "ada167f2c70a010df18fb40e75f142d6f43acde5d259c719f1f3e0973f287d08",
+      "title": "Calls for Service 2026",
+      "url": "https://data.nola.gov/api/views/es9j-6y5d/columns.json",
+      "view_last_modified_at_utc": "2026-01-02T17:53:51Z",
+      "year": 2026
+    },
+    {
+      "bytes": 11880,
+      "created_at_utc": "2026-01-01T09:01:08Z",
+      "data_updated_at_utc": "2026-08-11T08:00:29Z",
+      "dataset_id": "es9j-6y5d",
+      "kind": "official_attached_xlsx_dictionary",
+      "retrieved_at_utc": "2026-08-11T22:30:00.476264Z",
+      "rows": null,
+      "sha256": "29fce9d3dce085ef39b35381dab56064ec4ae8e486013163a46d1bc91721ede6",
+      "title": "Calls for Service 2026",
+      "url": "https://data.nola.gov/api/views/es9j-6y5d/files/2e6b9959-4bde-45fb-971d-e65b51bf48c7",
+      "view_last_modified_at_utc": "2026-01-02T17:53:51Z",
+      "year": 2026
+    },
+    {
+      "bytes": 85343,
+      "kind": "official_nopd_dashboard_directory",
+      "retrieved_at_utc": "2026-08-11T22:34:55.980476Z",
+      "sha256": "5b712632b93e5fdd3c62ca9377ced0a09ce2a190c536493428f6940da3370465",
+      "title": "browse_nopd_data_public_records.html",
+      "url": "https://nola.gov/browse-nopd-data-public-records/"
+    },
+    {
+      "bytes": 282953,
+      "kind": "official_nopd_priority_response_policy",
+      "retrieved_at_utc": "2026-08-11T22:34:56.334312Z",
+      "sha256": "b9c63d7b32e7ef5bf9bcff258f78ab716e22e71334e032706da15b1d725f3186",
+      "title": "nopd_chapter_41_4_1_response_to_police_calls_revised_2025.pdf",
+      "url": "https://nola.gov/nola/media/NOPD/Policies/Chapter-41-4-1-Response-to-Police-Calls_1.pdf"
+    },
+    {
+      "bytes": 306858,
+      "kind": "official_nopd_alternative_response_policy",
+      "retrieved_at_utc": "2026-08-11T22:34:56.595552Z",
+      "sha256": "687327bea8407df526902cf72749635e8a6ae94772748fad9715392a75c7177e",
+      "title": "nopd_chapter_41_4_2_alternative_police_response_revised_2024.pdf",
+      "url": "https://nola.gov/nola/media/NOPD/Policies/41-4-2-Alternative-Police-Response-Effective-9-15-2024.pdf"
+    },
+    {
+      "bytes": 305145,
+      "kind": "official_public_reform_commitment_not_public_data",
+      "retrieved_at_utc": "2026-08-11T22:34:56.846578Z",
+      "sha256": "bc8b7ab7e5a717161cc76c3de8c276c66a9a9dc351da0221e6c40150963facd3",
+      "title": "nopd_sustainment_plan_2024.pdf",
+      "url": "https://nola.gov/nola/media/NOPD/Consent%20Decree/NOPD%20Audits/Sustainment-Plan-%28Ref-Doc-793-1%29-9-27-2024.pdf"
+    },
+    {
+      "bytes": 313885,
+      "kind": "public_dashboard_model",
+      "retrieved_at_utc": "2026-08-11T22:34:57.181997Z",
+      "sha256": "adfc9ac5aa27a10b2996e07a51b48b4449500d0937ba2d4a7e80a4af1c2c514b",
+      "title": "nopd_response_times_powerbi_models_and_exploration.json",
+      "url": "https://wabi-us-gov-virginia-api.analysis.usgovcloudapi.net/public/reports/b5330cbb-48ab-42fe-8228-01e3d60735ec/modelsAndExploration?preferReadOnlySession=true"
+    },
+    {
+      "bytes": 38352,
+      "kind": "public_dashboard_conceptual_schema_normalized",
+      "retrieved_at_utc": "2026-08-11T22:35:25.943542Z",
+      "sha256": "563315e372f4525f70856f951b2d1f2a991f08878f6c8741041698e8b509a880",
+      "title": "nopd_response_times_powerbi_conceptual_schema.json",
+      "url": "https://wabi-us-gov-virginia-api.analysis.usgovcloudapi.net/public/reports/conceptualschema"
+    },
+    {
+      "bytes": 1885,
+      "kind": "public_dashboard_aggregate_query",
+      "retrieved_at_utc": "2026-08-11T22:37:30.191447Z",
+      "sha256": "57621bb075979369acbd0c6192c70bb41f016381d26807b281f1863f930eb320",
+      "title": "nopd_response_times_powerbi_year_counts.json",
+      "url": "https://wabi-us-gov-virginia-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true"
+    },
+    {
+      "bytes": 2247,
+      "kind": "public_dashboard_aggregate_query",
+      "retrieved_at_utc": "2026-08-11T22:38:03.392095Z",
+      "sha256": "e69493d783a1601bc51d8ca1ff64a114d9f46309a383f348115da8d5b0b8182d",
+      "title": "nopd_response_times_powerbi_year_source_counts.json",
+      "url": "https://wabi-us-gov-virginia-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true"
+    },
+    {
+      "bytes": 2349,
+      "kind": "public_dashboard_aggregate_query",
+      "retrieved_at_utc": "2026-08-11T22:38:41.115918Z",
+      "sha256": "9d4333520184d922d3a343ca0c014b6828bb65c8ae3a2ddc5e8a3e6a11a90e73",
+      "title": "nopd_response_times_powerbi_year_priority_change_counts.json",
+      "url": "https://wabi-us-gov-virginia-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true"
+    },
+    {
+      "bytes": 2108,
+      "kind": "public_dashboard_aggregate_query",
+      "retrieved_at_utc": "2026-08-11T22:49:49.809239Z",
+      "sha256": "7b7b462ecaf14eb3d2f3d326fba82df8e4d36dc25fe0f928c99ff3992aaeb577",
+      "title": "nopd_response_times_powerbi_enroute_aggregate.json",
+      "url": "https://wabi-us-gov-virginia-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true"
+    },
+    {
+      "bytes": 2173,
+      "kind": "public_dashboard_aggregate_query",
+      "retrieved_at_utc": "2026-08-11T22:56:35.989389Z",
+      "sha256": "bb9afd629126e39b236a9c3799e77a09e2a3d5056993992f59f6a31dc9416f4e",
+      "title": "nopd_response_times_powerbi_all_dispositions_aggregate.json",
+      "url": "https://wabi-us-gov-virginia-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true"
+    },
+    {
+      "bytes": 1955,
+      "kind": "public_dashboard_aggregate_query",
+      "retrieved_at_utc": "2026-08-11T22:56:09.064883Z",
+      "sha256": "446a6073a52c9e8d5a4d59d05e1648da21ca9c56c6d8748c4dfe7c36eee867cd",
+      "title": "nopd_response_times_powerbi_cad_source_detail_aggregate.json",
+      "url": "https://wabi-us-gov-virginia-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true"
+    },
+    {
+      "bytes": 1884,
+      "kind": "public_dashboard_aggregate_query",
+      "retrieved_at_utc": "2026-08-11T22:56:08.828273Z",
+      "sha256": "249e0ef508acfd1b9d6bdbd2c9fb16f7d81ddb82530f6652ebf76b6e301d4d27",
+      "title": "nopd_response_times_powerbi_initial_modifier_aggregate.json",
+      "url": "https://wabi-us-gov-virginia-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true"
+    },
+    {
+      "bytes": 1919,
+      "kind": "public_dashboard_aggregate_query",
+      "retrieved_at_utc": "2026-08-11T22:56:06.352734Z",
+      "sha256": "df58290eba2dc63848479f26235c701b5da78d8d2a113f0e2c45a6d9a6c2121d",
+      "title": "nopd_response_times_powerbi_final_modifier_aggregate.json",
+      "url": "https://wabi-us-gov-virginia-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true"
+    },
+    {
+      "bytes": 1766,
+      "kind": "public_dashboard_aggregate_query",
+      "retrieved_at_utc": "2026-08-11T22:56:06.732307Z",
+      "sha256": "a78217220273ca5eee9a88ccad67d44d356ce87447f4dc27cbc5b4fd60f1b4f5",
+      "title": "nopd_response_times_powerbi_signal_change_aggregate.json",
+      "url": "https://wabi-us-gov-virginia-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true"
+    },
+    {
+      "bytes": 33821,
+      "kind": "official_epr_2025_metadata",
+      "retrieved_at_utc": "2026-08-11T22:39:51.297920Z",
+      "sha256": "32ab72d7a3f0fbeb0a5018b148f201bfad7ccfddb8e0c69675d8a9445766abf4",
+      "title": "electronic_police_report_2025_metadata.json",
+      "url": "https://data.nola.gov/api/views/agqi-9adb"
+    },
+    {
+      "bytes": 26577,
+      "kind": "official_epr_2025_columns",
+      "retrieved_at_utc": "2026-08-11T22:39:51.376126Z",
+      "sha256": "fa9136417d05059063da5f86d43c32917ed6e3ce2491566892c1b53db45656bb",
+      "title": "electronic_police_report_2025_columns.json",
+      "url": "https://data.nola.gov/api/views/agqi-9adb/columns.json"
+    },
+    {
+      "bytes": 170743,
+      "kind": "official_socrata_catalog_query",
+      "retrieved_at_utc": "2026-08-11T22:39:51.679534Z",
+      "sha256": "c7b1f638dd6490409760f7094d6c466f18d20280ec9c31b8aeee1adb732e1083",
+      "title": "socrata_catalog_search_epr_2026.json",
+      "url": "https://api.us.socrata.com/api/catalog/v1?q=Electronic%20Police%20Report%202026&search_context=data.nola.gov&limit=20"
+    }
+  ]
+}

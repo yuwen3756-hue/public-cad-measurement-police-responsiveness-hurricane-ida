@@ -1,0 +1,27 @@
+{
+  "artifact_type": "M7B_PROSPECTIVE_FREEZE_RECEIPT",
+  "authority_receipts": [
+    {
+      "bytes": 1546,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M6_LOCK_RECEIPT.json",
+      "sha256": "4453bc2d8bf2f29c57cf5b6d666c6b186be96bf6d6e89a9bb2965ef3a31d870f"
+    },
+    {
+      "bytes": 2729,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7A_LOCK_RECEIPT.json",
+      "sha256": "e7f961e0566a8702f4067c7883b30bca5908301c1b7c17208851db5bb732b393"
+    }
+  ],
+  "pseudo_event_G_opened": false,
+  "spec_json": {
+    "bytes": 4563,
+    "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_PROSPECTIVE_REFERENCE_SPEC.json",
+    "sha256": "023cd4818c2c7edd0c774089c60d9464b49d24d468ec3f62934ab09dae15f277"
+  },
+  "spec_markdown": {
+    "bytes": 879,
+    "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_PROSPECTIVE_REFERENCE_SPEC.md",
+    "sha256": "ec863105269d93e0b8c8984a2dcaee5deeca7fa91d0542c9e8885b0a8f27eaf7"
+  },
+  "status": "FROZEN"
+}

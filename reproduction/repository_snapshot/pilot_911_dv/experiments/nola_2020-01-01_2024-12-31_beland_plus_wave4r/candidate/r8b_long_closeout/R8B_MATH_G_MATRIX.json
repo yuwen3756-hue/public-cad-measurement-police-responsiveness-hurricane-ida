@@ -1,0 +1,127 @@
+{
+  "artifact_type": "R8B_MATH_G_MATRIX",
+  "definition": "G=[Delta_J01,Delta_J10,Delta_J11]",
+  "identities": "PASS",
+  "rows": [
+    {
+      "Delta_J00": 0.057422483278,
+      "Delta_J01": 0.00451627256547,
+      "Delta_J10": 0.0539462779414,
+      "Delta_J11": -0.115885033784,
+      "Delta_arrival": -0.111368761219,
+      "Delta_dispatch": -0.061938755843,
+      "arrival_identity_error": -4.699990396872522e-13,
+      "bin": "B1",
+      "dispatch_identity_error": -3.999994779846361e-13,
+      "simplex_error": 8.700123954596961e-13
+    },
+    {
+      "Delta_J00": 0.277738064806,
+      "Delta_J01": 0.0864992671401,
+      "Delta_J10": 0.0580502964256,
+      "Delta_J11": -0.422287628372,
+      "Delta_arrival": -0.335788361232,
+      "Delta_dispatch": -0.364237331946,
+      "arrival_identity_error": -9.997558336749535e-14,
+      "bin": "B2",
+      "dispatch_identity_error": 4.000133557724439e-13,
+      "simplex_error": -3.0003777240494856e-13
+    },
+    {
+      "Delta_J00": 0.20202889585,
+      "Delta_J01": 0.067712092205,
+      "Delta_J10": 0.0837697147825,
+      "Delta_J11": -0.353510702837,
+      "Delta_arrival": -0.285798610632,
+      "Delta_dispatch": -0.269740988055,
+      "arrival_identity_error": -5.551115123125783e-17,
+      "bin": "B3",
+      "dispatch_identity_error": -5.000444502911705e-13,
+      "simplex_error": 5.000444502911705e-13
+    },
+    {
+      "Delta_J00": 0.093915308956,
+      "Delta_J01": 0.0683063484629,
+      "Delta_J10": 0.0537322466301,
+      "Delta_J11": -0.215953904049,
+      "Delta_arrival": -0.147647555586,
+      "Delta_dispatch": -0.162221657419,
+      "arrival_identity_error": 9.997558336749535e-14,
+      "bin": "B4",
+      "dispatch_identity_error": -1.0000333894311098e-13,
+      "simplex_error": 0.0
+    },
+    {
+      "Delta_J00": 0.092772067975,
+      "Delta_J01": 0.0421518597764,
+      "Delta_J10": 0.130889209965,
+      "Delta_J11": -0.265813137716,
+      "Delta_arrival": -0.22366127794,
+      "Delta_dispatch": -0.134923927751,
+      "arrival_identity_error": -3.9998560019682827e-13,
+      "bin": "B5",
+      "dispatch_identity_error": 0.0,
+      "simplex_error": 4.000133557724439e-13
+    },
+    {
+      "Delta_J00": 0.156350136132,
+      "Delta_J01": 0.306676492038,
+      "Delta_J10": 0.0441549888654,
+      "Delta_J11": -0.507181617035,
+      "Delta_arrival": -0.200505124997,
+      "Delta_dispatch": -0.46302662817,
+      "arrival_identity_error": -2.7755575615628914e-17,
+      "bin": "B6",
+      "dispatch_identity_error": -4.000133557724439e-13,
+      "simplex_error": 4.000133557724439e-13
+    },
+    {
+      "Delta_J00": 0.143564482413,
+      "Delta_J01": 0.323070636534,
+      "Delta_J10": -0.0113934127888,
+      "Delta_J11": -0.455241706158,
+      "Delta_arrival": -0.132171069624,
+      "Delta_dispatch": -0.466635118947,
+      "arrival_identity_error": 5.551115123125783e-17,
+      "bin": "B7",
+      "dispatch_identity_error": -1.999511667349907e-13,
+      "simplex_error": 1.999511667349907e-13
+    },
+    {
+      "Delta_J00": 0.040327921986,
+      "Delta_J01": 0.186493914664,
+      "Delta_J10": 0.000957032353851,
+      "Delta_J11": -0.227778869004,
+      "Delta_arrival": -0.04128495434,
+      "Delta_dispatch": -0.22682183665,
+      "arrival_identity_error": -1.3877787807814457e-17,
+      "bin": "B8",
+      "dispatch_identity_error": 1.48991929904696e-13,
+      "simplex_error": -1.48991929904696e-13
+    },
+    {
+      "Delta_J00": 0.008109040717,
+      "Delta_J01": 0.0226823096388,
+      "Delta_J10": -0.0770186335404,
+      "Delta_J11": 0.0462272831838,
+      "Delta_arrival": 0.068909592823,
+      "Delta_dispatch": -0.030791350356,
+      "arrival_identity_error": 3.999994779846361e-13,
+      "bin": "B9",
+      "dispatch_identity_error": 6.0000962531781e-13,
+      "simplex_error": -8.0001283375708e-13
+    },
+    {
+      "Delta_J00": -0.022268785828,
+      "Delta_J01": 0.0128462884652,
+      "Delta_J10": 0.0507892637391,
+      "Delta_J11": -0.0413667663762,
+      "Delta_arrival": -0.028520477911,
+      "Delta_dispatch": 0.009422497363,
+      "arrival_identity_error": 0.0,
+      "bin": "B10",
+      "dispatch_identity_error": 1.0000333894311098e-13,
+      "simplex_error": 9.999640004920707e-14
+    }
+  ]
+}

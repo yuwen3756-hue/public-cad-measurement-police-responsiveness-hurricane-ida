@@ -1,0 +1,696 @@
+{
+  "artifact_type": "M7D_E_AGGREGATE_KITAGAWA",
+  "bins": [
+    {
+      "Delta_q_all": -0.013646255710189181,
+      "bin": "B1",
+      "categories": [
+        {
+          "composition_component": 0.010277115604273097,
+          "disposition": "GOA",
+          "pi_event": 0.2158562213667219,
+          "pi_reference": 0.2052980132450331,
+          "q_event_effective": 0.9467537456780637,
+          "q_reference_effective": 1.0,
+          "within_component": -0.011212442742448968,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.024717311653569447,
+          "disposition": "RTF",
+          "pi_event": 0.24553831271060478,
+          "pi_reference": 0.271523178807947,
+          "q_event_effective": 1.0,
+          "q_reference_effective": 0.9024390243902439,
+          "within_component": 0.025222511781392766,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.024209353680239652,
+          "disposition": "NAT",
+          "pi_event": 0.5358191543445243,
+          "pi_reference": 0.5099337748344371,
+          "q_event_effective": 0.9094650947973151,
+          "q_reference_effective": 0.961038961038961,
+          "within_component": -0.026966760845642607,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "UNF",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        },
+        {
+          "composition_component": -0.01045872153443378,
+          "disposition": "OTHER",
+          "pi_event": 0.002786311578149003,
+          "pi_reference": 0.013245033112582781,
+          "q_event_effective": 1.0,
+          "q_reference_effective": 1.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "MISSING",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        }
+      ],
+      "composition_component": -0.0006895639034904776,
+      "identity_residual": 1.0581813203458523e-16,
+      "within_disposition_component": -0.01295669180669881
+    },
+    {
+      "Delta_q_all": -0.2580563248032083,
+      "bin": "B2",
+      "categories": [
+        {
+          "composition_component": 0.1572024054045193,
+          "disposition": "GOA",
+          "pi_event": 0.49181358597975977,
+          "pi_reference": 0.2933333333333333,
+          "q_event_effective": 0.5840609159699155,
+          "q_reference_effective": 1.0,
+          "within_component": -0.1632866452240653,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.15561174069231395,
+          "disposition": "RTF",
+          "pi_event": 0.06723415920651638,
+          "pi_reference": 0.2533333333333333,
+          "q_event_effective": 0.7513002031120076,
+          "q_reference_effective": 0.9210526315789475,
+          "within_component": -0.027208555173098548,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.056145996259765116,
+          "disposition": "NAT",
+          "pi_event": 0.3885887420007535,
+          "pi_reference": 0.4533333333333333,
+          "q_event_effective": 0.7932076719065266,
+          "q_reference_effective": 0.9411764705882353,
+          "within_component": -0.062289099035397914,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "UNF",
+          "pi_event": 0.003080206636057078,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        },
+        {
+          "composition_component": 0.024641653088456623,
+          "disposition": "OTHER",
+          "pi_event": 0.04928330617691325,
+          "pi_reference": 0.0,
+          "q_event_effective": 1.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.024641653088456623,
+          "zero_mass_q_convention": true
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "MISSING",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        }
+      ],
+      "composition_component": -0.02991367845910315,
+      "identity_residual": 0.0,
+      "within_disposition_component": -0.22814264634410514
+    },
+    {
+      "Delta_q_all": -0.19591586930988458,
+      "bin": "B3",
+      "categories": [
+        {
+          "composition_component": -0.010837315730634465,
+          "disposition": "GOA",
+          "pi_event": 0.2061056622467086,
+          "pi_reference": 0.21874999999999997,
+          "q_event_effective": 0.821319738856328,
+          "q_reference_effective": 0.8928571428571429,
+          "within_component": -0.015196535576088271,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.08299018963111533,
+          "disposition": "RTF",
+          "pi_event": 0.21691944475751387,
+          "pi_reference": 0.32031249999999994,
+          "q_event_effective": 0.75167538911167,
+          "q_reference_effective": 0.8536585365853658,
+          "within_component": -0.027394302324892976,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.08121845786655817,
+          "disposition": "NAT",
+          "pi_event": 0.5520969027093758,
+          "pi_reference": 0.42968749999999994,
+          "q_event_effective": 0.5451788636520397,
+          "q_reference_effective": 0.7818181818181819,
+          "within_component": -0.1161643958216499,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "UNF",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        },
+        {
+          "composition_component": -0.004043838332327001,
+          "disposition": "OTHER",
+          "pi_event": 0.024877990286401745,
+          "pi_reference": 0.031249999999999997,
+          "q_event_effective": 0.26925052348781164,
+          "q_reference_effective": 1.0,
+          "within_component": -0.02050774975973463,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "MISSING",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        }
+      ],
+      "composition_component": -0.016652885827518636,
+      "identity_residual": -1.6653345369377348e-16,
+      "within_disposition_component": -0.17926298348236577
+    },
+    {
+      "Delta_q_all": -0.11798382380696626,
+      "bin": "B4",
+      "categories": [
+        {
+          "composition_component": 0.10433817580462197,
+          "disposition": "GOA",
+          "pi_event": 0.3484007413490084,
+          "pi_reference": 0.23448275862068968,
+          "q_event_effective": 0.875929856259482,
+          "q_reference_effective": 0.9558823529411764,
+          "within_component": -0.02330149554857084,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.18709599295597984,
+          "disposition": "RTF",
+          "pi_event": 0.16566159940895014,
+          "pi_reference": 0.40344827586206894,
+          "q_event_effective": 0.6163807637379773,
+          "q_reference_effective": 0.9572649572649573,
+          "within_component": -0.09700028043000075,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0882987320254686,
+          "disposition": "NAT",
+          "pi_event": 0.4493516269004646,
+          "pi_reference": 0.3448275862068966,
+          "q_event_effective": 0.8295391995863043,
+          "q_reference_effective": 0.86,
+          "within_component": -0.012095667251584615,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0005798335088375346,
+          "disposition": "UNF",
+          "pi_event": 0.0011596670176750692,
+          "pi_reference": 0.0,
+          "q_event_effective": 1.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0005798335088375346,
+          "zero_mass_q_convention": true
+        },
+        {
+          "composition_component": 0.015497266924376762,
+          "disposition": "OTHER",
+          "pi_event": 0.035426365323901705,
+          "pi_reference": 0.017241379310344827,
+          "q_event_effective": 0.7044024023800264,
+          "q_reference_effective": 1.0,
+          "within_component": -0.007784229392972766,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "MISSING",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        }
+      ],
+      "composition_component": 0.02161801530732503,
+      "identity_residual": 1.3877787807814457e-16,
+      "within_disposition_component": -0.13960183911429144
+    },
+    {
+      "Delta_q_all": -0.08299322770866657,
+      "bin": "B5",
+      "categories": [
+        {
+          "composition_component": 0.0702220868400999,
+          "disposition": "GOA",
+          "pi_event": 0.22455484700758743,
+          "pi_reference": 0.1382488479262673,
+          "q_event_effective": 0.627281708979106,
+          "q_reference_effective": 1.0,
+          "within_component": -0.06761178657590607,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.14770244165067797,
+          "disposition": "RTF",
+          "pi_event": 0.19678972174602957,
+          "pi_reference": 0.3502304147465438,
+          "q_event_effective": 0.9646792963903796,
+          "q_reference_effective": 0.9605263157894737,
+          "within_component": 0.0011358820075792952,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.06306514888720713,
+          "disposition": "NAT",
+          "pi_event": 0.5666518822900052,
+          "pi_reference": 0.4976958525345622,
+          "q_event_effective": 0.9217335425826594,
+          "q_reference_effective": 0.9074074074074074,
+          "within_component": 0.00762399476128498,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "UNF",
+          "pi_event": 0.00790477614200485,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        },
+        {
+          "composition_component": -0.009726111978253845,
+          "disposition": "OTHER",
+          "pi_event": 0.004098772814372885,
+          "pi_reference": 0.013824884792626729,
+          "q_event_effective": 1.0,
+          "q_reference_effective": 1.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "MISSING",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        }
+      ],
+      "composition_component": -0.024141317901624795,
+      "identity_residual": 2.0816681711721685e-17,
+      "within_disposition_component": -0.058851909807041795
+    },
+    {
+      "Delta_q_all": -0.4950345505088084,
+      "bin": "B6",
+      "categories": [
+        {
+          "composition_component": 0.10872840206801171,
+          "disposition": "GOA",
+          "pi_event": 0.4044686276185998,
+          "pi_reference": 0.2576271186440678,
+          "q_event_effective": 0.5203683280658875,
+          "q_reference_effective": 0.9605263157894737,
+          "within_component": -0.1457133656776609,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.08907614177305657,
+          "disposition": "RTF",
+          "pi_event": 0.16330731772230753,
+          "pi_reference": 0.2983050847457627,
+          "q_event_effective": 0.376486554667342,
+          "q_reference_effective": 0.9431818181818182,
+          "within_component": -0.13079678102909675,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.00038557435163928216,
+          "disposition": "NAT",
+          "pi_event": 0.42780762504586906,
+          "pi_reference": 0.4271186440677966,
+          "q_event_effective": 0.2938629623493908,
+          "q_reference_effective": 0.8253968253968254,
+          "within_component": -0.22721113122135866,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "UNF",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        },
+        {
+          "composition_component": -0.008146269903946927,
+          "disposition": "OTHER",
+          "pi_event": 0.004416429613223763,
+          "pi_reference": 0.01694915254237288,
+          "q_event_effective": 0.5,
+          "q_reference_effective": 0.8,
+          "within_component": -0.003204837323339497,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "MISSING",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        }
+      ],
+      "composition_component": 0.01189156474264749,
+      "identity_residual": 0.0,
+      "within_disposition_component": -0.5069261152514559
+    },
+    {
+      "Delta_q_all": -0.48235949566214403,
+      "bin": "B7",
+      "categories": [
+        {
+          "composition_component": 0.07494628277718282,
+          "disposition": "GOA",
+          "pi_event": 0.3126865896860257,
+          "pi_reference": 0.21787709497206703,
+          "q_event_effective": 0.6579099391207212,
+          "q_reference_effective": 0.923076923076923,
+          "within_component": -0.07034398602873791,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.07459813794536584,
+          "disposition": "RTF",
+          "pi_event": 0.24786821634221928,
+          "pi_reference": 0.3631284916201117,
+          "q_event_effective": 0.41750620958538937,
+          "q_reference_effective": 0.8769230769230769,
+          "within_component": -0.14035109676284702,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.019211874938918055,
+          "disposition": "NAT",
+          "pi_event": 0.43166591702981283,
+          "pi_reference": 0.3966480446927374,
+          "q_event_effective": 0.2240216850148673,
+          "q_reference_effective": 0.8732394366197184,
+          "within_component": -0.2688780639262104,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "UNF",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        },
+        {
+          "composition_component": -0.007283545886570793,
+          "disposition": "OTHER",
+          "pi_event": 0.007779276941942211,
+          "pi_reference": 0.022346368715083796,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 1.0,
+          "within_component": -0.015062822828513003,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "MISSING",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        }
+      ],
+      "composition_component": 0.012276473884164247,
+      "identity_residual": 5.551115123125783e-17,
+      "within_disposition_component": -0.49463596954630834
+    },
+    {
+      "Delta_q_all": -0.2672626608634192,
+      "bin": "B8",
+      "categories": [
+        {
+          "composition_component": 0.16975173001956298,
+          "disposition": "GOA",
+          "pi_event": 0.39752922839574917,
+          "pi_reference": 0.20502092050209206,
+          "q_event_effective": 0.7635782255520627,
+          "q_reference_effective": 1.0,
+          "within_component": -0.07122798769814823,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.10734133383913992,
+          "disposition": "RTF",
+          "pi_event": 0.2045956641060585,
+          "pi_reference": 0.35146443514644354,
+          "q_event_effective": 0.5926835996281862,
+          "q_reference_effective": 0.8690476190476191,
+          "within_component": -0.07683750203409512,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.019341024650263265,
+          "disposition": "NAT",
+          "pi_event": 0.38672743543379506,
+          "pi_reference": 0.41422594142259417,
+          "q_event_effective": 0.5279085183284878,
+          "q_reference_effective": 0.8787878787878788,
+          "within_component": -0.1405190043145797,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0010684412306968052,
+          "disposition": "UNF",
+          "pi_event": 0.005459336726015906,
+          "pi_reference": 0.0041841004184100415,
+          "q_event_effective": 0.6756756756756757,
+          "q_reference_effective": 1.0,
+          "within_component": -0.0015638006180150187,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.01628296440007018,
+          "disposition": "OTHER",
+          "pi_event": 0.005688335338381461,
+          "pi_reference": 0.02510460251046025,
+          "q_event_effective": 0.677249726300182,
+          "q_reference_effective": 1.0,
+          "within_component": -0.0049692145593675735,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "MISSING",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        }
+      ],
+      "composition_component": 0.02785484836078642,
+      "identity_residual": 0.0,
+      "within_disposition_component": -0.29511750922420565
+    },
+    {
+      "Delta_q_all": -0.016951075114430503,
+      "bin": "B9",
+      "categories": [
+        {
+          "composition_component": 0.1185874042700385,
+          "disposition": "GOA",
+          "pi_event": 0.36813163208317223,
+          "pi_reference": 0.2368421052631579,
+          "q_event_effective": 0.8898354533784572,
+          "q_reference_effective": 0.9166666666666666,
+          "within_component": -0.008116089690252301,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.09938232963058444,
+          "disposition": "RTF",
+          "pi_event": 0.23128219081305817,
+          "pi_reference": 0.34868421052631576,
+          "q_event_effective": 0.8439692891934286,
+          "q_reference_effective": 0.8490566037735849,
+          "within_component": -0.001475235764767295,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.017571054580816432,
+          "disposition": "NAT",
+          "pi_event": 0.3895595556892116,
+          "pi_reference": 0.368421052631579,
+          "q_event_effective": 0.8231834334027692,
+          "q_reference_effective": 0.8392857142857144,
+          "within_component": -0.006102608329503514,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.004009680514384728,
+          "disposition": "UNF",
+          "pi_event": 0.008019361028769456,
+          "pi_reference": 0.0,
+          "q_event_effective": 1.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.004009680514384728,
+          "zero_mass_q_convention": true
+        },
+        {
+          "composition_component": -0.021522685596579414,
+          "disposition": "OTHER",
+          "pi_event": 0.0030072603857885464,
+          "pi_reference": 0.04605263157894737,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 1.0,
+          "within_component": -0.02452994598236796,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "MISSING",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        }
+      ],
+      "composition_component": 0.01926312413807581,
+      "identity_residual": 2.7755575615628914e-17,
+      "within_disposition_component": -0.03621419925250634
+    },
+    {
+      "Delta_q_all": -0.021713954129901403,
+      "bin": "B10",
+      "categories": [
+        {
+          "composition_component": -0.06007529577413983,
+          "disposition": "GOA",
+          "pi_event": 0.24083720661394808,
+          "pi_reference": 0.3025830258302583,
+          "q_event_effective": 0.9458903140852934,
+          "q_reference_effective": 1.0,
+          "within_component": -0.014702149048626417,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": -0.03221122032929425,
+          "disposition": "RTF",
+          "pi_event": 0.30060909720309426,
+          "pi_reference": 0.33579335793357934,
+          "q_event_effective": 0.8969357502403176,
+          "q_reference_effective": 0.9340659340659341,
+          "within_component": -0.011814870073149176,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.08131104825035965,
+          "disposition": "NAT",
+          "pi_event": 0.4518462418266936,
+          "pi_reference": 0.34686346863468637,
+          "q_event_effective": 0.8043551627142898,
+          "q_reference_effective": 0.7446808510638299,
+          "within_component": 0.023831226090160484,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0009582077651805885,
+          "disposition": "UNF",
+          "pi_event": 0.001916415530361177,
+          "pi_reference": 0.0,
+          "q_event_effective": 1.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0009582077651805885,
+          "zero_mass_q_convention": true
+        },
+        {
+          "composition_component": -0.009969108775573072,
+          "disposition": "OTHER",
+          "pi_event": 0.004791038825902943,
+          "pi_reference": 0.014760147601476014,
+          "q_event_effective": 1.0,
+          "q_reference_effective": 1.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": false
+        },
+        {
+          "composition_component": 0.0,
+          "disposition": "MISSING",
+          "pi_event": 0.0,
+          "pi_reference": 0.0,
+          "q_event_effective": 0.0,
+          "q_reference_effective": 0.0,
+          "within_component": 0.0,
+          "zero_mass_q_convention": true
+        }
+      ],
+      "composition_component": -0.019986368863466917,
+      "identity_residual": 3.426078865054194e-17,
+      "within_disposition_component": -0.00172758526643452
+    }
+  ],
+  "zero_mass_convention": "documented in frozen inputs"
+}

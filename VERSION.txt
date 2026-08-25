@@ -1,0 +1,4 @@
+Release date: 2026-08-24
+Paper version: R12.2
+Scientific-results version: R12
+Package version: 1

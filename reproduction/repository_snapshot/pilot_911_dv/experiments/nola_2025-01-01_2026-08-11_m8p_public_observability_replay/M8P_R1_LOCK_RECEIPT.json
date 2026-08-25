@@ -1,0 +1,58 @@
+{
+  "artifact_type": "BELAND_PLUS_M8P_R1_SEMANTIC_FIREWALL_LOCK_RECEIPT",
+  "created_at": "2026-08-11T23:27:54.5802882Z",
+  "lock_status": "M8P_SCIENTIFIC_CORE_LOCKED_WITH_STRUCTURAL_MODULE_STATUS_SEMANTIC_FIREWALL",
+  "repair_id": "M8P_R1_STRUCTURAL_MODULE_STATUS_SEMANTIC_FIREWALL",
+  "decision": "M8P_PUBLIC_OBSERVABILITY_PARTIALLY_IMPROVED",
+  "empirical_rerun": false,
+  "preserved_findings": {
+    "annual_snapshots_and_source_hashes": "UNCHANGED",
+    "current_data_validity_audit": "UNCHANGED",
+    "ida_observability_replay_L1_L7": "UNCHANGED",
+    "strict_contractions_proved": [],
+    "mechanism_probabilities_assigned": false
+  },
+  "semantic_firewall": {
+    "B": {
+      "public_semantic_enrichment": "PARTIAL_CONTEXT",
+      "m8d_structural_witness_status": "CLOSED"
+    },
+    "Q": {
+      "public_semantic_enrichment": "ENDPOINT_PROXY_ONLY",
+      "m8d_structural_witness_status": "CLOSED"
+    },
+    "P": {
+      "public_semantic_enrichment": "ENDPOINT_ENRICHED",
+      "m8d_structural_witness_status": "CLOSED"
+    },
+    "C": {
+      "public_semantic_enrichment": "SEMANTICS_QUALIFIED",
+      "m8d_structural_witness_status": "CLOSED"
+    },
+    "realized_m8d_witness_regime": "W_0=(CLOSED,CLOSED,CLOSED,CLOSED)"
+  },
+  "identified_set_qualification": "Endpoint-set equality is asserted only conditional on a maintained frozen common-semantic mapping. No unconditional equality and no strict contraction are claimed.",
+  "protected_artifact_hashes": {
+    "metadata/source_manifest.json": "c52304cd817db324f4a61a7eed85858dcebe5221628de27f3ab7cc40824448dd",
+    "metadata/schema_genealogy.csv": "396be518a7ba61f908dafae4ad780adc52dd0a5328bf4dbbcc70c4d3cb448646",
+    "data/processed/current_data_validity_audit.json": "faca4e0b712ad1f34835dfe79d0b8773f0e2539f43b3b1352939a6f45b6fbdf0",
+    "data/processed/field_completeness.csv": "8e220684e239d17cec709501818bbaf71e8f7b1a9eca8cdf65f93348c57e095e",
+    "data/processed/monthly_quality.csv": "b9870368715b8090f667170c0c4ffdab009ebcaf8f52c4f34b849d56251f9939"
+  },
+  "repaired_output_hashes": {
+    "data/processed/m8p_results.json": "d2e571fa0b0344b1c3cb4903a3da07e4841586fa451cc43b341361e610bbc27a",
+    "data/processed/reform_identification_crosswalk.csv": "2bf3927e16f6d67d77b74ae39d3af62b539cfe84c1ace036873a752ec42bb186",
+    "metadata/validation_report.json": "9d6924eaefd994bc17ffcff95ad6f5df854480d6d5d536773dba1a20bc66092a"
+  },
+  "focused_validation": {
+    "status": "PASS",
+    "checks": 20,
+    "failures": 0
+  },
+  "claim_firewall": [
+    "No claim that current reforms prevent another Ida.",
+    "No claim that current police performance is better.",
+    "No claim that the 2026 system would respond better.",
+    "No claim that Ida would have had a different outcome."
+  ]
+}

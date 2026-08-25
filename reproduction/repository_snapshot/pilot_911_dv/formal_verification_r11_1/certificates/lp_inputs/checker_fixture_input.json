@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "name": "exact_rational_checker_fixture",
+  "scope": "checker_fixture_only_not_a_paper_result",
+  "sense": "min",
+  "constraint_form": "A x >= b; x >= 0",
+  "dual_form": "A^T y <= c; y >= 0",
+  "A": [
+    ["1", "2"],
+    ["4", "2"]
+  ],
+  "b": ["4", "6"],
+  "c": ["1", "1"]
+}

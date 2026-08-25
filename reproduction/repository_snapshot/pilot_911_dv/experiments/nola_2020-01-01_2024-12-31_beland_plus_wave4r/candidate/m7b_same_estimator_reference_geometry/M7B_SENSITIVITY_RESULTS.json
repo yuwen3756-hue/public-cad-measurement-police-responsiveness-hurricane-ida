@@ -1,0 +1,187 @@
+{
+  "alignment_advantage_rank": {
+    "FULL_QUALIFIED_REFERENCE__ALL_QUALIFIED": {
+      "R": 217,
+      "rank_lower": 217,
+      "rank_upper": 217,
+      "tail_lower": 0.9954128440366973,
+      "tail_upper": 0.9954128440366973
+    },
+    "FULL_QUALIFIED_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 217,
+      "rank_lower": 217,
+      "rank_upper": 217,
+      "tail_lower": 0.9954128440366973,
+      "tail_upper": 0.9954128440366973
+    },
+    "SAME_SEASON_STAGE_REFERENCE__ALL_QUALIFIED": {
+      "R": 86,
+      "rank_lower": 87,
+      "rank_upper": 87,
+      "tail_lower": 1.0,
+      "tail_upper": 1.0
+    },
+    "SAME_SEASON_STAGE_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 86,
+      "rank_lower": 87,
+      "rank_upper": 87,
+      "tail_lower": 1.0,
+      "tail_upper": 1.0
+    },
+    "STAGE_ERA_MATCHED_REFERENCE__ALL_QUALIFIED": {
+      "R": 153,
+      "rank_lower": 153,
+      "rank_upper": 153,
+      "tail_lower": 0.9935064935064936,
+      "tail_upper": 0.9935064935064936
+    },
+    "STAGE_ERA_MATCHED_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 153,
+      "rank_lower": 153,
+      "rank_upper": 153,
+      "tail_lower": 0.9935064935064936,
+      "tail_upper": 0.9935064935064936
+    }
+  },
+  "alternate_valid_timestamp": {
+    "effect": "no alternate timestamp claim",
+    "status": "NOT_IDENTIFIED_FROM_FROZEN_AGGREGATE_TIMECREATE_TALLY"
+  },
+  "artifact_type": "M7B_SENSITIVITY_RESULTS",
+  "exclude_adjacent_emergencies": {
+    "R": 154,
+    "rank": {
+      "R": 154,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.0064516129032258064,
+      "p_upper": 0.0064516129032258064,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    }
+  },
+  "full_stage_season": {
+    "FULL_QUALIFIED_REFERENCE__ALL_QUALIFIED": {
+      "R": 217,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.0045871559633027525,
+      "p_upper": 0.0045871559633027525,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "FULL_QUALIFIED_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 217,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.0045871559633027525,
+      "p_upper": 0.0045871559633027525,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "SAME_SEASON_STAGE_REFERENCE__ALL_QUALIFIED": {
+      "R": 86,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.011494252873563218,
+      "p_upper": 0.011494252873563218,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "SAME_SEASON_STAGE_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 86,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.011494252873563218,
+      "p_upper": 0.011494252873563218,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "STAGE_ERA_MATCHED_REFERENCE__ALL_QUALIFIED": {
+      "R": 153,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.006493506493506494,
+      "p_upper": 0.006493506493506494,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "STAGE_ERA_MATCHED_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 153,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.006493506493506494,
+      "p_upper": 0.006493506493506494,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    }
+  },
+  "leave_one_year_out": {
+    "2020": {
+      "R": 176,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.005649717514124294,
+      "p_upper": 0.005649717514124294,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "2021": {
+      "R": 172,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.005780346820809248,
+      "p_upper": 0.005780346820809248,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "2022": {
+      "R": 172,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.005780346820809248,
+      "p_upper": 0.005780346820809248,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "2023": {
+      "R": 173,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.005747126436781609,
+      "p_upper": 0.005747126436781609,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "2024": {
+      "R": 175,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.005681818181818182,
+      "p_upper": 0.005681818181818182,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    }
+  },
+  "optimization_intervals": {
+    "maximum_width": 0.07000058356676009,
+    "point_substitution": false
+  },
+  "reference_weight_normalization": {
+    "rule": "each bin reference common-support weights sum to one by construction",
+    "status": "PASS"
+  },
+  "strict_common_support": {
+    "R": 195,
+    "rank": {
+      "R": 195,
+      "definitely_more_extreme": 0,
+      "p_lower": 0.00510204081632653,
+      "p_upper": 0.00510204081632653,
+      "possibly_more_extreme": 0,
+      "rank_lower": 1,
+      "rank_upper": 1
+    },
+    "rule": "every bin both sides >=0.75"
+  }
+}

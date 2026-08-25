@@ -1,0 +1,29 @@
+{
+  "artifact_type": "M7B_PRIMARY_RESULTS_FREEZE",
+  "intervals": {
+    "bytes": 60029,
+    "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_UNIFIED_SCORE_INTERVALS.csv",
+    "sha256": "1a8c2b35845f8e96a69f50a66e1c31a8aeadde797a6ee5725c61361ae4652ac6"
+  },
+  "max_threshold": {
+    "bytes": 397,
+    "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_MAX_CELL_REFERENCE_THRESHOLD.json",
+    "sha256": "c83dbdc07a1715760ba1f69479070ba0c8a251ae035fed29b50b1d9af47e0b1f"
+  },
+  "placebos": {
+    "bytes": 199445,
+    "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_STRUCTURAL_PLACEBO_SCORES.csv",
+    "sha256": "ad467a3d642ce3bc9682dc1dabd27349f5d5cf2d213b0dacb3eb5827cc166e63"
+  },
+  "results": {
+    "bytes": 3670,
+    "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_RESULTS.json",
+    "sha256": "636b640a547e6d4a7ee73abedcdd2bbf846ca14b051877e3fad094ccafcc7af4"
+  },
+  "statistics": {
+    "bytes": 74406,
+    "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_STATISTICS.csv",
+    "sha256": "b9bb6610ea2c90cc7abed19ed2423c5d5d025d158a171334d74c8b2d9137b57a"
+  },
+  "status": "FROZEN_FOR_INDEPENDENT_REPLICATION"
+}

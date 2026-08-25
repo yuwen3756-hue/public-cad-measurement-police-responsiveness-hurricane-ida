@@ -1,0 +1,1068 @@
+{
+  "additional_model_only_field_probes": {
+    "all_dispositions": [
+      {
+        "DIM Dispatch.All Dispositions": "NAT",
+        "Facts.Count of Dispatch Incidents": 395237
+      },
+      {
+        "DIM Dispatch.All Dispositions": "RTF",
+        "Facts.Count of Dispatch Incidents": 200608
+      },
+      {
+        "DIM Dispatch.All Dispositions": "GOA",
+        "Facts.Count of Dispatch Incidents": 159188
+      },
+      {
+        "DIM Dispatch.All Dispositions": "VOI",
+        "Facts.Count of Dispatch Incidents": 37318
+      },
+      {
+        "DIM Dispatch.All Dispositions": "DUP",
+        "Facts.Count of Dispatch Incidents": 34641
+      },
+      {
+        "DIM Dispatch.All Dispositions": "REF",
+        "Facts.Count of Dispatch Incidents": 4124
+      },
+      {
+        "DIM Dispatch.All Dispositions": "NAT, NAT",
+        "Facts.Count of Dispatch Incidents": 4061
+      },
+      {
+        "DIM Dispatch.All Dispositions": "CBC",
+        "Facts.Count of Dispatch Incidents": 2182
+      },
+      {
+        "DIM Dispatch.All Dispositions": "GOA, GOA",
+        "Facts.Count of Dispatch Incidents": 2089
+      },
+      {
+        "DIM Dispatch.All Dispositions": "GOA, RTF",
+        "Facts.Count of Dispatch Incidents": 1699
+      },
+      {
+        "DIM Dispatch.All Dispositions": "RTF, RTF",
+        "Facts.Count of Dispatch Incidents": 1645
+      },
+      {
+        "DIM Dispatch.All Dispositions": "UNF",
+        "Facts.Count of Dispatch Incidents": 1101
+      },
+      {
+        "DIM Dispatch.All Dispositions": "Disposition Not Recorded",
+        "Facts.Count of Dispatch Incidents": 806
+      },
+      {
+        "DIM Dispatch.All Dispositions": "GOA, NAT",
+        "Facts.Count of Dispatch Incidents": 787
+      },
+      {
+        "DIM Dispatch.All Dispositions": "NAT, RTF",
+        "Facts.Count of Dispatch Incidents": 528
+      },
+      {
+        "DIM Dispatch.All Dispositions": "NAT, GOA",
+        "Facts.Count of Dispatch Incidents": 301
+      },
+      {
+        "DIM Dispatch.All Dispositions": "RTF, NAT",
+        "Facts.Count of Dispatch Incidents": 254
+      },
+      {
+        "DIM Dispatch.All Dispositions": "DUP, RTF",
+        "Facts.Count of Dispatch Incidents": 232
+      },
+      {
+        "DIM Dispatch.All Dispositions": "VOI, VOI",
+        "Facts.Count of Dispatch Incidents": 223
+      },
+      {
+        "DIM Dispatch.All Dispositions": "DUP, DUP",
+        "Facts.Count of Dispatch Incidents": 150
+      }
+    ],
+    "cad_record_source_detail": [
+      {
+        "DIM Dispatch.CAD Record Source Detail": "911",
+        "Facts.Count of Dispatch Incidents": 848799
+      },
+      {
+        "DIM Dispatch.CAD Record Source Detail": "Alarm",
+        "Facts.Count of Dispatch Incidents": 848799
+      },
+      {
+        "DIM Dispatch.CAD Record Source Detail": "Direct Line",
+        "Facts.Count of Dispatch Incidents": 848799
+      },
+      {
+        "DIM Dispatch.CAD Record Source Detail": "EMS",
+        "Facts.Count of Dispatch Incidents": 848799
+      },
+      {
+        "DIM Dispatch.CAD Record Source Detail": "MDT/Officer",
+        "Facts.Count of Dispatch Incidents": 848799
+      },
+      {
+        "DIM Dispatch.CAD Record Source Detail": "No Record",
+        "Facts.Count of Dispatch Incidents": 848799
+      },
+      {
+        "DIM Dispatch.CAD Record Source Detail": "PBX",
+        "Facts.Count of Dispatch Incidents": 848799
+      },
+      {
+        "DIM Dispatch.CAD Record Source Detail": "Phone",
+        "Facts.Count of Dispatch Incidents": 848799
+      },
+      {
+        "DIM Dispatch.CAD Record Source Detail": "Radio",
+        "Facts.Count of Dispatch Incidents": 848799
+      },
+      {
+        "DIM Dispatch.CAD Record Source Detail": "White Line",
+        "Facts.Count of Dispatch Incidents": 848799
+      }
+    ],
+    "final_modifying_circumstance": [
+      {
+        "DIM Dispatch.Final Modifying Circumstance": "None",
+        "Facts.Count of Dispatch Incidents": 489647
+      },
+      {
+        "DIM Dispatch.Final Modifying Circumstance": "IN PROGRESS",
+        "Facts.Count of Dispatch Incidents": 275921
+      },
+      {
+        "DIM Dispatch.Final Modifying Circumstance": "PAST",
+        "Facts.Count of Dispatch Incidents": 66624
+      },
+      {
+        "DIM Dispatch.Final Modifying Circumstance": "JUST OCCURRED",
+        "Facts.Count of Dispatch Incidents": 16427
+      },
+      {
+        "DIM Dispatch.Final Modifying Circumstance": "ATTEMPT",
+        "Facts.Count of Dispatch Incidents": 177
+      },
+      {
+        "DIM Dispatch.Final Modifying Circumstance": "HOLDING",
+        "Facts.Count of Dispatch Incidents": 1
+      },
+      {
+        "DIM Dispatch.Final Modifying Circumstance": "KNOWN",
+        "Facts.Count of Dispatch Incidents": 1
+      },
+      {
+        "DIM Dispatch.Final Modifying Circumstance": "TRACE",
+        "Facts.Count of Dispatch Incidents": 1
+      }
+    ],
+    "initial_modifying_circumstance": [
+      {
+        "DIM Dispatch.Initial Modifying Circumanstance": "IN PROGRESS",
+        "Facts.Count of Dispatch Incidents": 375243
+      },
+      {
+        "DIM Dispatch.Initial Modifying Circumanstance": "None",
+        "Facts.Count of Dispatch Incidents": 367260
+      },
+      {
+        "DIM Dispatch.Initial Modifying Circumanstance": "PAST",
+        "Facts.Count of Dispatch Incidents": 93483
+      },
+      {
+        "DIM Dispatch.Initial Modifying Circumanstance": "JUST OCCURRED",
+        "Facts.Count of Dispatch Incidents": 12809
+      },
+      {
+        "DIM Dispatch.Initial Modifying Circumanstance": "HOLDING",
+        "Facts.Count of Dispatch Incidents": 3
+      },
+      {
+        "DIM Dispatch.Initial Modifying Circumanstance": "KNOWN",
+        "Facts.Count of Dispatch Incidents": 1
+      }
+    ],
+    "signal_change_flag": [
+      {
+        "DIM Dispatch.Signal Change Flag": "No Signal Change",
+        "Facts.Count of Dispatch Incidents": 602461
+      },
+      {
+        "DIM Dispatch.Signal Change Flag": "Signal Change",
+        "Facts.Count of Dispatch Incidents": 246338
+      }
+    ]
+  },
+  "coverage_note": "The public model covers 2023-2026 and classifies all counted rows as Not Officer Initiated. It does not include the 2021 Ida year.",
+  "direct_download_or_csv_export_verified": false,
+  "enroute_probe_note": "Aggregate-only query returned value groups. The property is machine-queryable, but it is absent from current report visuals and no official public definition was located; it cannot support a strict identified-set contraction without a semantic binding.",
+  "enroute_seconds_property_in_current_report_visuals": false,
+  "enroute_seconds_property_query_verified": true,
+  "enroute_seconds_public_semantics_documented": false,
+  "machine_readable_public_model": true,
+  "machine_readable_public_query_endpoint_verified": true,
+  "model_id": 1300399,
+  "model_last_refresh": "2026-07-17T13:33:02.233",
+  "model_only_field_probe_interpretation": "All Dispositions, source-detail, modifier, and signal-change values are publicly queryable in aggregate. They are absent from the Socrata dictionaries and lack public definitions for construction, ordering, overwrite behavior, or continuity; they are candidate public enrichments, not qualified event histories.",
+  "properties": [
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "ItemNumber"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "IncidentDate_FK"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "IncidentStart_Hour_FK"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "Dispatch Location FK"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "Dispatch FK"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "Incident Date"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "FirstUnitDispatchedTime"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "FirstUnitArrivedTime"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "Incident_To_Close_Seconds"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "Incident_To_Dispatch_Seconds"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "Incident_To_EnRoute_Seconds"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "Incident_to_Arrival"
+    },
+    {
+      "entity": "FACT Call for Service",
+      "kind": "column",
+      "property": "Inc to Arrival in Minutes"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Count of Dispatch Incidents"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Median Minutes Incident To Arrival for PHONE"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Median Response Time 14 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Median Response Time Prior 14 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Median Response Time PriorPast 7 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Median Response Time Prior 7 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Calls % difference from  Prior 7 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Median Response Time as Time"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Median Seconds Incident To Arrival for PHONE"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Seconds Median Response Time Past 7 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Seconds Median Response Time Prior 7 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Past 7 Days Median Response Time as Time"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Median Response Time Past 7 Days Formatted"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Seconds Median Response Time Past 14 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Seconds Median Response Time Prior 14 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Past 14 Day Median Response Time as Time"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Prior 28 Days Median Response Time as Time"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Median Response Time Year to Date"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Median Response Time Last YtD"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Response Time Past 14 Days Change (Formatted)"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Seconds Median Response Time YtD"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Response Time Past 14 Days Change Raw"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Response Time YTD Change Raw"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Response Time YTD Change (Formatted)"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Median Response Time 7 Day Change Raw"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Count of Dispatches Past 14 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Count of Call Past 14 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Count of Call Prior 14 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Count of Call Past 14 Days Change Raw"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Call Volume YTD Change Raw"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Call Volume Last YtD"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Call Volume YtD"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Seconds Median Response Time Past 28 Days"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Past 28 Day Median Response Time as Time"
+    },
+    {
+      "entity": "Facts",
+      "kind": "measure",
+      "property": "Count of Call Past 28 Days"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch Location"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch Location Name"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch Incident Proximity Flag"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch Apt"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch Latitude"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch Longitude"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch District"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch Zone"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch SubZone"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch Beat"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch Cross Street"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch Location PK"
+    },
+    {
+      "entity": "Dispatch Location",
+      "kind": "column",
+      "property": "Dispatch Sector"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Priority"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "CAD Record Source"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Dispatch PK"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Priority Code"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Priority Detail"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Initial Priority"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Initial Priority Code"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Initial Priority Detail"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Initial Modifying Circumanstance"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Final Modifying Circumstance"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Signal Change Flag"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Priority Change Flag"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Incident Type Code"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Incident Type Description"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Initial Incident Type Code"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Initial Incident Type Description"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "CAD Record Source Detail"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Final Disposition"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "All Dispositions"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Void Disposition Flag"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "column",
+      "property": "Duplicate Disposition Flag"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "measure",
+      "property": "Seconds Median Response Time Last YtD"
+    },
+    {
+      "entity": "DIM Dispatch",
+      "kind": "measure",
+      "property": "Median Response Time Year to Date % difference from Median Response Time Last YtD"
+    },
+    {
+      "entity": "Incident Hour",
+      "kind": "column",
+      "property": "IncidentHour_PK"
+    },
+    {
+      "entity": "Incident Hour",
+      "kind": "column",
+      "property": "Occurred Hour"
+    },
+    {
+      "entity": "Incident Hour",
+      "kind": "column",
+      "property": "Standard Shift"
+    },
+    {
+      "entity": "Incident Hour",
+      "kind": "column",
+      "property": "7-7 Shift"
+    },
+    {
+      "entity": "Incident Hour",
+      "kind": "column",
+      "property": "Hour Block"
+    },
+    {
+      "entity": "Incident Hour",
+      "kind": "column",
+      "property": "4-Hr Block"
+    },
+    {
+      "entity": "MeasurementPeriod",
+      "kind": "column",
+      "property": "Date FK"
+    },
+    {
+      "entity": "MeasurementPeriod",
+      "kind": "column",
+      "property": "Measurement Period"
+    },
+    {
+      "entity": "MeasurementPeriod",
+      "kind": "column",
+      "property": "Sort Order"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Date PK"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Date"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Day of Month"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Day Name"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Day of Week"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Day of Year"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Weekend Flag"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Relative Week"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident MAX week"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Month"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Month Name"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Quarter"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Year"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident MAX Year"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Is Holiday Flag"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Holiday Text"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Special Event Period"
+    },
+    {
+      "entity": "DIM Incident Date",
+      "kind": "column",
+      "property": "Incident Is Special Event Period"
+    },
+    {
+      "entity": "DateTableTemplate_11253926-8301-47e2-8c80-dbeca656d4ed",
+      "kind": "column",
+      "property": "Date"
+    },
+    {
+      "entity": "DateTableTemplate_11253926-8301-47e2-8c80-dbeca656d4ed",
+      "kind": "column",
+      "property": "Year"
+    },
+    {
+      "entity": "DateTableTemplate_11253926-8301-47e2-8c80-dbeca656d4ed",
+      "kind": "column",
+      "property": "MonthNo"
+    },
+    {
+      "entity": "DateTableTemplate_11253926-8301-47e2-8c80-dbeca656d4ed",
+      "kind": "column",
+      "property": "Month"
+    },
+    {
+      "entity": "DateTableTemplate_11253926-8301-47e2-8c80-dbeca656d4ed",
+      "kind": "column",
+      "property": "QuarterNo"
+    },
+    {
+      "entity": "DateTableTemplate_11253926-8301-47e2-8c80-dbeca656d4ed",
+      "kind": "column",
+      "property": "Quarter"
+    },
+    {
+      "entity": "DateTableTemplate_11253926-8301-47e2-8c80-dbeca656d4ed",
+      "kind": "column",
+      "property": "Day"
+    },
+    {
+      "entity": "LocalDateTable_14b2afed-f13e-4d38-8189-b9c25b56706b",
+      "kind": "column",
+      "property": "Date"
+    },
+    {
+      "entity": "LocalDateTable_14b2afed-f13e-4d38-8189-b9c25b56706b",
+      "kind": "column",
+      "property": "Year"
+    },
+    {
+      "entity": "LocalDateTable_14b2afed-f13e-4d38-8189-b9c25b56706b",
+      "kind": "column",
+      "property": "MonthNo"
+    },
+    {
+      "entity": "LocalDateTable_14b2afed-f13e-4d38-8189-b9c25b56706b",
+      "kind": "column",
+      "property": "Month"
+    },
+    {
+      "entity": "LocalDateTable_14b2afed-f13e-4d38-8189-b9c25b56706b",
+      "kind": "column",
+      "property": "QuarterNo"
+    },
+    {
+      "entity": "LocalDateTable_14b2afed-f13e-4d38-8189-b9c25b56706b",
+      "kind": "column",
+      "property": "Quarter"
+    },
+    {
+      "entity": "LocalDateTable_14b2afed-f13e-4d38-8189-b9c25b56706b",
+      "kind": "column",
+      "property": "Day"
+    },
+    {
+      "entity": "LocalDateTable_5268608f-2bc4-47aa-a03e-26b5a9bc3284",
+      "kind": "column",
+      "property": "Date"
+    },
+    {
+      "entity": "LocalDateTable_5268608f-2bc4-47aa-a03e-26b5a9bc3284",
+      "kind": "column",
+      "property": "Year"
+    },
+    {
+      "entity": "LocalDateTable_5268608f-2bc4-47aa-a03e-26b5a9bc3284",
+      "kind": "column",
+      "property": "MonthNo"
+    },
+    {
+      "entity": "LocalDateTable_5268608f-2bc4-47aa-a03e-26b5a9bc3284",
+      "kind": "column",
+      "property": "Month"
+    },
+    {
+      "entity": "LocalDateTable_5268608f-2bc4-47aa-a03e-26b5a9bc3284",
+      "kind": "column",
+      "property": "QuarterNo"
+    },
+    {
+      "entity": "LocalDateTable_5268608f-2bc4-47aa-a03e-26b5a9bc3284",
+      "kind": "column",
+      "property": "Quarter"
+    },
+    {
+      "entity": "LocalDateTable_5268608f-2bc4-47aa-a03e-26b5a9bc3284",
+      "kind": "column",
+      "property": "Day"
+    },
+    {
+      "entity": "LocalDateTable_b6a14592-bbf2-46d1-b635-994bb5debd41",
+      "kind": "column",
+      "property": "Date"
+    },
+    {
+      "entity": "LocalDateTable_b6a14592-bbf2-46d1-b635-994bb5debd41",
+      "kind": "column",
+      "property": "Year"
+    },
+    {
+      "entity": "LocalDateTable_b6a14592-bbf2-46d1-b635-994bb5debd41",
+      "kind": "column",
+      "property": "MonthNo"
+    },
+    {
+      "entity": "LocalDateTable_b6a14592-bbf2-46d1-b635-994bb5debd41",
+      "kind": "column",
+      "property": "Month"
+    },
+    {
+      "entity": "LocalDateTable_b6a14592-bbf2-46d1-b635-994bb5debd41",
+      "kind": "column",
+      "property": "QuarterNo"
+    },
+    {
+      "entity": "LocalDateTable_b6a14592-bbf2-46d1-b635-994bb5debd41",
+      "kind": "column",
+      "property": "Quarter"
+    },
+    {
+      "entity": "LocalDateTable_b6a14592-bbf2-46d1-b635-994bb5debd41",
+      "kind": "column",
+      "property": "Day"
+    },
+    {
+      "entity": "LocalDateTable_6ca4263f-8076-4f76-b51c-c0a47646fb7b",
+      "kind": "column",
+      "property": "Date"
+    },
+    {
+      "entity": "LocalDateTable_6ca4263f-8076-4f76-b51c-c0a47646fb7b",
+      "kind": "column",
+      "property": "Year"
+    },
+    {
+      "entity": "LocalDateTable_6ca4263f-8076-4f76-b51c-c0a47646fb7b",
+      "kind": "column",
+      "property": "MonthNo"
+    },
+    {
+      "entity": "LocalDateTable_6ca4263f-8076-4f76-b51c-c0a47646fb7b",
+      "kind": "column",
+      "property": "Month"
+    },
+    {
+      "entity": "LocalDateTable_6ca4263f-8076-4f76-b51c-c0a47646fb7b",
+      "kind": "column",
+      "property": "QuarterNo"
+    },
+    {
+      "entity": "LocalDateTable_6ca4263f-8076-4f76-b51c-c0a47646fb7b",
+      "kind": "column",
+      "property": "Quarter"
+    },
+    {
+      "entity": "LocalDateTable_6ca4263f-8076-4f76-b51c-c0a47646fb7b",
+      "kind": "column",
+      "property": "Day"
+    },
+    {
+      "entity": "Shift Possibilities",
+      "kind": "column",
+      "property": "Incident Hour_PK"
+    },
+    {
+      "entity": "Shift Possibilities",
+      "kind": "column",
+      "property": "8Hr. Shift A (12 PM - 8PM)"
+    },
+    {
+      "entity": "Shift Possibilities",
+      "kind": "column",
+      "property": "8Hr. Shift B (1 PM - 9 PM)"
+    },
+    {
+      "entity": "Shift Possibilities",
+      "kind": "column",
+      "property": "10Hr. Shift A (11 AM - 9PM)"
+    },
+    {
+      "entity": "Shift Possibilities",
+      "kind": "column",
+      "property": "10Hr. Shift B (10 AM - 8 PM)"
+    },
+    {
+      "entity": "Shift Possibilities",
+      "kind": "column",
+      "property": "8 hr Shift C"
+    },
+    {
+      "entity": "Shift Possibilities",
+      "kind": "column",
+      "property": "8 hr Shift D"
+    },
+    {
+      "entity": "Shift Possibilities",
+      "kind": "column",
+      "property": "8 hr Shift E"
+    }
+  ],
+  "property_count": 154,
+  "public_cad_source_counts": [
+    {
+      "DIM Dispatch.CAD Record Source": "Not Officer Initiated",
+      "DIM Incident Date.Incident Year": 2023,
+      "Facts.Count of Dispatch Incidents": 247133
+    },
+    {
+      "DIM Dispatch.CAD Record Source": "Not Officer Initiated",
+      "DIM Incident Date.Incident Year": 2024,
+      "Facts.Count of Dispatch Incidents": 240796
+    },
+    {
+      "DIM Dispatch.CAD Record Source": "Not Officer Initiated",
+      "DIM Incident Date.Incident Year": 2025,
+      "Facts.Count of Dispatch Incidents": 233319
+    },
+    {
+      "DIM Dispatch.CAD Record Source": "Not Officer Initiated",
+      "DIM Incident Date.Incident Year": 2026,
+      "Facts.Count of Dispatch Incidents": 127551
+    }
+  ],
+  "public_priority_change_counts": [
+    {
+      "DIM Dispatch.Priority Change Flag": "No Priority Change",
+      "DIM Incident Date.Incident Year": 2023,
+      "Facts.Count of Dispatch Incidents": 175733
+    },
+    {
+      "DIM Dispatch.Priority Change Flag": "Priority Change",
+      "DIM Incident Date.Incident Year": 2023,
+      "Facts.Count of Dispatch Incidents": 71400
+    },
+    {
+      "DIM Dispatch.Priority Change Flag": "No Priority Change",
+      "DIM Incident Date.Incident Year": 2024,
+      "Facts.Count of Dispatch Incidents": 131919
+    },
+    {
+      "DIM Dispatch.Priority Change Flag": "Priority Change",
+      "DIM Incident Date.Incident Year": 2024,
+      "Facts.Count of Dispatch Incidents": 108877
+    },
+    {
+      "DIM Dispatch.Priority Change Flag": "No Priority Change",
+      "DIM Incident Date.Incident Year": 2025,
+      "Facts.Count of Dispatch Incidents": 120425
+    },
+    {
+      "DIM Dispatch.Priority Change Flag": "Priority Change",
+      "DIM Incident Date.Incident Year": 2025,
+      "Facts.Count of Dispatch Incidents": 112894
+    },
+    {
+      "DIM Dispatch.Priority Change Flag": "No Priority Change",
+      "DIM Incident Date.Incident Year": 2026,
+      "Facts.Count of Dispatch Incidents": 67622
+    },
+    {
+      "DIM Dispatch.Priority Change Flag": "Priority Change",
+      "DIM Incident Date.Incident Year": 2026,
+      "Facts.Count of Dispatch Incidents": 59929
+    }
+  ],
+  "public_report_url": "https://app.powerbigov.us/view?r=eyJrIjoiYjUzMzBjYmItNDhhYi00MmZlLTgyMjgtMDFlM2Q2MDczNWVjIiwidCI6IjA4Y2JmNDg1LTFjYjctNGEwMi05YTIxLTBkZDliNDViOWZmNyJ9",
+  "public_year_counts": [
+    {
+      "DIM Incident Date.Incident Year": 2023,
+      "Facts.Count of Dispatch Incidents": 247133
+    },
+    {
+      "DIM Incident Date.Incident Year": 2024,
+      "Facts.Count of Dispatch Incidents": 240796
+    },
+    {
+      "DIM Incident Date.Incident Year": 2025,
+      "Facts.Count of Dispatch Incidents": 233319
+    },
+    {
+      "DIM Incident Date.Incident Year": 2026,
+      "Facts.Count of Dispatch Incidents": 127551
+    }
+  ],
+  "queue_availability_continuity_callback_properties": [],
+  "report_title": "NOPD Calls for Service Response Times",
+  "resource_key": "b5330cbb-48ab-42fe-8228-01e3d60735ec"
+}

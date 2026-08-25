@@ -1,0 +1,54 @@
+{
+  "artifact_type": "M7D_E_FROZEN_INPUTS",
+  "created_utc": "2026-08-11T07:32:53.982299+00:00",
+  "dominance_ratio": 2.0,
+  "files": [
+    {
+      "bytes": 663,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_IDA_ABNORMAL_CELLS.csv",
+      "sha256": "71b130f2dcbdd94a3bed59dae03adc4cef09f156016350172bbed7fa5c1f8bc1"
+    },
+    {
+      "bytes": 106589,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_WINDOW_REGISTRY.json",
+      "sha256": "1fa1a504d82817a7f0648ddad259d572b955fcb5f8d3ab63a4b70e76aebf9f67"
+    },
+    {
+      "bytes": 360699,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_G_MATRICES.csv",
+      "sha256": "f722ffa8c92b6694bd7b8d04334a0d25908faac95ba30e216e31dc282ef564e6"
+    },
+    {
+      "bytes": 595,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_c_public_administrative_stage_flow\\M7D_C_RESULTS.json",
+      "sha256": "0a1a08de4c1227f2ecde63937e1868434de7caf3de0b28f10e7a7b4f9acef6b5"
+    },
+    {
+      "bytes": 957,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_c_public_administrative_stage_flow\\M7D_C_K_DECOMPOSITION.csv",
+      "sha256": "243e78527ba47500ef7a523c73d12ac6d8b161172f1f0ad6625e273b49baa435"
+    },
+    {
+      "bytes": 73428067,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_d_public_disposition_schema_completion\\M7D_D_DISPOSITION_SIDECAR.csv.gz",
+      "sha256": "fcef89ce47f1bede743588dc028668a374c003a6dbaba0f40b2236913235991d"
+    },
+    {
+      "bytes": 4359,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_d_public_disposition_schema_completion\\M7D_D_DISPOSITION_SEMANTIC_REGISTRY.json",
+      "sha256": "769134465468f1318c13a1b6c00b2ab19da12ba814b3205cef67ca2d71058557"
+    },
+    {
+      "bytes": 1329,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_d_public_disposition_schema_completion\\M7D_D_DISPOSITION_DECOMPOSITION.csv",
+      "sha256": "62e162fbde9c7acd1d7bb590fed4619163910d9438520d624b1e2b40ca0191d9"
+    },
+    {
+      "bytes": 3187,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_d_public_disposition_schema_completion\\M7D_D_SNAPSHOT_RECONCILIATION.json",
+      "sha256": "992983890d625bf30afaa2acbfb9bce235f8a46a6a9ecb66b92f006c8922c55f"
+    }
+  ],
+  "minimum_2021_reference_n": 20,
+  "zero_mass_aggregate_q_convention": "q=0 only inside exact aggregate identity when category mass is zero; cell q remains NOT_DEFINED_IN_CELL"
+}

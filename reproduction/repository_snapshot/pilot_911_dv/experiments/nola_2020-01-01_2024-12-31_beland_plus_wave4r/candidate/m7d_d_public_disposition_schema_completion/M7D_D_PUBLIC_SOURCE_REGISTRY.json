@@ -1,0 +1,1401 @@
+{
+  "artifact_type": "M7D_D_PUBLIC_SOURCE_REGISTRY",
+  "authority": "official City of New Orleans Data.NOLA annual Calls-for-Service datasets",
+  "datasets": [
+    {
+      "dataset_id": "hp7u-i9hf",
+      "field_dictionary": [
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "nopd_item",
+          "name": "NOPD_Item"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "type_",
+          "name": "Type"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "typetext",
+          "name": "TypeText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "priority",
+          "name": "Priority"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialtype",
+          "name": "InitialType"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialtypetext",
+          "name": "InitialTypeText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialpriority",
+          "name": "InitialPriority"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "mapx",
+          "name": "MapX"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "mapy",
+          "name": "MapY"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timecreate",
+          "name": "TimeCreate"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timedispatch",
+          "name": "TimeDispatch"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timearrive",
+          "name": "TimeArrive"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timeclosed",
+          "name": "TimeClosed"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "disposition",
+          "name": "Disposition"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "dispositiontext",
+          "name": "DispositionText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "selfinitiated",
+          "name": "SelfInitiated"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "beat",
+          "name": "Beat"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "block_address",
+          "name": "BLOCK_ADDRESS"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "zip",
+          "name": "Zip"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": "policedistrict",
+          "name": "PoliceDistrict"
+        },
+        {
+          "dataTypeName": "point",
+          "description": "",
+          "fieldName": "location",
+          "name": "Location"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": ":@computed_region_ewbu_t8bu",
+          "name": "Blocks"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": ":@computed_region_k37d_then",
+          "name": "Council Districts"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": ":@computed_region_m56f_hbma",
+          "name": "Self-Reported Neighborhood Organizations (SRNOs) Boundaries"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": ":@computed_region_7fw3_kdpf",
+          "name": "(ALTERNATE) - Neighborhood Statistical Areas"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": ":@computed_region_spev_d8jm",
+          "name": "Zip Codes"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": ":@computed_region_sikx_bdeb",
+          "name": "Neighborhood Organizations"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": ":@computed_region_evki_aju8",
+          "name": "Police Districts"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": ":@computed_region_u4yh_3wk9",
+          "name": "Census - 2010"
+        }
+      ],
+      "initialpriority_field_exists": true,
+      "initialpriority_semantics_available": false,
+      "locked_annual_digest": "cd740fcd1f412ab1a8635bcd4d981397974d7b30f02c1df00395eab089beac37",
+      "locked_files": [
+        {
+          "bytes": 903618,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-01.csv.gz",
+          "sha256": "0262a701e6805a87078d9635f3bd8c7d442eb6e09c7b5481e0fd90853680fd10"
+        },
+        {
+          "bytes": 877943,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-02.csv.gz",
+          "sha256": "aa72c7940d0ef80949ea090ee611d6f0db6a152ac7a54d00d4c03310163644f8"
+        },
+        {
+          "bytes": 854084,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-03.csv.gz",
+          "sha256": "dcc09922ff54d2952e62b8094e7f4774b5a8f6a06ff483b6dd282eee67d879de"
+        },
+        {
+          "bytes": 818680,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-04.csv.gz",
+          "sha256": "5f2a1d6c2f8d1cd5993eea88558caa7675618492298b1506a93ca37fd91cdedc"
+        },
+        {
+          "bytes": 858033,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-05.csv.gz",
+          "sha256": "316d6a21ed667347e7f9c65cb7be2cabc5d6b521c703e6c458a4c53efa296f17"
+        },
+        {
+          "bytes": 848826,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-06.csv.gz",
+          "sha256": "2e8b5514100e4e771b66dde06c5514b1c22e7f50dc7ea1f3ff3df6749cfd1850"
+        },
+        {
+          "bytes": 856990,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-07.csv.gz",
+          "sha256": "781e99bf81a1b146c7bf56eca5fe4a3a64addbef1088f00840f4c59f21589fe0"
+        },
+        {
+          "bytes": 858379,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-08.csv.gz",
+          "sha256": "d192b8b3d05fdb3221bea31ff39a2ef6d9797c3144e065f80f830cda5f3f3e96"
+        },
+        {
+          "bytes": 855773,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-09.csv.gz",
+          "sha256": "1f087bc4e9726d1afc75bdac2bdb6c611f51318486c3ce9084ebf434a881c3da"
+        },
+        {
+          "bytes": 884808,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-10.csv.gz",
+          "sha256": "f8b5f1eff5471ff51303ed01c9e9c9d6c4960a480665e7571cadc83dffd73f55"
+        },
+        {
+          "bytes": 841179,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-11.csv.gz",
+          "sha256": "9bbb5db3219c7188735e7b48faa01b509d284484e39dbaf862e9ea58ecf45ed8"
+        },
+        {
+          "bytes": 821900,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_hp7u-i9hf\\2020\\cad_operational\\cad_operational_2020-12.csv.gz",
+          "sha256": "aff371b418aa0269ae9a97bb3ec4bc3cc9d92631bc33e13c7949b794a85779dc"
+        }
+      ],
+      "metadata_retrieved_utc": "2026-08-11T06:48:30.887163+00:00",
+      "metadata_url": "https://data.nola.gov/api/views/hp7u-i9hf",
+      "official_page": "https://data.nola.gov/Public-Safety-and-Preparedness/Call-for-Service-2020/hp7u-i9hf",
+      "official_title": "Call for Service 2020",
+      "public_row_count_metadata": 432892,
+      "requested_projection": [
+        "nopd_item",
+        "timecreate",
+        "timedispatch",
+        "timearrive",
+        "timeclosed",
+        "priority",
+        "initialtype",
+        "selfinitiated",
+        "policedistrict",
+        "disposition",
+        "dispositiontext"
+      ],
+      "resource_api": "https://data.nola.gov/resource/hp7u-i9hf",
+      "rows_updated_at_epoch": 1609822605,
+      "view_last_modified_epoch": 1641243827,
+      "year": 2020
+    },
+    {
+      "dataset_id": "3pha-hum9",
+      "field_dictionary": [
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "nopd_item",
+          "name": "NOPD_Item"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "type_",
+          "name": "Type"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "typetext",
+          "name": "TypeText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "priority",
+          "name": "Priority"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialtype",
+          "name": "InitialType"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialtypetext",
+          "name": "InitialTypeText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialpriority",
+          "name": "InitialPriority"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "mapx",
+          "name": "MapX"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "mapy",
+          "name": "MapY"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timecreate",
+          "name": "TimeCreate"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timedispatch",
+          "name": "TimeDispatch"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timearrive",
+          "name": "TimeArrive"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timeclosed",
+          "name": "TimeClosed"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "disposition",
+          "name": "Disposition"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "dispositiontext",
+          "name": "DispositionText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "selfinitiated",
+          "name": "SelfInitiated"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "beat",
+          "name": "Beat"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "block_address",
+          "name": "BLOCK_ADDRESS"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "zip",
+          "name": "Zip"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": "policedistrict",
+          "name": "PoliceDistrict"
+        },
+        {
+          "dataTypeName": "point",
+          "description": "",
+          "fieldName": "location",
+          "name": "Location"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Blocks' (ewbu-t8bu) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_ewbu_t8bu",
+          "name": "Blocks"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Council Districts' (k37d-then) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_k37d_then",
+          "name": "Council Districts"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Self-Reported Neighborhood Organizations (SRNOs) Boundaries' (m56f-hbma) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_m56f_hbma",
+          "name": "Self-Reported Neighborhood Organizations (SRNOs) Boundaries"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset '(ALTERNATE) - Neighborhood Statistical Areas' (7fw3-kdpf) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_7fw3_kdpf",
+          "name": "(ALTERNATE) - Neighborhood Statistical Areas"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Zip Codes' (spev-d8jm) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_spev_d8jm",
+          "name": "Zip Codes"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Neighborhood Organizations' (sikx-bdeb) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_sikx_bdeb",
+          "name": "Neighborhood Organizations"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Police Districts' (evki-aju8) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_evki_aju8",
+          "name": "Police Districts"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Census - 2010' (u4yh-3wk9) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_u4yh_3wk9",
+          "name": "Census - 2010"
+        }
+      ],
+      "initialpriority_field_exists": true,
+      "initialpriority_semantics_available": false,
+      "locked_annual_digest": "b825e1cdfc4077029d81be246c2436f5f567f9cb54d7ca92ae612a7fe4d17dd8",
+      "locked_files": [
+        {
+          "bytes": 850125,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-01.csv.gz",
+          "sha256": "c62bdd975d28528fd142e985c2bdf184382f072e4768ca668215b2c052356eba"
+        },
+        {
+          "bytes": 767422,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-02.csv.gz",
+          "sha256": "1bce9654843863a41bfd75202ff1c6c3fe5ba43f4d99f22063ffb0e707149f55"
+        },
+        {
+          "bytes": 877528,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-03.csv.gz",
+          "sha256": "91c560efb1ce69bc412d43da57e18b1d8a6f7588f125e83a8c43739ac319508c"
+        },
+        {
+          "bytes": 891210,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-04.csv.gz",
+          "sha256": "70e40b29a5ff76adea23d0520d84dc7d0d07bdf909b7e753a754c84c4a04edc2"
+        },
+        {
+          "bytes": 932898,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-05.csv.gz",
+          "sha256": "7637632683fcf4c84d5a931894463c179d0ecd3166627cf3e64a4af485057715"
+        },
+        {
+          "bytes": 859192,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-06.csv.gz",
+          "sha256": "9de5d14963ab55c1ca4cebdd65b952da625b74b5372deb77332984913b5cd726"
+        },
+        {
+          "bytes": 868446,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-07.csv.gz",
+          "sha256": "097cdca46240e34ed80bb17311e656bea46ac055cabb98b6fd348e7d99c39c3e"
+        },
+        {
+          "bytes": 837702,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-08.csv.gz",
+          "sha256": "b903d44f9d5d8c171abe514c2020d6e5a1f3b87a41b068c55ff06e941a8abb77"
+        },
+        {
+          "bytes": 789281,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-09.csv.gz",
+          "sha256": "7d4a1412c51b92257eb9e6064048b33266642e66d68468b40db8765c42be3050"
+        },
+        {
+          "bytes": 847464,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-10.csv.gz",
+          "sha256": "66c21e8f4ecd2fc339dfa2b65f9525b97892a5afdc555e90f30cbd283dc3d92f"
+        },
+        {
+          "bytes": 805605,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-11.csv.gz",
+          "sha256": "5be7ce3250fd5cb27535e46d9224875c0638b18353f1c8cae72b3bc73a1e94cd"
+        },
+        {
+          "bytes": 798220,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_3pha-hum9\\2021\\cad_operational\\cad_operational_2021-12.csv.gz",
+          "sha256": "066782b9d7b21e6fe88b250cc74ae4d48a6b6c8ed93f4206530c1704a1b10e3e"
+        }
+      ],
+      "metadata_retrieved_utc": "2026-08-11T06:48:30.887163+00:00",
+      "metadata_url": "https://data.nola.gov/api/views/3pha-hum9",
+      "official_page": "https://data.nola.gov/Public-Safety-and-Preparedness/Calls-for-Service-2021/3pha-hum9",
+      "official_title": "Calls for Service 2021",
+      "public_row_count_metadata": 428315,
+      "requested_projection": [
+        "nopd_item",
+        "timecreate",
+        "timedispatch",
+        "timearrive",
+        "timeclosed",
+        "priority",
+        "initialtype",
+        "selfinitiated",
+        "policedistrict",
+        "disposition",
+        "dispositiontext"
+      ],
+      "resource_api": "https://data.nola.gov/resource/3pha-hum9",
+      "rows_updated_at_epoch": 1641027632,
+      "view_last_modified_epoch": 1641243620,
+      "year": 2021
+    },
+    {
+      "dataset_id": "nci8-thrr",
+      "field_dictionary": [
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "nopd_item",
+          "name": "NOPD_Item"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "type_",
+          "name": "Type"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "typetext",
+          "name": "TypeText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "priority",
+          "name": "Priority"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialtype",
+          "name": "InitialType"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialtypetext",
+          "name": "InitialTypeText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialpriority",
+          "name": "InitialPriority"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "mapx",
+          "name": "MapX"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "mapy",
+          "name": "MapY"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timecreate",
+          "name": "TimeCreate"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timedispatch",
+          "name": "TimeDispatch"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timearrive",
+          "name": "TimeArrive"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timeclosed",
+          "name": "TimeClosed"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "disposition",
+          "name": "Disposition"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "dispositiontext",
+          "name": "DispositionText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "selfinitiated",
+          "name": "SelfInitiated"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "beat",
+          "name": "Beat"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "block_address",
+          "name": "BLOCK_ADDRESS"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "zip",
+          "name": "Zip"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": "policedistrict",
+          "name": "PoliceDistrict"
+        },
+        {
+          "dataTypeName": "point",
+          "description": "",
+          "fieldName": "location",
+          "name": "Location"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Blocks' (ewbu-t8bu) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_ewbu_t8bu",
+          "name": "Blocks"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Council Districts' (k37d-then) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_k37d_then",
+          "name": "Council Districts"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Self-Reported Neighborhood Organizations (SRNOs) Boundaries' (m56f-hbma) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_m56f_hbma",
+          "name": "Self-Reported Neighborhood Organizations (SRNOs) Boundaries"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset '(ALTERNATE) - Neighborhood Statistical Areas' (7fw3-kdpf) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_7fw3_kdpf",
+          "name": "(ALTERNATE) - Neighborhood Statistical Areas"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Zip Codes' (spev-d8jm) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_spev_d8jm",
+          "name": "Zip Codes"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Neighborhood Organizations' (sikx-bdeb) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_sikx_bdeb",
+          "name": "Neighborhood Organizations"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Police Districts' (evki-aju8) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_evki_aju8",
+          "name": "Police Districts"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Census - 2010' (u4yh-3wk9) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_u4yh_3wk9",
+          "name": "Census - 2010"
+        }
+      ],
+      "initialpriority_field_exists": true,
+      "initialpriority_semantics_available": false,
+      "locked_annual_digest": "fb4fc77252d7fec6abbe1fa59433ea71d48138dfb3c91069b3c447c892ee4e72",
+      "locked_files": [
+        {
+          "bytes": 781992,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-01.csv.gz",
+          "sha256": "0acdbfb046becf66b09a3898ee947a0dbb4759f59283017e559d67522ab670b3"
+        },
+        {
+          "bytes": 741109,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-02.csv.gz",
+          "sha256": "186df2a3e1594eae0b47aef5d319063b6e86cff8a773eea9b95a74bab52ead98"
+        },
+        {
+          "bytes": 788900,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-03.csv.gz",
+          "sha256": "ceda754fcf29c4bc645b311b4988c65b689f43f462a74b01adb638e7fc27bde3"
+        },
+        {
+          "bytes": 758979,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-04.csv.gz",
+          "sha256": "8a516687e4a178305cfb70a0c16a297e1a81cc1d15a6c33b7afef6fe3f16eb9a"
+        },
+        {
+          "bytes": 757995,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-05.csv.gz",
+          "sha256": "233a88b78c0233d3e255204875cba6ec863d8e227400fa85d2d31baa97ca1f97"
+        },
+        {
+          "bytes": 695503,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-06.csv.gz",
+          "sha256": "94af6eeb62b015499ac3d158544e5293e1974a948b094ff617561720735e324f"
+        },
+        {
+          "bytes": 683025,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-07.csv.gz",
+          "sha256": "fd817352ea862ab370d0421d88223547c0d7805fc681711241c3685d91571ee1"
+        },
+        {
+          "bytes": 685269,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-08.csv.gz",
+          "sha256": "ca872a28de78472074f7037231e05723ef1975b682f4cecc2dfbd7613c8fad68"
+        },
+        {
+          "bytes": 669715,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-09.csv.gz",
+          "sha256": "e33998b410ab3d21718a3f1954fe28db75936a3639e01a3c7e9a223b139376c8"
+        },
+        {
+          "bytes": 688777,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-10.csv.gz",
+          "sha256": "9166dddebbc92dc14ffe81fa4359966699b899beedfd7793fa4e17b2d7642614"
+        },
+        {
+          "bytes": 649312,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-11.csv.gz",
+          "sha256": "e23d0358ab737e74b9d052e8622ca75e1cf1ca6b45180b5e22503feb0c0ffa2d"
+        },
+        {
+          "bytes": 682280,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_nci8-thrr\\2022\\cad_operational\\cad_operational_2022-12.csv.gz",
+          "sha256": "95e7005dfa64e3b0fb40dfc34a5836e362892da360a22ffe77fa97c30e98f8d5"
+        }
+      ],
+      "metadata_retrieved_utc": "2026-08-11T06:48:30.887163+00:00",
+      "metadata_url": "https://data.nola.gov/api/views/nci8-thrr",
+      "official_page": "https://data.nola.gov/Public-Safety-and-Preparedness/Calls-for-Service-2022/nci8-thrr",
+      "official_title": "Calls for Service 2022",
+      "public_row_count_metadata": 354207,
+      "requested_projection": [
+        "nopd_item",
+        "timecreate",
+        "timedispatch",
+        "timearrive",
+        "timeclosed",
+        "priority",
+        "initialtype",
+        "selfinitiated",
+        "policedistrict",
+        "disposition",
+        "dispositiontext"
+      ],
+      "resource_api": "https://data.nola.gov/resource/nci8-thrr",
+      "rows_updated_at_epoch": 1672563630,
+      "view_last_modified_epoch": 1641244150,
+      "year": 2022
+    },
+    {
+      "dataset_id": "pc5d-tvaw",
+      "field_dictionary": [
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "nopd_item",
+          "name": "NOPD_Item"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "type_",
+          "name": "Type"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "typetext",
+          "name": "TypeText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "priority",
+          "name": "Priority"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialtype",
+          "name": "InitialType"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialtypetext",
+          "name": "InitialTypeText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialpriority",
+          "name": "InitialPriority"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "mapx",
+          "name": "MapX"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "mapy",
+          "name": "MapY"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timecreate",
+          "name": "TimeCreate"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timedispatch",
+          "name": "TimeDispatch"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timearrive",
+          "name": "TimeArrive"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timeclosed",
+          "name": "TimeClosed"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "disposition",
+          "name": "Disposition"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "dispositiontext",
+          "name": "DispositionText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "selfinitiated",
+          "name": "SelfInitiated"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "beat",
+          "name": "Beat"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "block_address",
+          "name": "BLOCK_ADDRESS"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "zip",
+          "name": "Zip"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": "policedistrict",
+          "name": "PoliceDistrict"
+        },
+        {
+          "dataTypeName": "point",
+          "description": "",
+          "fieldName": "location",
+          "name": "Location"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Blocks' (ewbu-t8bu) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_ewbu_t8bu",
+          "name": "Blocks"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Council Districts' (k37d-then) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_k37d_then",
+          "name": "Council Districts"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Self-Reported Neighborhood Organizations (SRNOs) Boundaries' (m56f-hbma) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_m56f_hbma",
+          "name": "Self-Reported Neighborhood Organizations (SRNOs) Boundaries"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset '(ALTERNATE) - Neighborhood Statistical Areas' (7fw3-kdpf) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_7fw3_kdpf",
+          "name": "(ALTERNATE) - Neighborhood Statistical Areas"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Zip Codes' (spev-d8jm) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_spev_d8jm",
+          "name": "Zip Codes"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Neighborhood Organizations' (sikx-bdeb) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_sikx_bdeb",
+          "name": "Neighborhood Organizations"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Police Districts' (evki-aju8) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_evki_aju8",
+          "name": "Police Districts"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Census - 2010' (u4yh-3wk9) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_u4yh_3wk9",
+          "name": "Census - 2010"
+        }
+      ],
+      "initialpriority_field_exists": true,
+      "initialpriority_semantics_available": false,
+      "locked_annual_digest": "9fc4852c4a9957f8466d3300a9cc2ad12f3ab81900c5b61cbec9b9da5fa23a2b",
+      "locked_files": [
+        {
+          "bytes": 699953,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-01.csv.gz",
+          "sha256": "137895de8e5b1d4172c5a5e42cd79de1e4d4efa352e464f47f2b1edf176d5d5f"
+        },
+        {
+          "bytes": 672626,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-02.csv.gz",
+          "sha256": "0b3e93ec684fc982b9d6beddcbfa6dd45399893e082e7f245d377e62bc0c8e15"
+        },
+        {
+          "bytes": 694776,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-03.csv.gz",
+          "sha256": "160b47ead67ad404c4c2c5925b2e59ebd65e2592f79ed58c92cfb533c78ee07d"
+        },
+        {
+          "bytes": 686613,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-04.csv.gz",
+          "sha256": "d96d83a0e385de625a35f9fbb38a1c31382b1e16bb059a72aa0cf444de0ede1d"
+        },
+        {
+          "bytes": 719233,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-05.csv.gz",
+          "sha256": "e539024830a8c734f7e507cb8df24f687b507f2abbb3a363f37ba47fd3eae6d9"
+        },
+        {
+          "bytes": 658317,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-06.csv.gz",
+          "sha256": "27e238c763e2c37d51bd4286f110d3687ae75605d45fe18d600dbba8cf0db0d4"
+        },
+        {
+          "bytes": 665744,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-07.csv.gz",
+          "sha256": "77b2c6b15f4fe629e2fd817fedfd38035c6e15978b991617bdc6ed19241a77b9"
+        },
+        {
+          "bytes": 648098,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-08.csv.gz",
+          "sha256": "483f962bebf65a7f0cc1b73c3e6f8701e0d1f04eae56b3e4a5c31e82af5bb4b1"
+        },
+        {
+          "bytes": 633509,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-09.csv.gz",
+          "sha256": "717f6a9f86b28b5d98b3c5e1b903737a6b49cf075745a11ba14030f2be1eec30"
+        },
+        {
+          "bytes": 647352,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-10.csv.gz",
+          "sha256": "7fe785bb4573a9bd7c4f6c841827a1e5e8c7f5e1f3423720346733ff68e6fbdc"
+        },
+        {
+          "bytes": 595365,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-11.csv.gz",
+          "sha256": "6ab8a22017ddac764f30d3f6b49ca341e375690b659f0f612c50472b325c64c6"
+        },
+        {
+          "bytes": 616545,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_pc5d-tvaw\\2023\\cad_operational\\cad_operational_2023-12.csv.gz",
+          "sha256": "29fa008a663ee961252088046e5fe8f2a8685c32283b081b977de5fdd180406d"
+        }
+      ],
+      "metadata_retrieved_utc": "2026-08-11T06:48:30.887163+00:00",
+      "metadata_url": "https://data.nola.gov/api/views/pc5d-tvaw",
+      "official_page": "https://data.nola.gov/Public-Safety-and-Preparedness/Calls-for-Service-2023/pc5d-tvaw",
+      "official_title": "Calls for Service 2023",
+      "public_row_count_metadata": 325091,
+      "requested_projection": [
+        "nopd_item",
+        "timecreate",
+        "timedispatch",
+        "timearrive",
+        "timeclosed",
+        "priority",
+        "initialtype",
+        "selfinitiated",
+        "policedistrict",
+        "disposition",
+        "dispositiontext"
+      ],
+      "resource_api": "https://data.nola.gov/resource/pc5d-tvaw",
+      "rows_updated_at_epoch": 1704099618,
+      "view_last_modified_epoch": 1672773549,
+      "year": 2023
+    },
+    {
+      "dataset_id": "2zcj-b6ts",
+      "field_dictionary": [
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "nopd_item",
+          "name": "NOPD_Item"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "type_",
+          "name": "Type"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "typetext",
+          "name": "TypeText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "priority",
+          "name": "Priority"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialtype",
+          "name": "InitialType"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialtypetext",
+          "name": "InitialTypeText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "initialpriority",
+          "name": "InitialPriority"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "mapx",
+          "name": "MapX"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "mapy",
+          "name": "MapY"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timecreate",
+          "name": "TimeCreate"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timedispatch",
+          "name": "TimeDispatch"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timearrive",
+          "name": "TimeArrive"
+        },
+        {
+          "dataTypeName": "calendar_date",
+          "description": "",
+          "fieldName": "timeclosed",
+          "name": "TimeClosed"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "disposition",
+          "name": "Disposition"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "dispositiontext",
+          "name": "DispositionText"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "selfinitiated",
+          "name": "SelfInitiated"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "beat",
+          "name": "Beat"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "block_address",
+          "name": "BLOCK_ADDRESS"
+        },
+        {
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "zip",
+          "name": "Zip"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": "policedistrict",
+          "name": "PoliceDistrict"
+        },
+        {
+          "dataTypeName": "point",
+          "description": "",
+          "fieldName": "location",
+          "name": "Location"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Blocks' (ewbu-t8bu) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_ewbu_t8bu",
+          "name": "Blocks"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Council Districts' (k37d-then) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_k37d_then",
+          "name": "Council Districts"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Self-Reported Neighborhood Organizations (SRNOs) Boundaries' (m56f-hbma) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_m56f_hbma",
+          "name": "Self-Reported Neighborhood Organizations (SRNOs) Boundaries"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset '(ALTERNATE) - Neighborhood Statistical Areas' (7fw3-kdpf) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_7fw3_kdpf",
+          "name": "(ALTERNATE) - Neighborhood Statistical Areas"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Zip Codes' (spev-d8jm) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_spev_d8jm",
+          "name": "Zip Codes"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Neighborhood Organizations' (sikx-bdeb) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_sikx_bdeb",
+          "name": "Neighborhood Organizations"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Police Districts' (evki-aju8) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_evki_aju8",
+          "name": "Police Districts"
+        },
+        {
+          "dataTypeName": "number",
+          "description": "This column was automatically created in order to record in what polygon from the dataset 'Census - 2010' (u4yh-3wk9) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+          "fieldName": ":@computed_region_u4yh_3wk9",
+          "name": "Census - 2010"
+        }
+      ],
+      "initialpriority_field_exists": true,
+      "initialpriority_semantics_available": false,
+      "locked_annual_digest": "477356fca5327502d5900106568f90fa982d453e3a940427187ba0518b7f0ca5",
+      "locked_files": [
+        {
+          "bytes": 625549,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-01.csv.gz",
+          "sha256": "2cf3663c43d5c39cbf2c99249de98dde9dd295dc9cbb5ff488fcda0bb2a528f1"
+        },
+        {
+          "bytes": 638289,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-02.csv.gz",
+          "sha256": "f32b2c0014b1378b7fbb8bd96a15da9161b13a7643c9a73d672dc93c463dd7d2"
+        },
+        {
+          "bytes": 644639,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-03.csv.gz",
+          "sha256": "7fb8c79621f5f60462010bee6c227b0a3244b56c2aeb4641e6cf0e5ef3170e28"
+        },
+        {
+          "bytes": 620542,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-04.csv.gz",
+          "sha256": "5e4f8f93a35999aa8766450c92016f34f1a96451dce67aa462c3e3e004cd932a"
+        },
+        {
+          "bytes": 648485,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-05.csv.gz",
+          "sha256": "6c8ec608b962df00052a28cbd465ce94b860cf5ebead3f6f8fff9d7c515261f8"
+        },
+        {
+          "bytes": 617287,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-06.csv.gz",
+          "sha256": "3b65db7d58ca76fa913f92e1f331165185ca354cb8340c427ad3d8d64cb9def1"
+        },
+        {
+          "bytes": 654703,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-07.csv.gz",
+          "sha256": "3c0d9ffb7524af6c93c893492b82c6153d67b62317304eaf466057b6580e5371"
+        },
+        {
+          "bytes": 676265,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-08.csv.gz",
+          "sha256": "0faa0d51da781ab8615f92e0d0c0eb04a814d6c2ed5ea7b924d2fc6154becd7e"
+        },
+        {
+          "bytes": 663359,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-09.csv.gz",
+          "sha256": "1a683a1912efdcfdcb0be68dd58383013fb35b43cf81cfd6fa03c472b84a4ef7"
+        },
+        {
+          "bytes": 687173,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-10.csv.gz",
+          "sha256": "580e56fdc7b3fb6572939b329f3405874e59ddcab8626b49104a9e5a5e0ffcc8"
+        },
+        {
+          "bytes": 662898,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-11.csv.gz",
+          "sha256": "b815007231c386df49f29b573577bad3d0cd7141047497d9a43d430fa6a273d7"
+        },
+        {
+          "bytes": 649115,
+          "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\source_data\\socrata\\nola_2zcj-b6ts\\2024\\cad_operational\\cad_operational_2024-12.csv.gz",
+          "sha256": "61a1f7d7143574a166463dbbb251b01d7eb957c485e9e823a0a6d3f633a3938c"
+        }
+      ],
+      "metadata_retrieved_utc": "2026-08-11T06:48:30.887163+00:00",
+      "metadata_url": "https://data.nola.gov/api/views/2zcj-b6ts",
+      "official_page": "https://data.nola.gov/Public-Safety-and-Preparedness/Calls-for-Service-2024/2zcj-b6ts",
+      "official_title": "Calls for Service 2024",
+      "public_row_count_metadata": 327696,
+      "requested_projection": [
+        "nopd_item",
+        "timecreate",
+        "timedispatch",
+        "timearrive",
+        "timeclosed",
+        "priority",
+        "initialtype",
+        "selfinitiated",
+        "policedistrict",
+        "disposition",
+        "dispositiontext"
+      ],
+      "resource_api": "https://data.nola.gov/resource/2zcj-b6ts",
+      "rows_updated_at_epoch": 1735722032,
+      "view_last_modified_epoch": 1724257304,
+      "year": 2024
+    }
+  ],
+  "metadata_frozen_before_extraction": true,
+  "no_agency_contact": true,
+  "predecessors": [
+    {
+      "bytes": 663,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_IDA_ABNORMAL_CELLS.csv",
+      "sha256": "71b130f2dcbdd94a3bed59dae03adc4cef09f156016350172bbed7fa5c1f8bc1"
+    },
+    {
+      "bytes": 360699,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_G_MATRICES.csv",
+      "sha256": "f722ffa8c92b6694bd7b8d04334a0d25908faac95ba30e216e31dc282ef564e6"
+    },
+    {
+      "bytes": 106589,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7b_same_estimator_reference_geometry\\M7B_REFERENCE_WINDOW_REGISTRY.json",
+      "sha256": "1fa1a504d82817a7f0648ddad259d572b955fcb5f8d3ab63a4b70e76aebf9f67"
+    },
+    {
+      "bytes": 10567,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_c_public_administrative_stage_flow\\artifact_manifest.json",
+      "sha256": "45266e841d2011ca7fd2b70814a91b2c7e31f00139a631be1536023b7f49a5b2"
+    },
+    {
+      "bytes": 595,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_c_public_administrative_stage_flow\\M7D_C_RESULTS.json",
+      "sha256": "0a1a08de4c1227f2ecde63937e1868434de7caf3de0b28f10e7a7b4f9acef6b5"
+    },
+    {
+      "bytes": 5377,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_b_source_bundled_operational_acquisition\\M7D_B_PUBLIC_AVAILABILITY_SCAN.json",
+      "sha256": "9159f996c7e484c46e2db82482d0c4270705973242e646d8a8de9fdb863b045e"
+    }
+  ],
+  "privacy_projection": {
+    "explicitly_excluded": [
+      "typetext",
+      "initialtypetext",
+      "mapx",
+      "mapy",
+      "beat",
+      "block_address",
+      "zip",
+      "location",
+      "notes",
+      "narratives",
+      "caller",
+      "officer"
+    ],
+    "requested": [
+      "nopd_item",
+      "timecreate",
+      "timedispatch",
+      "timearrive",
+      "timeclosed",
+      "priority",
+      "initialtype",
+      "selfinitiated",
+      "policedistrict",
+      "disposition",
+      "dispositiontext"
+    ]
+  },
+  "registry_payload_sha256": "fc846d0c6e2580b6eee54998c7c26981901dceab7541d12984d3e79b69ce7b5f",
+  "retrieved_utc": "2026-08-11T06:48:30.887163+00:00"
+}

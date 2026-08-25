@@ -1,0 +1,144 @@
+{
+  "Ida_alignment_advantage": [
+    -0.11373142857709367,
+    -0.09753318737665745
+  ],
+  "Ida_duration_matched_comparison": {
+    "best_placebo": "UNLABELED_B4_B6",
+    "best_placebo_score": 0.45524170615825876,
+    "institutional_alignment_advantage_lower": 0.20450721148735873,
+    "institutional_alignment_advantage_upper": 0.20450722148735673
+  },
+  "Ida_interval": [
+    0.25073448467090204,
+    0.25073449467090003
+  ],
+  "Ida_parity": "PASS",
+  "abnormal_cell_count": 9,
+  "alignment_advantage_rank": {
+    "FULL_QUALIFIED_REFERENCE__ALL_QUALIFIED": {
+      "R": 217,
+      "rank_lower": 217,
+      "rank_upper": 217,
+      "tail_lower": 0.9954128440366973,
+      "tail_upper": 0.9954128440366973
+    },
+    "FULL_QUALIFIED_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 217,
+      "rank_lower": 217,
+      "rank_upper": 217,
+      "tail_lower": 0.9954128440366973,
+      "tail_upper": 0.9954128440366973
+    },
+    "SAME_SEASON_STAGE_REFERENCE__ALL_QUALIFIED": {
+      "R": 86,
+      "rank_lower": 87,
+      "rank_upper": 87,
+      "tail_lower": 1.0,
+      "tail_upper": 1.0
+    },
+    "SAME_SEASON_STAGE_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 86,
+      "rank_lower": 87,
+      "rank_upper": 87,
+      "tail_lower": 1.0,
+      "tail_upper": 1.0
+    },
+    "STAGE_ERA_MATCHED_REFERENCE__ALL_QUALIFIED": {
+      "R": 153,
+      "rank_lower": 153,
+      "rank_upper": 153,
+      "tail_lower": 0.9935064935064936,
+      "tail_upper": 0.9935064935064936
+    },
+    "STAGE_ERA_MATCHED_REFERENCE__NONOVERLAPPING_PRIMARY": {
+      "R": 153,
+      "rank_lower": 153,
+      "rank_upper": 153,
+      "tail_lower": 0.9935064935064936,
+      "tail_upper": 0.9935064935064936
+    }
+  },
+  "artifact_type": "M7B_RESULTS",
+  "authority": "PASS",
+  "causal_effect": false,
+  "coverage": [
+    {
+      "C_exists": true,
+      "C_forall": false,
+      "abnormal_cell_count": 9,
+      "family": "R1_S4_TWELVE_HOUR_SHIFTS",
+      "label": "EXISTENTIAL_FULL_COVERAGE"
+    },
+    {
+      "C_exists": false,
+      "C_forall": false,
+      "abnormal_cell_count": 9,
+      "family": "R1_S4_REDEPLOYMENT_ANTI_LOOTING",
+      "label": "NO_ADMISSIBLE_FULL_COVERAGE"
+    },
+    {
+      "C_exists": false,
+      "C_forall": false,
+      "abnormal_cell_count": 9,
+      "family": "R1_S4_CURFEW",
+      "label": "NO_ADMISSIBLE_FULL_COVERAGE"
+    }
+  ],
+  "coverage_is_secondary": true,
+  "exchangeability_adopted": false,
+  "incidence_identified": false,
+  "independent_replication": "PASS",
+  "interpretation_case": "B",
+  "max_cell": {
+    "FULL_QUALIFIED_REFERENCE": {
+      "R": 217,
+      "c_0.95": 0.20939747635914793
+    },
+    "SAME_SEASON_STAGE_REFERENCE": {
+      "R": 86,
+      "c_0.95": 0.20571914736674463
+    },
+    "STAGE_ERA_MATCHED_REFERENCE": {
+      "R": 153,
+      "c_0.95": 0.22469069558913304
+    }
+  },
+  "mechanism_identified": false,
+  "primary_rank": {
+    "R": 217,
+    "definitely_more_extreme": 0,
+    "p_lower": 0.0045871559633027525,
+    "p_upper": 0.0045871559633027525,
+    "possibly_more_extreme": 0,
+    "rank_lower": 1,
+    "rank_upper": 1
+  },
+  "reference_counts": {
+    "FULL_QUALIFIED_REFERENCE": 217,
+    "SAME_SEASON_STAGE_REFERENCE": 86,
+    "STAGE_ERA_MATCHED_REFERENCE": 153
+  },
+  "reference_fit_tolerance": {
+    "R": 217,
+    "pi_0_25_lower": 0.0,
+    "pi_0_25_upper": 0.0,
+    "q50": [
+      0.054351825181001276,
+      0.061777760199687115
+    ],
+    "q75": [
+      0.06959255197179487,
+      0.07448786602155397
+    ],
+    "q90": [
+      0.09093290334060797,
+      0.09246202518188801
+    ],
+    "q95": [
+      0.10488723660275912,
+      0.10488724660275908
+    ]
+  },
+  "status": "M7B_READY_FOR_EXTERNAL_STATISTICAL_REVIEW"
+}

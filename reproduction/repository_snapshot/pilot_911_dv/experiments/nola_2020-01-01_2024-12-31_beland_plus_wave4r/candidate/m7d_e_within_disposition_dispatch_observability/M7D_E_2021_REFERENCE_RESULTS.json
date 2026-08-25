@@ -1,0 +1,104 @@
+{
+  "artifact_type": "M7D_E_2021_REFERENCE_RESULTS",
+  "exchangeability_claimed": false,
+  "outcome_based_selection": false,
+  "results": [
+    {
+      "add_one_lower_tail": 0.022222222222222223,
+      "add_one_upper_tail": 1.0,
+      "bin": "B6",
+      "candidate_2021_reference_n": 45,
+      "disposition": "GOA",
+      "ida_value": -0.44015798772358616,
+      "rank_ascending": 1,
+      "reference_defined_n": 44,
+      "reference_max": 0.08333333333333326,
+      "reference_min": -0.05143053895685634,
+      "status": "ADEQUATE_DESCRIPTIVE_REFERENCE"
+    },
+    {
+      "add_one_lower_tail": 0.022222222222222223,
+      "add_one_upper_tail": 1.0,
+      "bin": "B6",
+      "candidate_2021_reference_n": 45,
+      "disposition": "RTF",
+      "ida_value": -0.5666952635144762,
+      "rank_ascending": 1,
+      "reference_defined_n": 44,
+      "reference_max": 0.07308383548717823,
+      "reference_min": -0.10093407173185187,
+      "status": "ADEQUATE_DESCRIPTIVE_REFERENCE"
+    },
+    {
+      "add_one_lower_tail": 0.022222222222222223,
+      "add_one_upper_tail": 1.0,
+      "bin": "B6",
+      "candidate_2021_reference_n": 45,
+      "disposition": "NAT",
+      "ida_value": -0.5315338630474346,
+      "rank_ascending": 1,
+      "reference_defined_n": 44,
+      "reference_max": 0.1096947640998217,
+      "reference_min": -0.09642495048451316,
+      "status": "ADEQUATE_DESCRIPTIVE_REFERENCE"
+    },
+    {
+      "bin": "B6",
+      "candidate_2021_reference_n": 45,
+      "disposition": "UNF",
+      "ida_value": null,
+      "minimum_required": 20,
+      "reference_defined_n": 1,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "add_one_lower_tail": 0.022222222222222223,
+      "add_one_upper_tail": 1.0,
+      "bin": "B7",
+      "candidate_2021_reference_n": 45,
+      "disposition": "GOA",
+      "ida_value": -0.26516698395620186,
+      "rank_ascending": 1,
+      "reference_defined_n": 44,
+      "reference_max": 0.05854162555690301,
+      "reference_min": -0.09833679389694527,
+      "status": "ADEQUATE_DESCRIPTIVE_REFERENCE"
+    },
+    {
+      "add_one_lower_tail": 0.022222222222222223,
+      "add_one_upper_tail": 1.0,
+      "bin": "B7",
+      "candidate_2021_reference_n": 45,
+      "disposition": "RTF",
+      "ida_value": -0.45941686733768755,
+      "rank_ascending": 1,
+      "reference_defined_n": 44,
+      "reference_max": 0.15000000000000002,
+      "reference_min": -0.1758484752687517,
+      "status": "ADEQUATE_DESCRIPTIVE_REFERENCE"
+    },
+    {
+      "add_one_lower_tail": 0.022222222222222223,
+      "add_one_upper_tail": 1.0,
+      "bin": "B7",
+      "candidate_2021_reference_n": 45,
+      "disposition": "NAT",
+      "ida_value": -0.6492177516048511,
+      "rank_ascending": 1,
+      "reference_defined_n": 44,
+      "reference_max": 0.06902398835247314,
+      "reference_min": -0.16013835813382526,
+      "status": "ADEQUATE_DESCRIPTIVE_REFERENCE"
+    },
+    {
+      "bin": "B7",
+      "candidate_2021_reference_n": 45,
+      "disposition": "UNF",
+      "ida_value": null,
+      "minimum_required": 20,
+      "reference_defined_n": 4,
+      "status": "DESCRIPTIVE_ONLY"
+    }
+  ],
+  "selection": "frozen eligible M7B registry rows with start year 2021"
+}

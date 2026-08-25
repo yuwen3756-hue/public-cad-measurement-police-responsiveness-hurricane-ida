@@ -1,0 +1,130 @@
+{
+  "artifact_type": "M7D_E_ARTIFACT_MANIFEST",
+  "files": [
+    {
+      "bytes": 955,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\00_START_HERE.md",
+      "sha256": "ca98ce0f258daadceb4883cb2c774b420782e72203f7f9dfe00ffbe00ce6d515"
+    },
+    {
+      "bytes": 695,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\01_M7D_E_EXECUTIVE_BRIEF.md",
+      "sha256": "b43e44a19a01f5888c9722802b44f712b78cfeed3f80dddfb6a2be654ef90255"
+    },
+    {
+      "bytes": 752,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\02_MATHEMATICAL_DECOMPOSITION.md",
+      "sha256": "a87772f9f44257d7d030bc238f20563ec1c7c311bfd82dda42dd7c0052152125"
+    },
+    {
+      "bytes": 500,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\03_B6_B7_PRIMARY_RESULTS.md",
+      "sha256": "576dcd0deca96ec9cf8ebe760ca47cc4b33d197da54cc6fb9a7bf89421bb681f"
+    },
+    {
+      "bytes": 534,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\04_COMPOSITION_ONLY_FALSIFICATION.md",
+      "sha256": "3d3ee755c4087f76c07a479475fd16856b6244c4a365cb92fb9eec451f88a87f"
+    },
+    {
+      "bytes": 526,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\05_WITHIN_DISPOSITION_RESULTS.md",
+      "sha256": "e5f8ef8086d7d0bd8c11f3262bf7101c8e400acc9072459bd6f85ed5b976ccfb"
+    },
+    {
+      "bytes": 455,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\06_AGGREGATE_DISPATCH_FIELD_SHARE.md",
+      "sha256": "e9b8074ad8beb0fd63be5445d4c2de5d280466d266c0ec8939deeffd5a375d15"
+    },
+    {
+      "bytes": 549,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\07_DISPOSITION_COMPOSITION_DECOMPOSITION.md",
+      "sha256": "24a27faed3dcc5710f6a29e2bf202b29698888596efd83bfc754df080f809a20"
+    },
+    {
+      "bytes": 543,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\08_2021_REFERENCE_RARITY.md",
+      "sha256": "908327a25224b802595602c79720414dffeb77ee9f86a8280b9d6c063a599494"
+    },
+    {
+      "bytes": 609,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\09_IDENTIFICATION_IMPLICATIONS.md",
+      "sha256": "0935a1f79ab4e7e240c023fb17d82f7dc2c00ba340db28c8b6f1a3c329d31e03"
+    },
+    {
+      "bytes": 506,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\10_NEXT_OPERATIONAL_WITNESS_DECISION.md",
+      "sha256": "48e01b2a0fb7200549f8ff6b297198eca733287e9ac66595abf5d0b3b64dc910"
+    },
+    {
+      "bytes": 629,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\11_EXTERNAL_REVIEW_PROMPT.md",
+      "sha256": "b69aaf2e49c55aebeb894c0958a4acea0ad7c812d435d319ba280677d87b6b0b"
+    },
+    {
+      "bytes": 3189,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\M7D_E_2021_REFERENCE_RESULTS.json",
+      "sha256": "6b794adf3d13c4b44c39f9ed13fecc4bb6291ad9474d1d293ae5275822ee97be"
+    },
+    {
+      "bytes": 24704,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\M7D_E_AGGREGATE_KITAGAWA.json",
+      "sha256": "bbdd9715de78eb45b17cd8158ba3751344507171a6f066860dfdcbfdd0dea362"
+    },
+    {
+      "bytes": 1101,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\M7D_E_AGGREGATE_Q.csv",
+      "sha256": "d1374e098c0eec95ed8374a112afdc72ad77227f4d1debd9cba6243d21c6f4f8"
+    },
+    {
+      "bytes": 4969,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\M7D_E_COMPOSITION_ONLY_WITNESSES.csv",
+      "sha256": "5da1181be30bb3bdf71136b58c0563d906469a691f337a3b8c8d6a2ac1ceb73f"
+    },
+    {
+      "bytes": 3184,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\M7D_E_FROZEN_INPUTS.json",
+      "sha256": "44f8f517210c3dca13b6baaef70a02e4a9305c9dd2eb8e20b0b5393b10b447b4"
+    },
+    {
+      "bytes": 7741,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\M7D_E_H_MASSES.csv",
+      "sha256": "2df4b777929b3f574641f24983cd6710489002d35bdf3d6375f3d1e67ec7d4a1"
+    },
+    {
+      "bytes": 60258,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\M7D_E_INDEPENDENT_AGGREGATES.json",
+      "sha256": "64f67606e536a600702d7e213c34cb46990eae1f901ef479e4c83b67ff3de525"
+    },
+    {
+      "bytes": 480,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\M7D_E_INDEPENDENT_REPLICATION.json",
+      "sha256": "9df97c979ab7f2a4a42eab38ae4d8b6c13adc0c034a9b412a0f1b57090f56334"
+    },
+    {
+      "bytes": 11276,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\M7D_E_KITAGAWA_DECOMPOSITION.csv",
+      "sha256": "7c4d797a21907945832fa96cba2d7d3cf699a3b4905ce4b85e4f1e2e37860874"
+    },
+    {
+      "bytes": 1172,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\M7D_E_RESULTS.json",
+      "sha256": "07311743b4714f6719fae5139708d0e535c0a58b299af7a724cfbc4f48241c58"
+    },
+    {
+      "bytes": 3314,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\M7D_E_WITHIN_DISPOSITION_Q.csv",
+      "sha256": "052205d70550747965410c9444ae80e58517ef57f183c41b66cabdef20d72ae3"
+    },
+    {
+      "bytes": 9235,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\replicate_m7d_e.py",
+      "sha256": "a6b03145fca0f32b0fbb3ad67c397397c1c50c28477fb5ecc4c230286a54de27"
+    },
+    {
+      "bytes": 14617,
+      "path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\experiments\\nola_2020-01-01_2024-12-31_beland_plus_wave4r\\candidate\\m7d_e_within_disposition_dispatch_observability\\run_m7d_e.py",
+      "sha256": "68b3f2f69b1841505518abbdc0237eec2d44bbcc3aa5329741ecccd0b7c84d9c"
+    }
+  ]
+}

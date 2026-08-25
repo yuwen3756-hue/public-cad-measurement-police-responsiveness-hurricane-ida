@@ -1,0 +1,13 @@
+{
+  "admitted": true,
+  "canonical_id": "terra",
+  "code": "admitted_registered_subagent",
+  "registry_path": "C:\\AI Project\\RA_Topic\\pilot_911_dv\\coordination\\registered_subagent_control_plane.v1.json",
+  "registry_sha256": "aee9f8f06c521b4d0ec36de42d2a5acba220aeb56edb6cc4482480aca6d50f43",
+  "runtime_selector": {
+    "agent_type": "worker",
+    "model": "gpt-5.6-terra"
+  },
+  "schema_version": "subagent_dispatch_admission.v1",
+  "silent_substitution_allowed": false
+}

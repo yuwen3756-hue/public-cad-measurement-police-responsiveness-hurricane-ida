@@ -1,0 +1,389 @@
+{
+  "audit_version": "m8p_current_data_validity_audit_v1",
+  "generated_at_utc": "2026-08-11T22:58:15.424666Z",
+  "scope": "Annual aggregate data-quality audit only; no shock or outcome search.",
+  "year_to_year": {
+    "2025_row_share_with_type_code_observed_in_2026": 0.9999181247536162,
+    "2026_row_share_with_type_code_observed_in_2025": 0.9983319750844736,
+    "common_final_type_codes": 209,
+    "common_type_code_text_hash_sets_changed": 1,
+    "common_type_code_text_hash_sets_stable": 208,
+    "final_type_codes_2025": 226,
+    "final_type_codes_2026": 217,
+    "final_type_codes_only_2025": [
+      "100CI",
+      "107U",
+      "110E",
+      "18AB",
+      "21S",
+      "21U",
+      "27-45",
+      "283O",
+      "42M",
+      "62AR",
+      "64AR",
+      "83",
+      "84",
+      "91",
+      "COURT",
+      "QOLIFE",
+      "WALKBT"
+    ],
+    "final_type_codes_only_2026": [
+      "100XI",
+      "17E",
+      "22N",
+      "27-60",
+      "43MBO",
+      "61",
+      "FSERVP",
+      "PDMED"
+    ],
+    "header_exact_match": true
+  },
+  "years": {
+    "2025": {
+      "dataset_id": "4xwx-sfte",
+      "duplicate_item_rows": 0,
+      "final_type_code_count": 226,
+      "initial_type_code_count": 214,
+      "malformed_timestamps": {},
+      "priority_endpoint": {
+        "both_present": 329770,
+        "exact_disagreement_rate_among_both_present": 0.3874488279710101,
+        "exact_endpoint_disagreement": 127769,
+        "numeric_disagreement_rate_among_both_present": 0.23320496103344757,
+        "numeric_endpoint_disagreement": 76904,
+        "suffix_only_endpoint_disagreement": 50865
+      },
+      "priority_outside_documented_root_0_to_3": {
+        "InitialPriority": {
+          "rows": 7,
+          "values": [
+            "Q",
+            "`"
+          ]
+        },
+        "Priority": {
+          "rows": 5,
+          "values": [
+            "4",
+            "4G",
+            "4H"
+          ]
+        }
+      },
+      "priority_values": {
+        "InitialPriority": [
+          "0",
+          "0A",
+          "0C",
+          "0D",
+          "0E",
+          "0G",
+          "0H",
+          "0I",
+          "0L",
+          "0M",
+          "0Z",
+          "1",
+          "1A",
+          "1B",
+          "1C",
+          "1D",
+          "1E",
+          "1F",
+          "1G",
+          "1H",
+          "1I",
+          "1J",
+          "1K",
+          "1L",
+          "1Z",
+          "2",
+          "2A",
+          "2B",
+          "2C",
+          "2D",
+          "2E",
+          "2F",
+          "2G",
+          "2J",
+          "3C",
+          "Q",
+          "`"
+        ],
+        "Priority": [
+          "0",
+          "0A",
+          "0B",
+          "0C",
+          "0D",
+          "0E",
+          "0F",
+          "0G",
+          "0H",
+          "0I",
+          "0K",
+          "0L",
+          "0M",
+          "0S",
+          "0V",
+          "0W",
+          "0X",
+          "0Y",
+          "0Z",
+          "1",
+          "1A",
+          "1B",
+          "1C",
+          "1D",
+          "1E",
+          "1F",
+          "1G",
+          "1H",
+          "1I",
+          "1J",
+          "1K",
+          "1L",
+          "1M",
+          "1N",
+          "1O",
+          "1Q",
+          "1U",
+          "1W",
+          "1X",
+          "1Y",
+          "1Z",
+          "2",
+          "2A",
+          "2B",
+          "2C",
+          "2D",
+          "2E",
+          "2F",
+          "2G",
+          "2H",
+          "2I",
+          "2J",
+          "3",
+          "3C",
+          "3D",
+          "3J",
+          "4",
+          "4G",
+          "4H"
+        ],
+        "SelfInitiated": [
+          "N",
+          "Y"
+        ]
+      },
+      "rows": 329770,
+      "sequence_inconsistencies": {
+        "arrival_without_dispatch": 152701,
+        "arrive_before_create": 3,
+        "arrive_before_dispatch": 1049,
+        "closed_before_arrive": 7,
+        "closed_before_create": 292,
+        "closed_before_dispatch": 3,
+        "closed_without_arrival": 53687,
+        "dispatch_before_create": 4
+      },
+      "stage_by_selfinitiated": {
+        "N": {
+          "arrival_present": 153572,
+          "arrival_present_rate": 0.7417145617000724,
+          "close_present": 207050,
+          "close_present_rate": 1.0,
+          "dispatch_present": 136712,
+          "dispatch_present_rate": 0.6602849553248008,
+          "rows": 207050
+        },
+        "Y": {
+          "arrival_present": 122511,
+          "arrival_present_rate": 0.9982969361147327,
+          "close_present": 122720,
+          "close_present_rate": 1.0,
+          "dispatch_present": 1117,
+          "dispatch_present_rate": 0.009102020860495436,
+          "rows": 122720
+        }
+      },
+      "timestamp_max": {
+        "TimeArrive": "2026-01-01T02:26:43.037000",
+        "TimeClosed": "2026-01-01T02:40:14.827000",
+        "TimeCreate": "2025-12-31T23:59:42.233000",
+        "TimeDispatch": "2026-01-01T02:18:44.190000"
+      },
+      "timestamp_min": {
+        "TimeArrive": "2025-01-01T00:05:07.610000",
+        "TimeClosed": "2025-01-01T00:02:56.620000",
+        "TimeCreate": "2025-01-01T00:01:31.770000",
+        "TimeDispatch": "2025-01-01T00:03:04.977000"
+      },
+      "type_change_count": 86054,
+      "type_change_rate_among_both_present": 0.2609515723079722,
+      "unique_item_count": 329770
+    },
+    "2026": {
+      "dataset_id": "es9j-6y5d",
+      "duplicate_item_rows": 0,
+      "final_type_code_count": 217,
+      "initial_type_code_count": 207,
+      "malformed_timestamps": {},
+      "priority_endpoint": {
+        "both_present": 209829,
+        "exact_disagreement_rate_among_both_present": 0.37101639906781236,
+        "exact_endpoint_disagreement": 77850,
+        "numeric_disagreement_rate_among_both_present": 0.24159196297937843,
+        "numeric_endpoint_disagreement": 50693,
+        "suffix_only_endpoint_disagreement": 27157
+      },
+      "priority_outside_documented_root_0_to_3": {
+        "InitialPriority": {
+          "rows": 2,
+          "values": [
+            "`"
+          ]
+        },
+        "Priority": {
+          "rows": 0,
+          "values": []
+        }
+      },
+      "priority_values": {
+        "InitialPriority": [
+          "0",
+          "0A",
+          "0B",
+          "0C",
+          "0D",
+          "0E",
+          "0G",
+          "0H",
+          "0I",
+          "0J",
+          "0Z",
+          "1",
+          "1A",
+          "1B",
+          "1C",
+          "1D",
+          "1E",
+          "1F",
+          "1G",
+          "1H",
+          "1I",
+          "1J",
+          "1K",
+          "1Z",
+          "2",
+          "2A",
+          "2B",
+          "2C",
+          "2D",
+          "2E",
+          "2F",
+          "2J",
+          "3",
+          "3C",
+          "`"
+        ],
+        "Priority": [
+          "0",
+          "0A",
+          "0B",
+          "0C",
+          "0D",
+          "0E",
+          "0F",
+          "0G",
+          "0H",
+          "0I",
+          "0J",
+          "0V",
+          "0Y",
+          "0Z",
+          "1",
+          "1A",
+          "1B",
+          "1C",
+          "1D",
+          "1E",
+          "1F",
+          "1G",
+          "1H",
+          "1I",
+          "1J",
+          "1K",
+          "1L",
+          "1M",
+          "1N",
+          "1P",
+          "1R",
+          "1Z",
+          "2",
+          "2A",
+          "2B",
+          "2C",
+          "2D",
+          "2E",
+          "2F",
+          "2G",
+          "2H",
+          "2I",
+          "2J",
+          "2K",
+          "3C"
+        ],
+        "SelfInitiated": [
+          "N",
+          "Y"
+        ]
+      },
+      "rows": 209829,
+      "sequence_inconsistencies": {
+        "arrival_without_dispatch": 97573,
+        "arrive_before_dispatch": 676,
+        "closed_before_create": 62,
+        "closed_without_arrival": 33269
+      },
+      "stage_by_selfinitiated": {
+        "N": {
+          "arrival_present": 97225,
+          "arrival_present_rate": 0.7458993755082626,
+          "close_present": 130346,
+          "close_present_rate": 1.0,
+          "dispatch_present": 87129,
+          "dispatch_present_rate": 0.6684439875408528,
+          "rows": 130346
+        },
+        "Y": {
+          "arrival_present": 79335,
+          "arrival_present_rate": 0.9981379666092121,
+          "close_present": 79483,
+          "close_present_rate": 1.0,
+          "dispatch_present": 738,
+          "dispatch_present_rate": 0.00928500434055081,
+          "rows": 79483
+        }
+      },
+      "timestamp_max": {
+        "TimeArrive": "2026-08-11T00:51:31.777000",
+        "TimeClosed": "2026-08-11T02:57:09.203000",
+        "TimeCreate": "2026-08-10T23:59:04.747000",
+        "TimeDispatch": "2026-08-11T00:50:51.793000"
+      },
+      "timestamp_min": {
+        "TimeArrive": "2026-01-01T00:02:06.083000",
+        "TimeClosed": "2026-01-01T00:01:48.617000",
+        "TimeCreate": "2026-01-01T00:00:54.023000",
+        "TimeDispatch": "2026-01-01T00:10:11.897000"
+      },
+      "type_change_count": 53139,
+      "type_change_rate_among_both_present": 0.2532490742461719,
+      "unique_item_count": 209829
+    }
+  }
+}
