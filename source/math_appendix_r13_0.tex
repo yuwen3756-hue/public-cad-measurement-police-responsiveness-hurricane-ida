@@ -3,9 +3,9 @@
 \fancyhead[L]{\footnotesize\itshape Mathematical appendix: workload, observation, and identification}
 
 \title{\vspace{-1.6em}\textbf{Mathematical Definitions, Identification Results, and Reproduction Guide}\\[0.35em]
-\large Appendix to \emph{From Police Workload to Auditable Performance Measures}}
+\large Appendix to \emph{Public CAD Is Not Operational Ground Truth}}
 \author{}
-\date{24 August 2026\\[0.2em]\small Appendix R12.2 \quad Results R12}
+\date{24 August 2026\\[0.2em]\small Appendix R13.0 \quad Results R12}
 
 \begin{document}
 \maketitle
@@ -86,7 +86,7 @@ with the clock, endpoint, and eligible population declared for target $k$.
 
 Two kinds of friction enter this system. Operational friction changes $S$ through holding, availability, assignment, handoffs, or follow-up. Record-production friction changes $R$ through classification, overwrite, retention, linkage, or export. Distinct pairs $(S,R)$ can generate the same $Y$, so public missingness alone cannot allocate the discrepancy between these sources. Holding and availability histories, joint public--internal counts, and retained stage lineage contract the relevant alternatives through \cref{eq:witness_contraction}.
 
-The released call count is likewise a measure of $D_t^{\mathrm{CAD}}$, rather than a direct measure of $D_t^*$ or either intermediate stage in \cref{eq:demand_chain}. R12.2 estimates no DV call-volume trend. Its DV application begins with a declared CAD risk set and derives the additional witnesses needed to measure service conditional on that set.
+The released call count is likewise a measure of $D_t^{\mathrm{CAD}}$, rather than a direct measure of $D_t^*$ or either intermediate stage in \cref{eq:demand_chain}. R13.0 retains the R12 system-level estimates and reports no DV call-volume trend. Its DV application begins with a declared CAD risk set and derives the additional witnesses needed to measure service conditional on that set.
 
 \subsection{Target-specific sufficiency and inclusion-minimality}
 \label{sec:witness_minimality}
@@ -141,7 +141,7 @@ For the prevalence of any priority revision, $\{w_C,w_L,w_P\}$ is inclusion-mini
 For an administrative follow-through rate, $\{w_C,w_L,w_A,w_Z\}$ is inclusion-minimal. Deleting $w_A$ changes the eligible denominator; deleting $w_L$ allows the same completion total to be reassigned across CAD calls; deleting $w_Z$ leaves completion undefined.
 \end{plainbox}
 
-These are target-specific results. Calls-holding transitions enter the minimum bundle when the target is queue delay. Realized unit availability enters when the target includes capacity or capacity-adjusted responsiveness. A fully observed receipt-to-qualified-endpoint distribution uses neither. Wherever $w_L$ appears, the privacy-safe product must retain the indicated joint cells; marginal aggregates alone leave the pairing unresolved, although no event identifier need be released.
+These are target-specific results. Calls-holding transitions enter the minimum bundle when the target is queue delay. Realized unit availability enters when the target includes capacity or capacity-adjusted responsiveness. A fully observed receipt-to-qualified-endpoint distribution uses neither. Wherever $w_L$ appears, the privacy-conscious product must retain the indicated joint cells; marginal aggregates alone leave the pairing unresolved, although no event identifier need be released. This label does not assert a formal privacy guarantee.
 
 \subsection{The stress-test statistic is an observable diagnostic}
 
@@ -547,7 +547,7 @@ and therefore
 =q_{r,t}(1-q_{r,t})(\Delta m_{r,t})^2\ge0.
 \label{eq:signrestriction}
 \end{equation}
-Thus opposite-signed $\Delta H_{11,r,t}$ and $\Delta H_{01,r,t}$ exclude composition-only in that cell.
+Thus opposite-signed $\Delta H_{11,r,t}$ and $\Delta H_{01,r,t}$ exclude the restricted composition-only model for the public-state masses within that named observed final disposition.
 \end{plainbox}
 
 This result requires no stochastic test and no choice among decomposition orders. It is a finite-file accounting implication.
@@ -574,7 +574,7 @@ Calendar bin & Disposition & $\Delta H_{01,r}$ & $\Delta H_{11,r}$ \\
 \end{tabular}
 \end{table}
 
-All six products $\Delta H_{01,r}\Delta H_{11,r}$ are negative, so composition-only is excluded in every focal cell. The contemporaneous disposition registry defines GOA as Gone on Arrival, RTF as Report to Follow, NAT as Necessary Action Taken, and UNF as Unfounded. The 2021 accounting is qualified; an unchanged cross-year disposition semantic chain is not assumed.
+All six products $\Delta H_{01,r}\Delta H_{11,r}$ are negative, so a composition-only explanation based on the observed final-disposition mix among arrival-observed records is excluded in every focal cell. Selection into the arrival-observed set, unobserved composition, within-category heterogeneity, semantic drift, and alternative service or record-production pathways remain possible. The contemporaneous disposition registry defines GOA as Gone on Arrival, RTF as Report to Follow, NAT as Necessary Action Taken, and UNF as Unfounded. The 2021 accounting is qualified; an unchanged cross-year disposition semantic chain is not assumed.
 
 \subsection{Aggregate decomposition across dispositions}
 
@@ -1199,7 +1199,7 @@ A valid M7B replay must satisfy:
 \begin{itemize}
 \item 217 full qualified reference windows;
 \item Ida matrix parity no larger than $10^{-10}$;
-\item rank 1 in all three reference designs;
+\item no reference interval reaches the Ida interval in any of the three reference designs;
 \item no interval overlap between Ida and any reference.
 \end{itemize}
 
@@ -1332,8 +1332,8 @@ The locked analysis permits the following statements:
 \begin{itemize}
 \item Ida is reference-extreme in the frozen public-topology discrepancy statistic.
 \item Nine public bin--state contrasts exceed a common reference threshold.
-\item The public-state configuration changes after midday on 31 August: $\Jzeroone$ becomes positive while $\Joneone$ remains negative.
-\item Recorded-disposition composition alone is excluded in the six focal GOA/RTF/NAT cells.
+\item Across call-creation cohorts after midday on 31 August, $\Jzeroone$ becomes positive while $\Joneone$ remains negative in the eventual released records.
+\item A composition-only explanation based on the observed final-disposition mix among arrival-observed records is excluded in the six focal GOA/RTF/NAT cells.
 \item The late aggregate shift is dominated by changes within recorded dispositions.
 \item A performance functional is directly supportable only when its measure-specific identified set is a singleton under the admitted witnesses.
 \item Endpoint coverage yields sharp pointwise bounds for a full-denominator response-time distribution.
@@ -1362,9 +1362,9 @@ The argument has two connected modules:
 \item \emph{Measure-specific identification.} Define each candidate target $\theta_k=m_k(S)$ and evaluate $\mathcal I_k(Y,W)$. The bridge product, queue identities, priority bounds, $1/0/U$ classification bounds, endpoint-selection bounds, and lineage bounds are applications of this common rule.
 \end{enumerate}
 
-The workload map links reported demand, capacity, priorities, and service. The first module shows that instability in the released observation of that system is empirically consequential. The second determines which reported-DV performance functionals remain supportable, bounded, selected, or unavailable and identifies the witnesses that contract each set. Those witnesses define privacy-safe aggregate products for resource management and civilian oversight. The frozen Ida results remain system-level.
+The workload map links reported demand, capacity, priorities, and service. The first module shows that instability in the released observation of that system is empirically consequential. The second determines which reported-DV performance functionals remain supportable, bounded, selected, or unavailable and identifies the witnesses that contract each set. Those witnesses define privacy-conscious aggregate products for resource management and civilian oversight. The frozen Ida results remain system-level.
 
 \bibliographystyle{apalike}
-\bibliography{references_r12_2}
+\bibliography{references_r13_0}
 
 \end{document}

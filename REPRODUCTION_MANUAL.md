@@ -17,16 +17,16 @@ The work proceeded in five layers:
 1. Defined four public CAD field-presence states from dispatch and arrival fields and standardized event-reference contrasts within ten frozen 12-hour bins.
 2. Applied the same restricted-support discrepancy estimator to Ida and 217 qualified reference windows. Two narrower comparison sets were retained as prespecified sensitivity designs.
 3. Decomposed the dispatch-field change among arrival-field records into disposition-composition and within-disposition components.
-4. Mapped candidate reported-DV performance measures to measure-specific identified sets and the minimum privacy-safe witnesses needed to contract them.
+4. Mapped candidate reported-DV performance measures to measure-specific identified sets and inclusion-minimal privacy-conscious witness bundles needed to contract them.
 5. Replayed the 2025-2026 public-data architecture to determine whether newer public fields close the structural measurement gaps. They improve description but do not establish a strict mechanism-relevant identified-set contraction.
 
-R12.2 refined the identification and literature framing while retaining R12 mathematics and numerical results. This release changes title-page presentation and packaging only.
+R13.0 is a major paper revision because it changes the contribution architecture while retaining the R12 mathematics and numerical results. The all-call Ida CAD stress test is now the empirical center, and the reported-DV material is a bounded application for a future performance study. The revision also adds the complete 217-window score distribution, the unfavorable timing-shift placebo, explicit call-creation-cohort semantics, and narrower language for the within-disposition accounting result.
 
 ## 3. Package layout
 
 ```text
 paper/                         final main, appendix, and combined PDFs
-source/                        self-contained LaTeX and bibliography
+source/                        self-contained LaTeX, bibliography, and plotting data
 scripts/                       verification, replay, and PDF-build entry points
 reproduction/repository_snapshot/
   pilot_911_dv/experiments/    empirical code and locked aggregate artifacts
@@ -36,6 +36,8 @@ reproduction/repository_snapshot/
 ```
 
 `PACKAGE_MANIFEST.sha256` binds the distributed files. The manifest excludes itself.
+
+`source/reference_score_distribution_r13.csv` is a mechanical ordering of the 217 non-Ida rows in the locked `M7B_REFERENCE_STATISTICS.csv`, sorted by `U_full_upper`. It creates no new estimate; it makes the full reference distribution visible in the paper.
 
 ## 4. Environment
 
@@ -66,7 +68,7 @@ This is read-only. It verifies the package manifest and checks the declared M7B,
 
 Expected empirical invariants include:
 
-- M7B: 217 full qualified reference windows; Ida rank 1 in the full, stage-era, and same-season-stage sets; maximum Ida matrix parity error no larger than $10^{-10}$; no Ida-reference interval overlap.
+- M7B: 217 full qualified reference windows; no reference interval reaches the Ida interval in the full, stage-era, or same-season-stage set; maximum Ida matrix parity error no larger than $10^{-10}$.
 - M7D-E: independent parent parity and Kitagawa identity residuals below $10^{-12}$; independent replication `PASS`.
 - M8P: 20 focused validation checks pass; decision `M8P_PUBLIC_OBSERVABILITY_PARTIALLY_IMPROVED`; strict-contraction list empty; all four M8D structural witness statuses `CLOSED`.
 
@@ -162,3 +164,23 @@ The script compiles the main paper and appendix, runs BibTeX, performs the requi
 ## 9. Interpretation boundary
 
 The package measures a descriptive, reference-extreme change in the released public record under system stress. It does not identify police performance, effective capacity, physical response, a causal mechanism, true DV incidence, or a DV-specific treatment effect. Reported DV-related calls remain administrative reporting measures conditional on the declared CAD denominator and labeling rule.
+
+## 10. Literature refinement
+
+Five user-supplied papers were reviewed page by page for overlap with the current argument. The PDFs are not redistributed in this public package. Their roles are:
+
+- Brent and Beland (2020), *Journal of Environmental Economics and Management*, DOI `10.1016/j.jeem.2020.102339`: the closest economics antecedent, showing why valid first-responder response clocks have economic consequences using linked operational incident and traffic data.
+- Anastario, Shehab, and Lawry (2009), *Disaster Medicine and Public Health Preparedness*, DOI `10.1097/DMP.0b013e3181979c32`: post-Katrina gender-based violence among internally displaced women.
+- Schumacher et al. (2010), *Violence and Victims*, DOI `10.1891/0886-6708.25.5.588`: pre/post Katrina reports of IPV and associated mental-health outcomes in southern Mississippi.
+- Harville et al. (2011), *Journal of Interpersonal Violence*, DOI `10.1177/0886260510365861`: hurricane experience and reported partner conflict in a postpartum cohort.
+- First et al. (2022), *Social Work Research*, DOI `10.1093/swr/svac021`: Hurricane Harvey exposure, IPV, resilience, and mental-health outcomes.
+
+The first paper is a direct response-time antecedent. The other four motivate the substantive importance of disaster-period DV measurement, but their survey-based designs do not validate public CAD fields or identify an Ida effect on reported DV calls. R13.0 makes this non-overlap explicit.
+
+## 11. Version and predecessor
+
+- Paper: R13.0
+- Scientific results: R12, unchanged
+- Package: 2
+- Untouched predecessor: `beland_plus_current_status_professor_2026-08-24_r12_2_v1`
+- Public repository: `https://github.com/yuwen3756-hue/beland-plus-current-status-2026-08-24-r12-2`

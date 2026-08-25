@@ -65,9 +65,9 @@ def verify_manifest() -> None:
 
 def verify_pdfs() -> None:
     expected = {
-        "Beland_Current_Status_Main_2026-08-24_R12_2.pdf",
-        "Beland_Current_Status_Appendix_2026-08-24_R12_2.pdf",
-        "Beland_Current_Status_2026-08-24_R12_2.pdf",
+        "Beland_Current_Status_Main_2026-08-24_R13_0.pdf",
+        "Beland_Current_Status_Appendix_2026-08-24_R13_0.pdf",
+        "Beland_Current_Status_2026-08-24_R13_0.pdf",
     }
     actual = {path.name for path in (PACKAGE / "paper").glob("*.pdf")}
     require(actual == expected, f"unexpected PDF set: {sorted(actual)}")

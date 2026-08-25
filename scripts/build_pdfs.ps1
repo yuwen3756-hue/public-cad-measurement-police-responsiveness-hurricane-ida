@@ -29,20 +29,20 @@ function Build-LaTeXDocument {
 
 Push-Location $sourceDir
 try {
-    Build-LaTeXDocument "main_paper_r12_2"
-    Build-LaTeXDocument "math_appendix_r12_2"
+    Build-LaTeXDocument "main_paper_r13_0"
+    Build-LaTeXDocument "math_appendix_r13_0"
 } finally {
     Pop-Location
 }
 
-$mainOut = Join-Path $paperDir "Beland_Current_Status_Main_2026-08-24_R12_2.pdf"
-$appendixOut = Join-Path $paperDir "Beland_Current_Status_Appendix_2026-08-24_R12_2.pdf"
-$combinedOut = Join-Path $paperDir "Beland_Current_Status_2026-08-24_R12_2.pdf"
-Copy-Item -LiteralPath (Join-Path $sourceDir "main_paper_r12_2.pdf") -Destination $mainOut -Force
-Copy-Item -LiteralPath (Join-Path $sourceDir "math_appendix_r12_2.pdf") -Destination $appendixOut -Force
+$mainOut = Join-Path $paperDir "Beland_Current_Status_Main_2026-08-24_R13_0.pdf"
+$appendixOut = Join-Path $paperDir "Beland_Current_Status_Appendix_2026-08-24_R13_0.pdf"
+$combinedOut = Join-Path $paperDir "Beland_Current_Status_2026-08-24_R13_0.pdf"
+Copy-Item -LiteralPath (Join-Path $sourceDir "main_paper_r13_0.pdf") -Destination $mainOut -Force
+Copy-Item -LiteralPath (Join-Path $sourceDir "math_appendix_r13_0.pdf") -Destination $appendixOut -Force
 Invoke-Checked $Python @((Join-Path $PSScriptRoot "combine_pdfs.py"), $mainOut, $appendixOut, $combinedOut)
 
-foreach ($stem in @("main_paper_r12_2", "math_appendix_r12_2")) {
+foreach ($stem in @("main_paper_r13_0", "math_appendix_r13_0")) {
     foreach ($extension in @("aux", "bbl", "blg", "log", "out", "toc", "pdf")) {
         $artifact = Join-Path $sourceDir "$stem.$extension"
         if (Test-Path -LiteralPath $artifact) {
