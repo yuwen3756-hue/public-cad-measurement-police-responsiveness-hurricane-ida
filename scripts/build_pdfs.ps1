@@ -60,10 +60,10 @@ if ($RunRawSourceAudit) {
 Invoke-Checked $Python @((Join-Path $PSScriptRoot "build_r15_1_refinements.py"))
 
 $stems = @(
-    "main_paper_r16_0",
-    "empirical_supplement_r16_0",
-    "research_status_note_r16_0",
-    "legacy_technical_archive_r16_0"
+    "main_paper_r16_1",
+    "empirical_supplement_r16_1",
+    "research_status_note_r16_1",
+    "legacy_technical_archive_r16_1"
 )
 Push-Location $sourceDir
 try {
@@ -75,16 +75,16 @@ try {
     Pop-Location
 }
 
-$mainOut = Join-Path $paperDir "Public_CAD_Main_2026-08-25_R16_0.pdf"
-$suppOut = Join-Path $paperDir "Public_CAD_Empirical_Supplement_2026-08-25_R16_0.pdf"
-$statusOut = Join-Path $paperDir "Public_CAD_Research_Status_Note_2026-08-25_R16_0.pdf"
-$legacyOut = Join-Path $paperDir "Public_CAD_Legacy_Technical_Archive_2026-08-25_R16_0.pdf"
-$combinedOut = Join-Path $paperDir "Public_CAD_2026-08-25_R16_0.pdf"
+$mainOut = Join-Path $paperDir "Public_CAD_Main_2026-08-26_R16_1.pdf"
+$suppOut = Join-Path $paperDir "Public_CAD_Empirical_Supplement_2026-08-26_R16_1.pdf"
+$statusOut = Join-Path $paperDir "Public_CAD_Research_Status_Note_2026-08-26_R16_1.pdf"
+$legacyOut = Join-Path $paperDir "Public_CAD_Legacy_Technical_Archive_2026-08-26_R16_1.pdf"
+$combinedOut = Join-Path $paperDir "Public_CAD_2026-08-26_R16_1.pdf"
 
-Copy-Item -LiteralPath (Join-Path $sourceDir "main_paper_r16_0.pdf") -Destination $mainOut -Force
-Copy-Item -LiteralPath (Join-Path $sourceDir "empirical_supplement_r16_0.pdf") -Destination $suppOut -Force
-Copy-Item -LiteralPath (Join-Path $sourceDir "research_status_note_r16_0.pdf") -Destination $statusOut -Force
-Copy-Item -LiteralPath (Join-Path $sourceDir "legacy_technical_archive_r16_0.pdf") -Destination $legacyOut -Force
+Copy-Item -LiteralPath (Join-Path $sourceDir "main_paper_r16_1.pdf") -Destination $mainOut -Force
+Copy-Item -LiteralPath (Join-Path $sourceDir "empirical_supplement_r16_1.pdf") -Destination $suppOut -Force
+Copy-Item -LiteralPath (Join-Path $sourceDir "research_status_note_r16_1.pdf") -Destination $statusOut -Force
+Copy-Item -LiteralPath (Join-Path $sourceDir "legacy_technical_archive_r16_1.pdf") -Destination $legacyOut -Force
 Invoke-Checked $Python @((Join-Path $PSScriptRoot "combine_pdfs.py"), $mainOut, $suppOut, $combinedOut)
 
 foreach ($stem in $stems) {

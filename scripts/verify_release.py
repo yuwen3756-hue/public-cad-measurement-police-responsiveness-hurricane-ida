@@ -90,19 +90,19 @@ def pdf_text(path: Path) -> str:
 def verify_pdfs() -> None:
     paper = PACKAGE / "paper"
     names = {
-        "Public_CAD_Main_2026-08-25_R16_0.pdf",
-        "Public_CAD_Empirical_Supplement_2026-08-25_R16_0.pdf",
-        "Public_CAD_2026-08-25_R16_0.pdf",
-        "Public_CAD_Research_Status_Note_2026-08-25_R16_0.pdf",
-        "Public_CAD_Legacy_Technical_Archive_2026-08-25_R16_0.pdf",
+        "Public_CAD_Main_2026-08-26_R16_1.pdf",
+        "Public_CAD_Empirical_Supplement_2026-08-26_R16_1.pdf",
+        "Public_CAD_2026-08-26_R16_1.pdf",
+        "Public_CAD_Research_Status_Note_2026-08-26_R16_1.pdf",
+        "Public_CAD_Legacy_Technical_Archive_2026-08-26_R16_1.pdf",
     }
     actual = {path.name for path in paper.glob("*.pdf")}
     require(actual == names, f"unexpected PDF set: {sorted(actual)}")
-    main = paper / "Public_CAD_Main_2026-08-25_R16_0.pdf"
-    supplement = paper / "Public_CAD_Empirical_Supplement_2026-08-25_R16_0.pdf"
-    combined = paper / "Public_CAD_2026-08-25_R16_0.pdf"
-    status = paper / "Public_CAD_Research_Status_Note_2026-08-25_R16_0.pdf"
-    legacy = paper / "Public_CAD_Legacy_Technical_Archive_2026-08-25_R16_0.pdf"
+    main = paper / "Public_CAD_Main_2026-08-26_R16_1.pdf"
+    supplement = paper / "Public_CAD_Empirical_Supplement_2026-08-26_R16_1.pdf"
+    combined = paper / "Public_CAD_2026-08-26_R16_1.pdf"
+    status = paper / "Public_CAD_Research_Status_Note_2026-08-26_R16_1.pdf"
+    legacy = paper / "Public_CAD_Legacy_Technical_Archive_2026-08-26_R16_1.pdf"
     require(10 <= pdf_pages(main) <= 14, "main paper is not 10--14 pages")
     require(12 <= pdf_pages(supplement) <= 18, "empirical supplement is not 12--18 pages")
     require(pdf_pages(status) == 1, "research status note is not one page")
@@ -118,7 +118,7 @@ def verify_pdfs() -> None:
 
 
 def verify_main_source() -> None:
-    text = (PACKAGE / "source" / "main_paper_r16_0.tex").read_text(encoding="utf-8")
+    text = (PACKAGE / "source" / "main_paper_r16_1.tex").read_text(encoding="utf-8")
     forbidden = (
         "R12",
         "R13",
@@ -154,6 +154,12 @@ def verify_main_source() -> None:
         "This post-change set was defined after the July transition was identified",
         "The standardized result is therefore secondary",
         "The supplement calls this the stage-era set",
+        "public missing-dispatch share",
+        "34.7 percent on 10 September",
+        "three of the four public configurations",
+        "retaining every second window removes adjacent overlap",
+        "Data and code availability",
+        "Yuwen Zhu",
     )
     for phrase in required:
         require(phrase in text, f"main paper missing consistency phrase: {phrase}")
@@ -174,14 +180,14 @@ def verify_main_source() -> None:
 
 
 def verify_r16_release() -> None:
-    obj = load_json(PACKAGE / "source" / "r16_release_metadata.json")
-    require(obj["artifact_type"] == "R16_READABILITY_RELEASE_METADATA", "R16 metadata type changed")
-    require(obj["paper_version"] == "R16.0", "paper version changed")
+    obj = load_json(PACKAGE / "source" / "r16_1_release_metadata.json")
+    require(obj["artifact_type"] == "R16_1_EDITORIAL_RELEASE_METADATA", "R16.1 metadata type changed")
+    require(obj["paper_version"] == "R16.1", "paper version changed")
     require(obj["scientific_results_version"] == "R15.1", "scientific-results version changed")
-    require(obj["narrative_rewrite"] is True, "R16 is not marked as a narrative rewrite")
-    require(obj["numerical_results_changed"] is False, "R16 incorrectly marks numerical change")
+    require(obj["editorial_successor"] is True, "R16.1 is not marked as an editorial successor")
+    require(obj["numerical_results_changed"] is False, "R16.1 incorrectly marks numerical change")
     version = (PACKAGE / "VERSION.txt").read_text(encoding="utf-8")
-    require("Paper version: R16.0" in version, "VERSION.txt paper version mismatch")
+    require("Paper version: R16.1" in version, "VERSION.txt paper version mismatch")
     require("Scientific-results version: R15.1" in version, "VERSION.txt results version mismatch")
     expected_hashes = obj["frozen_r15_source_sha256"]
     current_files = {

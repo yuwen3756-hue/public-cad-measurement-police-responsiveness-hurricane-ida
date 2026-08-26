@@ -4,9 +4,9 @@
 \fancyhead[L]{\footnotesize\itshape Public CAD is not operational ground truth}
 
 \title{\vspace{-1.7em}\textbf{Public CAD Is Not Operational Ground Truth}\\[0.35em]
-\large What Hurricane Ida Reveals About Measuring Police Responsiveness}
-\author{}
-\date{25 August 2026}
+\large A Hurricane Ida Stress Test of Public Dispatch Data}
+\author{Yuwen Zhu\\Carleton University}
+\date{\textit{Draft for discussion}\\[0.2em]26 August 2026}
 
 \begin{document}
 \maketitle
@@ -14,19 +14,17 @@
 \vspace{-1.3em}
 
 \begin{plainbox}[title=Abstract]
-Researchers calculate police response times from public computer-aided dispatch (CAD) timestamps. This paper asks whether the released fields represent a stable measurement object. In New Orleans, they do not. Among 419,840 non-officer-initiated records created before 28 July 2021, none contains a valid arrival field without a dispatch field. That configuration appears abruptly on 28 July, while dispatch-field coverage in officer-initiated records falls from 100 percent on 27 July to 40 percent on 28 July and 1 percent on 29 July. Five weeks later, during Hurricane Ida, the arrival-only share among arrival-observed non-officer records reaches 43.4 percent on 31 August and 49.3 percent on 1 September, compared with 5--12 percent during the preceding week. The largest half-day field-state change is 53.2 percentage points, larger than all 151 post-change ordinary-week comparisons. A standardized analysis gives the same ranking but covers only 86.1 percent of event records and 77.0 percent of baseline records, so the full-count result is primary. The data document a discontinuity in the released record and an extreme Ida-era reconfiguration, not physical dispatch, police performance, or the mechanism generating the public fields.
+Researchers commonly measure police response time with timestamps recorded in computer-aided dispatch (CAD) systems. When CAD records are publicly released, that use requires stable field definitions and coverage. In New Orleans, the released record changed abruptly on 28 July 2021. Before that date, none of 419,840 non-officer-initiated records contained an arrival timestamp without a dispatch timestamp. Within two days, that configuration became common, while dispatch-field coverage in officer-initiated records fell from 100 percent to 1 percent. Five weeks later, Hurricane Ida produced a temporary additional shift: among records with a valid arrival field, the public missing-dispatch share reached 43.4 percent on 31 August and 49.3 percent on 1 September. The largest half-day change was 53.2 percentage points, larger than all 151 post-change ordinary-week comparisons. These results document instability in the released measurement product, not physical police response, police performance, or the mechanism generating the public fields. Public CAD timestamps should be used as operational clocks only after field meaning, coverage, and provenance are validated.
 \end{plainbox}
 
-\keywords{calls for service; police responsiveness; administrative data; Hurricane Ida; measurement error; partial identification}
+\keywords{calls for service; police responsiveness; administrative data; Hurricane Ida; measurement error; administrative data quality}
 \jel{C18, C55, H12, K42}
 
 \section{Introduction}
 
-Public CAD data are attractive because they appear to describe a simple operational sequence: a call is created, an officer is dispatched, and an arrival is recorded. Researchers and public agencies often turn those timestamps into measures of response time. That interpretation is valid only if the public fields have stable meanings and coverage. A missing dispatch timestamp may reflect a missing operational stage, but it may also reflect a different workflow, later data entry, field retention, redaction, or export logic.
+Researchers and public agencies commonly construct police response-time measures from timestamps recorded in CAD systems. When CAD records are publicly released, that use assumes the fields retain stable meanings and coverage. This paper tests that assumption in New Orleans before treating the released fields as performance measures. It observes whether public dispatch and arrival fields are present and how their joint pattern changes. A missing dispatch timestamp may reflect a missing operational stage, but it may also reflect workflow, later entry, retention, redaction, or export logic. These field-presence measures describe the released record; they are not response times, physical-event indicators, or measures of service quality.
 
-This paper studies the public record before using it as a performance measure. The object of interest is deliberately modest: whether the released dispatch and arrival fields are present, and how their joint pattern changes over time. These field-presence measures are reproducible from the public file. They are not response times, physical-event indicators, or measures of service quality.
-
-Two empirical facts organize the paper. First, the New Orleans public file changes abruptly on 28 July 2021. Before that date, no non-officer-initiated record has a valid arrival field without a dispatch field. Beginning on 28 July, that configuration appears and persists. At the same time, dispatch fields almost disappear from officer-initiated records even though their arrival fields remain nearly complete. Second, Hurricane Ida produces an additional, temporary reconfiguration within this new regime. On 31 August and 1 September, nearly one-half of arrival-observed non-officer records lack a public dispatch field.
+Two empirical facts organize the paper. First, the New Orleans public file changes abruptly on 28 July 2021. Before that date, no non-officer-initiated record has a valid arrival field without a dispatch field. Beginning on 28 July, that configuration appears and persists. At the same time, dispatch fields almost disappear from officer-initiated records even though their arrival fields remain nearly complete. Second, Hurricane Ida produces an additional, temporary reconfiguration within this new regime. On 31 August and 1 September, the public missing-dispatch share---the share missing a dispatch field among records with a valid arrival field---approaches one-half.
 
 The Ida pattern is large relative to later ordinary weeks. Using every non-officer record in each half-day, the largest event-minus-prior-week change in a public field state is 53.2 percentage points. No post-change ordinary-week comparison is as large. A conditional multinomial bootstrap leaves Ida first in all 4,000 draws, although that exercise does not model time-series dependence. A composition-standardized comparison also ranks Ida first, but it retains incomplete common support and is therefore treated as secondary evidence.
 
@@ -60,12 +58,12 @@ For each record, define the dispatch field as present when \texttt{TimeDispatch}
 \label{tab:states}
 \begin{tabularx}{\textwidth}{@{}lccX@{}}
 \toprule
-Public configuration & Dispatch field & Valid arrival field & Safe interpretation \\
+Public configuration & Dispatch field & Valid arrival field & What the label does not establish \\
 \midrule
-Neither field & No & No & Neither public endpoint is available. \\
-Dispatch only & Yes & No & A dispatch field is available; a valid arrival field is not. \\
-Arrival only & No & Yes & A valid arrival field is available; a dispatch field is not. \\
-Both fields & Yes & Yes & Both public endpoints are available. \\
+Neither field & No & No & No call activity or officer action. \\
+Dispatch only & Yes & No & No physical arrival. \\
+Arrival only & No & Yes & Physical arrival without dispatch. \\
+Both fields & Yes & Yes & Stable endpoint meanings or a complete operational pathway. \\
 \bottomrule
 \end{tabularx}
 \begin{minipage}{0.96\textwidth}\footnotesize
@@ -73,7 +71,7 @@ These labels describe the released record. ``Arrival only'' does not mean that a
 \end{minipage}
 \end{table}
 
-Three descriptive series summarize the public file: the share of records with a dispatch field, the share with a valid arrival field, and the share of arrival-observed records in the arrival-only configuration. Calls are grouped by creation date; dispatch and arrival fields are read from the eventual released record.
+Three descriptive series summarize the public file: the share of records with a dispatch field, the share with a valid arrival field, and the \emph{public missing-dispatch share}---among records with a valid arrival field, the share whose public dispatch field is missing. Calls are grouped by creation date; dispatch and arrival fields are read from the eventual released record.
 
 \section{A public-data regime change on 28 July 2021}
 
@@ -102,7 +100,7 @@ Percentages are calculated from the official daily source rows. Full state count
 \end{minipage}
 \end{table}
 
-The simultaneous movement across the two initiation streams is important. Officer-initiated records carry the public initiation label for items generated by officers in the field, yet their public dispatch fields almost disappear while their arrival fields remain complete. The missing public dispatch field therefore cannot be read mechanically as the absence of an officer or of all operational activity. The discrepancy lies somewhere between activity and released representation.
+The simultaneous movement across the two initiation streams is important. Officer-initiated records carry the public initiation label for items generated by officers in the field, yet their public dispatch fields almost disappear while their arrival fields remain complete. The missing public dispatch field therefore cannot be read mechanically as the absence of an officer or of all operational activity. For this stream, the post-break change is necessarily a change in production of the released record, although the public evidence does not identify the specific entry, retention, transformation, or export step. The discrepancy lies somewhere between activity and released representation.
 
 Figure~\ref{fig:monthly} places the break in the longer series. Dispatch-field coverage among non-officer records is about 90 percent in 2020, then declines after July 2021 and reaches 65.4 percent in 2024. The arrival-only configuration, previously absent, becomes increasingly common.
 
@@ -125,7 +123,7 @@ Figure~\ref{fig:monthly} places the break in the longer series. Dispatch-field c
 \addplot[BelandGreen,thick] table[x=month,y=arrival_share,col sep=comma] {r15_monthly_field_completeness.csv};
 \addplot[BelandOrange,thick] table[x=month,y=j01_given_arrival,col sep=comma] {r15_monthly_field_completeness.csv};
 \draw[BelandRed,dashed,thick] (axis cs:2021-07-28,0) -- (axis cs:2021-07-28,1);
-\legend{Dispatch field present,Valid arrival field,Arrival-only among arrival-observed}
+\legend{Dispatch field present,Valid arrival field,Dispatch missing among arrival-observed}
 \end{axis}
 \end{tikzpicture}
 \caption{Public-field completeness among non-officer-initiated records. The dashed line marks 28 July 2021, the first date with an arrival-only record.}
@@ -175,14 +173,14 @@ Hurricane Ida made landfall on 29 August 2021, five weeks after the public-file 
 \addplot[BelandBlue,thick,mark=*] table[x=date,y=dispatch_share,col sep=comma] {r15_1_ida_time_path.csv};
 \addplot[BelandGreen,thick,mark=square*] table[x=date,y=arrival_share,col sep=comma] {r15_1_ida_time_path.csv};
 \addplot[BelandOrange,thick,mark=triangle*] table[x=date,y=j01_given_arrival,col sep=comma] {r15_1_ida_time_path.csv};
-\legend{Dispatch field present,Valid arrival field,Arrival-only among arrival-observed}
+\legend{Dispatch field present,Valid arrival field,Dispatch missing among arrival-observed}
 \end{axis}
 \end{tikzpicture}
 \caption{The public-field path around Hurricane Ida. Shading marks the five-day event window. The figure describes the released record, not physical dispatch or arrival.}
 \label{fig:idapath}
 \end{figure}
 
-During the preceding week, the arrival-only share among arrival-observed records ranges from 5.1 to 11.7 percent. It rises to 13.2 percent on 29 August, 22.9 percent on 30 August, 43.4 percent on 31 August, and 49.3 percent on 1 September. It falls to 16.4 percent on 2 September and continues toward its pre-event range over the following days. Dispatch-field coverage moves in the opposite direction, reaching 47.3 percent on 31 August and 40.9 percent on 1 September.
+During the preceding week, the public missing-dispatch share ranges from 5.1 to 11.7 percent. On landfall day, 29 August, the valid-arrival share falls to 43.8 percent from a preceding-week range of 74--84 percent, while dispatch-field coverage remains 72.9 percent. The public missing-dispatch share then rises to 22.9 percent on 30 August, 43.4 percent on 31 August, and 49.3 percent on 1 September as dispatch-field coverage falls to 47.3 and 40.9 percent on the latter two days. It falls to 16.4 percent on 2 September, returns to its pre-event range by 5 September, and shows one further one-day excursion to 34.7 percent on 10 September before settling. Thus the first event day is marked mainly by missing arrival fields, while the third and fourth days are marked by missing dispatch fields among arrival-observed records.
 
 These movements are large, but their interpretation must remain administrative. The figures index calls by creation date and read fields from the eventual released record. They do not show a live system snapshot, nor do they establish that a unit physically arrived without dispatch. They show that records created during the event were ultimately released in a different field configuration.
 
@@ -190,15 +188,15 @@ These movements are large, but their interpretation must remain administrative. 
 
 \subsection{Primary full-count comparison}
 
-For each five-day window, the analysis compares ten twelve-hour cells with the same half-days one week earlier. Within each cell it computes the change in the three independent public configurations: dispatch only, arrival only, and both fields present. The summary statistic is the largest absolute change across the thirty cell-by-state comparisons:
+For each five-day window, the analysis compares ten twelve-hour cells with the same half-days one week earlier. Within each cell it computes changes in three of the four public configurations: dispatch only, arrival only, and both fields present. The neither-field share is determined by the other three because the four shares sum to one. The summary statistic is the largest absolute change across the thirty cell-by-state comparisons:
 \begin{equation}
 M(w)=\max_{b,s}\left|\widehat p_{w,b,s}-\widehat p_{w-7,b,s}\right|.
 \end{equation}
-A value of 0.532 means that the largest public-state share changed by 53.2 percentage points.
+For Ida, the largest public-state share changed by 53.2 percentage points ($M=0.532$).
 
 The primary reference comparison uses 151 ordinary windows for which both the event and baseline periods occur after 28 July 2021. Prespecified emergency and holiday windows remain excluded. This post-change set was defined after the July transition was identified, so it is a transparent descriptive sensitivity rather than a preregistered test.
 
-Ida's full-count statistic is 0.532. The largest reference value is 0.310. Thus Ida is larger than all 151 post-change ordinary-week comparisons. A conditional window-wise multinomial bootstrap independently perturbs Ida and the reference windows. Ida ranks first in all 4,000 draws, with a 95-percent interval of $[0.475,0.601]$ for its statistic. Because the procedure does not preserve serial or cross-window dependence, it is best read as a robustness check against ordinary categorical-count variation, not as formal time-series inference.
+The largest reference value is 0.310. Thus Ida is larger than all 151 post-change ordinary-week comparisons. A conditional window-wise multinomial bootstrap independently perturbs Ida and the reference windows. Ida ranks first in all 4,000 draws, with a 95-percent interval of $[0.475,0.601]$ for its statistic. Because the procedure does not preserve serial or cross-window dependence, it is best read as a robustness check against ordinary categorical-count variation, not as formal time-series inference.
 
 \subsection{Secondary standardized comparison}
 
@@ -220,7 +218,7 @@ Same qualitative rank, but incomplete common support makes it secondary. \\
 \end{tabularx}
 \end{table}
 
-Two excluded episodes help interpret the result. The week after Ida has a large statistic of 0.478 because its baseline is Ida itself; it captures recovery rather than an independent shock. Hurricane Francine, a later-regime hurricane in September 2024, has a much smaller statistic of 0.110. Ida is therefore not merely a generic consequence of comparing any hurricane week with the preceding week.
+Two excluded episodes help interpret the result. The week after Ida has a large statistic of 0.478 because its baseline is Ida itself; it captures recovery rather than an independent shock. Hurricane Francine, a later-regime hurricane in September 2024, has a much smaller statistic of 0.110. Two pre-break windows later labelled as Tropical Storm Cristobal and its following comparison week have changes of 0.333 and 0.340, but those movements occur through the dispatch-only and both-field configurations rather than the arrival-only configuration. Ida is therefore not merely a generic consequence of comparing any hurricane week with the preceding week.
 
 All other prespecified statistics and threshold variants are reported in the empirical supplement. They do not all rank Ida first. The main conclusion is narrow: Ida produces an unusually large change in the public field configuration.
 
@@ -244,7 +242,7 @@ Official metadata define the public field labels and identify the data provider.
 
 The public chronology rules out two proposed technology explanations. The publicly indexed Carbyne APEX cutover occurred in June 2022, eleven months after the July 2021 change \citep{OPCDCarbyne2022}. The Hexagon OnCall Records project was contracted but never launched and therefore cannot explain the transition \citep{NOLAOIGHexagon2024}. These exclusions are useful, but they do not identify the actual cause.
 
-No public versioned changelog or internal-to-public reconciliation was available for this analysis, and no agency confirmation of the July change was obtained. The strongest supported conclusion is a discontinuity in the released record, not a named institutional mechanism.
+No public versioned changelog or internal-to-public reconciliation was available for this analysis, and no agency confirmation of the July change was obtained. A focused public-records request to OPCD for the CAD export configuration and change history covering July 2021 is the most direct next step for resolving the mechanism. Until such evidence is available, the strongest supported conclusion is a discontinuity in the released record, not a named institutional mechanism.
 
 \section{Implications for response-time and reported-DV research}
 
@@ -278,7 +276,7 @@ Reported CAD calls are not equivalent to underlying domestic-violence incidence 
 
 \section{Limitations}
 
-The analysis uses eventual public records rather than internal event histories. The July change is verified in the official source bytes, but its institutional cause is not observed. The post-change comparison set was defined after the break was identified and excludes specified emergency and holiday contexts. Reference windows overlap, and the bootstrap does not preserve all time-series dependence. Public \texttt{SelfInitiated=N} is not equivalent to ``911 only.'' Weather, holidays, mobility, evacuation, reporting behavior, call composition, suppression, and other contemporaneous conditions can affect the observed record.
+The analysis uses eventual public records rather than internal event histories. The July change is verified in the official source bytes, but its institutional cause is not observed. The post-change comparison set was defined after the break was identified and excludes specified emergency and holiday contexts. Reference windows overlap; retaining every second window removes adjacent overlap and leaves Ida first in both alternating phases (supplement). The bootstrap does not preserve all time-series dependence. Public \texttt{SelfInitiated=N} is not equivalent to ``911 only.'' Weather, holidays, mobility, evacuation, reporting behavior, call composition, suppression, and other contemporaneous conditions can affect the observed record.
 
 These limitations restrict interpretation but do not erase the descriptive result. The released field configuration changes abruptly in July 2021, changes further during Ida, and follows different conventions across initiation streams.
 
@@ -288,7 +286,11 @@ Public CAD files are valuable administrative records, but their timestamps are n
 
 The public evidence identifies the timing and magnitude of changes in the released record. It does not identify the underlying operational sequence or the institutional mechanism that produced those fields. Analysts should therefore treat public CAD timestamps as administrative measures until their meanings, coverage, and lineage have been validated for the specific performance question.
 
+\section*{Data and code availability}
+
+Replication materials, source bindings, the empirical supplement, and the release verifier are available in the public repository at \url{https://github.com/yuwen3756-hue/public-cad-measurement-police-responsiveness-hurricane-ida}. The repository provides derived aggregate artifacts and reproducible code; official raw CAD files remain identified by first-hand public-source links and hashes in the reproduction materials.
+
 \bibliographystyle{apalike}
-\bibliography{references_r16_0}
+\bibliography{references_r16_1}
 
 \end{document}

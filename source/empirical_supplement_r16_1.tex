@@ -5,8 +5,8 @@
 
 \title{\vspace{-1.6em}\textbf{Online Empirical and Methods Supplement}\\[0.35em]
 \large Public CAD Is Not Operational Ground Truth}
-\author{}
-\date{25 August 2026}
+\author{Yuwen Zhu\\Carleton University}
+\date{\textit{Draft for discussion}\\[0.2em]26 August 2026}
 
 \begin{document}
 \maketitle
@@ -120,15 +120,13 @@ The audit does not resolve the institutional cause. It has no event-entry histor
 
 \section{Ida path and maximum-change statistics}
 
-The daily file path begins with the intuitive quantities used in the main paper. Among arrival-observed non-officer records, the arrival-only share rises from 5--12 percent in the preceding week to 43.4 percent on 31 August and 49.3 percent on 1 September. The machine-readable daily series contains 22 dates from 22 August through 12 September 2021; the half-day comparison uses ten twelve-hour event cells and the corresponding cells seven days earlier.
+The daily file path begins with the intuitive quantities used in the main paper. The public missing-dispatch share---among non-officer records with a valid arrival field, the share whose public dispatch field is missing---rises from 5--12 percent in the preceding week to 43.4 percent on 31 August and 49.3 percent on 1 September. On landfall day, 29 August, the valid-arrival share instead falls to 43.8 percent while dispatch-field coverage remains 72.9 percent. The machine-readable daily series contains 22 dates from 22 August through 12 September 2021; it also records the separate one-day missing-dispatch excursion to 34.7 percent on 10 September. The half-day comparison uses ten twelve-hour event cells and the corresponding cells seven days earlier.
 
 For the primary full-count design, let $\widetilde p_{w,b,s}$ be the unconditional share in state $s$ for half-day $b$ of window $w$. The largest percentage-point change is
 \begin{equation}
 M^{\mathrm{full}}(w)=\max_{b,s}\left|\widetilde p_{w,b,s}-\widetilde p_{w-7,b,s}\right|.
 \end{equation}
 It uses every non-officer record in each cell. Ida's value is 0.5320. The post-change comparison contains 151 ordinary reference windows for which both the event and baseline sides begin after 28 July 2021; its largest reference value is 0.3098. This reference set was defined after the July transition was identified and is therefore a descriptive post-hoc comparison.
-
-The standardized design is secondary. For half-day bin $t$, state $j\in\{J_{01},J_{10},J_{11}\}$, and common stratum $x$, let $p^E_{tjx}$ and $p^B_{tjx}$ be event and baseline shares and let $w^B_{tx}$ be the baseline weight over common support. Its contrast is
 
 For half-day bin $t$, state $j\in\{J_{01},J_{10},J_{11}\}$, and common stratum $x$, let $p^E_{tjx}$ and $p^B_{tjx}$ be event and baseline shares and let $w^B_{tx}$ be the baseline weight over common support. The standardized contrast is
 \begin{equation}
@@ -419,7 +417,7 @@ Before using a public CAD duration as a performance measure, report:
 \end{enumerate}
 
 \bibliographystyle{apalike}
-\bibliography{references_r16_0}
+\bibliography{references_r16_1}
 \clearpage
 
 \section{Numerical claim index}
