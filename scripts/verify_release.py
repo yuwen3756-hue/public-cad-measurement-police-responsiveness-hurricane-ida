@@ -226,7 +226,7 @@ def verify_main_source() -> None:
         "The standardized result is therefore secondary",
         "The supplement calls this the stage-era set",
         "public missing-dispatch share",
-        "34.7 percent on 10 September",
+        "one-day 10 September excursion to 34.7 percent",
         "three of the four public configurations",
         "retaining every second window removes adjacent overlap",
         "Data and code availability",
@@ -237,7 +237,13 @@ def verify_main_source() -> None:
         "call-initiation",
         "priority definition",
         "construct validity",
-        "Implications for response-time research under environmental and system stress",
+        "Validating police-service measures under environmental and system stress",
+        "That no call activity or officer action occurred",
+        "mapping from officer-initiated activity to the released public record",
+        "What the validation supports",
+        "Are documented initiation streams separated and stable",
+        "What are the start and end points of the response clock",
+        "The New Orleans evidence directly motivates the first two checks",
         "Call volume &",
         "Response time &",
         "Priority split &",
@@ -246,6 +252,7 @@ def verify_main_source() -> None:
     )
     for phrase in required:
         require(phrase in text, f"main paper missing consistency phrase: {phrase}")
+    require("Cristobal" not in text, "main paper retains the supplementary Cristobal comparison")
     requirements = (PACKAGE / "requirements.txt").read_text(encoding="utf-8").lower()
     require("pandas" not in requirements, "requirements incorrectly claim pandas")
     builder = (PACKAGE / "scripts" / "build_r15_evidence.py").read_text(encoding="utf-8")

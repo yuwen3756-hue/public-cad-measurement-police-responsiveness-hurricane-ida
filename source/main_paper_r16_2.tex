@@ -30,13 +30,13 @@ The Ida pattern is large relative to later ordinary weeks. Using every non-offic
 
 The paper's contribution is about measurement, not about the causal effect of Ida. Public records show that the released measurement product changes before the hurricane and changes again during the event. They do not reveal whether the underlying cause was an operational workaround, an entry convention, a retention rule, or an export transformation. The implication is straightforward: a public CAD timestamp should not be treated automatically as an operational clock. Analysts must first establish the relevant denominator, field meaning, coverage, and lineage.
 
-Environmental shocks can affect both police-service production and the administrative observation process that makes it visible. A change in observed calls or response time may therefore reflect demand, supply, prioritization, endpoint coverage, or some combination. The New Orleans case supplies an empirical reason to validate the observation layer before assigning an operational interpretation.
+Environmental shocks can affect both police-service production and the administrative observation process that makes it visible. Observed call volume may change because underlying demand or record-generation rules change. Observed response time may change because service, prioritization, call composition, or endpoint completeness changes. The New Orleans case supplies an empirical reason to validate the observation layer before assigning an operational interpretation.
 
 \section{Related literature and contribution}
 
 A large economics and policing literature shows that response delays matter. Faster police arrival can improve crime clearance and reduce injuries, while traffic congestion, staffing, and queueing can slow first responders \citep{BlanesKirchmaier2018,DeAngeloTogerWeisburd2023,BrentBeland2020,MourtgosAdamsNix2024}. These studies demonstrate the value of a valid response-time measure. The present paper asks the logically prior question: whether a public administrative export supplies a stable response clock in the first place.
 
-Research on environmental and infrastructure stress asks how congestion, severe weather, disasters, heat, smoke, or pollution alter calls for service, police activity, and first-responder responsiveness. Substantive studies estimate changes in demand, service production, prioritization, or delay. This paper studies a prerequisite that complements those designs: whether the administrative denominator, response clock, endpoint coverage, call-initiation stream, and priority definition remain stable enough to support the intended construct. Establishing that observation layer strengthens construct validity and helps distinguish operational effects from observation effects \citep{BrentBeland2020,AnastarioShehabLawry2009,HarvilleTaylorTesfai2011}.
+Research on environmental and infrastructure stress asks how congestion, severe weather, disasters, heat, smoke, or pollution alter calls for service, police activity, and first-responder responsiveness. Published studies use administrative records to examine heat-related police activity and 911 medical-dispatch demand \citep{BehrerBolotnyy2024,BassilEtAl2008}. Federal continuity guidance likewise treats resilient communications and information systems as necessary to sustain essential functions during disruption \citep{FEMA2024Continuity}. Substantive studies estimate changes in demand, service production, prioritization, or delay. This paper studies a prerequisite that complements those designs: whether the administrative denominator, response clock, endpoint coverage, call-initiation stream, and priority definition remain stable enough to support the intended construct. Establishing that observation layer strengthens construct validity and helps distinguish operational effects from observation effects \citep{BrentBeland2020,AnastarioShehabLawry2009,HarvilleTaylorTesfai2011}.
 
 The paper also relates to work on administrative measurement. Calls-for-service and police records are shaped by reporting, classification, discretion, verification, and data-processing rules \citep{KlingerBridges1997,BoivinCordeau2011,BoivinOuellet2014,SimpsonOrosco2021}. More generally, measurement error and misclassification can distort group comparisons and structural interpretation \citep{KapteynYpma2007,ChenHongNekipelov2011,KnoxLoweMummolo2020}. The evidence here adds a time dimension: the joint presence of public CAD fields changes abruptly, so the mapping from activity to released data is not stable across the sample period.
 
@@ -44,7 +44,7 @@ Disaster and domestic-violence research provides substantive motivation. Hurrica
 
 Finally, partial-identification methods provide the appropriate language when public records do not reveal a unique latent process \citep{Manski1989,Manski1990,Manski2003,Tamer2010,Molinari2020}. The paper does not propose a new general partial-identification estimator. It uses that discipline to distinguish quantities directly observed in the public file from quantities that are selected, bounded, or unavailable without additional evidence.
 
-Relative to these literatures, the paper makes three contributions. It documents a date-localized change in the public CAD measurement regime; it shows that Ida produces an additional extreme but temporary reconfiguration within the later regime; and it translates those facts into a validation protocol for studies of environmental stress, police-service demand and activity, prioritization, response time, and reported-DV measures.
+Relative to these literatures, the paper makes three contributions. It documents a date-localized change in the public CAD measurement regime; it shows that Ida produces an additional extreme but temporary reconfiguration within the later regime; and it translates those facts into a validation protocol for CAD-based studies of public-safety demand, activity, and responsiveness.
 
 \section{Data and public field measures}
 
@@ -64,10 +64,10 @@ For each record, define the dispatch field as present when \texttt{TimeDispatch}
 \toprule
 Public configuration & Dispatch field & Valid arrival field & What the label does not establish \\
 \midrule
-Neither field & No & No & No call activity or officer action. \\
-Dispatch only & Yes & No & No physical arrival. \\
-Arrival only & No & Yes & Physical arrival without dispatch. \\
-Both fields & Yes & Yes & Stable endpoint meanings or a complete operational pathway. \\
+Neither field & No & No & That no call activity or officer action occurred. \\
+Dispatch only & Yes & No & That no physical arrival occurred. \\
+Arrival only & No & Yes & That physical arrival occurred without dispatch. \\
+Both fields & Yes & Yes & That the endpoint meanings are stable or that the record represents a complete operational pathway. \\
 \bottomrule
 \end{tabularx}
 \begin{minipage}{0.96\textwidth}\footnotesize
@@ -104,7 +104,7 @@ Percentages are calculated from the official daily source rows. Full state count
 \end{minipage}
 \end{table}
 
-The simultaneous movement across the two initiation streams is important. Officer-initiated records carry the public initiation label for items generated by officers in the field, yet their public dispatch fields almost disappear while their arrival fields remain complete. The missing public dispatch field therefore cannot be read mechanically as the absence of an officer or of all operational activity. For this stream, the post-break change is necessarily a change in production of the released record, although the public evidence does not identify the specific entry, retention, transformation, or export step. The discrepancy lies somewhere between activity and released representation.
+The simultaneous movement across the two initiation streams is important. Officer-initiated records carry the public initiation label for items generated by officers in the field, yet their public dispatch fields almost disappear while their arrival fields remain complete. The missing public dispatch field therefore cannot be read mechanically as the absence of an officer or of all operational activity. For this stream, the post-break pattern necessarily reflects a change in the mapping from officer-initiated activity to the released public record. The evidence does not identify whether that change occurred in workflow, entry, retention, transformation, or export.
 
 Figure~\ref{fig:monthly} places the break in the longer series. Dispatch-field coverage among non-officer records is about 90 percent in 2020, then declines after July 2021 and reaches 65.4 percent in 2024. The arrival-only configuration, previously absent, becomes increasingly common.
 
@@ -184,7 +184,9 @@ Hurricane Ida made landfall on 29 August 2021, five weeks after the public-file 
 \label{fig:idapath}
 \end{figure}
 
-During the preceding week, the public missing-dispatch share ranges from 5.1 to 11.7 percent. On landfall day, 29 August, the valid-arrival share falls to 43.8 percent from a preceding-week range of 74--84 percent, while dispatch-field coverage remains 72.9 percent. The public missing-dispatch share then rises to 22.9 percent on 30 August, 43.4 percent on 31 August, and 49.3 percent on 1 September as dispatch-field coverage falls to 47.3 and 40.9 percent on the latter two days. It falls to 16.4 percent on 2 September, returns to its pre-event range by 5 September, and shows one further one-day excursion to 34.7 percent on 10 September before settling. Thus the first event day is marked mainly by missing arrival fields, while the third and fourth days are marked by missing dispatch fields among arrival-observed records.
+During the preceding week, the public missing-dispatch share ranges from 5.1 to 11.7 percent. On landfall day, 29 August, valid-arrival coverage falls to 43.8 percent, compared with 74--84 percent during the preceding week. Dispatch-field coverage remains 72.9 percent. The first event-day change therefore appears mainly in the public arrival field.
+
+The configuration then changes. The public missing-dispatch share rises to 22.9 percent on 30 August, 43.4 percent on 31 August, and 49.3 percent on 1 September as dispatch-field coverage falls to 47.3 and 40.9 percent on the latter two days. It falls to 16.4 percent on 2 September and returns to its preceding range by 5 September, apart from a one-day 10 September excursion to 34.7 percent. The later event days are therefore marked mainly by missing dispatch fields among arrival-observed records.
 
 These movements are large, but their interpretation must remain administrative. The figures index calls by creation date and read fields from the eventual released record. They do not show a live system snapshot, nor do they establish that a unit physically arrived without dispatch. They show that records created during the event were ultimately released in a different field configuration.
 
@@ -222,7 +224,7 @@ Same qualitative rank, but incomplete common support makes it secondary. \\
 \end{tabularx}
 \end{table}
 
-Two excluded episodes help interpret the result. The week after Ida has a large statistic of 0.478 because its baseline is Ida itself; it captures recovery rather than an independent shock. Hurricane Francine, a later-regime hurricane in September 2024, has a much smaller statistic of 0.110. Two pre-break windows later labelled as Tropical Storm Cristobal and its following comparison week have changes of 0.333 and 0.340, but those movements occur through the dispatch-only and both-field configurations rather than the arrival-only configuration. Ida is therefore not merely a generic consequence of comparing any hurricane week with the preceding week.
+Two excluded episodes help interpret the result. The week after Ida has a large statistic of 0.478 because its baseline is Ida itself; it captures recovery rather than an independent shock. Hurricane Francine, a later-regime hurricane in September 2024, has a much smaller statistic of 0.110. These later-regime comparisons separate the Ida reconfiguration from a generic hurricane-week contrast.
 
 All other prespecified statistics and threshold variants are reported in the empirical supplement. They do not all rank Ida first. The main conclusion is narrow: Ida produces an unusually large change in the public field configuration.
 
@@ -248,9 +250,9 @@ The public chronology rules out two proposed technology explanations. The public
 
 No public versioned changelog or internal-to-public reconciliation was available for this analysis, and no agency confirmation of the July change was obtained. A focused public-records request to OPCD for the CAD export configuration and change history covering July 2021 is the most direct next step for resolving the mechanism. Until such evidence is available, the strongest supported conclusion is a discontinuity in the released record, not a named institutional mechanism.
 
-\section{Implications for response-time research under environmental and system stress}
+\section{Validating police-service measures under environmental and system stress}
 
-The paper's measurement lesson applies beyond Hurricane Ida and provides a low-cost validation protocol for response-time research under environmental and system stress. Shocks can affect both the production of police service and the observation process. To support interpretation, an analysis should declare the denominator and call-initiation rule, define the response clock, report endpoint coverage, and document the priority definition and data lineage.
+The paper's measurement lesson applies beyond Hurricane Ida and provides a low-cost validation protocol for CAD-based research under environmental and system stress. Shocks can affect both the production of police service and the observation process. To support interpretation, an analysis should declare the denominator and call-initiation rule, define the response clock, report endpoint coverage, and document the priority definition and data lineage.
 
 \begin{table}[!htbp]
 \centering
@@ -258,16 +260,16 @@ The paper's measurement lesson applies beyond Hurricane Ida and provides a low-c
 \renewcommand{\arraystretch}{1.12}
 \caption{Low-cost validation for downstream outcomes}
 \label{tab:implications}
-\begin{tabularx}{\textwidth}{@{}p{0.16\textwidth}p{0.24\textwidth}p{0.28\textwidth}X@{}}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.16\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}>{\raggedright\arraybackslash}X@{}}
 \toprule
-Downstream outcome & Measurement question & Low-cost validation & Publication value \\
+Downstream outcome & Measurement question & Low-cost validation & What the validation supports \\
 \midrule
 Call volume &
-Is the denominator stable, and are citizen- and officer-generated records separated? &
-Report initiation rules, duplicates and cancellations, and counts by stream. &
+Are documented initiation streams separated and stable? &
+Report the initiation rule, duplicate and cancellation treatment, and counts by documented stream. &
 Supports interpretation as demand rather than record production. \\
 Response time &
-What are the start and endpoint, and what share of calls has both? &
+What are the start and end points of the response clock, and what share of calls contains both? &
 Report endpoint coverage by exposure group, priority, and call type. &
 Establishes the complete-case population and construct validity. \\
 Priority split &
@@ -282,7 +284,9 @@ Strengthens longitudinal comparability and reproducibility. \\
 \end{tabularx}
 \end{table}
 
-These checks complement substantive estimates; they do not turn endpoint presence alone into a measure of queueing or capacity. Reported DV remains one high-stakes downstream application rather than the organizing case. Reported CAD calls are not equivalent to underlying domestic-violence incidence or complete help-seeking. A future DV analysis should preserve unresolved classifications rather than force every record into or out of the target group, and it should report endpoint coverage before interpreting observed durations. Detailed $1/0/U$ bounds remain in the supplement. Ida motivates this measurement work, but the current system-level analysis does not estimate a DV effect.
+The New Orleans evidence directly motivates the first two checks: initiation streams follow different public-field conventions, and endpoint coverage changes sharply over time and during Ida. The priority and police-activity checks are adjacent extensions for studies that use those outcomes.
+
+These checks complement substantive estimates; they do not turn endpoint presence alone into a measure of queueing or capacity. Reported DV is one high-stakes downstream application. Reported CAD calls are not equivalent to underlying domestic-violence incidence or complete help-seeking. A future DV analysis should preserve unresolved classifications rather than force every record into or out of the target group, and it should report endpoint coverage before interpreting observed durations. The supplement reports the corresponding classification and missing-data bounds. Ida motivates this measurement work, but the current system-level analysis does not estimate a DV effect.
 
 \section{Limitations}
 

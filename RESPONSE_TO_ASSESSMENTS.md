@@ -15,6 +15,19 @@ Paper R16.2 implements the public framing and external-relevance requirements wh
 | Keep the legacy archive separate | Builds the combined reviewer PDF from the main paper and empirical supplement only. |
 | Enforce public/private separation | The verifier checks the public sources, documents, PDFs, manifest scope, and release ZIP inputs for private-only markers. |
 
+## R16.2 minor-review precision pass
+
+The successor commit implements the requested surgical language repairs without changing Paper R16.2 or Scientific Results R15.1:
+
+- makes the four-state table grammatically and logically complete;
+- replaces the overstrong record-production statement with a mapping-to-public-record statement;
+- separates call-volume and response-time pathways;
+- renames the implications section and its final table column;
+- uses documented initiation streams and explicit response-clock end points;
+- splits the Ida chronology and keeps Cristobal in the empirical supplement;
+- distinguishes checks demonstrated by the New Orleans evidence from adjacent extensions; and
+- adds published environmental-stress and continuity sources without citing private or seminar material.
+
 ## Version and evidence boundary
 
 - Paper version: R16.2.
