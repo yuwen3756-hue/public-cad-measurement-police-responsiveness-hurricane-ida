@@ -163,7 +163,7 @@ The minimum coverages are 0.748 and 0.505; record-weighted coverages are 0.861 a
 
 \subsection{Standardized windows}
 
-Within each observed stratum, records are resampled as multinomial draws over $(J_{00},J_{10},J_{01},J_{11})$ while holding the observed stratum totals and baseline weights fixed. This is exactly the record-level nonparametric bootstrap available from the aggregate state counts. It captures record sampling conditional on the observed strata; it does not capture serial dependence, regime-boundary uncertainty, or design selection.
+Within each observed stratum, records are resampled as multinomial draws over $(J_{00},J_{10},J_{01},J_{11})$ while holding the observed stratum totals and baseline weights fixed. This is exactly the record-level nonparametric bootstrap available from the aggregate state counts. It captures record sampling conditional on the observed strata; it does not capture serial dependence, regime-boundary uncertainty, or design selection. Adjacent references share a week because one event period becomes the next baseline, so window-wise resampling does not preserve their cross-window dependence.
 
 \begin{table}[t]
 \centering
@@ -185,7 +185,9 @@ Ida, 29 Aug. 2021 & 0.5072 & 0.4597 & 0.5656 \\
 
 \subsection{Full-count windows and rank distribution}
 
-The same multinomial logic is applied to unconditional half-day state counts. Ida's full-count interval is $[0.4754,0.6015]$. The strongest post-change reference point is 0.3098 with interval $[0.2599,0.3799]$; the remaining top-five intervals have upper endpoints between 0.3636 and 0.3843. For each of 4,000 draws, Ida is ranked against all 151 independently resampled post-change references. Rank 1 occurs in 100 percent of draws, and the reported rank interval is $[1,1]$.
+The same multinomial logic is applied to unconditional half-day state counts. Ida's full-count interval is $[0.4754,0.6015]$. The strongest post-change reference point is 0.3098 with interval $[0.2599,0.3799]$; the remaining top-five intervals have upper endpoints between 0.3636 and 0.3843. In each of 4,000 conditional window-wise draws, Ida is ranked against all 151 separately perturbed post-change references. Ida ranks first in every draw, but the exercise does not model temporal dependence and is not formal rank inference for an exchangeable time series.
+
+An alternating-window sensitivity retains every second chronological post-change reference, which removes the direct event-to-next-baseline overlap. Ida is rank $1/77$ including Ida in one phase and $1/76$ in the other. The two largest retained reference values are 0.298 and 0.310. This does not eliminate longer-run dependence; it reports exactly how the result changes when adjacent overlap is removed.
 
 \begin{table}[t]
 \centering
@@ -233,7 +235,7 @@ The constrained LP is a robustness calculation. Its Ida lower endpoint exceeds 0
 
 \begin{table}[t]
 \centering
-\caption{Labelled excluded episodes: full-count maximum-cell contrast}
+\caption{Labelled emergency and disturbance windows: full-count maximum-cell contrast}
 \label{tab:episodes}
 \begin{tabular}{@{}lrrr@{}}
 \toprule
@@ -241,6 +243,8 @@ Episode window & Event records & Baseline records & Raw $M_{\max}$ \\
 \midrule
 Hurricane Laura, 23 Aug. 2020 & 3,316 & 3,515 & 0.084 \\
 Hurricane Zeta, 25 Oct. 2020 & 3,963 & 3,638 & 0.129 \\
+Tropical Storm Cristobal, 7 Jun. 2020 & 3,431 & 3,323 & 0.333 \\
+Following comparison week, 14 Jun. 2020 & 3,454 & 3,431 & 0.340 \\
 February freeze, 14 Feb. 2021 & 2,851 & 3,329 & 0.113 \\
 Hurricane Ida, 29 Aug. 2021 & 3,878 & 3,332 & 0.532 \\
 Post-Ida week, 5 Sep. 2021 & 3,827 & 3,878 & 0.478 \\
@@ -249,7 +253,7 @@ Hurricane Francine, 8 Sep. 2024 & 2,886 & 2,882 & 0.110 \\
 \end{tabular}
 \end{table}
 
-Excluded episodes are not members of the ordinary-week rank. Pre-break events cannot reproduce a positive $J_{01}$ contrast because that state is absent from their public regime. The large post-Ida statistic compares a recovery week with Ida itself. Francine is much smaller in the later regime. These comparisons reinforce the need to distinguish event stress from the measurement object used to observe it.
+The frozen exclusion list omitted Tropical Storm Cristobal, which made Louisiana landfall on 7 June 2020 \citep{NHC2020Cristobal}. The 7 and 14 June windows therefore remain ordinary members of the full-qualified rank; the second uses the Cristobal week as its baseline. Their large pre-break full-count movements occur through the available $J_{11}/J_{10}$ states, not through $J_{01}$. This post-hoc label documents an incomplete exclusion list and is not used to alter membership. The other labelled episodes in the table are excluded from the ordinary-week rank. The large post-Ida statistic compares a recovery week with Ida itself, while Francine is much smaller in the later regime. These comparisons reinforce the need to distinguish event stress from the measurement object used to observe it.
 
 \section{Officer-initiation evidence}
 
@@ -399,7 +403,7 @@ Before using a public CAD duration as a performance measure, report:
 \end{enumerate}
 
 \bibliographystyle{apalike}
-\bibliography{references_r15_0}
+\bibliography{references_r15_1}
 \clearpage
 
 \section{Numerical claim index}
@@ -416,14 +420,16 @@ Table~\ref{tab:claimindex} identifies the package object that supplies each head
 Claim & Reported value & Primary package object \\
 \midrule
 Standardized Ida maximum & 0.5072; rank 1/154 & \path{r15_aggregate_diagnostics.json} \\
-Full-count Ida maximum & 0.5320; rank 1/151 & \path{r15_raw_window_scores.csv} \\
-Support-independent post-change rank & 1/152 including Ida & \path{r15_aggregate_diagnostics.json} \\
+Full-count stage-era result & 0.5320; rank 1/151 including Ida & \path{r15_aggregate_diagnostics.json} \\
+Post-hoc post-change result & 0.5320; rank 1/152 including Ida & \path{r15_aggregate_diagnostics.json} \\
+Alternating non-overlap sensitivity & ranks 1/77 and 1/76 including Ida & \path{r15_1_nonoverlap_sensitivity.csv} \\
 Threshold exceedances & 9, 8, and 9 & \path{r15_aggregate_diagnostics.json} \\
 Standardized bootstrap interval & [0.4597, 0.5656] & \path{r15_bootstrap_window_maxima.csv} \\
 Full-count bootstrap interval & [0.4754, 0.6015] & \path{r15_bootstrap_window_maxima.csv} \\
 2025 non-officer dispatch share & 136,712/207,050 = 0.6603 & \path{r15_current_denominator_audit.csv} \\
 2025 officer dispatch share & 1,117/122,720 = 0.0091 & \path{r15_current_denominator_audit.csv} \\
 First non-officer $J_{01}$ day & 28 July 2021 & \path{r15_raw_july_25_31_audit.csv} \\
+Raw/aggregate July state parity & 56/56 state cells match & \path{r15_1_raw_aggregate_parity.csv} \\
 Annual public-source bindings & five official dataset IDs & \path{r15_annual_source_lineage.csv} \\
 \bottomrule
 \end{tabular}

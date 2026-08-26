@@ -86,19 +86,19 @@ def pdf_text(path: Path) -> str:
 def verify_pdfs() -> None:
     paper = PACKAGE / "paper"
     names = {
-        "Beland_Current_Status_Main_2026-08-25_R15_0.pdf",
-        "Beland_Current_Status_Empirical_Supplement_2026-08-25_R15_0.pdf",
-        "Beland_Current_Status_2026-08-25_R15_0.pdf",
-        "Beland_Research_Status_Note_2026-08-25_R15_0.pdf",
-        "Beland_Legacy_Technical_Archive_2026-08-25_R15_0.pdf",
+        "Beland_Current_Status_Main_2026-08-25_R15_1.pdf",
+        "Beland_Current_Status_Empirical_Supplement_2026-08-25_R15_1.pdf",
+        "Beland_Current_Status_2026-08-25_R15_1.pdf",
+        "Beland_Research_Status_Note_2026-08-25_R15_1.pdf",
+        "Beland_Legacy_Technical_Archive_2026-08-25_R15_1.pdf",
     }
     actual = {path.name for path in paper.glob("*.pdf")}
     require(actual == names, f"unexpected PDF set: {sorted(actual)}")
-    main = paper / "Beland_Current_Status_Main_2026-08-25_R15_0.pdf"
-    supplement = paper / "Beland_Current_Status_Empirical_Supplement_2026-08-25_R15_0.pdf"
-    combined = paper / "Beland_Current_Status_2026-08-25_R15_0.pdf"
-    status = paper / "Beland_Research_Status_Note_2026-08-25_R15_0.pdf"
-    legacy = paper / "Beland_Legacy_Technical_Archive_2026-08-25_R15_0.pdf"
+    main = paper / "Beland_Current_Status_Main_2026-08-25_R15_1.pdf"
+    supplement = paper / "Beland_Current_Status_Empirical_Supplement_2026-08-25_R15_1.pdf"
+    combined = paper / "Beland_Current_Status_2026-08-25_R15_1.pdf"
+    status = paper / "Beland_Research_Status_Note_2026-08-25_R15_1.pdf"
+    legacy = paper / "Beland_Legacy_Technical_Archive_2026-08-25_R15_1.pdf"
     require(9 <= pdf_pages(main) <= 16, "main paper page count outside expected range")
     require(12 <= pdf_pages(supplement) <= 18, "empirical supplement is not 12--18 pages")
     require(pdf_pages(status) == 1, "research status note is not one page")
@@ -114,16 +114,19 @@ def verify_pdfs() -> None:
 
 
 def verify_main_source() -> None:
-    text = (PACKAGE / "source" / "main_paper_r15_0.tex").read_text(encoding="utf-8")
+    text = (PACKAGE / "source" / "main_paper_r15_1.tex").read_text(encoding="utf-8")
     forbidden = ("R12", "R13", "R14", "previous version", "referee", "post-review", "was inaccurate", "original estimator")
     lower = text.lower()
     require(not any(term.lower() in lower for term in forbidden), "main paper contains revision-history language")
     required = (
+        "This paper measures a more limited object",
         "136,712 of 207,050",
         "1,117 of 122,720",
         "137,829 of 329,770",
         "65.4 percent in 2024, 66.0 percent in 2025, and 66.8 percent",
-        "rank 1 among 151 genuinely post-change references",
+        "rank $1/152$ including Ida",
+        "conditional window-wise multinomial bootstrap",
+        "This post-change universe was defined after the July break was identified",
     )
     for phrase in required:
         require(phrase in text, f"main paper missing consistency phrase: {phrase}")
@@ -131,6 +134,8 @@ def verify_main_source() -> None:
     require("pandas" not in requirements, "requirements incorrectly claim pandas")
     builder = (PACKAGE / "scripts" / "build_r15_evidence.py").read_text(encoding="utf-8")
     require('STATES = ("J00", "J10", "J01", "J11")' in builder, "builder does not declare exactly four states")
+    for phrase in ("field-presence topology", "record-production discontinuity", "all-record, full-count"):
+        require(phrase not in text, f"main paper retains superseded wording: {phrase}")
 
 
 def verify_r15() -> None:
@@ -182,6 +187,31 @@ def verify_source_audit() -> None:
     require(keyed[("2021-07-29", "officer")]["dispatch_nonblank"] == "5", "29 July officer dispatch count changed")
     require(all(row["dispatch_nonblank"] == row["dispatch_parseable"] for row in rows), "nonblank dispatch parseability changed")
     require(all(row["arrival_nonblank"] == row["arrival_parseable"] for row in rows), "nonblank arrival parseability changed")
+    script = (PACKAGE / "scripts" / "audit_public_source_lineage.py").read_text(encoding="utf-8")
+    require("--source-root" in script and "BELAND_PUBLIC_SOURCE_ROOT" in script, "source audit is not portable")
+    require("cache_mtime_utc" not in script, "source audit retains inaccurate UTC field name")
+
+
+def verify_r15_1_refinements() -> None:
+    obj = load_json(PACKAGE / "source" / "r15_1_refinement_diagnostics.json")
+    require(obj["paper_version"] == "R15.1", "R15.1 refinement version changed")
+    require(obj["scientific_results_version"] == "R15", "scientific-results version changed")
+    require(obj["ida_time_path_days"] == 22, "Ida time path length changed")
+    require(obj["raw_aggregate_parity_rows"] == 14, "raw/aggregate parity row count changed")
+    require(obj["raw_aggregate_state_cells_checked"] == 56, "raw/aggregate parity cell count changed")
+    require(obj["raw_aggregate_parity_status"] == "MATCH", "raw/aggregate parity failed")
+    phases = obj["alternating_nonoverlap_sensitivity"]
+    require(
+        [(row["reference_count"], row["denominator_including_Ida"], row["Ida_rank_including_Ida"]) for row in phases]
+        == [(76, 77, 1), (75, 76, 1)],
+        "alternating non-overlap sensitivity changed",
+    )
+    parity = read_csv(PACKAGE / "source" / "r15_1_raw_aggregate_parity.csv")
+    require(len(parity) == 14, "raw/aggregate parity artifact is incomplete")
+    require(all(row["parity_status"] == "MATCH" for row in parity), "raw/aggregate parity artifact contains mismatch")
+    for row in parity:
+        for state in ("J00", "J10", "J01", "J11"):
+            require(row[f"raw_{state}"] == row[f"aggregate_{state}"], f"raw/aggregate {state} mismatch")
 
 
 def verify_snapshot_parity() -> None:
@@ -237,6 +267,7 @@ def main() -> None:
     verify_main_source()
     verify_r15()
     verify_source_audit()
+    verify_r15_1_refinements()
     verify_snapshot_parity()
     verify_m7b()
     verify_m7d_e()

@@ -14,7 +14,7 @@
 \vspace{-1.3em}
 
 \begin{plainbox}[title=Abstract]
-Public computer-aided dispatch (CAD) records are often treated as operational clocks. New Orleans public CAD instead reveals a change in the released measurement product before Hurricane Ida. Among non-officer-initiated records, the state ``arrival field present, dispatch field absent'' is absent from 419,840 records through 27 July 2021, first appears on 28 July, and grows thereafter. A first-hand audit of the official July file confirms that the break is present in raw nonblank and parseable fields: officer-initiated dispatch-field presence simultaneously falls from 100 percent on 27 July to 40.0 percent on 28 July and 1.0 percent on 29 July. Five weeks later, Ida produces a further two-day reconfiguration. The maximum public-field contrast is rank 1 among 153 prespecified stage-era ordinary-week references and rank 1 among 151 support-independent post-change references. A 4,000-replicate full-count bootstrap places Ida first in every draw. The standardized analysis covers 86.1 percent of event records and 77.0 percent of baseline records and fails the reference windows' 0.90 eligibility rule, so the full-count result is essential. Public institutional documents define field labels and exclude two proposed technology explanations, but no archived changelog or historical internal-to-public bridge identifies the July cause. In the comparable non-officer denominator, dispatch-field completeness is 65.4 percent in 2024, 66.0 percent in 2025, and 66.8 percent in the 2026 snapshot; the often-quoted 41.8 percent is the all-record rate, depressed by officer-initiated conventions. Public CAD supports reproducible administrative-field measures, not an automatic measure of physical dispatch, arrival, capacity, response quality, or domestic-violence incidence.
+Public computer-aided dispatch (CAD) files expose administrative fields that are often converted into operational clocks. This paper measures a more limited object: whether the released \texttt{TimeDispatch} and \texttt{TimeArrive} fields are present and valid on each non-officer-initiated record, and how their four joint field states change across windows. These are public-record completeness and configuration measures, not response times or proof of physical dispatch and arrival. In New Orleans, the arrival-present/dispatch-absent state first appears on 28 July 2021, with a coordinated change in the officer-initiated stream. Five weeks later, Ida produces a two-day reconfiguration with an unstandardized full-count maximum contrast of 0.5320, rank $1/152$ including Ida against 151 post-hoc post-change references. The standardized calculation covers 86.1 percent of event records and 77.0 percent of baseline records and fails the references' 0.90 eligibility rule, making the full-count result essential. In a conditional window-wise multinomial bootstrap that does not model temporal dependence, Ida ranks first in all 4,000 draws. Public documents clarify field labels and exclude two technology explanations without identifying the July cause. Public CAD therefore supports reproducible administrative-field measures, not automatic measures of physical response, capacity, service quality, or domestic-violence incidence.
 \end{plainbox}
 
 \keywords{calls for service; police responsiveness; administrative data; Hurricane Ida; measurement error; partial identification}
@@ -22,7 +22,9 @@ Public computer-aided dispatch (CAD) records are often treated as operational cl
 
 \section{Introduction}
 
-Public CAD files appear to record a direct sequence: a call is created, an officer is dispatched, and an arrival is entered. That sequence becomes a performance measure only if the released fields retain stable meanings, coverage, and lineage. A missing dispatch timestamp can reflect an operational event, a workflow exception, later entry, retention, redaction, or export logic. These pathways are observationally equivalent in a public file.
+CAD systems ordinarily record milestones in the handling of a call: creation, dispatch, arrival, and closure. Response-time research often subtracts one released timestamp from another. This paper first asks a simpler measurement question. For every released record, are the public dispatch and arrival fields populated and usable, and does their joint pattern remain stable over time? The resulting shares describe the completeness and configuration of the released administrative record; they are not themselves durations, response outcomes, or physical-event indicators.
+
+Public CAD files nevertheless appear to record a direct sequence: a call is created, an officer is dispatched, and an arrival is entered. That sequence becomes a performance measure only if the released fields retain stable meanings, coverage, and lineage. A missing dispatch timestamp can reflect an operational event, a workflow exception, later entry, retention, redaction, or export logic. These pathways are observationally equivalent in a public file.
 
 Write $D_t^{\mathrm{CAD}}$ for reported demand entering CAD, $C_t$ for effective capacity, and $P_t$ for the priority process. Operations produce a service path
 \begin{equation}
@@ -39,7 +41,7 @@ Hurricane Ida makes this distinction visible, but the first empirical result pre
 The paper contributes four results. First, it binds the late-July break to the official monthly source bytes and shows that it is not an artifact of the aggregate pipeline. Second, it separates a common-support standardized comparison from a genuinely support-independent full-count comparison. Third, it uses public institutional documents to define what is and is not learned about the change: labels are clearer and two technology stories are inconsistent with the chronology, but the cause remains unidentified. Fourth, it translates the findings into a measurement rule for response-time and reported-domestic-violence research: declare the call denominator, public clock, endpoint coverage, and lineage before interpreting field durations as service performance.
 
 \begin{resultbox}
-\textbf{Main finding.} The released CAD measurement product changes before Ida and changes again during Ida. The public evidence identifies a record-production discontinuity and an event-window field reconfiguration. It does not identify physical dispatch, physical arrival, effective capacity, response quality, domestic-violence incidence, or the mechanism generating the public fields.
+\textbf{Main finding.} The joint configuration of released CAD fields changes before Ida and changes again during Ida. The public evidence documents a released-record discontinuity and an event-window field reconfiguration. It does not identify physical dispatch, physical arrival, effective capacity, response quality, domestic-violence incidence, or the mechanism generating the public fields.
 \end{resultbox}
 
 \section{Related literature}
@@ -50,21 +52,23 @@ Response delays matter for crime clearance, victim harm, and public-service cost
 
 \subsection{Administrative records and measurement error}
 
-Administrative data are generated by institutions rather than designed solely for research. Recorded outcomes can reflect classification practice, verification, discretion, and incentives \citep{KlingerBridges1997,BoivinCordeau2011,BoivinOuellet2014,SimpsonOrosco2021}. Misclassification and measurement error can distort both group comparisons and structural interpretation \citep{KapteynYpma2007,ChenHongNekipelov2011,KnoxLoweMummolo2020}. Government performance systems can also alter the recorded object that is optimized or reported \citep{CourtyMarschke1997,Eckhouse2022}. The distinctive evidence here is topological: mutually exclusive patterns of public-field presence change sharply even before durations are analyzed.
+Administrative data are generated by institutions rather than designed solely for research. Recorded outcomes can reflect classification practice, verification, discretion, and incentives \citep{KlingerBridges1997,BoivinCordeau2011,BoivinOuellet2014,SimpsonOrosco2021}. Misclassification and measurement error can distort both group comparisons and structural interpretation \citep{KapteynYpma2007,ChenHongNekipelov2011,KnoxLoweMummolo2020}. Government performance systems can also alter the recorded object that is optimized or reported \citep{CourtyMarschke1997,Eckhouse2022}. The distinctive evidence here is a sharp change in the joint field-presence distribution before any duration is analyzed.
 
 \subsection{Disasters and domestic violence}
 
-Disaster exposure, displacement, psychological stress, partner conflict, and service demand can move together \citep{AnastarioShehabLawry2009,SchumacherEtAl2010,HarvilleTaylorTesfai2011,FirstEtAl2022}. Pandemic-era studies similarly show that calls, reports, and underlying victimization need not move one-for-one \citep{MillerSegal2019,BullingerCarrPackham2021,MillerSegalSpencer2024}. These studies motivate attention to reported domestic-violence calls during emergencies, but they do not validate a particular CAD clock. Ida is used here as a system-level stress test of administrative observability, not as a treatment whose effect on domestic-violence incidence is estimated.
+Disaster exposure, displacement, psychological stress, partner conflict, and service demand can move together \citep{AnastarioShehabLawry2009,SchumacherEtAl2010,HarvilleTaylorTesfai2011,FirstEtAl2022}. Police composition can affect crime reporting and domestic-violence reporting \citep{MillerSegal2019}. Pandemic-era studies show that calls, reports, and underlying victimization need not move one-for-one \citep{LeslieWilson2020,BullingerCarrPackham2021,MillerSegalSpencer2022,MillerSegalSpencer2024}. These studies motivate attention to reported domestic-violence calls during emergencies, but they do not validate a particular CAD clock. Ida is used here as a system-level stress test of administrative observability, not as a treatment whose effect on domestic-violence incidence is estimated.
 
 \subsection{Partial identification and honest uncertainty}
 
 When the mapping from latent events to observed records is incomplete, point identification should not be assumed \citep{Manski1989,Manski1990,Manski2003,Tamer2010,Molinari2020}. Misclassified outcomes can instead support bounds under transparent restrictions \citep{HorowitzManski1995,Molinari2008}. That logic informs two choices here. Public-field configurations are analyzed directly without assigning them latent operational meanings, and downstream reported-DV measures retain $1/0/U$ classification and sharp bounds when classification or endpoint authority is unresolved.
 
+Relative to these literatures, the paper contributes three findings. First, it documents a date-localized change in the joint presence of public CAD fields rather than assuming a temporally stable administrative measurement regime. Second, it shows that Ida produces an additional extreme but temporary reconfiguration within the later regime. Third, it translates those facts into a measurement requirement: response-time and reported-DV analyses must validate the denominator, public endpoints, endpoint coverage, and stage lineage before interpreting released durations as operational performance.
+
 \section{Data and measurement}
 
 \subsection{Official files and the declared denominator}
 
-The analysis uses the official annual New Orleans Calls for Service datasets for 2020--2024 and the official 2025 and 2026 files \citep{DataNOLA2021,DataNOLA2025,DataNOLA2026}. The source audit binds each annual dataset identifier to twelve cached monthly files, observed date limits, row counts, and a deterministic SHA-256 bundle digest. The primary denominator is \emph{non-officer-initiated public CAD records}, identified by the published \texttt{SelfInitiated} field. Officer-initiated records are a separate measurement stream, not extra observations silently pooled into the main denominator.
+The analysis uses the official annual New Orleans Calls for Service datasets for 2020--2024 and the official 2025 and 2026 files \citep{DataNOLA2020,DataNOLA2021,DataNOLA2022,DataNOLA2023,DataNOLA2024,DataNOLA2025,DataNOLA2026}. The source audit binds each annual dataset identifier to twelve cached monthly files, observed date limits, row counts, and a deterministic SHA-256 bundle digest. The primary denominator is \emph{non-officer-initiated public CAD records}, identified by the published \texttt{SelfInitiated} field. Officer-initiated records are a separate measurement stream, not extra observations silently pooled into the main denominator.
 
 For record $i$, define $D_i=1$ when the eventual released record has a nonblank public dispatch field and $A_i=1$ when its arrival field parses and is no earlier than call creation. The four states are
 \begin{equation}
@@ -106,7 +110,7 @@ Dispatch present means nonblank \texttt{TimeDispatch}. Arrival valid means parse
 \end{minipage}
 \end{table}
 
-The audit changes the interpretation in a useful but limited way. It verifies a real public-file discontinuity and shows that initiation streams change together. It makes an unnoticed aggregate-processing error implausible. It does not reveal whether the source was an internal workflow, field-entry convention, downstream transform, or export rule.
+The audit changes the interpretation in a useful but limited way. It verifies a real public-file discontinuity and shows that initiation streams change together. A complete $14\times4$ comparison of the seven audited days, two initiation streams, and four states matches the packaged aggregate tally exactly, making an unnoticed aggregate-processing error implausible. Because \texttt{SelfInitiated=Y} denotes an item generated by an officer in the field, the disappearance of its public dispatch field while arrival remains complete cannot be read as evidence that the officer was absent. The discrepancy is in the path from activity to released representation, but the public file does not identify whether the relevant step was entry, retention, transformation, or export.
 
 \begin{figure}[t]
 \centering
@@ -141,11 +145,11 @@ The Ida event window is 29 August 00:00 through 3 September 00:00, divided into 
 M_{\max}(G)=\max_{t,j}|G_{tj}|.
 \end{equation}
 
-The event and its matrix were known before the historical 0.25 sensitivity rule and restricted support library were completed. The three reference universes, eligibility rules, and context exclusions were fixed before the reference-window outcomes were inspected. The exercise is therefore a transparent descriptive calibration, not a preregistered randomization test.
+The event and its matrix were known before the historical 0.25 sensitivity rule and restricted support library were completed. The three standardized reference universes, their eligibility rules, and context exclusions were fixed before the reference-window outcomes were inspected. The exercise is therefore a transparent descriptive calibration, not a preregistered randomization test.
 
 The principal standardized universe contains 153 ordinary five-day windows starting on or after 1 July 2021. The standardized rule requires at least 0.90 common-support coverage on both event and baseline sides for reference windows. Ida is retained as the target even though it fails that rule, and its coverage is reported rather than concealed.
 
-Two full-count comparisons use all non-officer records in each half-day. The first inherits the stage-era membership list; it removes common-support selection but remains tied to that universe. The second is genuinely support-independent with respect to the July break: both event and baseline sides must begin after 28 July, and prespecified emergency and holiday contexts remain excluded. This yields 151 post-change references.
+Two full-count comparisons use all non-officer records in each half-day. The first inherits the prespecified stage-era membership list; it removes common-support selection but remains tied to that universe. The second is support-independent with respect to the July break: both event and baseline sides must begin after 28 July, and prespecified emergency and holiday contexts remain excluded. This post-change universe was defined after the July break was identified and is therefore a post-hoc comparison. It contains 151 references.
 
 \section{Results}
 
@@ -176,7 +180,37 @@ The standardized Ida statistic is $M_{\max}=0.5072$, above all 153 stage-era ref
 \label{fig:rank}
 \end{figure}
 
-The all-record, full-count Ida statistic is 0.5320. It is rank 1 among 150 comparable members of the stage-era set and rank 1 among 151 genuinely post-change references ($1/152$ including Ida). Its bootstrap interval is $[0.475,0.601]$. Recomputing Ida and all 151 references in 4,000 bootstrap draws places Ida first in every draw; the 2.5th, median, and 97.5th percentiles of its rank are all 1. This does not establish temporal exchangeability, but it shows that the rank is not driven by common-support selection or ordinary record-level sampling variation.
+The unstandardized full-count statistic using all non-officer records is 0.5320. It is rank $1/151$ including Ida in the stage-era set and rank $1/152$ including Ida in the post-hoc post-change set. Its bootstrap interval is $[0.475,0.601]$. In a conditional window-wise multinomial bootstrap that independently perturbs Ida and all 151 post-change references without modeling temporal dependence, Ida ranks first in all 4,000 draws. This is a robustness statement about categorical-count perturbations, not formal rank inference for an exchangeable time series.
+
+Alternating the chronological post-change references removes the direct event-to-next-baseline overlap. Ida remains rank $1/77$ including Ida in one phase and $1/76$ in the other; the largest retained reference values are 0.298 and 0.310. The sensitivity does not create independent random draws, but it shows that the descriptive rank is not an artifact of using both members of each adjacent pair.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.94\textwidth,height=6.1cm,
+  date coordinates in=x,
+  xmin=2021-08-22,xmax=2021-09-12,
+  ymin=0,ymax=1,
+  xtick={2021-08-22,2021-08-29,2021-09-03,2021-09-05,2021-09-12},
+  xticklabel=\month\ \day,
+  ylabel={Share among non-officer records},
+  grid=major,grid style={BelandLightGray},
+  legend style={draw=none,font=\small,at={(0.5,-0.20)},anchor=north,legend columns=3},
+  tick label style={font=\small},label style={font=\small}
+]
+\path[fill=BelandOrange!12] (axis cs:2021-08-29,0) rectangle (axis cs:2021-09-03,1);
+\addplot[BelandBlue,thick,mark=*] table[x=date,y=dispatch_share,col sep=comma] {r15_1_ida_time_path.csv};
+\addplot[BelandGreen,thick,mark=square*] table[x=date,y=arrival_share,col sep=comma] {r15_1_ida_time_path.csv};
+\addplot[BelandOrange,thick,mark=triangle*] table[x=date,y=j01_given_arrival,col sep=comma] {r15_1_ida_time_path.csv};
+\legend{Dispatch present,Arrival valid,$J_{01}$ among arrival-observed}
+\end{axis}
+\end{tikzpicture}
+\caption{Daily public-field path around Ida. Shading marks the five-day Ida event window. The figure shows the temporary change and recovery in released-field configuration, not physical dispatch or arrival.}
+\label{fig:idapath}
+\end{figure}
+
+The excluded post-Ida week has a full-count contrast of 0.478 because its baseline is Ida itself; it records recovery and is not an independent repeat of the shock. Hurricane Francine, an excluded later-regime hurricane window, is much smaller at 0.110. These labelled comparisons help distinguish Ida's public-field reconfiguration from a generic later-regime hurricane pattern.
 
 \subsection{Standardized support is incomplete}
 
@@ -212,15 +246,17 @@ Ida is first on the simple amplitude, the leading singular values, the direct re
 
 Among arrival-observed records, exact Kitagawa decompositions assign the late aggregate dispatch-field contrasts of $-0.4950$ and $-0.4824$ primarily to within-recorded-disposition changes ($-0.5069$ and $-0.4946$), offset by composition terms of $+0.0119$ and $+0.0123$. Changing observed final-disposition mix is therefore not the sole explanation. Selection into arrival observation, unobserved composition, semantic drift, and recording pathways remain possible.
 
-The initiation-stream pattern is stronger after the raw audit. Officer-initiated dispatch completeness is 99.99 percent in 2020, 61.7 percent over 2021 because the break occurs in late July, and approximately 1 percent in each of 2022--2024. Arrival completeness remains about 99.8--99.9 percent. By contrast, non-officer dispatch completeness declines from 90.3 percent in 2020 to 65.4 percent in 2024. This joint change is consistent with a new public-recording convention linked to initiation status, but the public file does not reveal whether records were reclassified, different events were retained, or one timestamp was omitted in export.
+The initiation-stream pattern is stronger after the raw audit. Officer-initiated dispatch completeness is 99.99 percent in 2020, 61.7 percent over 2021 because the break occurs in late July, and approximately 1 percent in each of 2022--2024. Arrival completeness remains about 99.8--99.9 percent. By contrast, non-officer dispatch completeness declines from 90.3 percent in 2020 to 65.4 percent in 2024. For officer-initiated items, the published definition and nearly complete arrival field rule out interpreting the missing public dispatch field as absence of an officer. The synchronized change across initiation streams therefore documents a coordinated change in released representation. It does not identify whether records were reclassified, different events were retained, or a timestamp was omitted during entry, retention, transformation, or export.
 
 \section{What public institutional documents add}
 
 The institutional search changes the paper in three ways. First, the DataNOLA page and attached dictionary bind the released labels and provider. The same page warns that records are preliminary, may contain mechanical or human error, may change after investigation, and should not be used for comparison over time; its public changelog reports no archived changes \citep{DataNOLA2021}. That warning does not explain the break, but it directly supports the measurement caution.
 
-Second, the public OIPM Hurricane Ida report and emergency materials document the oversight context, outage concerns, curfew, and monitored NOPD activities \citep{OIPM2021}. Public NOPD policy chapters describe intended communications, call response, and records practices. Yet the exact editions in force during July--September 2021 were not located for all relevant chapters, and policy statements do not reveal the historical machine-event to public-export transform. These documents are semantic and institutional context, not a bridge receipt.
+Second, the public OIPM Hurricane Ida report and emergency materials document the oversight context, outage concerns, curfew, and monitored NOPD activities \citep{OIPM2021}. Public NOPD policy chapters describe intended communications, call response, and records practices \citep{NOPDPolicies2023}. Yet the exact editions in force during July--September 2021 were not located for all relevant chapters, and policy statements do not reveal the historical machine-event to public-export transform. These documents are semantic and institutional context, not a bridge receipt.
 
 Third, two candidate technology explanations are inconsistent with the public chronology. OPCD's publicly indexed Carbyne APEX cutover is dated 24 June 2022, eleven months after the July 2021 discontinuity \citep{OPCDCarbyne2022}. The New Orleans Inspector General describes Hexagon OnCall Records as a records-management project that was contracted in 2020 but never launched, not as the public CAD export transition \citep{NOLAOIGHexagon2024}. Eliminating these candidates is useful negative evidence; it does not identify the remaining cause.
+
+No agency confirmation of the July 2021 change was available for this version; the City, OPCD, and NOPD were not contacted as part of this public-source revision.
 
 \begin{warningbox}[title=Institutional-evidence boundary]
 The public documents fill missing semantic, provenance, and exclusion evidence. They do not supply a versioned 2021 changelog, internal dispatch-event history, user-entry audit trail, retention rule, or public-export lineage. Mechanism identification therefore remains open.
@@ -269,11 +305,11 @@ Endpoint missingness similarly calls for full-denominator bounds or an explicit 
 
 \section{Limitations and conclusion}
 
-The analysis uses eventual public records rather than internal event histories. The July break is date-localized in raw official bytes, but its institutional mechanism is not observed. Reference windows are descriptive and not exchangeable by design. The bootstrap is conditional on observed strata and does not capture temporal dependence or uncertainty in the regime boundary. Holidays, day-of-week patterns, heat, weather, COVID-era behavior and mobility, reporting and help-seeking thresholds, redaction and suppression, and changing call composition can affect comparisons. Public \texttt{SelfInitiated=N} is not equivalent to ``911 only.''
+The analysis uses eventual public records rather than internal event histories. The July break is date-localized in raw official bytes, but its institutional mechanism is not observed. Reference windows are descriptive and not exchangeable by design. Adjacent windows share a week: one window's event period becomes the next window's baseline, so a disturbed week can generate two large contrasts of opposite sign and the effective number of independent comparisons is smaller than the nominal count. The bootstrap perturbs windows separately and does not preserve that cross-window dependence or uncertainty in the regime boundary; the alternating-window ranks are a sensitivity, not a time-series correction. Holidays, day-of-week patterns, heat, weather, COVID-era behavior and mobility, reporting and help-seeking thresholds, redaction and suppression, and changing call composition can affect comparisons. Public \texttt{SelfInitiated=N} is not equivalent to ``911 only.''
 
-The central conclusion is constructive. Public CAD is valuable when its observable object is stated precisely. In New Orleans, field-presence topology identifies a measurement-regime change before Ida and a further Ida-era stress. Raw audit, denominator repair, source lineage, bootstrap expansion, and institutional documents make that conclusion more secure. They also sharpen what remains missing: the historical bridge from internal events and entry histories to the released fields. Until that bridge is observed, public timestamps should be reported as administrative-field measures rather than treated automatically as operational ground truth.
+The central conclusion is constructive. Public CAD is valuable when its observable object is stated precisely. In New Orleans, the joint field-presence configuration documents a measurement-regime change before Ida and a further Ida-era stress. Raw audit, denominator repair, source lineage, bootstrap expansion, and institutional documents make that conclusion more secure. They also sharpen what remains missing: the historical bridge from internal events and entry histories to the released fields. Until that bridge is observed, public timestamps should be reported as administrative-field measures rather than treated automatically as operational ground truth.
 
 \bibliographystyle{apalike}
-\bibliography{references_r15_0}
+\bibliography{references_r15_1}
 
 \end{document}

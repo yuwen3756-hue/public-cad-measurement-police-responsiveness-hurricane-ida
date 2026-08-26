@@ -13,7 +13,7 @@
 \vspace{-1.2em}
 
 \begin{plainbox}[title=Purpose and reading guide]
-This separate archive preserves the extended mathematical identification framework, constrained optimization diagnostics, and formal-verification material. It is not appended to the professor-facing paper. The current empirical narrative, source lineage, support diagnostics, and raw-field audits are presented in the main paper and empirical supplement. Readers should use this archive when they need the longer proofs, identified-set constructions, finite certificates, or legacy score definitions. Empirical values remain derived from the packaged aggregate artifacts; current review diagnostics are built by \path{scripts/build_r15_evidence.py}.
+This separate archive preserves the extended mathematical identification framework, constrained optimization diagnostics, and formal-verification material. It is not appended to the professor-facing paper. The current empirical narrative, source lineage, support diagnostics, and raw-field audits are presented in the main paper and empirical supplement. Readers should use this archive when they need the longer proofs, identified-set constructions, finite certificates, or legacy score definitions. Historical version labels inside quoted artifact names and frozen-result discussions are intentionally preserved as provenance; they do not identify the current paper version. Empirical values remain derived from the packaged aggregate artifacts; current review diagnostics are built by \path{scripts/build_r15_evidence.py}.
 \end{plainbox}
 
 \setcounter{tocdepth}{1}
@@ -86,7 +86,7 @@ with the clock, endpoint, and eligible population declared for target $k$.
 
 Two kinds of friction enter this system. Operational friction changes $S$ through holding, availability, assignment, handoffs, or follow-up. Record-production friction changes $R$ through classification, overwrite, retention, linkage, or export. Distinct pairs $(S,R)$ can generate the same $Y$, so public missingness alone cannot allocate the discrepancy between these sources. Holding and availability histories, joint public--internal counts, and retained stage lineage contract the relevant alternatives through \cref{eq:witness_contraction}.
 
-The released call count is likewise a measure of $D_t^{\mathrm{CAD}}$, rather than a direct measure of $D_t^*$ or either intermediate stage in \cref{eq:demand_chain}. R14.0 retains the locked R12 system-level matrix and adds aggregate regime-change, full-count, and resampling diagnostics. It reports no DV call-volume trend. Its DV illustration begins with a declared CAD risk set and derives the additional information needed to measure service conditional on that set.
+The released call count is likewise a measure of $D_t^{\mathrm{CAD}}$, rather than a direct measure of $D_t^*$ or either intermediate stage in \cref{eq:demand_chain}. The archived empirical layer retains the locked system-level matrix and adds aggregate regime-change, full-count, and resampling diagnostics. It reports no DV call-volume trend. Its DV illustration begins with a declared CAD risk set and derives the additional information needed to measure service conditional on that set.
 
 \subsection{Target-specific sufficiency and inclusion-minimality}
 \label{sec:witness_minimality}
@@ -145,7 +145,7 @@ These are target-specific results. Calls-holding transitions enter the minimum b
 
 \subsection{The simple stress statistic and the LP robustness statistic}
 
-The Ida statistic belongs to the released-record side of \cref{eq:observation_map}. Let $G(Y)$ be the standardized ten-bin public-field contrast matrix defined below. R14.0 uses
+The Ida statistic belongs to the released-record side of \cref{eq:observation_map}. Let $G(Y)$ be the standardized ten-bin public-field contrast matrix defined below. The archived empirical layer uses
 \begin{equation}
 T(Y):=M_{\max}(G(Y))=\max_{t,j}|G_{tj}|
 \label{eq:stress_diagnostic}
@@ -1365,6 +1365,6 @@ The argument has two connected modules:
 The workload map links reported demand, capacity, priorities, and service. The first module shows that instability in the released observation of that system is empirically consequential. The second determines which reported-DV performance functionals remain supportable, bounded, selected, or unavailable and identifies the witnesses that contract each set. Those witnesses define privacy-conscious aggregate products for resource management and civilian oversight. The frozen Ida results remain system-level.
 
 \bibliographystyle{apalike}
-\bibliography{references_r15_0}
+\bibliography{references_r15_1}
 
 \end{document}

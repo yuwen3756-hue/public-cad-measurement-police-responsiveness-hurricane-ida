@@ -1,0 +1,34 @@
+{
+  "alternating_nonoverlap_sensitivity": [
+    {
+      "Ida_rank_including_Ida": 1,
+      "Ida_raw_max_cell": "0.5319863703988098",
+      "alternating_phase": 1,
+      "denominator_including_Ida": 77,
+      "first_reference_start": "2021-08-08",
+      "largest_reference_raw_max_cell": 0.29783018867924527,
+      "last_reference_start": "2024-12-15",
+      "reference_count": 76,
+      "selection_rule": "chronological post-change references at indices 1, 3, ..."
+    },
+    {
+      "Ida_rank_including_Ida": 1,
+      "Ida_raw_max_cell": "0.5319863703988098",
+      "alternating_phase": 2,
+      "denominator_including_Ida": 76,
+      "first_reference_start": "2021-08-15",
+      "largest_reference_raw_max_cell": 0.3098150839793282,
+      "last_reference_start": "2024-12-08",
+      "reference_count": 75,
+      "selection_rule": "chronological post-change references at indices 2, 4, ..."
+    }
+  ],
+  "artifact_type": "R15_1_TEXT_AND_REPRODUCIBILITY_REFINEMENTS",
+  "ida_time_path_days": 22,
+  "paper_version": "R15.1",
+  "raw_aggregate_parity_rows": 14,
+  "raw_aggregate_parity_status": "MATCH",
+  "raw_aggregate_state_cells_checked": 56,
+  "scientific_results_version": "R15",
+  "source_boundary": "derived only from packaged R15 aggregate objects"
+}

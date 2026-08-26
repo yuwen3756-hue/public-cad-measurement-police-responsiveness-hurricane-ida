@@ -6,10 +6,12 @@ It never writes row-level records, addresses, narratives, or identifiers.
 """
 from __future__ import annotations
 
+import argparse
 import csv
 import gzip
 import hashlib
 import json
+import os
 import re
 from collections import Counter, defaultdict
 from datetime import datetime
@@ -19,7 +21,7 @@ from pathlib import Path
 PACKAGE = Path(__file__).resolve().parents[1]
 PILOT = Path(__file__).resolve().parents[3]
 SOURCE_OUT = PACKAGE / "source"
-SOURCE_ROOT = PILOT / "source_data" / "socrata"
+DEFAULT_SOURCE_ROOT = PILOT / "source_data" / "socrata"
 DATASETS = {
     2020: ("hp7u-i9hf", "nola_hp7u-i9hf"),
     2021: ("3pha-hum9", "nola_3pha-hum9"),
@@ -65,8 +67,8 @@ def format_class(value: str | None) -> str:
     return "other_nonblank"
 
 
-def monthly_paths(year: int, folder: str) -> list[Path]:
-    root = SOURCE_ROOT / folder / str(year) / "cad_operational"
+def monthly_paths(source_root: Path, year: int, folder: str) -> list[Path]:
+    root = source_root / folder / str(year) / "cad_operational"
     paths = sorted(root.glob(f"cad_operational_{year}-??.csv.gz"))
     if len(paths) != 12:
         raise FileNotFoundError(f"Expected 12 monthly files for {year}, found {len(paths)}")
@@ -80,7 +82,27 @@ def write_csv(path: Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Build aggregate public-source lineage and July-field audits."
+    )
+    parser.add_argument(
+        "--source-root",
+        type=Path,
+        help=(
+            "Directory containing the nola_<dataset-id>/<year>/cad_operational cache. "
+            "Defaults to BELAND_PUBLIC_SOURCE_ROOT, then the managed project cache."
+        ),
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
+    env_root = os.environ.get("BELAND_PUBLIC_SOURCE_ROOT")
+    source_root = (args.source_root or (Path(env_root) if env_root else DEFAULT_SOURCE_ROOT)).resolve()
+    if not source_root.is_dir():
+        raise FileNotFoundError(f"Public source root not found: {source_root}")
     SOURCE_OUT.mkdir(parents=True, exist_ok=True)
     annual_rows: list[dict] = []
     file_bindings: dict[str, list[dict]] = {}
@@ -88,7 +110,7 @@ def main() -> None:
     july_formats: dict[str, Counter] = defaultdict(Counter)
 
     for year, (dataset_id, folder) in DATASETS.items():
-        paths = monthly_paths(year, folder)
+        paths = monthly_paths(source_root, year, folder)
         row_count = 0
         min_created: datetime | None = None
         max_created: datetime | None = None
@@ -102,7 +124,7 @@ def main() -> None:
                     "file": path.name,
                     "sha256": file_hash,
                     "bytes": path.stat().st_size,
-                    "cache_mtime_utc": datetime.fromtimestamp(
+                    "cache_mtime_with_offset": datetime.fromtimestamp(
                         path.stat().st_mtime
                     ).astimezone().isoformat(),
                 }
@@ -189,6 +211,9 @@ def main() -> None:
         },
         "arrival_validity_rule": "parseable timearrive greater than or equal to parseable timecreate",
         "dispatch_state_rule": "nonblank timedispatch, matching the frozen Wave-2 definition",
+        "source_root_resolution": (
+            "command_line" if args.source_root else "environment" if env_root else "managed_project_default"
+        ),
         "scientific_boundary": "field presence and parseability only; no physical dispatch or arrival inference",
     }
     (SOURCE_OUT / "r15_public_source_audit.json").write_text(

@@ -6,6 +6,6 @@
   "line_ending_statement": "No text normalization was performed; equality is byte-for-byte for every snapshot file.",
   "predecessor_package": "beland_plus_current_status_professor_2026-08-24_r14_0_v1",
   "relative_root": "reproduction/repository_snapshot",
-  "successor_package": "beland_plus_current_status_professor_2026-08-25_r15_0_v1",
+  "successor_package": "beland_plus_current_status_professor_2026-08-25_r15_1_v1",
   "tree_sha256": "9e59d42e4c7abaf63fc9e962527c4000eb47a84b1b58f59597c10cf2c5850ddf"
 }

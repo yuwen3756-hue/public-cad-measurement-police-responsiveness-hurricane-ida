@@ -4,7 +4,7 @@
 
 This package supports five checks:
 
-1. Rebuild the aggregate regime-break, support, ranking, uncertainty, initiation-stream, and current-denominator diagnostics.
+1. Rebuild the aggregate regime-break, support, ranking, uncertainty, initiation-stream, current-denominator, R15.1 time-path, non-overlap, and raw/aggregate-parity diagnostics.
 2. Reproduce the first-hand public-source lineage and July 2021 audit when the canonical official cache is available.
 3. Build the main paper, empirical supplement, one-page status note, separate legacy archive, and professor-facing combined PDF.
 4. Verify exact numerical, textual, PDF, snapshot-parity, and manifest invariants.
@@ -29,6 +29,8 @@ The professor-facing combined PDF contains only the main paper and empirical sup
 
 `PACKAGE_MANIFEST.sha256` binds every curated file, including `README.md`, `.gitattributes`, the parity receipt, PDFs, sources, scripts, and reproduction snapshot. It excludes itself, `tmp/`, Python caches, and the generated ZIP. `.gitattributes` uses `* -text`; the snapshot parity receipt compares every copied snapshot file byte-for-byte with the published predecessor.
 
+On Windows, use a fresh clone of the release commit or set `git config core.autocrlf false` before checkout. A worktree first checked out before the repository's byte-preserving `.gitattributes` existed may contain converted line endings and fail the exact manifest even when LF-normalized text is equivalent.
+
 ## 3. Environment
 
 - Python 3.12+
@@ -44,7 +46,7 @@ Install:
 python -m pip install -r requirements.txt
 ```
 
-The R15 evidence builder uses Python's standard library and NumPy. It does not use pandas. The four mutually exclusive public states are $J_{00}$, $J_{10}$, $J_{01}$, and $J_{11}$.
+The R15 evidence builder uses Python's standard library and NumPy. The R15.1 refinement builder uses only the standard library. Neither uses pandas. The four mutually exclusive public states are $J_{00}$, $J_{10}$, $J_{01}$, and $J_{11}$.
 
 ## 4. Fast verification
 
@@ -60,7 +62,7 @@ Expected terminal status:
 RELEASE_VERIFICATION_PASS
 ```
 
-The verifier checks the manifest, exact five-PDF set, page relationships, embedded scientific text, forbidden revision-history language in the main source, source-audit invariants, 2025/2026 denominator arithmetic, 4,000-draw bootstrap outputs, support/rank/threshold results, snapshot parity, inherited empirical invariants, and exact-checker fixtures.
+The verifier checks the manifest, exact five-PDF set, page relationships, embedded scientific text, forbidden revision-history language in the main source, source-audit invariants, all 56 raw/aggregate July state cells, alternating non-overlap ranks, 2025/2026 denominator arithmetic, 4,000-draw bootstrap outputs, support/rank/threshold results, snapshot parity, inherited empirical invariants, and exact-checker fixtures.
 
 ## 5. Rebuild aggregate evidence
 
@@ -88,9 +90,23 @@ The builder reads the packaged aggregate `w2_period_tally.csv.gz`, locked refere
 
 The bootstrap is conditional on observed public categories, stratum totals, fixed bins, and the chosen reference design. It does not model time-series dependence or uncertainty in the July regime boundary.
 
+Build the R15.1 presentation and reproducibility refinements:
+
+```powershell
+python .\scripts\build_r15_1_refinements.py
+```
+
+Expected status:
+
+```text
+R15_1_REFINEMENT_BUILD_PASS
+```
+
+This writes the 22-day Ida time path, two alternating non-overlap rank phases, a complete $14\times4$ raw-versus-aggregate parity table, and a compact diagnostics JSON. It derives only from packaged R15 aggregate objects.
+
 ## 6. Reproduce the raw public-source audit
 
-This optional step requires the canonical official monthly DataNOLA cache at:
+This optional step requires the official monthly DataNOLA cache at:
 
 ```text
 pilot_911_dv/source_data/socrata/
@@ -101,9 +117,12 @@ pilot_911_dv/source_data/socrata/
   nola_2zcj-b6ts/2024/cad_operational/*.csv.gz
 ```
 
-Run from this package inside the project:
+Run inside the managed project, provide an explicit standalone cache path, or set the environment variable:
 
 ```powershell
+python .\scripts\audit_public_source_lineage.py
+python .\scripts\audit_public_source_lineage.py --source-root D:\public-data\socrata
+$env:BELAND_PUBLIC_SOURCE_ROOT = 'D:\public-data\socrata'
 python .\scripts\audit_public_source_lineage.py
 ```
 
@@ -113,7 +132,7 @@ Expected status:
 R15_PUBLIC_SOURCE_AUDIT_PASS
 ```
 
-The audit records official dataset IDs and URLs, observed date limits, raw row counts, monthly hashes, deterministic annual bundle hashes, local cache mtimes, verification date, parsing rules, and aggregate July 25–31 state counts. It explicitly reports that retrieval dates were not recorded in the monthly cache. No row-level value is persisted.
+The audit records official dataset IDs and URLs, observed date limits, raw row counts, monthly hashes, deterministic annual bundle hashes, local cache mtimes with explicit offsets, verification date, parsing rules, and aggregate July 25–31 state counts. It explicitly reports that retrieval dates were not recorded in the monthly cache. No row-level value is persisted.
 
 ## 7. Build the PDFs
 
@@ -134,10 +153,12 @@ The build recompiles every LaTeX document, rejects undefined references/citation
 - First positive non-officer $J_{01}$ day: 28 July 2021.
 - Raw 27–29 July officer dispatch presence: 479/479, 230/575, 5/504.
 - Standardized $M_{\max}=0.5071816170$, rank $1/154$.
-- Full-count $M_{\max}=0.5319863704$, post-change rank $1/152$.
+- Full-count $M_{\max}=0.5319863704$, post-hoc post-change rank $1/152$ including Ida; stage-era full-count rank $1/151$ including Ida.
 - Ida support: 86.1% event and 77.0% baseline, failing the 0.90 symmetric rule.
 - Threshold exceedance counts: 9/8/9 across full/stage/same-season reference sets.
-- 4,000 bootstrap draws; full-count Ida rank is 1 in every draw against 151 post-change references.
+- 4,000 conditional window-wise bootstrap draws; full-count Ida rank is 1 in every draw against 151 post-change references, without modeling temporal dependence.
+- Alternating adjacent-overlap removal: ranks $1/77$ and $1/76$ including Ida.
+- Raw official audit versus aggregate tally: all 56 July state cells match.
 - 2025 non-officer: 136,712/207,050 = 66.03%; officer: 1,117/122,720 = 0.91%; all rows: 137,829/329,770 = 41.80%.
 - 2026 snapshot non-officer dispatch share: 66.84%.
 - No causal-effect, mechanism, physical-response, capacity, performance, or DV-incidence claim.

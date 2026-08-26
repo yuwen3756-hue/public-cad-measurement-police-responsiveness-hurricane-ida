@@ -84,7 +84,7 @@
   },
   "july_2021_source_file": {
     "bytes": 868446,
-    "cache_mtime_utc": "2026-07-12T19:05:51-04:00",
+    "cache_mtime_with_offset": "2026-07-12T19:05:51-04:00",
     "file": "cad_operational_2021-07.csv.gz",
     "sha256": "097cdca46240e34ed80bb17311e656bea46ac055cabb98b6fd348e7d99c39c3e"
   },
@@ -92,73 +92,73 @@
     "2020": [
       {
         "bytes": 903618,
-        "cache_mtime_utc": "2026-07-12T19:00:21-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:00:21-04:00",
         "file": "cad_operational_2020-01.csv.gz",
         "sha256": "0262a701e6805a87078d9635f3bd8c7d442eb6e09c7b5481e0fd90853680fd10"
       },
       {
         "bytes": 877943,
-        "cache_mtime_utc": "2026-07-12T19:03:51-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:03:51-04:00",
         "file": "cad_operational_2020-02.csv.gz",
         "sha256": "aa72c7940d0ef80949ea090ee611d6f0db6a152ac7a54d00d4c03310163644f8"
       },
       {
         "bytes": 854084,
-        "cache_mtime_utc": "2026-07-12T19:03:56-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:03:56-04:00",
         "file": "cad_operational_2020-03.csv.gz",
         "sha256": "dcc09922ff54d2952e62b8094e7f4774b5a8f6a06ff483b6dd282eee67d879de"
       },
       {
         "bytes": 818680,
-        "cache_mtime_utc": "2026-07-12T19:04:02-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:04:02-04:00",
         "file": "cad_operational_2020-04.csv.gz",
         "sha256": "5f2a1d6c2f8d1cd5993eea88558caa7675618492298b1506a93ca37fd91cdedc"
       },
       {
         "bytes": 858033,
-        "cache_mtime_utc": "2026-07-12T19:04:08-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:04:08-04:00",
         "file": "cad_operational_2020-05.csv.gz",
         "sha256": "316d6a21ed667347e7f9c65cb7be2cabc5d6b521c703e6c458a4c53efa296f17"
       },
       {
         "bytes": 848826,
-        "cache_mtime_utc": "2026-07-12T19:04:15-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:04:15-04:00",
         "file": "cad_operational_2020-06.csv.gz",
         "sha256": "2e8b5514100e4e771b66dde06c5514b1c22e7f50dc7ea1f3ff3df6749cfd1850"
       },
       {
         "bytes": 856990,
-        "cache_mtime_utc": "2026-07-12T19:04:21-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:04:21-04:00",
         "file": "cad_operational_2020-07.csv.gz",
         "sha256": "781e99bf81a1b146c7bf56eca5fe4a3a64addbef1088f00840f4c59f21589fe0"
       },
       {
         "bytes": 858379,
-        "cache_mtime_utc": "2026-07-12T19:04:27-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:04:27-04:00",
         "file": "cad_operational_2020-08.csv.gz",
         "sha256": "d192b8b3d05fdb3221bea31ff39a2ef6d9797c3144e065f80f830cda5f3f3e96"
       },
       {
         "bytes": 855773,
-        "cache_mtime_utc": "2026-07-12T19:04:32-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:04:32-04:00",
         "file": "cad_operational_2020-09.csv.gz",
         "sha256": "1f087bc4e9726d1afc75bdac2bdb6c611f51318486c3ce9084ebf434a881c3da"
       },
       {
         "bytes": 884808,
-        "cache_mtime_utc": "2026-07-12T19:04:40-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:04:40-04:00",
         "file": "cad_operational_2020-10.csv.gz",
         "sha256": "f8b5f1eff5471ff51303ed01c9e9c9d6c4960a480665e7571cadc83dffd73f55"
       },
       {
         "bytes": 841179,
-        "cache_mtime_utc": "2026-07-12T19:04:46-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:04:46-04:00",
         "file": "cad_operational_2020-11.csv.gz",
         "sha256": "9bbb5db3219c7188735e7b48faa01b509d284484e39dbaf862e9ea58ecf45ed8"
       },
       {
         "bytes": 821900,
-        "cache_mtime_utc": "2026-07-12T19:04:51-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:04:51-04:00",
         "file": "cad_operational_2020-12.csv.gz",
         "sha256": "aff371b418aa0269ae9a97bb3ec4bc3cc9d92631bc33e13c7949b794a85779dc"
       }
@@ -166,73 +166,73 @@
     "2021": [
       {
         "bytes": 850125,
-        "cache_mtime_utc": "2026-07-12T19:05:15-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:05:15-04:00",
         "file": "cad_operational_2021-01.csv.gz",
         "sha256": "c62bdd975d28528fd142e985c2bdf184382f072e4768ca668215b2c052356eba"
       },
       {
         "bytes": 767422,
-        "cache_mtime_utc": "2026-07-12T19:05:19-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:05:19-04:00",
         "file": "cad_operational_2021-02.csv.gz",
         "sha256": "1bce9654843863a41bfd75202ff1c6c3fe5ba43f4d99f22063ffb0e707149f55"
       },
       {
         "bytes": 877528,
-        "cache_mtime_utc": "2026-07-12T19:05:23-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:05:23-04:00",
         "file": "cad_operational_2021-03.csv.gz",
         "sha256": "91c560efb1ce69bc412d43da57e18b1d8a6f7588f125e83a8c43739ac319508c"
       },
       {
         "bytes": 891210,
-        "cache_mtime_utc": "2026-07-12T19:05:33-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:05:33-04:00",
         "file": "cad_operational_2021-04.csv.gz",
         "sha256": "70e40b29a5ff76adea23d0520d84dc7d0d07bdf909b7e753a754c84c4a04edc2"
       },
       {
         "bytes": 932898,
-        "cache_mtime_utc": "2026-07-12T19:05:40-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:05:40-04:00",
         "file": "cad_operational_2021-05.csv.gz",
         "sha256": "7637632683fcf4c84d5a931894463c179d0ecd3166627cf3e64a4af485057715"
       },
       {
         "bytes": 859192,
-        "cache_mtime_utc": "2026-07-12T19:05:45-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:05:45-04:00",
         "file": "cad_operational_2021-06.csv.gz",
         "sha256": "9de5d14963ab55c1ca4cebdd65b952da625b74b5372deb77332984913b5cd726"
       },
       {
         "bytes": 868446,
-        "cache_mtime_utc": "2026-07-12T19:05:51-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:05:51-04:00",
         "file": "cad_operational_2021-07.csv.gz",
         "sha256": "097cdca46240e34ed80bb17311e656bea46ac055cabb98b6fd348e7d99c39c3e"
       },
       {
         "bytes": 837702,
-        "cache_mtime_utc": "2026-07-12T19:05:57-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:05:57-04:00",
         "file": "cad_operational_2021-08.csv.gz",
         "sha256": "b903d44f9d5d8c171abe514c2020d6e5a1f3b87a41b068c55ff06e941a8abb77"
       },
       {
         "bytes": 789281,
-        "cache_mtime_utc": "2026-07-12T19:06:02-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:06:02-04:00",
         "file": "cad_operational_2021-09.csv.gz",
         "sha256": "7d4a1412c51b92257eb9e6064048b33266642e66d68468b40db8765c42be3050"
       },
       {
         "bytes": 847464,
-        "cache_mtime_utc": "2026-07-12T19:06:07-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:06:07-04:00",
         "file": "cad_operational_2021-10.csv.gz",
         "sha256": "66c21e8f4ecd2fc339dfa2b65f9525b97892a5afdc555e90f30cbd283dc3d92f"
       },
       {
         "bytes": 805605,
-        "cache_mtime_utc": "2026-07-12T19:06:15-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:06:15-04:00",
         "file": "cad_operational_2021-11.csv.gz",
         "sha256": "5be7ce3250fd5cb27535e46d9224875c0638b18353f1c8cae72b3bc73a1e94cd"
       },
       {
         "bytes": 798220,
-        "cache_mtime_utc": "2026-07-12T19:06:21-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:06:21-04:00",
         "file": "cad_operational_2021-12.csv.gz",
         "sha256": "066782b9d7b21e6fe88b250cc74ae4d48a6b6c8ed93f4206530c1704a1b10e3e"
       }
@@ -240,73 +240,73 @@
     "2022": [
       {
         "bytes": 781992,
-        "cache_mtime_utc": "2026-07-12T19:06:35-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:06:35-04:00",
         "file": "cad_operational_2022-01.csv.gz",
         "sha256": "0acdbfb046becf66b09a3898ee947a0dbb4759f59283017e559d67522ab670b3"
       },
       {
         "bytes": 741109,
-        "cache_mtime_utc": "2026-07-12T19:06:39-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:06:39-04:00",
         "file": "cad_operational_2022-02.csv.gz",
         "sha256": "186df2a3e1594eae0b47aef5d319063b6e86cff8a773eea9b95a74bab52ead98"
       },
       {
         "bytes": 788900,
-        "cache_mtime_utc": "2026-07-12T19:06:44-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:06:44-04:00",
         "file": "cad_operational_2022-03.csv.gz",
         "sha256": "ceda754fcf29c4bc645b311b4988c65b689f43f462a74b01adb638e7fc27bde3"
       },
       {
         "bytes": 758979,
-        "cache_mtime_utc": "2026-07-12T19:06:49-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:06:49-04:00",
         "file": "cad_operational_2022-04.csv.gz",
         "sha256": "8a516687e4a178305cfb70a0c16a297e1a81cc1d15a6c33b7afef6fe3f16eb9a"
       },
       {
         "bytes": 757995,
-        "cache_mtime_utc": "2026-07-12T19:06:55-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:06:55-04:00",
         "file": "cad_operational_2022-05.csv.gz",
         "sha256": "233a88b78c0233d3e255204875cba6ec863d8e227400fa85d2d31baa97ca1f97"
       },
       {
         "bytes": 695503,
-        "cache_mtime_utc": "2026-07-12T19:06:59-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:06:59-04:00",
         "file": "cad_operational_2022-06.csv.gz",
         "sha256": "94af6eeb62b015499ac3d158544e5293e1974a948b094ff617561720735e324f"
       },
       {
         "bytes": 683025,
-        "cache_mtime_utc": "2026-07-12T19:07:03-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:07:03-04:00",
         "file": "cad_operational_2022-07.csv.gz",
         "sha256": "fd817352ea862ab370d0421d88223547c0d7805fc681711241c3685d91571ee1"
       },
       {
         "bytes": 685269,
-        "cache_mtime_utc": "2026-07-12T19:07:07-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:07:07-04:00",
         "file": "cad_operational_2022-08.csv.gz",
         "sha256": "ca872a28de78472074f7037231e05723ef1975b682f4cecc2dfbd7613c8fad68"
       },
       {
         "bytes": 669715,
-        "cache_mtime_utc": "2026-07-12T19:07:12-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:07:12-04:00",
         "file": "cad_operational_2022-09.csv.gz",
         "sha256": "e33998b410ab3d21718a3f1954fe28db75936a3639e01a3c7e9a223b139376c8"
       },
       {
         "bytes": 688777,
-        "cache_mtime_utc": "2026-07-12T19:07:16-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:07:16-04:00",
         "file": "cad_operational_2022-10.csv.gz",
         "sha256": "9166dddebbc92dc14ffe81fa4359966699b899beedfd7793fa4e17b2d7642614"
       },
       {
         "bytes": 649312,
-        "cache_mtime_utc": "2026-07-12T19:07:22-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:07:22-04:00",
         "file": "cad_operational_2022-11.csv.gz",
         "sha256": "e23d0358ab737e74b9d052e8622ca75e1cf1ca6b45180b5e22503feb0c0ffa2d"
       },
       {
         "bytes": 682280,
-        "cache_mtime_utc": "2026-07-12T19:07:27-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:07:27-04:00",
         "file": "cad_operational_2022-12.csv.gz",
         "sha256": "95e7005dfa64e3b0fb40dfc34a5836e362892da360a22ffe77fa97c30e98f8d5"
       }
@@ -314,73 +314,73 @@
     "2023": [
       {
         "bytes": 699953,
-        "cache_mtime_utc": "2026-07-12T19:07:39-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:07:39-04:00",
         "file": "cad_operational_2023-01.csv.gz",
         "sha256": "137895de8e5b1d4172c5a5e42cd79de1e4d4efa352e464f47f2b1edf176d5d5f"
       },
       {
         "bytes": 672626,
-        "cache_mtime_utc": "2026-07-12T19:07:45-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:07:45-04:00",
         "file": "cad_operational_2023-02.csv.gz",
         "sha256": "0b3e93ec684fc982b9d6beddcbfa6dd45399893e082e7f245d377e62bc0c8e15"
       },
       {
         "bytes": 694776,
-        "cache_mtime_utc": "2026-07-12T19:07:49-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:07:49-04:00",
         "file": "cad_operational_2023-03.csv.gz",
         "sha256": "160b47ead67ad404c4c2c5925b2e59ebd65e2592f79ed58c92cfb533c78ee07d"
       },
       {
         "bytes": 686613,
-        "cache_mtime_utc": "2026-07-12T19:07:54-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:07:54-04:00",
         "file": "cad_operational_2023-04.csv.gz",
         "sha256": "d96d83a0e385de625a35f9fbb38a1c31382b1e16bb059a72aa0cf444de0ede1d"
       },
       {
         "bytes": 719233,
-        "cache_mtime_utc": "2026-07-12T19:07:58-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:07:58-04:00",
         "file": "cad_operational_2023-05.csv.gz",
         "sha256": "e539024830a8c734f7e507cb8df24f687b507f2abbb3a363f37ba47fd3eae6d9"
       },
       {
         "bytes": 658317,
-        "cache_mtime_utc": "2026-07-12T19:08:03-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:03-04:00",
         "file": "cad_operational_2023-06.csv.gz",
         "sha256": "27e238c763e2c37d51bd4286f110d3687ae75605d45fe18d600dbba8cf0db0d4"
       },
       {
         "bytes": 665744,
-        "cache_mtime_utc": "2026-07-12T19:08:07-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:07-04:00",
         "file": "cad_operational_2023-07.csv.gz",
         "sha256": "77b2c6b15f4fe629e2fd817fedfd38035c6e15978b991617bdc6ed19241a77b9"
       },
       {
         "bytes": 648098,
-        "cache_mtime_utc": "2026-07-12T19:08:12-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:12-04:00",
         "file": "cad_operational_2023-08.csv.gz",
         "sha256": "483f962bebf65a7f0cc1b73c3e6f8701e0d1f04eae56b3e4a5c31e82af5bb4b1"
       },
       {
         "bytes": 633509,
-        "cache_mtime_utc": "2026-07-12T19:08:17-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:17-04:00",
         "file": "cad_operational_2023-09.csv.gz",
         "sha256": "717f6a9f86b28b5d98b3c5e1b903737a6b49cf075745a11ba14030f2be1eec30"
       },
       {
         "bytes": 647352,
-        "cache_mtime_utc": "2026-07-12T19:08:21-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:21-04:00",
         "file": "cad_operational_2023-10.csv.gz",
         "sha256": "7fe785bb4573a9bd7c4f6c841827a1e5e8c7f5e1f3423720346733ff68e6fbdc"
       },
       {
         "bytes": 595365,
-        "cache_mtime_utc": "2026-07-12T19:08:24-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:24-04:00",
         "file": "cad_operational_2023-11.csv.gz",
         "sha256": "6ab8a22017ddac764f30d3f6b49ca341e375690b659f0f612c50472b325c64c6"
       },
       {
         "bytes": 616545,
-        "cache_mtime_utc": "2026-07-12T19:08:27-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:27-04:00",
         "file": "cad_operational_2023-12.csv.gz",
         "sha256": "29fa008a663ee961252088046e5fe8f2a8685c32283b081b977de5fdd180406d"
       }
@@ -388,78 +388,79 @@
     "2024": [
       {
         "bytes": 625549,
-        "cache_mtime_utc": "2026-07-12T18:59:43-04:00",
+        "cache_mtime_with_offset": "2026-07-12T18:59:43-04:00",
         "file": "cad_operational_2024-01.csv.gz",
         "sha256": "2cf3663c43d5c39cbf2c99249de98dde9dd295dc9cbb5ff488fcda0bb2a528f1"
       },
       {
         "bytes": 638289,
-        "cache_mtime_utc": "2026-07-12T19:08:39-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:39-04:00",
         "file": "cad_operational_2024-02.csv.gz",
         "sha256": "f32b2c0014b1378b7fbb8bd96a15da9161b13a7643c9a73d672dc93c463dd7d2"
       },
       {
         "bytes": 644639,
-        "cache_mtime_utc": "2026-07-12T19:08:42-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:42-04:00",
         "file": "cad_operational_2024-03.csv.gz",
         "sha256": "7fb8c79621f5f60462010bee6c227b0a3244b56c2aeb4641e6cf0e5ef3170e28"
       },
       {
         "bytes": 620542,
-        "cache_mtime_utc": "2026-07-12T19:08:47-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:47-04:00",
         "file": "cad_operational_2024-04.csv.gz",
         "sha256": "5e4f8f93a35999aa8766450c92016f34f1a96451dce67aa462c3e3e004cd932a"
       },
       {
         "bytes": 648485,
-        "cache_mtime_utc": "2026-07-12T19:08:52-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:52-04:00",
         "file": "cad_operational_2024-05.csv.gz",
         "sha256": "6c8ec608b962df00052a28cbd465ce94b860cf5ebead3f6f8fff9d7c515261f8"
       },
       {
         "bytes": 617287,
-        "cache_mtime_utc": "2026-07-12T19:08:56-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:08:56-04:00",
         "file": "cad_operational_2024-06.csv.gz",
         "sha256": "3b65db7d58ca76fa913f92e1f331165185ca354cb8340c427ad3d8d64cb9def1"
       },
       {
         "bytes": 654703,
-        "cache_mtime_utc": "2026-07-12T19:09:01-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:09:01-04:00",
         "file": "cad_operational_2024-07.csv.gz",
         "sha256": "3c0d9ffb7524af6c93c893492b82c6153d67b62317304eaf466057b6580e5371"
       },
       {
         "bytes": 676265,
-        "cache_mtime_utc": "2026-07-12T19:09:08-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:09:08-04:00",
         "file": "cad_operational_2024-08.csv.gz",
         "sha256": "0faa0d51da781ab8615f92e0d0c0eb04a814d6c2ed5ea7b924d2fc6154becd7e"
       },
       {
         "bytes": 663359,
-        "cache_mtime_utc": "2026-07-12T19:09:13-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:09:13-04:00",
         "file": "cad_operational_2024-09.csv.gz",
         "sha256": "1a683a1912efdcfdcb0be68dd58383013fb35b43cf81cfd6fa03c472b84a4ef7"
       },
       {
         "bytes": 687173,
-        "cache_mtime_utc": "2026-07-12T19:09:17-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:09:17-04:00",
         "file": "cad_operational_2024-10.csv.gz",
         "sha256": "580e56fdc7b3fb6572939b329f3405874e59ddcab8626b49104a9e5a5e0ffcc8"
       },
       {
         "bytes": 662898,
-        "cache_mtime_utc": "2026-07-12T19:09:24-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:09:24-04:00",
         "file": "cad_operational_2024-11.csv.gz",
         "sha256": "b815007231c386df49f29b573577bad3d0cd7141047497d9a43d430fa6a273d7"
       },
       {
         "bytes": 649115,
-        "cache_mtime_utc": "2026-07-12T19:09:30-04:00",
+        "cache_mtime_with_offset": "2026-07-12T19:09:30-04:00",
         "file": "cad_operational_2024-12.csv.gz",
         "sha256": "61a1f7d7143574a166463dbbb251b01d7eb957c485e9e823a0a6d3f633a3938c"
       }
     ]
   },
   "privacy_class": "aggregate-only; no row-level values persisted",
-  "scientific_boundary": "field presence and parseability only; no physical dispatch or arrival inference"
+  "scientific_boundary": "field presence and parseability only; no physical dispatch or arrival inference",
+  "source_root_resolution": "command_line"
 }
