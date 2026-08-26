@@ -14,7 +14,7 @@
 \vspace{-1.2em}
 
 \begin{plainbox}[title=Scope]
-This supplement documents the public-source lineage, raw July audit, comparison design, support diagnostics, resampling, initiation-stream evidence, current-data denominator audit, institutional-source check, and reproduction contract. It is organized around the empirical claims in the main paper. Extended identified-set proofs, constrained-program certificates, and formal-verification material are kept in the separate \emph{Legacy Mathematical and Formal-Verification Archive} and are not appended to the professor-facing paper.
+This supplement follows the main paper's empirical sequence: source lineage and parsing; the July transition; initiation-stream and current-denominator evidence; the Ida daily path; the primary full-count comparison; then standardized, bootstrap, secondary-statistic, institutional, and reported-DV details. Extended identified-set proofs, constrained-program certificates, and formal-verification material are kept in the separate \emph{Legacy Mathematical and Formal-Verification Archive} and are not appended to the professor-facing paper.
 \end{plainbox}
 
 \setcounter{tocdepth}{1}
@@ -24,7 +24,7 @@ This supplement documents the public-source lineage, raw July audit, comparison 
 \endgroup
 \newpage
 
-\section{Claim and evidence hierarchy}
+\section{Source lineage and parsing rules}
 
 The analysis distinguishes four evidence classes.
 \begin{enumerate}
@@ -36,9 +36,9 @@ The analysis distinguishes four evidence classes.
 
 The first three classes identify a public-record regime change and delimit candidate interpretations. They do not turn the fourth class into observed data. Accordingly, $J_{01}$ is always a public configuration---arrival field present, dispatch field absent---rather than a claim of physical arrival without dispatch.
 
-\section{Annual public-source lineage}
+\subsection{Annual public-source lineage}
 
-\subsection{Dataset binding}
+\subsubsection{Dataset binding}
 
 Table~\ref{tab:lineage} binds each analysis year to the official DataNOLA identifier and the first-hand cache audit. Each annual bundle hash is computed by sorting the twelve monthly filenames and hashing the filename plus each file's SHA-256 digest. This avoids concatenating or redistributing the raw source files. The monthly cache did not retain a reliable acquisition-date field, so the table reports that limitation rather than converting filesystem timestamps into retrieval dates. All sources were reverified on 25 August 2026.
 
@@ -66,11 +66,11 @@ Exact observed minimum and maximum timestamps, full hashes, monthly-file hashes,
 
 The annual row counts are raw public-file rows before the paper's initiation restriction. Analysis denominators are constructed after parsing \texttt{SelfInitiated}. No narratives or addresses are used. Item identifiers are used only by the upstream canonical pipeline for deduplication and are not written to review artifacts.
 
-\subsection{Official metadata and changelog}
+\subsubsection{Official metadata and changelog}
 
 The official 2021 page identifies OPCD as data provider, reports 21 public columns, supplies a data-dictionary attachment, and warns about preliminary classifications, later changes, mechanical or human error, sequencing, and over-time comparisons \citep{DataNOLA2021}. When inspected, its public ``Dataset Changelog'' stated that no changes had been archived. This is itself an observability limitation: the public page does not provide a dated change record that could explain 28 July 2021.
 
-\section{Raw July audit}
+\section{July transition: raw audit and aggregate parity}
 
 \subsection{Parsing and state construction}
 
@@ -114,26 +114,38 @@ Date & Stream & $N$ & $D$ nonblank & $D$ parsed & $A$ nonblank & $A$ valid & $J_
 
 The audit resolves three concerns. The first $J_{01}$ date is present in official source bytes. The change survives a parseability audit. And the abrupt officer-stream shift shows that the non-officer pattern is part of a broader public-record transition rather than an isolated fluctuation in one classified group.
 
+The independent raw-to-aggregate comparison checks fourteen date-by-stream rows and all four public states. All 56 state cells match exactly. This establishes that the July result in the aggregate series is a lossless transform of the audited source counts.
+
 The audit does not resolve the institutional cause. It has no event-entry history, user action, intermediate CAD object, export log, or versioned retention rule. The strongest supported wording is therefore ``public-recording transition associated with initiation status,'' not a named software or operational mechanism.
 
-\section{State matrix and estimator}
+\section{Ida path and maximum-change statistics}
+
+The daily file path begins with the intuitive quantities used in the main paper. Among arrival-observed non-officer records, the arrival-only share rises from 5--12 percent in the preceding week to 43.4 percent on 31 August and 49.3 percent on 1 September. The machine-readable daily series contains 22 dates from 22 August through 12 September 2021; the half-day comparison uses ten twelve-hour event cells and the corresponding cells seven days earlier.
+
+For the primary full-count design, let $\widetilde p_{w,b,s}$ be the unconditional share in state $s$ for half-day $b$ of window $w$. The largest percentage-point change is
+\begin{equation}
+M^{\mathrm{full}}(w)=\max_{b,s}\left|\widetilde p_{w,b,s}-\widetilde p_{w-7,b,s}\right|.
+\end{equation}
+It uses every non-officer record in each cell. Ida's value is 0.5320. The post-change comparison contains 151 ordinary reference windows for which both the event and baseline sides begin after 28 July 2021; its largest reference value is 0.3098. This reference set was defined after the July transition was identified and is therefore a descriptive post-hoc comparison.
+
+The standardized design is secondary. For half-day bin $t$, state $j\in\{J_{01},J_{10},J_{11}\}$, and common stratum $x$, let $p^E_{tjx}$ and $p^B_{tjx}$ be event and baseline shares and let $w^B_{tx}$ be the baseline weight over common support. Its contrast is
 
 For half-day bin $t$, state $j\in\{J_{01},J_{10},J_{11}\}$, and common stratum $x$, let $p^E_{tjx}$ and $p^B_{tjx}$ be event and baseline shares and let $w^B_{tx}$ be the baseline weight over common support. The standardized contrast is
 \begin{equation}
 G_{tj}=\sum_{x\in\mathcal X_t^E\cap\mathcal X_t^B}w^B_{tx}(p^E_{tjx}-p^B_{tjx}).
 \end{equation}
-The simple amplitude is $M_{\max}=\max_{t,j}|G_{tj}|$. The event window begins 29 August 2021 and contains ten twelve-hour bins; the baseline is seven days earlier.
+The standardized amplitude is $M_{\max}=\max_{t,j}|G_{tj}|$. The event window begins 29 August 2021 and contains ten twelve-hour bins; the baseline is seven days earlier.
 
 The standardized stage-era universe consists of 153 retained ordinary-week references beginning on or after 1 July 2021. Sixty-six eligible full-universe references occur entirely before 28 July, when $J_{01}$ is structurally absent, and 64 start before the 1 July stage cutoff. These facts explain why a common formula does not imply a common measurement regime.
 
-The full-count statistic drops the stratum intersection and weights. For each half-day it compares unconditional state shares and again takes the maximum absolute cell contrast. Two reference sets are reported:
+Two additional full-count reference sets are reported for transparency:
 \begin{itemize}
 \item the inherited stage-era membership set, which removes support selection but retains the existing membership rule; and
 \item a post-change set requiring both event and baseline sides to begin after 28 July, while retaining the frozen context exclusions.
 \end{itemize}
-The second is the support-independent comparison for the post-change measurement product.
+The second is the post-change comparison used as the primary descriptive reference in the main paper.
 
-\section{Common-support audit}
+\section{Secondary standardized estimator and common-support audit}
 
 \begin{table}[t]
 \centering
@@ -159,7 +171,7 @@ B10 & 453 & 416 & 0.834 & 0.851 \\
 
 The minimum coverages are 0.748 and 0.505; record-weighted coverages are 0.861 and 0.770. The symmetric 0.90 rule fails. Consequently, the standardized result cannot be described as the full event-window population. The full-count statistic uses all 3,878 event and 3,332 baseline records.
 
-\section{Bootstrap expansion}
+\section{Bootstrap results and dependence caveats}
 
 \subsection{Standardized windows}
 
@@ -207,7 +219,7 @@ Ida, 29 Aug. 2021 & 0.5320 & 0.4754 & 0.6015 \\
 \end{tabular}
 \end{table}
 
-\section{Thresholds, secondary statistics, and excluded episodes}
+\section{Secondary statistics, LP, thresholds, and timing placebo}
 
 The 95th-percentile maximum-cell thresholds are 0.2094 in the full set, 0.2247 in the stage-era set, and 0.2057 in the same-season set. They yield 9, 8, and 9 exceeding cells. Reporting one threshold without the other two would overstate the stability of a binary label.
 
@@ -233,6 +245,10 @@ $D$ upper & 0.1716 & 0.2835 & 4/154 \\
 
 The constrained LP is a robustness calculation. Its Ida lower endpoint exceeds 0.25 by 0.000734, while 50 of 217 reference intervals have width above 0.01 and the maximum width is 0.070. The numerical LP status is therefore a tested numerical result, not an exact rational certificate. Formal code verifies arithmetic and finite certificate logic; it does not verify the empirical meaning of public fields.
 
+The shifted-timing exercise is unfavorable to an institutional-timing interpretation: zero-padded translations of the support library fit better than the documented alignment. This does not alter the public-field contrast, but it means that the timing calculation does not identify a mechanism.
+
+\section{Excluded episodes and recovery comparisons}
+
 \begin{table}[t]
 \centering
 \caption{Labelled emergency and disturbance windows: full-count maximum-cell contrast}
@@ -255,7 +271,7 @@ Hurricane Francine, 8 Sep. 2024 & 2,886 & 2,882 & 0.110 \\
 
 The frozen exclusion list omitted Tropical Storm Cristobal, which made Louisiana landfall on 7 June 2020 \citep{NHC2020Cristobal}. The 7 and 14 June windows therefore remain ordinary members of the full-qualified rank; the second uses the Cristobal week as its baseline. Their large pre-break full-count movements occur through the available $J_{11}/J_{10}$ states, not through $J_{01}$. This post-hoc label documents an incomplete exclusion list and is not used to alter membership. The other labelled episodes in the table are excluded from the ordinary-week rank. The large post-Ida statistic compares a recovery week with Ida itself, while Francine is much smaller in the later regime. These comparisons reinforce the need to distinguish event stress from the measurement object used to observe it.
 
-\section{Officer-initiation evidence}
+\section{Initiation-stream and current-denominator evidence}
 
 \begin{figure}[t]
 \centering
@@ -317,7 +333,7 @@ Among arrival-observed records, let $p_{dt}$ be the recorded-disposition share a
 \end{equation}
 where bars denote midpoints. For the two largest late Ida contrasts, the totals $-0.4950$ and $-0.4824$ decompose into within-disposition terms $-0.5069$ and $-0.4946$ plus composition terms $+0.0119$ and $+0.0123$. The observed final-disposition mix is not sufficient to explain the shift. Because the sample conditions on arrival observation and uses final recorded dispositions, the decomposition does not identify operational routing or causal mechanisms.
 
-\section{Current-data denominator audit}
+\subsection{Current-data denominator audit}
 
 \begin{table}[t]
 \centering
@@ -403,7 +419,7 @@ Before using a public CAD duration as a performance measure, report:
 \end{enumerate}
 
 \bibliographystyle{apalike}
-\bibliography{references_r15_1}
+\bibliography{references_r16_0}
 \clearpage
 
 \section{Numerical claim index}

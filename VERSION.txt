@@ -1,4 +1,4 @@
 Release date: 2026-08-25
-Paper version: R15.1
-Scientific-results version: R15
+Paper version: R16.0
+Scientific-results version: R15.1
 Package version: 1

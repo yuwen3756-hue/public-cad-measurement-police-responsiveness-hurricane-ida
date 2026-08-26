@@ -1,13 +1,13 @@
-# Research status note — R15.1 — 25 August 2026
+# Research status note — R16.0 — 25 August 2026
 
-The paper measures whether released public dispatch and arrival fields are present and valid, and how their four joint states change across windows. New Orleans public CAD changes before Hurricane Ida and changes again during Ida. The supported object is a public-field configuration, not physical dispatch, arrival, capacity, response quality, domestic-violence incidence, or a mechanism.
+The released public-field convention changes abruptly on 28 July 2021. Hurricane Ida produces a second, temporary change inside that later convention. Its largest half-day field-state change is 53.2 percentage points, larger than all 151 post-change ordinary-week comparisons. The public record does not reveal physical response or the institutional mechanism that generated the released fields.
 
-What is now established:
+Evidence behind the sequence:
 
-- The official July 2021 CSV confirms the first non-officer $J_{01}$ records on 28 July and a simultaneous officer-stream dispatch-field collapse; nonblank timestamps remain parseable.
-- Ida's standardized maximum-cell contrast is 0.5072, rank $1/154$ including Ida. The post-hoc post-change full-count contrast is 0.5320, rank $1/152$ including Ida. A conditional window-wise bootstrap that does not model temporal dependence places Ida first in all 4,000 draws; alternating non-overlapping phases give ranks $1/77$ and $1/76$.
-- The standardized comparison covers 86.1 percent of event and 77.0 percent of baseline records and fails the 0.90 reference eligibility rule.
-- The comparable non-officer dispatch-field series is 65.4 percent (2024), 66.0 percent (2025), and 66.8 percent (2026 snapshot). The 2025 all-row rate is 41.8 percent because officer-initiated records follow a different public-field convention.
-- Public institutional documents define labels and exclude two technology explanations, but do not identify the July mechanism.
+- In 419,840 non-officer-initiated records created through 27 July 2021, none has a valid arrival field without a dispatch field. The configuration first appears on 28 July, when officer-stream dispatch coverage falls from 100 percent to 40 percent and then to 1 percent on 29 July.
+- During Ida, the arrival-only share among arrival-observed non-officer records reaches 43.4 percent on 31 August and 49.3 percent on 1 September, then moves back toward the preceding range.
+- The full-count post-change comparison is primary. The standardized comparison also places Ida first, but covers only 86.1 percent of event and 77.0 percent of baseline records and fails the 0.90 reference eligibility rule.
+- The comparable non-officer dispatch-field series is 65.4 percent in 2024, 66.0 percent in 2025, and 66.8 percent in the 2026 snapshot.
+- Public documents define field labels and exclude two proposed technology explanations, but do not supply the missing 2021 changelog or internal-to-public lineage bridge.
 
-Remaining evidence need: a versioned 2021 changelog or privacy-safe internal/public reconciliation binding operational events, entry history, retention, and exported fields.
+Paper R16.0 is a narrative and readability rewrite. Its scientific results remain the validated R15.1 evidence package; no numerical result was changed or promoted.

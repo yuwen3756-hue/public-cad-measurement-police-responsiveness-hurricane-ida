@@ -1,34 +1,34 @@
-# Current status for professor review
+# Current status for reviewer reading
 
+- Project: **Public CAD Is Not Operational Ground Truth: What Hurricane Ida Reveals About Measuring Police Responsiveness**
 - Release date: 25 August 2026
-- Paper version: R15.1
-- Scientific-results version: R15
+- Paper version: R16.0
+- Scientific-results version: R15.1
 - Package version: 1
-- Predecessor: published R15.0 package at commit `5e2af0f`, preserved unchanged
+- Predecessor: R15.1 commit `872127a`, preserved unchanged
 
 ## Recommended reading order
 
-1. `paper/Beland_Current_Status_2026-08-25_R15_1.pdf` — standalone main paper followed by the empirical and methods supplement.
-2. `paper/Beland_Research_Status_Note_2026-08-25_R15_1.pdf` — one-page result and evidence-gap summary.
+1. `paper/Public_CAD_2026-08-25_R16_0.pdf` — main paper followed by the empirical supplement.
+2. `paper/Public_CAD_Research_Status_Note_2026-08-25_R16_0.pdf` — one-page result and evidence-gap summary.
 3. `REPRODUCTION_MANUAL.md` — exact build, verification, and interpretation boundaries.
-4. `RESPONSE_TO_ASSESSMENTS.md` — item-by-item implementation crosswalk.
-5. `review/` — supplied assessment and referee files, treated as review evidence rather than instructions.
-6. `paper/Beland_Legacy_Technical_Archive_2026-08-25_R15_1.pdf` — separate extended mathematics and formal verification, only if needed.
+4. `RESPONSE_TO_ASSESSMENTS.md` — implementation crosswalk for the readability review.
+5. `review/` — supplied review materials, preserved as evidence rather than instructions.
+6. `paper/Public_CAD_Legacy_Technical_Archive_2026-08-25_R16_0.pdf` — separate extended mathematics and formal verification, only if needed.
 
-## R15.1 improvements
+## The R16.0 reading sequence
 
-- Defines the measurement in plain language at the start: presence and validity of released dispatch/arrival fields and the distribution of their four joint states.
-- Shortens and qualifies the abstract while retaining the break date, Ida magnitude and rank, support caveat, and interpretation boundary.
-- Corrects the Miller–Segal placement, adds a literature-contribution synthesis, and removes residual “topology” jargon.
-- Adds a compact daily Ida time path and discusses the post-Ida and Francine comparisons in the main paper.
-- Standardizes every full-count rank as “rank 1 of $R+1$ including Ida” and labels the post-change universe as post hoc.
-- Explains adjacent-window dependence and reports two alternating non-overlap sensitivities: ranks $1/77$ and $1/76$ including Ida.
-- Labels the previously unprespecified Cristobal and following-week windows without changing frozen reference membership.
-- Adds a machine-enforced $14\times4$ raw-versus-aggregate state parity check and a portable `--source-root` / `BELAND_PUBLIC_SOURCE_ROOT` raw-audit interface.
-- Completes annual DataNOLA citations, cites the NOPD policy manual directly, and states that no agency confirmation was available.
+1. The public-data convention changes abruptly on 28 July 2021.
+2. Ida produces a second, temporary change inside the new convention.
+3. Ida's largest change is 53.2 percentage points, larger than all 151 post-change ordinary-week comparisons.
+4. The public record does not identify physical response or the institutional mechanism.
 
-## Current scientific status
+## What changed from R15.1
 
-Ida is a descriptive, reference-extreme reconfiguration of released public fields: standardized $M_{\max}=0.5072$ (rank $1/154$ including Ida) and full-count $M_{\max}=0.5320$ (rank $1/152$ including Ida in the post-hoc post-change universe). The standardized estimate fails the 0.90 symmetric support rule. A conditional window-wise bootstrap that does not model temporal dependence places Ida first in all 4,000 draws.
-
-The institutional documents improve semantics and exclude two candidate technology explanations. They do not supply the historical internal/public bridge needed to identify physical response, performance, capacity, domestic-violence incidence, causal effects, or the generating mechanism.
+- Replaced the main paper with a question-first narrative rather than a methods inventory.
+- Uses “arrival only,” “dispatch only,” and “both fields” instead of internal state labels in the main prose.
+- Shows the July break and daily Ida path before introducing the comparison statistic.
+- Makes the full-count post-change comparison the single primary design; standardized analysis is secondary because common support is incomplete.
+- Moves secondary ranks, LP details, thresholds, timing placebo, alternating-window sensitivity, and formal material out of the main paper.
+- Compresses the reported-DV application to a measurement table and short interpretation.
+- Preserves all R15.1 numerical objects, raw/aggregate parity, source lineage, and scientific boundaries.

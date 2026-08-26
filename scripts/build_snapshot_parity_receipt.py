@@ -1,4 +1,4 @@
-"""Prove that the copied reproduction snapshot is byte-identical to R14."""
+"""Prove that the R16 snapshot is byte-identical to the R15.1 predecessor."""
 from __future__ import annotations
 
 import hashlib
@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 PACKAGE = Path(__file__).resolve().parents[1]
-PREDECESSOR = PACKAGE.parent / "beland_plus_current_status_professor_2026-08-24_r14_0_v1"
+PREDECESSOR = PACKAGE.parent / "beland_plus_current_status_professor_2026-08-25_r15_1_v1"
 RELATIVE = Path("reproduction/repository_snapshot")
 
 
@@ -25,11 +25,14 @@ def sha256(path: Path) -> str:
 
 def inventory(root: Path) -> dict[str, str]:
     rows: dict[str, str] = {}
-    for directory, _, names in os.walk(root):
+    walked_root = root
+    if os.name == "nt" and not str(root).startswith("\\\\?\\"):
+        walked_root = Path("\\\\?\\" + str(root.resolve()))
+    for directory, _, names in os.walk(walked_root):
         directory_path = Path(directory)
         for name in names:
             path = directory_path / name
-            rows[path.relative_to(root).as_posix()] = sha256(path)
+            rows[path.relative_to(walked_root).as_posix()] = sha256(path)
     return dict(sorted(rows.items()))
 
 
@@ -54,7 +57,7 @@ def main() -> None:
             f"snapshot parity failed: missing={missing[:3]} extra={extra[:3]} changed={changed[:3]}"
         )
     receipt = {
-        "artifact_type": "R15_REPRODUCTION_SNAPSHOT_BYTE_PARITY_RECEIPT",
+        "artifact_type": "R16_REPRODUCTION_SNAPSHOT_BYTE_PARITY_RECEIPT",
         "predecessor_package": PREDECESSOR.name,
         "successor_package": PACKAGE.name,
         "relative_root": RELATIVE.as_posix(),
@@ -65,7 +68,7 @@ def main() -> None:
         "gitattributes_policy": "Top-level .gitattributes uses * -text to prevent line-ending conversion.",
     }
     (PACKAGE / "REPRODUCTION_SNAPSHOT_PARITY.json").write_text(
-        json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+        json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n"
     )
     print(f"SNAPSHOT_PARITY_PASS files={len(successor_rows)}")
 

@@ -4,9 +4,9 @@
 
 This package supports five checks:
 
-1. Rebuild the aggregate regime-break, support, ranking, uncertainty, initiation-stream, current-denominator, R15.1 time-path, non-overlap, and raw/aggregate-parity diagnostics.
+1. Rebuild the frozen R15.1 regime-break, support, ranking, uncertainty, initiation-stream, current-denominator, time-path, non-overlap, and raw/aggregate-parity diagnostics used by Paper R16.0.
 2. Reproduce the first-hand public-source lineage and July 2021 audit when the canonical official cache is available.
-3. Build the main paper, empirical supplement, one-page status note, separate legacy archive, and professor-facing combined PDF.
+3. Build the readability-rewritten main paper, empirical supplement, one-page status note, separate legacy archive, and reviewer-facing combined PDF.
 4. Verify exact numerical, textual, PDF, snapshot-parity, and manifest invariants.
 5. Rebuild the inherited numerical and formal-verification artifacts when their specialized runtimes are available.
 
@@ -25,7 +25,7 @@ reproduction/repository_snapshot/
   pilot_911_dv/source_data/     metadata only; public row files excluded
 ```
 
-The professor-facing combined PDF contains only the main paper and empirical supplement. The mathematical/formal archive is a separate file.
+The reviewer-facing combined PDF contains only the main paper and empirical supplement. The mathematical/formal archive is a separate file.
 
 `PACKAGE_MANIFEST.sha256` binds every curated file, including `README.md`, `.gitattributes`, the parity receipt, PDFs, sources, scripts, and reproduction snapshot. It excludes itself, `tmp/`, Python caches, and the generated ZIP. `.gitattributes` uses `* -text`; the snapshot parity receipt compares every copied snapshot file byte-for-byte with the published predecessor.
 
@@ -46,7 +46,7 @@ Install:
 python -m pip install -r requirements.txt
 ```
 
-The R15 evidence builder uses Python's standard library and NumPy. The R15.1 refinement builder uses only the standard library. Neither uses pandas. The four mutually exclusive public states are $J_{00}$, $J_{10}$, $J_{01}$, and $J_{11}$.
+The evidence builder uses Python's standard library and NumPy. The R15.1 refinement builder uses only the standard library. Neither uses pandas. Formal state labels remain in the supplement and machine-readable artifacts; the R16.0 main paper uses the plain-language configurations neither field, dispatch only, arrival only, and both fields.
 
 ## 4. Fast verification
 
@@ -62,7 +62,7 @@ Expected terminal status:
 RELEASE_VERIFICATION_PASS
 ```
 
-The verifier checks the manifest, exact five-PDF set, page relationships, embedded scientific text, forbidden revision-history language in the main source, source-audit invariants, all 56 raw/aggregate July state cells, alternating non-overlap ranks, 2025/2026 denominator arithmetic, 4,000-draw bootstrap outputs, support/rank/threshold results, snapshot parity, inherited empirical invariants, and exact-checker fixtures.
+The verifier checks the manifest, exact five-PDF set, page relationships, the four plain-language headline findings, abstract and page limits, absence of displaced technical labels in the main source, source-audit invariants, all 56 raw/aggregate July state cells, alternating non-overlap ranks, 2025/2026 denominator arithmetic, 4,000-draw bootstrap outputs, support/rank/threshold results, snapshot parity, inherited empirical invariants, and exact-checker fixtures.
 
 ## 5. Rebuild aggregate evidence
 
@@ -90,7 +90,7 @@ The builder reads the packaged aggregate `w2_period_tally.csv.gz`, locked refere
 
 The bootstrap is conditional on observed public categories, stratum totals, fixed bins, and the chosen reference design. It does not model time-series dependence or uncertainty in the July regime boundary.
 
-Build the R15.1 presentation and reproducibility refinements:
+Rebuild the frozen R15.1 presentation and reproducibility refinements used by R16.0:
 
 ```powershell
 python .\scripts\build_r15_1_refinements.py
@@ -102,7 +102,7 @@ Expected status:
 R15_1_REFINEMENT_BUILD_PASS
 ```
 
-This writes the 22-day Ida time path, two alternating non-overlap rank phases, a complete $14\times4$ raw-versus-aggregate parity table, and a compact diagnostics JSON. It derives only from packaged R15 aggregate objects.
+This writes the 22-day Ida time path, two alternating non-overlap rank phases, a complete $14\times4$ raw-versus-aggregate parity table, and a compact diagnostics JSON. It derives only from packaged R15 aggregate objects. Paper R16.0 changes their presentation, not their values.
 
 ## 6. Reproduce the raw public-source audit
 
@@ -146,14 +146,14 @@ To rebuild the public-source audit in the same run when the canonical cache exis
 powershell -ExecutionPolicy Bypass -File .\scripts\build_pdfs.ps1 -RunRawSourceAudit
 ```
 
-The build recompiles every LaTeX document, rejects undefined references/citations and overfull boxes, combines only the main paper and empirical supplement, and writes exactly five PDFs to `paper/`.
+The build recompiles every LaTeX document, rejects undefined references/citations and overfull boxes, combines only the main paper and empirical supplement, and writes exactly five topic-named R16.0 PDFs to `paper/`.
 
 ## 8. Key invariants
 
 - First positive non-officer $J_{01}$ day: 28 July 2021.
 - Raw 27–29 July officer dispatch presence: 479/479, 230/575, 5/504.
 - Standardized $M_{\max}=0.5071816170$, rank $1/154$.
-- Full-count $M_{\max}=0.5319863704$, post-hoc post-change rank $1/152$ including Ida; stage-era full-count rank $1/151$ including Ida.
+- Full-count $M_{\max}=0.5319863704$, stated in the main paper as a 53.2-percentage-point largest change, larger than all 151 post-change ordinary-week references.
 - Ida support: 86.1% event and 77.0% baseline, failing the 0.90 symmetric rule.
 - Threshold exceedance counts: 9/8/9 across full/stage/same-season reference sets.
 - 4,000 conditional window-wise bootstrap draws; full-count Ida rank is 1 in every draw against 151 post-change references, without modeling temporal dependence.
@@ -199,4 +199,4 @@ The ZIP is written beside the package directory and is excluded from the interna
 
 ## 11. Interpretation boundary
 
-The package identifies a public-record regime change before Ida and a reference-extreme public-field reconfiguration during Ida. Institutional documents improve semantics and eliminate two candidate technology explanations. They do not supply the historical bridge from internal events and entry histories to released fields. Public counts remain reporting measures, and public timestamps remain administrative-field measures unless separately validated as stable operational clocks.
+Paper R16.0 identifies a public-record regime change before Ida and a larger-than-all-151 public-field reconfiguration during Ida. Institutional documents improve semantics and eliminate two candidate technology explanations. They do not supply the historical bridge from internal events and entry histories to released fields. Public counts remain reporting measures, and public timestamps remain administrative-field measures unless separately validated as stable operational clocks.

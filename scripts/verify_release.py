@@ -4,6 +4,7 @@ import csv
 import hashlib
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -14,6 +15,9 @@ from pypdf import PdfReader
 
 
 PACKAGE = Path(__file__).resolve().parents[1]
+PREDECESSOR_PACKAGE = (
+    PACKAGE.parent / "beland_plus_current_status_professor_2026-08-25_r15_1_v1"
+)
 SNAPSHOT = PACKAGE / "reproduction" / "repository_snapshot"
 PILOT = SNAPSHOT / "pilot_911_dv"
 CANDIDATE = (
@@ -86,20 +90,20 @@ def pdf_text(path: Path) -> str:
 def verify_pdfs() -> None:
     paper = PACKAGE / "paper"
     names = {
-        "Beland_Current_Status_Main_2026-08-25_R15_1.pdf",
-        "Beland_Current_Status_Empirical_Supplement_2026-08-25_R15_1.pdf",
-        "Beland_Current_Status_2026-08-25_R15_1.pdf",
-        "Beland_Research_Status_Note_2026-08-25_R15_1.pdf",
-        "Beland_Legacy_Technical_Archive_2026-08-25_R15_1.pdf",
+        "Public_CAD_Main_2026-08-25_R16_0.pdf",
+        "Public_CAD_Empirical_Supplement_2026-08-25_R16_0.pdf",
+        "Public_CAD_2026-08-25_R16_0.pdf",
+        "Public_CAD_Research_Status_Note_2026-08-25_R16_0.pdf",
+        "Public_CAD_Legacy_Technical_Archive_2026-08-25_R16_0.pdf",
     }
     actual = {path.name for path in paper.glob("*.pdf")}
     require(actual == names, f"unexpected PDF set: {sorted(actual)}")
-    main = paper / "Beland_Current_Status_Main_2026-08-25_R15_1.pdf"
-    supplement = paper / "Beland_Current_Status_Empirical_Supplement_2026-08-25_R15_1.pdf"
-    combined = paper / "Beland_Current_Status_2026-08-25_R15_1.pdf"
-    status = paper / "Beland_Research_Status_Note_2026-08-25_R15_1.pdf"
-    legacy = paper / "Beland_Legacy_Technical_Archive_2026-08-25_R15_1.pdf"
-    require(9 <= pdf_pages(main) <= 16, "main paper page count outside expected range")
+    main = paper / "Public_CAD_Main_2026-08-25_R16_0.pdf"
+    supplement = paper / "Public_CAD_Empirical_Supplement_2026-08-25_R16_0.pdf"
+    combined = paper / "Public_CAD_2026-08-25_R16_0.pdf"
+    status = paper / "Public_CAD_Research_Status_Note_2026-08-25_R16_0.pdf"
+    legacy = paper / "Public_CAD_Legacy_Technical_Archive_2026-08-25_R16_0.pdf"
+    require(10 <= pdf_pages(main) <= 14, "main paper is not 10--14 pages")
     require(12 <= pdf_pages(supplement) <= 18, "empirical supplement is not 12--18 pages")
     require(pdf_pages(status) == 1, "research status note is not one page")
     require(pdf_pages(legacy) >= 25, "legacy archive is unexpectedly short")
@@ -114,19 +118,42 @@ def verify_pdfs() -> None:
 
 
 def verify_main_source() -> None:
-    text = (PACKAGE / "source" / "main_paper_r15_1.tex").read_text(encoding="utf-8")
-    forbidden = ("R12", "R13", "R14", "previous version", "referee", "post-review", "was inaccurate", "original estimator")
+    text = (PACKAGE / "source" / "main_paper_r16_0.tex").read_text(encoding="utf-8")
+    forbidden = (
+        "R12",
+        "R13",
+        "R14",
+        "Paper R15",
+        "Paper R16",
+        "previous version",
+        "referee",
+        "post-review",
+        "was inaccurate",
+        "original estimator",
+        r"U_{\mathrm{direct}}",
+        r"U_{\mathrm{full}}",
+        "Q upper",
+        "D upper",
+        "threshold-sensitive",
+        "alternating_phase",
+        "rank 1/152",
+        r"rank $1/152$",
+        r"J_{01}",
+    )
     lower = text.lower()
     require(not any(term.lower() in lower for term in forbidden), "main paper contains revision-history language")
     required = (
-        "This paper measures a more limited object",
-        "136,712 of 207,050",
-        "1,117 of 122,720",
-        "137,829 of 329,770",
-        "65.4 percent in 2024, 66.0 percent in 2025, and 66.8 percent",
-        "rank $1/152$ including Ida",
+        "53.2 percentage points",
+        "larger than all 151 post-change ordinary-week comparisons",
+        "43.4 percent on 31 August",
+        "49.3 percent on 1 September",
+        "65.4 percent in 2024",
+        "66.0 percent in 2025",
+        "66.8 percent in the 2026 snapshot",
         "conditional window-wise multinomial bootstrap",
-        "This post-change universe was defined after the July break was identified",
+        "This post-change set was defined after the July transition was identified",
+        "The standardized result is therefore secondary",
+        "The supplement calls this the stage-era set",
     )
     for phrase in required:
         require(phrase in text, f"main paper missing consistency phrase: {phrase}")
@@ -136,6 +163,40 @@ def verify_main_source() -> None:
     require('STATES = ("J00", "J10", "J01", "J11")' in builder, "builder does not declare exactly four states")
     for phrase in ("field-presence topology", "record-production discontinuity", "all-record, full-count"):
         require(phrase not in text, f"main paper retains superseded wording: {phrase}")
+    require(text.count(r"\begin{figure}") == 2, "main paper does not contain exactly two figures")
+    require(text.count(r"\begin{equation}") <= 2, "main paper contains more than two equations")
+    abstract = text.split(r"\begin{plainbox}[title=Abstract]", 1)[1].split(r"\end{plainbox}", 1)[0]
+    conclusion = text.split(r"\section{Conclusion}", 1)[1].split(r"\bibliographystyle", 1)[0]
+    abstract_words = re.findall(r"[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)*", abstract)
+    conclusion_words = re.findall(r"[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)*", conclusion)
+    require(len(abstract_words) < 190, f"abstract is not below 190 words: {len(abstract_words)}")
+    require(len(conclusion_words) < 250, f"conclusion is not below 250 words: {len(conclusion_words)}")
+
+
+def verify_r16_release() -> None:
+    obj = load_json(PACKAGE / "source" / "r16_release_metadata.json")
+    require(obj["artifact_type"] == "R16_READABILITY_RELEASE_METADATA", "R16 metadata type changed")
+    require(obj["paper_version"] == "R16.0", "paper version changed")
+    require(obj["scientific_results_version"] == "R15.1", "scientific-results version changed")
+    require(obj["narrative_rewrite"] is True, "R16 is not marked as a narrative rewrite")
+    require(obj["numerical_results_changed"] is False, "R16 incorrectly marks numerical change")
+    version = (PACKAGE / "VERSION.txt").read_text(encoding="utf-8")
+    require("Paper version: R16.0" in version, "VERSION.txt paper version mismatch")
+    require("Scientific-results version: R15.1" in version, "VERSION.txt results version mismatch")
+    expected_hashes = obj["frozen_r15_source_sha256"]
+    current_files = {
+        current.name: current
+        for current in sorted((PACKAGE / "source").glob("r15*"))
+        if current.is_file()
+    }
+    require(set(current_files) == set(expected_hashes), "frozen R15.1 source inventory changed")
+    for name, expected_hash in expected_hashes.items():
+        current = current_files[name]
+        require(sha256(current) == expected_hash, f"frozen R15.1 object changed: {name}")
+        if PREDECESSOR_PACKAGE.is_dir():
+            predecessor = PREDECESSOR_PACKAGE / "source" / name
+            require(predecessor.is_file(), f"R15.1 predecessor object missing: {name}")
+            require(sha256(current) == sha256(predecessor), f"R15.1 predecessor parity changed: {name}")
 
 
 def verify_r15() -> None:
@@ -253,7 +314,7 @@ def verify_formal_supplements() -> None:
     with tempfile.TemporaryDirectory(prefix="beland_formal_") as temporary:
         temporary_pilot = Path(temporary) / "pilot_911_dv"
         temporary_formal = temporary_pilot / "formal_verification_r11_1"
-        shutil.copytree(formal, temporary_formal)
+        shutil.copytree(windows_safe_path(formal), temporary_formal)
         temporary_phase = temporary_pilot / phase_relative
         temporary_phase.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(windows_safe_path(PILOT / phase_relative), temporary_phase)
@@ -265,6 +326,7 @@ def main() -> None:
     verify_manifest()
     verify_pdfs()
     verify_main_source()
+    verify_r16_release()
     verify_r15()
     verify_source_audit()
     verify_r15_1_refinements()

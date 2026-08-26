@@ -1,0 +1,38 @@
+{
+  "artifact_type": "R16_READABILITY_RELEASE_METADATA",
+  "paper_version": "R16.0",
+  "scientific_results_version": "R15.1",
+  "predecessor_commit": "872127a4912cfb2a1aa606e4ee9831e3f3496a18",
+  "narrative_rewrite": true,
+  "numerical_results_changed": false,
+  "primary_result": "53.2 percentage points, larger than all 151 post-change ordinary-week comparisons",
+  "main_sequence": [
+    "28 July 2021 public-file transition",
+    "temporary Ida reconfiguration",
+    "comparison with 151 post-change ordinary weeks",
+    "physical-response and mechanism non-identification"
+  ],
+  "frozen_r15_source_sha256": {
+    "r15_1_ida_time_path.csv": "7396d9cdabfd4943d97512842f6135785a415cc73e8d574d66148d90b39e06d7",
+    "r15_1_nonoverlap_sensitivity.csv": "2a5a1f140086dd9d7e3d63f861007b04914e79c692b997adfd97062e70a631a6",
+    "r15_1_raw_aggregate_parity.csv": "e8b1b53fc3c7e6306cfdd9dc615093b3e1d772a41cfe18ea40805e9b5b366f33",
+    "r15_1_refinement_diagnostics.json": "e71eef3e378f431309d1fb4409f1c8a4690965619470752ef1f5124b22ae7775",
+    "r15_aggregate_diagnostics.json": "5644c834d4ce3b5ed6bb0de26663d1db6a1216689939f1ac4b8b7ff9d8c2cc0d",
+    "r15_annual_initiation_field_completeness.csv": "e10528b2a003342ca9c19e62770965c8a5433556c7e6c721fcf2dcbd00543a81",
+    "r15_annual_source_lineage.csv": "0879f44a0102d43cdfa540539723e80963e40147c20a59da2361b3d1576066f1",
+    "r15_bootstrap_cells.csv": "19820e25ebfa36c44bbb83d15d418517a6e483b0b2fbd75c7954ee02b5c1ed92",
+    "r15_bootstrap_window_maxima.csv": "85443ecb4c3d185539856ad220657712a2fcb36d227d98c135587a32c294e050",
+    "r15_current_denominator_audit.csv": "83d617338b6dc2d6cb19fad3b8920b1072b462c28b17bb4a2baa040dde955a9f",
+    "r15_daily_ida_field_completeness.csv": "f67149590c7291ae274c1b6153e249ef0b94d6598ba0ee8055906d84fbf177f6",
+    "r15_monthly_field_completeness.csv": "a5c6ab8a8550a34a32df7a191c58f2970c9ed6973f5f512e77f5cf0ea168c3a3",
+    "r15_monthly_officer_field_completeness.csv": "1a54e45e2d0b99904b5aa000d0e0e0e62b4158cf67edb1e2aee6b58838e14906",
+    "r15_period_summary.csv": "75c6c7bbde6919051d869f89dce3db41bcb0f1fb4065b6604ca2951392e47d87",
+    "r15_public_source_audit.json": "1c149726ce766cd32f51fd0f0ea2bfe529d51a0df60bd09b8cccc8aa7b6e445c",
+    "r15_raw_july_25_31_audit.csv": "9174ff63101c686dd74fb829b4cc8703c734261a7ea1e4c71ba2e8cf33520fbd",
+    "r15_raw_window_scores.csv": "5a542bf5322c79eff1f8d9d94ba2646df5aee67ef69b7d8662662627d6f43568",
+    "r15_secondary_statistic_ranks.csv": "4f78027de8b0aa61e3234d3149ef2897d3bb8b382f7c7aedbe97676dcf89b30a",
+    "r15_stage_era_reference_scores.csv": "13dadada00e3e2cc90f1149979692926ce50990fb8e6b81e415b3b54a45ffa41",
+    "r15_weekly_field_completeness.csv": "f3f5cc2542de83bacd505d56a9956c14ccbf4178a05dc0fded61a6b35e9205f3"
+  },
+  "source_boundary": "all numerical claims are inherited from the validated R15.1 evidence package"
+}

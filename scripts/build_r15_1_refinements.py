@@ -9,6 +9,7 @@ from __future__ import annotations
 import csv
 import gzip
 import json
+import os
 from collections import defaultdict
 from pathlib import Path
 
@@ -27,6 +28,14 @@ TALLY = (
     / "w2_period_tally.csv.gz"
 )
 STATE_NAMES = ("J00", "J10", "J01", "J11")
+
+
+def readable_path(path: Path) -> Path:
+    """Return a Windows extended-length path when the package path exceeds MAX_PATH."""
+    resolved = path.resolve()
+    if os.name == "nt" and not str(resolved).startswith("\\\\?\\"):
+        return Path("\\\\?\\" + str(resolved))
+    return resolved
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -121,7 +130,7 @@ def tally_july_states() -> dict[tuple[str, str], dict[str, int]]:
         "non_officer_self_initiated": "non_officer",
         "officer_initiated": "officer",
     }
-    with gzip.open(TALLY, "rt", encoding="utf-8", newline="") as stream:
+    with gzip.open(readable_path(TALLY), "rt", encoding="utf-8", newline="") as stream:
         for row in csv.DictReader(stream):
             day = row["date"]
             if not ("2021-07-25" <= day <= "2021-07-31"):
