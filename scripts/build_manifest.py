@@ -1,4 +1,4 @@
-"""Build the deterministic SHA-256 manifest for the R16 release package."""
+"""Build the deterministic SHA-256 manifest for the R16.2 release package."""
 
 from __future__ import annotations
 
@@ -28,7 +28,7 @@ def long_root() -> Path:
 def included(relative: Path) -> bool:
     if relative == Path("PACKAGE_MANIFEST.sha256"):
         return False
-    if relative.parts and relative.parts[0] == "tmp":
+    if relative.parts and relative.parts[0] in {".git", "tmp"}:
         return False
     if "__pycache__" in relative.parts or relative.suffix == ".pyc":
         return False

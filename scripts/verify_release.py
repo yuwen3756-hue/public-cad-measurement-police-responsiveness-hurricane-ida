@@ -15,9 +15,6 @@ from pypdf import PdfReader
 
 
 PACKAGE = Path(__file__).resolve().parents[1]
-PREDECESSOR_PACKAGE = (
-    PACKAGE.parent / "beland_plus_current_status_professor_2026-08-25_r15_1_v1"
-)
 SNAPSHOT = PACKAGE / "reproduction" / "repository_snapshot"
 PILOT = SNAPSHOT / "pilot_911_dv"
 CANDIDATE = (
@@ -26,6 +23,34 @@ CANDIDATE = (
     / "nola_2020-01-01_2024-12-31_beland_plus_wave4r"
     / "candidate"
 )
+
+PRIVATE_ONLY_MARKERS = tuple(
+    value.lower()
+    for value in (
+        "LA" + "PD",
+        "PRIVATE" + "_R16_2",
+        "LA" + "PD_EXTRACT_ROOT",
+        "private_" + "la" + "pd_measurement_audit",
+        "beland ppt" + "_260521_164810",
+        "May 2026" + " seminar deck",
+        "Coworker_" + "Communication",
+        "Online_Reviewer" + "\\R16_2",
+    )
+)
+PUBLIC_TEXT_SUFFIXES = {
+    ".bib",
+    ".csv",
+    ".html",
+    ".json",
+    ".lean",
+    ".md",
+    ".ps1",
+    ".py",
+    ".sha256",
+    ".tex",
+    ".toml",
+    ".txt",
+}
 
 
 def windows_safe_path(path: Path) -> Path:
@@ -77,6 +102,8 @@ def verify_manifest() -> None:
     require(entries > 25, "manifest is unexpectedly small")
     for required in ("README.md", ".gitattributes", "REPRODUCTION_SNAPSHOT_PARITY.json"):
         require(required in listed, f"manifest scope missing {required}")
+    require(not any(relative.startswith(".git/") for relative in listed), "manifest includes Git internals")
+    require(not any(marker in relative.lower() for marker in PRIVATE_ONLY_MARKERS for relative in listed), "manifest includes a private-only filename")
 
 
 def pdf_pages(path: Path) -> int:
@@ -90,19 +117,19 @@ def pdf_text(path: Path) -> str:
 def verify_pdfs() -> None:
     paper = PACKAGE / "paper"
     names = {
-        "Public_CAD_Main_2026-08-26_R16_1.pdf",
-        "Public_CAD_Empirical_Supplement_2026-08-26_R16_1.pdf",
-        "Public_CAD_2026-08-26_R16_1.pdf",
-        "Public_CAD_Research_Status_Note_2026-08-26_R16_1.pdf",
-        "Public_CAD_Legacy_Technical_Archive_2026-08-26_R16_1.pdf",
+        "Public_CAD_Main_2026-08-26_R16_2.pdf",
+        "Public_CAD_Empirical_Supplement_2026-08-26_R16_2.pdf",
+        "Public_CAD_2026-08-26_R16_2.pdf",
+        "Public_CAD_Research_Status_Note_2026-08-26_R16_2.pdf",
+        "Public_CAD_Legacy_Technical_Archive_2026-08-26_R16_2.pdf",
     }
     actual = {path.name for path in paper.glob("*.pdf")}
     require(actual == names, f"unexpected PDF set: {sorted(actual)}")
-    main = paper / "Public_CAD_Main_2026-08-26_R16_1.pdf"
-    supplement = paper / "Public_CAD_Empirical_Supplement_2026-08-26_R16_1.pdf"
-    combined = paper / "Public_CAD_2026-08-26_R16_1.pdf"
-    status = paper / "Public_CAD_Research_Status_Note_2026-08-26_R16_1.pdf"
-    legacy = paper / "Public_CAD_Legacy_Technical_Archive_2026-08-26_R16_1.pdf"
+    main = paper / "Public_CAD_Main_2026-08-26_R16_2.pdf"
+    supplement = paper / "Public_CAD_Empirical_Supplement_2026-08-26_R16_2.pdf"
+    combined = paper / "Public_CAD_2026-08-26_R16_2.pdf"
+    status = paper / "Public_CAD_Research_Status_Note_2026-08-26_R16_2.pdf"
+    legacy = paper / "Public_CAD_Legacy_Technical_Archive_2026-08-26_R16_2.pdf"
     require(10 <= pdf_pages(main) <= 14, "main paper is not 10--14 pages")
     require(12 <= pdf_pages(supplement) <= 18, "empirical supplement is not 12--18 pages")
     require(pdf_pages(status) == 1, "research status note is not one page")
@@ -117,8 +144,34 @@ def verify_pdfs() -> None:
     require("Legacy Mathematical and Formal-Verification Archive" not in combined_text, "legacy archive was appended to professor PDF")
 
 
+def verify_public_private_separation() -> None:
+    for path in PACKAGE.rglob("*"):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(PACKAGE)
+        if relative.parts and relative.parts[0] in {".git", "tmp"}:
+            continue
+        relative_lower = relative.as_posix().lower()
+        require(
+            not any(marker in relative_lower for marker in PRIVATE_ONLY_MARKERS),
+            f"private-only filename entered public package: {relative}",
+        )
+        if path.suffix.lower() in PUBLIC_TEXT_SUFFIXES:
+            content = windows_safe_path(path).read_text(encoding="utf-8", errors="ignore").lower()
+            require(
+                not any(marker in content for marker in PRIVATE_ONLY_MARKERS),
+                f"private-only content entered public package: {relative}",
+            )
+    for path in (PACKAGE / "paper").glob("*.pdf"):
+        content = pdf_text(path).lower()
+        require(
+            not any(marker in content for marker in PRIVATE_ONLY_MARKERS),
+            f"private-only content entered public PDF: {path.name}",
+        )
+
+
 def verify_main_source() -> None:
-    text = (PACKAGE / "source" / "main_paper_r16_1.tex").read_text(encoding="utf-8")
+    text = (PACKAGE / "source" / "main_paper_r16_2.tex").read_text(encoding="utf-8")
     forbidden = (
         "R12",
         "R13",
@@ -142,6 +195,24 @@ def verify_main_source() -> None:
     )
     lower = text.lower()
     require(not any(term.lower() in lower for term in forbidden), "main paper contains revision-history language")
+    framing_forbidden = (
+        "beland ppt",
+        "May seminar",
+        "Table 6",
+        "Table 8",
+        "LA" + "PD extract",
+        "contaminated",
+        "artifact",
+        "invalid",
+        "the authors failed",
+        "Professor Beland should",
+        "the seminar deck is wrong",
+        "failure",
+    )
+    require(
+        not any(term.lower() in lower for term in framing_forbidden),
+        "main paper contains forbidden critical or private framing",
+    )
     required = (
         "53.2 percentage points",
         "larger than all 151 post-change ordinary-week comparisons",
@@ -160,6 +231,18 @@ def verify_main_source() -> None:
         "retaining every second window removes adjacent overlap",
         "Data and code availability",
         "Yuwen Zhu",
+        "Environmental shocks can affect both police-service production and the administrative observation process",
+        "response clock",
+        "endpoint coverage",
+        "call-initiation",
+        "priority definition",
+        "construct validity",
+        "Implications for response-time research under environmental and system stress",
+        "Call volume &",
+        "Response time &",
+        "Priority split &",
+        "Police activity/coverage &",
+        "The same validation logic applies when heat, smoke, pollution, outages, or disasters",
     )
     for phrase in required:
         require(phrase in text, f"main paper missing consistency phrase: {phrase}")
@@ -180,14 +263,16 @@ def verify_main_source() -> None:
 
 
 def verify_r16_release() -> None:
-    obj = load_json(PACKAGE / "source" / "r16_1_release_metadata.json")
-    require(obj["artifact_type"] == "R16_1_EDITORIAL_RELEASE_METADATA", "R16.1 metadata type changed")
-    require(obj["paper_version"] == "R16.1", "paper version changed")
+    obj = load_json(PACKAGE / "source" / "r16_2_release_metadata.json")
+    require(obj["artifact_type"] == "R16_2_FRAMING_RELEASE_METADATA", "R16.2 metadata type changed")
+    require(obj["paper_version"] == "R16.2", "paper version changed")
     require(obj["scientific_results_version"] == "R15.1", "scientific-results version changed")
-    require(obj["editorial_successor"] is True, "R16.1 is not marked as an editorial successor")
-    require(obj["numerical_results_changed"] is False, "R16.1 incorrectly marks numerical change")
+    require(obj["predecessor_commit"] == "7d2654525609c2e8eda6580d2572f6db0699fadd", "R16.1 predecessor changed")
+    require(obj["editorial_successor"] is True, "R16.2 is not marked as an editorial successor")
+    require(obj["framing_successor"] is True, "R16.2 is not marked as a framing successor")
+    require(obj["numerical_results_changed"] is False, "R16.2 incorrectly marks numerical change")
     version = (PACKAGE / "VERSION.txt").read_text(encoding="utf-8")
-    require("Paper version: R16.1" in version, "VERSION.txt paper version mismatch")
+    require("Paper version: R16.2" in version, "VERSION.txt paper version mismatch")
     require("Scientific-results version: R15.1" in version, "VERSION.txt results version mismatch")
     expected_hashes = obj["frozen_r15_source_sha256"]
     current_files = {
@@ -199,10 +284,6 @@ def verify_r16_release() -> None:
     for name, expected_hash in expected_hashes.items():
         current = current_files[name]
         require(sha256(current) == expected_hash, f"frozen R15.1 object changed: {name}")
-        if PREDECESSOR_PACKAGE.is_dir():
-            predecessor = PREDECESSOR_PACKAGE / "source" / name
-            require(predecessor.is_file(), f"R15.1 predecessor object missing: {name}")
-            require(sha256(current) == sha256(predecessor), f"R15.1 predecessor parity changed: {name}")
 
 
 def verify_r15() -> None:
@@ -285,6 +366,18 @@ def verify_snapshot_parity() -> None:
     receipt = load_json(PACKAGE / "REPRODUCTION_SNAPSHOT_PARITY.json")
     require(receipt["byte_identical"] is True, "snapshot parity is not byte-identical")
     require(receipt["file_count"] > 50, "snapshot parity file count is unexpectedly small")
+    walked_root = windows_safe_path(SNAPSHOT)
+    rows: dict[str, str] = {}
+    for directory, _, names in os.walk(walked_root):
+        directory_path = Path(directory)
+        for name in names:
+            path = directory_path / name
+            rows[path.relative_to(walked_root).as_posix()] = sha256(path)
+    digest = hashlib.sha256()
+    for relative, file_hash in sorted(rows.items()):
+        digest.update(relative.encode("utf-8") + b"\0" + file_hash.encode("ascii") + b"\n")
+    require(len(rows) == receipt["file_count"], "snapshot parity file count changed")
+    require(digest.hexdigest() == receipt["tree_sha256"], "frozen reproduction snapshot hash changed")
 
 
 def verify_m7b() -> None:
@@ -331,6 +424,7 @@ def verify_formal_supplements() -> None:
 def main() -> None:
     verify_manifest()
     verify_pdfs()
+    verify_public_private_separation()
     verify_main_source()
     verify_r16_release()
     verify_r15()

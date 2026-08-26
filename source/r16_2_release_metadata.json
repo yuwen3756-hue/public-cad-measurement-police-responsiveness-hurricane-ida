@@ -1,10 +1,11 @@
 {
-  "artifact_type": "R16_1_EDITORIAL_RELEASE_METADATA",
-  "paper_version": "R16.1",
+  "artifact_type": "R16_2_FRAMING_RELEASE_METADATA",
+  "paper_version": "R16.2",
   "scientific_results_version": "R15.1",
-  "predecessor_commit": "3b8fbacd1934933cdd7e2507f68ad7699de0c3be",
-  "predecessor_paper_version": "R16.0",
+  "predecessor_commit": "7d2654525609c2e8eda6580d2572f6db0699fadd",
+  "predecessor_paper_version": "R16.1",
   "editorial_successor": true,
+  "framing_successor": true,
   "numerical_results_changed": false,
   "primary_result": "53.2 percentage points, larger than all 151 post-change ordinary-week comparisons",
   "main_sequence": [
@@ -13,12 +14,12 @@
     "comparison with 151 post-change ordinary weeks",
     "physical-response and mechanism non-identification"
   ],
-  "review_repairs": [
-    "corrected the Ida daily-path description, including 29 August and 10 September",
-    "removed the duplicated standardized-definition paragraph",
-    "replaced the independence wording for the four-state composition",
-    "defined the public missing-dispatch share",
-    "added authorship, draft status, and public data-and-code availability"
+  "framing_revisions": [
+    "connected the observation-layer result to environmental and infrastructure stress research",
+    "added a four-outcome validation table for call volume, response time, priority, and police activity",
+    "made response-clock, endpoint-coverage, initiation, priority, and data-lineage checks explicit",
+    "retained reported DV as a short downstream application",
+    "preserved every validated R15.1 numerical object and interpretation boundary"
   ],
   "frozen_r15_source_sha256": {
     "r15_1_ida_time_path.csv": "7396d9cdabfd4943d97512842f6135785a415cc73e8d574d66148d90b39e06d7",
@@ -42,5 +43,5 @@
     "r15_stage_era_reference_scores.csv": "13dadada00e3e2cc90f1149979692926ce50990fb8e6b81e415b3b54a45ffa41",
     "r15_weekly_field_completeness.csv": "f3f5cc2542de83bacd505d56a9956c14ccbf4178a05dc0fded61a6b35e9205f3"
   },
-  "source_boundary": "all numerical claims are inherited from the validated R15.1 evidence package; R16.1 changes presentation only"
+  "source_boundary": "all numerical claims are inherited from the validated R15.1 evidence package; R16.2 changes framing and external relevance only"
 }

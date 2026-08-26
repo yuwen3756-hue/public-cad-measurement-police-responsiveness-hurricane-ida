@@ -1,4 +1,4 @@
-# Research status note — R16.1 — 26 August 2026
+# Research status note — R16.2 — 26 August 2026
 
 The released public-field convention changes abruptly on 28 July 2021. Hurricane Ida produces a second, temporary change inside that later convention. Its largest half-day field-state change is 53.2 percentage points, larger than all 151 post-change ordinary-week comparisons. The public record does not reveal physical response or the institutional mechanism that generated the released fields.
 
@@ -10,4 +10,4 @@ Evidence behind the sequence:
 - The comparable non-officer dispatch-field series is 65.4 percent in 2024, 66.0 percent in 2025, and 66.8 percent in the 2026 snapshot.
 - Public documents define field labels and exclude two proposed technology explanations, but do not supply the missing 2021 changelog or internal-to-public lineage bridge.
 
-Paper R16.1 is a minor editorial successor to R16.0. Its scientific results remain the validated R15.1 evidence package; no numerical result was changed or promoted.
+R16.2 broadens the paper's external relevance to environmental-stress studies without changing the validated R15.1 results. It adds a publication-oriented validation protocol for call denominators, response clocks, endpoint coverage, initiation streams, priority definitions, and longitudinal data lineage. No numerical result was changed or promoted.

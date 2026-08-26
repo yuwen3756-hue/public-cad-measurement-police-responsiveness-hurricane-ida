@@ -4,9 +4,9 @@
 
 This package supports five checks:
 
-1. Rebuild the frozen R15.1 regime-break, support, ranking, uncertainty, initiation-stream, current-denominator, time-path, non-overlap, and raw/aggregate-parity diagnostics used by Paper R16.1.
+1. Rebuild the frozen R15.1 regime-break, support, ranking, uncertainty, initiation-stream, current-denominator, time-path, non-overlap, and raw/aggregate-parity diagnostics used by Paper R16.2.
 2. Reproduce the first-hand public-source lineage and July 2021 audit when the canonical official cache is available.
-3. Build the readability-rewritten main paper, empirical supplement, one-page status note, separate legacy archive, and reviewer-facing combined PDF.
+3. Build the external-relevance revision of the main paper, empirical supplement, one-page status note, separate legacy archive, and reviewer-facing combined PDF.
 4. Verify exact numerical, textual, PDF, snapshot-parity, and manifest invariants.
 5. Rebuild the inherited numerical and formal-verification artifacts when their specialized runtimes are available.
 
@@ -46,7 +46,7 @@ Install:
 python -m pip install -r requirements.txt
 ```
 
-The evidence builder uses Python's standard library and NumPy. The R15.1 refinement builder uses only the standard library. Neither uses pandas. Formal state labels remain in the supplement and machine-readable artifacts; the R16.1 main paper uses the plain-language configurations neither field, dispatch only, arrival only, and both fields.
+The evidence builder uses Python's standard library and NumPy. The R15.1 refinement builder uses only the standard library. Neither uses pandas. Formal state labels remain in the supplement and machine-readable artifacts; the R16.2 main paper uses the plain-language configurations neither field, dispatch only, arrival only, and both fields.
 
 ## 4. Fast verification
 
@@ -90,7 +90,7 @@ The builder reads the packaged aggregate `w2_period_tally.csv.gz`, locked refere
 
 The bootstrap is conditional on observed public categories, stratum totals, fixed bins, and the chosen reference design. It does not model time-series dependence or uncertainty in the July regime boundary.
 
-Rebuild the frozen R15.1 presentation and reproducibility refinements used by R16.1:
+Rebuild the frozen R15.1 presentation and reproducibility refinements used by R16.2:
 
 ```powershell
 python .\scripts\build_r15_1_refinements.py
@@ -102,7 +102,7 @@ Expected status:
 R15_1_REFINEMENT_BUILD_PASS
 ```
 
-This writes the 22-day Ida time path, two alternating non-overlap rank phases, a complete $14\times4$ raw-versus-aggregate parity table, and a compact diagnostics JSON. It derives only from packaged R15 aggregate objects. Paper R16.1 changes their presentation, not their values.
+This writes the 22-day Ida time path, two alternating non-overlap rank phases, a complete $14\times4$ raw-versus-aggregate parity table, and a compact diagnostics JSON. It derives only from packaged R15 aggregate objects. Paper R16.2 changes framing and external relevance, not their values.
 
 ## 6. Reproduce the raw public-source audit
 
@@ -146,7 +146,7 @@ To rebuild the public-source audit in the same run when the canonical cache exis
 powershell -ExecutionPolicy Bypass -File .\scripts\build_pdfs.ps1 -RunRawSourceAudit
 ```
 
-The build recompiles every LaTeX document, rejects undefined references/citations and overfull boxes, combines only the main paper and empirical supplement, and writes exactly five topic-named R16.1 PDFs to `paper/`.
+The build recompiles every LaTeX document, rejects undefined references/citations and overfull boxes, combines only the main paper and empirical supplement, and writes exactly five topic-named R16.2 PDFs to `paper/`.
 
 ## 8. Key invariants
 
@@ -199,4 +199,4 @@ The ZIP is written beside the package directory and is excluded from the interna
 
 ## 11. Interpretation boundary
 
-Paper R16.1 identifies a public-record regime change before Ida and a larger-than-all-151 public-field reconfiguration during Ida. Institutional documents improve semantics and eliminate two candidate technology explanations. They do not supply the historical bridge from internal events and entry histories to released fields. Public counts remain reporting measures, and public timestamps remain administrative-field measures unless separately validated as stable operational clocks.
+Paper R16.2 identifies a public-record regime change before Ida and a larger-than-all-151 public-field reconfiguration during Ida. It broadens the relevance of that evidence to environmental-stress studies that use call counts, priority groups, police-activity measures, or response-time outcomes. Institutional documents improve semantics and eliminate two candidate technology explanations. They do not supply the historical bridge from internal events and entry histories to released fields. Public counts remain reporting measures, and public timestamps remain administrative-field measures unless separately validated as stable operational clocks.

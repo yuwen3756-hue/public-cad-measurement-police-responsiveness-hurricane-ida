@@ -14,7 +14,7 @@
 \vspace{-1.3em}
 
 \begin{plainbox}[title=Abstract]
-Researchers commonly measure police response time with timestamps recorded in computer-aided dispatch (CAD) systems. When CAD records are publicly released, that use requires stable field definitions and coverage. In New Orleans, the released record changed abruptly on 28 July 2021. Before that date, none of 419,840 non-officer-initiated records contained an arrival timestamp without a dispatch timestamp. Within two days, that configuration became common, while dispatch-field coverage in officer-initiated records fell from 100 percent to 1 percent. Five weeks later, Hurricane Ida produced a temporary additional shift: among records with a valid arrival field, the public missing-dispatch share reached 43.4 percent on 31 August and 49.3 percent on 1 September. The largest half-day change was 53.2 percentage points, larger than all 151 post-change ordinary-week comparisons. These results document instability in the released measurement product, not physical police response, police performance, or the mechanism generating the public fields. Public CAD timestamps should be used as operational clocks only after field meaning, coverage, and provenance are validated.
+Researchers commonly measure police response time with timestamps recorded in computer-aided dispatch (CAD) systems. When CAD records are publicly released, that use requires stable field definitions and coverage. In New Orleans, the released record changed abruptly on 28 July 2021. Before that date, none of 419,840 non-officer-initiated records contained an arrival timestamp without a dispatch timestamp. Within two days, that configuration became common, while dispatch-field coverage in officer-initiated records fell from 100 percent to 1 percent. Five weeks later, Hurricane Ida produced a temporary additional shift: among records with a valid arrival field, the public missing-dispatch share reached 43.4 percent on 31 August and 49.3 percent on 1 September. The largest half-day change was 53.2 percentage points, larger than all 151 post-change ordinary-week comparisons. These results document instability in the released measurement product, not physical police response, police performance, or the mechanism generating the public fields. Public CAD timestamps should be used as operational clocks only after field meaning, coverage, and provenance are validated. The validation protocol is directly relevant to environmental-stress studies using CAD call counts, priority groups, or response-time outcomes.
 \end{plainbox}
 
 \keywords{calls for service; police responsiveness; administrative data; Hurricane Ida; measurement error; administrative data quality}
@@ -30,9 +30,13 @@ The Ida pattern is large relative to later ordinary weeks. Using every non-offic
 
 The paper's contribution is about measurement, not about the causal effect of Ida. Public records show that the released measurement product changes before the hurricane and changes again during the event. They do not reveal whether the underlying cause was an operational workaround, an entry convention, a retention rule, or an export transformation. The implication is straightforward: a public CAD timestamp should not be treated automatically as an operational clock. Analysts must first establish the relevant denominator, field meaning, coverage, and lineage.
 
+Environmental shocks can affect both police-service production and the administrative observation process that makes it visible. A change in observed calls or response time may therefore reflect demand, supply, prioritization, endpoint coverage, or some combination. The New Orleans case supplies an empirical reason to validate the observation layer before assigning an operational interpretation.
+
 \section{Related literature and contribution}
 
 A large economics and policing literature shows that response delays matter. Faster police arrival can improve crime clearance and reduce injuries, while traffic congestion, staffing, and queueing can slow first responders \citep{BlanesKirchmaier2018,DeAngeloTogerWeisburd2023,BrentBeland2020,MourtgosAdamsNix2024}. These studies demonstrate the value of a valid response-time measure. The present paper asks the logically prior question: whether a public administrative export supplies a stable response clock in the first place.
+
+Research on environmental and infrastructure stress asks how congestion, severe weather, disasters, heat, smoke, or pollution alter calls for service, police activity, and first-responder responsiveness. Substantive studies estimate changes in demand, service production, prioritization, or delay. This paper studies a prerequisite that complements those designs: whether the administrative denominator, response clock, endpoint coverage, call-initiation stream, and priority definition remain stable enough to support the intended construct. Establishing that observation layer strengthens construct validity and helps distinguish operational effects from observation effects \citep{BrentBeland2020,AnastarioShehabLawry2009,HarvilleTaylorTesfai2011}.
 
 The paper also relates to work on administrative measurement. Calls-for-service and police records are shaped by reporting, classification, discretion, verification, and data-processing rules \citep{KlingerBridges1997,BoivinCordeau2011,BoivinOuellet2014,SimpsonOrosco2021}. More generally, measurement error and misclassification can distort group comparisons and structural interpretation \citep{KapteynYpma2007,ChenHongNekipelov2011,KnoxLoweMummolo2020}. The evidence here adds a time dimension: the joint presence of public CAD fields changes abruptly, so the mapping from activity to released data is not stable across the sample period.
 
@@ -40,7 +44,7 @@ Disaster and domestic-violence research provides substantive motivation. Hurrica
 
 Finally, partial-identification methods provide the appropriate language when public records do not reveal a unique latent process \citep{Manski1989,Manski1990,Manski2003,Tamer2010,Molinari2020}. The paper does not propose a new general partial-identification estimator. It uses that discipline to distinguish quantities directly observed in the public file from quantities that are selected, bounded, or unavailable without additional evidence.
 
-Relative to these literatures, the paper makes three contributions. It documents a date-localized change in the public CAD measurement regime; it shows that Ida produces an additional extreme but temporary reconfiguration within the later regime; and it translates those facts into practical requirements for measuring response time and reported-DV performance.
+Relative to these literatures, the paper makes three contributions. It documents a date-localized change in the public CAD measurement regime; it shows that Ida produces an additional extreme but temporary reconfiguration within the later regime; and it translates those facts into a validation protocol for studies of environmental stress, police-service demand and activity, prioritization, response time, and reported-DV measures.
 
 \section{Data and public field measures}
 
@@ -77,7 +81,7 @@ Three descriptive series summarize the public file: the share of records with a 
 
 The arrival-only configuration is completely absent from non-officer-initiated records before 28 July 2021. Across 419,840 records created from January 2020 through 27 July 2021, its count is exactly zero. It appears abruptly on 28 July and remains present thereafter.
 
-A direct audit of the official July 2021 compressed CSV confirms that this is not an artifact of the aggregate pipeline. All nonblank dispatch and arrival fields in the audit interval parse under the stated rule, and the daily state counts agree exactly with the packaged aggregate tally. Table~\ref{tab:julybreak} shows the central transition.
+A direct audit of the official July 2021 compressed CSV confirms that the aggregate pipeline did not produce this pattern. All nonblank dispatch and arrival fields in the audit interval parse under the stated rule, and the daily state counts agree exactly with the packaged aggregate tally. Table~\ref{tab:julybreak} shows the central transition.
 
 \begin{table}[!htbp]
 \centering
@@ -130,7 +134,7 @@ Figure~\ref{fig:monthly} places the break in the longer series. Dispatch-field c
 \label{fig:monthly}
 \end{figure}
 
-The later annual files confirm that this is a persistent measurement regime rather than a short Ida artifact. In the comparable non-officer denominator, dispatch-field coverage is 65.4 percent in 2024, 66.0 percent in 2025, and 66.8 percent in the 2026 snapshot. The much lower all-row rate of about 41.8 percent combines non-officer records with officer-initiated records, whose dispatch fields are almost always absent under the later convention.
+The later annual files confirm that this measurement regime persists beyond the Ida period. In the comparable non-officer denominator, dispatch-field coverage is 65.4 percent in 2024, 66.0 percent in 2025, and 66.8 percent in the 2026 snapshot. The much lower all-row rate of about 41.8 percent combines non-officer records with officer-initiated records, whose dispatch fields are almost always absent under the later convention.
 
 \begin{table}[!htbp]
 \centering
@@ -244,35 +248,41 @@ The public chronology rules out two proposed technology explanations. The public
 
 No public versioned changelog or internal-to-public reconciliation was available for this analysis, and no agency confirmation of the July change was obtained. A focused public-records request to OPCD for the CAD export configuration and change history covering July 2021 is the most direct next step for resolving the mechanism. Until such evidence is available, the strongest supported conclusion is a discontinuity in the released record, not a named institutional mechanism.
 
-\section{Implications for response-time and reported-DV research}
+\section{Implications for response-time research under environmental and system stress}
 
-The paper's measurement lesson applies beyond Hurricane Ida. Public CAD can support a response-time or reported-DV measure only when the target population and the public endpoints are explicit.
+The paper's measurement lesson applies beyond Hurricane Ida and provides a low-cost validation protocol for response-time research under environmental and system stress. Shocks can affect both the production of police service and the observation process. To support interpretation, an analysis should declare the denominator and call-initiation rule, define the response clock, report endpoint coverage, and document the priority definition and data lineage.
 
 \begin{table}[!htbp]
 \centering
-\caption{What the public file supports}
+\small
+\renewcommand{\arraystretch}{1.12}
+\caption{Low-cost validation for downstream outcomes}
 \label{tab:implications}
-\begin{tabularx}{\textwidth}{@{}p{0.22\textwidth}p{0.34\textwidth}X@{}}
+\begin{tabularx}{\textwidth}{@{}p{0.16\textwidth}p{0.24\textwidth}p{0.28\textwidth}X@{}}
 \toprule
-Target & What the public file directly supports & Additional evidence needed \\
+Downstream outcome & Measurement question & Low-cost validation & Publication value \\
 \midrule
-Field completeness &
-Shares of records with each released public field, on a declared denominator. &
-None beyond source and parsing documentation. \\
+Call volume &
+Is the denominator stable, and are citizen- and officer-generated records separated? &
+Report initiation rules, duplicates and cancellations, and counts by stream. &
+Supports interpretation as demand rather than record production. \\
 Response time &
-A duration among records with both declared endpoints. This is a selected-record statistic when endpoints are missing. &
-Validated endpoint meanings, coverage on the full denominator, and evidence that the fields map to the intended operational events. \\
-Queueing or capacity &
-No direct measure from endpoint presence alone. &
-Calls holding, queue flows, unit availability, assignments, and internal event histories. \\
-Reported-DV performance &
-Counts under a declared classification rule and public-field completeness within that classified population. &
-Validated classification, treatment of unresolved records, endpoint coverage, and lineage to reports or follow-up stages. \\
+What are the start and endpoint, and what share of calls has both? &
+Report endpoint coverage by exposure group, priority, and call type. &
+Establishes the complete-case population and construct validity. \\
+Priority split &
+Is priority initial, final, or updated during processing? &
+Report priority shares and, where available, initial-to-final transitions. &
+Separates service prioritization from changing classification. \\
+Police activity/coverage &
+Are fields and extraction rules stable over time? &
+Audit schema continuity and known system changes. &
+Strengthens longitudinal comparability and reproducibility. \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-Reported CAD calls are not equivalent to underlying domestic-violence incidence or complete help-seeking. A future DV analysis should preserve unresolved classifications rather than force every record into or out of the target group, and it should report endpoint coverage before interpreting observed durations. Ida motivates this measurement work, but the current system-level analysis does not estimate a DV effect.
+These checks complement substantive estimates; they do not turn endpoint presence alone into a measure of queueing or capacity. Reported DV remains one high-stakes downstream application rather than the organizing case. Reported CAD calls are not equivalent to underlying domestic-violence incidence or complete help-seeking. A future DV analysis should preserve unresolved classifications rather than force every record into or out of the target group, and it should report endpoint coverage before interpreting observed durations. Detailed $1/0/U$ bounds remain in the supplement. Ida motivates this measurement work, but the current system-level analysis does not estimate a DV effect.
 
 \section{Limitations}
 
@@ -286,11 +296,13 @@ Public CAD files are valuable administrative records, but their timestamps are n
 
 The public evidence identifies the timing and magnitude of changes in the released record. It does not identify the underlying operational sequence or the institutional mechanism that produced those fields. Analysts should therefore treat public CAD timestamps as administrative measures until their meanings, coverage, and lineage have been validated for the specific performance question.
 
+The same validation logic applies when heat, smoke, pollution, outages, or disasters are used to study police-service demand and responsiveness.
+
 \section*{Data and code availability}
 
-Replication materials, source bindings, the empirical supplement, and the release verifier are available in the public repository at \url{https://github.com/yuwen3756-hue/public-cad-measurement-police-responsiveness-hurricane-ida}. The repository provides derived aggregate artifacts and reproducible code; official raw CAD files remain identified by first-hand public-source links and hashes in the reproduction materials.
+Replication materials, source bindings, the empirical supplement, and the release verifier are available in the public repository at \url{https://github.com/yuwen3756-hue/public-cad-measurement-police-responsiveness-hurricane-ida}. The repository provides derived aggregate files and reproducible code; official raw CAD files remain identified by first-hand public-source links and hashes in the reproduction materials.
 
 \bibliographystyle{apalike}
-\bibliography{references_r16_1}
+\bibliography{references_r16_2}
 
 \end{document}

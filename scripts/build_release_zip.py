@@ -1,4 +1,4 @@
-"""Create the distributable ZIP beside the R16 release-package directory."""
+"""Create the distributable public R16.2 ZIP beside the repository."""
 
 from __future__ import annotations
 
@@ -8,7 +8,33 @@ from pathlib import Path
 
 
 PACKAGE = Path(__file__).resolve().parents[1]
-TARGET = PACKAGE.with_suffix(".zip")
+TARGET = PACKAGE.parent / f"{PACKAGE.name}-r16-2.zip"
+
+PRIVATE_ONLY_MARKERS = tuple(
+    value.encode("ascii").lower()
+    for value in (
+        "LA" + "PD",
+        "PRIVATE" + "_R16_2",
+        "LA" + "PD_EXTRACT_ROOT",
+        "beland ppt" + "_260521_164810",
+        "May 2026" + " seminar deck",
+        "Online_Reviewer" + "\\R16_2",
+    )
+)
+PUBLIC_TEXT_SUFFIXES = {
+    ".bib",
+    ".csv",
+    ".html",
+    ".json",
+    ".lean",
+    ".md",
+    ".ps1",
+    ".py",
+    ".sha256",
+    ".tex",
+    ".toml",
+    ".txt",
+}
 
 
 def long_root() -> Path:
@@ -18,11 +44,22 @@ def long_root() -> Path:
 
 
 def included(relative: Path) -> bool:
-    if relative.parts and relative.parts[0] == "tmp":
+    if relative.parts and relative.parts[0] in {".git", "tmp"}:
         return False
     if "__pycache__" in relative.parts or relative.suffix == ".pyc":
         return False
     return True
+
+
+def assert_public_only(files: list[tuple[Path, Path]]) -> None:
+    for path, relative in files:
+        relative_bytes = relative.as_posix().encode("utf-8").lower()
+        if any(marker in relative_bytes for marker in PRIVATE_ONLY_MARKERS):
+            raise RuntimeError(f"private-only filename entered public ZIP inputs: {relative}")
+        if path.suffix.lower() in PUBLIC_TEXT_SUFFIXES:
+            payload = path.read_bytes().lower()
+            if any(marker in payload for marker in PRIVATE_ONLY_MARKERS):
+                raise RuntimeError(f"private-only content entered public ZIP inputs: {relative}")
 
 
 def iter_files() -> list[tuple[Path, Path]]:
@@ -46,6 +83,7 @@ def main() -> None:
     if temporary.exists():
         temporary.unlink()
     files = iter_files()
+    assert_public_only(files)
     with zipfile.ZipFile(temporary, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
         for path, relative in files:
             archive.write(path, (Path(PACKAGE.name) / relative).as_posix())
