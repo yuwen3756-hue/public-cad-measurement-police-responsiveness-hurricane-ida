@@ -30,6 +30,8 @@ Predecessor: R16.1 commit `7d2654525609c2e8eda6580d2572f6db0699fadd`
 - Updates the five-PDF build, release verifier, manifest builder, and ZIP builder.
 - Adds verifier checks for the required environmental-stress language, forbidden critical language, frozen R15.1 hashes, page and abstract limits, legacy separation, and public/private separation.
 - Updates the reviewer-facing documentation and version declarations.
+- Adds an explicit split license: MIT for original software and reproduction scripts, and CC BY 4.0 for original manuscript and documentation content.
+- Excludes third-party data, institutional source documents, review materials, and other externally authored content from the repository's license grants.
 
 ## Frozen boundary
 

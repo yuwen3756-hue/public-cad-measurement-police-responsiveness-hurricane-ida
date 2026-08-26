@@ -1,0 +1,22 @@
+Public CAD Is Not Operational Ground Truth — License Notice
+
+Copyright (c) 2026 the project authors and contributors.
+
+This repository uses separate licenses for software and research content:
+
+1. Original source code and reproduction scripts are licensed under the MIT
+   License. The complete terms are in LICENSES/MIT.txt.
+
+2. Original manuscript text, documentation, tables, figures, and other
+   author-created research content are licensed under the Creative Commons
+   Attribution 4.0 International License (CC BY 4.0). The license notice and
+   canonical legal-code link are in LICENSES/CC-BY-4.0.txt.
+
+3. Third-party datasets, public records, official documents, review materials,
+   quoted or reproduced source material, trademarks, and other externally
+   authored content are not relicensed by this repository. Their original
+   terms continue to apply. See THIRD_PARTY_NOTICES.md.
+
+Unless a file contains a more specific notice, the categories above determine
+the applicable license. No license grants rights that the project authors do
+not own or are not authorized to license.

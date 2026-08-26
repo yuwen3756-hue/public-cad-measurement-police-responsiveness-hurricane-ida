@@ -1,0 +1,26 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 the project authors and contributors.
+
+Except for material identified as third-party content or governed by a more
+specific notice, the original manuscript text, documentation, tables, figures,
+and other author-created research content in this repository are licensed
+under the Creative Commons Attribution 4.0 International License.
+
+You may share and adapt the licensed material for any purpose, including
+commercial purposes, provided that you give appropriate credit, provide a link
+to the license, indicate whether changes were made, and do not impose additional
+legal or technological restrictions inconsistent with the license.
+
+Canonical license deed:
+https://creativecommons.org/licenses/by/4.0/
+
+Full legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Suggested attribution:
+"Public CAD Is Not Operational Ground Truth," project authors, 2026,
+licensed under CC BY 4.0. Indicate if changes were made.
+
+This notice is a practical summary and application statement. The linked legal
+code is the controlling license text.
